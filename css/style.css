@@ -94,6 +94,10 @@ button.sponsor{
     background-size: 500px;
     background-repeat: no-repeat;
 }
+.contain-img{
+    width: inherit;
+    height: inherit;
+}
 .card-img{
     width: 200px;
 }
@@ -119,10 +123,10 @@ button.sponsor{
     text-decoration: none;
 }
 
-.contact-form{
+.contact-form,.request-form{
     display: grid;
 }
-.contact-form>input,.contact-form>textarea{
+.contact-form>input,.contact-form>textarea,.request-form>input,.request-form>textarea,.request-form>select{
     background: #F6F6F6;
     border: none;
     text-align: center;
