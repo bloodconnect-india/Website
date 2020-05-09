@@ -1,1 +1,2 @@
 $('.carousel').carousel()
+$('.collapse').collapse()

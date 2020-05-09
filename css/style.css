@@ -8,8 +8,12 @@
     color: #fff;
     width: max-content;
 }
+.btn:focus{
+    box-shadow: none !important;
+}
+
 .color-main {
-    color: #BD002E;
+    color: #EB2441;
 }
 .color-dark{
     color: #202020 !important;
@@ -69,8 +73,8 @@ li.nav-item:hover>a{
     color: #fff !important;
 }
 button.navbar-toggler{
-    position: fixed;
-    top: 20px;
+    position: absolute;
+    top: -100px;
     right: 10px;
 }
 button.sponsor{
@@ -147,6 +151,25 @@ button.sponsor{
     margin-left: auto;
     margin-right: auto;
 }
+
+.card>.collapse{
+    border: none;
+    border-left: 4px solid #ccc;
+}
+.card{
+    border: none;
+}
+
+div.toggler-div>h2>button.collapsed{
+    border-left: 4px solid #ccc !important;
+    color: #777777 !important;
+}
+.bl-main{
+    border-left: 4px solid #EB2441;
+    color: #EB2441 !important;
+}
+
+
 
 /* Media properties  */
 
