@@ -10,6 +10,10 @@
 .right-lg{
     float: right;
 }
+.tooltip-container{
+    background: #EB2441;
+    color: #fff;
+}
 .btn-main{
     padding: 10px 20px;
     border: none;
@@ -97,6 +101,7 @@ button.sponsor{
 .contain-img{
     width: inherit;
     height: inherit;
+    max-height: 400px;
 }
 .card-img{
     width: 200px;
