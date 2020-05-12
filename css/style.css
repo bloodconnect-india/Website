@@ -1,6 +1,12 @@
 .bg-main-gradient{
     background :linear-gradient(90deg, #9B191B 0%, #BD002E 0.01%, #EB2441 100%) !important;
 }
+.hide{
+    display: none;
+}
+.right-lg{
+    float: right;
+}
 .btn-main{
     padding: 10px 20px;
     border: none;
@@ -84,20 +90,7 @@ button.sponsor{
     border-radius: 8px;
 }
 
-.img-left{
-    height: 80vh;
-    width: 100%;
-    background-position: left;
-    background-size: 500px;
-    background-repeat: no-repeat;
-}
-.img-right{
-    height: 80vh;
-    width: 100%;
-    background-position: right;
-    background-size: 500px;
-    background-repeat: no-repeat;
-}
+
 .contain-img{
     width: inherit;
     height: inherit;
@@ -169,8 +162,41 @@ div.toggler-div>h2>button.collapsed{
     color: #EB2441 !important;
 }
 
+.request-form>.form-group>input,.request-form>.form-group>select,.request-form>.form-group>textarea{
+    border:  none;
+    border-bottom: 1px solid #ccc;
+    border-radius: 0px;
+    text-transform: capitalize;
+}
+.request-form>.form-group>select,.request-form>.form-group>textarea{
+    background: none;
+    width: 100%;
+    width: -moz-available;
+    width: -webkit-fill-available;
+}
+.request-form>.form-group>input:focus{
+    box-shadow: none;
+    border-bottom: 1px solid #EB2441;
+}
+.text-over-img{
+    position: absolute;
+    width: inherit;
+    text-align: center;
+    top: calc(50% - 150px);
+}
 
-
+.success-modal{
+    position: fixed;
+    height: 200px;
+    width: 200px;
+    text-align: center;
+    left: calc(50% - 100px);
+    top: calc(50% - 100px);
+    z-index: 5;
+}
+.show{
+    display: block !important;
+}
 /* Media properties  */
 
 @media (max-width:480px){
@@ -189,5 +215,11 @@ div.toggler-div>h2>button.collapsed{
         height: 700px;
         margin-left: auto;
         margin-right: auto;
+    }
+    .text-center-sm{
+        text-align: center;
+    }
+    .right-lg{
+        float: inherit;
     }
 }
