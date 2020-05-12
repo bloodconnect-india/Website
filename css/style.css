@@ -1,3 +1,6 @@
+*{
+    font-family: Montserrat,sans-serif;
+}
 .bg-main-gradient{
     background :linear-gradient(90deg, #9B191B 0%, #BD002E 0.01%, #EB2441 100%) !important;
 }
@@ -22,7 +25,7 @@
     color: #EB2441;
 }
 .color-dark{
-    color: #202020 !important;
+    color: rgb(0, 50, 68) !important;
 }
 .color-white{
     color: #fff !important;
@@ -123,14 +126,7 @@ button.sponsor{
 .contact-form,.request-form{
     display: grid;
 }
-.contact-form>input,.contact-form>textarea,.request-form>input,.request-form>textarea,.request-form>select{
-    background: #F6F6F6;
-    border: none;
-    text-align: center;
-    text-transform: capitalize;
-    padding: 10px 20px;
-    margin: 20px auto;
-}
+
 .contact-us {
     position: relative;
     background: url('../img/pattern/pattern-12.png');
@@ -162,19 +158,22 @@ div.toggler-div>h2>button.collapsed{
     color: #EB2441 !important;
 }
 
-.request-form>.form-group>input,.request-form>.form-group>select,.request-form>.form-group>textarea{
+.form-group>input,.form-group>select,.form-group>textarea{
     border:  none;
     border-bottom: 1px solid #ccc;
     border-radius: 0px;
     text-transform: capitalize;
+    background : none;
+    color: #777777 !important;
 }
-.request-form>.form-group>select,.request-form>.form-group>textarea{
+
+.form-group>select,.form-group>textarea{
     background: none;
     width: 100%;
     width: -moz-available;
     width: -webkit-fill-available;
 }
-.request-form>.form-group>input:focus{
+.form-group>input:focus{
     box-shadow: none;
     border-bottom: 1px solid #EB2441;
 }
@@ -197,6 +196,32 @@ div.toggler-div>h2>button.collapsed{
 .show{
     display: block !important;
 }
+
+button#submit-request-button span {
+    transition: all 1s;
+    opacity: 1;
+}
+button#submit-request-button svg {
+    display: none;
+    margin: 0 auto;
+    transition: all 1s;
+}
+button#submit-request-button svg path, button#submit-request-button svg rect {
+    fill: #fff;
+}
+
+button.loading-start span {
+display: none !important;
+opacity: 0;
+}
+button.loading-start svg {
+display: block !important;
+opacity: 1;
+}
+  
+
+
+
 /* Media properties  */
 
 @media (max-width:480px){

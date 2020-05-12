@@ -70,7 +70,7 @@
     
 
     <div class="h-100 " >
-      <div class="success-modal pl-4 pr-4 pb-4  shadow bg-white" id="success-modal">
+      <div class="success-modal pl-4 pr-4 pb-4  shadow bg-white hide" id="success-modal">
         <div class="svg-box">
           <svg class="circular green-stroke">
               <circle class="path" cx="75" cy="75" r="50" fill="none" stroke-width="5" stroke-miterlimit="10"/>
@@ -99,25 +99,26 @@
                 <p class="color-grey mt-3 text-center">Fill this form and a volunteer would be in touch with you soon</p>    
               <form action="" class="request-form" onsubmit="submitPersonalDetails(event)">
                 <div class="form-group mb-4">
-                  <label class="m-0 bold color-dark" for="patientName">Patient Name</label>
+                  <label class="m-0   color-dark" for="patientName">Patient Name</label>
                   <input type="text" class="form-control" id="patient_name" placeholder="Patient Name" required>
                 </div>
                 <div class="form-group mb-4">
-                  <label class="m-0 bold color-dark" for="yourName">Your Name</label>
+                  <label class="m-0   color-dark" for="your_name">Your Name</label>
                   <input type="text" class="form-control" id="your_name" placeholder="Your Name" required>
                 </div>
                 <div class="form-group mb-4">
-                  <label class="m-0 bold color-dark" for="email">Email address</label>
+                  <label class="m-0   color-dark" for="email">Email address</label>
                   <input  type="email" class="form-control" placeholder="Email Address" id="email" aria-describedby="emailHelp" required>
                   <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
                 </div>
                 <div class="form-group mb-4">
-                  <label class="m-0 bold color-dark" for="phone_number">Phone Number</label>
+                  <label class="m-0   color-dark" for="phone_number">Phone Number</label>
                   <input  type="number" class="form-control" placeholder="Phone Number" id="phone_number" aria-describedby="phHelp" required>
                   <small id="phHelp" class="form-text text-muted">We'll never share your phone number with anyone else.</small>
                 </div>
-                <input type="submit" class="pl-5 pr-5 mr-0 btn-main bg-main-gradient" value="Next" />
-
+                <div class="navigation-buttons inline text-center-sm">
+                 <input type="submit" class="pl-5 pr-5 right-lg mb-4 mx-auto btn-main bg-main-gradient" value="Next" />
+                </div>
               </form>
               
                </div>
@@ -127,19 +128,19 @@
                 <div class="main-request-details p-5 hide" id="main-details">
                   <form action="" class="request-form" onsubmit="submitMainDetails(event)">
                   <div class="form-group mb-4">
-                    <label class="m-0 bold color-dark" for="date">Date When Required</label>
+                    <label class="m-0   color-dark" for="date">Date When Required</label>
                     <input type="date" class="form-control" id="date" >
                   </div>
                   <div class="form-group mb-4">
-                    <label class="m-0 bold color-dark" for="units">Units Required</label>
+                    <label class="m-0   color-dark" for="units">Units Required</label>
                     <input type="number" class="form-control" id="units" placeholder="Units Required"/>
                   </div>
                   <div class="form-group mb-4">
-                    <label class="m-0 bold color-dark" for="hospital">Hospital Name</label>
+                    <label class="m-0   color-dark" for="hospital">Hospital Name</label>
                     <input  type="text" class="form-control" placeholder="Hospital Name" id="hospital" >
                   </div>
                   <div class="form-group mb-4">
-                    <label class="m-0 bold color-dark" for="bg">Blood Group Required</label>
+                    <label class="m-0   color-dark" for="bg">Blood Group Required</label>
                     <select name="bg" id="bg">
                       <option value="A+">A+</option>
                       <option value="B+">B+</option>
@@ -164,7 +165,7 @@
                 <div class="additional-request-details p-5 hide" id="additional-details">
                   <form action="" class="request-form" onsubmit="submitAdditionalDetails(event)">
                   <div class="form-group mb-4">
-                    <label class="m-0 bold color-dark" for="city_region">City Region</label>
+                    <label class="m-0   color-dark" for="city_region">City Region</label>
                     <select name="city_region" id="city_region" required>
                       <option value="Agra">Agra</option>
                       <option value="Amritsar">Amritsar</option>
@@ -220,16 +221,32 @@
                     </select>
                   </div>
                   <div class="form-group mb-4">
-                    <label class="m-0 bold color-dark" for="details">Additional Details</label>
+                    <label class="m-0   color-dark" for="details">Additional Details</label>
                     <textarea name="details" id="details" cols="20" rows="3"></textarea>
                   </div>
                   <div class="form-group mb-4">
-                    <label class="m-0 bold color-dark" for="address">Your Address</label>
+                    <label class="m-0   color-dark" for="address">Your Address</label>
                     <textarea name="address" id="address" cols="20" rows="3"></textarea>
                   </div>
                   <div class="navigation-buttons inline text-center-sm">
                     <button type="button" class="pl-5 pr-5 mb-4 btn-main color-main bg-white " onclick="showMainDetailsDiv()">Back</button>
-                  <input type="submit" class="pl-5 pr-5 right-lg btn-main bg-main-gradient" value="Next" />
+                  <!-- <input type="submit" class="pl-5 pr-5 right-lg btn-main bg-main-gradient" value="Next" /> -->
+                  <button id="submit-request-button" class="pl-5 pr-5 right-lg btn-main bg-main-gradient" type="submit">
+                    <span>Submit</span>
+                    <!-- Loading animation -->
+                    <svg version="1.1" id="loader-1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                      width="40px" height="40px" viewBox="0 0 50 50" style="enable-background:new 0 0 50 50;" xml:space="preserve">
+                    <path fill="#000" d="M25.251,6.461c-10.318,0-18.683,8.365-18.683,18.683h4.068c0-8.071,6.543-14.615,14.615-14.615V6.461z">
+                      <animateTransform attributeType="xml"
+                        attributeName="transform"
+                        type="rotate"
+                        from="0 25 25"
+                        to="360 25 25"
+                        dur="0.6s"
+                        repeatCount="indefinite"/>
+                      </path>
+                    </svg>
+                  </button>
                   </div>
                 </form>
                 

@@ -42,6 +42,7 @@ submitMainDetails = (e) => {
 }
 submitAdditionalDetails = (e) => {
     e.preventDefault()
+    $("#submit-request-button").addClass("loading-start")
     city = $("#city_region").val()
     additional = $("#details").val()
     address = $("#address").val()
