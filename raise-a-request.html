@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/bootstrap.min.css">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/svg-animate.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/css/simple-line-icons.css">
     
     <title>Create Request | BloodConnect</title>
@@ -27,7 +28,7 @@
     
     <nav class="navbar navbar-expand-lg navbar-light bg-white">
 
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <button id="navbar-toggler" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse justify-content-between" id="navbarNav">
@@ -68,49 +69,175 @@
     </nav>
     
 
-    <div class="contact-us h-100 p-5" >
+    <div class="h-100 " >
+      <div class="success-modal pl-4 pr-4 pb-4  shadow bg-white" id="success-modal">
+        <div class="svg-box">
+          <svg class="circular green-stroke">
+              <circle class="path" cx="75" cy="75" r="50" fill="none" stroke-width="5" stroke-miterlimit="10"/>
+          </svg>
+          <svg class="checkmark green-stroke">
+              <g transform="matrix(0.79961,8.65821e-32,8.39584e-32,0.79961,-489.57,-205.679)">
+                  <path class="checkmark__check" fill="none" d="M616.306,283.025L634.087,300.805L673.361,261.53"/>
+              </g>
+          </svg>
+      </div>
+      <p class="success">Request raised successfully</p>
+      </div>
+            <div class="row m-0 ">
+              <div class="col-lg-5 d-flex align-items-center">
+                <div class="text-over-img" id="response-rate">
+                  <h4 class="display-4 color-main">96 %</h4>
+                  <p class="color-dark">Our response rate</p>
+                </div>
+                <img class="contain-img" id="request-img" src="./img/growth1.png" alt="" srcset="">
+              </div>
+              <div class="col-lg-7 h-100">
 
-        <div class="container bg-white p-5 shadow z-2">
-            <h4 class="text-center color-dark">Create Request</h4>
-            <p class="color-grey mt-3 text-center">Fill this form and a volunteer would be in touch with you soon</p>
-            <form class="request-form" action="POST" onsubmit="raiseRequest(event)">
-            <input class="w-75-lg mx-auto" type="text" name="patient_name" placeholder="Patient Name" required>
-            <input class="w-75-lg mx-auto" type="text" name="your_name" placeholder="Your Name" required>
-            <select class="w-75-lg" name="bg" id="bg" required>
-                <option value="A+">A+</option>
-                <option value="B+">B+</option>
-                <option value="AB+">AB+</option>
-                <option value="O+">O+</option>
-                <option value="A-">A-</option>
-                <option value="B-">B-</option>
-                <option value="AB-">AB-</option>
-                <option value="O-">O-</option>
-                <option value="Any">Any</option>
-            </select>
-            <input class="w-75-lg mx-auto" type="date" name="date" id="">
-            <input type="number" class="w-75-lg mx-auto" name="phone_number" placeholder="Phone Number" required>
-            <input type="number" class="w-75-lg mx-auto" name="units" placeholder="Units Required">
-            <textarea class="w-75-lg mx-auto" name="additional_detail" placeholder="Additional Detail" id="" cols="20" rows="5"></textarea>
-            <select class="w-75-lg" name="city" id="city">
-                <option value="A+">A+</option>
-                <option value="B+">B+</option>
-                <option value="AB+">AB+</option>
-                <option value="O+">O+</option>
-                <option value="A-">A-</option>
-                <option value="B-">B-</option>
-                <option value="AB-">AB-</option>
-                <option value="O-">O-</option>
-                <option value="Any">Any</option>
-            </select>
-            <input class="w-75-lg mx-auto" type="text" name="hospital" placeholder="Hospital">
-            <textarea class="w-75-lg mx-auto" name="address" placeholder="Your Address" id="" cols="20" rows="5"></textarea>
-            <input class="w-75-lg mx-auto" type="email" name="email" placeholder="E-Mail Address">
+                <!-- Personal details div -->
+               <div class="personal-details p-5" id="personal-details">
+                <h4 class="text-center color-dark">Create Request</h4>
+                <p class="color-grey mt-3 text-center">Fill this form and a volunteer would be in touch with you soon</p>    
+              <form action="" class="request-form" onsubmit="submitPersonalDetails(event)">
+                <div class="form-group mb-4">
+                  <label class="m-0 bold color-dark" for="patientName">Patient Name</label>
+                  <input type="text" class="form-control" id="patient_name" placeholder="Patient Name" required>
+                </div>
+                <div class="form-group mb-4">
+                  <label class="m-0 bold color-dark" for="yourName">Your Name</label>
+                  <input type="text" class="form-control" id="your_name" placeholder="Your Name" required>
+                </div>
+                <div class="form-group mb-4">
+                  <label class="m-0 bold color-dark" for="email">Email address</label>
+                  <input  type="email" class="form-control" placeholder="Email Address" id="email" aria-describedby="emailHelp" required>
+                  <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                </div>
+                <div class="form-group mb-4">
+                  <label class="m-0 bold color-dark" for="phone_number">Phone Number</label>
+                  <input  type="number" class="form-control" placeholder="Phone Number" id="phone_number" aria-describedby="phHelp" required>
+                  <small id="phHelp" class="form-text text-muted">We'll never share your phone number with anyone else.</small>
+                </div>
+                <input type="submit" class="pl-5 pr-5 mr-0 btn-main bg-main-gradient" value="Next" />
 
-            <input class="btn-main bg-main-gradient shadow" type="submit" value="Submit">
-            </form>
-        </div>
+              </form>
+              
+               </div>
+            
 
+                <!-- Main details -->
+                <div class="main-request-details p-5 hide" id="main-details">
+                  <form action="" class="request-form" onsubmit="submitMainDetails(event)">
+                  <div class="form-group mb-4">
+                    <label class="m-0 bold color-dark" for="date">Date When Required</label>
+                    <input type="date" class="form-control" id="date" >
+                  </div>
+                  <div class="form-group mb-4">
+                    <label class="m-0 bold color-dark" for="units">Units Required</label>
+                    <input type="number" class="form-control" id="units" placeholder="Units Required"/>
+                  </div>
+                  <div class="form-group mb-4">
+                    <label class="m-0 bold color-dark" for="hospital">Hospital Name</label>
+                    <input  type="text" class="form-control" placeholder="Hospital Name" id="hospital" >
+                  </div>
+                  <div class="form-group mb-4">
+                    <label class="m-0 bold color-dark" for="bg">Blood Group Required</label>
+                    <select name="bg" id="bg">
+                      <option value="A+">A+</option>
+                      <option value="B+">B+</option>
+                      <option value="AB+">AB+</option>
+                      <option value="O+">O+</option>
+                      <option value="A-">A-</option>
+                      <option value="B-">B-</option>
+                      <option value="AB-">AB-</option>
+                      <option value="O-">O-</option>
+                      <option value="Any">Any</option>
+                    </select>
+                  </div>
+                  <div class="navigation-buttons inline text-center-sm">
+                    <button type="button" class="pl-5 pr-5 mb-4 mx-auto btn-main color-main bg-white " onclick="showPersonalDiv()">Back</button>
+                  <input type="submit" class="pl-5 pr-5 right-lg mb-4 mx-auto btn-main bg-main-gradient" value="Next" />
+                  </div>
+                </form>
+                
+                </div>
+
+                <!-- Additional Details -->
+                <div class="additional-request-details p-5 hide" id="additional-details">
+                  <form action="" class="request-form" onsubmit="submitAdditionalDetails(event)">
+                  <div class="form-group mb-4">
+                    <label class="m-0 bold color-dark" for="city_region">City Region</label>
+                    <select name="city_region" id="city_region" required>
+                      <option value="Agra">Agra</option>
+                      <option value="Amritsar">Amritsar</option>
+                      <option value="Bangalore">Bangalore</option>
+                      <option value="Bhopal">Bhopal</option>
+                      <option value="Chandigarh">Chandigarh</option>
+                      <option value="Chennai">Chennai</option>
+                      <option value="Delhi">Delhi</option>
+                      <option value="Hyderabad">Hyderabad</option>
+                      <option value="Jaipur">Jaipur</option>
+                      <option value="Jodhpur">Jodhpur</option>
+                      <option value="Kanpur">Kanpur</option>
+                      <option value="Kolkata">Kolkata</option>
+                      <option value="Lucknow">Lucknow</option>
+                      <option value="Mumbai">Mumbai</option>
+                      <option value="Pune">Pune</option>
+                      <option value="Ropar">Ropar</option>
+                      <option value="Varanasi">Varanasi</option>
+                      <option value="Patna">Patna</option>
+                      <option value="Andhra Pradesh (AP)">Andhra Pradesh (AP)</option>
+                      <option value="Arunachal Pradesh (AR)">Arunachal Pradesh (AR)</option>
+                      <option value="Assam (AS)">Assam (AS)</option>
+                      <option value="Bihar (BR)">Bihar (BR)</option>
+                      <option value="Chhattisgarh (CG)">Chhattisgarh (CG)</option>
+                      <option value="Goa (GA)">Goa (GA)</option>
+                      <option value="Gujarat (GJ)">Gujarat (GJ)</option>
+                      <option value="Haryana (HR)">Haryana (HR)</option>
+                      <option value="Himachal Pradesh (HP)">Himachal Pradesh (HP)</option>
+                      <option value="Jammu and Kashmir (JK)">Jammu and Kashmir (JK)</option>
+                      <option value="Jharkhand (JH)">Jharkhand (JH)</option>
+                      <option value="Karnataka (KA)">Karnataka (KA)</option>
+                      <option value="Kerala (KL)">Kerala (KL)</option>
+                      <option value="Madhya Pradesh (MP)">Madhya Pradesh (MP)</option>
+                      <option value="Maharashtra (MH)">Maharashtra (MH)</option>
+                      <option value="Manipur (MN)">Manipur (MN)</option>
+                      <option value="Meghalaya (ML)">Meghalaya (ML)</option>
+                      <option value="Mizoram (MZ)">Mizoram (MZ)</option>
+                      <option value="Nagaland (NL)">Nagaland (NL)</option>
+                      <option value="Odisha(OR)">Odisha(OR)</option>
+                      <option value="Punjab (PB)">Punjab (PB)</option>
+                      <option value="Rajasthan (RJ)">Rajasthan (RJ)</option>
+                      <option value="Ranchi">Ranchi</option>
+                      <option value="Sikkim (SK)">Sikkim (SK)</option>
+                      <option value="Tamil Nadu (TN)">Tamil Nadu (TN)</option>
+                      <option value="Telangana (TS)">Telangana (TS)</option>
+                      <option value="Tripura (TR)">Tripura (TR)</option>
+                      <option value="Uttar Pradesh (UP)">Uttar Pradesh (UP)</option>
+                      <option value="Uttarakhand (UK)">Uttarakhand (UK)</option>
+                      <option value="West Bengal (WB)">West Bengal (WB)</option>
+                      <option value="Daman and diu">Daman and diu</option>
+                      <option value="Pudacherry">Pudacherry</option>
+                      <option value="Dadra and Nagar Havelli">Dadra and Nagar Havelli</option>
+                    </select>
+                  </div>
+                  <div class="form-group mb-4">
+                    <label class="m-0 bold color-dark" for="details">Additional Details</label>
+                    <textarea name="details" id="details" cols="20" rows="3"></textarea>
+                  </div>
+                  <div class="form-group mb-4">
+                    <label class="m-0 bold color-dark" for="address">Your Address</label>
+                    <textarea name="address" id="address" cols="20" rows="3"></textarea>
+                  </div>
+                  <div class="navigation-buttons inline text-center-sm">
+                    <button type="button" class="pl-5 pr-5 mb-4 btn-main color-main bg-white " onclick="showMainDetailsDiv()">Back</button>
+                  <input type="submit" class="pl-5 pr-5 right-lg btn-main bg-main-gradient" value="Next" />
+                  </div>
+                </form>
+                
+                </div> 
+              </div>
+            </div>
     </div>
+  
 
 
           <!-- Footer -->
@@ -160,5 +287,6 @@
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="./js/bootstrap.min.js"></script>
     <script src="./js/main.js"> </script>
+    <script src="./js/request.js"></script>
 </body>
 </html>
