@@ -57,6 +57,9 @@
 .w-75-lg{
     width: 75%;
 }
+.w-20{
+    width: 20%;
+}
 .h-100{
     min-height: 100vh !important;
 }
@@ -216,15 +219,36 @@ button#submit-request-button svg path, button#submit-request-button svg rect {
 }
 
 button.loading-start span {
-display: none !important;
-opacity: 0;
+    display: none !important;
+    opacity: 0;
 }
 button.loading-start svg {
-display: block !important;
-opacity: 1;
+    display: block !important;
+    opacity: 1;
 }
   
+.carousel-img{
+    display: block;
+    margin-left: 5px;
+    margin-right: 5px;
+    position: relative;
+}
+.carousel-img>p{
+    display: none;
+}
+.carousel-img>img{
+    width: 100%;
+}
 
+.carousel-img:hover>img{
+    filter: opacity(0.5);
+}
+.carousel-img:hover>p{
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 20px;
+}
 
 
 /* Media properties  */
@@ -251,5 +275,8 @@ opacity: 1;
     }
     .right-lg{
         float: inherit;
+    }
+    .w-inherit-sm{
+        width: inherit !important;
     }
 }
