@@ -39,7 +39,7 @@ $(function () {
                         return count < 4;
                      }
                     });
-                
+                    $("#skeleton-screen").hide()
                     $content.html(output);
                 }});
             });
