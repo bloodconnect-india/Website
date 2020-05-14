@@ -1,8 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap');
 *{
-    font-family: Montserrat,sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
-.bg-main-gradient{
-    background :linear-gradient(90deg, #9B191B 0%, #BD002E 0.01%, #EB2441 100%) !important;
+.bg-main{
+    background :#EB2441 !important;
 }
 .bg-none{
     background: none !important;
@@ -20,7 +21,7 @@
 .btn-main{
     padding: 10px 20px;
     border: none;
-    border-radius: 8px;
+    border-radius: 4px;
     color: #fff;
     width: max-content;
 }
@@ -79,14 +80,14 @@ li.nav-item{
 }
 
 li.active{
-    background: linear-gradient(90deg, #9B191B 0%, #BD002E 0.01%, #EB2441 100%);
+    background: #EB2441;
 }
 li.active>a{
     color: #fff !important;
 }
 li.nav-item:hover,.dropdown-item:hover{
     color: #fff;
-    background:linear-gradient(90deg, #9B191B 0%, #BD002E 0.01%, #EB2441 100%);
+    background:#EB2441;
 }
 li.nav-item:hover>a{
     color: #fff !important;
@@ -100,9 +101,27 @@ button.sponsor{
     padding: 10px 20px;
     color: #fff;
     border: none;
-    border-radius: 8px;
+    border-radius: 4px;
 }
 
+.about-list{
+    list-style-type: none;
+    text-align: right;
+    border-right: 1px solid #ccc;
+    padding-right: 10px;
+}
+
+.about-list>li{
+    margin-top: 1.3rem;
+    margin-bottom: 1.3rem;
+    background: none;
+    color: #EB2441  ;
+    font-weight: 400;
+}
+.about-list>li.collapsed{
+    color: inherit !important;
+   
+}
 
 .contain-img{
     width: inherit;
@@ -168,14 +187,22 @@ div.toggler-div>h2>button.collapsed{
     border-left: 4px solid #EB2441;
     color: #EB2441 !important;
 }
+.form-group>label{
+    font-weight: 500;
+    font-size: 14px;
+}
+.form-group>label:after{
+    content: "*";
+}
 
 .form-group>input,.form-group>select,.form-group>textarea{
     border:  none;
     border-bottom: 1px solid #ccc;
     border-radius: 0px;
-    text-transform: capitalize;
+    text-transform: none;
     background : none;
     color: #777777 !important;
+    font-weight: 300;
 }
 
 .form-group>select,.form-group>textarea{
@@ -280,8 +307,14 @@ button.loading-start svg {
     .img-left,.img-right{
         background-size: contain;
     }
+    .hide-sm{
+        display: none !important;
+    }
     .w-75-lg{
         width: auto;
+    }
+    .flex-column-sm{
+        flex-direction: column !important;
     }
     .contact-us{
         padding-left: 0px !important;

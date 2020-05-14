@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/bootstrap.min.css">
     <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/css/simple-line-icons.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     
     <title>About Us |BloodConnect</title>
     <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon">
@@ -63,237 +64,256 @@
                 <a class="nav-link" href="./contact-us.html">Contact Us</a>
               </li>
             </ul>
-                <button class="sponsor bg-main-gradient">Sponsor Us</button>
+                <button class="sponsor bg-main">Sponsor Us</button>
           </div>
     </nav>
  
+
     <div class="container-fluid">
-      <div class="row ">
-        <div class="col-lg-8 d-flex justify-content-center flex-column pl-5">
-          <span class="tooltip-container pl-3 pr-3 pt-1 pb-1 wd-max">Our Vision</span>
-          <h4 class="display-4 inline color-dark" style="text-transform: capitalize;"> <span class="display-4 color-main">To</span> solve the problem of blood shortage in India in our lifetime</h4>
-          <p class="color-grey">BloodConnect has developed a 360 degree solution to the problem of blood shortage.</p>
+      <div class="row accordion" id="accordionExample">
+        <div class="col-lg-3 d-flex align-items-end flex-column">
+          <h6 class="color-dark ft-34">About Us</h6>
+          <ul class="about-list">
+            <li class="collapsed" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">Enabling Blood Donation</li>
+            <li class="collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">What We Do</li>
+            <li class="collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">Our Journey</li>
+            <li class="collapsed">Our Team</li>
+          </ul>
         </div>
-        <div class="col-lg-4 col-md-4 col-sm-12 pt-5 pb-5 pr-0">
-          <img class="contain-img  shadow rounded" src="./img/team/group.png" alt="">
-        </div>
-      </div>
-    </div>
-   
 
-    <div class="bg-main-gradient d-flex flex-column align-items-center pt-5 pb-5">
-          <h4 class="display-4 color-white text-center">Our Mission</h4>
-          
-          <h4 class="ft-34 text-center color-white w-75-lg">To be a 360-degree solution provider to the problem of blood shortage in India </h4>
-          <img src="./img/360-degree.svg" height="100px" alt="">
-    </div>
-
-<!-- Our Story -->
-    <div class="container-fluid mt-5 pt-5 text-center">
-      <h4 class="display-4 text-center color-dark">Our History</h4>
-      <p class="color-grey text-center mx-auto w-75-lg"> Blood cannot be manufactured in factories; it can only come from generous donors. To cater to this demand, BloodConnect was launched on 1st April, 2010 (as a project under NSS IIT Delhi) with an unparalleled objective of solving the problem of blood shortage in India. </p>
-        <img class=" mx-auto w-inherit-sm " src="./img/bloodhero.jpg" height="300" alt="blood hero" srcset="">
-      <p class="color-grey text-center mx-auto w-75-lg"> According to WHO data, India faces a shortage of 3 million blood units. This shortage can easily be eliminated if only an additional 2% of India's youth donates blood. To make this possible, BloodConnect acts as a channel connecting voluntary blood donors with those who need blood. It is a youth-run organization and provides free help and specially works to target the poor and the needy. </p>
-    </div>
-
-    <!-- Our Work -->
-    <div class="container-fluid mt-5 pt-5 pb-5 mb-5">
-      <h4 class="display-4 text-center color-dark">What Makes Us Different ?</h4>
-      <!-- Camps Part here -->
-       <div class="row mt-5">
-         <div class="col-lg-4 col-sm-12 mx-auto">
-           <img class="contain-img" src="./img/event/1.jpg" alt="">
-         </div>
-         <div class="col-lg-6 col-sm-12 mx-auto">
-           <h4 class="ft-34 color-dark">Organizing Blood Donation Camps</h4>
-           <p class="color-grey">We organize blood donation camps in various cities with various government blood banks.
-            We believe that organizing camps is the fastest way to solving the problem of blood shortage.
-            They are safe, and give you a very easy way out to donate blood (saves a trip to the hospital).</p>
-            <button class=" mt-2 btn-main bg-white color-main">Know More</button>
-         </div>
-
-         <div class="container mt-5">
-          <div id="campCarouselIndicators" class="carousel slide" data-ride="carousel">
-            <ol class="carousel-indicators">
-              <li data-target="#campCarouselIndicators" data-slide-to="0" class="active"></li>
-              <li data-target="#campCarouselIndicators" data-slide-to="1"></li>
-              <li data-target="#campCarouselIndicators" data-slide-to="2"></li>
-            </ol>
-            <div class="carousel-inner">
-              <div class="carousel-item  active text-center">
-                <div class="d-flex justify-content-center">
-                    <div class="carousel-img w-20 d-flex align-items-center">
-                      <img  src="./img/event/1.jpg" alt="First slide">
-                      <p class="color-white">Some Description Here</p>
-                    </div>
-                    <div class="carousel-img w-20">
-                      <img  src="./img/event/2.jpg" alt="First slide">
-                      <p class="color-white">Some Description Here</p>
-                    </div>
-                    <div class="carousel-img w-20">
-                      <img  src="./img/event/3.jpg" alt="First slide">
-                      <p class="color-white">Some Description Here</p>
-                    </div>
-                    <div class="carousel-img w-20">
-                      <img  src="./img/event/4.jpg" alt="First slide">
-                      <p class="color-white">Some Description Here</p>
-                    </div>
+        <div class="col-lg-9">
+          <!-- Enabling Blood Donation -->
+          <div id="collapseOne" class="collapse " aria-labelledby="headingOne" data-parent="#accordionExample">
+            <div class="container-fluid">
+              <div class="row ">
+                <div class="col-lg-8 d-flex justify-content-center flex-column pl-5">
+                  <span class="tooltip-container pl-3 pr-3 pt-1 pb-1 wd-max">Our Vision</span>
+                  <h4 class="display-4 inline color-dark" style="text-transform: capitalize;"> <span class="display-4 color-main">To</span> solve the problem of blood shortage in India in our lifetime</h4>
+                  <p class="color-grey">BloodConnect has developed a 360 degree solution to the problem of blood shortage.</p>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-12 pt-5 pb-5 pr-0">
+                  <img class="contain-img  shadow rounded" src="./img/team/group.png" alt="">
                 </div>
               </div>
-              <div class="carousel-item  text-center">
-                <div class="d-flex justify-content-center">
-                  <div class="carousel-img w-20 d-flex align-items-center">
-                    <img  src="./img/event/2.jpg" alt="First slide">
-                    <p class="color-white">Some Description Here</p>
+            </div>
+           </div>
+
+           <!-- What We Do -->
+           <div id="collapseTwo" class="collapse " aria-labelledby="headingOne" data-parent="#accordionExample">
+              <div class="container-fluid mt-5 pt-5 pb-5 mb-5">
+                <h4 class="display-4 text-center color-dark">What Makes Us Different ?</h4>
+                <!-- Camps Part here -->
+                <div class="row mt-5">
+                  <div class="col-lg-4 col-sm-12 mx-auto">
+                    <img class="contain-img" src="./img/event/1.jpg" alt="">
                   </div>
-                  <div class="carousel-img w-20">
-                    <img  src="./img/event/1.jpg" alt="First slide">
-                    <p class="color-white">Some Description Here</p>
+                  <div class="col-lg-6 col-sm-12 mx-auto">
+                    <h4 class="ft-34 color-dark">Organizing Blood Donation Camps</h4>
+                    <p class="color-grey">We organize blood donation camps in various cities with various government blood banks.
+                      We believe that organizing camps is the fastest way to solving the problem of blood shortage.
+                      They are safe, and give you a very easy way out to donate blood (saves a trip to the hospital).</p>
+                      <button class=" mt-2 btn-main bg-white color-main">Know More</button>
                   </div>
-                  <div class="carousel-img w-20">
-                    <img  src="./img/event/4.jpg" alt="First slide">
-                    <p class="color-white">Some Description Here</p>
+          
+                  <div class="container mt-5">
+                    <div id="campCarouselIndicators" class="carousel slide" data-ride="carousel">
+                      <ol class="carousel-indicators">
+                        <li data-target="#campCarouselIndicators" data-slide-to="0" class="active"></li>
+                        <li data-target="#campCarouselIndicators" data-slide-to="1"></li>
+                        <li data-target="#campCarouselIndicators" data-slide-to="2"></li>
+                      </ol>
+                      <div class="carousel-inner">
+                        <div class="carousel-item  active text-center">
+                          <div class="d-flex justify-content-center">
+                              <div class="carousel-img w-20 d-flex align-items-center">
+                                <img  src="./img/event/1.jpg" alt="First slide">
+                                <p class="color-white">Some Description Here</p>
+                              </div>
+                              <div class="carousel-img w-20">
+                                <img  src="./img/event/2.jpg" alt="First slide">
+                                <p class="color-white">Some Description Here</p>
+                              </div>
+                              <div class="carousel-img w-20">
+                                <img  src="./img/event/3.jpg" alt="First slide">
+                                <p class="color-white">Some Description Here</p>
+                              </div>
+                              <div class="carousel-img w-20">
+                                <img  src="./img/event/4.jpg" alt="First slide">
+                                <p class="color-white">Some Description Here</p>
+                              </div>
+                          </div>
+                        </div>
+                        <div class="carousel-item  text-center">
+                          <div class="d-flex justify-content-center">
+                            <div class="carousel-img w-20 d-flex align-items-center">
+                              <img  src="./img/event/2.jpg" alt="First slide">
+                              <p class="color-white">Some Description Here</p>
+                            </div>
+                            <div class="carousel-img w-20">
+                              <img  src="./img/event/1.jpg" alt="First slide">
+                              <p class="color-white">Some Description Here</p>
+                            </div>
+                            <div class="carousel-img w-20">
+                              <img  src="./img/event/4.jpg" alt="First slide">
+                              <p class="color-white">Some Description Here</p>
+                            </div>
+                            <div class="carousel-img w-20">
+                              <img  src="./img/event/3.jpg" alt="First slide">
+                              <p class="color-white">Some Description Here</p>
+                            </div>
+                        </div>
+                        </div>
+                        <div class="carousel-item  text-center">
+                          <div class="d-flex justify-content-center">
+                            <div class="carousel-img w-20 d-flex align-items-center">
+                              <img  src="./img/event/4.jpg" alt="First slide">
+                              <p class="color-white">Some Description Here</p>
+                            </div>
+                            <div class="carousel-img w-20">
+                              <img  src="./img/event/3.jpg" alt="First slide">
+                              <p class="color-white">Some Description Here</p>
+                            </div>
+                            <div class="carousel-img w-20">
+                              <img  src="./img/event/2.jpg" alt="First slide">
+                              <p class="color-white">Some Description Here</p>
+                            </div>
+                            <div class="carousel-img w-20">
+                              <img  src="./img/event/1.jpg" alt="First slide">
+                              <p class="color-white">Some Description Here</p>
+                            </div>
+                        </div>
+                        </div>
+                      </div>
+                      <a class="carousel-control-prev" href="#campCarouselIndicators" role="button" data-slide="prev">
+                        <span class="icon-arrow-left color-dark" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                      </a>
+                      <a class="carousel-control-next" href="#campCarouselIndicators" role="button" data-slide="next">
+                        <span class="icon-arrow-right color-dark" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                      </a>
+                    </div>
                   </div>
-                  <div class="carousel-img w-20">
-                    <img  src="./img/event/3.jpg" alt="First slide">
-                    <p class="color-white">Some Description Here</p>
+                </div>
+          
+          
+          
+                <!-- Awareness Parth here -->
+                <div class="row mt-5 pt-5">
+                  <div class="col-lg-6 col-sm-12 mx-auto">
+                    <h4 class="ft-34 color-dark">Organizing Awareness Sessions</h4>
+                    <p class="color-grey"> We organize various awareness activities: street plays, competitions, sessions, etc.
+                      All the activities aim to inspire people to come forward to donate blood.
+                      They have a long term impact in spreading the idea of blood donation and clearing myths.
+                      <br>Interested in knowing how to organize an awareness activity? Click the button below</p>
+                    <button class=" mt-2 btn-main color-main bg-white ">Know More</button>
                   </div>
-              </div>
-              </div>
-              <div class="carousel-item  text-center">
-                <div class="d-flex justify-content-center">
-                  <div class="carousel-img w-20 d-flex align-items-center">
-                    <img  src="./img/event/4.jpg" alt="First slide">
-                    <p class="color-white">Some Description Here</p>
+                  <div class="col-lg-4 col-sm-12 mx-auto">
+                    <img class="contain-img" src="./img/event/1.jpg" alt="">
                   </div>
-                  <div class="carousel-img w-20">
-                    <img  src="./img/event/3.jpg" alt="First slide">
-                    <p class="color-white">Some Description Here</p>
+                  
+          
+                  <div class="container mt-5">
+                  <div id="awarenessCarouselIndicators" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                      <li data-target="#awarenessCarouselIndicators" data-slide-to="0" class="active"></li>
+                      <li data-target="#awarenessCarouselIndicators" data-slide-to="1"></li>
+                      <li data-target="#awarenessCarouselIndicators" data-slide-to="2"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                      <div class="carousel-item  active text-center">
+                        <div class="d-flex justify-content-center">
+                            <div class="carousel-img w-20 d-flex align-items-center">
+                              <img  src="./img/event/1.jpg" alt="First slide">
+                              <p class="color-white">Some Description Here</p>
+                            </div>
+                            <div class="carousel-img w-20">
+                              <img  src="./img/event/2.jpg" alt="First slide">
+                              <p class="color-white">Some Description Here</p>
+                            </div>
+                            <div class="carousel-img w-20">
+                              <img  src="./img/event/3.jpg" alt="First slide">
+                              <p class="color-white">Some Description Here</p>
+                            </div>
+                            <div class="carousel-img w-20">
+                              <img  src="./img/event/4.jpg" alt="First slide">
+                              <p class="color-white">Some Description Here</p>
+                            </div>
+                        </div>
+                      </div>
+                      <div class="carousel-item  text-center">
+                        <div class="d-flex justify-content-center">
+                          <div class="carousel-img w-20 d-flex align-items-center">
+                            <img  src="./img/event/2.jpg" alt="First slide">
+                            <p class="color-white">Some Description Here</p>
+                          </div>
+                          <div class="carousel-img w-20">
+                            <img  src="./img/event/1.jpg" alt="First slide">
+                            <p class="color-white">Some Description Here</p>
+                          </div>
+                          <div class="carousel-img w-20">
+                            <img  src="./img/event/4.jpg" alt="First slide">
+                            <p class="color-white">Some Description Here</p>
+                          </div>
+                          <div class="carousel-img w-20">
+                            <img  src="./img/event/3.jpg" alt="First slide">
+                            <p class="color-white">Some Description Here</p>
+                          </div>
+                      </div>
+                      </div>
+                      <div class="carousel-item  text-center">
+                        <div class="d-flex justify-content-center">
+                          <div class="carousel-img w-20 d-flex align-items-center">
+                            <img  src="./img/event/4.jpg" alt="First slide">
+                            <p class="color-white">Some Description Here</p>
+                          </div>
+                          <div class="carousel-img w-20">
+                            <img  src="./img/event/3.jpg" alt="First slide">
+                            <p class="color-white">Some Description Here</p>
+                          </div>
+                          <div class="carousel-img w-20">
+                            <img  src="./img/event/2.jpg" alt="First slide">
+                            <p class="color-white">Some Description Here</p>
+                          </div>
+                          <div class="carousel-img w-20">
+                            <img  src="./img/event/1.jpg" alt="First slide">
+                            <p class="color-white">Some Description Here</p>
+                          </div>
+                      </div>
+                      </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#awarenessCarouselIndicators" role="button" data-slide="prev">
+                      <span class="icon-arrow-left color-dark" aria-hidden="true"></span>
+                      <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#awarenessCarouselIndicators" role="button" data-slide="next">
+                      <span class="icon-arrow-right color-dark" aria-hidden="true"></span>
+                      <span class="sr-only">Next</span>
+                    </a>
                   </div>
-                  <div class="carousel-img w-20">
-                    <img  src="./img/event/2.jpg" alt="First slide">
-                    <p class="color-white">Some Description Here</p>
                   </div>
-                  <div class="carousel-img w-20">
-                    <img  src="./img/event/1.jpg" alt="First slide">
-                    <p class="color-white">Some Description Here</p>
-                  </div>
-              </div>
+                </div>
               </div>
             </div>
-            <a class="carousel-control-prev" href="#campCarouselIndicators" role="button" data-slide="prev">
-              <span class="icon-arrow-left color-dark" aria-hidden="true"></span>
-              <span class="sr-only">Previous</span>
-            </a>
-            <a class="carousel-control-next" href="#campCarouselIndicators" role="button" data-slide="next">
-              <span class="icon-arrow-right color-dark" aria-hidden="true"></span>
-              <span class="sr-only">Next</span>
-            </a>
+            
+            <!-- Our Timeline -->
+            <div id="collapseThree" class="collapse " aria-labelledby="headingOne" data-parent="#accordionExample">
+              <img src="./img/timeline.jpg" alt="BloodConnect Timeline" srcset="">
+            </div>
           </div>
-         </div>
-       </div>
-
-
-
-       <!-- Awareness Parth here -->
-       <div class="row mt-5 pt-5">
-        <div class="col-lg-6 col-sm-12 mx-auto">
-          <h4 class="ft-34 color-dark">Organizing Awareness Sessions</h4>
-          <p class="color-grey"> We organize various awareness activities: street plays, competitions, sessions, etc.
-            All the activities aim to inspire people to come forward to donate blood.
-            They have a long term impact in spreading the idea of blood donation and clearing myths.
-            <br>Interested in knowing how to organize an awareness activity? Click the button below</p>
-           <button class=" mt-2 btn-main color-main bg-white ">Know More</button>
-        </div>
-        <div class="col-lg-4 col-sm-12 mx-auto">
-          <img class="contain-img" src="./img/event/1.jpg" alt="">
-        </div>
-        
-
-        <div class="container mt-5">
-         <div id="awarenessCarouselIndicators" class="carousel slide" data-ride="carousel">
-           <ol class="carousel-indicators">
-             <li data-target="#awarenessCarouselIndicators" data-slide-to="0" class="active"></li>
-             <li data-target="#awarenessCarouselIndicators" data-slide-to="1"></li>
-             <li data-target="#awarenessCarouselIndicators" data-slide-to="2"></li>
-           </ol>
-           <div class="carousel-inner">
-             <div class="carousel-item  active text-center">
-               <div class="d-flex justify-content-center">
-                   <div class="carousel-img w-20 d-flex align-items-center">
-                     <img  src="./img/event/1.jpg" alt="First slide">
-                     <p class="color-white">Some Description Here</p>
-                   </div>
-                   <div class="carousel-img w-20">
-                     <img  src="./img/event/2.jpg" alt="First slide">
-                     <p class="color-white">Some Description Here</p>
-                   </div>
-                   <div class="carousel-img w-20">
-                     <img  src="./img/event/3.jpg" alt="First slide">
-                     <p class="color-white">Some Description Here</p>
-                   </div>
-                   <div class="carousel-img w-20">
-                     <img  src="./img/event/4.jpg" alt="First slide">
-                     <p class="color-white">Some Description Here</p>
-                   </div>
-               </div>
-             </div>
-             <div class="carousel-item  text-center">
-               <div class="d-flex justify-content-center">
-                 <div class="carousel-img w-20 d-flex align-items-center">
-                   <img  src="./img/event/2.jpg" alt="First slide">
-                   <p class="color-white">Some Description Here</p>
-                 </div>
-                 <div class="carousel-img w-20">
-                   <img  src="./img/event/1.jpg" alt="First slide">
-                   <p class="color-white">Some Description Here</p>
-                 </div>
-                 <div class="carousel-img w-20">
-                   <img  src="./img/event/4.jpg" alt="First slide">
-                   <p class="color-white">Some Description Here</p>
-                 </div>
-                 <div class="carousel-img w-20">
-                   <img  src="./img/event/3.jpg" alt="First slide">
-                   <p class="color-white">Some Description Here</p>
-                 </div>
-             </div>
-             </div>
-             <div class="carousel-item  text-center">
-               <div class="d-flex justify-content-center">
-                 <div class="carousel-img w-20 d-flex align-items-center">
-                   <img  src="./img/event/4.jpg" alt="First slide">
-                   <p class="color-white">Some Description Here</p>
-                 </div>
-                 <div class="carousel-img w-20">
-                   <img  src="./img/event/3.jpg" alt="First slide">
-                   <p class="color-white">Some Description Here</p>
-                 </div>
-                 <div class="carousel-img w-20">
-                   <img  src="./img/event/2.jpg" alt="First slide">
-                   <p class="color-white">Some Description Here</p>
-                 </div>
-                 <div class="carousel-img w-20">
-                   <img  src="./img/event/1.jpg" alt="First slide">
-                   <p class="color-white">Some Description Here</p>
-                 </div>
-             </div>
-             </div>
-           </div>
-           <a class="carousel-control-prev" href="#awarenessCarouselIndicators" role="button" data-slide="prev">
-             <span class="icon-arrow-left color-dark" aria-hidden="true"></span>
-             <span class="sr-only">Previous</span>
-           </a>
-           <a class="carousel-control-next" href="#awarenessCarouselIndicators" role="button" data-slide="next">
-             <span class="icon-arrow-right color-dark" aria-hidden="true"></span>
-             <span class="sr-only">Next</span>
-           </a>
-         </div>
-        </div>
       </div>
     </div>
 
 
-    <!-- Our Achivements -->
+
+
+    
+   
+
+
+
+
+    <!-- Our Achivements
     <div class="container-fluid mt-5 mb-5 pt-5">
       <h4 class="display-4 color-dark text-center">Our Achievements </h4>
       <div class="row mt-5">
@@ -330,58 +350,52 @@
             </div>
         </div>
       </div>
-    </div>
+    </div> -->
 
 
-    <div class="container-fluid mt-5 pt-5 pb-5 text-center bg-main-gradient">
-      <h4 class="display-4 color-white text-center">Join Our Action</h4>
-      <h4 class="ft-34 color-white text-center mb-4 ">Everyone can help !</h4>
-      <button class="btn-main bg-white  color-main mr-5"><a href="./join-us.html" class="color-main">Join Team</a></button>
-      <button class="btn-main bg-none  color-white">Donate Now</button>
-    </div>
+
     <!-- Footer -->
-    <div class="text-center mt-5">
-      <a class="navbar-brand ml-4" href="#">
+    <div class="text-center mt-5 row m-0 justify-content-end">
+      <a class="navbar-brand ml-4 col-lg-4 col-sm-12 " href="#">
         <img src="./img/logo.png" width="250" height="50" alt="BloodConnect Logo">
       </a>
-      <ul class="footer-list d-flex justify-content-center pr-4">
+      <ul class="footer-list d-flex justify-content-start align-items-end pr-4 col-lg-4 col-sm-12">
         <li class="footer-item ml-3 mr-3">
-          <a href="#" class="footer-link"><i class="icon-social-facebook"></i></a>
+          <a href="#" class="footer-link"><i class="fa fa-facebook-f"></i></a>
         </li>
         <li class="footer-item ml-3 mr-3">
-          <a href="#" class="footer-link"><i class="icon-social-linkedin"></i></a>
+          <a href="#" class="footer-link"><i class="fa fa-instagram"></i></a>
         </li>
         <li class="footer-item ml-3 mr-3">
-          <a href="#" class="footer-link"><i class="icon-social-twitter"></i></a>
+          <a href="#" class="footer-link"><i class="fa fa-twitter"></i></a>
         </li>
         <li class="footer-item ml-3 mr-3">
-          <a href="#" class="footer-link"><i class="icon-social-youtube"></i></a>
+          <a href="#" class="footer-link"><i class="fa fa-youtube"></i></a>
         </li>
         <li class="footer-item ml-3 mr-3">
-          <a href="#" class="footer-link"><i class="icon-social-instagram"></i></a>
+          <a href="#" class="footer-link"><i class="fa fa-linkedin"></i></a>
         </li>
       </ul>
-
-      <div class="row m-0 shadow">
-          <div class="col-lg-6 col-sm-12 text-center">
-            <p class="color-grey">&copy; 2020 BloodConnect Foundation</p>
-          </div>
-
-          <div class="col-lg-6 col-sm-12  d-flex">
-            <ul class="footer-list">
-              <li class="footer-item  ml-2 mr-2">
-                <a href="#" class="footer-link color-grey">Home</a>
-              </li>
-              <li class="footer-item  ml-2 mr-2">
-                <a href="#" class="footer-link color-grey">About Us</a>
-              </li>
-              <li class="footer-item  ml-2 mr-2">
-                <a href="#" class="footer-link color-grey">Raise a Request</a>
-              </li>
-            </ul>
-          </div>
-      </div>
     </div>
+    <div class="row m-0 shadow">
+      <div class="col-lg-6 col-sm-12 text-center">
+        <p class="color-grey">&copy; 2020 BloodConnect Foundation</p>
+      </div>
+
+      <div class="col-lg-6 col-sm-12  d-flex">
+        <ul class="footer-list">
+          <li class="footer-item  ml-2 mr-2">
+            <a href="#" class="footer-link color-grey">Home</a>
+          </li>
+          <li class="footer-item  ml-2 mr-2">
+            <a href="#" class="footer-link color-grey">About Us</a>
+          </li>
+          <li class="footer-item  ml-2 mr-2">
+            <a href="#" class="footer-link color-grey">Raise a Request</a>
+          </li>
+        </ul>
+      </div>
+  </div>
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="./js/bootstrap.min.js"></script>
