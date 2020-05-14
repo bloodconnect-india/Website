@@ -1,5 +1,3 @@
-$("#navbarNav").removeClass("show")
-
 
 // For the request form
 var patient_name = ""

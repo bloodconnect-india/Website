@@ -1,6 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600&family=Open+Sans:wght@300;400;600;700&family=Rubik:wght@300;400;500;700&family=Source+Sans+Pro:wght@200;300;400;600;700&display=swap');
 *{
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+}
+button>a{
+    font-weight: 400;
+}
+button,input[type=submit]{
+    font-weight: 400;
+}
+.fw-4{
+    font-weight: 400;
+}
+.fw-4-hover:hover{
+    font-weight: 400;
 }
 .bg-main{
     background :#EB2441 !important;
@@ -102,7 +116,9 @@ button.sponsor{
     color: #fff;
     border: none;
     border-radius: 4px;
+    background-color: #EB2441;
 }
+
 
 .about-list{
     list-style-type: none;
@@ -188,7 +204,7 @@ div.toggler-div>h2>button.collapsed{
     color: #EB2441 !important;
 }
 .form-group>label{
-    font-weight: 500;
+    font-weight: 600;
     font-size: 14px;
 }
 .form-group>label:after{
@@ -299,7 +315,18 @@ button.loading-start svg {
     border-bottom: 2px solid#EB2441;
     top: calc(60%);
 }
-
+.blog-post{
+    width: 250px ;
+}
+.blog-element>img,.blog-element>a>em>img,.blog-element>em>img{
+    width: 100%;
+}
+.blog-content>p.description{
+    word-break: break-all;
+}
+em{
+    font-style: normal !important;
+}
 
 /* Media properties  */
 
