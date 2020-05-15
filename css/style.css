@@ -4,6 +4,9 @@
     font-family: 'Open Sans', sans-serif;
     font-weight: 300;
 }
+.secondary-nav{
+    list-style-type: none;
+}
 button>a{
     font-weight: 400;
 }
@@ -16,6 +19,12 @@ button,input[type=submit]{
 .fw-4-hover:hover{
     font-weight: 400;
 }
+.f-18{
+    font-size: 18px;
+}
+.f-14{
+    font-size: 14px;
+}
 .bg-main{
     background :#EB2441 !important;
 }
@@ -24,6 +33,9 @@ button,input[type=submit]{
 }
 .hide{
     display: none;
+}
+.hide-lg{
+    display: none !important;
 }
 .right-lg{
     float: right;
@@ -81,9 +93,18 @@ button,input[type=submit]{
 .h-100{
     min-height: 100vh !important;
 }
+.h-80{
+    min-height: 80vh !important;
+}
 .border-light{
     border: 1px solid #EB2441 !important;
     border-radius: 8px;
+}
+.br-1{
+    border-right: 1px solid #fff;
+}
+.bl-1{
+    border-left: 1px solid #fff;
 }
 .shadow-hover:hover{
     box-shadow: 4px 4px 25px rgba(0, 0, 0, 0.25);
@@ -320,7 +341,6 @@ button.loading-start svg {
     width: 250px ;
     border-radius: 8px;
     overflow: hidden;
-    max-height: 400px;
 }
 .blog-element>img,.blog-element>a>em>img,.blog-element>em>img{
     width: 100%;
@@ -341,6 +361,9 @@ em{
     }
     .hide-sm{
         display: none !important;
+    }
+    .hide-lg{
+        display: flex !important;
     }
     .w-75-lg{
         width: auto;

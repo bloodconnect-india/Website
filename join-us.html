@@ -14,59 +14,76 @@
 
     <!-- Navbar start here -->
     <!-- Just an image -->
-    <nav class="navbar justify-content-center-sm">
-        <a class="navbar-brand" href="#">
-            <img src="./img/logo.png" width="250" height="50" alt="BloodConnect Logo">
-        </a>
-        <ul class="navbar-nav flex-row-reverse">
+    <!-- Navbar -->
+    <nav class="navbar justify-content-center-sm ">
+      <a class="navbar-brand" href="./index.html">
+          <img src="./img/logo.png" width="250" height="50" alt="BloodConnect Logo">
+      </a>
+      <ul class="navbar-nav flex-column">
+          <li class="pl-2 pr-2 text-right">
+              <a class="nav-link color-dark" href="#"><i class="fa fa-gmail"></i>  contact@bloodconnet.org</a>
+          </li>
+          <ul class="secondary-nav d-flex flex-row hide-sm">
             <li class="pl-2 pr-2">
-                <a class="nav-link color-dark" href="#"><i class="icon-envelope"></i>  contact@bloodconnet.org</a>
+              <a href="./index.html" class="color-dark fw-4">Home</a>
             </li>
-        </ul>
-    </nav>
-    
-    <nav class="navbar navbar-expand-lg navbar-light bg-white">
+            <li class="pl-2 pr-2">
+              <a href="./about-us.html" class="color-dark fw-4">About Us</a>
+            </li>
+            <li class="pl-2 pr-2">
+              <a href="./our-team.html" class="color-dark fw-4">Our Team</a>
+            </li>
+            <li class="pl-2 pr-2">
+              <a href="./resources.html" class="color-dark fw-4">Resources</a>
+            </li>
+            <li class="pl-2 pr-2">
+              <a href="./contact-us.html" class="color-dark fw-4">Contact Us</a>
+            </li>
+          </ul>
+      </ul>
+  </nav>
+  
+  <nav class="navbar navbar-expand-lg navbar-light bg-white p-0">
 
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse justify-content-between" id="navbarNav">
-            <ul class="navbar-nav ">
-              <li class="nav-item pl-2 pr-2 ">
-                <a class="nav-link" href="./index.html">Home</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="aboutDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  About
-                </a>
-                <div class="dropdown-menu" aria-labelledby="aboutDropdown">
-                  <a class="dropdown-item" href="./about-us.html">About Us</a>
-                  <a class="dropdown-item" href="./our-team.html">Our Team</a>
-                </div>
-              </li>
-              <li class="nav-item pl-2 pr-2">
-                <a class="nav-link" href="./raise-a-request.html">Raise a Request</a>
-              </li>
-              <li class="nav-item dropdown active">
-                <a class="nav-link dropdown-toggle" href="#" id="getInvolvedDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  Get Involved
-                </a>
-                <div class="dropdown-menu" aria-labelledby="getInvolvedDropdown">
-                  <a class="dropdown-item" href="./join-us.html">Join Us</a>
-                  <a class="dropdown-item" href="./organize-a-camp.html">Organize a Camp</a>
-                  <a class="dropdown-item" href="./organize-an-awareness.html">Organize an Awareness Session</a>
-                </div>
-              </li>
-              <li class="nav-item pl-2 pr-2 ">
-                <a class="nav-link" href="./resources.html">Resources</a>
-              </li>
-              <li class="nav-item pl-2 pr-2 ">
-                <a class="nav-link" href="./contact-us.html">Contact Us</a>
-              </li>
-            </ul>
-                <button class="sponsor bg-main-gradient">Sponsor Us</button>
-          </div>
-    </nav>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-center flex-column" id="navbarNav">
+
+          <ul class="w-100 navbar-nav pt-2 pb-2 d-flex justify-content-center bg-main">
+            <li class="nav-item pl-5 pr-5  bg-main ">
+              <a class="nav-link color-white fw-4 " href="./raise-a-request.html">Raise a Request</a>
+            </li>
+            <li class="nav-item pl-5 pr-5  bg-main bl-1">
+              <a class="nav-link color-white fw-4 " href="./organize-a-camp.html">Organize a Camp</a>
+            </li>
+            <li class="nav-item pl-5 pr-5  bg-main bl-1">
+              <a class="nav-link color-white fw-4 " href="./sponsor.html">Sponsor</a>
+            </li>
+            <li class="nav-item pl-5 pr-5  bg-main bl-1">
+              <a class="nav-link color-white fw-4 " href="./join-us.html">Join Us</a>
+            </li>
+          </ul>
+          <ul class="w-100 navbar-nav pt-2 pb-2 d-flex bg-white justify-content-center hide-lg">
+            <li class="nav-item pl-5 pr-5 bg-white">
+              <a href="./index.html" class="nav-link color-dark fw-4">Home</a>
+            </li>
+            <li class="nav-item pl-5 pr-5 bg-white">
+              <a href="./about-us.html" class="nav-link color-dark fw-4">About Us</a>
+            </li>
+            <li class="nav-item pl-5 pr-5 bg-white">
+              <a href="./our-team.html" class="nav-link color-dark fw-4">Our Team</a>
+            </li>
+            <li class="nav-item pl-5 pr-5 bg-white">
+              <a href="./resources.html" class="nav-link color-dark fw-4">Resources</a>
+            </li>
+            <li class="nav-item pl-5 pr-5 bg-white">
+              <a href="./contact-us.html" class="color-dark fw-4">Contact Us</a>
+            </li>
+          </ul>
+              
+        </div>
+  </nav>
     
 
     <!-- Main Content Starts here -->
@@ -122,47 +139,65 @@
           <iframe class="google-form" src="https://docs.google.com/forms/d/1brtRz8f8I16TOckZC0UUBi4NwQaYgjafRPyPqAJhSoM/viewform?embedded=true#start=embed"  frameborder="0"></iframe>
       </div>
     <!-- Footer -->
-    <div class="text-center mt-5">
-    <a class="navbar-brand ml-4" href="#">
+    <div class="text-center mt-5 row m-0 justify-content-end">
+      <a class="navbar-brand ml-4 col-lg-4 col-sm-12 " href="#">
         <img src="./img/logo.png" width="250" height="50" alt="BloodConnect Logo">
-    </a>
-    <ul class="footer-list d-flex justify-content-center pr-4">
+      </a>
+      <ul class="footer-list d-flex justify-content-start align-items-end pr-4 col-lg-4 col-sm-12">
         <li class="footer-item ml-3 mr-3">
-        <a href="#" class="footer-link"><i class="icon-social-facebook"></i></a>
+          <a href="#" class="footer-link"><i class="fa fa-facebook-f"></i></a>
         </li>
         <li class="footer-item ml-3 mr-3">
-        <a href="#" class="footer-link"><i class="icon-social-linkedin"></i></a>
+          <a href="#" class="footer-link"><i class="fa fa-instagram"></i></a>
         </li>
         <li class="footer-item ml-3 mr-3">
-        <a href="#" class="footer-link"><i class="icon-social-twitter"></i></a>
+          <a href="#" class="footer-link"><i class="fa fa-twitter"></i></a>
         </li>
         <li class="footer-item ml-3 mr-3">
-        <a href="#" class="footer-link"><i class="icon-social-youtube"></i></a>
+          <a href="#" class="footer-link"><i class="fa fa-youtube"></i></a>
         </li>
         <li class="footer-item ml-3 mr-3">
-        <a href="#" class="footer-link"><i class="icon-social-instagram"></i></a>
+          <a href="#" class="footer-link"><i class="fa fa-linkedin"></i></a>
         </li>
-    </ul>
-
-    <div class="row m-0 shadow">
-        <div class="col-lg-6 col-sm-12 text-center">
-            <p class="color-grey">&copy; 2020 BloodConnect Foundation</p>
-        </div>
-
-        <div class="col-lg-6 col-sm-12  d-flex">
-            <ul class="footer-list">
-            <li class="footer-item  ml-2 mr-2">
-                <a href="#" class="footer-link color-grey">Home</a>
-            </li>
-            <li class="footer-item  ml-2 mr-2">
-                <a href="#" class="footer-link color-grey">About Us</a>
-            </li>
-            <li class="footer-item  ml-2 mr-2">
-                <a href="#" class="footer-link color-grey">Raise a Request</a>
-            </li>
-            </ul>
-        </div>
+      </ul>
     </div>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-2 mx-auto col-sm-12 col-md-6 ">
+          <p class="color-dark fw-4">Navigation</p>
+          <p class="mb-1"><a class="color-grey fw-4-hover" href="./index.html">Home</a></p>
+          <p class="mb-1"><a class="color-grey fw-4-hover" href="./about-us.html">About Us</a></p>
+          <p class="mb-1"><a class="color-grey fw-4-hover" href="./organize-a-camp.html">Organize a Camp</a></p>
+          <p class="mb-1"><a class="color-grey fw-4-hover" href="./raise-a-request.html">Raise a Request</a></p>
+        </div>
+        <div class="col-lg-2 mx-auto col-sm-12 col-md-6 ">
+          <p class="color-dark fw-4">Raise a Request in</p>
+          <p class="mb-1"><a class="color-grey fw-4-hover" href="./raise-a-request.html#City_Region=Delhi"> Delhi</a></p>
+          <p class="mb-1"><a class="color-grey fw-4-hover" href="./raise-a-request.html#City_Region=Kanpur"> Kanpur</a></p>
+          <p class="mb-1"><a class="color-grey fw-4-hover" href="./raise-a-request.html#City_Region=Lucknow"> Lucknow</a></p>
+          <p class="mb-1"><a class="color-grey fw-4-hover" href="./raise-a-request.html#City_Region=Agra"> Agra</a></p>
+        </div>
+        <div class="col-lg-2 mx-auto col-sm-12 col-md-6 ">
+          <p class="color-dark fw-4">Organize a Camp in</p>
+          <p class="mb-1"><a class="color-grey fw-4-hover" href="./organize-a-camp.html#City_Region=Delhi"> Delhi</a></p>
+          <p class="mb-1"><a class="color-grey fw-4-hover" href="./organize-a-camp.html#City_Region=Kanpur"> Kanpur</a></p>
+          <p class="mb-1"><a class="color-grey fw-4-hover" href="./organize-a-camp.html#City_Region=Lucknow"> Lucknow</a></p>
+          <p class="mb-1"><a class="color-grey fw-4-hover" href="./organize-a-camp.html#City_Region=Agra"> Agra</a></p>
+        </div>
+        <div class="col-lg-2 mx-auto col-sm-12 col-md-6 ">
+          <p class="color-dark fw-4">External Links</p>
+          <p class="color-grey mb-1">Link 1</p>
+          <p class="color-grey mb-1">Link 2</p>
+          <p class="color-grey mb-1">Link 3</p>
+          <p class="color-grey mb-1">Link 4</p>
+        </div>
+      </div>
+    </div>
+    <div class="row m-0 mt-2 shadow">
+      <div class="col-lg-6 col-sm-12 mx-auto text-center">
+        <p class="color-grey f-14">&copy; 2020 BloodConnect Foundation</p>
+      </div>
     </div>
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>

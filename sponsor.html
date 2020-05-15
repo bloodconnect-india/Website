@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="./css/svg-animate.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     
-    <title>Create Request | BloodConnect</title>
+    <title>Sponsor Us | BloodConnect</title>
     <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon">
 </head>
 <body>
@@ -87,150 +87,10 @@
   </nav>
     
 
-    <div class="h-100 " >
-      <div class="success-modal pl-4 pr-4 pb-4  shadow bg-white hide" id="success-modal">
-        <div class="svg-box">
-          <svg class="circular green-stroke">
-              <circle class="path" cx="75" cy="75" r="50" fill="none" stroke-width="5" stroke-miterlimit="10"/>
-          </svg>
-          <svg class="checkmark green-stroke">
-              <g transform="matrix(0.79961,8.65821e-32,8.39584e-32,0.79961,-489.57,-205.679)">
-                  <path class="checkmark__check" fill="none" d="M616.306,283.025L634.087,300.805L673.361,261.53"/>
-              </g>
-          </svg>
-      </div>
-      <p class="success">Request raised successfully</p>
-      </div>
-      <div class="row m-0 ">
-        <div class="col-lg-5 d-flex flex-column justify-content-center hide-sm bg-main">
-          <p class=" w-75 mx-auto color-white">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nobis re</p>
-          <p class=" w-75 mx-auto color-white">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nobis re</p>
-          <p class=" w-75 mx-auto color-white">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nobis re</p>
-
-        </div>
-
-        <!-- Form -->
-        <div class="col-lg-7 h-100">
-
-          <!-- Personal details div -->
-          <div class="personal-details p-5" id="personal-details">
-          <h4 class="color-dark">Create Request</h4>
-          <p class="color-grey mt-3 ">Fill this form and a volunteer would be in touch with you soon</p>    
-        <form action="" class="request-form" onsubmit="submitRequest(event)">
-          <div class="d-flex justify-content-between flex-column-sm">
-            <div class="form-group mb-4">
-              <label class="m-0   color-dark" for="patientName">Patient Name</label>
-              <input type="text" class="form-control" id="patient_name" placeholder="Patient Name" required>
-            </div>
-            <div class="form-group mb-4">
-              <label class="m-0   color-dark" for="your_name">Your Name</label>
-              <input type="text" class="form-control" id="your_name" placeholder="Your Name" required>
-            </div>
-          </div>
-          <div class="form-group mb-4">
-            <label class="m-0   color-dark" for="email">Email address</label>
-            <input  type="email" class="form-control" placeholder="example@domain.com" id="email" required>
-          </div>
-          <div class="form-group mb-4">
-            <label class="m-0   color-dark" for="phone_number">Phone Number</label>
-            <input  type="number" class="form-control" placeholder="9999xxxxxx" id="phone_number" required>
-          </div>
-
-          <div class="d-flex justify-content-between flex-column-sm">
-            <div class="form-group mb-4">
-              <label class="m-0  color-dark" for="units">Units Required</label>
-              <input type="number" class="form-control" id="units" placeholder="Units Required" value="1"/>
-            </div>
-            <div class="form-group mb-4">
-              <label class="m-0  color-dark" for="bg">Blood Group Required</label>
-              <select class="form-control" name="bg" id="bg">
-                <option value="A+">A+</option>
-                <option value="B+">B+</option>
-                <option value="AB+">AB+</option>
-                <option value="O+">O+</option>
-                <option value="A-">A-</option>
-                <option value="B-">B-</option>
-                <option value="AB-">AB-</option>
-                <option value="O-">O-</option>
-                <option value="Any">Any</option>
-              </select>
-            </div>
-            <div class="form-group mb-4">
-              <label class="m-0  color-dark" for="requirement">Requirement</label>
-              <select class="form-control" name="requirement" id="requirement">
-                <option value="Blood" >Blood</option>
-                <option value="Platelets">Platelets</option>
-              </select>
-            </div>
-          </div>
-
-
-          <div class="form-group mb-4">
-            <label class="m-0   color-dark" for="hospital">Hospital Name</label>
-            <input  type="text" class="form-control" placeholder="Hospital Name" id="hospital" >
-          </div>
-          <div class="form-group mb-4">
-            <label class="m-0   color-dark" for="city_region">City Region</label>
-            <select name="city_region" id="city_region" required>
-              <option value="Agra">Agra</option>
-              <option value="Delhi">Delhi</option>
-              <option value="Jaipur">Jaipur</option>
-              <option value="Kanpur">Kanpur</option>
-              <option value="Kolkata">Kolkata</option>
-              <option value="Lucknow">Lucknow</option>
-              <option value="Pune">Pune</option>
-              <option value="Varanasi">Varanasi</option>
-              <option value="Bhubaneswar">Bhubaneswar</option>
-              <option value="Odisha(OR)">Odisha(OR)</option>
-              <option value="Other">Other</option>
-            </select>
-          </div>
-          <div class="navigation-buttons inline text-center-sm">
-            <input type="submit" class="pl-5 pr-5 right-lg mb-4 mx-auto btn-main bg-main" value="Submit" />
-          </div>
-        </form>
-        
-          </div>
-      
-
-
-          <!-- Additional Details -->
-          <div class="additional-request-details p-5 hide" id="additional-details">
-            <form action="" class="request-form" onsubmit="submitAdditionalDetails(event)">
-            
-            <div class="form-group mb-4">
-              <label class="m-0   color-dark" for="details">Additional Details</label>
-              <textarea name="details" id="details" cols="20" rows="3"></textarea>
-            </div>
-            <div class="form-group mb-4">
-              <label class="m-0   color-dark" for="address">Your Address</label>
-              <textarea name="address" id="address" cols="20" rows="3"></textarea>
-            </div>
-            <div class="navigation-buttons inline text-center-sm">
-              <button type="button" class="pl-5 pr-5 mb-4 btn-main color-main bg-white " onclick="showMainDetailsDiv()">Back</button>
-            <!-- <input type="submit" class="pl-5 pr-5 right-lg btn-main bg-main" value="Next" /> -->
-            <button id="submit-request-button" class="pl-5 pr-5 right-lg btn-main bg-main" type="submit">
-              <span>Submit</span>
-              <!-- Loading animation -->
-              <svg version="1.1" id="loader-1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                width="40px" height="40px" viewBox="0 0 50 50" style="enable-background:new 0 0 50 50;" xml:space="preserve">
-              <path fill="#000" d="M25.251,6.461c-10.318,0-18.683,8.365-18.683,18.683h4.068c0-8.071,6.543-14.615,14.615-14.615V6.461z">
-                <animateTransform attributeType="xml"
-                  attributeName="transform"
-                  type="rotate"
-                  from="0 25 25"
-                  to="360 25 25"
-                  dur="0.6s"
-                  repeatCount="indefinite"/>
-                </path>
-              </svg>
-            </button>
-            </div>
-          </form>
-          
-          </div> 
-        </div>
-      </div>
+    <div class="h-100 d-flex align-items-center justify-content-center" >
+      <h1 class="display-4 fw-4 text-center">
+        Coming Soon
+      </h1>
     </div>
   
 
