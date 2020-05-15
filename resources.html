@@ -6,9 +6,26 @@
     <link rel="stylesheet" href="./css/bootstrap.min.css">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/skeleton.css">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>About Blood | BloodConnect</title>
     <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon">
+    <style>
+      .slick-prev{
+        left: 0px !important;
+        
+        z-index: 100;
+      }
+      .slick-next{
+        right: 0px !important;
+        
+        z-index: 100 ;
+      }
+      .slick-prev::before,.slick-next::before{
+        color: #000 !important;
+      }
+    </style>
 </head>
 <body>
     <!-- Navbar -->
@@ -33,14 +50,13 @@
               <li class="nav-item pl-2 pr-2">
                 <a class="nav-link" href="./index.html">Home</a>
               </li>
-              <li class="nav-item dropdown active">
+              <li class="nav-item dropdown ">
                 <a class="nav-link dropdown-toggle" href="#" id="aboutDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                   About
                 </a>
                 <div class="dropdown-menu" aria-labelledby="aboutDropdown">
                   <a class="dropdown-item" href="./about-us.html">About Us</a>
                   <a class="dropdown-item" href="./our-team.html">Our Team</a>
-                  <a class="dropdown-item" href="./about-blood.html">About Blood</a>
                 </div>
               </li>
               <li class="nav-item pl-2 pr-2">
@@ -56,7 +72,9 @@
                   <a class="dropdown-item" href="./organize-an-awareness.html">Organize an Awareness Session</a>
                 </div>
               </li>
-              
+              <li class="nav-item pl-2 pr-2 active">
+                <a class="nav-link" href="./resources.html">Resources</a>
+              </li>
               <li class="nav-item pl-2 pr-2">
                 <a class="nav-link" href="./contact-us.html">Contact Us</a>
               </li>
@@ -108,8 +126,10 @@
      </div>
     </div>
 
-      <div id="jsonContent" class="row m-0">
-
+    <!-- Carousel -->
+    <h4 class="m-5 color-dark display-4">Our Posts</h4>
+      <div class="slider" data-slick='{"slidesToShow": 4, "slidesToScroll": 1}' id="carousel">
+        
       </div>
     <!-- Footer -->
     <div class="text-center mt-5 row m-0 justify-content-end">
@@ -135,7 +155,7 @@
       </ul>
     </div>
 
-    <div class="container">
+    <div class="container-fluid">
       <div class="row">
         <div class="col-lg-3 col-sm-12 col-md-6 ">
           <p class="color-dark fw-4">Navigation</p>
@@ -187,8 +207,41 @@
       </div>
     </div>
     <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script><script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-<script src="./js/bootstrap.min.js"></script>
-<script src="./js/dateFormat.js"></script>
-<script src="./js/medium.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="./js/medium.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script>
+      $(".slider").slick({
+
+      // normal options...
+      infinite: true,
+      autoplay: true,
+      autoplaySpeed: 2000,
+      loop: true,  
+      // the magic
+      responsive: [{
+
+          breakpoint: 1024,
+          settings: {
+            slidesToShow: 3,
+            infinite: true
+          }
+
+        }, {
+
+          breakpoint: 600,
+          settings: {
+            slidesToShow: 2,
+            dots: true
+          }
+
+        }, {
+
+          breakpoint: 300,
+          settings: "unslick" // destroys slick
+
+        }]
+      });
+    </script>
 </body>
 </html>

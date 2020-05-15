@@ -162,6 +162,7 @@ button.sponsor{
 }
 .footer-link{
     color: #EB2441;
+    font-size: 18px;
 }
 
 .footer-link:hover{
@@ -317,9 +318,13 @@ button.loading-start svg {
 }
 .blog-post{
     width: 250px ;
+    border-radius: 8px;
+    overflow: hidden;
+    max-height: 400px;
 }
 .blog-element>img,.blog-element>a>em>img,.blog-element>em>img{
     width: 100%;
+    height: 200px;
 }
 .blog-content>p.description{
     word-break: break-all;

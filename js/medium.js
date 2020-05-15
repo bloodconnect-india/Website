@@ -1,6 +1,6 @@
 $(function () {
-    var $content = $('#jsonContent');
-    var data = {rss_url: 'https://medium.com/feed/@traversymedia'};
+    // var $content = $('#jsonContent');
+    var data = {rss_url: 'https://medium.com/feed/@googledevs'};
     $.get('https://api.rss2json.com/v1/api.json', data, 
     function (response) {
         if (response.status == 'ok') {
@@ -10,9 +10,9 @@ $(function () {
                  function (k, item) {
                      var visibleSm = '';
                      if(item.content.length > 300) {
-                        output += '<div class="col-lg-3 col-sm-6 col-md-4 col-sm-12 p-0 mb-4  mx-auto ' + visibleSm + '">';
+                        output += '<div class=" p-0 mb-4  mx-auto ' + visibleSm + '">';
                         output += '<div class="blog-post mx-auto shadow pb-2"><header>';
-                        output += '<h4 class="date hide">' + $.format.date(item.pubDate, "dd MMM") + "</h4>";
+                        //output += '<h4 class="date hide">' + $.format.date(item.pubDate, "dd MMM") + "</h4>";
                         var tagIndex = item.description.indexOf('<img'); // Find where the img tag starts
                         var srcIndex = item.description.substring(tagIndex).indexOf('src=') + tagIndex; // Find where the src attribute starts
                         var srcStart = srcIndex + 5; // Find where the actual image URL starts; 5 for the length of 'src="'
@@ -26,7 +26,7 @@ $(function () {
                         output += '<div class="post-meta hide"><span>By ' + item.author + '</span></div>';
                         var yourString = item.description.replace(/<img[^>]*>/g,"");
                         yourString = stripHtml(yourString)
-                        var maxLength = 120 // maximum number of characters to extract
+                        var maxLength = 60 // maximum number of characters to extract
                         //trim the string to the maximum length
                         var trimmedString = yourString.substr(0, maxLength);//re-trim if we are in the middle of a word
                         trimmedString = trimmedString.substr(0, Math.min(trimmedString.length, trimmedString.lastIndexOf(" ")))
@@ -34,13 +34,12 @@ $(function () {
                         output += '<a class="color-main" href="'+item.link+'">Read More</a>'
                         output += '</div></div></div></div>';
                         count = count + 1;
-                        console.log(yourString)
-                        console.log(stripHtml(yourString))
-                        return count < 4;
+                        return count < 8;
                      }
                     });
                     $("#skeleton-screen").hide()
-                    $content.html(output);
+                    // $content.html(output);
+                    $('#carousel').slick('slickAdd',output);
                 }});
             });
 
