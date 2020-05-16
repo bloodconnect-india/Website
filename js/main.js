@@ -1,5 +1,5 @@
 $('.carousel').carousel()
-$('.collapse').collapse()
+
 
 
 

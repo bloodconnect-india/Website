@@ -186,49 +186,28 @@
             </select>
           </div>
           <div class="navigation-buttons inline text-center-sm">
-            <input type="submit" class="pl-5 pr-5 right-lg mb-4 mx-auto btn-main bg-main" value="Submit" />
+            <button type="submit" id="submit-request-button" class="pl-5 pr-5 right-lg mb-4 mx-auto btn-main bg-main" value="Submit" >
+              <p class="color-white m-0 fw-4">Submit</p>
+              <!-- Animation -->
+              <svg version="1.1" id="L9" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                viewBox="0 0 100 100" enable-background="new 0 0 0 0" xml:space="preserve">
+                  <path fill="#fff" d="M73,50c0-12.7-10.3-23-23-23S27,37.3,27,50 M30.9,50c0-10.5,8.5-19.1,19.1-19.1S69.1,39.5,69.1,50">
+                    <animateTransform 
+                      attributeName="transform" 
+                      attributeType="XML" 
+                      type="rotate"
+                      dur="1s" 
+                      from="0 50 50"
+                      to="360 50 50" 
+                      repeatCount="indefinite" />
+                </path>
+              </svg>
+            </button>
           </div>
         </form>
         
           </div>
-      
-
-
-          <!-- Additional Details -->
-          <div class="additional-request-details p-5 hide" id="additional-details">
-            <form action="" class="request-form" onsubmit="submitAdditionalDetails(event)">
-            
-            <div class="form-group mb-4">
-              <label class="m-0   color-dark" for="details">Additional Details</label>
-              <textarea name="details" id="details" cols="20" rows="3"></textarea>
-            </div>
-            <div class="form-group mb-4">
-              <label class="m-0   color-dark" for="address">Your Address</label>
-              <textarea name="address" id="address" cols="20" rows="3"></textarea>
-            </div>
-            <div class="navigation-buttons inline text-center-sm">
-              <button type="button" class="pl-5 pr-5 mb-4 btn-main color-main bg-white " onclick="showMainDetailsDiv()">Back</button>
-            <!-- <input type="submit" class="pl-5 pr-5 right-lg btn-main bg-main" value="Next" /> -->
-            <button id="submit-request-button" class="pl-5 pr-5 right-lg btn-main bg-main" type="submit">
-              <span>Submit</span>
-              <!-- Loading animation -->
-              <svg version="1.1" id="loader-1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                width="40px" height="40px" viewBox="0 0 50 50" style="enable-background:new 0 0 50 50;" xml:space="preserve">
-              <path fill="#000" d="M25.251,6.461c-10.318,0-18.683,8.365-18.683,18.683h4.068c0-8.071,6.543-14.615,14.615-14.615V6.461z">
-                <animateTransform attributeType="xml"
-                  attributeName="transform"
-                  type="rotate"
-                  from="0 25 25"
-                  to="360 25 25"
-                  dur="0.6s"
-                  repeatCount="indefinite"/>
-                </path>
-              </svg>
-            </button>
-            </div>
-          </form>
-          
-          </div> 
+    
         </div>
       </div>
     </div>

@@ -11,60 +11,26 @@ var bg = ""
 var city = ""
 var additional = ""
 var address = ""
+var requirement = " "
 
 
 // Hiding the modal 
 $("#success-modal").hide()
-submitPersonalDetails = (e) => {
+submitRequest = (e) => {
     e.preventDefault()
-    $("#personal-details").addClass("hide")
-    $("#main-details").removeClass("hide")
-    $("#response-rate").hide()
-    $("#request-img").attr("src","./img/rocket.png")
-
+    $("#submit-request-button").addClass("loading-start")
     patient_name = $("#patient_name").val()
     name = $("#your_name").val()
     phone_number = $("#phone_number").val()
     email = $("#email").val()
-}
-submitMainDetails = (e) => {
-    e.preventDefault()
-    $("#main-details").addClass("hide")
-    $("#additional-details").removeClass("hide")
-
-    date = $("#date").val()
     unit = $("#units").val()
     bg = $("#bg").val()
     hospital = $("#hospital").val()
-
-}
-submitAdditionalDetails = (e) => {
-    e.preventDefault()
-    $("#submit-request-button").addClass("loading-start")
+    requirement = $("#requirement").val()
     city = $("#city_region").val()
-    additional = $("#details").val()
-    address = $("#address").val()
     this.createHelplineRequest()
 }
 
-
-
-
-// Showing and hiding of div
-showPersonalDiv = () => {
-    console.log("showing personal details")
-    $("#main-details").addClass("hide")
-    $("#personal-details").removeClass("hide")
-    $("#additional-details").addClass("hide")
-    $("#response-rate").show()
-    $("#request-img").attr("src","./img/growth1.png")
-}
-
-showMainDetailsDiv = () => {
-    console.log("Showing main div")
-    $("#additional-details").addClass("hide")
-    $("#main-details").removeClass("hide")
-}
 
 
 createHelplineRequest = () => {
@@ -79,8 +45,6 @@ createHelplineRequest = () => {
         'Units_Required' : parseInt(unit),
         'Contact_Number': phone_number,
         'Blood_Group_Required': bg,
-        'Additional_Details': additional,
-        'Date_When_Required': date,
         'Hospital': hospital,
         'Status': "Open"
     }
