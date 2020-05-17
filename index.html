@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/bootstrap.min.css">
     <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/css/simple-line-icons.css">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <!-- Meta tags -->
@@ -18,35 +19,51 @@
     <!-- Navbar start here -->
     <!-- Just an image -->
     <!-- Navbar -->
-  <nav class="navbar justify-content-center-sm ">
+  <nav class="navbar justify-content-center-sm pb-0">
       <a class="navbar-brand" href="#">
           <img src="./img/logo.png" width="250" height="50" alt="BloodConnect Logo">
       </a>
       <ul class="navbar-nav flex-column">
           <li class="pl-2 pr-2 text-right">
-              <a class="nav-link color-dark" href="#"><i class="fa fa-gmail"></i>  contact@bloodconnet.org</a>
+            <ul class="navbar-nav d-flex flex-row justify-content-end  pr-4 ">
+              <li class="footer-item ml-2 mr-3">
+                <a href="#" class="footer-link"><i class="fa fa-facebook-f"></i></a>
+              </li>
+              <li class="footer-item ml-2 mr-3">
+                <a href="#" class="footer-link"><i class="fa fa-instagram"></i></a>
+              </li>
+              <li class="footer-item ml-2 mr-3">
+                <a href="#" class="footer-link"><i class="fa fa-envelope"></i></a>
+              </li>
+              <li class="footer-item ml-2 mr-3">
+                <a href="#" class="footer-link"><i class="fa fa-youtube"></i></a>
+              </li>
+              <li class="footer-item ml-2 mr-3">
+                <a href="#" class="footer-link"><i class="fa fa-linkedin"></i></a>
+              </li>
+            </ul>
           </li>
-          <ul class="secondary-nav d-flex flex-row hide-sm">
+          <ul class="secondary-nav d-flex flex-row hide-md">
             <li class="pl-2 pr-2">
-              <a href="./index.html" class="color-dark fw-4">Home</a>
+              <a href="./index.html" class="color-dark f-14 fw-4">HOME</a>
             </li>
             <li class="pl-2 pr-2">
-              <a href="./about-us.html" class="color-dark fw-4">About Us</a>
+              <a href="./about-us.html" class="color-dark f-14 fw-4">ABOUT US</a>
             </li>
             <li class="pl-2 pr-2">
-              <a href="./our-team.html" class="color-dark fw-4">Our Team</a>
+              <a href="./our-team.html" class="color-dark f-14 fw-4">OUR TEAM</a>
             </li>
             <li class="pl-2 pr-2">
-              <a href="./resources.html" class="color-dark fw-4">Resources</a>
+              <a href="./resources.html" class="color-dark f-14 fw-4">RESOURCES</a>
             </li>
             <li class="pl-2 pr-2">
-              <a href="./contact-us.html" class="color-dark fw-4">Contact Us</a>
+              <a href="./contact-us.html" class="color-dark f-14 fw-4">CONTACT US</a>
             </li>
           </ul>
       </ul>
   </nav>
   
-  <nav class="navbar navbar-expand-lg navbar-light bg-white p-0">
+  <nav class="navbar navbar-expand-md navbar-light bg-white p-0">
 
       <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <i class="fa fa-bars"></i>
@@ -55,33 +72,33 @@
 
           <ul class="w-100 navbar-nav pt-2 pb-2 d-flex justify-content-center bg-main">
             <li class="nav-item pl-5 pr-5  bg-main ">
-              <a class="nav-link color-white fw-4 " href="./raise-a-request.html">Raise a Request</a>
+              <a class="nav-link color-white fw-4 " href="./raise-a-request.html">RAISE A REQUEST</a>
             </li>
             <li class="nav-item pl-5 pr-5  bg-main bl-1">
-              <a class="nav-link color-white fw-4 " href="./organize-a-camp.html">Organize a Camp</a>
+              <a class="nav-link color-white fw-4 " href="./organize-a-camp.html">ORGANIZE A CAMP</a>
             </li>
             <li class="nav-item pl-5 pr-5  bg-main bl-1">
-              <a class="nav-link color-white fw-4 " href="./sponsor.html">Sponsor</a>
+              <a class="nav-link color-white fw-4 " href="./sponsor.html">SPONSOR US</a>
             </li>
             <li class="nav-item pl-5 pr-5  bg-main bl-1">
-              <a class="nav-link color-white fw-4 " href="./join-us.html">Join Us</a>
+              <a class="nav-link color-white fw-4 " href="./join-us.html">JOIN US</a>
             </li>
           </ul>
-          <ul class="w-100 navbar-nav pt-2 pb-2 d-flex bg-white justify-content-center hide-lg">
+          <ul class="w-100 navbar-nav pt-2 pb-2 d-flex bg-white justify-content-center hide-lg show-md">
             <li class="nav-item pl-5 pr-5 bg-white">
-              <a href="./index.html" class="nav-link color-dark fw-4">Home</a>
+              <a href="./index.html" class="nav-link color-dark fw-4">HOME</a>
             </li>
             <li class="nav-item pl-5 pr-5 bg-white">
-              <a href="./about-us.html" class="nav-link color-dark fw-4">About Us</a>
+              <a href="./about-us.html" class="nav-link color-dark fw-4">ABOUT US</a>
             </li>
             <li class="nav-item pl-5 pr-5 bg-white">
-              <a href="./our-team.html" class="nav-link color-dark fw-4">Our Team</a>
+              <a href="./our-team.html" class="nav-link color-dark fw-4">OUR TEAM</a>
             </li>
             <li class="nav-item pl-5 pr-5 bg-white">
-              <a href="./resources.html" class="nav-link color-dark fw-4">Resources</a>
+              <a href="./resources.html" class="nav-link color-dark fw-4">RESOURCES</a>
             </li>
             <li class="nav-item pl-5 pr-5 bg-white">
-              <a href="./contact-us.html" class="color-dark fw-4">Contact Us</a>
+              <a href="./contact-us.html" class="color-dark fw-4">CONTACT US</a>
             </li>
           </ul>
               
@@ -90,7 +107,7 @@
 
 
     <!-- Top div -->
-    <div class="container d-flex align-items-center justify-content-end mb-5 h-80" >
+    <!-- <div class="container d-flex align-items-center justify-content-end mb-5 h-80" >
       <div class="row">
         <div class="col-lg-6 col-sm-12 col-md-6">
           <img class="contain-img" src="./img/BloodDonate.png" alt="">
@@ -105,17 +122,35 @@
         </div>
       </div>
 
-    </div>
+    </div> -->
 
-    <!-- Blood Shortage graph -->
-    <div class="row bg-main pt-5 pl-5 pr-5 pb-2 m-0 justify-content-between">
-      <div class="col-lg-6 col-sm-12 pt-4">
-        <h4 class="ft-44 color-white">Together We</h4>
-        <h4 class="ft-34 color-white">Overcome Blood Shortage</h4>
+    <div class="container-fluid h-80 mb-5  pl-0 pr-0">
+      <div class="main-slider" data-slick='{"slidesToShow": 1, "slidesToScroll": 1}' >
+        <div class="relative">
+          <img class="fit-img" src="./img/homepage/carousel-1/1.jpg" alt="" srcset="">
+          <div class="d-flex absolute flex-column justify-content-center align-items-center w-100 h-80 tagline">
+            <h4 class="display-3 text-center color-white">Donate Blood</h4>
+            <h4 class="display-4 color-white">Save Lives</h4>
+            <div class="d-flex mt-2">
+              <button class="shadow btn-main bg-main mr-2">Donate Blood</button>
+              <button class=" btn-main color-main bg-white ml-2">Raise A Request</button>
+            </div>
+          </div>
+        </div>
+        <div class="relative">
+          <img class="fit-img" src="./img/homepage/carousel-1/2.jpg" alt="" srcset="">
+          <div class="d-flex absolute flex-column justify-content-center align-items-center w-100 h-80 tagline">
+            <h4 class="display-3 text-center color-main">Donate Blood</h4>
+            <h4 class="display-4 color-white">Save Lives</h4>
+            <div class="d-flex mt-2">
+              <button class="shadow btn-main bg-main mr-2">Donate Blood</button>
+              <button class=" btn-main color-main bg-white ml-2">Raise A Request</button>
+            </div>
+          </div>
+        </div>
       </div>
-      <img class="col-lg-6 col-sm-12" src="./img/graph-decreasing.svg" width="auto" alt="">
-
     </div>
+
 
     <!-- Our Story in brief -->
     <div class="container d-flex align-items-center justify-content-end img-left" >
@@ -135,6 +170,7 @@
 
     <!-- Our work in brief -->
     <div class="row m-0 mt-5">
+      <h4 class="color-dark display-4 col-lg-12 text-center mb-5 fw-4">What we do ?</h4>
       <div class=" shadow-hover pt-4 pb-4 col-lg-3 col-md-6 col-sm-10 mx-auto text-center">
         <img class="card-img" src="./img/homepage/calender-light.png" width="150px" alt="calender" srcset="">
         <h4 class="color-dark mt-2">Organizing Camps</h4>
@@ -143,119 +179,170 @@
       </div>
       <div class=" shadow-hover pt-4 pb-4 col-lg-3 col-md-6 col-sm-10 mx-auto text-center">
         <img class="card-img" src="./img/homepage/hearts.png" width="150px" alt="Hearts" srcset="">
-        <h4 class="color-dark mt-2">Organizing Camps</h4>
+        <h4 class="color-dark mt-2">Running Helpline</h4>
         <p class="color-grey mx-auto mt-3 pl-3 pr-3">Organizing blood donation camps is one of our core activities. All our camps focus on giving blood donor the best experience.</p>
         <button class=" mt-4 shadow btn-main bg-main">Learn More</button>
       </div>
       <div class=" shadow-hover pt-4 pb-4 col-lg-3 col-md-6 col-sm-10 mx-auto text-center">
         <img class="card-img p-3" src="./img/homepage/life-buoy.png" width="150px" height="150px" alt="life buoy" srcset="">
-        <h4 class="color-dark mt-2">Organizing Camps</h4>
+        <h4 class="color-dark mt-2">Awarness Session</h4>
         <p class="color-grey mx-auto mt-3 pl-3 pr-3">Organizing blood donation camps is one of our core activities. All our camps focus on giving blood donor the best experience.</p>
         <button class=" mt-4 shadow btn-main bg-main">Learn More</button>
       </div>
     </div>
 
-    <!-- Join Our Team -->
-    <div class="container mt-5 pt-5 d-flex align-items-center justify-content-start img-right" >
-      <div class="row">
-
-      <div class="d-flex flex-column justify-content-center tagling col-lg-6">
-        <h4 class="ft-44 color-dark" >Want to be part of the Team</h4>
-        <p class="mt-3 color-grey">BloodConnect team has grown from a size of 4-5 to a team of 100+ students. With our expansion to different cities going at a fast pace, we are always looking for more volunteers to join our cause. We have a very flexible structure and hope our volunteers learn about all aspects of our organization. </p>
-        <button class="shadow btn-main bg-main mx-auto-sm"><a href="./join-us.html#join-form" class="color-white">Join Now</a></button>
+    <!-- Impact Section -->
+    <div class="row m-0 mt-5 bg-main">
+      <div class="col-lg-3 bg-white pt-5 pb-5 text-center">
+        <h2 class="display-4 bold color-dark">Our Impact</h2>
       </div>
-
-      <div class="col-lg-6 col-md-6 col-sm-12">
-        <img class="contain-img" src="./img/homepage/team.png" alt="">
-      </div>   
-    </div>
+      <div class="col-lg-3  pt-5 pb-5 text-center">
+        <p class="bold ft-44 color-white mb-1"><i class="fa fa-pencil"></i></p>
+        <p class="bold ft-34 color-white mb-1">1,214</p>
+        <p class="color-white fw-4 f-18"> Camps Lorem ipsum dolor sit amet consectetur adipisicing e</p>
+      </div>
+      <div class="col-lg-3  pt-5 pb-5 text-center">
+        <p class="bold display-4 color-white mb-1"><i class="fa fa-pencil"></i></p>
+        <p class="bold display-4 color-white mb-1">1,21,121</p>
+        <p class="color-white bold ft-34"> Lives Saved</p>
+      </div>
+      <div class="col-lg-3  pt-5 pb-5 text-center">
+        <p class="bold ft-44 color-white mb-1"><i class="fa fa-pencil"></i></p>
+        <p class="bold ft-34 color-white mb-1">1,214</p>
+        <p class="color-white fw-4 f-18"> Camps Lorem ipsum dolor sit amet consectetur adipisicing</p>
+      </div>
     </div>
 
     <!-- testimonials -->
-    <div class="m-0 mt-5 bg-main">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#ffffff" fill-opacity="1" d="M0,160L48,181.3C96,203,192,245,288,250.7C384,256,480,224,576,208C672,192,768,192,864,208C960,224,1056,256,1152,261.3C1248,267,1344,245,1392,234.7L1440,224L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path></svg>
-      <h4 class="text-center color-white display-4">What People Say ?</h4>
-
+    <div class="m-0 mt-5  pt-5 mb-5 pb-5">
+      <h4 class="text-center color-dark display-4 mb-5">What People Say ?</h4>
       <!-- testimonial Carousel -->
-      <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <p class="f-18 w-50 mx-auto color-white mt-4 text-center">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo, deserunt. Quam nam voluptatum voluptatem quis eum,</p>
-            <div class="d-flex align-items-center wd-max mx-auto mt-5">
-              <img class="avatar" src="./img/avatar1.png" alt="">
-              <div class="ml-4">
-                <p class=" m-0 bold color-white">John Doe</p>
-              <p class=" m-0 color-white">CEO</p>
-              </div>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <p class="f-18 w-50 mx-auto color-white mt-4 text-center">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo, deserunt. Quam nam voluptatum voluptatem quis eum,</p>
-            <div class="d-flex align-items-center wd-max mx-auto mt-5">
-              <img class="avatar" src="./img/avatar2.png" alt="">
-              <div class="ml-4">
-                <p class=" m-0 bold color-white">John Doe</p>
-              <p class=" m-0 color-white">CEO</p>
-              </div>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <p class="f-18 w-50 mx-auto color-white mt-4 text-center">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo, deserunt. Quam nam voluptatum voluptatem quis eum,</p>
-            <div class="d-flex align-items-center wd-max mx-auto mt-5">
-              <img class="avatar" src="./img/avatar1.png" alt="">
-              <div class="ml-4">
-                <p class=" m-0 bold color-white">John Doe</p>
-              <p class=" m-0 color-white">CEO</p>
+      <div class="testimonial-slider" data-slick='{"slidesToShow": 3, "slidesToScroll": 1}' >
+        <div>
+          <div class="testimonial-card mx-auto shadow pt-5 pl-5 pr-5 pb-2">
+            <p class="ft-34 color-main-light"><i class="fa fa-quote-left"></i></p>
+            <p class=" mb-4 color-grey text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis nisi non fuga repudiandae laborum? Reprehenderit laudantium qui error harum! Quibusdam explicabo soluta nam vel</p>
+            <hr>
+            <div class="d-flex ">
+              <img class="img-circle" src="./img/team/Aakash.jpg" alt="" width="50px" height="50px" srcset="">
+              <div class="d-flex flex-column pl-4">
+                <p class="bold f-18 color-dark mb-0">John Doe</p>
+                <p class="color-grey f-14">Illustrator</p>
               </div>
             </div>
           </div>
         </div>
-        <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="sr-only">Previous</span>
-        </a>
-        <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="sr-only">Next</span>
-        </a>
-      </div>
-
-
-
-
-      <!-- Lower wave -->
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 319"><path fill="#ffffff" fill-opacity="1" d="M0,160L48,181.3C96,203,192,245,288,250.7C384,256,480,224,576,208C672,192,768,192,864,208C960,224,1056,256,1152,261.3C1248,267,1344,245,1392,234.7L1440,224L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
-      
+        <div>
+          <div class="testimonial-card mx-auto shadow pt-5 pl-5 pr-5 pb-2">
+            <p class="ft-34 color-main-light"><i class="fa fa-quote-left"></i></p>
+            <p class=" mb-4 color-grey text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis nisi non fuga repudiandae laborum? Reprehenderit laudantium qui error harum! Quibusdam explicabo soluta nam vel</p>
+            <hr>
+            <div class="d-flex ">
+              <img class="img-circle" src="./img/team/Aakash.jpg" alt="" width="50px" height="50px" srcset="">
+              <div class="d-flex flex-column pl-4">
+                <p class="bold f-18 color-dark mb-0">John Doe</p>
+                <p class="color-grey f-14">Illustrator</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="testimonial-card mx-auto shadow pt-5 pl-5 pr-5 pb-2">
+            <p class="ft-34 color-main-light"><i class="fa fa-quote-left"></i></p>
+            <p class=" mb-4 color-grey text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis nisi non fuga repudiandae laborum? Reprehenderit laudantium qui error harum! Quibusdam explicabo soluta nam vel</p>
+            <hr>
+            <div class="d-flex ">
+              <img class="img-circle" src="./img/team/Aakash.jpg" alt="" width="50px" height="50px" srcset="">
+              <div class="d-flex flex-column pl-4">
+                <p class="bold f-18 color-dark mb-0">John Doe</p>
+                <p class="color-grey f-14">Illustrator</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="testimonial-card mx-auto shadow pt-5 pl-5 pr-5 pb-2">
+            <p class="ft-34 color-main-light"><i class="fa fa-quote-left"></i></p>
+            <p class=" mb-4 color-grey text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis nisi non fuga repudiandae laborum? Reprehenderit laudantium qui error harum! Quibusdam explicabo soluta nam vel</p>
+            <hr>
+            <div class="d-flex ">
+              <img class="img-circle" src="./img/team/Aakash.jpg" alt="" width="50px" height="50px" srcset="">
+              <div class="d-flex flex-column pl-4">
+                <p class="bold f-18 color-dark mb-0">John Doe</p>
+                <p class="color-grey f-14">Illustrator</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="testimonial-card mx-auto shadow pt-5 pl-5 pr-5 pb-2">
+            <p class="ft-34 color-main-light"><i class="fa fa-quote-left"></i></p>
+            <p class=" mb-4 color-grey text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis nisi non fuga repudiandae laborum? Reprehenderit laudantium qui error harum! Quibusdam explicabo soluta nam vel</p>
+            <hr>
+            <div class="d-flex ">
+              <img class="img-circle" src="./img/team/Aakash.jpg" alt="" width="50px" height="50px" srcset="">
+              <div class="d-flex flex-column pl-4">
+                <p class="bold f-18 color-dark mb-0">John Doe</p>
+                <p class="color-grey f-14">Illustrator</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="testimonial-card mx-auto shadow pt-5 pl-5 pr-5 pb-2">
+            <p class="ft-34 color-main-light"><i class="fa fa-quote-left"></i></p>
+            <p class=" mb-4 color-grey text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis nisi non fuga repudiandae laborum? Reprehenderit laudantium qui error harum! Quibusdam explicabo soluta nam vel</p>
+            <hr>
+            <div class="d-flex ">
+              <img class="img-circle" src="./img/team/Aakash.jpg" alt="" width="50px" height="50px" srcset="">
+              <div class="d-flex flex-column pl-4">
+                <p class="bold f-18 color-dark mb-0">John Doe</p>
+                <p class="color-grey f-14">Illustrator</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>     
     </div>
 
 
 
-      <!-- Events -->
-
-      <div class="container mt-5 pt-2 mb-5">
-        <h4 class="ft-44 color-dark mb-4">Here are our upcoming events</h4>
-        <div class="row mt-4">
-            <div class=" shadow-hover pt-4 pb-4 pl-0 pr-0 col-lg-3 col-md-6 col-sm-10 mx-auto text-center">
-              <img class="card-img" src="./img/homepage/calender-light.png" alt="" srcset="">
-              <h4 class="color-dark mt-2">Blood Donation Camp</h4>
-              <p class="color-grey mx-auto mt-3">Organizing blood donation camps is one of our core activities. All our camps focus on giving blood donor the best experience.</p>
-              <button class=" mt-4 shadow btn-main bg-main">Learn More</button>
-            </div>
-            <div class=" shadow-hover pt-4 pb-4 pl-0 pr-0 col-lg-3 col-md-6 col-sm-10 mx-auto text-center">
-              <img class="card-img" src="./img/homepage/calender-light.png" alt="" srcset="">
-              <h4 class="color-dark mt-2">Blood Donation Camp</h4>
-              <p class="color-grey mx-auto mt-3">Organizing blood donation camps is one of our core activities. All our camps focus on giving blood donor the best experience.</p>
-              <button class=" mt-4 shadow btn-main bg-main">Learn More</button>
-            </div>
-            <div class=" shadow-hover pt-4 pb-4 pl-0 pr-0 col-lg-3 col-md-6 col-sm-10 mx-auto text-center">
-              <img class="card-img" src="./img/homepage/calender-light.png" alt="" srcset="">
-              <h4 class="color-dark mt-2">Blood Donation Camp</h4>
-              <p class="color-grey mx-auto mt-3">Organizing blood donation camps is one of our core activities. All our camps focus on giving blood donor the best experience.</p>
-              <button class=" mt-4 shadow btn-main bg-main">Learn More</button>
-            </div>
+    <!-- Media Partners -->
+    <div class="container mb-5">
+      <h4 class="display-4 color-dark text-center mb-4">Media Partners</h4>
+      <div class="media-slider" data-slick='{"slidesToShow": 5, "slidesToScroll": 1}' >
+        <div>
+          <img class="mx-auto media-slider-img" src="./img/media-partners/1.jpg"  alt="medial logo">
+        </div>
+        <div>
+          <img class="mx-auto media-slider-img" src="./img/media-partners/2.jpg"  alt="medial logo">
+        </div>
+        <div>
+          <img class="mx-auto media-slider-img" src="./img/media-partners/1.jpg"  alt="medial logo">
+        </div>
+        <div>
+          <img class="mx-auto media-slider-img" src="./img/media-partners/2.jpg"  alt="medial logo">
+        </div>
+        <div>
+          <img class="mx-auto media-slider-img" src="./img/media-partners/1.jpg"  alt="medial logo">
+        </div>
+        <div>
+          <img class="mx-auto media-slider-img" src="./img/media-partners/2.jpg"  alt="medial logo">
+        </div>
+        <div>
+          <img class="mx-auto media-slider-img" src="./img/media-partners/1.jpg"  alt="medial logo">
+        </div>
+        <div>
+          <img class="mx-auto media-slider-img" src="./img/media-partners/2.jpg"  alt="medial logo">
+        </div>
+        <div>
+          <img class="mx-auto media-slider-img" src="./img/media-partners/1.jpg"  alt="medial logo">
+        </div>
+        <div>
+          <img class="mx-auto media-slider-img" src="./img/media-partners/2.jpg"  alt="medial logo">
         </div>
       </div>
-
+    </div>
 
       <!-- Sponsor banner -->
       <div class="d-flex flex-column m-0 bg-main pt-5 pb-5 text-center">
@@ -266,7 +353,7 @@
 
     <!-- Footer -->
     <div class="text-center mt-5 row m-0 justify-content-end">
-      <a class="navbar-brand ml-4 col-lg-4 col-sm-12 " href="./index.html">
+      <a class="navbar-brand ml-4 col-lg-3 col-sm-12 " href="./index.html">
         <img src="./img/logo.png" width="250" height="50" alt="BloodConnect Logo">
       </a>
       <ul class="footer-list d-flex justify-content-start align-items-end pr-4 col-lg-4 col-sm-12">
@@ -288,39 +375,28 @@
       </ul>
     </div>
 
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-2 mx-auto col-sm-12 col-md-6 ">
-          <p class="color-dark fw-4">Navigation</p>
-          <p class="mb-1"><a class="color-grey fw-4-hover" href="./index.html">Home</a></p>
-          <p class="mb-1"><a class="color-grey fw-4-hover" href="./about-us.html">About Us</a></p>
-          <p class="mb-1"><a class="color-grey fw-4-hover" href="./organize-a-camp.html">Organize a Camp</a></p>
-          <p class="mb-1"><a class="color-grey fw-4-hover" href="./raise-a-request.html">Raise a Request</a></p>
-        </div>
-        <div class="col-lg-2 mx-auto col-sm-12 col-md-6 ">
-          <p class="color-dark fw-4">Raise a Request in</p>
-          <p class="mb-1"><a class="color-grey fw-4-hover" href="./raise-a-request.html#City_Region=Delhi"> Delhi</a></p>
-          <p class="mb-1"><a class="color-grey fw-4-hover" href="./raise-a-request.html#City_Region=Kanpur"> Kanpur</a></p>
-          <p class="mb-1"><a class="color-grey fw-4-hover" href="./raise-a-request.html#City_Region=Lucknow"> Lucknow</a></p>
-          <p class="mb-1"><a class="color-grey fw-4-hover" href="./raise-a-request.html#City_Region=Agra"> Agra</a></p>
-        </div>
-        <div class="col-lg-2 mx-auto col-sm-12 col-md-6 ">
-          <p class="color-dark fw-4">Organize a Camp in</p>
-          <p class="mb-1"><a class="color-grey fw-4-hover" href="./organize-a-camp.html#City_Region=Delhi"> Delhi</a></p>
-          <p class="mb-1"><a class="color-grey fw-4-hover" href="./organize-a-camp.html#City_Region=Kanpur"> Kanpur</a></p>
-          <p class="mb-1"><a class="color-grey fw-4-hover" href="./organize-a-camp.html#City_Region=Lucknow"> Lucknow</a></p>
-          <p class="mb-1"><a class="color-grey fw-4-hover" href="./organize-a-camp.html#City_Region=Agra"> Agra</a></p>
-        </div>
-        <div class="col-lg-2 mx-auto col-sm-12 col-md-6 ">
-          <p class="color-dark fw-4">External Links</p>
-          <p class="color-grey mb-1">Link 1</p>
-          <p class="color-grey mb-1">Link 2</p>
-          <p class="color-grey mb-1">Link 3</p>
-          <p class="color-grey mb-1">Link 4</p>
-        </div>
-      </div>
+    <div class="container mb-5 pb-5">
+     <p class="color-dark bold mb-2">RAISE A REQUETS</p>
+     <ul class="footer-list pl-0">
+      <li class="mb-1 mr-4 left"><a class="color-dark f-12 fw-4-hover" href="./raise-a-request.html#city_region=Delhi">RAISE A REQUEST IN DELHI-NCR</a></li>
+      <li class="mb-1 mr-4 left"><a class="color-dark f-12 fw-4-hover" href="/raise-a-request.html#city_region=Kanpur">RAISE A REQUEST IN KANPUR</a></li>
+      <li class="mb-1 mr-4 left"><a class="color-dark f-12 fw-4-hover" href="./raise-a-request.html#city_region=Agra">RAISE A REQUEST IN AGRA</a></li>
+      <li class="mb-1 mr-4 left"><a class="color-dark f-12 fw-4-hover" href="./raise-a-request.html#city_region=Lucknow">RAISE A REQUEST IN LUCKNOW</a></li>
+      <li class="mb-1 mr-4 left"><a class="color-dark f-12 fw-4-hover" href="./raise-a-request.html#city_region=Bhubaneswar">RAISE A REQUEST IN BHUBANESWAR</a></li>
+      <li class="mb-1 mr-4 left"><a class="color-dark f-12 fw-4-hover" href="./raise-a-request.html#city_region=Jaipur">RAISE A REQUEST IN JAIPUR</a></li>
+    </ul>
+    <br>
+    <p class="color-dark bold mt-5 mb-2">ORGANIZE A CAMP</p>
+     <ul class="footer-list pl-0">
+      <li class="mb-1 mr-4 left"><a class="color-dark f-12 fw-4-hover" href="./raise-a-request.html#city_region=Delhi">ORGANIZE A CAMP IN DELHI-NCR</a></li>
+      <li class="mb-1 mr-4 left"><a class="color-dark f-12 fw-4-hover" href="/raise-a-request.html#city_region=Kanpur">ORGANIZE A CAMP IN KANPUR</a></li>
+      <li class="mb-1 mr-4 left"><a class="color-dark f-12 fw-4-hover" href="./raise-a-request.html#city_region=Agra">ORGANIZE A CAMP IN AGRA</a></li>
+      <li class="mb-1 mr-4 left"><a class="color-dark f-12 fw-4-hover" href="./raise-a-request.html#city_region=Lucknow">ORGANIZE A CAMP IN LUCKNOW</a></li>
+      <li class="mb-1 mr-4 left"><a class="color-dark f-12 fw-4-hover" href="./raise-a-request.html#city_region=Bhubaneswar">ORGANIZE A CAMP IN BHUBANESWAR</a></li>
+      <li class="mb-1 mr-4 left"><a class="color-dark f-12 fw-4-hover" href="./raise-a-request.html#city_region=Jaipur">ORGANIZE A CAMP IN JAIPUR</a></li>
+    </ul>
     </div>
-    <div class="row m-0 mt-2 shadow">
+    <div class="row m-0 mt-5 shadow">
       <div class="col-lg-6 col-sm-12 mx-auto text-center">
         <p class="color-grey f-14">&copy; 2020 BloodConnect Foundation</p>
       </div>
@@ -328,5 +404,100 @@
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 <script src="./js/bootstrap.min.js"></script>
+<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+
+
+<script>
+  $(".testimonial-slider").slick({
+
+    // normal options...
+    infinite: true,
+    autoplay: true,
+    autoplaySpeed: 2000,
+    loop: true,  
+    // the magic
+    responsive: [{
+
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 3,
+          infinite: true
+        }
+
+      }, {
+
+        breakpoint: 900,
+        settings: {
+          slidesToShow: 2,
+          dots: true
+        }
+
+      }, {
+
+        breakpoint: 560,
+        settings: {
+          slidesToShow: 1,
+          dots: true
+        }
+
+        }, {
+
+        breakpoint: 280,
+        settings: "unslick" // destroys slick
+
+      }]
+  });
+
+  $(".main-slider").slick({
+
+    // normal options...
+    infinite: true,
+    autoplay: true,
+    autoplaySpeed: 2000,
+    loop: true,  
+    
+    });
+
+    $(".media-slider").slick({
+
+      // normal options...
+      infinite: true,
+      autoplay: true,
+      autoplaySpeed: 2000,
+      loop: true,  
+      // the magic
+      responsive: [{
+
+          breakpoint: 1024,
+          settings: {
+            slidesToShow: 3,
+            infinite: true
+          }
+
+        }, {
+
+          breakpoint: 900,
+          settings: {
+            slidesToShow: 2,
+            dots: true
+          }
+
+        }, {
+
+          breakpoint: 560,
+          settings: {
+            slidesToShow: 1,
+            dots: true
+          }
+
+          }, {
+
+          breakpoint: 280,
+          settings: "unslick" // destroys slick
+
+        }]
+      });
+</script>
 </body>
 </html>
