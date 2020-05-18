@@ -6,9 +6,17 @@
     <link rel="stylesheet" href="./css/bootstrap.min.css">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/css/simple-line-icons.css">
-    
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+
     <title>Join Us | BloodConnect</title>
     <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon">
+  <style>
+    /*Hide all except first fieldset*/
+  #registration_form fieldset:not(:first-of-type) {
+    display: none;
+  }
+  </style>
 </head>
 <body>
 
@@ -97,7 +105,7 @@
       <div class="d-flex flex-column pt-5 align-items-center col-lg-6 col-md-6 col-sm-12 tagling">
           <h4 class="display-3 color-main">Join Us</h4>
           <h4 class="display-4" style="color: #777777;">Become A Part</h4>
-          <button class="shadow btn-main bg-main-gradient"><a class="color-white"  href="#join-form"> Join Now</a></button>
+          <button class="shadow btn-main-main bg-main-gradient"><a class="color-white"  href="#join-form"> Join Now</a></button>
         </div>
      </div>
       </div>
@@ -129,15 +137,178 @@
             </div>
           </div>
       </div>
+    <!-- Form-->
 
-
-      <!-- Our form -->
-
-      <div id="join-form" class="container-mt-5 pt-5 text-center" style="background-image: url('./img/pattern/pattern-12.png');">
-          <h4 class="display-4 color-dark ">How Can You Join ?</h4>
-          <p class="color-grey text-center mb-5">Fill the form below and we would be in touch shortly</p>
-          <iframe class="google-form" src="https://docs.google.com/forms/d/1brtRz8f8I16TOckZC0UUBi4NwQaYgjafRPyPqAJhSoM/viewform?embedded=true#start=embed"  frameborder="0"></iframe>
+    <div class="row m-0 ">
+      <div class="col-lg-4 d-flex flex-column justify-content-center hide-sm bg-main">
+          <div class="col-lg-5 d-flex flex-column justify-content-center hide-sm bg-main">
+                <p class=" w-75 mx-auto color-white">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nobis re</p>
+                <p class=" w-75 mx-auto color-white">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nobis re</p>
+                <p class=" w-75 mx-auto color-white">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nobis re</p>
+          </div>
       </div>
+      <div class="col-lg-8 h-100">
+        <div class="form-header text-center p-4">
+          <h4 class="color-dark pb-2">Join our team</h4>
+          <p class="color-grey mt-2 color-grey">Fill this form and we will be in touch with you soon</p>
+        </div>
+        <form id="registration_form">
+        <fieldset>
+        <div class="row text-center p-1">
+          <div class="col-md-6 mb-3">
+            <label for="name">First name</label>
+            <input type="text" class="form-control" id="name" placeholder="John Doe" value="" required>
+            </div>
+            <div class="col-md-6 mb-3">
+            <label for="email">Email Address</label>
+            <input type="email" class="form-control" id="email" placeholder="john-doe@example.com" value="" required>
+            </div>
+        </div>
+        <div class="row text-center p-1">
+            <div class="col-md-6 mb-3">
+            <label for="phonenumber">Phone Number</label>
+            <input type="text" pattern="[0-9]{10}" class="form-control" id="phonenumber" placeholder="" required>
+            </div>
+            <div class="col-md-6 mb-3">
+            <label for="education_details">Education details</label>
+            <select class="custom-select"name="education_details" id="education_details" required>
+                      <option value="Student">Student</option>
+                      <option value="Working professional">Working professional</option>
+                      <option value="Other">Other</option>
+            </select>
+            </div>
+        </div>
+        <div class="row text-center p-1">
+          <div class="col-md-6 mb-3">
+           <label for="degree_profession">Degree/Profession pursuing</label>
+           <input type="text" class="form-control" placeholder="B.Tech" id="degree_profession">
+          </div>
+          <div class="col-md-6 mb-3">
+              <label for="city_region">City Region</label>
+              <select class="custom-select" name="city_region" id="city_region" required>
+                      <option value="Agra">Agra</option>
+                      <option value="Amritsar">Amritsar</option>
+                      <option value="Bangalore">Bangalore</option>
+                      <option value="Bhopal">Bhopal</option>
+                      <option value="Chandigarh">Chandigarh</option>
+                      <option value="Chennai">Chennai</option>
+                      <option value="Delhi">Delhi</option>
+                      <option value="Hyderabad">Hyderabad</option>
+                      <option value="Jaipur">Jaipur</option>
+                      <option value="Jodhpur">Jodhpur</option>
+                      <option value="Kanpur">Kanpur</option>
+                      <option value="Kolkata">Kolkata</option>
+                      <option value="Lucknow">Lucknow</option>
+                      <option value="Mumbai">Mumbai</option>
+                      <option value="Pune">Pune</option>
+                      <option value="Ropar">Ropar</option>
+                      <option value="Varanasi">Varanasi</option>
+                      <option value="Patna">Patna</option>
+                      <option value="Andhra Pradesh (AP)">Andhra Pradesh (AP)</option>
+                      <option value="Arunachal Pradesh (AR)">Arunachal Pradesh (AR)</option>
+                      <option value="Assam (AS)">Assam (AS)</option>
+                      <option value="Bihar (BR)">Bihar (BR)</option>
+                      <option value="Chhattisgarh (CG)">Chhattisgarh (CG)</option>
+                      <option value="Goa (GA)">Goa (GA)</option>
+                      <option value="Gujarat (GJ)">Gujarat (GJ)</option>
+                      <option value="Haryana (HR)">Haryana (HR)</option>
+                      <option value="Himachal Pradesh (HP)">Himachal Pradesh (HP)</option>
+                      <option value="Jammu and Kashmir (JK)">Jammu and Kashmir (JK)</option>
+                      <option value="Jharkhand (JH)">Jharkhand (JH)</option>
+                      <option value="Karnataka (KA)">Karnataka (KA)</option>
+                      <option value="Kerala (KL)">Kerala (KL)</option>
+                      <option value="Madhya Pradesh (MP)">Madhya Pradesh (MP)</option>
+                      <option value="Maharashtra (MH)">Maharashtra (MH)</option>
+                      <option value="Manipur (MN)">Manipur (MN)</option>
+                      <option value="Meghalaya (ML)">Meghalaya (ML)</option>
+                      <option value="Mizoram (MZ)">Mizoram (MZ)</option>
+                      <option value="Nagaland (NL)">Nagaland (NL)</option>
+                      <option value="Odisha(OR)">Odisha(OR)</option>
+                      <option value="Punjab (PB)">Punjab (PB)</option>
+                      <option value="Rajasthan (RJ)">Rajasthan (RJ)</option>
+                      <option value="Ranchi">Ranchi</option>
+                      <option value="Sikkim (SK)">Sikkim (SK)</option>
+                      <option value="Tamil Nadu (TN)">Tamil Nadu (TN)</option>
+                      <option value="Telangana (TS)">Telangana (TS)</option>
+                      <option value="Tripura (TR)">Tripura (TR)</option>
+                      <option value="Uttar Pradesh (UP)">Uttar Pradesh (UP)</option>
+                      <option value="Uttarakhand (UK)">Uttarakhand (UK)</option>
+                      <option value="West Bengal (WB)">West Bengal (WB)</option>
+                      <option value="Daman and diu">Daman and diu</option>
+                      <option value="Pudacherry">Pudacherry</option>
+                      <option value="Dadra and Nagar Havelli">Dadra and Nagar Havelli</option>
+                    </select>
+            </div>
+          </div>
+         <div class="row text-center p-1">
+          <div class="col-md-6 mb-3">
+            <label for="organization">Organization</label>
+            <input type="text" class="form-control" placeholder="Hansaraj College" id="organization" required>
+            </div>
+            <div class="col-md-6 mb-3">
+              <label for="year_of_graduation">Year of Graduation</label>
+              <input type="Year" class="form-control" placeholder="2022" id="year_of_graduation">
+            </div>
+        </div>
+        <hr class="mb-4">
+        <button class="btn btn-primary btn-lg float-right next action-button" type="button" name="next">Next</button>
+        </fieldset>
+        <fieldset>       
+        
+         <div class="mb-3 text-center">
+          <label for="team_experience">Do you have any prior experience in working with teams? Or have held any Positions of Responsibilities?</label>
+          <textarea  class="form-control" cols="20" rows="3" placeholder="If yes, please elaborate on the tasks performed by you and targets achieved as a team. (Word limit: 200 words)" id="team_experience"></textarea>
+        </div>
+        <div class="mb-3 text-center">
+          <label for="eca_experience">Have you been involved in any extra-curricular activities in the past?</label>
+          <textarea  class="form-control" cols="20" rows="3" placeholder="If yes, please describe your contribution in it. (Word limit: 150 words)" id="eca_experience"></textarea>
+        </div>
+         <hr class="mb-4">
+         <div class="mb-3 text-center">
+            <label for="y_bloodconnect">Why do you want to be a part of BloodConnect?</label>
+            <textarea  class="form-control" cols="20" rows="3" placeholder="Word limit: 100 words" id="y_bloodconnect"></textarea>
+           </div>
+         <button class="btn btn-primary btn-lg previous action-button" type="button" name="previous">Previous</button>
+         <button class="btn btn-primary btn-lg float-right next action-button" type="button" name="next">Next</button>
+        </fieldset>
+        <fieldset>
+          
+           <div class="row text-center p-1">
+              <div class="col-md-6 mb-3">
+              <label for="profile">Are you interested in any specific profile?</label>
+              <select class="custom-select"name="profile" id="profile">
+                      <option value="Blooddonation Camps">Blooddonation Camps</option>
+                      <option value="Helpline">Helpline</option>
+                      <option value="Marketing">Marketing</option>
+                      <option value="Nothing Specific">Nothing Specific</option>
+              </select>
+            </div>
+          </div>
+          <div class="mb-3 text-center">
+            <label for="y_profile">Please elaborate on why you would want to go for the profile you mentioned above
+            </label>
+            <textarea  class="form-control" cols="20" rows="3" placeholder="Word limit: 100 words" id="y_profile"></textarea>
+          </div>
+              <div class="col-md-6 mb-3">
+              <label for="source_info">How did you get to know about BloodConnect?</label>
+              <select class="custom-select"name="profile" id="source_info" required>
+                      <option value="Through Bloodconnect member">Through Bloodconnect member</option>
+                      <option value="In a event of bloodconnect">In a event of bloodconnect</option>
+                      <option value="Through a friend/aquaintance">Through a friend/aquaintance</option>
+                      <option value="Other">Other</option>
+              </select>
+              </div>
+              <div class="col-md-6 mb-3">
+               <label for="contact_name">If you have a personal contact in our team, please mention his/her name.</label>
+               <input type="text" class="form-control" id="contact_name" placeholder="John Doe" value="">
+              </div> 
+            <button class="btn btn-primary btn-lg previous action-button" type="button" name="previous">Previous</button>
+           <button class="btn btn-success btn-lg float-right submit action" type="Submit" name="submit">Submit</button>
+        </fieldset>
+        </form>
+      </div>
+    </div>
+
     <!-- Footer -->
     <div class="text-center mt-5 row m-0 justify-content-end">
       <a class="navbar-brand ml-4 col-lg-4 col-sm-12 " href="#">
@@ -199,8 +370,10 @@
         <p class="color-grey f-14">&copy; 2020 BloodConnect Foundation</p>
       </div>
     </div>
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="./js/bootstrap.min.js"></script>
+    <script src="./js/form.js"></script>
+    
 </body>
 </html>
