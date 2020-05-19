@@ -45,10 +45,11 @@
     cursor: pointer;
 }
 #mobile-nav{
-    width: 100%;
+    width: auto;
     background: none;
     min-height: 80px;
     padding-top: 20px;
+    right: 0px;
 }
 #mobile-nav>button{
     right: 0px;
@@ -215,6 +216,9 @@ button,input[type=submit]{
 }
 .h-max{
     height: max-content !important;
+}
+.pt-100-sm{
+    padding: auto;
 }
 .border-light{
     border: 1px solid #EB2441 !important;
@@ -613,6 +617,9 @@ em{
     }
 }
 @media (max-width:780px){
+    .pt-100-sm{
+        padding-top: 100px !important;
+    }
     .hide-md{
         display: none !important;
     }

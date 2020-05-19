@@ -26,16 +26,19 @@ function myFunction() {
 
 
 toggleMobileNav = () => {
-  var mobileNav = document.getElementById("mobile-nav-list")
-  if(mobileNav.classList.contains("hide")){
-    mobileNav.classList.remove("hide")
-    mobileNav.classList.add("show")
+  var mobileNav = document.getElementById("mobile-nav")
+  var mobileNavList = document.getElementById("mobile-nav-list")
+  if(mobileNavList.classList.contains("hide")){
+    mobileNavList.classList.remove("hide")
+    mobileNavList.classList.add("show")
     navbarToggler.classList.add("mr-0")
+    mobileNav.classList.add("w-100")
     navbarToggler.innerHTML = "<i class='fa fa-times color-main f-24' ></i>"
   }else{
-    mobileNav.classList.remove("show")
-    mobileNav.classList.add("hide")
+    mobileNavList.classList.remove("show")
+    mobileNavList.classList.add("hide")
     navbarToggler.classList.remove("mr-0")
+    mobileNav.classList.remove("w-100")
     navbarToggler.innerHTML = "<i class='fa fa-bars f-24' ></i>"
   }
      
