@@ -15,10 +15,10 @@ hidePayment = () => {
 }
 initiatePayment = (e) => {
     e.preventDefault()
-    name = $("#name").val()
-    email = $("#email").val()
-    amt = $("#amt").val()
-    contact = $("#contact").val()
+    name = $("#nameInput").val()
+    email = $("#emailInput").val()
+    amt = $("#amtInput").val()
+    contact = $("#contactInput").val()
     
     var options = {
         "key": "rzp_test_k2prQpLyyBZBZc", // Enter the Key ID generated from the Dashboard
@@ -58,4 +58,13 @@ startPayment = (rzp1) => {
 paymentSuccess = () => {
     alert("payment success")
     hidePayment()
+}
+
+amtSelected = (e) => {
+    $("button.amt").removeClass('selected')
+    e.target.classList.add('selected')
+    amt = e.target.textContent
+    $("#amtInput").val(amt)
+
+    $("#amtImpact").html(`You are helping us save ${amt/10} lives <i class="color-main fa fa-heart"></i>`)
 }

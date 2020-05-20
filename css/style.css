@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600&family=Open+Sans:wght@300;400;600;700&family=Rubik:wght@300;400;500;700&family=Source+Sans+Pro:wght@200;300;400;600;700&display=swap');
 *{
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Nunito', sans-serif;
     font-weight: 400;
     line-height: 180%;
 }
@@ -63,6 +63,13 @@
     list-style-type: none;
     padding-left: 30px;
     padding-bottom: 10px;
+    border-bottom: 1px solid #f37b8d;
+}
+#mobile-nav>ul>li.bg-white{
+    list-style-type: none;
+    padding-left: 30px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ccc;
 }
 #mobile-nav>ul.hide{
     display: block !important;
@@ -107,6 +114,9 @@ button,input[type=submit]{
     padding: 10px;
     background: none;
     border: none;
+}
+.fw-6{
+    font-weight: 600;
 }
 .ft-44{
     font-size: 44px;
@@ -238,18 +248,10 @@ li.nav-item{
     transition: background 0.5s ease-out;
 }
 
-li.active{
-    background: #EB2441;
-}
-li.active>a{
-    color: #fff !important;
-}
-li.nav-item:hover,.dropdown-item:hover{
-    color: #fff;
-    background:#EB2441;
-}
-li.nav-item:hover>a{
-    color: #fff !important;
+
+
+li.nav-item>a{
+    font-weight: 600;
 }
 .tagline{
     top: 0px;
@@ -275,16 +277,24 @@ button.sponsor{
     padding-right: 10px;
 }
 
-.about-list>li,.our-team>li{
+.about-list>li{
     margin-top: 1.3rem;
     margin-bottom: 1.3rem;
     background: none;
     color: #EB2441  ;
-    font-weight: 400;
 }
-.about-list>li.collapsed,.our-team>li.collapsed{
+.about-list>li.collapsed{
     color: inherit !important;
    
+}
+.our-team>li.collapsed{
+    color: #EB2441;
+    background-color: #fff !important;
+    
+}
+.our-team>li{
+    color: #fff;
+    background-color: #EB2441 !important;
 }
 
 .contain-img{
@@ -299,6 +309,9 @@ button.sponsor{
 img.team-member{
     width: 150px;
     height: 150px;
+}
+.br-0{
+    border-radius: 0px !important;
 }
 .br-25{
     border-radius: 25px;
@@ -507,15 +520,30 @@ button.loading-start svg {
     border-bottom: 2px solid#EB2441;
     top: calc(60%);
 }
+.main-post{
+    border-radius: 15px;
+    height: 400px;
+}
+.main-post>img{
+    border-radius: 15px;
+    width: 100%;
+    max-height: 300px;
+    min-height: 150px;
+    height: 180px ;
+}
+.main-post>img.main-img{
+    height: 300px !important;
+}
+
 .blog-post{
-    width: 200px ;
     border-radius: 8px;
     overflow: hidden;
-    height: 300px;
+    height: 400px;
 }
 .blog-element>img,.blog-element>a>em>img,.blog-element>em>img{
     width: 100%;
-    height: 100px;
+    height: 150px;
+    border-radius: 8px;
 }
 .blog-content>p.description{
     word-break: break-all;
@@ -523,18 +551,39 @@ button.loading-start svg {
 em{
     font-style: normal !important;
 }
-
+.post-end{
+    position: absolute;
+    bottom: 10px;
+}
 .payment-details{
     position: fixed;
-    height: 500px;
-    width: 300px;
-    top: calc(50% - 250px);
-    left: calc(50% - 150px);
+    height: max-content;
+    width: 100%;
+    top: 0px;
+    overflow: auto;
+}
+button.amt{
+    padding: 5px 10px;
+    width: 100px;
+    background-color: #EB2441;
+    color: #FFF;
+    border: 2px solid #FFF;
+}
+.input-icon{
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    font-size: 22px !important;
+}
+button.selected{
+    color: #EB2441;
+    background-color: #FFF;
+    border: 2px solid #EB2441;
 }
 .close{
     position: absolute;
     top: 10px;
-    right: 10px;
+    right: 20px;
 }
 
 .post{
@@ -631,9 +680,22 @@ em{
         max-height: 400px !important;
         position: inherit;
     }
+    .our-team>li{
+        float: none !important;
+    }
     .sticky-sm {
         position: fixed;
         top: 0;
         width: 100%;
+    }
+    .main-post,.main-post>.blog-content>div{
+        flex-direction: column !important;
+    }
+    .main-post>.blog-content{
+        padding-left: 0px !important;
+        padding-right: 0px !important;
+    }
+    .main-post{
+        height: auto !important;
     }
 }
