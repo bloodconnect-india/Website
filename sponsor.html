@@ -22,13 +22,13 @@
           <li class="bg-main ">
             <a class="nav-link color-white fw-4 " href="./raise-a-request.html">RAISE A REQUEST</a>
           </li>
-          <li class="bg-main bl-1">
+          <li class="bg-main ">
             <a class="nav-link color-white fw-4 " href="./organize-a-camp.html">ORGANIZE A CAMP</a>
           </li>
-          <li class="bg-main bl-1">
+          <li class="bg-main ">
             <a class="nav-link color-white fw-4 " href="./sponsor.html">SPONSOR US</a>
           </li>
-          <li class="bg-main bl-1">
+          <li class="bg-main ">
             <a class="nav-link color-white fw-4 " href="./join-us.html">JOIN US</a>
           </li>
           <li class="bg-white">
@@ -49,44 +49,47 @@
         </ul>
     </nav>
     <nav class="navbar justify-content-center-sm pb-0 sticky-sm z-5 bg-white" id="navbar-sm">
-        <a class="navbar-brand" href="#">
+        <a class="navbar-brand" href="./index.html">
             <img src="./img/logo.png" width="250" height="50" alt="BloodConnect Logo">
         </a>
         <ul class="navbar-nav flex-column">
             <li class="pl-2 pr-2 text-right">
               <ul class="navbar-nav d-flex flex-row justify-content-end  pr-4 ">
-                <li class="footer-item ml-2 mr-3">
+                <li class="footer-item ml-2 mr-2">
                   <a href="#" class="footer-link"><i class="fa fa-facebook-f"></i></a>
                 </li>
-                <li class="footer-item ml-2 mr-3">
+                <li class="footer-item ml-2 mr-2">
                   <a href="#" class="footer-link"><i class="fa fa-instagram"></i></a>
                 </li>
-                <li class="footer-item ml-2 mr-3">
+                <li class="footer-item ml-2 mr-2">
                   <a href="#" class="footer-link"><i class="fa fa-envelope"></i></a>
                 </li>
-                <li class="footer-item ml-2 mr-3">
+                <li class="footer-item ml-2 mr-2">
+                  <a href="#" class="footer-link"><i class="fa fa-twitter"></i></a>
+                </li>
+                <li class="footer-item ml-2 mr-2">
                   <a href="#" class="footer-link"><i class="fa fa-youtube"></i></a>
                 </li>
-                <li class="footer-item ml-2 mr-3">
+                <li class="footer-item ml-2 mr-2">
                   <a href="#" class="footer-link"><i class="fa fa-linkedin"></i></a>
                 </li>
               </ul>
             </li>
             <ul class="secondary-nav d-flex flex-row hide-md">
               <li class="pl-2 pr-2">
-                <a href="./index.html" class="color-dark f-14 fw-4">HOME</a>
+                <a href="./index.html" class="color-dark f-12 fw-6">HOME</a>
               </li>
               <li class="pl-2 pr-2">
-                <a href="./about-us.html" class="color-dark f-14 fw-4">ABOUT US</a>
+                <a href="./about-us.html" class="color-dark f-12 fw-6">ABOUT US</a>
               </li>
               <li class="pl-2 pr-2">
-                <a href="./our-team.html" class="color-dark f-14 fw-4">OUR TEAM</a>
+                <a href="./our-team.html" class="color-dark f-12 fw-6">OUR TEAM</a>
               </li>
               <li class="pl-2 pr-2">
-                <a href="./resources.html" class="color-dark f-14 fw-4">RESOURCES</a>
+                <a href="./resources.html" class="color-dark f-12 fw-6">RESOURCES</a>
               </li>
               <li class="pl-2 pr-2">
-                <a href="./contact-us.html" class="color-dark f-14 fw-4">CONTACT US</a>
+                <a href="./contact-us.html" class="color-dark f-12 fw-6">CONTACT US</a>
               </li>
             </ul>
         </ul>
@@ -116,10 +119,11 @@
                 
           </div>
     </nav>
+  
     
 
-    <div class="h-80 d-flex align-items-center justify-content-center bg-main mb-5 content pt-100-sm" >
-      <div class="container">
+    <div class="h-80 d-flex align-items-center justify-content-center bg-main mb-5  pt-100-sm content" >
+      <div class="container ">
         <div class="row">
           <div class="col-lg-7 col-sm-12  d-flex flex-column align-item-center">
             <h1 class="display-4 bold color-white ">You can make a difference so why dont you ?</h1>
@@ -138,31 +142,59 @@
       <p class="color-grey text-center fw-4 ">Section 80G of the I-T Act allows donations made to specified relief funds and charitable institutions as a deduction from gross total income. It is that time of the year when you are looking for ways to save on as much tax as possible</p>
       <div class="d-flex justify-content-center mt-5 flex-column-sm">
       <button class="btn-large mx-auto-sm color-white bg-main" onclick="showPayment()">Donate Online</button>
-      <button class="btn-large color-main bg-white">Donate via Check/Transfer</button>
       </div>
+      <h4 class="ft-44 color-dark mt-4">Or</h4>
+      <p class="color-dark ft-34">Cheque Deposit</p>
+      <p class="color-grey text-center">Checks may be made out to SaveLIFE Foundation USA and sent to SaveLife Foundation USA, <br> 200 E 61st Street # 25B, New York, NY 10065 </p>
+    </p>
     </div>
 
-    <div class="payment-details bg-white p-5 z-100 shadow hide" id="payment-details">
-      <form  method="get" onsubmit="initiatePayment(event)">
-        <div class="form-group mb-4">
-          <label class="m-0   color-dark" for="patientName">Your Name</label>
-          <input type="text" class="form-control" id="name" placeholder="Your Name" required>
+    <div class="payment-details bg-main  z-100 shadow hide" id="payment-details">
+      <div class="row ">
+        <div class="col-lg-6 hide-sm pl-5 pt-5">
+          <h4 class="f-34 color-white text-center">Your donation enables us to  </h4>
+          <ul>
+            <li class="color-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam nisi voluptate ipsum aliquam corrupti possimus perferendis. Ut tempore necessitatibus dolor. Accusamus nulla labor</li>
+            <li class="color-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam nisi voluptate ipsum aliquam corrupti possimus perferendis. Ut tempore necessitatibus dolor. Accusamus nulla labor</li>
+            <li class="color-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam nisi voluptate ipsum aliquam corrupti possimus perferendis. Ut tempore necessitatibus dolor. Accusamus nulla labor</li>
+            <li class="color-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam nisi voluptate ipsum aliquam corrupti possimus perferendis. Ut tempore necessitatibus dolor. Accusamus nulla labor</li>
+
+          </ul>
         </div>
-        <div class="form-group mb-4">
-          <label class="m-0   color-dark" for="patientName">Your Email</label>
-          <input type="text" class="form-control" id="email" placeholder="example@domain.com" required>
+        <div class="col-lg-6 h-100 bg-white  p-2 pl-4">
+          <h4 class="f-34 color-main">Payment Details</h4>
+          <form  method="get" onsubmit="initiatePayment(event)">
+            <button type="button" class="amt selected" onclick="amtSelected(event)">1000</button>
+            <button type="button" class="amt" onclick="amtSelected(event)">5000</button>
+            <button type="button" class="amt" onclick="amtSelected(event)">10000</button>
+
+            <p class="color-dark" id="amtImpact">You are helpling us save 150 lives <i class="color-main fa fa-heart"></i> </p>
+            <div class="form-group mb-4  relative">
+              <label class="m-0   color-dark" for="patientName">Amount</label>
+              <i class="input-icon color-grey fa fa-rupee"></i>
+              <input type="number" class="form-control pl-5" id="amtInput" placeholder="500" value="1000" required>
+            </div>
+            <div class="form-group mb-4 relative">
+              <i class="input-icon color-grey fa fa-user"></i>
+              <label class="m-0   color-dark" for="patientName">Your Name</label>
+              <input type="text" class="form-control pl-5" id="nameInput" placeholder="Your Name" required>
+            </div>
+            <div class="form-group mb-4 relative">
+              <i class="input-icon color-grey fa fa-envelope"></i>
+              <label class="m-0   color-dark" for="patientName">Your Email</label>
+              <input type="text" class="form-control pl-5" id="emailInput" placeholder="example@domain.com" required>
+            </div>
+            <div class="form-group mb-4 relative">
+              <i class="input-icon color-grey fa fa-phone"></i>
+              <label class="m-0   color-dark" for="patientName">Contact Number</label>
+              <input type="text" class="form-control pl-5" id="contactInput" placeholder="95832xxxxx" required>
+            </div>
+            
+            <button type="submit" class="btn-main bg-main color-white mx-auto">Donate Now <i class="color-white fa fa-heart"></i></button>
+            <button type="button" class="close color-main btn-main bg-white" onclick="hidePayment()"><i class="fa fa-times"></i></button>
+          </form>
         </div>
-        <div class="form-group mb-4">
-          <label class="m-0   color-dark" for="patientName">Contact Number</label>
-          <input type="text" class="form-control" id="contact" placeholder="95832xxxxx" required>
-        </div>
-        <div class="form-group mb-4">
-          <label class="m-0   color-dark" for="patientName">Amount</label>
-          <input type="number" class="form-control" id="amt" placeholder="500" required>
-        </div>
-        <button type="submit" class="btn-main bg-main color-white mx-auto">Pay Now</button>
-        <button type="button" class="close color-main btn-main bg-white" onclick="hidePayment()"><i class="fa fa-times"></i></button>
-      </form>
+      </div>
     </div>
 
     <!-- Footer -->
