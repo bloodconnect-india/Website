@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600&family=Open+Sans:wght@300;400;600;700&family=Rubik:wght@300;400;500;700&family=Source+Sans+Pro:wght@200;300;400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700;800&family=Open+Sans:wght@300;400;600;700&family=Rubik:wght@300;400;500;700&family=Source+Sans+Pro:wght@200;300;400;600;700&display=swap');
 *{
     font-family: 'Nunito', sans-serif;
     font-weight: 400;
@@ -197,6 +197,9 @@ button,input[type=submit]{
 .color-white{
     color: #fff !important;
 }
+hr.color-white{
+   border-top: 1px solid #fff;
+}
 .color-grey{
     color: #777777 !important;
 }
@@ -205,7 +208,15 @@ button,input[type=submit]{
     text-decoration: none !important;
     
 }
-
+.card-link{
+    color: #777777;
+}
+.work-card:hover>a.card-link{
+    color: #EB2441;
+}
+.query-card:hover>a.card-link{
+    color: #EB2441;
+}
 .bold{
     font-weight: bold;
 }
@@ -344,6 +355,24 @@ img.team-member{
 
 .footer-item{
     float: left;
+}
+
+ul.footer-list>.footer-item{
+    background: #d3203a;
+    border-radius: 25px;
+    height: 50px;
+    width: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+ul.footer-list>.footer-item:hover{
+    background: #fff !important;
+}
+ul.footer-list>.footer-item:hover>a{
+    color: #EB2441 !important;
 }
 .footer-link{
     color: #EB2441;
@@ -562,23 +591,24 @@ em{
     top: 0px;
     overflow: auto;
 }
-button.amt{
-    padding: 5px 10px;
-    width: 100px;
-    background-color: #EB2441;
-    color: #FFF;
-    border: 2px solid #FFF;
-}
+
 .input-icon{
     position: absolute;
     bottom: 10px;
     left: 10px;
     font-size: 22px !important;
 }
-button.selected{
+button.amt{
+    padding: 5px 10px;
+    width: 100px;
     color: #EB2441;
     background-color: #FFF;
     border: 2px solid #EB2441;
+}
+button.selected{
+    background-color: #EB2441 !important;
+    color: #FFF !important;
+    border: 2px solid #EB2441 !important;
 }
 .close{
     position: absolute;
@@ -668,6 +698,9 @@ button.selected{
 @media (max-width:780px){
     .pt-100-sm{
         padding-top: 100px !important;
+    }
+    .hide-lg{
+        display: flex !important;
     }
     .hide-md{
         display: none !important;
