@@ -65,6 +65,22 @@ amtSelected = (e) => {
     e.target.classList.add('selected')
     amt = e.target.textContent
     $("#amtInput").val(amt)
-
     $("#amtImpact").html(`You are helping us save ${amt/10} lives <i class="color-main fa fa-heart"></i>`)
+    requirePanCard(e)
+}
+
+requirePanCard = (e) => {
+    console.log('heya')
+    let amt
+    if(e.target.textContent){
+        amt = e.target.textContent
+    }else {
+        amt = e.target.value
+    }
+    if(amt < 2000){
+        document.getElementById("panCardInput").removeAttribute('required')
+
+    }
+    else 
+        document.getElementById("panCardInput").setAttribute('required',true)
 }

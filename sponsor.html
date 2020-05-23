@@ -149,17 +149,41 @@
     </p>
     </div>
 
-    <div class="payment-details bg-main  z-100 shadow " id="payment-details">
+    <div class="payment-details bg-white  z-100 shadow hide " id="payment-details">
       <div class="row ">
-        <div class="col-lg-6 hide-sm pl-5 pt-5">
-          <h4 class="f-34 color-white text-center">Your donation enables us to  </h4>
-          <ul>
-            <li class="color-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam nisi voluptate ipsum aliquam corrupti possimus perferendis. Ut tempore necessitatibus dolor. Accusamus nulla labor</li>
-            <li class="color-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam nisi voluptate ipsum aliquam corrupti possimus perferendis. Ut tempore necessitatibus dolor. Accusamus nulla labor</li>
-            <li class="color-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam nisi voluptate ipsum aliquam corrupti possimus perferendis. Ut tempore necessitatibus dolor. Accusamus nulla labor</li>
-            <li class="color-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam nisi voluptate ipsum aliquam corrupti possimus perferendis. Ut tempore necessitatibus dolor. Accusamus nulla labor</li>
-
-          </ul>
+        <div class="col-lg-6 hide-sm px-4">
+            <div class="row collage">
+              <div class="col p-0">
+                <img class="wd-inherit" src="./img/sponsor-us/collage/1.jpg" alt="">
+                <img class="wd-inherit" src="./img/sponsor-us/collage/5.jpg" alt="">
+                <img class="wd-inherit" src="./img/sponsor-us/collage/2.jpg" alt="">
+                <img class="wd-inherit" src="./img/sponsor-us/collage/7.jpg" alt="">
+              </div>
+              <div class="col p-0">
+                <img class="wd-inherit" src="./img/sponsor-us/collage/3.jpg" alt="">
+                <img class="wd-inherit" src="./img/sponsor-us/collage/6.jpg" alt="">
+                <img class="wd-inherit" src="./img/sponsor-us/collage/4.jpg" alt="">
+                <img class="wd-inherit" src="./img/sponsor-us/collage/8.jpg" alt="">
+              </div>
+              <div class="col p-0">
+                <img class="wd-inherit" src="./img/sponsor-us/collage/9.jpg" alt="">
+                <img class="wd-inherit" src="./img/sponsor-us/collage/5.jpg" alt="">
+                <img class="wd-inherit" src="./img/sponsor-us/collage/2.jpg" alt="">
+                <img class="wd-inherit" src="./img/sponsor-us/collage/1.jpg" alt="">
+              </div>
+              <div class="col p-0">
+                <img class="wd-inherit" src="./img/sponsor-us/collage/1.jpg" alt="">
+                <img class="wd-inherit" src="./img/sponsor-us/collage/5.jpg" alt="">
+                <img class="wd-inherit" src="./img/sponsor-us/collage/2.jpg" alt="">
+                <img class="wd-inherit" src="./img/sponsor-us/collage/7.jpg" alt="">
+              </div>
+              <div class="col p-0">
+                <img class="wd-inherit" src="./img/sponsor-us/collage/3.jpg" alt="">
+                <img class="wd-inherit" src="./img/sponsor-us/collage/6.jpg" alt="">
+                <img class="wd-inherit" src="./img/sponsor-us/collage/4.jpg" alt="">
+                <img class="wd-inherit" src="./img/sponsor-us/collage/8.jpg" alt="">
+              </div>
+            </div>
         </div>
         <div class="col-lg-6 h-100 bg-white  p-2 pl-4">
           <h4 class="f-34 color-main">Payment Details</h4>
@@ -168,11 +192,11 @@
             <button type="button" class="amt" onclick="amtSelected(event)">5000</button>
             <button type="button" class="amt" onclick="amtSelected(event)">10000</button>
 
-            <p class="color-dark" id="amtImpact">You are helpling us save 150 lives <i class="color-main fa fa-heart"></i> </p>
+            <p class="color-dark italics f-18" id="amtImpact">You are helping us save 100 lives <i class="color-main fa fa-heart"></i> </p>
             <div class="form-group mb-4  relative">
               <label class="m-0   color-dark" for="patientName">Amount</label>
               <i class="input-icon color-grey fa fa-rupee"></i>
-              <input type="number" class="form-control pl-5" id="amtInput" placeholder="500" value="1000" required>
+              <input type="number" class="form-control pl-5" id="amtInput" placeholder="500" value="1000" onchange="requirePanCard(event)" required>
             </div>
             <div class="form-group mb-4 relative">
               <i class="input-icon color-grey fa fa-user"></i>
@@ -183,6 +207,11 @@
               <i class="input-icon color-grey fa fa-envelope"></i>
               <label class="m-0   color-dark" for="patientName">Your Email</label>
               <input type="text" class="form-control pl-5" id="emailInput" placeholder="example@domain.com" required>
+            </div>
+            <div class="form-group mb-4 relative">
+              <i class="input-icon color-grey fa fa-address-card"></i>
+              <label class="m-0   color-dark" for="patientName">Pan Card Number</label>
+              <input type="text" class="form-control pl-5" id="panCardInput" placeholder="AXB14SD5X" >
             </div>
             <div class="form-group mb-4 relative">
               <i class="input-icon color-grey fa fa-phone"></i>
@@ -250,34 +279,34 @@
           <div class="col-lg-4 col-sm-12">
             <p class="color-white bold mb-2">NAVIGATION</p>
             <ul class="footer-list pl-0">
-              <li class="mb-1 mr-4 "><a class="color-white f-14 fw-6" href="./index.html">HOME</a></li>
-              <li class="mb-1 mr-4 "><a class="color-white f-14 fw-6" href="./about-us.html">ABOUT US</a></li>
-              <li class="mb-1 mr-4 "><a class="color-white f-14 fw-6" href="./our-team.html">OUR TEAM</a></li>
-              <li class="mb-1 mr-4 "><a class="color-white f-14 fw-6" href="./sponsor.html">SPONSOR US</a></li>
-              <li class="mb-1 mr-4 "><a class="color-white f-14 fw-6" href="./join-us.html">JOIN US</a></li>
-              <li class="mb-1 mr-4 "><a class="color-white f-14 fw-6" href="./contact-us.html">CONTACT US</a></li>
+              <li class=" mr-4 "><a class="color-white f-12 fw-6" href="./index.html">HOME</a></li>
+              <li class=" mr-4 "><a class="color-white f-12 fw-6" href="./about-us.html">ABOUT US</a></li>
+              <li class=" mr-4 "><a class="color-white f-12 fw-6" href="./our-team.html">OUR TEAM</a></li>
+              <li class=" mr-4 "><a class="color-white f-12 fw-6" href="./sponsor.html">SPONSOR US</a></li>
+              <li class=" mr-4 "><a class="color-white f-12 fw-6" href="./join-us.html">JOIN US</a></li>
+              <li class=" mr-4 "><a class="color-white f-12 fw-6" href="./contact-us.html">CONTACT US</a></li>
             </ul>
           </div>
           <div class="col-lg-4 col-sm-12">
-            <p class="color-white bold mb-2">RAISE A REQUETS</p>
+            <p class="color-white bold mb-2">RAISE A REQUEST</p>
             <ul class="footer-list pl-0">
-              <li class="mb-1 mr-4 "><a class="color-white f-14 fw-6" href="./raise-a-request.html#city_region=Delhi">RAISE A REQUEST IN DELHI-NCR</a></li>
-              <li class="mb-1 mr-4 "><a class="color-white f-14 fw-6" href="/raise-a-request.html#city_region=Kanpur">RAISE A REQUEST IN KANPUR</a></li>
-              <li class="mb-1 mr-4 "><a class="color-white f-14 fw-6" href="./raise-a-request.html#city_region=Agra">RAISE A REQUEST IN AGRA</a></li>
-              <li class="mb-1 mr-4 "><a class="color-white f-14 fw-6" href="./raise-a-request.html#city_region=Lucknow">RAISE A REQUEST IN LUCKNOW</a></li>
-              <li class="mb-1 mr-4 "><a class="color-white f-14 fw-6" href="./raise-a-request.html#city_region=Bhubaneswar">RAISE A REQUEST IN BHUBANESWAR</a></li>
-              <li class="mb-1 mr-4 "><a class="color-white f-14 fw-6" href="./raise-a-request.html#city_region=Jaipur">RAISE A REQUEST IN JAIPUR</a></li>
+              <li class=" mr-4 "><a class="color-white f-12 fw-6" href="./raise-a-request.html#city_region=Delhi">RAISE A REQUEST IN DELHI-NCR</a></li>
+              <li class=" mr-4 "><a class="color-white f-12 fw-6" href="/raise-a-request.html#city_region=Kanpur">RAISE A REQUEST IN KANPUR</a></li>
+              <li class=" mr-4 "><a class="color-white f-12 fw-6" href="./raise-a-request.html#city_region=Agra">RAISE A REQUEST IN AGRA</a></li>
+              <li class=" mr-4 "><a class="color-white f-12 fw-6" href="./raise-a-request.html#city_region=Lucknow">RAISE A REQUEST IN LUCKNOW</a></li>
+              <li class=" mr-4 "><a class="color-white f-12 fw-6" href="./raise-a-request.html#city_region=Bhubaneswar">RAISE A REQUEST IN BHUBANESWAR</a></li>
+              <li class=" mr-4 "><a class="color-white f-12 fw-6" href="./raise-a-request.html#city_region=Jaipur">RAISE A REQUEST IN JAIPUR</a></li>
             </ul>
           </div>
           <div class="col-lg-4 col-sm-12">
             <p class="color-white bold  mb-2">ORGANIZE A CAMP</p>
             <ul class="footer-list pl-0">
-              <li class="mb-1 mr-4 "><a class="color-white f-14 fw-6" href="./raise-a-request.html#city_region=Delhi">ORGANIZE A CAMP IN DELHI-NCR</a></li>
-              <li class="mb-1 mr-4 "><a class="color-white f-14 fw-6" href="/raise-a-request.html#city_region=Kanpur">ORGANIZE A CAMP IN KANPUR</a></li>
-              <li class="mb-1 mr-4 "><a class="color-white f-14 fw-6" href="./raise-a-request.html#city_region=Agra">ORGANIZE A CAMP IN AGRA</a></li>
-              <li class="mb-1 mr-4 "><a class="color-white f-14 fw-6" href="./raise-a-request.html#city_region=Lucknow">ORGANIZE A CAMP IN LUCKNOW</a></li>
-              <li class="mb-1 mr-4 "><a class="color-white f-14 fw-6" href="./raise-a-request.html#city_region=Bhubaneswar">ORGANIZE A CAMP IN BHUBANESWAR</a></li>
-              <li class="mb-1 mr-4 "><a class="color-white f-14 fw-6" href="./raise-a-request.html#city_region=Jaipur">ORGANIZE A CAMP IN JAIPUR</a></li>
+              <li class=" mr-4 "><a class="color-white f-12 fw-6" href="./raise-a-request.html#city_region=Delhi">ORGANIZE A CAMP IN DELHI-NCR</a></li>
+              <li class=" mr-4 "><a class="color-white f-12 fw-6" href="/raise-a-request.html#city_region=Kanpur">ORGANIZE A CAMP IN KANPUR</a></li>
+              <li class=" mr-4 "><a class="color-white f-12 fw-6" href="./raise-a-request.html#city_region=Agra">ORGANIZE A CAMP IN AGRA</a></li>
+              <li class=" mr-4 "><a class="color-white f-12 fw-6" href="./raise-a-request.html#city_region=Lucknow">ORGANIZE A CAMP IN LUCKNOW</a></li>
+              <li class=" mr-4 "><a class="color-white f-12 fw-6" href="./raise-a-request.html#city_region=Bhubaneswar">ORGANIZE A CAMP IN BHUBANESWAR</a></li>
+              <li class=" mr-4 "><a class="color-white f-12 fw-6" href="./raise-a-request.html#city_region=Jaipur">ORGANIZE A CAMP IN JAIPUR</a></li>
             </ul>
           </div>
         </div>
