@@ -26,7 +26,7 @@
             <a class="nav-link color-white fw-4 " href="./organize-a-camp.html">ORGANIZE A CAMP</a>
           </li>
           <li class="bg-main ">
-            <a class="nav-link color-white fw-4 " href="./sponsor.html">SPONSOR US</a>
+            <a class="nav-link color-white fw-4 " href="./sponsor.html">DONATE NOW</a>
           </li>
           <li class="bg-main ">
             <a class="nav-link color-white fw-4 " href="./join-us.html">JOIN US</a>
@@ -110,7 +110,7 @@
                 <a class="nav-link color-white fw-4 " href="./organize-a-camp.html">ORGANIZE A CAMP</a>
               </li>
               <li class="nav-item pl-5 pr-5  bg-main bl-1">
-                <a class="nav-link color-white fw-4 " href="./sponsor.html">SPONSOR US</a>
+                <a class="nav-link color-white fw-4 " href="./sponsor.html">DONATE NOW</a>
               </li>
               <li class="nav-item pl-5 pr-5  bg-main bl-1">
                 <a class="nav-link color-white fw-4 " href="./join-us.html">JOIN US</a>
@@ -119,7 +119,6 @@
                 
           </div>
     </nav>
-  
     
 
     <div class="h-80 d-flex align-items-center justify-content-center bg-main mb-5  pt-100-sm content" >
@@ -141,13 +140,51 @@
       <h4 class="display-4 mt-5 color-dark">How can you donate ?</h4>
       <p class="color-grey text-center fw-4 ">Section 80G of the I-T Act allows donations made to specified relief funds and charitable institutions as a deduction from gross total income. It is that time of the year when you are looking for ways to save on as much tax as possible</p>
       <div class="d-flex justify-content-center mt-5 flex-column-sm">
-      <button class="btn-large mx-auto-sm color-white bg-main f-18" onclick="showPayment()">Donate Online</button>
+      <button class="btn-main fw-6 mx-auto-sm color-white bg-main f-18" onclick="showPayment()">Donate Online <i class="fa fa-heart"></i></button>
       </div>
       <h4 class="ft-44 color-dark mt-4">Or</h4>
       <p class="color-dark ft-34">Cheque Deposit</p>
       <p class="color-grey text-center">Checks may be made out to SaveLIFE Foundation USA and sent to SaveLife Foundation USA, <br> 200 E 61st Street # 25B, New York, NY 10065 </p>
     </p>
     </div>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6">
+          <div class="row">
+            <div class="col p-1">
+              <img class="wd-inherit mb-2" src="./img/sponsor-us/collage/9.jpg" alt="">
+              <img class="wd-inherit mb-2" src="./img/sponsor-us/collage/5.jpg" alt="">
+              <img class="wd-inherit mb-2" src="./img/sponsor-us/collage/2.jpg" alt="">
+            </div>
+            <div class="col p-1">
+              <img class="wd-inherit mb-2" src="./img/sponsor-us/collage/1.jpg" alt="">
+              <img class="wd-inherit mb-2" src="./img/sponsor-us/collage/5.jpg" alt="">
+              <img class="wd-inherit mb-2" src="./img/sponsor-us/collage/2.jpg" alt="">
+            </div>
+            <div class="col p-1">
+              <img class="wd-inherit mb-2" src="./img/sponsor-us/collage/3.jpg" alt="">
+              <img class="wd-inherit mb-2" src="./img/sponsor-us/collage/6.jpg" alt="">
+              <img class="wd-inherit mb-2" src="./img/sponsor-us/collage/4.jpg" alt="">
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <h4 class="f-34 color-dark text-center">Your Donation Enables Us To </h4>
+            <ul>
+              <li class="color-dark">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur temporibus, ipsum deleniti quas aperiam eligendi quis similique illo quaerat ut off</li>
+              <li class="color-dark">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur temporibus, ipsum deleniti quas aperiam eligendi quis similique illo quaerat ut off</li>
+              <li class="color-dark">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur temporibus, ipsum deleniti quas aperiam eligendi quis similique illo quaerat ut off</li>
+              <li class="color-dark">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur temporibus, ipsum deleniti quas aperiam eligendi quis similique illo quaerat ut off</li>
+              <li class="color-dark">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur temporibus, ipsum deleniti quas aperiam eligendi quis similique illo quaerat ut off</li>
+              <li class="color-dark">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur temporibus, ipsum deleniti quas aperiam eligendi quis similique illo quaerat ut off</li>
+
+            </ul>
+        </div>
+      </div>
+    </div>
+
+
 
     <div class="payment-details bg-white  z-100 shadow hide " id="payment-details">
       <div class="row ">
@@ -210,7 +247,7 @@
             </div>
             <div class="form-group mb-4 relative">
               <i class="input-icon color-grey fa fa-address-card"></i>
-              <label class="m-0   color-dark" for="patientName">Pan Card Number</label>
+              <label class="m-0 not-required color-dark" for="panCardInput">Pan Card Number</label>
               <input type="text" class="form-control pl-5" id="panCardInput" placeholder="AXB14SD5X" >
             </div>
             <div class="form-group mb-4 relative">
@@ -227,32 +264,9 @@
     </div>
 
     <!-- Footer -->
-    <div class="text-center mt-5 row m-0 justify-content-end hide">
-      <a class="navbar-brand ml-4 col-lg-3 col-sm-12 " href="./index.html">
-        <img src="./img/logo.png" width="250" height="50" alt="BloodConnect Logo">
-      </a>
-      <ul class="footer-list d-flex justify-content-start align-items-end pr-4 col-lg-4 col-sm-12">
-        <li class="footer-item m-0">
-          <a href="#" class="footer-link"><i class="fa fa-facebook-f"></i></a>
-        </li>
-        <li class="footer-item m-0">
-          <a href="#" class="footer-link"><i class="fa fa-instagram"></i></a>
-        </li>
-        <li class="footer-item m-0">
-          <a href="#" class="footer-link"><i class="fa fa-twitter"></i></a>
-        </li>
-        <li class="footer-item m-0">
-          <a href="#" class="footer-link"><i class="fa fa-youtube"></i></a>
-        </li>
-        <li class="footer-item m-0">
-          <a href="#" class="footer-link"><i class="fa fa-linkedin"></i></a>
-        </li>
-      </ul>
-    </div>
-
     <div class="container-fluid bg-main pt-5">
       <div class="container d-flex flex-column ">
-        <div class="d-flex justify-content-between">
+        <div class="d-flex justify-content-between align-items-center flex-column-sm">
           <a href="./index.html">
             <img src="./img/logo.png" alt="">
           </a>
@@ -282,7 +296,7 @@
               <li class=" mr-4 "><a class="color-white f-12 fw-6" href="./index.html">HOME</a></li>
               <li class=" mr-4 "><a class="color-white f-12 fw-6" href="./about-us.html">ABOUT US</a></li>
               <li class=" mr-4 "><a class="color-white f-12 fw-6" href="./our-team.html">OUR TEAM</a></li>
-              <li class=" mr-4 "><a class="color-white f-12 fw-6" href="./sponsor.html">SPONSOR US</a></li>
+              <li class=" mr-4 "><a class="color-white f-12 fw-6" href="./sponsor.html">DONATE NOW</a></li>
               <li class=" mr-4 "><a class="color-white f-12 fw-6" href="./join-us.html">JOIN US</a></li>
               <li class=" mr-4 "><a class="color-white f-12 fw-6" href="./contact-us.html">CONTACT US</a></li>
             </ul>
@@ -310,10 +324,10 @@
             </ul>
           </div>
         </div>
-
+    
         <div class="d-flex justify-content-between mt-3">
           <p class="color-white f-14">Copyright &copy; BloodConnect Foundation 2020</p>
-
+    
           <ul class="footer-list">
             <li class="f-14 left mr-3"><a class="color-white" href="./privacy.html">Privacy</a></li>
             <li class="f-14 left"><a class="color-white" href="./toc.html">Terms and Condition</a></li>

@@ -487,54 +487,54 @@
 
   $(".main-slider").slick({
 
-    // normal options...
-    infinite: true,
-    autoplay: true,
-    autoplaySpeed: 1000,
-    loop: true,  
-    dots: true
-    
-    });
+// normal options...
+infinite: true,
+autoplay: true,
+autoplaySpeed: 1000,
+loop: true,  
+dots: true
 
-    $(".media-slider").slick({
+});
 
-      // normal options...
-      infinite: true,
-      autoplay: true,
-      autoplaySpeed: 2000,
-      loop: true,  
-      // the magic
-      responsive: [{
+$(".media-slider").slick({
 
-          breakpoint: 1024,
-          settings: {
-            slidesToShow: 3,
-            infinite: true
-          }
+  // normal options...
+  infinite: true,
+  autoplay: true,
+  autoplaySpeed: 2000,
+  loop: true,  
+  // the magic
+  responsive: [{
 
-        }, {
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 3,
+        infinite: true
+      }
 
-          breakpoint: 900,
-          settings: {
-            slidesToShow: 2,
-            dots: true
-          }
+    }, {
 
-        }, {
+      breakpoint: 900,
+      settings: {
+        slidesToShow: 2,
+        dots: true
+      }
 
-          breakpoint: 560,
-          settings: {
-            slidesToShow: 1,
-            dots: true
-          }
+    }, {
 
-          }, {
+      breakpoint: 560,
+      settings: {
+        slidesToShow: 1,
+        dots: true
+      }
 
-          breakpoint: 280,
-          settings: "unslick" // destroys slick
+      }, {
 
-        }]
-      });
+      breakpoint: 280,
+      settings: "unslick" // destroys slick
+
+    }]
+  });
 </script>
 </body>
 </html>

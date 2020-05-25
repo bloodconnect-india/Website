@@ -79,8 +79,10 @@ requirePanCard = (e) => {
     }
     if(amt < 2000){
         document.getElementById("panCardInput").removeAttribute('required')
-
+        $("label[for='panCardInput']").addClass("not-required")
     }
-    else 
+    else {
         document.getElementById("panCardInput").setAttribute('required',true)
+        $("label[for='panCardInput']").removeClass("not-required")
+    }
 }

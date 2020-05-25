@@ -111,10 +111,17 @@ button>a{
 button,input[type=submit]{
     font-weight: 400;
 }
+.bw{
+    filter: grayscale(100%);
+}
+
 .menu {
     padding: 10px;
     background: none;
     border: none;
+}
+.fw-4{
+    font-weight: 400 !important;
 }
 .fw-6{
     font-weight: 600;
@@ -212,7 +219,7 @@ hr.color-white{
 .card-link{
     color: #777777;
 }
-.work-card:hover>a.card-link{
+.work-card:hover>a.card-link,.alumni-card:hover>a.card-link{
     color: #EB2441;
 }
 .query-card:hover>a.card-link{
@@ -242,8 +249,14 @@ hr.color-white{
 .h-80{
     min-height: 80vh !important;
 }
+.h-60{
+    height: 60vh !important;
+}
 .h-max{
     height: max-content !important;
+}
+.h-inherit{
+    height: inherit !important;
 }
 .pt-100-sm{
     padding: auto;
@@ -286,6 +299,14 @@ button.sponsor{
     border-radius: 4px;
     background-color: #EB2441;
 }
+button.over-img{
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    font-weight: 600;
+    opacity: 0.9;
+    font-size: 18px;
+}
 
 .collage>.col>img{
     margin: 2px;
@@ -313,13 +334,14 @@ button.sponsor{
    
 }
 .our-team>li.collapsed{
-    color: #EB2441;
+    color: rgb(0, 50, 68);
     background-color: #fff !important;
-    
+    border-bottom: none !important;
 }
 .our-team>li{
-    color: #fff;
-    background-color: #EB2441 !important;
+    color: #EB2441;
+    background-color: #fff !important;
+    border-bottom: 2px solid #EB2441;
 }
 
 .contain-img{
@@ -334,6 +356,45 @@ button.sponsor{
 img.team-member{
     width: 150px;
     height: 150px;
+}
+div.team-member>ul.social-media{
+    list-style-type: none;
+    position: absolute;
+    display: none;
+    top: 150px;
+    left: calc(40% - 105px);
+}
+div.team-member:hover>ul.social-media{
+    display: block !important;
+}
+div.team-member>ul.social-media>li{
+    float: left;
+    height: 50px;
+    width: 50px;
+    margin: auto 5px;
+    border-radius: 25px;
+    background: #EB2441;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.team-member>div.description{
+    position: absolute;
+    bottom: 0px;
+    color: #fff ;
+}
+div.team-member:hover>div.description{
+    display: none;
+}
+div.team-member>img{
+    height: 350px !important;
+    width: inherit !important;
+    filter: blur(0px);
+    transition: filter 0.37s ease;
+}
+div.team-member:hover>img{
+    filter: blur(2px);
 }
 .br-0{
     border-radius: 0px !important;
@@ -446,7 +507,9 @@ div.toggler-div>h2>button.collapsed{
 .form-group>label:after{
     content: "*";
 }
-
+label.not-required:after{
+    content: none !important;
+}
 .form-group>input,.form-group>select,.form-group>textarea{
     border:  none;
     border-bottom: 1px solid #ccc;
@@ -742,4 +805,54 @@ button.selected{
     .main-post{
         height: auto !important;
     }
+}
+
+
+/* Check Box */
+/* Base for label styling */
+[type="checkbox"]:not(:checked),
+[type="checkbox"]:checked {
+  position: absolute;
+  left: -9999px;
+
+}
+[type="checkbox"]:not(:checked) + label,
+[type="checkbox"]:checked + label {
+  position: relative;
+  padding-left: 1.95em;
+  cursor: pointer;
+}
+
+/* checkbox aspect */
+[type="checkbox"]:not(:checked) + label:before,
+[type="checkbox"]:checked + label:before {
+  content: '';
+  position: absolute;
+  left: 0; top: 0;
+  width: 1.25em; height: 1.25em;
+  border: 2px solid #ccc;
+  background: #fff;
+  border-radius: 4px;
+  box-shadow: inset 0 1px 3px rgba(0,0,0,.1);
+}
+/* checked mark aspect */
+[type="checkbox"]:not(:checked) + label:after,
+[type="checkbox"]:checked + label:after {
+  content: '\2713\0020';
+  position: absolute;
+  top: .15em; left: .22em;
+  font-size: 1.3em;
+  line-height: 0.8;
+  color: #EB2441;
+  transition: all .2s;
+  font-family: 'Lucida Sans Unicode', 'Arial Unicode MS', Arial;
+}
+/* checked mark aspect changes */
+[type="checkbox"]:not(:checked) + label:after {
+  opacity: 0;
+  transform: scale(0);
+}
+[type="checkbox"]:checked + label:after {
+  opacity: 1;
+  transform: scale(1);
 }

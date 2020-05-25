@@ -48,5 +48,9 @@ toggleMobileNav = () => {
 var hashParams = window.location.hash.substr(1).split('&');
 for(var i = 0; i < hashParams.length; i++){
     var p = hashParams[i].split('=');
-    document.getElementById(p[0].toLowerCase()).value = decodeURIComponent(p[1]);;
+    if(document.getElementById(p[0].toLowerCase()))
+      document.getElementById(p[0].toLowerCase()).value = decodeURIComponent(p[1]);;
 }
+
+
+// main slider on homepage and organize a camp page
