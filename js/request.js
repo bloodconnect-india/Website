@@ -1,4 +1,16 @@
 
+console.log( $("#request-form").offset().top)
+function goToForm(city) {
+    window.scrollTo({
+        top: $("#request-form").offset().top-200,
+        left: $("#request-form").offset().left,
+        behavior: 'smooth'
+      });
+    $("#city_region").val(city)
+}
+
+
+
 // For the request form
 var patient_name = ""
 var name = ""

@@ -231,6 +231,9 @@ hr.color-white{
 .italics {
     font-style: italic;
 }
+.wd-100{
+    width: 100%;
+}
 .wd-inherit{
     width: inherit !important;
 }
@@ -244,10 +247,10 @@ hr.color-white{
     width: 20%;
 }
 .h-100{
-    min-height: 100vh !important;
+    height: 100vh !important;
 }
 .h-80{
-    min-height: 80vh !important;
+    height: 80vh !important;
 }
 .h-60{
     height: 60vh !important;
@@ -286,6 +289,21 @@ li.nav-item>a{
 }
 .tagline{
     top: 0px;
+}
+.darken-img{
+    filter: brightness(0.7);
+}
+.img-text-center{
+    position: absolute;
+    top: calc(50%);
+    max-width: 400px;
+    left: calc(50% - 200px);
+}
+.arrow-down-bottom{
+    position: absolute;
+    bottom: 100px;
+    width: 50px;
+    left: calc(50% - 25px);
 }
 button.navbar-toggler{
     position: absolute;
@@ -353,9 +371,13 @@ button.over-img{
     width: inherit;
     height: 80vh !important;
 }
-img.team-member{
-    width: 150px;
-    height: 150px;
+.board-member {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+}
+.board-member>img{
+    height: 350px !important;
 }
 div.team-member>ul.social-media{
     list-style-type: none;
