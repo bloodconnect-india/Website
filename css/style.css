@@ -377,14 +377,24 @@ button.over-img{
     justify-content: start;
 }
 .board-member>img{
-    height: 350px !important;
+    height: 250px !important;
+    width: 200px !important;
+}
+div.team-member>img{
+    height: 250px !important;
+    width: inherit !important;
+    filter: blur(0px);
+    transition: filter 0.37s ease;
+}
+div.team-member:hover>img{
+    filter: blur(2px);
 }
 div.team-member>ul.social-media{
     list-style-type: none;
     position: absolute;
     display: none;
-    top: 150px;
-    left: calc(40% - 105px);
+    top: 100px;
+    left: calc(50% - 75px);
 }
 div.team-member:hover>ul.social-media{
     display: block !important;
@@ -409,15 +419,7 @@ div.team-member>ul.social-media>li{
 div.team-member:hover>div.description{
     display: none;
 }
-div.team-member>img{
-    height: 350px !important;
-    width: inherit !important;
-    filter: blur(0px);
-    transition: filter 0.37s ease;
-}
-div.team-member:hover>img{
-    filter: blur(2px);
-}
+
 .br-0{
     border-radius: 0px !important;
 }
@@ -743,6 +745,9 @@ button.selected{
 /* Media properties  */
 
 @media (max-width:480px){
+    .pt-100-sm{
+        padding-top: 100px !important;
+    }
     .img-left,.img-right{
         background-size: contain;
     }
@@ -792,9 +797,7 @@ button.selected{
     }
 }
 @media (max-width:780px){
-    .pt-100-sm{
-        padding-top: 100px !important;
-    }
+
     .hide-lg{
         display: flex !important;
     }
@@ -803,6 +806,13 @@ button.selected{
     }
     .show-md{
         display: flex;
+    }
+    .justify-content-center-md{
+        justify-content: center !important;
+    }
+    #navbar-sm{
+        align-items: start !important;
+        flex-direction: column !important;
     }
     img.h-80{
         min-height: 400px !important;
