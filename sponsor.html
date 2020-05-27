@@ -125,9 +125,9 @@
       <div class="container ">
         <div class="row">
           <div class="col-lg-7 col-sm-12  d-flex flex-column align-item-center">
-            <h1 class="display-4 bold color-white ">You can make a difference so why dont you ?</h1>
+            <h1 class="f-44 bold color-white ">You can make a difference so why dont you ?</h1>
             <p class="color-white">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Adipisci, cum incidunt necessitatibus deserunt laborum nostrum dolores d</p>
-            <button class="btn-main bg-white color-main mb-3 mx-auto-sm">Donate Now <i class="fa fa-heart"></i></button>
+            <button class="btn-main bg-white color-main mb-3 mx-auto-sm" onclick="showPayment()">Donate Now <i class="fa fa-heart"></i></button>
           </div>
          <div class="col-lg-5 col-sm-12">
           <img class="contain-img absolute h-80" src="./img/event/3.jpg" alt="">
@@ -136,40 +136,33 @@
       </div>
     </div>
   
-    <div class="mt-5 pt-5 mt-0-sm pt-0-sm d-flex flex-column align-items-center container">
-      <h4 class="display-4 mt-5 color-dark">How can you donate ?</h4>
-      <p class="color-grey text-center fw-4 ">Section 80G of the I-T Act allows donations made to specified relief funds and charitable institutions as a deduction from gross total income. It is that time of the year when you are looking for ways to save on as much tax as possible</p>
-      <div class="d-flex justify-content-center mt-5 flex-column-sm">
-      <button class="btn-main fw-6 mx-auto-sm color-white bg-main f-18" onclick="showPayment()">Donate Online <i class="fa fa-heart"></i></button>
-      </div>
-      <h4 class="ft-44 color-dark mt-4">Or</h4>
-      <p class="color-dark ft-34">Cheque Deposit</p>
-      <p class="color-grey text-center">Checks may be made out to SaveLIFE Foundation USA and sent to SaveLife Foundation USA, <br> 200 E 61st Street # 25B, New York, NY 10065 </p>
-    </p>
-    </div>
 
-    <div class="container">
+    <!-- Your Donation Enables Us -->
+    <div class="container mt-5">
       <div class="row">
         <div class="col-lg-6">
-          <div class="row">
+          <div class="row collage">
             <div class="col p-1">
               <img class="wd-inherit mb-2" src="./img/sponsor-us/collage/9.jpg" alt="">
               <img class="wd-inherit mb-2" src="./img/sponsor-us/collage/5.jpg" alt="">
               <img class="wd-inherit mb-2" src="./img/sponsor-us/collage/2.jpg" alt="">
+              <img class="wd-inherit mb-2" src="./img/sponsor-us/collage/7.jpg" alt="">
             </div>
             <div class="col p-1">
               <img class="wd-inherit mb-2" src="./img/sponsor-us/collage/1.jpg" alt="">
               <img class="wd-inherit mb-2" src="./img/sponsor-us/collage/5.jpg" alt="">
               <img class="wd-inherit mb-2" src="./img/sponsor-us/collage/2.jpg" alt="">
+              <img class="wd-inherit mb-2" src="./img/sponsor-us/collage/1.jpg" alt="">
             </div>
             <div class="col p-1">
               <img class="wd-inherit mb-2" src="./img/sponsor-us/collage/3.jpg" alt="">
               <img class="wd-inherit mb-2" src="./img/sponsor-us/collage/6.jpg" alt="">
               <img class="wd-inherit mb-2" src="./img/sponsor-us/collage/4.jpg" alt="">
+              <img class="wd-inherit mb-2" src="./img/sponsor-us/collage/8.jpg" alt="">
             </div>
           </div>
         </div>
-        <div class="col-lg-6">
+        <div class="col-lg-6 mt-5-lg">
           <h4 class="f-34 color-dark text-center">Your Donation Enables Us To </h4>
             <ul>
               <li class="color-dark">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur temporibus, ipsum deleniti quas aperiam eligendi quis similique illo quaerat ut off</li>
@@ -185,7 +178,24 @@
     </div>
 
 
+    <!-- 80G profit -->
+    <div class=" d-flex flex-column align-items-center container">
+      <h4 class="f-44 mt-5 color-dark">How can you donate ?</h4>
+      <p class="color-grey text-center fw-4 ">Section 80G of the I-T Act allows donations made to specified relief funds and charitable institutions as a deduction from gross total income. It is that time of the year when you are looking for ways to save on as much tax as possible</p>
+      <div class="d-flex justify-content-center mt-5 flex-column-sm">
+      <button class="btn-main fw-6 mx-auto-sm color-white bg-main f-18" onclick="showPayment()">Donate Online <i class="fa fa-heart"></i></button>
+      </div>
+      <h4 class="ft-44 color-dark mt-4">Or</h4>
+      <p class="color-dark ft-34">Cheque Deposit</p>
+      <p class="color-grey text-center">Checks may be made out to SaveLIFE Foundation USA and sent to SaveLife Foundation USA, <br> 200 E 61st Street # 25B, New York, NY 10065 </p>
+    </p>
+    </div>
 
+    
+
+
+
+    <!-- Payment popup -->
     <div class="payment-details bg-white  z-100 shadow hide " id="payment-details">
       <div class="row ">
         <div class="col-lg-6 hide-sm px-4">
@@ -195,30 +205,35 @@
                 <img class="wd-inherit" src="./img/sponsor-us/collage/5.jpg" alt="">
                 <img class="wd-inherit" src="./img/sponsor-us/collage/2.jpg" alt="">
                 <img class="wd-inherit" src="./img/sponsor-us/collage/7.jpg" alt="">
+                <img class="wd-inherit" src="./img/sponsor-us/collage/4.jpg" alt="">
               </div>
               <div class="col p-0">
                 <img class="wd-inherit" src="./img/sponsor-us/collage/3.jpg" alt="">
                 <img class="wd-inherit" src="./img/sponsor-us/collage/6.jpg" alt="">
                 <img class="wd-inherit" src="./img/sponsor-us/collage/4.jpg" alt="">
                 <img class="wd-inherit" src="./img/sponsor-us/collage/8.jpg" alt="">
+                <img class="wd-inherit" src="./img/sponsor-us/collage/7.jpg" alt="">
               </div>
               <div class="col p-0">
                 <img class="wd-inherit" src="./img/sponsor-us/collage/9.jpg" alt="">
                 <img class="wd-inherit" src="./img/sponsor-us/collage/5.jpg" alt="">
                 <img class="wd-inherit" src="./img/sponsor-us/collage/2.jpg" alt="">
                 <img class="wd-inherit" src="./img/sponsor-us/collage/1.jpg" alt="">
+                <img class="wd-inherit" src="./img/sponsor-us/collage/7.jpg" alt="">
               </div>
               <div class="col p-0">
                 <img class="wd-inherit" src="./img/sponsor-us/collage/1.jpg" alt="">
                 <img class="wd-inherit" src="./img/sponsor-us/collage/5.jpg" alt="">
                 <img class="wd-inherit" src="./img/sponsor-us/collage/2.jpg" alt="">
                 <img class="wd-inherit" src="./img/sponsor-us/collage/7.jpg" alt="">
+                <img class="wd-inherit" src="./img/sponsor-us/collage/3.jpg" alt="">
               </div>
               <div class="col p-0">
                 <img class="wd-inherit" src="./img/sponsor-us/collage/3.jpg" alt="">
                 <img class="wd-inherit" src="./img/sponsor-us/collage/6.jpg" alt="">
                 <img class="wd-inherit" src="./img/sponsor-us/collage/4.jpg" alt="">
                 <img class="wd-inherit" src="./img/sponsor-us/collage/8.jpg" alt="">
+                <img class="wd-inherit" src="./img/sponsor-us/collage/1.jpg" alt="">
               </div>
             </div>
         </div>
@@ -264,13 +279,13 @@
     </div>
 
     <!-- Footer -->
-    <div class="container-fluid bg-main pt-5">
+    <div class="container-fluid bg-main pt-3">
       <div class="container d-flex flex-column ">
         <div class="d-flex justify-content-between align-items-center flex-column-sm">
           <a href="./index.html">
             <img src="./img/logo.png" alt="">
           </a>
-          <ul class="footer-list mb-0 d-flex justify-content-start align-items-center pr-4 col-lg-4 col-sm-12">
+          <ul class="footer-list mb-0 d-flex justify-content-start align-items-center pr-4 ">
             <li class="footer-item ">
               <a href="#" class="footer-link color-white"><i class="fa fa-facebook-f"></i></a>
             </li>
@@ -325,7 +340,7 @@
           </div>
         </div>
     
-        <div class="d-flex justify-content-between mt-3">
+        <div class="d-flex justify-content-between ">
           <p class="color-white f-14">Copyright &copy; BloodConnect Foundation 2020</p>
     
           <ul class="footer-list">

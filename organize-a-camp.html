@@ -122,17 +122,42 @@
     </nav>
 
 
-    <div class="container-fluid h-80 mb-5  pl-0 pr-0 content pt-100-sm">
-      <div class="container">
+    <div class="container-fluid h-80 pl-0 pr-0 content  pt-100-sm" style="overflow: hidden;">
+      <div class="container" id="top">
         <div class="row h-80 align-items-center">
           <div class="col-lg-6 d-flex flex-column justify-content-center">
-            <h4 class="display-4 color-main">Camp With Us</h4>
+            <h4 class="f-44 color-main">Camp With Us</h4>
             <p class="color-grey">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae animi atque neque. Ex sint possimus nihil doloremque vel sit esse blanditiis, doloribu</p>
             <button class="btn-main bg-main color-white fw-6">Organize Now &nbsp; <img src="./svg/hand-point-down-solid.svg" width="20" height="20" alt="" srcset=""> </button>
           </div>
           <div class="col-lg-6 d-flex flex-column justify-content-center h-60 p-0">
             <img class="wd-inherit h-inherit" src="./img/event/1.jpg" alt="" srcset="">
-            <button class="over-img btn-main bg-main color-white">See More <img src="./svg/arrow-right.svg" width="20" alt=""></button>
+            <button class="over-img btn-main bg-main color-white" onclick="showCampCollage()">See More <img src="./svg/arrow-right.svg" width="20" alt=""></button>
+          </div>
+        </div>
+      </div>
+
+      <div class="container pt-5 mb-5 hide" id="campCollage">
+        <div class="row no-gutters campCollage">
+          <div class="col">
+            <img class="wd-inherit" src="./img/event/1.jpg" alt="">
+            <img class="wd-inherit" src="./img/event/2.jpg" alt="">
+            <img class="wd-inherit" src="./img/event/3.jpg" alt="">
+          </div>
+          <div class="col">
+            <img class="wd-inherit" src="./img/event/4.jpg" alt="">
+            <img class="wd-inherit" src="./img/event/3.jpg" alt="">
+            <img class="wd-inherit" src="./img/event/2.jpg" alt="">
+          </div>
+          <div class="col">
+            <img class="wd-inherit" src="./img/event/1.jpg" alt="">
+            <img class="wd-inherit" src="./img/event/2.jpg" alt="">
+            <img class="wd-inherit" src="./img/event/3.jpg" alt="">
+          </div>
+          <div class="col">
+            <img class="wd-inherit" src="./img/event/4.jpg" alt="">
+            <img class="wd-inherit" src="./img/event/3.jpg" alt="">
+            <img class="wd-inherit" src="./img/event/2.jpg" alt="">
           </div>
         </div>
       </div>
@@ -140,7 +165,7 @@
 
 
     <div class="container ">
-      <h4 class="display-4 color-dark text-center mb-5">What Makes Us Different ?</h4>
+      <h4 class="f-44 color-dark text-center mb-5">What Makes Us Different ?</h4>
       <div class="row mb-5">
         <div class="col-lg-5 col-sm-10 mx-auto" mb-3>
           <img class="wd-inherit h-inherit" src="./img/event/theme.jpg" alt="">
@@ -165,7 +190,7 @@
     </div>
 
     <div class="container">
-      <h4 class="display-4 color-dark text-center mb-3">Our past Collaboraters</h4>
+      <h4 class="f-44 color-dark text-center mb-3">Our past Collaboraters</h4>
       <div class="row">
         <div class="col-lg-2">
           <img class="wd-inherit h-inherit " src="./img/media-partners/1.jpg" alt="">
@@ -219,54 +244,67 @@
         </div>
       </div>
     </div>
-    <div class="mt-0" >
-      <div class="success-modal pl-4 pr-4 pb-4  shadow bg-white hide" id="success-modal">
-        <div class="svg-box">
-          <svg class="circular green-stroke">
-              <circle class="path" cx="75" cy="75" r="50" fill="none" stroke-width="5" stroke-miterlimit="10"/>
-          </svg>
-          <svg class="checkmark green-stroke">
-              <g transform="matrix(0.79961,8.65821e-32,8.39584e-32,0.79961,-489.57,-205.679)">
-                  <path class="checkmark__check" fill="none" d="M616.306,283.025L634.087,300.805L673.361,261.53"/>
-              </g>
-          </svg>
-      </div>
-      <p class="success">Request raised successfully</p>
-      </div>
-            <div class="row m-0 ">
-              <div class="col-lg-5 d-flex flex-column justify-content-center hide-sm bg-main">
-                <p class=" w-75 mx-auto color-white">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nobis re</p>
-                <p class=" w-75 mx-auto color-white">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nobis re</p>
-                <p class=" w-75 mx-auto color-white">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nobis re</p>
-
-              </div>
-              <div class="col-lg-7">
-
-                <!-- Personal details div -->
-               <div class="personal-details p-5" id="personal-details">
-                <h4 class="color-dark ">Organize A Camp</h4>
-                <p class="color-grey ">Fill this form and a volunteer would be in touch with you soon</p>    
-              <form action="" class="request-form" onsubmit="submitRequest(event)">
-                  
-                  <div class="form-group mb-4">
-                    <label class="m-0   color-dark" for="your_name">Your Name</label>
-                    <input type="text" class="form-control" id="your_name" placeholder="Your Name" required>
-                  </div>
-                  <div class="form-group mb-4">
-                    <label class="m-0   color-dark" for="email">Email Address</label>
-                    <input  type="email" class="form-control" placeholder="example@domain.com" id="email" required>
-                  </div>
+    <div class="container-fluid bg-main mb-5" >
+      <div class="container pt-5 pb-5">
+        <div class="success-modal pl-4 pr-4 pb-4  shadow bg-white hide" id="success-modal">
+          <div class="svg-box">
+            <svg class="circular green-stroke">
+                <circle class="path" cx="75" cy="75" r="50" fill="none" stroke-width="5" stroke-miterlimit="10"/>
+            </svg>
+            <svg class="checkmark green-stroke">
+                <g transform="matrix(0.79961,8.65821e-32,8.39584e-32,0.79961,-489.57,-205.679)">
+                    <path class="checkmark__check" fill="none" d="M616.306,283.025L634.087,300.805L673.361,261.53"/>
+                </g>
+            </svg>
+        </div>
+        <p class="success">Request raised successfully</p>
+        </div>
+        <div class="row  ">
+          <div class="col-lg-6 d-flex flex-column justify-content-center hide-sm bg-main">
+            <h4 class="text-center  color-white  f-44 fw-6"><i class="fa fa-heart"></i> 2400</h4>
+            <p class="   color-white f-18 text-center">Camps done so far</p>
+            <h4 class="text-center f-44 fw-6 color-white "><i class="fa fa-heart"></i> 1,00,000</h4>
+            <p class="   color-white f-18 text-center">Units of blood collected in those camps</p>
+            <h4 class="text-center f-44 fw-6 color-white "><i class="fa fa-heart"></i> 4,00,000</h4>
+            <p class="   color-white f-18 text-center">Lives saved by those bloods</p>
+  
+          </div>
+          <div class="col-lg-6 bg-white px-5 pt-4 pb-3 rounded">
+  
+            <!-- Personal details div -->
+            <h4 class="color-dark ">Organize A Camp</h4>
+            <p class="color-grey ">Fill this form and a volunteer would be in touch with you soon</p>    
+            <form action="" class="request-form" onsubmit="submitRequest(event)">
+                
+              <div id="personalDetails">
+                <div class="form-group mb-4">
+                  <label class="m-0   color-dark" for="your_name">Your Name</label>
+                  <input type="text" class="form-control" id="your_name" placeholder="Your Name" required>
+                </div>
+                <div class="form-group mb-4">
+                  <label class="m-0   color-dark" for="email">Email Address</label>
+                  <input  type="email" class="form-control" placeholder="example@domain.com" id="email" required>
+                </div>
                 
                 <div class="form-group mb-4">
                   <label class="m-0   color-dark" for="phone_number">Phone Number</label>
                   <input  type="number" class="form-control" placeholder="9999xxxxxx" id="phone_number" required>
                 
                 </div>
-
-                <div class="d-flex justify-content-between flex-column-sm">
+  
+                <div class="navigation-buttons inline text-center-sm">
+                  <button type="button" class="pl-5 pr-5 right-lg mb-4 mx-auto btn-main bg-main" onclick="showCampDetailsInput()">Next</button>
+                </div>
+              </div>
+              <div id="campDetails" class="hide">
+                  
                   <div class="form-group mb-4">
                     <label class="m-0   color-dark" for="date">Date</label>
                     <input  type="date" class="form-control" placeholder="20/01/2020" id="date" required>
+                  </div>
+                  <div class="form-group mb-4">
+                    <label class="m-0   color-dark" for="venue">Venue</label>
+                    <input type="text" class="form-control" id="venue" placeholder="Venue" required>
                   </div>
                   <div class="form-group mb-4">
                     <label class="m-0   color-dark" for="city_region">City Region</label>
@@ -324,73 +362,48 @@
                       <option value="Dadra and Nagar Havelli">Dadra and Nagar Havelli</option>
                     </select>
                   </div>
-                  
-                </div>
-
-
-                <div class="d-flex justify-content-between flex-column-sm">
-                  
-                  <div class="form-group mb-4">
-                    <label class="m-0   color-dark" for="est_donation">Estimated number of donations</label>
-                    <input type="number" class="form-control" id="est_donation" placeholder="120" required>
+                    
+                  <div class="d-flex justify-content-between flex-column-sm">
+                    
+                    <div class="form-group mb-4">
+                      <label class="m-0  not-required color-dark" for="est_donation">Estimated no. of donations</label>
+                      <input type="number" class="form-control" id="est_donation" placeholder="120" >
+                    </div>
+                    <div class="form-group mb-4">
+                      <label class="m-0 not-required  color-dark" for="est_emp">Estimated no. of employee/student</label>
+                      <input  type="number" class="form-control" placeholder="140" id="est_emp" >
+                    </div>
                   </div>
                   <div class="form-group mb-4">
-                    <label class="m-0   color-dark" for="est_emp">Estimated number of employee/student</label>
-                    <input  type="number" class="form-control" placeholder="140" id="est_emp" required>
+                    <label class="m-0   color-dark" for="additional">Additional Message</label>
+                    <textarea  class="form-control" cols="20" rows="3" placeholder="Any additional message you want" id="additional" ></textarea>
                   </div>
-                </div>
-                <div class="form-group mb-4">
-                  <label class="m-0   color-dark" for="additional">Additional Message</label>
-                  <textarea  class="form-control" cols="20" rows="3" placeholder="Any additional message you want" id="additional" ></textarea>
-                </div>
-                <div class="navigation-buttons inline text-center-sm">
-                 <input type="submit" class="pl-5 pr-5 right-lg mb-4 mx-auto btn-main bg-main" value="Submit" />
-                </div>
-              </form>
-              
-               </div>
-            
-
-
-                <!-- Additional Details -->
-                <div class="additional-request-details p-5 hide" id="additional-details">
-                  <form action="" class="request-form" onsubmit="submitAdditionalDetails(event)">
-                  
-                  <div class="form-group mb-4">
-                    <label class="m-0   color-dark" for="details">Additional Details</label>
-                    <textarea name="details" id="details" cols="20" rows="3"></textarea>
-                  </div>
-                  <div class="form-group mb-4">
-                    <label class="m-0   color-dark" for="address">Your Address</label>
-                    <textarea name="address" id="address" cols="20" rows="3"></textarea>
-                  </div>
-                  <div class="navigation-buttons inline text-center-sm">
-                    <button type="button" class="pl-5 pr-5 mb-4 btn-main color-main bg-white " onclick="showMainDetailsDiv()">Back</button>
-                  <!-- <input type="submit" class="pl-5 pr-5 right-lg btn-main bg-main" value="Next" /> -->
-                  <button id="submit-request-button" class="pl-5 pr-5 right-lg btn-main bg-main" type="submit">
-                    <span>Submit</span>
-                    <!-- Loading animation -->
-                    <svg version="1.1" id="loader-1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                      width="40px" height="40px" viewBox="0 0 50 50" style="enable-background:new 0 0 50 50;" xml:space="preserve">
-                    <path fill="#000" d="M25.251,6.461c-10.318,0-18.683,8.365-18.683,18.683h4.068c0-8.071,6.543-14.615,14.615-14.615V6.461z">
-                      <animateTransform attributeType="xml"
-                        attributeName="transform"
-                        type="rotate"
-                        from="0 25 25"
-                        to="360 25 25"
-                        dur="0.6s"
-                        repeatCount="indefinite"/>
-                      </path>
-                    </svg>
-                  </button>
-                  </div>
-                </form>
-                
-                </div> 
+              <div class="navigation-buttons inline text-center-sm">
+                <button type="button" class="pl-5 pr-5 left-lg btn-main bg-white color-dark" onclick="showPersonaldetailsInput()">Back</button>
+                <button type="submit" class="pl-5 pr-5 right-lg mb-4 mx-auto btn-main bg-main">Create request</button>
               </div>
+              </div>
+            </form>
+          
             </div>
+          </div>
+      </div>
     </div>
 
+
+    <div class="container mb-5">
+      <h4 class="f-44 color-dark text-center mb-3">Testimonials</h4>
+      <div class="row justify-content-center">
+        <div class="col-lg-3 col-sm-12 mb-3 organizer-testimonial">
+          <img class=" shadow" src="./img/team/demo/9.jpg" alt="">
+        </div>
+        <div class="col-lg-6 col-sm-12 mb-3 d-flex justify-content-end flex-column pb-4">
+          <p class="f-44 color-main-light mb-0"><i class="fa fa-quote-left"></i></p>
+          <p class="color-dark ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat corrupti eos atque quos? Tempore, libero esse exercitationem architecto animi aperiam porro quia, iste ab repudiandae deleniti deserunt eligendi alias inventore!</p>
+          <p class="f-18 color-dark"><span class="fw-6">John Doe</span>, CEO Xyz</p>
+        </div>
+      </div>
+    </div>
 
 
     <!-- Footer -->
@@ -470,5 +483,23 @@
 <script src="./js/bootstrap.min.js"></script>
 <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 <script src="./js/main.js"></script>
+
+<script>
+  showCampCollage = () =>{
+    $("#top").addClass('hide')
+    $("#top").removeClass('show')
+    $("#campCollage").addClass('show')
+    $("#campCollage").removeClass('hide')
+  }
+
+  window.onscroll = () => {
+    if(window.pageYOffset > window.innerHeight){
+      $("#top").addClass('show')
+      $("#top").removeClass('hide')
+    $("#campCollage").addClass('hide')
+    $("#campCollage").removeClass('show')
+    }
+  }
+</script>
 </body>
 </html>

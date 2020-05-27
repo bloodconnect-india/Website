@@ -53,4 +53,21 @@ for(var i = 0; i < hashParams.length; i++){
 }
 
 
-// main slider on homepage and organize a camp page
+// All the main scroll funtions
+
+goToTeam = () => {
+  window.scrollTo({
+    top:$("#boardMembers").offset().top-window.innerHeight/2,
+    behavior: 'smooth'
+  })
+}
+
+// Camp request workflow
+showPersonaldetailsInput = () => {
+  $("#personalDetails").show()
+  $("#campDetails").hide()
+}
+showCampDetailsInput = () => {
+  $("#personalDetails").hide()
+  $("#campDetails").show()
+}
