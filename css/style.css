@@ -302,7 +302,7 @@ li.nav-item>a{
     position: absolute;
     top: calc(50%);
     max-width: 400px;
-    left: calc(50% - 200px);
+    left: calc(50% - 150px);
 }
 .our-family{
     position: absolute;
@@ -583,7 +583,7 @@ label.not-required:after{
 
 .success-modal{
     position: fixed;
-    height: 200px;
+    height: auto;
     width: 200px;
     text-align: center;
     left: calc(50% - 100px);
