@@ -130,7 +130,7 @@
             <button class="btn-main bg-white color-main mb-3 mx-auto-sm" onclick="showPayment()">Donate Now <i class="fa fa-heart"></i></button>
           </div>
          <div class="col-lg-5 col-sm-12">
-          <img class="contain-img absolute h-80" src="./img/event/3.jpg" alt="">
+          <img class="contain-img" src="./img/event/3.jpg" alt="">
          </div>
         </div>
       </div>
@@ -141,7 +141,7 @@
     <div class="container mt-5">
       <div class="row">
         <div class="col-lg-6">
-          <div class="row collage">
+          <div class="row collage" id="collage1" style="overflow: hidden;">
             <div class="col p-1">
               <img class="wd-inherit mb-2" src="./img/sponsor-us/collage/9.jpg" alt="">
               <img class="wd-inherit mb-2" src="./img/sponsor-us/collage/5.jpg" alt="">
@@ -162,7 +162,7 @@
             </div>
           </div>
         </div>
-        <div class="col-lg-6 mt-5-lg">
+        <div class="col-lg-6" id="donationHelp">
           <h4 class="f-34 color-dark text-center">Your Donation Enables Us To </h4>
             <ul>
               <li class="color-dark">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur temporibus, ipsum deleniti quas aperiam eligendi quis similique illo quaerat ut off</li>
@@ -244,11 +244,27 @@
             <button type="button" class="amt" onclick="amtSelected(event)">5000</button>
             <button type="button" class="amt" onclick="amtSelected(event)">10000</button>
 
-            <p class="color-dark italics f-18" id="amtImpact">You are helping us save 100 lives <i class="color-main fa fa-heart"></i> </p>
+            <p class="color-dark italics f-18 " id="amtImpact" style="overflow: hidden;max-height:50px ;transition: width 1s ease-in">You are helping us save 100 lives 
+              <svg width="50" height="50" viewBox="0 0 200 200">
+                <g transform="translate(100 100)">
+                  <path transform="translate(-50 -50)" fill="#EB2441" d="M92.71,7.27L92.71,7.27c-9.71-9.69-25.46-9.69-35.18,0L50,14.79l-7.54-7.52C32.75-2.42,17-2.42,7.29,7.27v0 c-9.71,9.69-9.71,25.41,0,35.1L50,85l42.71-42.63C102.43,32.68,102.43,16.96,92.71,7.27z"></path>
+                  <animateTransform 
+                      attributeName="transform" 
+                      type="scale" 
+                      values="1; 1.5; 1.25; 1.5; 1.5; 1;" 
+                      dur="1s" 
+                      repeatCount="2"
+                      additive="sum">      
+                  </animateTransform>
+              </g>
+              </svg>
+            
+              
+            </p>
             <div class="form-group mb-4  relative">
               <label class="m-0   color-dark" for="patientName">Amount</label>
               <i class="input-icon color-grey fa fa-rupee"></i>
-              <input type="number" class="form-control pl-5" id="amtInput" placeholder="500" value="1000" onchange="requirePanCard(event)" required>
+              <input type="number" class="form-control pl-5" id="amtInput" placeholder="500" value="1000" onchange="amtChanged(event)" required>
             </div>
             <div class="form-group mb-4 relative">
               <i class="input-icon color-grey fa fa-user"></i>
@@ -278,14 +294,20 @@
       </div>
     </div>
 
+    <div class="success-modal py-5 shadow bg-white hide" id="success-modal">
+      <img width="100" src="./img/popup/mail-sent.jpg" alt="">
+    <p class="color-dark fw-6 mt-3">Request raised successfully</p>
+    <p class="color-grey">You would be redirected in <span id="seconds">3s</span></p>
+    </div>
+
     <!-- Footer -->
-    <div class="container-fluid bg-main pt-3">
+    <div class="container-fluid bg-main pt-5">
       <div class="container d-flex flex-column ">
         <div class="d-flex justify-content-between align-items-center flex-column-sm">
           <a href="./index.html">
             <img src="./img/logo.png" alt="">
           </a>
-          <ul class="footer-list mb-0 d-flex justify-content-start align-items-center pr-4 ">
+          <ul class="footer-list mb-0 d-flex justify-content-start align-items-center pr-4 col-lg-4 col-sm-12">
             <li class="footer-item ">
               <a href="#" class="footer-link color-white"><i class="fa fa-facebook-f"></i></a>
             </li>
@@ -320,7 +342,7 @@
             <p class="color-white bold mb-2">RAISE A REQUEST</p>
             <ul class="footer-list pl-0">
               <li class=" mr-4 "><a class="color-white f-12 fw-6" href="./raise-a-request.html#city_region=Delhi">RAISE A REQUEST IN DELHI-NCR</a></li>
-              <li class=" mr-4 "><a class="color-white f-12 fw-6" href="/raise-a-request.html#city_region=Kanpur">RAISE A REQUEST IN KANPUR</a></li>
+              <li class=" mr-4 "><a class="color-white f-12 fw-6" href="./raise-a-request.html#city_region=Kanpur">RAISE A REQUEST IN KANPUR</a></li>
               <li class=" mr-4 "><a class="color-white f-12 fw-6" href="./raise-a-request.html#city_region=Agra">RAISE A REQUEST IN AGRA</a></li>
               <li class=" mr-4 "><a class="color-white f-12 fw-6" href="./raise-a-request.html#city_region=Lucknow">RAISE A REQUEST IN LUCKNOW</a></li>
               <li class=" mr-4 "><a class="color-white f-12 fw-6" href="./raise-a-request.html#city_region=Bhubaneswar">RAISE A REQUEST IN BHUBANESWAR</a></li>
@@ -330,19 +352,19 @@
           <div class="col-lg-4 col-sm-12">
             <p class="color-white bold  mb-2">ORGANIZE A CAMP</p>
             <ul class="footer-list pl-0">
-              <li class=" mr-4 "><a class="color-white f-12 fw-6" href="./raise-a-request.html#city_region=Delhi">ORGANIZE A CAMP IN DELHI-NCR</a></li>
-              <li class=" mr-4 "><a class="color-white f-12 fw-6" href="/raise-a-request.html#city_region=Kanpur">ORGANIZE A CAMP IN KANPUR</a></li>
-              <li class=" mr-4 "><a class="color-white f-12 fw-6" href="./raise-a-request.html#city_region=Agra">ORGANIZE A CAMP IN AGRA</a></li>
-              <li class=" mr-4 "><a class="color-white f-12 fw-6" href="./raise-a-request.html#city_region=Lucknow">ORGANIZE A CAMP IN LUCKNOW</a></li>
-              <li class=" mr-4 "><a class="color-white f-12 fw-6" href="./raise-a-request.html#city_region=Bhubaneswar">ORGANIZE A CAMP IN BHUBANESWAR</a></li>
-              <li class=" mr-4 "><a class="color-white f-12 fw-6" href="./raise-a-request.html#city_region=Jaipur">ORGANIZE A CAMP IN JAIPUR</a></li>
+              <li class=" mr-4 "><a class="color-white f-12 fw-6" href="./organize-a-camp.html#city_region=Delhi">ORGANIZE A CAMP IN DELHI-NCR</a></li>
+              <li class=" mr-4 "><a class="color-white f-12 fw-6" href="./organize-a-camp.html#city_region=Kanpur">ORGANIZE A CAMP IN KANPUR</a></li>
+              <li class=" mr-4 "><a class="color-white f-12 fw-6" href="./organize-a-camp.html#city_region=Agra">ORGANIZE A CAMP IN AGRA</a></li>
+              <li class=" mr-4 "><a class="color-white f-12 fw-6" href="./organize-a-camp.html#city_region=Lucknow">ORGANIZE A CAMP IN LUCKNOW</a></li>
+              <li class=" mr-4 "><a class="color-white f-12 fw-6" href="./organize-a-camp.html#city_region=Bhubaneswar">ORGANIZE A CAMP IN BHUBANESWAR</a></li>
+              <li class=" mr-4 "><a class="color-white f-12 fw-6" href="./organize-a-camp.html#city_region=Jaipur">ORGANIZE A CAMP IN JAIPUR</a></li>
             </ul>
           </div>
         </div>
-    
-        <div class="d-flex justify-content-between ">
+
+        <div class="d-flex justify-content-between mt-3">
           <p class="color-white f-14">Copyright &copy; BloodConnect Foundation 2020</p>
-    
+
           <ul class="footer-list">
             <li class="f-14 left mr-3"><a class="color-white" href="./privacy.html">Privacy</a></li>
             <li class="f-14 left"><a class="color-white" href="./toc.html">Terms and Condition</a></li>
@@ -355,5 +377,9 @@
     <script src="./js/bootstrap.min.js"></script>
     <script src="./js/main.js"> </script>
     <script src="./js/payment.js"></script>
+
+    <script>
+      document.getElementById("collage1").style.height = document.getElementById("donationHelp").offsetHeight+"px"
+    </script>
 </body>
 </html>

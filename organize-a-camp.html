@@ -121,50 +121,39 @@
           </div>
     </nav>
 
-
-    <div class="container-fluid h-80 pl-0 pr-0 content  pt-100-sm" style="overflow: hidden;">
+    <div class="container-fluid  pl-0 pr-0 content  pt-100-sm " >
       <div class="container" id="top">
-        <div class="row h-80 align-items-center">
-          <div class="col-lg-6 d-flex flex-column justify-content-center">
+        <div class="row align-items-center pt-4 pb-4">
+          <div class="col-lg-6 d-flex flex-column justify-content-center ">
             <h4 class="f-44 color-main">Camp With Us</h4>
             <p class="color-grey">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae animi atque neque. Ex sint possimus nihil doloremque vel sit esse blanditiis, doloribu</p>
-            <button class="btn-main bg-main color-white fw-6">Organize Now &nbsp; <img src="./svg/hand-point-down-solid.svg" width="20" height="20" alt="" srcset=""> </button>
+            <button class="btn-main bg-main color-white fw-6" onclick="showCampForm()">Organize Now &nbsp; <img src="./svg/hand-point-down-solid.svg" width="20" height="20" alt="" srcset=""> </button>
           </div>
-          <div class="col-lg-6 d-flex flex-column justify-content-center h-60 p-0">
-            <img class="wd-inherit h-inherit" src="./img/event/1.jpg" alt="" srcset="">
-            <button class="over-img btn-main bg-main color-white" onclick="showCampCollage()">See More <img src="./svg/arrow-right.svg" width="20" alt=""></button>
-          </div>
-        </div>
-      </div>
-
-      <div class="container pt-5 mb-5 hide" id="campCollage">
-        <div class="row no-gutters campCollage">
-          <div class="col">
-            <img class="wd-inherit" src="./img/event/1.jpg" alt="">
-            <img class="wd-inherit" src="./img/event/2.jpg" alt="">
-            <img class="wd-inherit" src="./img/event/3.jpg" alt="">
-          </div>
-          <div class="col">
-            <img class="wd-inherit" src="./img/event/4.jpg" alt="">
-            <img class="wd-inherit" src="./img/event/3.jpg" alt="">
-            <img class="wd-inherit" src="./img/event/2.jpg" alt="">
-          </div>
-          <div class="col">
-            <img class="wd-inherit" src="./img/event/1.jpg" alt="">
-            <img class="wd-inherit" src="./img/event/2.jpg" alt="">
-            <img class="wd-inherit" src="./img/event/3.jpg" alt="">
-          </div>
-          <div class="col">
-            <img class="wd-inherit" src="./img/event/4.jpg" alt="">
-            <img class="wd-inherit" src="./img/event/3.jpg" alt="">
-            <img class="wd-inherit" src="./img/event/2.jpg" alt="">
+          <div class="col-lg-6 d-flex flex-column justify-content-center mt-4 mb-4 p-0">
+            <img class="wd-inherit" src="./img/event/1.jpg" alt="" srcset="">
+            <button class="over-img btn-main bg-main color-white" onclick="showCampSlide()">See More <img src="./svg/arrow-right.svg" width="20" alt=""></button>
           </div>
         </div>
       </div>
     </div>
 
+    <div class="container-fluid h-100 pl-0 pr-0 content fixed hide" id="campSlider">
+      <button class="close color-white f-24" onclick="hideCampSlide()"><i class="fa fa-times"></i></button>
+      <div class="main-slider" data-slick='{"slidesToShow": 1, "slidesToScroll": 1}' >
+        <div class="camp-slider-img">
+          <img class="fit-img h-inherit" src="./img/homepage/carousel-1/1.jpg" alt="" srcset="">
+          
+        </div>
+        <div class="camp-slider-img">
+          <img class="fit-img h-inherit" src="./img/homepage/carousel-1/2.jpg" alt="" srcset="">
+        </div>
+      </div>
+    </div>
 
-    <div class="container ">
+   
+
+
+    <div class="container mt-5-sm">
       <h4 class="f-44 color-dark text-center mb-5">What Makes Us Different ?</h4>
       <div class="row mb-5">
         <div class="col-lg-5 col-sm-10 mx-auto" mb-3>
@@ -190,60 +179,63 @@
     </div>
 
     <div class="container">
-      <h4 class="f-44 color-dark text-center mb-3">Our past Collaboraters</h4>
-      <div class="row">
-        <div class="col-lg-2">
+      <h4 class="f-44 color-dark text-center mb-2">Our past Collaboraters</h4>
+      <div class="row mb-4">
+        <div class="col-lg-2 col-sm-6 col-6">
           <img class="wd-inherit h-inherit " src="./img/media-partners/1.jpg" alt="">
         </div>
-        <div class="col-lg-2">
+        <div class="col-lg-2 col-sm-6 col-6">
           <img class="wd-inherit h-inherit " src="./img/media-partners/2.jpg" alt="">
         </div>
-        <div class="col-lg-2">
+        <div class="col-lg-2 col-sm-6 col-6">
           <img class="wd-inherit h-inherit " src="./img/media-partners/1.jpg" alt="">
         </div>
-        <div class="col-lg-2">
+        <div class="col-lg-2 col-sm-6 col-6">
           <img class="wd-inherit h-inherit " src="./img/media-partners/2.jpg" alt="">
         </div>
-        <div class="col-lg-2">
+        <div class="col-lg-2 col-sm-6 col-6">
           <img class="wd-inherit h-inherit " src="./img/media-partners/1.jpg" alt="">
         </div>
-        <div class="col-lg-2">
+        <div class="col-lg-2 col-sm-6 col-6">
           <img class="wd-inherit h-inherit " src="./img/media-partners/2.jpg" alt="">
         </div>
-        <div class="col-lg-2">
+        <div class="col-lg-2 col-sm-6 col-6">
           <img class="wd-inherit h-inherit " src="./img/media-partners/1.jpg" alt="">
         </div>
-        <div class="col-lg-2">
+        <div class="col-lg-2 col-sm-6 col-6">
           <img class="wd-inherit h-inherit " src="./img/media-partners/2.jpg" alt="">
         </div>
-        <div class="col-lg-2">
+        <div class="col-lg-2 col-sm-6 col-6">
           <img class="wd-inherit h-inherit " src="./img/media-partners/1.jpg" alt="">
         </div>
-        <div class="col-lg-2">
+        <div class="col-lg-2 col-sm-6 col-6">
           <img class="wd-inherit h-inherit " src="./img/media-partners/2.jpg" alt="">
         </div>
-        <div class="col-lg-2">
-          <img class="wd-inherit h-inherit " src="./img/media-partners/1.jpg" alt="">
-        </div><div class="col-lg-2">
-          <img class="wd-inherit h-inherit " src="./img/media-partners/2.jpg" alt="">
-        </div>
-        <div class="col-lg-2">
+        <div class="col-lg-2 col-sm-6 col-6">
           <img class="wd-inherit h-inherit " src="./img/media-partners/1.jpg" alt="">
         </div>
-        <div class="col-lg-2">
+        <div class="col-lg-2 col-sm-6 col-6">
           <img class="wd-inherit h-inherit " src="./img/media-partners/2.jpg" alt="">
         </div>
-        <div class="col-lg-2">
+        <div class="col-lg-2 col-sm-6 col-6">
           <img class="wd-inherit h-inherit " src="./img/media-partners/1.jpg" alt="">
         </div>
-        <div class="col-lg-2">
+        <div class="col-lg-2 col-sm-6 col-6">
           <img class="wd-inherit h-inherit " src="./img/media-partners/2.jpg" alt="">
         </div>
-        <div class="col-lg-2">
+        <div class="col-lg-2 col-sm-6 col-6">
+          <img class="wd-inherit h-inherit " src="./img/media-partners/1.jpg" alt="">
+        </div>
+        <div class="col-lg-2 col-sm-6 col-6">
+          <img class="wd-inherit h-inherit " src="./img/media-partners/2.jpg" alt="">
+        </div>
+        <div class="col-lg-2 col-sm-6 col-6">
           <img class="wd-inherit h-inherit " src="./img/media-partners/1.jpg" alt="">
         </div>
       </div>
     </div>
+
+
     <div class="container-fluid bg-main mb-5" >
       <div class="container pt-5 pb-5">
         <div class="success-modal pl-4 pr-4 pb-4  shadow bg-white hide" id="success-modal">
@@ -261,11 +253,53 @@
         </div>
         <div class="row  ">
           <div class="col-lg-6 d-flex flex-column justify-content-center hide-sm bg-main">
-            <h4 class="text-center  color-white  f-44 fw-6"><i class="fa fa-heart"></i> 2400</h4>
+            <h4 class="text-center  color-white  f-44 fw-6">
+              <svg width="50" height="50" viewBox="0 0 200 200">
+                <g transform="translate(100 100)">
+                  <path transform="translate(-50 -50)" fill="#FFFFFF" d="M92.71,7.27L92.71,7.27c-9.71-9.69-25.46-9.69-35.18,0L50,14.79l-7.54-7.52C32.75-2.42,17-2.42,7.29,7.27v0 c-9.71,9.69-9.71,25.41,0,35.1L50,85l42.71-42.63C102.43,32.68,102.43,16.96,92.71,7.27z"></path>
+                  <animateTransform 
+                      attributeName="transform" 
+                      type="scale" 
+                      values="1; 1.5; 1.25; 1.5; 1.5; 1;" 
+                      dur="1.5s" 
+                      repeatCount="indefinite"
+                      additive="sum">      
+                  </animateTransform>
+              </g>
+            </svg>            
+              2400</h4>
             <p class="   color-white f-18 text-center">Camps done so far</p>
-            <h4 class="text-center f-44 fw-6 color-white "><i class="fa fa-heart"></i> 1,00,000</h4>
+            <h4 class="text-center f-44 fw-6 color-white ">
+              <svg width="50" height="50" viewBox="0 0 200 200">
+                <g transform="translate(100 100)">
+                  <path transform="translate(-50 -50)" fill="#FFFFFF" d="M92.71,7.27L92.71,7.27c-9.71-9.69-25.46-9.69-35.18,0L50,14.79l-7.54-7.52C32.75-2.42,17-2.42,7.29,7.27v0 c-9.71,9.69-9.71,25.41,0,35.1L50,85l42.71-42.63C102.43,32.68,102.43,16.96,92.71,7.27z"></path>
+                  <animateTransform 
+                      attributeName="transform" 
+                      type="scale" 
+                      values="1; 1.5; 1.25; 1.5; 1.5; 1;" 
+                      dur="1.5s" 
+                      repeatCount="indefinite"
+                      additive="sum">      
+                  </animateTransform>
+              </g>
+            </svg>
+              1,00,000</h4>
             <p class="   color-white f-18 text-center">Units of blood collected in those camps</p>
-            <h4 class="text-center f-44 fw-6 color-white "><i class="fa fa-heart"></i> 4,00,000</h4>
+            <h4 class="text-center f-44 fw-6 color-white ">
+              <svg width="50" height="50" viewBox="0 0 200 200">
+                <g transform="translate(100 100)">
+                  <path transform="translate(-50 -50)" fill="#FFFFFF" d="M92.71,7.27L92.71,7.27c-9.71-9.69-25.46-9.69-35.18,0L50,14.79l-7.54-7.52C32.75-2.42,17-2.42,7.29,7.27v0 c-9.71,9.69-9.71,25.41,0,35.1L50,85l42.71-42.63C102.43,32.68,102.43,16.96,92.71,7.27z"></path>
+                  <animateTransform 
+                      attributeName="transform" 
+                      type="scale" 
+                      values="1; 1.5; 1.25; 1.5; 1.5; 1;" 
+                      dur="1.5s" 
+                      repeatCount="indefinite"
+                      additive="sum">      
+                  </animateTransform>
+              </g>
+            </svg>
+              4,00,000</h4>
             <p class="   color-white f-18 text-center">Lives saved by those bloods</p>
   
           </div>
@@ -274,12 +308,17 @@
             <!-- Personal details div -->
             <h4 class="color-dark ">Organize A Camp</h4>
             <p class="color-grey ">Fill this form and a volunteer would be in touch with you soon</p>    
-            <form action="" class="request-form" onsubmit="submitRequest(event)">
+            <form action="" class="request-form" onsubmit="submitRequest(event)" id="campForm">
                 
               <div id="personalDetails">
                 <div class="form-group mb-4">
                   <label class="m-0   color-dark" for="your_name">Your Name</label>
                   <input type="text" class="form-control" id="your_name" placeholder="Your Name" required>
+                </div>
+
+                <div class="form-group mb-4">
+                  <label class="m-0 not-required color-dark" for="organization_name">Organization Name</label>
+                  <input type="text" class="form-control" id="organization_name" placeholder="Venue" >
                 </div>
                 <div class="form-group mb-4">
                   <label class="m-0   color-dark" for="email">Email Address</label>
@@ -303,80 +342,29 @@
                     <input  type="date" class="form-control" placeholder="20/01/2020" id="date" required>
                   </div>
                   <div class="form-group mb-4">
-                    <label class="m-0   color-dark" for="venue">Venue</label>
-                    <input type="text" class="form-control" id="venue" placeholder="Venue" required>
-                  </div>
-                  <div class="form-group mb-4">
                     <label class="m-0   color-dark" for="city_region">City Region</label>
                     <select name="city_region" id="city_region" required>
                       <option value="Agra">Agra</option>
-                      <option value="Amritsar">Amritsar</option>
-                      <option value="Bangalore">Bangalore</option>
-                      <option value="Bhopal">Bhopal</option>
-                      <option value="Chandigarh">Chandigarh</option>
-                      <option value="Chennai">Chennai</option>
                       <option value="Delhi">Delhi</option>
-                      <option value="Hyderabad">Hyderabad</option>
                       <option value="Jaipur">Jaipur</option>
-                      <option value="Jodhpur">Jodhpur</option>
                       <option value="Kanpur">Kanpur</option>
                       <option value="Kolkata">Kolkata</option>
                       <option value="Lucknow">Lucknow</option>
-                      <option value="Mumbai">Mumbai</option>
                       <option value="Pune">Pune</option>
-                      <option value="Ropar">Ropar</option>
                       <option value="Varanasi">Varanasi</option>
-                      <option value="Patna">Patna</option>
-                      <option value="Andhra Pradesh (AP)">Andhra Pradesh (AP)</option>
-                      <option value="Arunachal Pradesh (AR)">Arunachal Pradesh (AR)</option>
-                      <option value="Assam (AS)">Assam (AS)</option>
-                      <option value="Bihar (BR)">Bihar (BR)</option>
-                      <option value="Chhattisgarh (CG)">Chhattisgarh (CG)</option>
-                      <option value="Goa (GA)">Goa (GA)</option>
-                      <option value="Gujarat (GJ)">Gujarat (GJ)</option>
-                      <option value="Haryana (HR)">Haryana (HR)</option>
-                      <option value="Himachal Pradesh (HP)">Himachal Pradesh (HP)</option>
-                      <option value="Jammu and Kashmir (JK)">Jammu and Kashmir (JK)</option>
-                      <option value="Jharkhand (JH)">Jharkhand (JH)</option>
-                      <option value="Karnataka (KA)">Karnataka (KA)</option>
-                      <option value="Kerala (KL)">Kerala (KL)</option>
-                      <option value="Madhya Pradesh (MP)">Madhya Pradesh (MP)</option>
-                      <option value="Maharashtra (MH)">Maharashtra (MH)</option>
-                      <option value="Manipur (MN)">Manipur (MN)</option>
-                      <option value="Meghalaya (ML)">Meghalaya (ML)</option>
-                      <option value="Mizoram (MZ)">Mizoram (MZ)</option>
-                      <option value="Nagaland (NL)">Nagaland (NL)</option>
+                      <option value="Bhubaneswar">Bhubaneswar</option>
                       <option value="Odisha(OR)">Odisha(OR)</option>
-                      <option value="Punjab (PB)">Punjab (PB)</option>
-                      <option value="Rajasthan (RJ)">Rajasthan (RJ)</option>
-                      <option value="Ranchi">Ranchi</option>
-                      <option value="Sikkim (SK)">Sikkim (SK)</option>
-                      <option value="Tamil Nadu (TN)">Tamil Nadu (TN)</option>
-                      <option value="Telangana (TS)">Telangana (TS)</option>
-                      <option value="Tripura (TR)">Tripura (TR)</option>
-                      <option value="Uttar Pradesh (UP)">Uttar Pradesh (UP)</option>
-                      <option value="Uttarakhand (UK)">Uttarakhand (UK)</option>
-                      <option value="West Bengal (WB)">West Bengal (WB)</option>
-                      <option value="Daman and diu">Daman and diu</option>
-                      <option value="Pudacherry">Pudacherry</option>
-                      <option value="Dadra and Nagar Havelli">Dadra and Nagar Havelli</option>
+                      <option value="Other">Other</option>
                     </select>
                   </div>
                     
-                  <div class="d-flex justify-content-between flex-column-sm">
-                    
-                    <div class="form-group mb-4">
-                      <label class="m-0  not-required color-dark" for="est_donation">Estimated no. of donations</label>
-                      <input type="number" class="form-control" id="est_donation" placeholder="120" >
-                    </div>
-                    <div class="form-group mb-4">
-                      <label class="m-0 not-required  color-dark" for="est_emp">Estimated no. of employee/student</label>
-                      <input  type="number" class="form-control" placeholder="140" id="est_emp" >
-                    </div>
+                  <div class="form-group mb-4">
+                    <label class="m-0 not-required  color-dark" for="est_emp">Estimated no. of employee/student</label>
+                    <input  type="number" class="form-control" placeholder="140" id="est_emp" >
                   </div>
                   <div class="form-group mb-4">
-                    <label class="m-0   color-dark" for="additional">Additional Message</label>
-                    <textarea  class="form-control" cols="20" rows="3" placeholder="Any additional message you want" id="additional" ></textarea>
+                    <label class="m-0 not-required color-dark" for="additional">Additional Message</label>
+                    <input type="text"  class="form-control" placeholder="Any additional message you want" id="additional" />
                   </div>
               <div class="navigation-buttons inline text-center-sm">
                 <button type="button" class="pl-5 pr-5 left-lg btn-main bg-white color-dark" onclick="showPersonaldetailsInput()">Back</button>
@@ -458,12 +446,12 @@
           <div class="col-lg-4 col-sm-12">
             <p class="color-white bold  mb-2">ORGANIZE A CAMP</p>
             <ul class="footer-list pl-0">
-              <li class=" mr-4 "><a class="color-white f-12 fw-6" href="./raise-a-request.html#city_region=Delhi">ORGANIZE A CAMP IN DELHI-NCR</a></li>
-              <li class=" mr-4 "><a class="color-white f-12 fw-6" href="/raise-a-request.html#city_region=Kanpur">ORGANIZE A CAMP IN KANPUR</a></li>
-              <li class=" mr-4 "><a class="color-white f-12 fw-6" href="./raise-a-request.html#city_region=Agra">ORGANIZE A CAMP IN AGRA</a></li>
-              <li class=" mr-4 "><a class="color-white f-12 fw-6" href="./raise-a-request.html#city_region=Lucknow">ORGANIZE A CAMP IN LUCKNOW</a></li>
-              <li class=" mr-4 "><a class="color-white f-12 fw-6" href="./raise-a-request.html#city_region=Bhubaneswar">ORGANIZE A CAMP IN BHUBANESWAR</a></li>
-              <li class=" mr-4 "><a class="color-white f-12 fw-6" href="./raise-a-request.html#city_region=Jaipur">ORGANIZE A CAMP IN JAIPUR</a></li>
+              <li class=" mr-4 "><a class="color-white f-12 fw-6" href="./organize-a-camp.html#city_region=Delhi" onclick="organizeCamp('Delhi')">ORGANIZE A CAMP IN DELHI-NCR</a></li>
+              <li class=" mr-4 "><a class="color-white f-12 fw-6" href="./organize-a-camp.html#city_region=Kanpur" onclick="organizeCamp('Kanpur')">ORGANIZE A CAMP IN KANPUR</a></li>
+              <li class=" mr-4 "><a class="color-white f-12 fw-6" href="./organize-a-camp.html#city_region=Agra" onclick="organizeCamp('Agra')">ORGANIZE A CAMP IN AGRA</a></li>
+              <li class=" mr-4 "><a class="color-white f-12 fw-6" href="./organize-a-camp.html#city_region=Lucknow" onclick="organizeCamp('Lucknow')">ORGANIZE A CAMP IN LUCKNOW</a></li>
+              <li class=" mr-4 "><a class="color-white f-12 fw-6" href="./organize-a-camp.html#city_region=Bhubaneswar" onclick="organizeCamp('Bhubaneswar')">ORGANIZE A CAMP IN BHUBANESWAR</a></li>
+              <li class=" mr-4 "><a class="color-white f-12 fw-6" href="./organize-a-camp.html#city_region=Jaipur" onclick="organizeCamp('Jaipur')">ORGANIZE A CAMP IN JAIPUR</a></li>
             </ul>
           </div>
         </div>
@@ -485,21 +473,43 @@
 <script src="./js/main.js"></script>
 
 <script>
-  showCampCollage = () =>{
-    $("#top").addClass('hide')
-    $("#top").removeClass('show')
-    $("#campCollage").addClass('show')
-    $("#campCollage").removeClass('hide')
+
+
+  showCampForm = () => {
+    window.scrollTo({
+      top: $("#campForm").offset().top  - window.innerHeight/2,
+      behavior: 'smooth'
+    })
   }
 
-  window.onscroll = () => {
-    if(window.pageYOffset > window.innerHeight){
-      $("#top").addClass('show')
-      $("#top").removeClass('hide')
-    $("#campCollage").addClass('hide')
-    $("#campCollage").removeClass('show')
-    }
+  showCampSlide = () => {
+    $("#campSlider").show()
   }
+
+  hideCampSlide = () => {
+    $("#campSlider").hide()
+  } 
+  organizeCamp = (city) => {
+    $("#city_region").val(city)
+    showCampForm()
+  }
+  $(".main-slider").slick({
+
+    // normal options...
+    infinite: true,
+    autoplay: true,
+    autoplaySpeed: 1000,
+    loop: true,  
+    dots: true
+
+    });
+
+    $('body').keydown(function(e) {
+    if (e.keyCode == 27) {
+        // put your code here if any (that will run after Esc pressed).
+        hideCampSlide()
+    }    
+});
 </script>
 </body>
 </html>

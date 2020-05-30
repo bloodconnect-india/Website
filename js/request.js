@@ -10,6 +10,12 @@ function goToForm(city) {
 }
 
 
+selectingCity = (e) => {
+    if(e.target.value == "Other")
+        $("#otherCity").removeClass('hide')
+    else
+        $("#otherCity").addClass('hide')
+}
 
 // For the request form
 var patient_name = ""
@@ -27,7 +33,7 @@ var requirement = " "
 
 
 // Hiding the modal 
-$("#success-modal").hide()
+
 submitRequest = (e) => {
     e.preventDefault()
     $("#submit-request-button").addClass("loading-start")
@@ -40,6 +46,8 @@ submitRequest = (e) => {
     hospital = $("#hospital").val()
     requirement = $("#requirement").val()
     city = $("#city_region").val()
+    if(city == 'Other')
+        city = $("#other_city").val()
     this.createHelplineRequest()
 }
 
@@ -71,11 +79,16 @@ createHelplineRequest = () => {
     }).then(response => response.json()).then(data => {
         
         if(!data.msg){
-            console.log('Shoing success modal')
-            $("#success-modal").show()
+            console.log('Showing success modal')
+            $("#success-modal").removeClass('hide')
+            $("#success-modal").addClass('show')
+            let secondsLeft = 3;
             let x = setInterval( () => {
-                window.location.reload()
-            },2000)
+                if(secondsLeft <= 0)
+                    window.location.reload()
+                $("#seconds").html(`${secondsLeft}s`)
+                secondsLeft -=1;
+            },1000)
             
         }
     })
