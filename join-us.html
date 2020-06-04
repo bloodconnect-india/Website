@@ -16,7 +16,7 @@
     <!-- Just an image -->
     <!-- Navbar -->
     <nav class="fixed z-6 d-flex justify-content-end hide-lg" id="mobile-nav">
-      <button class="menu hide show-md color-dark h-max bg-white" id="mobile-nav-toggler" onclick="toggleMobileNav()"><i class="fa fa-bars f-24"></i></button>
+      <button class="menu hide show-md color-dark h-max bg-white" id="mobile-nav-toggler" onclick="toggleMobileNav()"><i class="fa fa-bars f-20"></i></button>
         <ul class="mobile-nav hide bg-white" id="mobile-nav-list">
           <li class="bg-main ">
             <a class="nav-link color-white fw-4 " href="./raise-a-request.html">RAISE A REQUEST</a>
@@ -129,7 +129,7 @@
       </div> 
       
       <div class="d-flex flex-column pt-5  col-lg-6 col-md-6 col-sm-12">
-          <h4 class="display-4 color-dark">Volunteer With Us</h4>
+          <h4 class="f-40 color-dark">Volunteer With Us</h4>
           <p class="color-grey">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum minus officiis aspernatur eveniet laudantium quaerat rerum praesentium omnis. Natus necessitatibus adipisci ipsam repellendus labore placeat sequi possimus, nesciunt architecto recusandae?</p>
           <button class="shadow btn-main bg-main" id="go-to-form">Join Now</button>
         </div>
@@ -139,7 +139,7 @@
 
       <!-- What can you do -->
       <div class="container  pt-5">
-          <h4 class=" color-dark display-4 text-center">What We Do ?</h4>
+          <h4 class=" color-dark f-40 text-center">What We Do ?</h4>
           <div class="row mt-3 pt-3">
               <div class="  text-center mx-auto col-sm-12 mb-3 col-lg-3">
                   <img class="mx-auto" width="auto" height="100" src="./img/homepage/hearts.png" alt="">
@@ -168,7 +168,7 @@
 
       <!-- Our Alumni -->
       <div class="container">
-        <h4 class="text-center f-44">Our Alumni</h4>
+        <h4 class="text-center f-40">Our Alumni</h4>
         <div class="row no-gutters">
           <div class="team-member col-lg-2 col-md-4 col-sm-6 col-6 ">
             <img class="" src="./img/team/demo/5.jpg" alt="">
@@ -300,7 +300,7 @@
       <div class="container pt-5 pb-5">
         <div class="row">
           <div class="col-lg-6">
-            <h4 class="f-34 our-family text-center color-white">Our Family</h4>
+            <h4 class="f-30 our-family text-center color-white">Our Family</h4>
             <div id="collage" class="collage  row wd-inherit ">
               <div class="col p-0">
                 <img class="wd-inherit" src="./img/team/demo/1.jpg" alt="">
@@ -491,8 +491,14 @@
               </div>
             </div>
           </div>
-          <div id="formContainer" class="col-lg-6 bg-white rounded shadow pl-5 pr-5 pt-4 pb-4 h-max">
-            <h4 class="f-34 color-dark text-center">Fill this form</h4>
+          <div id="formContainer" class="col-lg-6 bg-white rounded shadow pl-5 pr-5 pt-4 pb-4 join-form">
+            <h4 class="f-30 color-dark text-center">Fill this form</h4>
+            <div class="form-page">
+              <div id="page1" class="active hand" onclick="showSection1()">1</div>
+              <div id="page2" class="hand" onclick="showSection2()">2</div>
+              <div id="page3" class="hand" onclick="showSection3()">3</div>
+              <hr>
+            </div>  
           <form action="" id="form">
             <!-- Name Input -->
                 <div id="section1">
@@ -508,14 +514,14 @@
                   <!-- Phone Number -->
                   <div class="form-group mb-4">
                     <label class="m-0   color-dark" for="phone_number">Phone Number</label>
-                    <input  type="number" class="form-control" placeholder="9999xxxxxx" id="phone_number" required>
+                    <input  type="number" class="form-control" placeholder="9999xxxxxx" maxlength="10" id="phone_number" required>
                   </div>
                   <!-- Education Details -->
                   <div class="d-flex justify-content-between flex-column-sm">
                     <div class="form-group mb-4">
                       <label class="m-0 mb-2  color-dark" for="education_detail">Education Detail</label>
                       <select name="education_detail" id="education_detail" onchange="changingEducation(event)">
-                        <option value="Student">Student</option>
+                        <option value="Student" selected>Student</option>
                         <option value="Working Professional">Working Professional</option>
                         <option value="Other">Other</option>
                       </select>
@@ -523,7 +529,7 @@
                     </div>
                     <div class="form-group mb-4" id="graduationYearInput">
                       <label class="m-0   color-dark" for="graduation_year">Year of Graduation</label>
-                      <input  type="number" class="form-control" placeholder="2022" id="graduation_year">
+                      <input  type="number" class="form-control" placeholder="20xx" id="graduation_year">
                     </div>
                   </div>
         
@@ -556,27 +562,27 @@
                   <div class="form-group mb-4">
                     <label class="m-0   color-dark" for="interest">Select your interest in BloodConnect</label>
                     <p class="mb-0">
-                      <input type="checkbox" id="interest1"  />
-                      <label for="interest1">City Operation (Camps, emergency helpline, awareness activities)</label>
+                      <input type="checkbox" id="interest1"  onchange="selectInterest(event)" value="City Operation (Camps, emergency helpline, awareness )"/>
+                      <label for="interest1">City Operation (Camps, emergency helpline, awareness )</label>
                     </p>
                     <p class="mb-0">
-                      <input type="checkbox" id="interest2" />
+                      <input type="checkbox" id="interest2" onchange="selectInterest(event)" value="Tech (Website, CRM)" />
                       <label for="interest2">Tech (Website, CRM)</label>
                     </p>
                     <p class="mb-0">
-                      <input type="checkbox" id="interest3"  />
+                      <input type="checkbox" id="interest3" onchange="selectInterest(event)" value="PR (Digital marketing, fundraising)" />
                       <label for="interest3">PR (Digital marketing, fundraising)</label>
                     </p>
                     <p class="mb-0">
-                      <input type="checkbox" id="interest4" />
-                      <label for="interest4">Creative (Doodles, posters, video creation and editing, content writing)</label>
+                      <input type="checkbox" id="interest4" onchange="selectInterest(event)" value="Creative (Doodles, posters, video editing, content writing)" />
+                      <label for="interest4">Creative (Doodles, posters, video editing, content writing)</label>
                     </p>
                     <p class="mb-0">
-                      <input type="checkbox" id="interest5" />
-                      <label for="interest5">Consulting (Organizing camps across India through virtual support)</label>
+                      <input type="checkbox" id="interest5" onchange="selectInterest(event)" value="Consulting (Organizing camps across India through virtual support)" />
+                      <label for="interest5">Consulting (Organizing camps across India virtually)</label>
                     </p>
                     <p class="mb-0">
-                      <input type="checkbox" id="interest6" />
+                      <input type="checkbox" id="interest6" onchange="selectInterest(event)" value="Nothing Specific, I am up for any activity" />
                       <label for="interest6">Nothing Specific, I am up for any activity</label>
                     </p>
                   </div>
@@ -584,8 +590,7 @@
         
                   <div class="form-group mb-4">
                     <label class="m-0   color-dark" for="prior_exp">Do you have prior experience in volunteering with any NGO or any other extra-curricular activities? </label>
-                    <textarea  class="form-control" col="20" row="5" id="prior_exp"  required>
-                    </textarea>
+                    <textarea  class="form-control" col="20" row="5" id="prior_exp"  required></textarea>
                   </div>
                   <div class="navigation-buttons inline text-center-sm ">
                     <button type="button" onclick="showSection1()" class="pl-5 pr-5 left-lg mb-4 mx-auto btn-main bg-white color-dark">Back</button>
@@ -600,27 +605,27 @@
                   <div class="form-group mb-4">
                     <label class="m-0   color-dark" for="whyBC">Why do you want to be a part of BloodConnect? </label>
                     <p class="mb-0">
-                      <input type="checkbox" id="why_BC1"  />
+                      <input type="checkbox" id="why_BC1" onchange="selectWhyBC(event)" value="Social service" />
                       <label for="why_BC1">Social service</label>
                     </p>
                     <p class="mb-0">
-                      <input type="checkbox" id="why_BC2" />
+                      <input type="checkbox" id="why_BC2" onchange="selectWhyBC(event)" value="Because my friends are also working here" />
                       <label for="why_BC2">Because my friends are also working here</label>
                     </p>
                     <p class="mb-0">
-                      <input type="checkbox" id="why_BC3"  />
+                      <input type="checkbox" id="why_BC3" onchange="selectWhyBC(event)" value="For my resume" />
                       <label for="why_BC3">For my resume</label>
                     </p>
                     <p class="mb-0">
-                      <input type="checkbox" id="why_BC4" />
+                      <input type="checkbox" id="why_BC4" onchange="selectWhyBC(event)" value="I love to travel"/>
                       <label for="why_BC4">I love to travel</label>
                     </p>
                     <p class="mb-0">
-                      <input type="checkbox" id="why_BC5" />
+                      <input type="checkbox" id="why_BC5" onchange="selectWhyBC(event)" value="I like to speak with people"/>
                       <label for="why_BC5">I like to speak with people</label>
                     </p>
                     <p class="mb-0">
-                      <input type="checkbox" id="why_BC6" />
+                      <input type="checkbox" id="why_BC6" onchange="selectWhyBC(event)" value="Nothing Specific" />
                       <label for="why_BC6">Nothing Specific</label>
                     </p>
                   </div>
@@ -651,8 +656,8 @@
                   </div>
                   <div class="navigation-buttons inline text-center-sm ">
                     <button type="button" onclick="showSection2()" class="pl-5 pr-5 left-lg mb-4 mx-auto btn-main bg-white color-dark">Back</button>
-                    <button type="button" onclick="submitRequest()"  class="pl-5 pr-5 right-lg mb-4 mx-auto btn-main bg-main" >
-                        Next
+                    <button type="button" onclick="submitRequest(event)"  class="pl-5 pr-5 right-lg mb-4 mx-auto btn-main bg-main" >
+                        Submit
                     </button>
                   </div>
                 </div>
@@ -664,7 +669,7 @@
 
 
     <div class="container text-center mb-5">
-      <h4 class="f-44 text-cetner color-dark">Have Any Queries ?</h4>
+      <h4 class="f-40 text-cetner color-dark">Have Any Queries ?</h4>
       <button class="btn-main bg-main color-white shadow"><a class="color-white fw-6" href="./contact-us.html">Contact Us</a></button>
     </div>
 

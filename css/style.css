@@ -53,6 +53,7 @@
     min-height: 80px;
     padding-top: 20px;
     right: 0px;
+    top: 0px
 }
 #mobile-nav>button{
     right: 0px;
@@ -111,6 +112,9 @@
     from{opcaity:0}
     to{opacity: 1;}
 }
+
+
+
 button>a{
     font-weight: 400;
 }
@@ -141,14 +145,19 @@ button,input[type=submit]{
 .ft-24{
     font-size: 24px !important;
 }
-.f-44{
-    font-size: 44px !important;
+.f-40{
+    font-size: 40px !important;
+    text-transform: uppercase;
 }
-.f-34{
-    font-size: 34px !important;
+.f-30{
+    font-size: 30px !important;
+    text-transform: uppercase;
 }
-.f-24{
-    font-size: 24px !important;
+.f-20{
+    font-size: 20px !important;
+}
+.f-16{
+    font-size: 16px !important;
 }
 .f-18{
     font-size: 18px !important;
@@ -158,6 +167,9 @@ button,input[type=submit]{
 }
 .f-12{
     font-size: 12px !important;
+}
+.uppercase{
+    text-transform: uppercase !important;
 }
 .bg-main{
     background :#EB2441 !important;
@@ -206,7 +218,7 @@ button,input[type=submit]{
     color: #f37b8d  !important  ;
 }
 .color-dark{
-    color: rgb(0, 50, 68) !important;
+    color: #003244 !important;
 }
 .color-white{
     color: #fff !important;
@@ -224,9 +236,20 @@ hr.color-white{
 }
 .card-link{
     color: #777777;
+    font-weight: 600;
 }
 .work-card:hover>a.card-link,.alumni-card:hover>a.card-link{
     color: #EB2441;
+}
+.faq-card{
+    background-color: transparent;
+    transition: all 0.17s ease-in;
+}
+.faq-card:hover{
+    background-color: #EB2441 !important;
+}
+.faq-card:hover>h5,.faq-card:hover>p,.faq-card:hover>a{
+    color: #fff !important;
 }
 .query-card:hover>a.card-link{
     color: #EB2441;
@@ -289,6 +312,44 @@ hr.color-white{
 }
 .shadow-hover:hover{
     box-shadow: 4px 4px 25px rgba(0, 0, 0, 0.25);
+}
+.form-page{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    max-width: 300px;
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+
+.form-page>div{
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    border: 2px solid #EB2441;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 6;
+}
+.form-page>div.active{
+    border: 2px solid #FFF;
+    background-color: #EB2441;
+    color: #FFF;
+}
+.form-page>hr{
+    border: 2px solid #EB2441;
+    top: 4px;
+    position: absolute;
+    width:250px !important;
+    left: 25px;
+    z-index: 2;
+}
+
+.join-form{
+    max-height: 700px;
+    overflow: auto;
 }
 li.nav-item{
     background: #fff;
@@ -401,12 +462,12 @@ button.over-img{
     justify-content: start;
 }
 .board-member>img{
-    height: 250px !important;
-    width: 200px !important;
+    height: 225px !important;
+    width: 175px !important;
 }
 div.team-member>img{
     height: 225px !important;
-    width: inherit !important;
+    width: 175px !important;
     filter: blur(0px);
     transition: filter 0.37s ease;
     padding: 5px 5px;

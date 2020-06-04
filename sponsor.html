@@ -17,7 +17,7 @@
     <!-- Just an image -->
     <!-- Navbar -->
     <nav class="fixed z-6 d-flex justify-content-end hide-lg" id="mobile-nav">
-      <button class="menu hide show-md color-dark h-max bg-white" id="mobile-nav-toggler" onclick="toggleMobileNav()"><i class="fa fa-bars f-24"></i></button>
+      <button class="menu hide show-md color-dark h-max bg-white" id="mobile-nav-toggler" onclick="toggleMobileNav()"><i class="fa fa-bars f-20"></i></button>
         <ul class="mobile-nav hide bg-white" id="mobile-nav-list">
           <li class="bg-main ">
             <a class="nav-link color-white fw-4 " href="./raise-a-request.html">RAISE A REQUEST</a>
@@ -125,7 +125,7 @@
       <div class="container ">
         <div class="row">
           <div class="col-lg-7 col-sm-12  d-flex flex-column align-item-center">
-            <h1 class="f-44 bold color-white ">You can make a difference so why dont you ?</h1>
+            <h1 class="f-40 bold color-white ">You can make a difference so why dont you ?</h1>
             <p class="color-white">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Adipisci, cum incidunt necessitatibus deserunt laborum nostrum dolores d</p>
             <button class="btn-main bg-white color-main mb-3 mx-auto-sm" onclick="showPayment()">Donate Now <i class="fa fa-heart"></i></button>
           </div>
@@ -162,8 +162,8 @@
             </div>
           </div>
         </div>
-        <div class="col-lg-6" id="donationHelp">
-          <h4 class="f-34 color-dark text-center">Your Donation Enables Us To </h4>
+        <div class="col-lg-6 h-max" id="donationHelp">
+          <h4 class="f-30 color-dark text-center">Your Donation Enables Us To </h4>
             <ul>
               <li class="color-dark">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur temporibus, ipsum deleniti quas aperiam eligendi quis similique illo quaerat ut off</li>
               <li class="color-dark">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur temporibus, ipsum deleniti quas aperiam eligendi quis similique illo quaerat ut off</li>
@@ -180,7 +180,7 @@
 
     <!-- 80G profit -->
     <div class=" d-flex flex-column align-items-center container">
-      <h4 class="f-44 mt-5 color-dark">How can you donate ?</h4>
+      <h4 class="f-40 mt-5 color-dark">How can you donate ?</h4>
       <p class="color-grey text-center fw-4 ">Section 80G of the I-T Act allows donations made to specified relief funds and charitable institutions as a deduction from gross total income. It is that time of the year when you are looking for ways to save on as much tax as possible</p>
       <div class="d-flex justify-content-center mt-5 flex-column-sm">
       <button class="btn-main fw-6 mx-auto-sm color-white bg-main f-18" onclick="showPayment()">Donate Online <i class="fa fa-heart"></i></button>
@@ -238,13 +238,13 @@
             </div>
         </div>
         <div class="col-lg-6 h-100 bg-white  p-2 pl-4">
-          <h4 class="f-34 color-main">Payment Details</h4>
+          <h4 class="f-30 color-main">Payment Details</h4>
           <form  method="get" onsubmit="initiatePayment(event)">
             <button type="button" class="amt selected" onclick="amtSelected(event)">1000</button>
             <button type="button" class="amt" onclick="amtSelected(event)">5000</button>
             <button type="button" class="amt" onclick="amtSelected(event)">10000</button>
 
-            <p class="color-dark italics f-18 " id="amtImpact" style="overflow: hidden;max-height:50px ;transition: width 1s ease-in">You are helping us save 100 lives 
+            <p class="color-dark fw-6 f-18 " id="amtImpact" >You are helping us save 100 lives 
               <svg width="50" height="50" viewBox="0 0 200 200">
                 <g transform="translate(100 100)">
                   <path transform="translate(-50 -50)" fill="#EB2441" d="M92.71,7.27L92.71,7.27c-9.71-9.69-25.46-9.69-35.18,0L50,14.79l-7.54-7.52C32.75-2.42,17-2.42,7.29,7.27v0 c-9.71,9.69-9.71,25.41,0,35.1L50,85l42.71-42.63C102.43,32.68,102.43,16.96,92.71,7.27z"></path>

@@ -106,7 +106,7 @@ requirePanCard = (e) => {
     }
     else {
         document.getElementById("panCardInput").setAttribute('required',true)
-        $("label[for='panCardInput']").html('Pan Card Number (required)')
+        $("label[for='panCardInput']").html('Pan Card Number (required for donation above 2000)')
         $("label[for='panCardInput']").removeClass("not-required")
     }
 }
