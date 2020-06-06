@@ -190,6 +190,14 @@ button,input[type=submit]{
     background: #EB2441;
     color: #fff;
 }
+button.tag{
+    color: #fff;
+    background : #EB2441;
+    margin-left: 5px;
+    margin-right: 5px;
+    padding: 2px 20px;
+    border: none;
+}
 .btn-main{
     padding: 10px 20px;
     border: none;
@@ -241,16 +249,7 @@ hr.color-white{
 .work-card:hover>a.card-link,.alumni-card:hover>a.card-link{
     color: #EB2441;
 }
-.faq-card{
-    background-color: transparent;
-    transition: all 0.17s ease-in;
-}
-.faq-card:hover{
-    background-color: #EB2441 !important;
-}
-.faq-card:hover>h5,.faq-card:hover>p,.faq-card:hover>a{
-    color: #fff !important;
-}
+
 .query-card:hover>a.card-link{
     color: #EB2441;
 }
@@ -312,6 +311,9 @@ hr.color-white{
 }
 .shadow-hover:hover{
     box-shadow: 4px 4px 25px rgba(0, 0, 0, 0.25);
+}
+.shadow-light{
+    box-shadow: 0 1px 2px 0 rgba(60, 64, 67, .30), 0 1px 3px 1px rgba(60, 64, 67, .15);
 }
 .form-page{
     position: relative;
@@ -860,6 +862,51 @@ button.selected{
     color: #EB2441 !important;
   }
 
+.faq-search{
+    width: 60%;
+    min-width: 300px;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.faq-search>input{
+    width: 100%;
+    min-width: 300px;
+    background: none;
+    padding: 10px 20px 10px 50px;
+    border: 0px;
+    box-shadow: 0 1px 2px 0 rgba(60, 64, 67, .30), 0 1px 3px 1px rgba(60, 64, 67, .15);
+}
+.faq-search>.search-icon{
+    position: absolute;
+    left: 20px;
+    top: 10px;
+    font-size: 24px;
+    color: #777777;
+}
+.faq{
+    width: 70%;
+    min-width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.faq-collapse{
+    height: 0px;
+    transition: height 0.27s ease-in;
+}
+.faq-collapse.show{
+    height: auto;
+}
+.ui-menu-item{
+    background: #fff !important
+}
+.ui-state-focus{
+    background : #EB4221 !important;
+    color: #fff !important;
+}
 /* Media properties  */
 
 @media (max-width:480px){

@@ -39,7 +39,7 @@ submitRequest = (e) => {
     $("#submit-request-button").addClass("loading-start")
     patient_name = $("#patient_name").val()
     name = $("#your_name").val()
-    phone_number = $("#phone_number").val()
+    phone_number = "+91"+$("#phone_number").val()
     email = $("#email").val()
     unit = $("#units").val()
     bg = $("#bg").val()
