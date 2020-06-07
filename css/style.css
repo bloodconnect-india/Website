@@ -684,7 +684,8 @@ label.not-required:after{
 }
 .selection-popup>div.row>div{
     border: 8px solid #EB2441;
-    height: 100vh !important;
+    height: 100vh ;
+    background-size: cover !important;
 }
 
 #campSlider{
@@ -922,6 +923,9 @@ button.selected{
     }
     .img-left,.img-right{
         background-size: contain;
+    }
+    .h-40-sm{
+        height: 40vh !important;
     }
     .hide-sm{
         display: none !important;
