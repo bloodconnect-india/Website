@@ -682,6 +682,10 @@ label.not-required:after{
 .show{
     display: block !important;
 }
+.selection-popup>div.row>div{
+    border: 8px solid #EB2441;
+    height: 100vh !important;
+}
 
 #campSlider{
     position: fixed;
