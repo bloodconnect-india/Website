@@ -172,7 +172,7 @@ button,input[type=submit]{
     text-transform: uppercase !important;
 }
 .bg-main{
-    background :#EB2441 !important;
+    background :#c1281c !important;
 }
 .bg-none{
     background: none !important;
@@ -468,7 +468,7 @@ button.over-img{
     justify-content: start;
 }
 .board-member>img{
-    height: 225px !important;
+    height: 215px !important;
     width: 175px !important;
 }
 div.team-member>img{
