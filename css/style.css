@@ -458,6 +458,10 @@ button.over-img{
     width: inherit;
     height: 80vh !important;
 }
+.realative{
+    background-size: cover !important;
+    height: 600px;
+}
 .board-member {
     display: flex;
     flex-direction: column;
