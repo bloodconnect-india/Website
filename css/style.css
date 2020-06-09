@@ -78,12 +78,12 @@
 #mobile-nav>ul.hide{
     display: block !important;
     animation-name: fade-out-left;
-    animation-duration: 0.5s;
+    animation-duration: 0.25s;
     width: 0px ;
 }
 #mobile-nav>ul.show{
     animation-name: fade-in-left;
-    animation-duration: 0.5s;
+    animation-duration: 0.25s;
     width: 70%;
 }
 @keyframes fade-in-left {
