@@ -309,6 +309,9 @@ hr.color-white{
 .h-80{
     height: 80vh !important;
 }
+.h-80-min{
+    min-height: 80vh !important;
+}
 .h-60{
     height: 60vh !important;
 }
@@ -464,6 +467,7 @@ button.over-img{
     margin-bottom: 1.3rem;
     background: none;
     color: #D20003  ;
+    border: none;
 }
 .about-list>li.collapsed{
     color: inherit !important;
