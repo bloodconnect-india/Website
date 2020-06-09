@@ -1,6 +1,6 @@
 $(function () {
     // var $content = $('#jsonContent');
-    var ourPost = {rss_url: 'https://medium.com/feed/free-code-camp'};
+    var ourPost = {rss_url: 'https://medium.com/feed/bloodconnect'};
     $.get('https://api.rss2json.com/v1/api.json', ourPost, 
     function (response) {
         console.log(response)
@@ -24,7 +24,7 @@ $(function () {
                             output += '<div class="blog-element"><img class="img-responsive" src="' + src + '" ></div></header>';
                         else
                             output += '<div class="blog-element"><img class="img-responsive" src="./img/event/1.jpg"></div></header>';
-                        output += '<div class="blog-content m-4"><p class="mb-1"><a class="color-dark  bold" href="'+ item.link + '">' + item.title + '...</a></p>';
+                        output += '<div class="blog-content my-4 mx-2"><p class="mb-1"><a class="color-dark  bold" href="'+ item.link + '">' + item.title + '...</a></p>';
                         output += '<div class="post-meta hide"><span>By ' + item.author + '</span></div>';
                         var yourString = item.description.replace(/<img[^>]*>/g,"");
                         yourString = stripHtml(yourString)
