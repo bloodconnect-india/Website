@@ -428,6 +428,14 @@ button.over-img{
     padding-left: 1px !important;
     padding-right: 1px !important;
 }
+.partner {
+    height: 150px !important;
+}
+.partners-logo{
+    max-height: 150px !important;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
 
 .about-list,.our-team{
     list-style-type: none;
