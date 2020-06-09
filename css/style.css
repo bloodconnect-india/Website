@@ -86,6 +86,9 @@
     animation-duration: 0.25s;
     width: 70%;
 }
+ul.navbar-nav{
+    border-bottom: 1px solid #fff !important;
+}
 @keyframes fade-in-left {
     0% {width: 0px;}
     10% {width: 10%;}
@@ -219,6 +222,9 @@ button.tag{
     color: #fff;
     width: max-content;
 }
+.btn-main>a{
+    text-transform: uppercase !important;
+}
 .btn-large{
     padding: 20px 40px;
     border: none;
@@ -249,7 +255,7 @@ hr.color-white{
    border-top: 1px solid #fff;
 }
 .color-grey{
-    color: #777777 !important;
+    color: #222222 !important;
 }
 
 .color-main:hover,.color-grey:hover,.color-dark:hover,.color-white:hover{
@@ -320,6 +326,9 @@ hr.color-white{
 }
 .h-inherit{
     height: inherit !important;
+}
+.mt-n-1{
+    margin-bottom: -10px !important;
 }
 .pt-100-sm{
     padding: auto;
@@ -580,6 +589,9 @@ div.team-member:hover>div.description{
 
 .footer-list{
     list-style-type: none;
+}
+.footer-list>li.compact{
+    margin: -5px auto !important;
 }
 
 .footer-item{
@@ -1037,6 +1049,7 @@ button.selected{
         align-items: start !important;
         flex-direction: column !important;
     }
+    
     img.h-80{
         min-height: 400px !important;
         max-height: 400px !important;
