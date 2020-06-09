@@ -433,6 +433,7 @@ button.over-img{
 }
 .partners-logo{
     max-height: 150px !important;
+    width: inherit !important;
     margin-top: 5px;
     margin-bottom: 5px;
 }
@@ -551,7 +552,7 @@ div.team-member:hover>div.description{
 }
 .organizer-testimonial>img{
     height: 300px !important;
-    width: inherit;
+    width: 250px;
 }
 .avatar{
     height: 70px;
