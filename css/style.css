@@ -463,7 +463,10 @@ button.over-img{
     margin-top: 5px;
     margin-bottom: 5px;
 }
-
+.partner>p{
+    line-height: 120% !important;
+    text-align: center;
+}
 .about-list,.our-team{
     list-style-type: none;
     text-align: right;
