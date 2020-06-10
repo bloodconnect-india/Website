@@ -47,7 +47,7 @@
           </li>
         </ul>
     </nav>
-    <nav class="navbar justify-content-center-sm pb-0 sticky-sm z-5 bg-white" id="navbar-sm">
+    <nav class="navbar justify-content-center-sm pb-0 sticky-sm z-5 bg-white container" id="navbar-sm">
         <a class="navbar-brand" href="./index.html">
             <img src="./img/logo.png" width="250" height="50" alt="BloodConnect Logo">
         </a>
@@ -120,18 +120,19 @@
     </nav>
     <!-- Contact form-->
     <div class="container-fluid pd-2 pb-2  mb-4 content  bg-main pt-100-sm">
-     
+     <div class="container">
+
       <div class="row pt-5 mb-3 m-0">
         <div class="col-lg-6 col-sm-12 col-md-12 pt-6">
           <!-- <img class="contain-img" src="./img/rocket.svg" alt="blood drops"> -->
           <h4 class="text-center f-40 color-white">F.A.Q.'s</h4>
-          <div class="accordion p-5" id="accordionExample">
+          <div class="accordion " id="accordionExample">
             <div class="faq w-100">
               <p class="color-white f-18  bg-none text-left  pl-2"  data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
                 Is it safe to donate blood after something or sometime ?
               </p>          
               <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
-                <div class="card-body color-white">
+                <div class="card-body color-white py-0">
                   Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3
                 </div>
               </div>
@@ -141,7 +142,7 @@
                 Is it safe to donate blood after something or sometime ?
               </p>          
               <div id="collapseTwo" class="collapse " aria-labelledby="headingOne" data-parent="#accordionExample">
-                <div class="card-body color-white">
+                <div class="card-body color-white py-0">
                   Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3
                 </div>
               </div>
@@ -151,17 +152,17 @@
                 Is it safe to donate blood after something or sometime ?
               </p>          
               <div id="collapseThree" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
-                <div class="card-body color-white">
+                <div class="card-body color-white py-0">
                   Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <div class="col-lg-6 col-sm-12 col-md-12">
-          <div class="container bg-white  pt-4 pb-4 shadow z-2 rounded pl-5 pr-5 ">
-              <h4 class="f-30 text-center color-dark">Drop us a message</h4>
-              <p class="color-grey mt-3 text-center">Fill this and we will be in touch with you soon</p>
+        <div class="col-lg-6 col-sm-12 col-md-12 px-0">
+          <div class="container bg-white  pt-4 pb-4 shadow z-2 rounded pl-5 pr-5 px-3-sm ">
+              <h4 class="ft-24 text-center color-dark mb-0 uppercase">Drop us a message</h4>
+              <p class="color-grey mb-3 text-center">Fill this and we will be in touch with you soon</p>
               <form class="contact-form " action="">
                 <div class="form-group mb-4">
                   <label class="m-0  color-dark" for="name">Your Name</label>
@@ -181,6 +182,7 @@
           </div>
         </div>
       </div> 
+     </div>
     </div>
       
     <!-- Contact Us -->
@@ -190,7 +192,7 @@
 
 
     <div class="row m-0 mt-5 mb-5 " >  
-      <h4 class="text-center color-dark f-30 col-lg-12">Looking for something in particular?</h4>
+      <h4 class="text-center color-dark ft-24 col-lg-12 uppercase">Looking for something in particular?</h4>
 
         <div class="query-card  shadow mt-4 mb-4 pt-4 pb-4 col-lg-3 col-md-10 col-sm-10  mx-auto text-center bg-white rounded">
           <img class="card-img" src="./img/homepage/calender-light.png" alt="" srcset="">

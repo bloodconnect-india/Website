@@ -1,18 +1,18 @@
 let faqs = [
     {
-       question:"What do you mean by faq ?",
-       answer :"Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch ",
-       tags :["faq","heya","awareness","all"]
+       question:"What is blood? What is it composed of ?",
+       answer :"Blood is the red coloured fluid flowing continuously in our body’s circulatory system. It contains mainly a fluid called plasma in which are suspended cellular elements. Three types of cells: Red Blood Cells or RBC’s, White Blood Cells or WBC’s and tiny platelets form the cellular element. ",
+       tags :["about blood","blood","blood composition","all"]
     },
     {
-        question:"What do you mean by Blood Donation ?",
-        answer :"Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch ",
-        tags :["blood donation","first","second","all"]
+        question:"How much blood does a person have ?",
+        answer :"The total amount of blood in the human body can vary with several factors, like age, sex, health condition, body type, etc. However, for an average adult, the volume of blood in his/her body is 7-8% of the body weight (The amount of blood would vary between 5 to 6 litres for an average adult).",
+        tags :["about blood","blood","blood composition","all"]
     },
     {
-        question:"What do you mean by anything?",
-        answer :"Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch ",
-        tags :["faq","anish","second","all"]
+        question:"How is blood formed ?",
+        answer :"Blood consists of RBCs, WBCs, platelets suspended in plasma. In early embryonic life blood cells are formed in liver and spleen. But by the fifth month the Haemopoisis (i.e., formation of blood) occurs in bone marrow and lymphatic tissues. At birth the entire bone marrow is red and active. Gradually as the child grows, the marrow remains red only in the flat bones and vertebrae. The RBC, grannulocytes of WBC and platelets are produced mainly by bone marrow. The lymphocytes, monocytes, plasma cells are formed in the lymphoid and Reticulo Endothelial tissues. The orderly proliferation of the cells in the bone marrow and their release into circulation is carefully regulated according to the needs of body. Every day, new blood cells are being produced in the bone marrow and every day old cells are dying and being removed from the body. Red blood cells have a life of 120 days and when it becomes old and senile it is thrown out. White cells live for a few days and platelets for a few hours. Thus, daily new cells are added to the circulation and old are removed from it. ",
+        tags :["about blood","blood","blood formation","all"]
     }
 ]
 

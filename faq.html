@@ -9,8 +9,10 @@
     <link href = "https://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css"
     rel = "stylesheet">
     <title>FAQ | BloodConnect</title>
+    <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon">
+
 </head>
-<body>
+<body style="background-image: url('./img/faq.png');background-size: contain;">
     
     <nav class="fixed z-6 d-flex justify-content-end hide-lg" id="mobile-nav">
         <button class="menu hide show-md color-dark h-max bg-white" id="mobile-nav-toggler" onclick="toggleMobileNav()"><i class="fa fa-bars f-20"></i></button>
@@ -44,7 +46,7 @@
             </li>
           </ul>
     </nav>
-    <nav class="navbar justify-content-center-sm pb-0 sticky-sm z-5 bg-white" id="navbar-sm">
+    <nav class="navbar justify-content-center-sm pb-0 sticky-sm z-5 bg-white container" id="navbar-sm">
         <a class="navbar-brand" href="./index.html">
             <img src="./img/logo.png" width="250" height="50" alt="BloodConnect Logo">
         </a>
@@ -116,15 +118,15 @@
         </div>
     </nav>
 
-    <div class="container content pt-100-sm text-center" style="background-image: url('./img/faq.png');background-size: cover;">
+    <div class="container content pt-100-sm text-center" >
         <h4 class="text-center display-4 color-main mt-5">F.A.Q.</h4>
        <div class="faq-search mb-3">
         <input type="search" class="faq-search shadow-hover  mb-1" placeholder="search here ..." id="selector" onkeyup="searchFor(event)">
         <i class="search-icon fa fa-search"></i>
         <p class="color-dark-fw-6 mb-0 mt-2">Popular searches</p>
-        <button class="tag" onclick="searchFor('blood donation')">Blood Donation</button>
-        <button class="tag" onclick="searchFor('awareness')">Awareness</button>
-        <button class="tag" onclick="searchFor('All')">All</button>
+        <button class="tag mb-3" onclick="searchFor('blood donation')">Blood Donation</button>
+        <button class="tag mb-3" onclick="searchFor('awareness')">Awareness</button>
+        <button class="tag mb-3" onclick="searchFor('All')">All</button>
        </div>
         <p class="color-grey f-20 text-center  mx-auto">Explore our Help Community or learn more about <br> Blood Donation.</p>
         
@@ -135,7 +137,7 @@
     </div>
 
 <!-- Footer -->
-<div class="container-fluid  pt-5">
+  <div class="container-fluid  pt-5">
     <div class="container d-flex flex-column ">
 
       <hr class="color-dark w-100">
