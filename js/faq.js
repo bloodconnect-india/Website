@@ -13,6 +13,14 @@ let faqs = [
         question:"How is blood formed ?",
         answer :"Blood consists of RBCs, WBCs, platelets suspended in plasma. In early embryonic life blood cells are formed in liver and spleen. But by the fifth month the Haemopoisis (i.e., formation of blood) occurs in bone marrow and lymphatic tissues. At birth the entire bone marrow is red and active. Gradually as the child grows, the marrow remains red only in the flat bones and vertebrae. The RBC, grannulocytes of WBC and platelets are produced mainly by bone marrow. The lymphocytes, monocytes, plasma cells are formed in the lymphoid and Reticulo Endothelial tissues. The orderly proliferation of the cells in the bone marrow and their release into circulation is carefully regulated according to the needs of body. Every day, new blood cells are being produced in the bone marrow and every day old cells are dying and being removed from the body. Red blood cells have a life of 120 days and when it becomes old and senile it is thrown out. White cells live for a few days and platelets for a few hours. Thus, daily new cells are added to the circulation and old are removed from it. ",
         tags :["about blood","blood","blood formation","all"]
+    },{
+        question:"What is haemoglobin ?",
+        answer:"Haemoglobin is a substance present in the red cells. It is helpful in carrying oxygen and carbon dioxide. On an average, in a healthy male it should be between 14-16 gm % and in a female it should be about 12-14 gm %. This is also being daily synthesized and the new is replacing the old stock. ",
+        tags :["about blood","blood","haemoglobin","all"]
+    },{
+        question:"What are blood groups? What is Rh factor ?",
+        answer:"Every individual has two types of blood groups. The first is called the ABO grouping and the second type is called Rh grouping. In the ABO group there are four categories namely A Group, B Group, O Group and AB Group. In the Rh Group either the individual is Rh-positive, or Rh-negative. Rh is a factor called as Rhesus factor that has come to us from Rhesus monkeys. It refers to a protein on the red blood cells (Protein present: Rh-positive; Protein absent: Rh-negative). Thus, each and every human being will fall in one of the following groups. A positive or A negative B positive or B negative O positive or O negative AB positive or AB negative There are also some sub groups and other classifications which have not been discussed here. ",
+        tags :["about blood","blood","rh-factor","rh factor","rh","all"]
     }
 ]
 
@@ -33,9 +41,9 @@ const generateOutput = (tag) => {
                     ${faqs[i].answer}       
             </div>
             <p class="color-grey text-left mb-0 fw-6 pl-2">Tags : </p>
-            <div class="d-flex flex-row">`
+            <div class="d-flex flex-row flex-column-sm">`
             for (j in faqs[i].tags) {
-                output += `<button class="tag">${faqs[i].tags[j]}</button>`
+                output += `<button class="tag mb-2">${faqs[i].tags[j]}</button>`
             }
             output += `</div></div></div>`
         }

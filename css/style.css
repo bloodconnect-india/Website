@@ -265,7 +265,7 @@ hr.color-white{
     text-decoration: none !important;
     
 }
-.homepage-slider{
+.homepage-slider,.main-img{
     height: 90vh !important;
     background-position-x: center !important;
     background-position-y: top ;
@@ -373,7 +373,7 @@ hr.color-white{
     display: flex;
     align-items: center;
     justify-content: center;
-    z-index: 6;
+    z-index: 4;
 }
 .form-page>div.active{
     border: 2px solid #FFF;
@@ -421,7 +421,7 @@ li.nav-item>a{
     left: calc(50% - 119px);
     background: #D20003;
     padding: 10px 25px;
-    z-index: 5;
+    z-index: 4;
 }
 .arrow-down-bottom{
     position: absolute;
@@ -522,6 +522,10 @@ button.over-img{
     display: flex;
     flex-direction: column;
     justify-content: start;
+}
+.team-member{
+    display: flex;
+    justify-content: space-evenly;
 }
 .board-member>img{
     height: 215px !important;
@@ -996,6 +1000,9 @@ button.selected{
     .h-40-sm{
         height: 40vh !important;
     }
+    .h-50-sm{
+        height: 50vh !important;
+    }
     .hide-sm{
         display: none !important;
     }
@@ -1031,18 +1038,21 @@ button.selected{
         padding-left: 0px !important;
         padding-right: 0px !important;
     }
-    .google-form{
-        width: 350px;
-        height: 700px;
-        margin-left: auto;
-        margin-right: auto;
+    .join-form{
+        max-height: 750px !important;
+    }
+    .join-us-collage{
+        max-height: 400px !important;
     }
     .footer-list{
         justify-content: center !important;
     }
-    .homepage-slider{
+    .homepage-slider,.main-img{
         background-size: cover !important;
         background-position-x: 400px !important;
+    }
+    .main-img.bg-center-sm{
+        background-position-x: center !important;
     }
     .homepage-slider>div>h1:first-child{
         width:260px !important;
@@ -1064,6 +1074,10 @@ button.selected{
     .mt-5-lg{
         margin-top: 0px !important;
     }
+    .px-0-sm{
+        padding-left: 0px !important;
+        padding-right: 0px !important;
+    }
     .px-3-sm{
         padding-left: 1rem !important;
         padding-right: 1rem !important;
@@ -1071,6 +1085,7 @@ button.selected{
     .justify-content-center-md{
         justify-content: center !important;
     }
+    
     #navbar-sm{
         align-items: start !important;
         flex-direction: column !important;
