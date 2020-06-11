@@ -14,13 +14,22 @@
   
     <title>BloodConnect</title>
     <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon">
+    <style>
+      .main-slider>.slick-prev::before{
+        content: url('./svg/arrow-left-white.svg') !important;
+      }
+      .main-slider>.slick-next::before{
+        content: url('./svg/arrow-right-white.svg') !important;
+      }
+      
+    </style>
 </head>
 <body>
     <!-- Navbar start here -->
     <!-- Just an image -->
     <!-- Navbar -->
   <nav class="fixed z-6 d-flex justify-content-end hide-lg" id="mobile-nav">
-    <button class="menu hide show-md color-dark h-max bg-white" id="mobile-nav-toggler" onclick="toggleMobileNav()"><i class="fa fa-bars f-20"></i></button>
+    <button class="menu hide show-md color-white h-max bg-none" id="mobile-nav-toggler" onclick="toggleMobileNav()"><i class="fa fa-bars f-20"></i></button>
       <ul class="mobile-nav hide bg-white" id="mobile-nav-list">
         <li class="bg-main ">
           <a class="nav-link color-white fw-4 " href="./raise-a-request.html">RAISE A REQUEST</a>
@@ -51,199 +60,163 @@
         </li>
       </ul>
   </nav>
-  <nav class="navbar justify-content-center-sm pb-0 sticky-sm z-5 bg-white container" id="navbar-sm">
-      <a class="navbar-brand" href="./index.html">
-          <img src="./img/logo.png" width="250" height="50" alt="BloodConnect Logo">
+  <nav class="navbar justify-content-center-sm justify-content-between pb-0 sticky-sm z-5  bg-none " id="navbar">
+      <div class="d-flex flex-row align-items-center justify-content-end">
+        <a class="navbar-brand" href="./index.html">
+          <img src="./img/homepage/Logo.png"   height="35" alt="BloodConnect Logo">
       </a>
-      <ul class="navbar-nav flex-column">
-          <li class="pl-2 pr-2 text-right">
-            <ul class="navbar-nav d-flex flex-row justify-content-end  pr-4 ">
-              <li class="footer-item ml-2 mr-2">
-                <a href="#" class="footer-link"><i class="fa fa-facebook-f"></i></a>
-              </li>
-              <li class="footer-item ml-2 mr-2">
-                <a href="#" class="footer-link"><i class="fa fa-instagram"></i></a>
-              </li>
-              <li class="footer-item ml-2 mr-2">
-                <a href="#" class="footer-link"><i class="fa fa-envelope"></i></a>
-              </li>
-              <li class="footer-item ml-2 mr-2">
-                <a href="#" class="footer-link"><i class="fa fa-twitter"></i></a>
-              </li>
-              <li class="footer-item ml-2 mr-2">
-                <a href="#" class="footer-link"><i class="fa fa-youtube"></i></a>
-              </li>
-              <li class="footer-item ml-2 mr-2">
-                <a href="#" class="footer-link"><i class="fa fa-linkedin"></i></a>
-              </li>
-            </ul>
+      <ul class="navbar-nav flex-row  align-items-end hide-md"  style="border-bottom: none !important;">
+
+          <li class="px-3">
+            <a href="./about-us.html" class="color-white b-white f-14 ">ABOUT US</a>
           </li>
-          <ul class="secondary-nav d-flex flex-row hide-md">
-            <li class="pl-2 pr-2">
-              <a href="./index.html" class="color-dark f-12 fw-6">HOME</a>
-            </li>
-            <li class="pl-2 pr-2">
-              <a href="./about-us.html" class="color-dark f-12 fw-6">ABOUT US</a>
-            </li>
-            <li class="pl-2 pr-2">
-              <a href="./our-team.html" class="color-dark f-12 fw-6">OUR TEAM</a>
-            </li>
-            <li class="pl-2 pr-2">
-              <a href="./resources.html" class="color-dark f-12 fw-6">RESOURCES</a>
-            </li>
-            <li class="pl-2 pr-2">
-              <a href="./contact-us.html" class="color-dark f-12 fw-6">CONTACT US</a>
-            </li>
-          </ul>
-      </ul>
+          <li class="px-3">
+            <a href="./raise-a-request.html" class="color-white b-white f-14 ">RAISE A REQUEST</a>
+          </li>
+          <li class="px-3">
+            <a href="./organize-a-camp.html" class="color-white b-white f-14 ">ORGANIZE A CAMP</a>
+          </li>
+          <li class="px-3">
+            <a href="./resources.html" class="color-white b-white f-14 ">RESOURCES</a>
+          </li>
+          <li class="px-3">
+            <a href="./join-us.html" class="color-white b-white f-14 ">JOIN US</a>
+          </li>
+    </ul>
+      </div>
+      <div class="d-flex flex-row align-items-center hide-md">
+        <a href="./contact-us.html" class="f-14 color-white mr-3 uppercase">Contact Us</a>
+        <a href="./sponsor.html" class="f-14 sponsor-link-button color-dark fw-6 px-3 py-2 uppercase">Support us</a>
+      </div>
   </nav>
+  <nav class="navbar flex-column-sm align-items-start justify-content-between pb-0  sticky-navbar z-5 bg-white pb-2 hide" id="navbar-sticky">
+    <div class="d-flex flex-row align-items-center justify-content-end">
+      <a class="navbar-brand" href="./index.html">
+        <img src="./img/logo.png"   height="35" alt="BloodConnect Logo">
+    </a>
+    <ul class="navbar-nav flex-row hide-md align-items-end"  style="border-bottom: none !important;">
+ 
+        <li class="px-3">
+          <a href="./about-us.html" class="color-dark b-dark f-14 ">ABOUT US</a>
+        </li>
+        <li class="px-3">
+          <a href="./raise-a-request.html" class="color-dark b-dark f-14 ">RAISE A REQUEST</a>
+        </li>
+        <li class="px-3">
+          <a href="./organize-a-camp.html" class="color-dark b-dark f-14 ">ORGANIZE A CAMP</a>
+        </li>
+        <li class="px-3">
+          <a href="./resources.html" class="color-dark b-dark f-14 ">RESOURCES</a>
+        </li>
+        <li class="px-3">
+          <a href="./join-us.html" class="color-dark b-dark f-14 ">JOIN US</a>
+        </li>
+  </ul>
+    </div>
+    <div class="d-flex flex-row align-items-center">
+      <a href="./sponsor.html" class="f-14 sponsor-link-button color-dark fw-6 px-3 py-2 uppercase bg-main color-white">Support us</a>
+    </div>
+</nav>
 
-  <nav class="navbar navbar-expand-md navbar-light bg-white p-0 z-100" id="navbar">
 
-      <!-- <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <i class="fa fa-bars"></i>
-        </button> -->
-        <div class="collapse navbar-collapse justify-content-center flex-column" id="navbarNav">
-
-          <ul class="w-100 navbar-nav pt-2 pb-2 d-flex justify-content-center bg-main">
-            <li class="nav-item pl-5 pr-5  bg-main ">
-              <a class="nav-link color-white fw-4 " href="./raise-a-request.html">RAISE A REQUEST</a>
-            </li>
-            <li class="nav-item pl-5 pr-5  bg-main bl-1">
-              <a class="nav-link color-white fw-4 " href="./organize-a-camp.html">ORGANIZE A CAMP</a>
-            </li>
-            <li class="nav-item pl-5 pr-5  bg-main bl-1">
-              <a class="nav-link color-white fw-4 " href="./sponsor.html">DONATE NOW</a>
-            </li>
-            <li class="nav-item pl-5 pr-5  bg-main bl-1">
-              <a class="nav-link color-white fw-4 " href="./join-us.html">JOIN US</a>
-            </li>
-          </ul>
-              
-        </div>
-  </nav>
 
   <!-- Front slider -->
-    <div class="container-fluid h-100 mb-5  pl-0 pr-0 content pt-100-sm">
+    <div class="container-fluid h-90  pl-0 pr-0 content pt-100-sm relative d-flex flex-row align-items-center">
+      <div class="d-flex flex-column container h-80 justify-content-center z-5 px-0-sm">
+        <h1 class="display-4 color-white  wd-max px-2 mb-1 ">Donate Blood</h1>
+        <h1 class="f-40 color-white  wd-max px-2 ">Save Lives</h1>
+        <p class="color-white w-50-lg px-2">
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo qui labore dolore voluptatem nobis! Accusantium odio consequuntur fugiat 
+        </p>
+        <div class="d-flex mt-2 px-2">
+          <button class="shadow btn-main bg-main mr-2">Support Us</button>
+        </div>
+      </div>
       <div class="main-slider" id="homepageSlider" data-slick='{"slidesToShow": 1, "slidesToScroll": 1}' >
         
         <!-- Gradinet here -->
 
-        <div class="homepage-slider" style="background: url('./img/homepage/carousel-1/new/The best possible piercing-min.jpg');">
-          <div class="d-flex flex-column container h-80 justify-content-center">
-            <h1 class="display-4 color-white bg-main wd-max px-2 mb-1 uppercase">Donate Blood</h1>
-            <h1 class="f-40 color-white bg-main wd-max px-2 ">Save Lives</h1>
-            <div class="d-flex mt-2">
-              <button class="shadow btn-main bg-main mr-2">Donate Blood</button>
-              <button class=" btn-main color-main bg-white ml-2">Raise A Request</button>
-            </div>
-          </div>
-        </div>
 
-        <div class="homepage-slider" style="background: url('./img/homepage/carousel-1/new/The largest blood drop-min.JPG');">
-          <div class="d-flex flex-column container h-80 justify-content-center">
-            <h1 class="display-4 color-main bg-white wd-max px-2 mb-1 uppercase">Donate Blood</h1>
-            <h1 class="f-40 color-main bg-white wd-max px-2 ">Save Lives</h1>
-            <div class="d-flex mt-2">
-              <button class="shadow btn-main bg-main mr-2">Donate Blood</button>
-              <button class=" btn-main color-main bg-white ml-2">Raise A Request</button>
-            </div>
-          </div>
+
+        <div class="homepage-slider" style="background: url('./img/homepage/duetone/1.png');">
+          
+        </div>
+        <div class="homepage-slider" style="background: url('./img/homepage/duetone/2.png');">
+          
+        </div>
+        <div class="homepage-slider" style="background: url('./img/homepage/duetone/3.png');">
+          
+        </div>
+        <div class="homepage-slider" style="background: url('./img/homepage/duetone/4.png');">
+          
         </div>
 
 
-        <div class="homepage-slider" style=" background:url('./img/homepage/carousel-1/new/4-min.jpg');">
-          <div class="d-flex flex-column container h-80 justify-content-center">
-            <h1 class="display-4 color-white bg-main uppercase mb-1 wd-max">Donate Blood</h1>
-            <h1 class="f-40 color-white bg-main wd-max">Save Lives</h1>
-            <div class="d-flex mt-2">
-              <button class="shadow btn-main bg-main mr-2">Donate Blood</button>
-              <button class=" btn-main color-main bg-white ml-2">Raise A Request</button>
-            </div>
-          </div>
-        </div>
-        <div class="homepage-slider" style="background: url('./img/homepage/carousel-1/new/1-min.jpg');">
-          <div class="d-flex flex-column container h-80 justify-content-center">
-            <h1 class="display-4 color-main bg-white wd-max px-2 mb-1 uppercase">Donate Blood</h1>
-            <h1 class="f-40 color-main bg-white wd-max px-2 ">Save Lives</h1>
-            <div class="d-flex mt-2">
-              <button class="shadow btn-main bg-main mr-2">Donate Blood</button>
-              <button class=" btn-main color-main bg-white ml-2">Raise A Request</button>
-            </div>
-          </div>
-        </div>
-        <div class="homepage-slider" style="background: url('./img/homepage/carousel-1/new/2-min.JPG');">
-          <div class="d-flex flex-column container h-80 justify-content-center">
-            <h1 class="display-4 color-main bg-white wd-max pl-2 pr-2 uppercase mb-1">Donate Blood</h1>
-            <h1 class="f-40 color-main bg-white  wd-max pl-2 pr-2">Save Lives</h1>
-            <div class="d-flex mt-2">
-              <button class="shadow btn-main bg-main mr-2">Donate Blood</button>
-              <button class=" btn-main color-main bg-white ml-2">Raise A Request</button>
-            </div>
-          </div>
-        </div>
        </div>
        
     </div>
 
 
     <!-- Our Story in brief -->
-    <div class="container d-flex align-items-center justify-content-end img-left mb-5" >
+    <div class="container d-flex align-items-center justify-content-end img-left pb-5" >
       <div class="row">
         <div class="col-lg-5 col-md-4 col-sm-12">
           <img class="contain-img" src="./img/homepage/bloodhero.png" alt="">
         </div>
       
       <div class="d-flex flex-column justify-content-center tagling col-lg-7 col-sm-12">
-        <h1 class="color-dark fw-4 ft-24 mb-0 uppercase">India has a shortage of </h1>
-        <h4 class="f-40 color-main ">2 million blood units</h4>
-        <p class="color-dark mt-1">There is a requirement of 15 million units of blood annually. However, we are only able to collect 13 million units. We just need <span class="color-main fw-6">2% of India’s youth to donate regularly</span>  to address the complete demand.</p>
+        <h1 class="color-dark fw-4 f-30 mb-0 ">India has a shortage of 
+        <span class="f-30 color-main-dark ">2 Million Blood Units</span>
+      </h1>
+        <p class="color-dark-light mt-1">There is a requirement of 15 million units of blood annually. However, we are only able to collect 13 million units. We just need <span class="color-main fw-6">2% of India’s youth to donate regularly</span>  to address the complete demand.</p>
         <button class="shadow btn-main bg-main mx-auto-sm"><a href="./about-us.html" class="color-white">Know More</a></button>
       </div>
     </div>
     </div>
 
     <!-- Our work in brief -->
-    <div class="row m-0 mt-5 justify-content-center mt-5 pt-5">
-      <h1 class="color-dark fw-4 ft-24 mb-0 uppercase text-center">We, the youth, can make India 
-        </h1>
-        <h4 class="color-main f-40 col-lg-12 text-center pl-0">blood sufficient </h4>
-
-      <p class="color-dark text-center col-lg-10 col-sm-12 mx-auto mb-5">BloodConnect is India’s largest youth-led organization that works with colleges, corporates, and RWAs to help the blood banks be blood sufficient. We do so by: 
+   <div class="container">
+    <div class="row m-0 pt-5 justify-content-center bg-main-light py-5">
+      <h1 class="color-dark fw-4 f-30 mb-0 text-left col-lg-10  pt-5">We, the youth, can make India 
+        
+        <span class="color-main-dark f-30 col-lg-12  pl-0">Blood Sufficient </span>
+      </h1>
+      <p class="color-dark-light  col-lg-10 col-sm-12 mx-auto mb-5">BloodConnect is India’s largest youth-led organization that works with colleges, corporates, and RWAs to help the blood banks be blood sufficient. We do so by Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem quia sunt repudiandae illum vel. Facere nostrum earum totam molestiae : 
       </p>
-      <div class="work-card shadow-hover pt-2 pb-4 col-lg-3 col-md-6 col-sm-10 mx-4 text-center mb-2">
-        <img class="card-img" src="./img/homepage/calender-light.png" width="150px" height="150px" alt="calender" srcset="">
-        <h5 class="color-dark  uppercase mt-2 f-18">Blood Donation Camps</h5>
-        <p class="color-dark mx-auto mt-3 pl-1 pr-1"> We collaborate with colleges, corporates, RWAs to organize innovative and engaging blood donation camps end to end.
+      <div class="work-card shadow pt-4 pl-5 pb-5 col-lg-3 col-md-6 col-sm-10 mx-4  mb-5">
+        <img class="card-img" src="./img/homepage/calender-light.png" width="100px" height="100px" alt="calender" srcset="">
+        <h5 class="color-dark  mt-2 f-18">Blood Donation Camps</h5>
+        <p class="color-dark-light mx-auto mt-1 pr-1"> We collaborate with colleges, corporates, RWAs to organize innovative and engaging blood donation camps end to end.
         </p>
         <button class="btn-main bg-main">
           <a class="card-link color-white" href="./organize-a-camp.html">Organize a Camp</a>
         </button>
       </div>
-      <div class="work-card shadow-hover pt-2 pb-4 col-lg-3 col-md-6 col-sm-10 mx-4 text-center mb-2">
-        <img class="card-img" src="./img/homepage/hearts.png" width="150px" height="150px" alt="Hearts" srcset="">
-        <h5 class="color-dark  uppercase mt-2 f-18">Handling Helpline</h5>
-        <p class="color-dark mx-auto mt-3 pl-1 pr-1">Through helpline requests, we help address immediate blood requirements by patients. </p>
+      <div class="work-card shadow pt-4 pl-5 pb-5 col-lg-3 col-md-6 col-sm-10 mx-4  mb-5">
+        <img class="card-img" src="./img/homepage/hearts.png" width="100px" height="100px" alt="Hearts" srcset="">
+        <h5 class="color-dark  mt-2 f-18">Handling Helpline</h5>
+        <p class="color-dark-light mx-auto mt-1 pr-1">Through helpline requests, we help address immediate blood requirements by patients. </p>
         <br>
         <button class="btn-main bg-main">
           <a class="card-link color-white" href="./raise-a-request.html">Raise a Request</a>
         </button>
       </div>
-      <div class="work-card shadow-hover pt-2 pb-4 col-lg-3 col-md-6 col-sm-10 mx-4 text-center mb-2">
-        <img class="card-img p-3" src="./img/homepage/life-buoy.png" width="150px" height="150px" alt="life buoy" srcset="">
-        <h5 class="color-dark  uppercase mt-2 f-18">Awareness Session</h5>
-        <p class="color-dark mx-auto mt-3 pl-1 pr-1">Street plays, competitions, and sessions - we do them all to inspire people, especially the first timers, to come out and donate blood.
+      <div class="work-card shadow pt-4 pl-5 pb-5 col-lg-3 col-md-6 col-sm-10 mx-4  mb-5">
+        <img class="card-img p-3" src="./img/homepage/life-buoy.png" width="100px" height="100px" alt="life buoy" srcset="">
+        <h5 class="color-dark  mt-2 f-18">Awareness Session</h5>
+        <p class="color-dark-light mx-auto mt-1 pr-1">Street plays, competitions, and sessions - we do them all to inspire people, especially the first timers, to come out and donate blood.
         </p>
         <button class="btn-main bg-main">
           <a class="card-link color-white" href="./about-us.html">Learn More</a>
         </button>
       </div>
     </div>
+   </div>
 
     <!-- Impact Section -->
-    <div class="container-fluid mt-5 bg-main">
+    <div class="container-fluid mt-5 py-5 bg-main">
       <div class="container">
-        <div class="row bg-main">
+        <div class="row bg-main py-5">
           <div class="col-lg-3 bg-white pt-5 pb-5 text-center d-flex align-items-center bg-main">
             <div class="mx-auto">
               <h2 class="f-40 fw-6 color-white mb-0">Our Impact</h2>
@@ -374,16 +347,16 @@
 
 
       <!-- Sponsor banner -->
-      <div class="d-flex flex-column m-0  pt-5 pb-5 text-center bg-main">
-        <h4 class="f-40 color-white mx-auto">Help us make India Blood Sufficient</h4>
-        <p class="color-white w-75-lg mx-auto text-center">
+      <div class="d-flex flex-column m-0 px-2 pt-5 pb-5 text-center bg-main-light">
+        <h4 class="f-40 color-dark mx-auto pt-5">Help us make India Blood Sufficient</h4>
+        <p class="color-dark-light w-75-lg mx-auto text-center">
           We started in IIT Delhi in 2010 and have now grown onto 10 cities. With your support we hope to further expand and help out blood banks across the country and make them blood sufficient. 
         </p>
-        <button class="mx-auto shadow btn-main bg-white mt-3"><a class="color-main fw-6" href="./sponsor.html">Sponsor Us</a></button>
+        <button class="mx-auto shadow btn-main bg-white mt-3 mb-5"><a class="color-main fw-6" href="./sponsor.html">Sponsor Us</a></button>
       </div>
 
 
-          <!-- Media Partners -->
+    <!-- Media Partners -->
     <div class="container pt-5 mb-5">
       <h4 class="color-dark fw-4 ft-24 mb-0 uppercase text-center">BloodConnect in the news</h4>
       <div class="media-slider" data-slick='{"slidesToShow": 4, "slidesToScroll": 1}'  >
@@ -439,34 +412,34 @@
           <div class="col-lg-4 col-sm-12">
             <p class="color-dark bold mb-2">NAVIGATION</p>
             <ul class="footer-list pl-0">
-              <li class=" mr-4 compact"><a class="color-dark f-12 fw-6" href="./index.html">HOME</a></li>
-              <li class=" mr-4 compact"><a class="color-dark f-12 fw-6" href="./about-us.html">ABOUT US</a></li>
-              <li class=" mr-4 compact"><a class="color-dark f-12 fw-6" href="./our-team.html">OUR TEAM</a></li>
-              <li class=" mr-4 compact"><a class="color-dark f-12 fw-6" href="./sponsor.html">DONATE NOW</a></li>
-              <li class=" mr-4 compact"><a class="color-dark f-12 fw-6" href="./join-us.html">JOIN US</a></li>
-              <li class=" mr-4 compact"><a class="color-dark f-12 fw-6" href="./contact-us.html">CONTACT US</a></li>
+              <li class=" mr-4 compact"><a class="color-dark f-14" href="./index.html">Home</a></li>
+              <li class=" mr-4 compact"><a class="color-dark f-14" href="./about-us.html">About us</a></li>
+              <li class=" mr-4 compact"><a class="color-dark f-14" href="./our-team.html">Our team</a></li>
+              <li class=" mr-4 compact"><a class="color-dark f-14" href="./sponsor.html">Donate now</a></li>
+              <li class=" mr-4 compact"><a class="color-dark f-14" href="./join-us.html">Join us</a></li>
+              <li class=" mr-4 compact"><a class="color-dark f-14" href="./contact-us.html">Contact us</a></li>
             </ul>
           </div>
           <div class="col-lg-4 col-sm-12">
             <p class="color-dark bold mb-2">RAISE A REQUEST</p>
             <ul class="footer-list pl-0">
-              <li class=" mr-4 compact"><a class="color-dark f-12 fw-6" href="./raise-a-request.html#city_region=Delhi">RAISE A REQUEST IN DELHI-NCR</a></li>
-              <li class=" mr-4 compact"><a class="color-dark f-12 fw-6" href="/raise-a-request.html#city_region=Kanpur">RAISE A REQUEST IN KANPUR</a></li>
-              <li class=" mr-4 compact"><a class="color-dark f-12 fw-6" href="./raise-a-request.html#city_region=Agra">RAISE A REQUEST IN AGRA</a></li>
-              <li class=" mr-4 compact"><a class="color-dark f-12 fw-6" href="./raise-a-request.html#city_region=Lucknow">RAISE A REQUEST IN LUCKNOW</a></li>
-              <li class=" mr-4 compact"><a class="color-dark f-12 fw-6" href="./raise-a-request.html#city_region=Bhubaneswar">RAISE A REQUEST IN BHUBANESWAR</a></li>
-              <li class=" mr-4 compact"><a class="color-dark f-12 fw-6" href="./raise-a-request.html#city_region=Jaipur">RAISE A REQUEST IN JAIPUR</a></li>
+              <li class=" mr-4 compact"><a class="color-dark f-14" href="./raise-a-request.html#city_region=Delhi">Raise a request in Delhi-NCR</a></li>
+              <li class=" mr-4 compact"><a class="color-dark f-14" href="/raise-a-request.html#city_region=Kanpur">Raise a request in Kanpue</a></li>
+              <li class=" mr-4 compact"><a class="color-dark f-14" href="./raise-a-request.html#city_region=Agra">Raise a request in Agra</a></li>
+              <li class=" mr-4 compact"><a class="color-dark f-14" href="./raise-a-request.html#city_region=Lucknow">Raise a request in Lucknow</a></li>
+              <li class=" mr-4 compact"><a class="color-dark f-14" href="./raise-a-request.html#city_region=Bhubaneswar">Raise a request in Bhubaneswar</a></li>
+              <li class=" mr-4 compact"><a class="color-dark f-14" href="./raise-a-request.html#city_region=Jaipur">Raise a request in Jaipur</a></li>
             </ul>
           </div>
           <div class="col-lg-4 col-sm-12">
             <p class="color-dark bold  mb-2">ORGANIZE A CAMP</p>
             <ul class="footer-list pl-0">
-              <li class=" mr-4 compact"><a class="color-dark f-12 fw-6" href="./organize-a-camp.html#city_region=Delhi" onclick="organizeCamp('Delhi')">ORGANIZE A CAMP IN DELHI-NCR</a></li>
-              <li class=" mr-4 compact"><a class="color-dark f-12 fw-6" href="./organize-a-camp.html#city_region=Kanpur" onclick="organizeCamp('Kanpur')">ORGANIZE A CAMP IN KANPUR</a></li>
-              <li class=" mr-4 compact"><a class="color-dark f-12 fw-6" href="./organize-a-camp.html#city_region=Agra" onclick="organizeCamp('Agra')">ORGANIZE A CAMP IN AGRA</a></li>
-              <li class=" mr-4 compact"><a class="color-dark f-12 fw-6" href="./organize-a-camp.html#city_region=Lucknow" onclick="organizeCamp('Lucknow')">ORGANIZE A CAMP IN LUCKNOW</a></li>
-              <li class=" mr-4 compact"><a class="color-dark f-12 fw-6" href="./organize-a-camp.html#city_region=Bhubaneswar" onclick="organizeCamp('Bhubaneswar')">ORGANIZE A CAMP IN BHUBANESWAR</a></li>
-              <li class=" mr-4 compact"><a class="color-dark f-12 fw-6" href="./organize-a-camp.html#city_region=Jaipur" onclick="organizeCamp('Jaipur')">ORGANIZE A CAMP IN JAIPUR</a></li>
+              <li class=" mr-4 compact"><a class="color-dark f-14" href="./organize-a-camp.html#city_region=Delhi" onclick="organizeCamp('Delhi')">Organize a camp in Delhi-NCR</a></li>
+              <li class=" mr-4 compact"><a class="color-dark f-14" href="./organize-a-camp.html#city_region=Kanpur" onclick="organizeCamp('Kanpur')">Organize a camp in Kanpur</a></li>
+              <li class=" mr-4 compact"><a class="color-dark f-14" href="./organize-a-camp.html#city_region=Agra" onclick="organizeCamp('Agra')">Organize a camp in Agra</a></li>
+              <li class=" mr-4 compact"><a class="color-dark f-14" href="./organize-a-camp.html#city_region=Lucknow" onclick="organizeCamp('Lucknow')">Organize a camp in Lucknow</a></li>
+              <li class=" mr-4 compact"><a class="color-dark f-14" href="./organize-a-camp.html#city_region=Bhubaneswar" onclick="organizeCamp('Bhubaneswar')">Organize a camp in Bhubaneswar</a></li>
+              <li class=" mr-4 compact"><a class="color-dark f-14" href="./organize-a-camp.html#city_region=Jaipur" onclick="organizeCamp('Jaipur')">Organize a camp in Jaipur</a></li>
             </ul>
           </div>
         </div>
@@ -534,7 +507,7 @@
 
     // normal options...
     infinite: true,
-    autoplay: true,
+    autoplay: false,
     autoplaySpeed: 1500,
     pauseOnHover:false,
     loop: true,  

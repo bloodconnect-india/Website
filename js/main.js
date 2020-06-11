@@ -4,24 +4,34 @@ $('.carousel').carousel()
 window.onscroll = function() {myFunction()};
 
 // Get the navbar
-var navbar = document.getElementById("navbar");
-var navbarSm = document.getElementById("navbar-sm")
+var navbarSticky = document.getElementById("navbar-sticky");
+var navbar = document.getElementById("navbar")
 var navbarToggler = document.getElementById("mobile-nav-toggler")
+var navbarSm  = document.getElementById("navbar-sm")
 // Get the offset position of the navbar
 var sticky = navbar.offsetTop;
-var stickySm = navbarSm.offsetTop;
 // Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
 function myFunction() {
-  if (window.pageYOffset >= sticky) {
-    navbar.classList.add("sticky")
+  if (window.pageYOffset >= window.innerHeight) {
+    navbarSticky.classList.remove('hide')
+    navbarSticky.classList.add('show-flex')
+    navbar.classList.add('hide')
+    navbarToggler.classList.remove('color-white')
+    navbarToggler.classList.add('color-dark')
   } else {
-    navbar.classList.remove("sticky");
+    navbarSticky.classList.add('hide')
+    navbarSticky.classList.remove('show-flex')
+    navbar.classList.remove('hide')
+    if(!navbarToggler.classList.contains('color-dark-fixed')){
+    navbarToggler.classList.add('color-white')
+    navbarToggler.classList.remove('color-dark')
+    }
   }
-  if (window.pageYOffset >= stickySm) {
-    navbarSm.classList.add("sticky-sm")
-  } else {
-    navbarSm.classList.remove("sticky-sm");
-  }
+  // if (window.pageYOffset >= stickySm) {
+  //   navbarSm.classList.add("sticky-sm")
+  // } else {
+  //   navbarSm.classList.remove("sticky-sm");
+  // }
 } 
 
 
