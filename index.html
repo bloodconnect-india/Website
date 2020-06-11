@@ -14,6 +14,7 @@
   
     <title>BloodConnect</title>
     <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon">
+    <script src="./js/CountUp.min.js" type="module"></script>
     <style>
       .main-slider>.slick-prev::before{
         content: url('./svg/arrow-left-white.svg') !important;
@@ -41,7 +42,7 @@
     <!-- Just an image -->
     <!-- Navbar -->
   <nav class="fixed z-6 d-flex justify-content-end hide-lg" id="mobile-nav">
-    <button class="menu hide show-md color-white h-max bg-none" id="mobile-nav-toggler" onclick="toggleMobileNav()"><i class="fa fa-bars f-20"></i></button>
+    <button class="menu  show-md color-white h-max bg-none" id="mobile-nav-toggler" onclick="toggleMobileNav()"><i class="fa fa-bars f-20"></i></button>
       <ul class="mobile-nav hide bg-white" id="mobile-nav-list">
         <li class="bg-main ">
           <a class="nav-link color-white fw-4 " href="./raise-a-request.html">RAISE A REQUEST</a>
@@ -53,7 +54,7 @@
           <a class="nav-link color-white fw-4 " href="./sponsor.html">DONATE NOW</a>
         </li>
         <li class="bg-main ">
-          <a class="nav-link color-white fw-4 " href="./join-us.html">JOIN US</a>
+          <a class="nav-link color-white fw-4 " href="./join-us-selection.html">JOIN US</a>
         </li>
         <li class="bg-white">
           <a href="./index.html" class="color-dark f-14 fw-4 nav-link">HOME</a>
@@ -121,7 +122,7 @@
           <a href="./resources.html" class="color-dark b-dark f-14 ">RESOURCES</a>
         </li>
         <li class="px-3">
-          <a href="./join-us.html" class="color-dark b-dark f-14 ">JOIN US</a>
+          <a href="./join-us-selection.html" class="color-dark b-dark f-14 ">JOIN US</a>
         </li>
   </ul>
     </div>
@@ -196,7 +197,7 @@
       </h1>
       <p class="color-dark-light  col-lg-10 col-sm-12 mx-auto mb-5">BloodConnect is India’s largest youth-led organization that works with colleges, corporates, and RWAs to help the blood banks be blood sufficient. We do so by Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem quia sunt repudiandae illum vel. Facere nostrum earum totam molestiae : 
       </p>
-      <div class="work-card shadow pt-4 pl-5 pb-5 col-lg-3 col-md-6 col-sm-10 mx-4  mb-5">
+      <div class="work-card bg-white shadow pt-4 pl-5 pb-5 col-lg-3 col-md-6 col-sm-10 mx-4  mb-5">
         <img class="card-img" src="./img/homepage/calender-light.png" width="100px" height="100px" alt="calender" srcset="">
         <h5 class="color-dark  mt-2 f-18">Blood Donation Camps</h5>
         <p class="color-dark-light mx-auto mt-1 pr-1"> We collaborate with colleges, corporates, RWAs to organize innovative and engaging blood donation camps end to end.
@@ -205,7 +206,7 @@
           <a class="card-link color-white" href="./organize-a-camp.html">Organize a Camp</a>
         </button>
       </div>
-      <div class="work-card shadow pt-4 pl-5 pb-5 col-lg-3 col-md-6 col-sm-10 mx-4  mb-5">
+      <div class="work-card bg-white shadow pt-4 pl-5 pb-5 col-lg-3 col-md-6 col-sm-10 mx-4  mb-5">
         <img class="card-img" src="./img/homepage/hearts.png" width="100px" height="100px" alt="Hearts" srcset="">
         <h5 class="color-dark  mt-2 f-18">Handling Helpline</h5>
         <p class="color-dark-light mx-auto mt-1 pr-1">Through helpline requests, we help address immediate blood requirements by patients. </p>
@@ -214,7 +215,7 @@
           <a class="card-link color-white" href="./raise-a-request.html">Raise a Request</a>
         </button>
       </div>
-      <div class="work-card shadow pt-4 pl-5 pb-5 col-lg-3 col-md-6 col-sm-10 mx-4  mb-5">
+      <div class="work-card bg-white shadow pt-4 pl-5 pb-5 col-lg-3 col-md-6 col-sm-10 mx-4  mb-5">
         <img class="card-img p-3" src="./img/homepage/life-buoy.png" width="100px" height="100px" alt="life buoy" srcset="">
         <h5 class="color-dark  mt-2 f-18">Awareness Session</h5>
         <p class="color-dark-light mx-auto mt-1 pr-1">Street plays, competitions, and sessions - we do them all to inspire people, especially the first timers, to come out and donate blood.
@@ -227,25 +228,25 @@
    </div>
 
     <!-- Impact Section -->
-    <div class="container-fluid mt-5 h-60 d-flex align-items-center justify-content-center py-5" style="background: url('./img/homepage/impact.png');background-size: cover;background-position: bottom;">
+    <div class="container-fluid mt-5 h-60-min d-flex align-items-center justify-content-center py-5" style="background: url('./img/homepage/impact.png');background-size: cover;background-position: bottom;">
       <div class="container">
         <div class="row bg-none py-5">
-          <div class="col-lg-3 bg-white pt-5 pb-5 text-center d-flex align-items-center bg-none">
+          <div class="col-lg-3 bg-white pt-5 pb-5  d-flex align-items-center bg-none">
             <div class="mx-auto">
               <h2 class="f-40 fw-6 color-white mb-0">Our Impact</h2>
-              <h2 class=" ft-24 color-white mt-0 mt-n-1  text-left">Till 2020</h2>
+              <h2 class=" ft-24 color-white mt-0 mt-n-1 text-center-sm  ">Till 2020</h2>
             </div>
           </div>
           <div class="col-lg-3  pt-3 pb-3 text-center d-flex align-items-center justify-content-center flex-column">
-            <p class="bold f-30 color-white mb-0 mt-n-1" id="units">100,000+</p>
+            <p class="bold f-30 color-white mb-0 mt-n-1 count" id="units">100,000+</p>
             <p class="color-white fw-4 f-18">  Blood units collected</p>
           </div>
           <div class="col-lg-3  pt-3 pb-3 text-center d-flex align-items-center justify-content-center flex-column">
-            <p class="bold f-40 color-white mb-0 mt-n-1">300,000</p>
+            <p class="bold f-40 color-white mb-0 mt-n-1 count">300,000</p>
             <p class="color-white fw-6 f-30"> Lives Saved</p>
           </div>
           <div class="col-lg-3  pt-3 pb-3 text-center d-flex align-items-center justify-content-center flex-column">
-            <p class="bold f-30 color-white mb-0 mt-n-1">1,049</p>
+            <p class="bold f-30 color-white mb-0 mt-n-1 count">1,049</p>
             <p class="color-white fw-4 f-18"> Camps organized across India
             </p>
           </div>
@@ -443,7 +444,7 @@
               <li class=" mr-4 compact"><a class="color-dark f-14" href="./about-us.html">About us</a></li>
               <li class=" mr-4 compact"><a class="color-dark f-14" href="./our-team.html">Our team</a></li>
               <li class=" mr-4 compact"><a class="color-dark f-14" href="./sponsor.html">Donate now</a></li>
-              <li class=" mr-4 compact"><a class="color-dark f-14" href="./join-us.html">Join us</a></li>
+              <li class=" mr-4 compact"><a class="color-dark f-14" href="./join-us-selection.html">Join us</a></li>
               <li class=" mr-4 compact"><a class="color-dark f-14" href="./contact-us.html">Contact us</a></li>
             </ul>
           </div>
@@ -488,7 +489,6 @@
 <script src="./js/main.js"></script>
 <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script>
-<script src="./js/countUp.min.js" type="module"></script>
 
 <script>
   $(".testimonial-slider").slick({
@@ -627,7 +627,7 @@ var myPieChart = new Chart(ctx, {
     data: data,
     options: options
 });
-const countUp = new CountUp('units', 100000);
+
 </script>
 </body>
 </html>

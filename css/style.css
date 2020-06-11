@@ -355,6 +355,7 @@ hr.color-white{
 .h-120{
     height: 120vh !important;
 }
+
 .h-90{
     height: 90vh !important;
 }
@@ -366,6 +367,9 @@ hr.color-white{
 }
 .h-60{
     height: 60vh !important;
+}
+.h-60-min{
+    min-height: 60vh !important;
 }
 .h-max{
     height: max-content !important;
@@ -1058,6 +1062,9 @@ button.selected{
     }
     .img-left,.img-right{
         background-size: contain;
+    }
+    .h-120{
+        height: 100vh !important;
     }
     .h-40-sm{
         height: 40vh !important;

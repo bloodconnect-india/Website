@@ -55,7 +55,7 @@
     <!-- Just an image -->
     <!-- Navbar -->
     <nav class="fixed z-6 d-flex justify-content-end hide-lg" id="mobile-nav">
-      <button class="menu hide show-md color-white h-max bg-none" id="mobile-nav-toggler" onclick="toggleMobileNav()"><i class="fa fa-bars f-20"></i></button>
+      <button class="menu  show-md color-white h-max bg-none" id="mobile-nav-toggler" onclick="toggleMobileNav()"><i class="fa fa-bars f-20"></i></button>
         <ul class="mobile-nav hide bg-white" id="mobile-nav-list">
           <li class="bg-main ">
             <a class="nav-link color-white fw-4 " href="./raise-a-request.html">RAISE A REQUEST</a>
@@ -67,7 +67,7 @@
             <a class="nav-link color-white fw-4 " href="./sponsor.html">DONATE NOW</a>
           </li>
           <li class="bg-main ">
-            <a class="nav-link color-white fw-4 " href="./join-us.html">JOIN US</a>
+            <a class="nav-link color-white fw-4 " href="./join-us-selection.html">JOIN US</a>
           </li>
           <li class="bg-white">
             <a href="./index.html" class="color-dark f-14 fw-4 nav-link">HOME</a>
@@ -106,7 +106,7 @@
               <a href="./resources.html" class="color-white b-white f-14 ">RESOURCES</a>
             </li>
             <li class="px-3">
-              <a href="./join-us.html" class="color-white b-white f-14 ">JOIN US</a>
+              <a href="./join-us-selection.html" class="color-white b-white f-14 ">JOIN US</a>
             </li>
       </ul>
         </div>
@@ -135,7 +135,7 @@
             <a href="./resources.html" class="color-dark b-dark f-14 ">RESOURCES</a>
           </li>
           <li class="px-3">
-            <a href="./join-us.html" class="color-dark b-dark f-14 ">JOIN US</a>
+            <a href="./join-us-selection.html" class="color-dark b-dark f-14 ">JOIN US</a>
           </li>
     </ul>
       </div>
@@ -148,15 +148,15 @@
   
       <div class="container-fluid h-90  pl-0 pr-0 content pt-100-sm relative d-flex flex-row align-items-center">
         <div class="d-flex flex-column container h-80 justify-content-center z-5 px-0-sm">
-          <h1 class="display-4 color-white  wd-max px-2 mb-1 ">Volunteer with us</h1>
-          <p class="color-white w-50-lg px-2">
+          <h1 class="display-4 color-white  text-center-sm px-2 mb-1 ">Volunteer with us</h1>
+          <p class="color-white w-50-lg px-2 text-center-sm">
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo qui labore dolore voluptatem nobis! Accusantium odio consequuntur fugiat 
           </p>
           <div class="d-flex mt-2 px-2">
-            <button class="shadow btn-main bg-main mr-2" id="go-to-form">Join us</button>
+            <button class="shadow btn-main bg-main  mx-auto-sm" id="go-to-form">Join us</button>
           </div>
         </div>
-        <div class="main-slider h-100" id="homepageSlider" style="background-image:url('./img/join-us/volunteer.png');background-size: cover;" >
+        <div class="main-slider h-100" id="homepageSlider" style="background-image:url('./img/join-us/volunteer.png');background-size: cover;background-position: bottom;" >
           
          </div>
          
@@ -315,27 +315,25 @@
       <div class="container pt-5 pb-5">
         <div class="row">
           <div class="col-lg-6 d-flex justify-content-center mb-4">
-            <div class="fade"  data-slick='{"slidesToShow": 1, "slidesToScroll": 1}' >
-        
-              <!-- Gradinet here -->
            
-              <!-- <div class="h-inherit">
-                <img src='./img/homepage/duetone/1.png');" />
+            <div id="fade-slide" class="wd-inherit" data-slick='{"slidesToShow": 1, "slidesToScroll": 1}'>
+              <div>
+                <img class="wd-inherit" src="./img/join-us/slide/1.png" alt="">
               </div>
-              <div class="h-inherit">
-                <img src='./img/homepage/duetone/1.png');" />
+              <div>
+                <img class="wd-inherit" src="./img/join-us/slide/2.png" alt="">
               </div>
-              <div class="h-inherit">
-                <img src='./img/homepage/duetone/1.png');" />
+              <div>
+                <img class="wd-inherit" src="./img/join-us/slide/3.JPG" alt="">
               </div>
-              <div class="h-inherit">
-                <img src='./img/homepage/duetone/1.png');" />
-              </div> -->
-                
-             
-      
-      
+              <div>
+                <img class="wd-inherit" src="./img/join-us/slide/4.JPG" alt="">
+              </div>
+              <div>
+                <img class="wd-inherit" src="./img/join-us/slide/5.jpg" alt="">
+              </div>
             </div>
+				
           </div>
           <div id="formContainer" class="col-lg-6 bg-white rounded shadow pl-5 pr-5 pt-4 pb-4 px-3-sm join-form">
             <h4 class="f-30 color-dark text-center">Fill this form</h4>
@@ -557,7 +555,7 @@
           <li class=" mr-4 compact"><a class="color-dark f-14" href="./about-us.html">About us</a></li>
           <li class=" mr-4 compact"><a class="color-dark f-14" href="./our-team.html">Our team</a></li>
           <li class=" mr-4 compact"><a class="color-dark f-14" href="./sponsor.html">Donate now</a></li>
-          <li class=" mr-4 compact"><a class="color-dark f-14" href="./join-us.html">Join us</a></li>
+          <li class=" mr-4 compact"><a class="color-dark f-14" href="./join-us-selection.html">Join us</a></li>
           <li class=" mr-4 compact"><a class="color-dark f-14" href="./contact-us.html">Contact us</a></li>
         </ul>
       </div>
@@ -611,12 +609,15 @@
     closePopup = () => {
       $("#selectionPopup").addClass("hide")
     }
-    $('.fade').slick({
-      dots: true,
+    $('#fade-slide').slick({
+      dots: false,
+      autoplay:true,
       infinite: true,
       speed: 500,
       fade: true,
-      cssEase: 'linear'
+      cssEase: 'linear',
+      arrows:false,
+      pauseOnHover:false
     });
   </script>
 </body>

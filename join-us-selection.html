@@ -16,11 +16,24 @@
         .img-hover:hover{
             transform: scale(1.25);
         } */
+        .section{
+          overflow: hidden;
+        }
+        .section:hover>img{
+          transform: scale(1.15);
+        }
+        .section>img{
+          position: absolute;
+          width: inherit;
+          height: inherit;
+          z-index: -1;
+          transition: transform 0.5s ease-in;
+        }
     </style>
 </head>
 <body>
     <nav class="fixed z-6 d-flex justify-content-end hide-lg" id="mobile-nav">
-        <button class="menu hide show-md color-white h-max bg-none" id="mobile-nav-toggler" onclick="toggleMobileNav()"><i class="fa fa-bars f-20"></i></button>
+        <button class="menu  show-md color-white h-max bg-none" id="mobile-nav-toggler" onclick="toggleMobileNav()"><i class="fa fa-bars f-20"></i></button>
           <ul class="mobile-nav hide bg-white" id="mobile-nav-list">
             <li class="bg-main ">
               <a class="nav-link color-white fw-4 " href="./raise-a-request.html">RAISE A REQUEST</a>
@@ -32,7 +45,7 @@
               <a class="nav-link color-white fw-4 " href="./sponsor.html">DONATE NOW</a>
             </li>
             <li class="bg-main ">
-              <a class="nav-link color-white fw-4 " href="./join-us.html">JOIN US</a>
+              <a class="nav-link color-white fw-4 " href="./join-us-selection.html">JOIN US</a>
             </li>
             <li class="bg-white">
               <a href="./index.html" class="color-dark f-14 fw-4 nav-link">HOME</a>
@@ -71,7 +84,7 @@
                 <a href="./resources.html" class="color-white b-white f-14 ">RESOURCES</a>
               </li>
               <li class="px-3">
-                <a href="./join-us.html" class="color-white b-white f-14 ">JOIN US</a>
+                <a href="./join-us-selection.html" class="color-white b-white f-14 ">JOIN US</a>
               </li>
         </ul>
           </div>
@@ -100,7 +113,7 @@
               <a href="./resources.html" class="color-dark b-dark f-14 ">RESOURCES</a>
             </li>
             <li class="px-3">
-              <a href="./join-us.html" class="color-dark b-dark f-14 ">JOIN US</a>
+              <a href="./join-us-selection.html" class="color-dark b-dark f-14 ">JOIN US</a>
             </li>
       </ul>
         </div>
@@ -110,9 +123,10 @@
     </nav>
 
 
-    <div class="container-fluid h-120  pl-0 pr-0 content pt-100-sm relative d-flex flex-row align-items-center" style="margin-top: -150px;z-index: 2;">
-        <div class="d-flex flex-column container col-lg-6 h-120 justify-content-center align-items-center z-5 px-0-sm pt-5" style="background-image:url('./img/join-us/donate.png');background-size: cover;">
-          <h1 class="display-4 color-white  wd-max px-2 mb-0 mt-5 pt-5">Register as a Donor</h1>
+    <div class="container-fluid h-120-min  pl-0 pr-0 content pt-100-sm relative d-flex flex-row flex-column-sm align-items-center" style="margin-top: -150px;z-index: 2;">
+        <div class=" section d-flex flex-column container col-lg-6 h-120 justify-content-center align-items-center z-5 px-0-sm pt-5" >
+          <img src="./img/join-us/donate.png" alt="" srcset="">
+          <h1 class="display-4 color-white  text-center px-2 mb-0 mt-5 pt-5">Register as a Donor</h1>
           <p class="color-white text-center px-2">
               Help people in case of emergency blood requirements
           </p>
@@ -120,8 +134,9 @@
             <button class="shadow btn-main bg-main mr-2" id="go-to-form"><a class="color-white" href="">Register as a Donor</a></button>
           </div>
         </div>
-        <div class="img-hover d-flex flex-column container col-lg-6 h-120 justify-content-center align-items-center z-5 px-0-sm pt-5" style="background-image:url('./img/join-us/pooja.png');background-size: cover;">
-            <h1 class="display-4 color-white  wd-max px-2 mb-0 mt-5 pt-5 ">Volunteer with us</h1>
+        <div class="section d-flex flex-column container col-lg-6 h-120 justify-content-center align-items-center z-5 px-0-sm pt-5-lg" >
+            <img src="./img/join-us/pooja.png" alt="" srcset="">
+            <h1 class="display-4 color-white text-center px-2 mb-0 mt-5 pt-5 ">Volunteer with us</h1>
             <p class="color-white text-center px-2">
                 Make an impact, join us and save lives!
             </p>
@@ -167,7 +182,7 @@
                 <li class=" mr-4 compact"><a class="color-dark f-14" href="./about-us.html">About us</a></li>
                 <li class=" mr-4 compact"><a class="color-dark f-14" href="./our-team.html">Our team</a></li>
                 <li class=" mr-4 compact"><a class="color-dark f-14" href="./sponsor.html">Donate now</a></li>
-                <li class=" mr-4 compact"><a class="color-dark f-14" href="./join-us.html">Join us</a></li>
+                <li class=" mr-4 compact"><a class="color-dark f-14" href="./join-us-selection.html">Join us</a></li>
                 <li class=" mr-4 compact"><a class="color-dark f-14" href="./contact-us.html">Contact us</a></li>
               </ul>
             </div>
