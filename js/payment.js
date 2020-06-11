@@ -19,6 +19,7 @@ showPayment = () => {
 hidePayment = () => {
     $("#payment-details").hide()
 }
+hidePayment()
 initiatePayment = (e) => {
     e.preventDefault()
     name = $("#nameInput").val()

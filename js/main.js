@@ -12,7 +12,7 @@ var navbarSm  = document.getElementById("navbar-sm")
 var sticky = navbar.offsetTop;
 // Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
 function myFunction() {
-  if (window.pageYOffset >= window.innerHeight) {
+  if (window.pageYOffset >= window.innerHeight-100) {
     navbarSticky.classList.remove('hide')
     navbarSticky.classList.add('show-flex')
     navbar.classList.add('hide')

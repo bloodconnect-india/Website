@@ -38,7 +38,7 @@
     border-bottom: 1px solid #ccc;
 }
   
-.sticky + .content {
+.show-flex + .content {
     padding-top: 60px;
 }
 .z-5{
@@ -104,11 +104,11 @@ ul.navbar-nav{
     border-bottom: 1px solid #fff !important;
 }
 
-.navbar-nav>li>a.b-white:hover{
+.navbar-nav>li>a.b-white:hover,.navbar-nav>li>a.b-white.active{
     border-bottom: 2px solid #fff;
     font-weight: bold !important;
 }
-.navbar-nav>li>a.color-dark:hover{
+.navbar-nav>li>a.color-dark:hover,.navbar-nav>li>a.b-dark.active{
     border-bottom: 2px solid #212121;
     font-weight: bold !important;
 }
@@ -367,6 +367,9 @@ hr.color-white{
 .h-80-min{
     min-height: 80vh !important;
 }
+.h-50{
+    height: 50vh !important;
+}
 .h-60{
     height: 60vh !important;
 }
@@ -527,9 +530,70 @@ button.over-img{
     line-height: 120% !important;
     text-align: center;
 }
-.camp>.partner>.partners-logo{
-    max-height: 100px !important;
+.camp>.partner{
+    height: 100px !important;
+    background-color: #ffff !important;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+    margin-top: 0.5rem !important;
+    margin-top: 0.5rem !important;
+    overflow: hidden;
 }
+.color-hover{
+    filter: grayscale(100);
+}
+.color-hover:hover{
+    filter: grayscale(0);
+}
+.camp>.partner:hover>p{
+    display: block;
+    position: absolute;
+    top:calc(50%);
+}
+.camp>.partner:hover>.partners-logo{
+    filter: brightness(0.7);
+}
+
+.camp>.partner>p{
+    display: none;
+    color: #fff !important;
+    z-index: 10;
+}
+.camp>.partner>.filter{
+    display: none;
+    position: absolute;
+    top: 0px;
+    height: 100%;
+    width: 100%;
+    opacity: 0.7;
+}
+.camp>.partner:hover>.filter{
+    display: block;
+}
+.play{
+    position: absolute;
+    top:  calc(50% - 50px);
+    left: calc(50% - 20px);
+    border-radius: 35px;
+    border: 4px solid #fff;
+    height: 70px;
+    width: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+  }
+.what-we-do {
+    max-width: 240px !important;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    padding-top: 50px !important;
+  }
+  .donation-helps.what-we-do{
+      height: 248px !important;
+  }
 .about-list,.our-team{
     list-style-type: none;
     text-align: right;

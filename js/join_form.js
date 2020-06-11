@@ -1,6 +1,6 @@
 $("#go-to-form").click(function() {
     $('html, body').animate({
-        scrollTop: $("#form").offset().top-200
+        scrollTop: $("#form").offset().top-250
     }, 1000);
 });
 
@@ -19,6 +19,7 @@ changingEducation = (e) => {
         $("#graduationYearInput").hide()
 
 }
+
 showSection1 = () => {
     section2.hide()
     section3.hide()
@@ -44,6 +45,7 @@ showSection3 = () => {
     page1.removeClass('active')
 }
 
+showSection1()
   var Name = "";
   var Phone_Number = "";
   var Email = "";

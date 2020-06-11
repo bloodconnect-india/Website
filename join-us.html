@@ -1,530 +1,580 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/bootstrap.min.css">
-    <link rel="stylesheet" href="./css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+  <link rel="stylesheet" href="./css/style.css">
 
-    <link rel="stylesheet" type="text/css" href="./css/slick/slick.css"/>
-    <link rel="stylesheet" type="text/css" href="./css/slick/slick-theme.css"/>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="./css/slick/slick.css" />
+  <link rel="stylesheet" type="text/css" href="./css/slick/slick-theme.css" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
-    <title>Join Us | BloodConnect</title>
-    <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon">
-    <style>
-      .what-we-do{
-        max-width: 240px !important;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-      }
-      .alumni>img{
-        width: inherit;
-        height: 300px
-      }
-      .alumni{
-        margin-left: 10px;
-        margin-right: 10px;
-        max-width: 255px;
-        margin-top: auto;
-        margin-bottom: 50px !important;
-      }
-      .alumni>div>h4{
-        margin-top: 20px;
-        font-weight: 400;
-        color: #980000 !important;
-      }
-      .alumni>div>p{
-        color: #212121 !important;
-        margin-bottom: 0px !important;
-      }
-      .alumni>ul.social-media{
-        list-style-type: none !important;
-        padding-left: 0px;
-      }
-      .alumni>ul.social-media>li{
-        color: #616161;
-      }
-    </style>
+  <title>Join Us | BloodConnect</title>
+  <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon">
+  <style>
+
+
+    .alumni>img {
+      width: inherit;
+      height: 300px
+    }
+
+    .alumni {
+      margin-left: 10px;
+      margin-right: 10px;
+      max-width: 255px;
+      margin-top: auto;
+      margin-bottom: 50px !important;
+    }
+
+    .alumni>div>h4 {
+      margin-top: 20px;
+      font-weight: 400;
+      color: #980000 !important;
+    }
+
+    .alumni>div>p {
+      color: #212121 !important;
+      margin-bottom: 0px !important;
+    }
+
+    .alumni>ul.social-media {
+      list-style-type: none !important;
+      padding-left: 0px;
+    }
+
+    .alumni>ul.social-media>li {
+      color: #616161;
+    }
+  </style>
 </head>
+
 <body>
 
-    <!-- Navbar start here -->
-    <!-- Just an image -->
-    <!-- Navbar -->
-    <nav class="fixed z-6 d-flex justify-content-end hide-lg" id="mobile-nav">
-      <button class="menu  show-md color-white h-max bg-none" id="mobile-nav-toggler" onclick="toggleMobileNav()"><i class="fa fa-bars f-20"></i></button>
-        <ul class="mobile-nav hide bg-white" id="mobile-nav-list">
-          <li class="bg-main ">
-            <a class="nav-link color-white fw-4 " href="./raise-a-request.html">RAISE A REQUEST</a>
-          </li>
-          <li class="bg-main ">
-            <a class="nav-link color-white fw-4 " href="./organize-a-camp.html">ORGANIZE A CAMP</a>
-          </li>
-          <li class="bg-main ">
-            <a class="nav-link color-white fw-4 " href="./sponsor.html">DONATE NOW</a>
-          </li>
-          <li class="bg-main ">
-            <a class="nav-link color-white fw-4 " href="./join-us-selection.html">JOIN US</a>
-          </li>
-          <li class="bg-white">
-            <a href="./index.html" class="color-dark f-14 fw-4 nav-link">HOME</a>
-          </li>
-          <li class="bg-white">
-            <a href="./about-us.html" class="color-dark f-14 fw-4 nav-link">ABOUT US</a>
-          </li>
-          <li class="bg-white">
-            <a href="./our-team.html" class="color-dark f-14 fw-4 nav-link">OUR TEAM</a>
-          </li>
-          <li class="bg-white">
-            <a href="./resources.html" class="color-dark f-14 fw-4 nav-link">RESOURCES</a>
-          </li>
-          <li class="bg-white">
-            <a href="./contact-us.html" class="color-dark f-14 fw-4 nav-link">CONTACT US</a>
-          </li>
-        </ul>
-    </nav>
-    <nav class="navbar justify-content-center-sm justify-content-between pb-0 sticky-sm z-5  bg-none " id="navbar">
-        <div class="d-flex flex-row align-items-center justify-content-end">
-          <a class="navbar-brand" href="./index.html">
-            <img src="./img/homepage/Logo.png"   height="35" alt="BloodConnect Logo">
-        </a>
-        <ul class="navbar-nav flex-row  align-items-end hide-md"  style="border-bottom: none !important;">
-  
-            <li class="px-3">
-              <a href="./about-us.html" class="color-white b-white f-14 ">ABOUT US</a>
-            </li>
-            <li class="px-3">
-              <a href="./raise-a-request.html" class="color-white b-white f-14 ">RAISE A REQUEST</a>
-            </li>
-            <li class="px-3">
-              <a href="./organize-a-camp.html" class="color-white b-white f-14 ">ORGANIZE A CAMP</a>
-            </li>
-            <li class="px-3">
-              <a href="./resources.html" class="color-white b-white f-14 ">RESOURCES</a>
-            </li>
-            <li class="px-3">
-              <a href="./join-us-selection.html" class="color-white b-white f-14 ">JOIN US</a>
-            </li>
-      </ul>
-        </div>
-        <div class="d-flex flex-row align-items-center hide-md">
-          <a href="./contact-us.html" class="f-14 color-white mr-3 uppercase">Contact Us</a>
-          <a href="./sponsor.html" class="f-14 sponsor-link-button color-dark fw-6 px-3 py-2 uppercase">Support us</a>
-        </div>
-    </nav>
-    <nav class="navbar flex-column-sm align-items-start justify-content-between pb-0  sticky-navbar z-5 bg-white pb-2 hide" id="navbar-sticky">
-      <div class="d-flex flex-row align-items-center justify-content-end">
-        <a class="navbar-brand" href="./index.html">
-          <img src="./img/logo.png"   height="35" alt="BloodConnect Logo">
-      </a>
-      <ul class="navbar-nav flex-row hide-md align-items-end"  style="border-bottom: none !important;">
-   
-          <li class="px-3">
-            <a href="./about-us.html" class="color-dark b-dark f-14 ">ABOUT US</a>
-          </li>
-          <li class="px-3">
-            <a href="./raise-a-request.html" class="color-dark b-dark f-14 ">RAISE A REQUEST</a>
-          </li>
-          <li class="px-3">
-            <a href="./organize-a-camp.html" class="color-dark b-dark f-14 ">ORGANIZE A CAMP</a>
-          </li>
-          <li class="px-3">
-            <a href="./resources.html" class="color-dark b-dark f-14 ">RESOURCES</a>
-          </li>
-          <li class="px-3">
-            <a href="./join-us-selection.html" class="color-dark b-dark f-14 ">JOIN US</a>
-          </li>
+  <!-- Navbar start here -->
+  <!-- Just an image -->
+  <!-- Navbar -->
+  <nav class="fixed z-6 d-flex justify-content-end hide-lg" id="mobile-nav">
+    <button class="menu  show-md color-white h-max bg-none" id="mobile-nav-toggler" onclick="toggleMobileNav()"><i
+        class="fa fa-bars f-20"></i></button>
+    <ul class="mobile-nav hide bg-white" id="mobile-nav-list">
+      <li class="bg-main ">
+        <a class="nav-link color-white fw-4 " href="./raise-a-request.html">RAISE A REQUEST</a>
+      </li>
+      <li class="bg-main ">
+        <a class="nav-link color-white fw-4 " href="./organize-a-camp.html">ORGANIZE A CAMP</a>
+      </li>
+      <li class="bg-main ">
+        <a class="nav-link color-white fw-4 " href="./sponsor.html">DONATE NOW</a>
+      </li>
+      <li class="bg-main ">
+        <a class="nav-link color-white fw-4 " href="./join-us-selection.html">JOIN US</a>
+      </li>
+      <li class="bg-white">
+        <a href="./index.html" class="color-dark f-14 fw-4 nav-link">HOME</a>
+      </li>
+      <li class="bg-white">
+        <a href="./about-us.html" class="color-dark f-14 fw-4 nav-link">ABOUT US</a>
+      </li>
+      <li class="bg-white">
+        <a href="./our-team.html" class="color-dark f-14 fw-4 nav-link">OUR TEAM</a>
+      </li>
+      <li class="bg-white">
+        <a href="./resources.html" class="color-dark f-14 fw-4 nav-link">RESOURCES</a>
+      </li>
+      <li class="bg-white">
+        <a href="./contact-us.html" class="color-dark f-14 fw-4 nav-link">CONTACT US</a>
+      </li>
     </ul>
-      </div>
-      <div class="d-flex flex-row align-items-center">
-        <a href="./sponsor.html" class="f-14 sponsor-link-button color-dark fw-6 px-3 py-2 uppercase bg-main color-white">Support us</a>
-      </div>
   </nav>
-  
-  
-  
-      <div class="container-fluid h-90  pl-0 pr-0 content pt-100-sm relative d-flex flex-row align-items-center">
-        <div class="d-flex flex-column container h-80 justify-content-center z-5 px-0-sm">
-          <h1 class="display-4 color-white  text-center-sm px-2 mb-1 ">Volunteer with us</h1>
-          <p class="color-white w-50-lg px-2 text-center-sm">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo qui labore dolore voluptatem nobis! Accusantium odio consequuntur fugiat 
-          </p>
-          <div class="d-flex mt-2 px-2">
-            <button class="shadow btn-main bg-main  mx-auto-sm mb-4" id="go-to-form">Join us</button>
-          </div>
-        </div>
-        <div class="main-slider h-100" id="homepageSlider" style="background-image:url('./img/join-us/volunteer.png');background-size: cover;background-position: bottom;" >
-          
-         </div>
-         
+  <nav class="navbar justify-content-center-sm justify-content-between pb-0 sticky-sm z-5  bg-none " id="navbar">
+    <div class="d-flex flex-row align-items-center justify-content-end">
+      <a class="navbar-brand" href="./index.html">
+        <img src="./img/homepage/Logo.png" height="35" alt="BloodConnect Logo">
+      </a>
+      <ul class="navbar-nav flex-row  align-items-end hide-md" style="border-bottom: none !important;">
+
+        <li class="px-3">
+          <a href="./about-us.html" class="color-white b-white f-14 ">ABOUT US</a>
+        </li>
+        <li class="px-3">
+          <a href="./raise-a-request.html" class="color-white b-white f-14 ">RAISE A REQUEST</a>
+        </li>
+        <li class="px-3">
+          <a href="./organize-a-camp.html" class="color-white b-white f-14 ">ORGANIZE A CAMP</a>
+        </li>
+        <li class="px-3">
+          <a href="./resources.html" class="color-white b-white f-14 ">RESOURCES</a>
+        </li>
+        <li class="px-3">
+          <a href="./join-us-selection.html" class="color-white b-white f-14 active ">JOIN US</a>
+        </li>
+      </ul>
+    </div>
+    <div class="d-flex flex-row align-items-center hide-md">
+      <a href="./contact-us.html" class="f-14 color-white mr-3 uppercase">Contact Us</a>
+      <a href="./sponsor.html" class="f-14 sponsor-link-button color-dark fw-6 px-3 py-2 uppercase">Support us</a>
+    </div>
+  </nav>
+  <nav
+    class="navbar flex-column-sm align-items-start justify-content-between pb-0  sticky-navbar z-5 bg-white pb-2 hide"
+    id="navbar-sticky">
+    <div class="d-flex flex-row align-items-center justify-content-end">
+      <a class="navbar-brand" href="./index.html">
+        <img src="./img/logo.png" height="35" alt="BloodConnect Logo">
+      </a>
+      <ul class="navbar-nav flex-row hide-md align-items-end" style="border-bottom: none !important;">
+
+        <li class="px-3">
+          <a href="./about-us.html" class="color-dark b-dark f-14 ">ABOUT US</a>
+        </li>
+        <li class="px-3">
+          <a href="./raise-a-request.html" class="color-dark b-dark f-14 ">RAISE A REQUEST</a>
+        </li>
+        <li class="px-3">
+          <a href="./organize-a-camp.html" class="color-dark b-dark f-14 ">ORGANIZE A CAMP</a>
+        </li>
+        <li class="px-3">
+          <a href="./resources.html" class="color-dark b-dark f-14 ">RESOURCES</a>
+        </li>
+        <li class="px-3">
+          <a href="./join-us-selection.html" class="color-dark b-dark f-14 active">JOIN US</a>
+        </li>
+      </ul>
+    </div>
+    <div class="d-flex flex-row align-items-center">
+      <a href="./sponsor.html"
+        class="f-14 sponsor-link-button color-dark fw-6 px-3 py-2 uppercase bg-main color-white">Support us</a>
+    </div>
+  </nav>
+
+
+
+  <div class="container-fluid h-90  pl-0 pr-0 content pt-100-sm relative d-flex flex-row align-items-center">
+    <div class="d-flex flex-column container h-80 justify-content-center z-5 px-0-sm">
+      <h1 class="display-4 color-white  text-center-sm px-2 mb-1 ">Volunteer with us</h1>
+      <p class="color-white w-50-lg px-2 text-center-sm">
+        Learn new things everyday and build everlasting relations while contributing to society. Join us to ensure people have a future, join us to save lives! 
+
+      </p>
+      <div class="d-flex mt-2 px-2">
+        <button class="shadow btn-main bg-main  mx-auto-sm mb-4" id="go-to-form">Join us</button>
       </div>
-  
+    </div>
+    <div class="main-slider h-100" id="homepageSlider"
+      style="background-image:url('./img/join-us/volunteer.png');background-size: cover;background-position: bottom;">
 
-  
-    <!-- Main Content Starts here -->
+    </div>
+
+  </div>
 
 
 
-      <!-- What can you do -->
-      <div class="container-fluid bg-main-light py-5">
-        <div class="container  py-5">
-          <h4 class=" color-dark f-30 text-center mb-0">What We Do</h4>
-          <p class="coolor-grey text-center color-dark-light">Through each our activities we make an impact. Our mission is simple - to save lives</p>
-          <div class="row mt-3 pt-3">
-            <div class="what-we-do  bg-white shadow-hover hand text-center mx-auto col-sm-12 mb-3 col-lg-3 p-4">
-                <h5 class="color-dark   mt-2 f-20">Handling Helplines</h5>
-                <p class="color-dark-light mt-1 f-14"> Talk to people who need blood; Arrange donors to help them</p>
-            </div>
-            <div class="what-we-do bg-white shadow-hover hand text-center mx-auto col-sm-12 mb-3 col-lg-3 p-4">
-              <h5 class="color-dark   mt-1 f-20">Organizing Camps</h5>
-              <p class="color-dark-light mt-1 f-14"> Contact colleges, corporates, RWAs; Help organize a successful blood donation camp</p>
-            </div>
-            <div class="what-we-do bg-white shadow-hover hand text-center mx-auto col-sm-12 mb-3  col-lg-3 p-4">
-                <h5 class="color-dark   mt-1 f-20">Be Creative</h5>
-                <p class="color-dark-light mt-1 f-14">Design posters; Make videos; Write articles; Help us in our online publicity</p>
-            </div>
-            <div class="what-we-do bg-white shadow-hover hand text-center mx-auto col-sm-12 mb-3  col-lg-3 p-4">
-                <h5 class="color-dark   mt-1 f-20">Get Support</h5>
-                <p class="color-dark-light mt-1 f-14">Contact newspapers, radio channels, Publicize the cause, Get us funds </p>
-            </div>
-            <div class="what-we-do  bg-white shadow-hover hand text-center mx-auto col-sm-12 mb-3 col-lg-3 p-4">
-              <h5 class="color-dark   mt-2 f-20">Handling Helplines</h5>
-              <p class="color-dark-light mt-1 f-14"> Talk to people who need blood; Arrange donors to help them</p>
-          </div>
-          <div class="what-we-do bg-white shadow-hover hand text-center mx-auto col-sm-12 mb-3 col-lg-3 p-4">
-            <h5 class="color-dark   mt-1 f-20">Organizing Camps</h5>
-            <p class="color-dark-light mt-1 f-14"> Contact colleges, corporates, RWAs; Help organize a successful blood donation camp</p>
-          </div>
-          <div class="what-we-do bg-white shadow-hover hand text-center mx-auto col-sm-12 mb-3  col-lg-3 p-4">
-              <h5 class="color-dark   mt-1 f-20">Be Creative</h5>
-              <p class="color-dark-light mt-1 f-14">Design posters; Make videos; Write articles; Help us in our online publicity</p>
-          </div>
-          <div class="what-we-do bg-white shadow-hover hand text-center mx-auto col-sm-12 mb-3  col-lg-3 p-4">
-              <h5 class="color-dark   mt-1 f-20">Get Support</h5>
-              <p class="color-dark-light mt-1 f-14">Contact newspapers, radio channels, Publicize the cause, Get us funds </p>
-          </div>
-          <div class="what-we-do bg-white shadow-hover hand text-center mx-auto col-sm-12 mb-3  col-lg-3 p-4">
-            <h5 class="color-dark   mt-1 f-20">Be Creative</h5>
-            <p class="color-dark-light mt-1 f-14">Design posters; Make videos; Write articles; Help us in our online publicity</p>
+  <!-- Main Content Starts here -->
+
+
+
+  <!-- What can you do -->
+  <div class="container-fluid bg-main-light py-5">
+    <div class="container  py-5">
+      <h4 class=" color-dark f-30 text-center mb-0">What We Do</h4>
+      <p class="coolor-grey text-center color-dark-light">Through each of our activities we make an impact. Our mission is simple - to save lives. Being a volunteer with BloodConnect, means you will do a wide variety of activities.</p>
+      <div class="row mt-3 pt-3">
+        <div class="what-we-do  bg-white shadow-hover hand text-center mx-auto col-sm-12 mb-3 col-lg-3 p-4">
+          <h5 class="color-dark   mt-2 f-20">Identify heroes </h5>
+          <p class="color-dark-light mt-1 f-14"> People who can donate blood in emergency
+            </p>
+        </div>
+        <div class="what-we-do  bg-white shadow-hover hand text-center mx-auto col-sm-12 mb-3 col-lg-3 p-4">
+          <h5 class="color-dark   mt-2 f-20">Donor Matchmaking </h5>
+          <p class="color-dark-light mt-1 f-14">Donor of the same blood group as the requirement
+            </p>
+        </div>
+        <div class="what-we-do bg-white shadow-hover hand text-center mx-auto col-sm-12 mb-3 col-lg-3 p-4">
+          <h5 class="color-dark   mt-1 f-20">Help organizations</h5>
+          <p class="color-dark-light mt-1 f-14"> Keep employees happy by organizing impactful camps</p>
         </div>
         <div class="what-we-do bg-white shadow-hover hand text-center mx-auto col-sm-12 mb-3  col-lg-3 p-4">
-            <h5 class="color-dark   mt-1 f-20">Get Support</h5>
-            <p class="color-dark-light mt-1 f-14">Contact newspapers, radio channels, Publicize the cause, Get us funds </p>
-        </div>
-          </div>
-      </div>
-      </div>
-
-
-
-      <!-- Our Alumni -->
-      <div class="container px-0-sm mt-5 mb-5 pt-5 pb-5">
-        <h4 class="text-center f-30">Our Alumni</h4>
-        <div class="row no-gutters justify-content-center">
-          <div class="alumni col-lg-3 col-md-4 col-sm-6 ">
-
-            <img class="" src="./img/team/demo/6.jpg" alt="">
-            <div class="description pl-2">
-              <h4 class="color-white bold text-left mb-0">John Doe</h4>
-              <p class="ft-18 colowhitein">Marketing Director</p>
-            </div>
-            <ul class="social-media">
-              <li><i class="fa fa-linkedin"></i></li>
-            </ul>
-          </div>
-          <div class="alumni col-lg-3 col-md-4 col-sm-6 ">
-            <img class="" src="./img/team/demo/6.jpg" alt="">
-            <div class="description pl-2">
-              <h4 class="color-white bold text-left mb-0">John Doe</h4>
-              <p class="ft-18 color-white">Marketing Director</p>
-            </div>
-            <ul class="social-media">
-              <li><i class="fa fa-linkedin"></i></li>
-            </ul>
-          </div>
-          <div class="alumni col-lg-3 col-md-4 col-sm-6 ">
-            <img class="" src="./img/team/demo/7.jpg" alt="">
-            <div class="description pl-2">
-              <h4 class="color-white bold text-left mb-0">John Doe</h4>
-            <p class="ft-18 color-white">Marketing Director</p>
-            </div>
-            <ul class="social-media">
-              <li><i class="fa fa-linkedin"></i></li>
-            </ul>
-          </div>
-          <div class="alumni col-lg-3 col-md-4 col-sm-6 ">
-            <img class="" src="./img/team/demo/8.jpg" alt="">
-            <div class="description pl-2">
-              <h4 class="color-white bold text-left mb-0">John Doe</h4>
-            <p class="ft-18 color-white">Marketing Director</p>
-            </div>
-            <ul class="social-media">
-              <li><i class="fa fa-linkedin"></i></li>
-            </ul>
-          </div>
-          <div class="alumni col-lg-3 col-md-4 col-sm-6 ">
-            <img class="" src="./img/team/demo/9.jpg" alt="">
-            <div class="description pl-2">
-              <h4 class="color-white bold text-left mb-0">John Doe</h4>
-            <p class="ft-18 color-white">Marketing Director</p>
-            </div>
-            <ul class="social-media">
-              <li><i class="fa fa-linkedin"></i></li>
-            </ul>
-          </div>
-          <div class="alumni col-lg-3 col-md-4 col-sm-6 ">
-            <img class="" src="./img/team/demo/5.jpg" alt="">
-            <div class="description pl-2">
-              <h4 class="color-white bold text-left mb-0">John Doe</h4>
-            <p class="ft-18 color-white">Marketing Director</p>
-            </div>
-            <ul class="social-media">
-              <li><i class="fa fa-linkedin"></i></li>
-            </ul>
-          </div>
-          <div class="alumni col-lg-3 col-md-4 col-sm-6 ">
-            <img class="" src="./img/team/demo/6.jpg" alt="">
-            <div class="description pl-2">
-              <h4 class="color-white bold text-left mb-0">John Doe</h4>
-            <p class="ft-18 color-white">Marketing Director</p>
-            </div>
-            <ul class="social-media">
-              <li><i class="fa fa-linkedin"></i></li>
-            </ul>
-          </div>
-          <div class="alumni col-lg-3 col-md-4 col-sm-6 ">
-            <img class="" src="./img/team/demo/6.jpg" alt="">
-            <div class="description pl-2">
-              <h4 class="color-white bold text-left mb-0">John Doe</h4>
-            <p class="ft-18 color-white">Marketing Director</p>
-            </div>
-            <ul class="social-media">
-              <li><i class="fa fa-linkedin"></i></li>
-            </ul>
-          </div>
+          <h5 class="color-dark   mt-1 f-20">Spread happiness </h5>
+          <p class="color-dark-light mt-1 f-14">Ensure each donor has a smile after donating blood</p>
         </div>
 
+        <div class="what-we-do  bg-white shadow-hover hand text-center mx-auto col-sm-12 mb-3 col-lg-3 p-4">
+          <h5 class="color-dark   mt-2 f-20">Talk a lot </h5>
+          <p class="color-dark-light mt-1 f-14">Spread awareness till we remove your fear from donating blood</p>
+        </div>
+        <div class="what-we-do bg-white shadow-hover hand text-center mx-auto col-sm-12 mb-3 col-lg-3 p-4">
+          <h5 class="color-dark   mt-1 f-20">Share our stories</h5>
+          <p class="color-dark-light mt-1 f-14"> Showcase our amazing donor stories to the world
+          </p>
+        </div>
+        <div class="what-we-do bg-white shadow-hover hand text-center mx-auto col-sm-12 mb-3  col-lg-3 p-4">
+          <h5 class="color-dark   mt-1 f-20">Be creative</h5>
+          <p class="color-dark-light mt-1 f-14">Brainstorm over pizzas and find new ways to motivate donors</p>
+        </div>
+        <div class="what-we-do bg-white shadow-hover hand text-center mx-auto col-sm-12 mb-3  col-lg-3 p-4">
+          <h5 class="color-dark   mt-1 f-20">Sustain the Org</h5>
+          <p class="color-dark-light mt-1 f-14">Raise money to ensure we do what we do
 
+          </p>
+        </div>
+        <div class="what-we-do bg-white shadow-hover hand text-center mx-auto col-sm-12 mb-3  col-lg-3 p-4">
+          <h5 class="color-dark   mt-1 f-20">Work with the Govt.</h5>
+          <p class="color-dark-light mt-1 f-14"> Manage blood bank, govt relations to ensure we cater to them
+          </p>
+        </div>
+        <div class="what-we-do bg-white shadow-hover hand text-center mx-auto col-sm-12 mb-3  col-lg-3 p-4">
+          <h5 class="color-dark   mt-1 f-20">Build processes</h5>
+          <p class="color-dark-light mt-1 f-14">To ensure we scale from X to 10X faster
+
+          </p>
+        </div>
       </div>
-    <!-- Form-->
+    </div>
+  </div>
 
-    <div class="container-fluid mt-5 mb-5 pt-3 pb-3 bg-main-dark">
-      <div class="container pt-5 pb-5">
-        <div class="row">
-          <div class="col-lg-6 d-flex justify-content-center mb-4">
-           
-            <div id="fade-slide" class="wd-inherit" data-slick='{"slidesToShow": 1, "slidesToScroll": 1}'>
-              <div>
-                <img class="wd-inherit" src="./img/join-us/slide/1.png" alt="">
-              </div>
-              <div>
-                <img class="wd-inherit" src="./img/join-us/slide/2.png" alt="">
-              </div>
-              <div>
-                <img class="wd-inherit" src="./img/join-us/slide/3.JPG" alt="">
-              </div>
-              <div>
-                <img class="wd-inherit" src="./img/join-us/slide/4.JPG" alt="">
-              </div>
-              <div>
-                <img class="wd-inherit" src="./img/join-us/slide/5.jpg" alt="">
-              </div>
+
+
+  <!-- Our Alumni -->
+  <div class="container px-0-sm mt-5 mb-5 pt-5 pb-5">
+    <h4 class="text-center f-30">Our Alumni</h4>
+    <p class="color-dark-light text-center w-75-lg mx-auto mb-5">Our extraordinary volunteers are now also extraordinary professionals in their respective fields. They start as volunteers, become leaders in BloodConnect and learn the ropes of making a dent in the world professionally as well.</p>
+    <div class="row no-gutters justify-content-center">
+      <div class="alumni col-lg-3 col-md-4 col-sm-6 ">
+
+        <img class="" src="./img/team/demo/6.jpg" alt="">
+        <div class="description pl-2">
+          <h4 class="color-white bold text-left mb-0">John Doe</h4>
+          <p class="ft-18 colowhitein">Marketing Director</p>
+        </div>
+        <ul class="social-media">
+          <li><i class="fa fa-linkedin"></i></li>
+        </ul>
+      </div>
+      <div class="alumni col-lg-3 col-md-4 col-sm-6 ">
+        <img class="" src="./img/team/demo/6.jpg" alt="">
+        <div class="description pl-2">
+          <h4 class="color-white bold text-left mb-0">John Doe</h4>
+          <p class="ft-18 color-white">Marketing Director</p>
+        </div>
+        <ul class="social-media">
+          <li><i class="fa fa-linkedin"></i></li>
+        </ul>
+      </div>
+      <div class="alumni col-lg-3 col-md-4 col-sm-6 ">
+        <img class="" src="./img/team/demo/7.jpg" alt="">
+        <div class="description pl-2">
+          <h4 class="color-white bold text-left mb-0">John Doe</h4>
+          <p class="ft-18 color-white">Marketing Director</p>
+        </div>
+        <ul class="social-media">
+          <li><i class="fa fa-linkedin"></i></li>
+        </ul>
+      </div>
+      <div class="alumni col-lg-3 col-md-4 col-sm-6 ">
+        <img class="" src="./img/team/demo/8.jpg" alt="">
+        <div class="description pl-2">
+          <h4 class="color-white bold text-left mb-0">John Doe</h4>
+          <p class="ft-18 color-white">Marketing Director</p>
+        </div>
+        <ul class="social-media">
+          <li><i class="fa fa-linkedin"></i></li>
+        </ul>
+      </div>
+      <div class="alumni col-lg-3 col-md-4 col-sm-6 ">
+        <img class="" src="./img/team/demo/9.jpg" alt="">
+        <div class="description pl-2">
+          <h4 class="color-white bold text-left mb-0">John Doe</h4>
+          <p class="ft-18 color-white">Marketing Director</p>
+        </div>
+        <ul class="social-media">
+          <li><i class="fa fa-linkedin"></i></li>
+        </ul>
+      </div>
+      <div class="alumni col-lg-3 col-md-4 col-sm-6 ">
+        <img class="" src="./img/team/demo/5.jpg" alt="">
+        <div class="description pl-2">
+          <h4 class="color-white bold text-left mb-0">John Doe</h4>
+          <p class="ft-18 color-white">Marketing Director</p>
+        </div>
+        <ul class="social-media">
+          <li><i class="fa fa-linkedin"></i></li>
+        </ul>
+      </div>
+      <div class="alumni col-lg-3 col-md-4 col-sm-6 ">
+        <img class="" src="./img/team/demo/6.jpg" alt="">
+        <div class="description pl-2">
+          <h4 class="color-white bold text-left mb-0">John Doe</h4>
+          <p class="ft-18 color-white">Marketing Director</p>
+        </div>
+        <ul class="social-media">
+          <li><i class="fa fa-linkedin"></i></li>
+        </ul>
+      </div>
+      <div class="alumni col-lg-3 col-md-4 col-sm-6 ">
+        <img class="" src="./img/team/demo/6.jpg" alt="">
+        <div class="description pl-2">
+          <h4 class="color-white bold text-left mb-0">John Doe</h4>
+          <p class="ft-18 color-white">Marketing Director</p>
+        </div>
+        <ul class="social-media">
+          <li><i class="fa fa-linkedin"></i></li>
+        </ul>
+      </div>
+    </div>
+
+
+  </div>
+  <!-- Form-->
+
+  <div class="container-fluid mt-5 mb-5 pt-3 pb-3 bg-main-dark">
+    <div class="container pt-5 pb-5">
+      <div class="row">
+        <div class="col-lg-6 d-flex justify-content-center mb-4">
+
+          <div id="fade-slide" class="wd-inherit" data-slick='{"slidesToShow": 1, "slidesToScroll": 1}'>
+
+            <div>
+              <img class="wd-inherit" style="height: 700px;" src="./img/join-us/slide/5.jpg" alt="">
             </div>
-				
+
+            <div>
+              <img class="wd-inherit" style="height: 700px;" src="./img/join-us/slide/6.jpg" alt="">
+            </div>
+
+            <div>
+              <img class="wd-inherit" style="height: 700px;" src="./img/join-us/slide/7.jpg" alt="">
+            </div>
+
+            <div>
+              <img class="wd-inherit" style="height: 700px;" src="./img/join-us/slide/8.jpg" alt="">
+            </div>
+
+            <div>
+              <img class="wd-inherit" style="height: 700px;" src="./img/join-us/slide/1.jpg" alt="">
+            </div>
+
+            <div>
+              <img class="wd-inherit" style="height: 700px;" src="./img/join-us/slide/2.jpg" alt="">
+            </div>
+
+            <div>
+              <img class="wd-inherit" style="height: 700px;" src="./img/join-us/slide/3.jpg" alt="">
+            </div>
+
+            <div>
+              <img class="wd-inherit" style="height: 700px;" src="./img/join-us/slide/4.jpg" alt="">
+            </div>
+            <div>
+              <img class="wd-inherit" style="height: 700px;" src="./img/join-us/slide/9.jpg" alt="">
+            </div>
           </div>
-          <div id="formContainer" class="col-lg-6 bg-white rounded shadow pl-5 pr-5 pt-4 pb-4 px-3-sm join-form">
-            <h4 class="f-30 color-dark text-center">Fill this form</h4>
-            <div class="form-page">
-              <div id="page1" class="active hand" onclick="showSection1()">1</div>
-              <div id="page2" class="hand" onclick="showSection2()">2</div>
-              <div id="page3" class="hand" onclick="showSection3()">3</div>
-              <hr>
-            </div>  
+        </div>
+        <div id="formContainer" class="col-lg-6 bg-white rounded shadow pl-5 pr-5 pt-4 pb-4 px-3-sm join-form">
+          <h4 class="f-30 color-dark text-center">Fill this form</h4>
+          <div class="form-page">
+            <div id="page1" class="active hand" onclick="showSection1()">1</div>
+            <div id="page2" class="hand" onclick="showSection2()">2</div>
+            <div id="page3" class="hand" onclick="showSection3()">3</div>
+            <hr>
+          </div>
           <form action="" id="form">
             <!-- Name Input -->
-                <div id="section1">
-                  <div class="form-group mb-4">
-                    <label class="m-0   color-dark" for="your_name">Your Name</label>
-                    <input type="text" class="form-control" id="your_name" placeholder="Your Name" required>
-                  </div>
-                  <!-- Email ID -->
-                  <div class="form-group mb-4">
-                    <label class="m-0   color-dark" for="email">Email address</label>
-                    <input  type="email" class="form-control" placeholder="example@domain.com" id="email" required>
-                  </div>
-                  <!-- Phone Number -->
-                  <div class="form-group mb-4">
-                    <label class="m-0   color-dark" for="phone_number">Phone Number</label>
-                    <input  type="number" class="form-control" placeholder="9999xxxxxx" maxlength="10" id="phone_number" required>
-                  </div>
-                  <!-- Education Details -->
-                  <div class="d-flex justify-content-between flex-column-sm">
-                    <div class="form-group mb-4">
-                      <label class="m-0 mb-2  color-dark" for="education_detail">Education Detail</label>
-                      <select name="education_detail" id="education_detail" onchange="changingEducation(event)">
-                        <option value="Student" selected>Student</option>
-                        <option value="Working Professional">Working Professional</option>
-                        <option value="Other">Other</option>
-                      </select>
-                      
-                    </div>
-                    <div class="form-group mb-4" id="graduationYearInput">
-                      <label class="m-0   color-dark" for="graduation_year">Year of Graduation</label>
-                      <input  type="number" class="form-control" placeholder="20xx" id="graduation_year">
-                    </div>
-                  </div>
-        
-                  <div class="form-group mb-4">
-                    <label class="m-0   color-dark" for="organization">Organization</label>
-                    <input type="text" class="form-control" id="organization" placeholder="Workplace/Institute you are part of" required>
-                  </div>
-                  <button type="button" onclick="showSection2()" class="pl-5 pr-5 right-lg mb-4 mx-auto btn-main bg-main" value="Next" >Next</button>
+            <div id="section1">
+              <div class="form-group mb-4">
+                <label class="m-0   color-dark" for="your_name">Your Name</label>
+                <input type="text" class="form-control" id="your_name" placeholder="Your Name" required>
+              </div>
+              <!-- Email ID -->
+              <div class="form-group mb-4">
+                <label class="m-0   color-dark" for="email">Email address</label>
+                <input type="email" class="form-control" placeholder="example@domain.com" id="email" required>
+              </div>
+              <!-- Phone Number -->
+              <div class="form-group mb-4">
+                <label class="m-0   color-dark" for="phone_number">Phone Number</label>
+                <input type="number" class="form-control" placeholder="9999xxxxxx" maxlength="10" id="phone_number"
+                  required>
+              </div>
+              <!-- Education Details -->
+              <div class="d-flex justify-content-between flex-column-sm">
+                <div class="form-group mb-4">
+                  <label class="m-0 mb-2  color-dark" for="education_detail">Education Detail</label>
+                  <select name="education_detail" id="education_detail" onchange="changingEducation(event)">
+                    <option value="Student" selected>Student</option>
+                    <option value="Working Professional">Working Professional</option>
+                    <option value="Other">Other</option>
+                  </select>
 
                 </div>
-
-                <div id="section2" class="hide">
-                  <!-- City -->
-                  <div class="form-group mb-4">
-                    <label class="m-0   color-dark" for="city">City in which you wish to volunteer</label>
-                    <select name="city" id="city" required>
-                      <option value="Agra">Agra</option>
-                      <option value="Delhi">Delhi</option>
-                      <option value="Jaipur">Jaipur</option>
-                      <option value="Kanpur">Kanpur</option>
-                      <option value="Kolkata">Kolkata</option>
-                      <option value="Lucknow">Lucknow</option>
-                      <option value="Pune">Pune</option>
-                      <option value="Varanasi">Varanasi</option>
-                      <option value="Bhubaneswar">Bhubaneswar</option>
-                      <option value="Odisha(OR)">Odisha(OR)</option>
-                      <option value="Other">Other</option>
-                    </select>
-                  </div>
-                  <div class="form-group mb-4">
-                    <label class="m-0   color-dark" for="interest">Select your interest in BloodConnect</label>
-                    <p class="mb-0">
-                      <input type="checkbox" id="interest1"  onchange="selectInterest(event)" value="City Operation (Camps, emergency helpline, awareness )"/>
-                      <label for="interest1">City Operation (Camps, emergency helpline, awareness )</label>
-                    </p>
-                    <p class="mb-0">
-                      <input type="checkbox" id="interest2" onchange="selectInterest(event)" value="Tech (Website, CRM)" />
-                      <label for="interest2">Tech (Website, CRM)</label>
-                    </p>
-                    <p class="mb-0">
-                      <input type="checkbox" id="interest3" onchange="selectInterest(event)" value="PR (Digital marketing, fundraising)" />
-                      <label for="interest3">PR (Digital marketing, fundraising)</label>
-                    </p>
-                    <p class="mb-0">
-                      <input type="checkbox" id="interest4" onchange="selectInterest(event)" value="Creative (Doodles, posters, video editing, content writing)" />
-                      <label for="interest4">Creative (Doodles, posters, video editing, content writing)</label>
-                    </p>
-                    <p class="mb-0">
-                      <input type="checkbox" id="interest5" onchange="selectInterest(event)" value="Consulting (Organizing camps across India through virtual support)" />
-                      <label for="interest5">Consulting (Organizing camps across India virtually)</label>
-                    </p>
-                    <p class="mb-0">
-                      <input type="checkbox" id="interest6" onchange="selectInterest(event)" value="Nothing Specific, I am up for any activity" />
-                      <label for="interest6">Nothing Specific, I am up for any activity</label>
-                    </p>
-                  </div>
-                  
-        
-                  <div class="form-group mb-4">
-                    <label class="m-0   color-dark" for="prior_exp">Do you have prior experience in volunteering with any NGO or any other extra-curricular activities? </label>
-                    <textarea  class="form-control" col="20" row="5" id="prior_exp"  required></textarea>
-                  </div>
-                  <div class="navigation-buttons inline text-center-sm ">
-                    <button type="button" onclick="showSection1()" class="pl-5 pr-5 left-lg mb-4 mx-auto btn-main bg-white color-dark">Back</button>
-                    <button type="button" onclick="showSection3()"  class="pl-5 pr-5 right-lg mb-4 mx-auto btn-main bg-main" >
-                        Next
-                    </button>
-                  </div>
+                <div class="form-group mb-4" id="graduationYearInput">
+                  <label class="m-0   color-dark" for="graduation_year">Year of Graduation</label>
+                  <input type="number" class="form-control" placeholder="20xx" id="graduation_year">
                 </div>
+              </div>
 
-                <div id="section3" class="hide">
-                  <!-- Why BC -->
-                  <div class="form-group mb-4">
-                    <label class="m-0   color-dark" for="whyBC">Why do you want to be a part of BloodConnect? </label>
-                    <p class="mb-0">
-                      <input type="checkbox" id="why_BC1" onchange="selectWhyBC(event)" value="Social service" />
-                      <label for="why_BC1">Social service</label>
-                    </p>
-                    <p class="mb-0">
-                      <input type="checkbox" id="why_BC2" onchange="selectWhyBC(event)" value="Because my friends are also working here" />
-                      <label for="why_BC2">Because my friends are also working here</label>
-                    </p>
-                    <p class="mb-0">
-                      <input type="checkbox" id="why_BC3" onchange="selectWhyBC(event)" value="For my resume" />
-                      <label for="why_BC3">For my resume</label>
-                    </p>
-                    <p class="mb-0">
-                      <input type="checkbox" id="why_BC4" onchange="selectWhyBC(event)" value="I love to travel"/>
-                      <label for="why_BC4">I love to travel</label>
-                    </p>
-                    <p class="mb-0">
-                      <input type="checkbox" id="why_BC5" onchange="selectWhyBC(event)" value="I like to speak with people"/>
-                      <label for="why_BC5">I like to speak with people</label>
-                    </p>
-                    <p class="mb-0">
-                      <input type="checkbox" id="why_BC6" onchange="selectWhyBC(event)" value="Nothing Specific" />
-                      <label for="why_BC6">Nothing Specific</label>
-                    </p>
-                  </div>
-                  
-                  <!-- How BC -->
-                  <div class="form-group mb-4">
-                    <label class="m-0   color-dark" for="how_BC">How did you get to know about BloodConnect?</label>
-                    <select name="how_BC" id="how_BC" required>
-                      <option value="Through BloodConnect Member">Through BloodConnect Member</option>
-                      <option value="In an event/camp of BloodConnect">In an event/camp of BloodConnect</option>
-                      <option value="Website">Website</option>
-                      <option value="Facebook">Facebook</option>
-                      <option value="Instagram">Instagram</option>
-                      <option value="Twitter">Twitter</option>
-                      <option value="Linkedin">Linkedin</option>
-                      <option value="Other">Other</option>
-                    </select>
-                  </div>
-        
-                  <div class="form-group mb-4">
-                    <label class="m-0 not-required  color-dark" for="personal_contact">Do you have a personal contact in BloodConnect team? If Yes, please mention his/her name. </label>
-                    <input type="text"  class="form-control" placeholder="Personal Contact Name" id="personal_contact"  >
-                   
-                  </div>
-                  <div class="form-group mb-4">
-                    <label for="additional_comment" class="not-required m-0 color-dark">Any additional information you would like to share about your application?</label>
-                    <textarea   class="form-control" col="20" row="5" id="additional_comment"  ></textarea>
-                  </div>
-                  <div class="navigation-buttons inline text-center-sm ">
-                    <button type="button" onclick="showSection2()" class="pl-5 pr-5 left-lg mb-4 mx-auto btn-main bg-white color-dark">Back</button>
-                    <button type="button" onclick="submitRequest(event)"  class="pl-5 pr-5 right-lg mb-4 mx-auto btn-main bg-main" >
-                        Submit
-                    </button>
-                  </div>
-                </div>
-           </form>
-          </div>
+              <div class="form-group mb-4">
+                <label class="m-0   color-dark" for="organization">Organization</label>
+                <input type="text" class="form-control" id="organization"
+                  placeholder="Workplace/Institute you are part of" required>
+              </div>
+              <button type="button" onclick="showSection2()" class="pl-5 pr-5 right-lg mb-4 mx-auto btn-main bg-main"
+                value="Next">Next</button>
+
+            </div>
+
+            <div id="section2" class="">
+              <!-- City -->
+              <div class="form-group mb-4">
+                <label class="m-0   color-dark" for="city">City in which you wish to volunteer</label>
+                <select name="city" id="city" required>
+                  <option value="Agra">Agra</option>
+                  <option value="Delhi">Delhi</option>
+                  <option value="Jaipur">Jaipur</option>
+                  <option value="Kanpur">Kanpur</option>
+                  <option value="Kolkata">Kolkata</option>
+                  <option value="Lucknow">Lucknow</option>
+                  <option value="Pune">Pune</option>
+                  <option value="Varanasi">Varanasi</option>
+                  <option value="Bhubaneswar">Bhubaneswar</option>
+                  <option value="Odisha(OR)">Odisha(OR)</option>
+                  <option value="Other">Other</option>
+                </select>
+              </div>
+              <div class="form-group mb-4">
+                <label class="m-0   color-dark" for="interest">Select your interest in BloodConnect</label>
+                <p class="mb-0">
+                  <input type="checkbox" id="interest1" onchange="selectInterest(event)"
+                    value="City Operation (Camps, emergency helpline, awareness )" />
+                  <label for="interest1">City Operation (Camps, emergency helpline, awareness )</label>
+                </p>
+                <p class="mb-0">
+                  <input type="checkbox" id="interest2" onchange="selectInterest(event)" value="Tech (Website, CRM)" />
+                  <label for="interest2">Tech (Website, CRM)</label>
+                </p>
+                <p class="mb-0">
+                  <input type="checkbox" id="interest3" onchange="selectInterest(event)"
+                    value="PR (Digital marketing, fundraising)" />
+                  <label for="interest3">PR (Digital marketing, fundraising)</label>
+                </p>
+                <p class="mb-0">
+                  <input type="checkbox" id="interest4" onchange="selectInterest(event)"
+                    value="Creative (Doodles, posters, video editing, content writing)" />
+                  <label for="interest4">Creative (Doodles, posters, video editing, content writing)</label>
+                </p>
+                <p class="mb-0">
+                  <input type="checkbox" id="interest5" onchange="selectInterest(event)"
+                    value="Consulting (Organizing camps across India through virtual support)" />
+                  <label for="interest5">Consulting (Organizing camps across India virtually)</label>
+                </p>
+                <p class="mb-0">
+                  <input type="checkbox" id="interest6" onchange="selectInterest(event)"
+                    value="Nothing Specific, I am up for any activity" />
+                  <label for="interest6">Nothing Specific, I am up for any activity</label>
+                </p>
+              </div>
+
+
+              <div class="form-group mb-4">
+                <label class="m-0   color-dark" for="prior_exp">Do you have prior experience in volunteering with any
+                  NGO or any other extra-curricular activities? </label>
+                <textarea class="form-control" col="20" row="5" id="prior_exp" required></textarea>
+              </div>
+              <div class="navigation-buttons inline text-center-sm ">
+                <button type="button" onclick="showSection1()"
+                  class="pl-5 pr-5 left-lg mb-4 mx-auto btn-main bg-white color-dark">Back</button>
+                <button type="button" onclick="showSection3()" class="pl-5 pr-5 right-lg mb-4 mx-auto btn-main bg-main">
+                  Next
+                </button>
+              </div>
+            </div>
+
+            <div id="section3" class="">
+              <!-- Why BC -->
+              <div class="form-group mb-4">
+                <label class="m-0   color-dark" for="whyBC">Why do you want to be a part of BloodConnect? </label>
+                <p class="mb-0">
+                  <input type="checkbox" id="why_BC1" onchange="selectWhyBC(event)" value="Social service" />
+                  <label for="why_BC1">Social service</label>
+                </p>
+                <p class="mb-0">
+                  <input type="checkbox" id="why_BC2" onchange="selectWhyBC(event)"
+                    value="Because my friends are also working here" />
+                  <label for="why_BC2">Because my friends are also working here</label>
+                </p>
+                <p class="mb-0">
+                  <input type="checkbox" id="why_BC3" onchange="selectWhyBC(event)" value="For my resume" />
+                  <label for="why_BC3">For my resume</label>
+                </p>
+                <p class="mb-0">
+                  <input type="checkbox" id="why_BC4" onchange="selectWhyBC(event)" value="I love to travel" />
+                  <label for="why_BC4">I love to travel</label>
+                </p>
+                <p class="mb-0">
+                  <input type="checkbox" id="why_BC5" onchange="selectWhyBC(event)"
+                    value="I like to speak with people" />
+                  <label for="why_BC5">I like to speak with people</label>
+                </p>
+                <p class="mb-0">
+                  <input type="checkbox" id="why_BC6" onchange="selectWhyBC(event)" value="Nothing Specific" />
+                  <label for="why_BC6">Nothing Specific</label>
+                </p>
+              </div>
+
+              <!-- How BC -->
+              <div class="form-group mb-4">
+                <label class="m-0   color-dark" for="how_BC">How did you get to know about BloodConnect?</label>
+                <select name="how_BC" id="how_BC" required>
+                  <option value="Through BloodConnect Member">Through BloodConnect Member</option>
+                  <option value="In an event/camp of BloodConnect">In an event/camp of BloodConnect</option>
+                  <option value="Website">Website</option>
+                  <option value="Facebook">Facebook</option>
+                  <option value="Instagram">Instagram</option>
+                  <option value="Twitter">Twitter</option>
+                  <option value="Linkedin">Linkedin</option>
+                  <option value="Other">Other</option>
+                </select>
+              </div>
+
+              <div class="form-group mb-4">
+                <label class="m-0 not-required  color-dark" for="personal_contact">Do you have a personal contact in
+                  BloodConnect team? If Yes, please mention his/her name. </label>
+                <input type="text" class="form-control" placeholder="Personal Contact Name" id="personal_contact">
+
+              </div>
+              <div class="form-group mb-4">
+                <label for="additional_comment" class="not-required m-0 color-dark">Any additional information you would
+                  like to share about your application?</label>
+                <textarea class="form-control" col="20" row="5" id="additional_comment"></textarea>
+              </div>
+              <div class="navigation-buttons inline text-center-sm ">
+                <button type="button" onclick="showSection2()"
+                  class="pl-5 pr-5 left-lg mb-4 mx-auto btn-main bg-white color-dark">Back</button>
+                <button type="button" onclick="submitRequest(event)"
+                  class="pl-5 pr-5 right-lg mb-4 mx-auto btn-main bg-main">
+                  Submit
+                </button>
+              </div>
+            </div>
+          </form>
         </div>
       </div>
     </div>
+  </div>
 
 
-    <div class="container text-center mb-5">
-      <h4 class="f-40 text-cetner color-dark">Have Any Queries ?</h4>
-      <button class="btn-main bg-main color-white shadow"><a class="color-white fw-6" href="./contact-us.html">Contact Us</a></button>
-    </div>
 
-    <!-- Footer -->
 
-<!-- Footer -->
-<div class="container-fluid  pt-5">
-  <div class="container d-flex flex-column ">
+  <!-- Footer -->
 
-    <hr class="color-dark w-100">
-    <div class="d-flex justify-content-between align-items-center flex-column-sm">
+  <!-- Footer -->
+  <div class="container-fluid ">
+    <div class="container d-flex flex-column ">
+
+      <hr class="color-dark w-100">
+      <div class="d-flex justify-content-between align-items-center flex-column-sm">
         <a href="./index.html">
           <img src="./img/logo.png" alt="">
         </a>
@@ -545,56 +595,71 @@
             <a href="#" class="footer-link  color-main"><i class="fa fa-linkedin"></i></a>
           </li>
         </ul>
-    </div>
-    <hr class="color-dark w-100">
-    <div class="row">
-      <div class="col-lg-4 col-sm-12">
-        <p class="color-dark bold mb-2">NAVIGATION</p>
-        <ul class="footer-list pl-0">
-          <li class=" mr-4 compact"><a class="color-dark f-14" href="./index.html">Home</a></li>
-          <li class=" mr-4 compact"><a class="color-dark f-14" href="./about-us.html">About us</a></li>
-          <li class=" mr-4 compact"><a class="color-dark f-14" href="./our-team.html">Our team</a></li>
-          <li class=" mr-4 compact"><a class="color-dark f-14" href="./sponsor.html">Donate now</a></li>
-          <li class=" mr-4 compact"><a class="color-dark f-14" href="./join-us-selection.html">Join us</a></li>
-          <li class=" mr-4 compact"><a class="color-dark f-14" href="./contact-us.html">Contact us</a></li>
-        </ul>
       </div>
-      <div class="col-lg-4 col-sm-12">
-        <p class="color-dark bold mb-2">RAISE A REQUEST</p>
-        <ul class="footer-list pl-0">
-          <li class=" mr-4 compact"><a class="color-dark f-14" href="./raise-a-request.html#city_region=Delhi">Raise a request in Delhi-NCR</a></li>
-          <li class=" mr-4 compact"><a class="color-dark f-14" href="/raise-a-request.html#city_region=Kanpur">Raise a request in Kanpue</a></li>
-          <li class=" mr-4 compact"><a class="color-dark f-14" href="./raise-a-request.html#city_region=Agra">Raise a request in Agra</a></li>
-          <li class=" mr-4 compact"><a class="color-dark f-14" href="./raise-a-request.html#city_region=Lucknow">Raise a request in Lucknow</a></li>
-          <li class=" mr-4 compact"><a class="color-dark f-14" href="./raise-a-request.html#city_region=Bhubaneswar">Raise a request in Bhubaneswar</a></li>
-          <li class=" mr-4 compact"><a class="color-dark f-14" href="./raise-a-request.html#city_region=Jaipur">Raise a request in Jaipur</a></li>
-        </ul>
+      <hr class="color-dark w-100">
+      <div class="row">
+        <div class="col-lg-4 col-sm-12">
+          <p class="color-dark bold mb-2">NAVIGATION</p>
+          <ul class="footer-list pl-0">
+            <li class=" mr-4 compact"><a class="color-dark f-14" href="./index.html">Home</a></li>
+            <li class=" mr-4 compact"><a class="color-dark f-14" href="./about-us.html">About us</a></li>
+            <li class=" mr-4 compact"><a class="color-dark f-14" href="./our-team.html">Our team</a></li>
+            <li class=" mr-4 compact"><a class="color-dark f-14" href="./sponsor.html">Donate now</a></li>
+            <li class=" mr-4 compact"><a class="color-dark f-14" href="./join-us-selection.html">Join us</a></li>
+            <li class=" mr-4 compact"><a class="color-dark f-14" href="./contact-us.html">Contact us</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-4 col-sm-12">
+          <p class="color-dark bold mb-2">RAISE A REQUEST</p>
+          <ul class="footer-list pl-0">
+            <li class=" mr-4 compact"><a class="color-dark f-14" href="./raise-a-request.html#city_region=Delhi">Raise a
+                request in Delhi-NCR</a></li>
+            <li class=" mr-4 compact"><a class="color-dark f-14" href="/raise-a-request.html#city_region=Kanpur">Raise a
+                request in Kanpue</a></li>
+            <li class=" mr-4 compact"><a class="color-dark f-14" href="./raise-a-request.html#city_region=Agra">Raise a
+                request in Agra</a></li>
+            <li class=" mr-4 compact"><a class="color-dark f-14" href="./raise-a-request.html#city_region=Lucknow">Raise
+                a request in Lucknow</a></li>
+            <li class=" mr-4 compact"><a class="color-dark f-14"
+                href="./raise-a-request.html#city_region=Bhubaneswar">Raise a request in Bhubaneswar</a></li>
+            <li class=" mr-4 compact"><a class="color-dark f-14" href="./raise-a-request.html#city_region=Jaipur">Raise
+                a request in Jaipur</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-4 col-sm-12">
+          <p class="color-dark bold  mb-2">ORGANIZE A CAMP</p>
+          <ul class="footer-list pl-0">
+            <li class=" mr-4 compact"><a class="color-dark f-14" href="./organize-a-camp.html#city_region=Delhi"
+                onclick="organizeCamp('Delhi')">Organize a camp in Delhi-NCR</a></li>
+            <li class=" mr-4 compact"><a class="color-dark f-14" href="./organize-a-camp.html#city_region=Kanpur"
+                onclick="organizeCamp('Kanpur')">Organize a camp in Kanpur</a></li>
+            <li class=" mr-4 compact"><a class="color-dark f-14" href="./organize-a-camp.html#city_region=Agra"
+                onclick="organizeCamp('Agra')">Organize a camp in Agra</a></li>
+            <li class=" mr-4 compact"><a class="color-dark f-14" href="./organize-a-camp.html#city_region=Lucknow"
+                onclick="organizeCamp('Lucknow')">Organize a camp in Lucknow</a></li>
+            <li class=" mr-4 compact"><a class="color-dark f-14" href="./organize-a-camp.html#city_region=Bhubaneswar"
+                onclick="organizeCamp('Bhubaneswar')">Organize a camp in Bhubaneswar</a></li>
+            <li class=" mr-4 compact"><a class="color-dark f-14" href="./organize-a-camp.html#city_region=Jaipur"
+                onclick="organizeCamp('Jaipur')">Organize a camp in Jaipur</a></li>
+          </ul>
+        </div>
       </div>
-      <div class="col-lg-4 col-sm-12">
-        <p class="color-dark bold  mb-2">ORGANIZE A CAMP</p>
-        <ul class="footer-list pl-0">
-          <li class=" mr-4 compact"><a class="color-dark f-14" href="./organize-a-camp.html#city_region=Delhi" onclick="organizeCamp('Delhi')">Organize a camp in Delhi-NCR</a></li>
-          <li class=" mr-4 compact"><a class="color-dark f-14" href="./organize-a-camp.html#city_region=Kanpur" onclick="organizeCamp('Kanpur')">Organize a camp in Kanpur</a></li>
-          <li class=" mr-4 compact"><a class="color-dark f-14" href="./organize-a-camp.html#city_region=Agra" onclick="organizeCamp('Agra')">Organize a camp in Agra</a></li>
-          <li class=" mr-4 compact"><a class="color-dark f-14" href="./organize-a-camp.html#city_region=Lucknow" onclick="organizeCamp('Lucknow')">Organize a camp in Lucknow</a></li>
-          <li class=" mr-4 compact"><a class="color-dark f-14" href="./organize-a-camp.html#city_region=Bhubaneswar" onclick="organizeCamp('Bhubaneswar')">Organize a camp in Bhubaneswar</a></li>
-          <li class=" mr-4 compact"><a class="color-dark f-14" href="./organize-a-camp.html#city_region=Jaipur" onclick="organizeCamp('Jaipur')">Organize a camp in Jaipur</a></li>
-        </ul>
-      </div>
-    </div>
 
-    <div class="d-flex justify-content-between mt-3">
-      <p class="color-dark f-14">Copyright &copy; BloodConnect Foundation 2020</p>
+      <div class="d-flex justify-content-between mt-3">
+        <p class="color-dark f-14">Copyright &copy; BloodConnect Foundation 2020</p>
 
-      <ul class="footer-list">
-        <li class=" left mx-3"><a class="color-dark f-12" href="./privacy.html">Privacy</a></li>
-        <li class=" left ml-3"><a class="color-dark f-12" href="./toc.html">Terms and Condition</a></li>
-      </ul>
+        <ul class="footer-list">
+          <li class=" left mx-3"><a class="color-dark f-12" href="./privacy.html">Privacy</a></li>
+          <li class=" left ml-3"><a class="color-dark f-12" href="./toc.html">Terms and Condition</a></li>
+        </ul>
+      </div>
     </div>
   </div>
-</div>
-     <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"
+    integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
   <script src="./js/bootstrap.min.js"></script>
   <script src="./js/join_form.js"></script>
   <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
@@ -603,7 +668,7 @@
 
   <script>
     var formContainerHeight = document.getElementById("formContainer").offsetHeight;
-    console.log(formContainerHeight+"px !important");
+    console.log(formContainerHeight + "px !important");
 
 
     closePopup = () => {
@@ -611,14 +676,15 @@
     }
     $('#fade-slide').slick({
       dots: false,
-      autoplay:true,
+      autoplay: true,
       infinite: true,
       speed: 500,
       fade: true,
       cssEase: 'linear',
-      arrows:false,
-      pauseOnHover:false
+      arrows: false,
+      pauseOnHover: false
     });
   </script>
 </body>
+
 </html>

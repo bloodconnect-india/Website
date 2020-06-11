@@ -22,18 +22,33 @@
       .main-slider>.slick-next::before{
         content: url('./svg/arrow-right-white.svg') !important;
       }
-      .play{
-        position: absolute;
-        top:  calc(50% - 50px);
-        left: calc(50% - 20px);
-        border-radius: 35px;
-        border: 4px solid #fff;
-        height: 70px;
-        width: 70px;
+      .testimonial-slider>.slick-prev::before{
+        content: url('./img/homepage/back.svg') !important;
+      
+      }
+      .testimonial-slider>.slick-next::before{
+        content: url('./img/homepage/next.svg') !important;
+      
+      }
+      .testimonial-arrow{
+        height: 60px;
+        width: 60px;
+        background-color: #980000;
         display: flex;
+        position: absolute;
+        top: calc(50% - 30px);
+        color: #fff;
         align-items: center;
         justify-content: center;
-        font-size: 24px;
+        border-radius: 30px;
+      }
+      .testimonial-arrow>i{
+        font-size: 34px;
+        color: #fafafa;
+      }
+      
+      .break-all{
+        word-break: break-all !important;
       }
     </style>
 </head>
@@ -139,10 +154,10 @@
         <h1 class="display-4 color-white  wd-max px-2 mb-1 ">Donate Blood</h1>
         <h1 class="f-40 color-white  wd-max px-2 ">Save Lives</h1>
         <p class="color-white w-50-lg px-2">
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo qui labore dolore voluptatem nobis! Accusantium odio consequuntur fugiat 
+          BloodConnect is India’s largest youth run initiative in the field of blood donation. We target to make India blood sufficient in the coming 10 years.
         </p>
         <div class="d-flex mt-2 px-2">
-          <button class="shadow btn-main bg-main mr-2">Support Us</button>
+          <button class="shadow btn-main bg-main mr-2">Help us achieve it</button>
         </div>
       </div>
       <div class="main-slider" id="homepageSlider" data-slick='{"slidesToShow": 1, "slidesToScroll": 1}' >
@@ -170,66 +185,65 @@
     </div>
 
 
-    <!-- Our Story in brief -->
-    <div class="container d-flex align-items-center justify-content-end img-left pb-5 mt-5" >
-      <div class="row">
-        <div class="col-lg-5 col-md-4 col-sm-12">
-          <!-- <iframe class="wd-inherit hide" id="youtubeVideo" height="315" src="https://www.youtube.com/embed/zYVxjIPVCZQ?autoplay=1"  frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
-          <canvas id="myChart" class="wd-inherit" ></canvas>
-          
-        </div>
-      
-      <div class="d-flex flex-column justify-content-center tagling col-lg-7 col-sm-12">
-        <h1 class="color-dark  f-30 mb-0 ">India has a shortage of 
-        <span class="f-30 color-main-dark ">2 Million Blood Units</span>
-      </h1>
-        <p class="color-dark-light mt-1">There is a requirement of 15 million units of blood annually. However, we are only able to collect 13 million units. We just need <span class="color-main fw-6">2% of India’s youth to donate regularly</span>  to address the complete demand.</p>
-        <button class="shadow btn-main bg-main mx-auto-sm"><a href="./about-us.html" class="color-white">Know More</a></button>
-      </div>
-    </div>
-    </div>
-
-    <!-- Our work in brief -->
-   <div class="container">
-    <div class="row m-0 pt-5 justify-content-center bg-main-light py-5">
-      <h1 class="color-dark fw-4 f-30 mb-0 text-left col-lg-10  pt-5">We, the youth, can make India 
+ <div class="container-fluid bg-main-light pt-5">
+      <!-- Our Story in brief -->
+      <div class="container d-flex align-items-center justify-content-end img-left pb-5 mt-5 bg-main-light" >
+        <div class="row">
+          <div class="col-lg-5 col-md-4 col-sm-12">
+            <!-- <iframe class="wd-inherit hide" id="youtubeVideo" height="315" src="https://www.youtube.com/embed/zYVxjIPVCZQ?autoplay=1"  frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+            <canvas id="myChart" class="wd-inherit" ></canvas>
+            
+          </div>
         
-        <span class="color-main-dark f-30 col-lg-12  pl-0">Blood Sufficient </span>
-      </h1>
-      <p class="color-dark-light  col-lg-10 col-sm-12 mx-auto mb-5">BloodConnect is India’s largest youth-led organization that works with colleges, corporates, and RWAs to help the blood banks be blood sufficient. We do so by Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem quia sunt repudiandae illum vel. Facere nostrum earum totam molestiae : 
-      </p>
-      <div class="work-card bg-white shadow pt-4 pl-5 pb-5 col-lg-3 col-md-6 col-sm-10 mx-4  mb-5">
-        <img class="card-img" src="./img/homepage/calender-light.png" width="100px" height="100px" alt="calender" srcset="">
-        <h5 class="color-dark  mt-2 f-18">Blood Donation Camps</h5>
-        <p class="color-dark-light mx-auto mt-1 pr-1"> We collaborate with colleges, corporates, RWAs to organize innovative and engaging blood donation camps end to end.
+        <div class="d-flex flex-column justify-content-center tagling col-lg-7 col-sm-12">
+          <h1 class="color-dark  f-30 mb-0 ">India has a shortage of 
+          <span class="f-30 color-main-dark ">2 Million Blood Units</span>
+        </h1>
+          <p class="color-dark-light mt-1">There is a requirement of 15 million units of blood annually. However, we are only able to collect 13 million units. We just need <span class="color-main fw-6">2% of India’s youth to donate regularly</span>  to address the complete demand.</p>
+          <button class="shadow btn-main bg-main mx-auto-sm"><a href="./about-us.html" class="color-white">Know More</a></button>
+        </div>
+      </div>
+      </div>
+  
+      <!-- Our work in brief -->
+     <div class="container px-0">
+      <div class="row m-0 pt-5 justify-content-center bg-main-light py-5">
+        <h1 class="color-dark fw-4 f-30 mb-0 text-left col-lg-10  pt-5">We, the youth, can make India 
+          
+          <span class="color-main-dark f-30 col-lg-12  pl-0">Blood Sufficient </span>
+        </h1>
+        <p class="color-dark-light  col-lg-10 col-sm-12 mx-auto mb-5">BloodConnect is India’s largest youth-led organization that works with colleges, corporates, and RWAs to help the blood banks be blood sufficient. We provide a 360° solution to the problem: from motivating people to donate blood, to helping them donate via camps and finally helping anyone in dire need via a helpline. 
         </p>
-        <button class="btn-main bg-main">
-          <a class="card-link color-white" href="./organize-a-camp.html">Organize a Camp</a>
-        </button>
+        <div class="work-card text-center bg-white shadow pt-4 px-4 pb-5 col-lg-3 col-md-6 col-sm-10 mx-4  mb-5">
+          <h5 class="color-dark  mt-2 f-18 text-center ">Blood Donation Camps</h5>
+          <p class="color-dark-light mx-auto mt-1 pr-1 "> We collaborate with colleges, corporates, RWAs to organize innovative and engaging blood donation camps end to end.
+          </p>
+          <button class="btn-main bg-main mx-auto">
+            <a class="card-link color-white" href="./organize-a-camp.html">Organize a Camp</a>
+          </button>
+        </div>
+        <div class="work-card text-center bg-white shadow pt-4 px-4 pb-5 col-lg-3 col-md-6 col-sm-10 mx-4  mb-5">
+          <h5 class="color-dark  mt-2 f-18 text-center ">Handling Helpline</h5>
+          <p class="color-dark-light mx-auto mt-1 pr-1 ">Through helpline requests, we help address immediate blood requirements by patients. </p>
+          <br>
+          <button class="btn-main bg-main mx-auto">
+            <a class="card-link color-white" href="./raise-a-request.html">Raise a Request</a>
+          </button>
+        </div>
+        <div class="work-card text-center bg-white shadow pt-4 px-4 pb-5 col-lg-3 col-md-6 col-sm-10 mx-4  mb-5">
+          <h5 class="color-dark  mt-2 f-18 text-center ">Awareness Session</h5>
+          <p class="color-dark-light mx-auto mt-1 pr-1 ">Street plays, competitions, and sessions - targeted at inspiring people, especially the first timers, to come out and donate blood.
+          </p>
+          <button class="btn-main bg-main mx-auto">
+            <a class="card-link color-white" href="./about-us.html">Learn More</a>
+          </button>
+        </div>
       </div>
-      <div class="work-card bg-white shadow pt-4 pl-5 pb-5 col-lg-3 col-md-6 col-sm-10 mx-4  mb-5">
-        <img class="card-img" src="./img/homepage/hearts.png" width="100px" height="100px" alt="Hearts" srcset="">
-        <h5 class="color-dark  mt-2 f-18">Handling Helpline</h5>
-        <p class="color-dark-light mx-auto mt-1 pr-1">Through helpline requests, we help address immediate blood requirements by patients. </p>
-        <br>
-        <button class="btn-main bg-main">
-          <a class="card-link color-white" href="./raise-a-request.html">Raise a Request</a>
-        </button>
-      </div>
-      <div class="work-card bg-white shadow pt-4 pl-5 pb-5 col-lg-3 col-md-6 col-sm-10 mx-4  mb-5">
-        <img class="card-img p-3" src="./img/homepage/life-buoy.png" width="100px" height="100px" alt="life buoy" srcset="">
-        <h5 class="color-dark  mt-2 f-18">Awareness Session</h5>
-        <p class="color-dark-light mx-auto mt-1 pr-1">Street plays, competitions, and sessions - we do them all to inspire people, especially the first timers, to come out and donate blood.
-        </p>
-        <button class="btn-main bg-main">
-          <a class="card-link color-white" href="./about-us.html">Learn More</a>
-        </button>
-      </div>
-    </div>
-   </div>
+     </div>
+ </div>
 
     <!-- Impact Section -->
-    <div class="container-fluid mt-5 h-60-min d-flex align-items-center justify-content-center py-5" style="background: url('./img/homepage/impact.png');background-size: cover;background-position: bottom;">
+    <div class="container-fluid  h-60-min d-flex align-items-center justify-content-center py-5" style="background: url('./img/homepage/impact.png');background-size: cover;background-position: bottom;">
       <div class="container">
         <div class="row bg-none py-5">
           <div class="col-lg-3 bg-white pt-5 pb-5  d-flex align-items-center bg-none">
@@ -259,97 +273,47 @@
       <div class="container mt-5 mb-5">
         <h4 class="color-dark fw-4 ft-24 mb-0 uppercase text-center">What People Say </h4>
       <!-- testimonial Carousel -->
-      <div class="testimonial-slider" data-slick='{"slidesToShow": 3, "slidesToScroll": 1}' >
+      <div class="testimonial-slider" data-slick='{"slidesToShow": 1, "slidesToScroll": 1}' >
+        
         <div>
-          <div class="testimonial-card mx-auto  pt-5 pl-5 pr-5 pb-2">
-            <div class="d-flex ">
-              <img class="br-25" src="./img/team/Aakash.jpg" alt="" width="50px" height="50px" srcset="">
-              <div class="d-flex flex-column pl-4">
-                <p class="bold f-18 color-dark mb-0">John Doe</p>
-                <p class="color-dark f-14">Illustrator</p>
-              </div>
+          <div class="w-75-lg mx-auto  pt-5 pl-5 pr-0 pb-2">
+           
+            <p class=" mb-4 color-dark-light text-center f-18 ">We needed blood immediately in Nepal and were trying our hands everywhere. BloodConnect, though not present in Nepal, amazingly helped us. They arranged for a donor to travel across borders from their Kolkata chapter to donate blood. That was totally unexpected- by far the most amazing thing ever done. Forever grateful!</p>
+            <div class="d-flex flex-column align-items-center">
+              <p class=" ft-24 color-main-dark mb-0">Neha (from Nepal)</p>
+              <p class="color-dark-light f-18">Helpline requester</p>
+              <img src="./img/favicon.png" width="50" alt="">
             </div>
-            
-            <p class=" mb-4 color-dark text-left">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis nisi non fuga repudiandae laborum? Reprehenderit laudantium qui error harum! Quibusdam explicabo soluta nam vel</p>
-            
             
           </div>
         </div>
+
         <div>
-          <div class="testimonial-card mx-auto  pt-5 pl-5 pr-5 pb-2">
-            <div class="d-flex ">
-              <img class="br-25" src="./img/team/Aakash.jpg" alt="" width="50px" height="50px" srcset="">
-              <div class="d-flex flex-column pl-4">
-                <p class="bold f-18 color-dark mb-0">John Doe</p>
-                <p class="color-dark f-14">Illustrator</p>
-              </div>
+          <div class="w-75-lg mx-auto  pt-5 pl-5 pr-0 pb-2">
+           
+            <p class=" mb-4 color-dark-light text-center f-18 ">I had read about the blood shortage during the Covid19 phase but never really thought much about it. BloodConnect reached out to me seeking help to organize a blood donation camp in Delhi during the lockdown. Getting to know about the shortage of blood for thalassemia patients was an eye opener. We worked with them to organize a successful camp. When traditional networks of voluntary donation were broken (colleges), BloodConnect stepped up to help out. Great work!</p>
+            <div class="d-flex flex-column align-items-center">
+              <p class=" ft-24 color-main-dark mb-0">Hitanshu Gandhi, VP Magicpin (Delhi)</p>
+              <p class="color-dark-light f-18">Camp organizer</p>
+              <img src="./img/favicon.png" width="50" alt="">
             </div>
-            
-            <p class=" mb-4 color-dark text-left">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis nisi non fuga repudiandae laborum? Reprehenderit laudantium qui error harum! Quibusdam explicabo soluta nam vel</p>
-            
             
           </div>
         </div>
+
         <div>
-          <div class="testimonial-card mx-auto  pt-5 pl-5 pr-5 pb-2">
-            <div class="d-flex ">
-              <img class="br-25" src="./img/team/Aakash.jpg" alt="" width="50px" height="50px" srcset="">
-              <div class="d-flex flex-column pl-4">
-                <p class="bold f-18 color-dark mb-0">John Doe</p>
-                <p class="color-dark f-14">Illustrator</p>
-              </div>
+          <div class="w-75-lg mx-auto  pt-5 pl-5 pr-0 pb-2">
+           
+            <p class=" mb-4 color-dark-light text-center f-18 ">I had been volunteering with a couple of organizations in college since over a year. However BloodConnect took it to a new level within a few months of joining. The impact of saving lives, bringing a massive impact across the country (not just my college)- took the experience of volunteer work to a whole new level. It has the best platform for anyone who wishes to learn and lead during college time.</p>
+            <div class="d-flex flex-column align-items-center">
+              <p class=" ft-24 color-main-dark mb-0">Aachran, NLU Lucknow (Lucknow)</p>
+              <p class="color-dark-light f-18">Volunteer</p>
+              <img src="./img/favicon.png" width="50" alt="">
             </div>
-            
-            <p class=" mb-4 color-dark text-left">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis nisi non fuga repudiandae laborum? Reprehenderit laudantium qui error harum! Quibusdam explicabo soluta nam vel</p>
-            
             
           </div>
         </div>
-        <div>
-          <div class="testimonial-card mx-auto  pt-5 pl-5 pr-5 pb-2">
-            <div class="d-flex ">
-              <img class="br-25" src="./img/team/Aakash.jpg" alt="" width="50px" height="50px" srcset="">
-              <div class="d-flex flex-column pl-4">
-                <p class="bold f-18 color-dark mb-0">John Doe</p>
-                <p class="color-dark f-14">Illustrator</p>
-              </div>
-            </div>
-            
-            <p class=" mb-4 color-dark text-left">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis nisi non fuga repudiandae laborum? Reprehenderit laudantium qui error harum! Quibusdam explicabo soluta nam vel</p>
-            
-            
-          </div>
-        </div>
-        <div>
-          <div class="testimonial-card mx-auto  pt-5 pl-5 pr-5 pb-2">
-            <div class="d-flex ">
-              <img class="br-25" src="./img/team/Aakash.jpg" alt="" width="50px" height="50px" srcset="">
-              <div class="d-flex flex-column pl-4">
-                <p class="bold f-18 color-dark mb-0">John Doe</p>
-                <p class="color-dark f-14">Illustrator</p>
-              </div>
-            </div>
-            
-            <p class=" mb-4 color-dark text-left">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis nisi non fuga repudiandae laborum? Reprehenderit laudantium qui error harum! Quibusdam explicabo soluta nam vel</p>
-            
-            
-          </div>
-        </div>
-        <div>
-          <div class="testimonial-card mx-auto  pt-5 pl-5 pr-5 pb-2">
-            <div class="d-flex ">
-              <img class="br-25" src="./img/team/Aakash.jpg" alt="" width="50px" height="50px" srcset="">
-              <div class="d-flex flex-column pl-4">
-                <p class="bold f-18 color-dark mb-0">John Doe</p>
-                <p class="color-dark f-14">Illustrator</p>
-              </div>
-            </div>
-            
-            <p class=" mb-4 color-dark text-left">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis nisi non fuga repudiandae laborum? Reprehenderit laudantium qui error harum! Quibusdam explicabo soluta nam vel</p>
-            
-            
-          </div>
-        </div>
+
       </div>  
       </div>   
     </div>
@@ -365,19 +329,59 @@
             <div class="col-lg-6">
               <h4 class="f-40 color-dark   text-left pt-5">Help us make India Blood Sufficient</h4>
             <p class="color-dark-light text-left">
-              We started in IIT Delhi in 2010 and have now grown onto 10 cities. With your support we hope to further expand and help out blood banks across the country and make them blood sufficient. 
+              We started in IIT Delhi in 2010 and have now grown on to 10 cities. With your support we hope to further expand and help out blood banks across the country and make them blood sufficient. With you helping, we can:
+              <div class="d-flex flex-column">
+                <div class="row">
+                  <div class="col d-flex flex-row">
+                    <div class="mr-2">
+                      <img width="20px" src="./svg/tick.svg" alt="">
+                    </div>
+                    <p class="color-dark-light">
+                      Arrange a donor for someone in need
+                    </p>
+                  </div>
+
+                  <div class="col d-flex flex-row">
+                    <div class="mr-2">
+                      <img width="20px" src="./svg/tick.svg" alt="">
+                    </div>
+                    <p class="color-dark-light">
+                      Ensure regular blood for thalassemia patients
+                    </p>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col d-flex flex-row">
+                    <div class="mr-2">
+                      <img width="20px" src="./svg/tick.svg" alt="">
+                    </div>
+                    <p class="color-dark-light">
+                      Keep blood bank stocked for high blood loss emergencies 
+                    </p>
+                  </div>
+
+                  <div class="col d-flex flex-row">
+                    <div class="mr-2">
+                      <img width="20px" src="./svg/tick.svg" alt="">
+                    </div>
+                    <p class="color-dark-light">
+                      Motivate youth to come forward and donate blood 
+                    </p>
+                  </div>
+                </div>
+              </div>
             </p>
             <button class="shadow btn-main bg-white mt-3 mb-5"><a class="color-main fw-6" href="./sponsor.html">Sponsor Us</a></button>
             </div>
-            <div class="col-lg-6 h-90">
+            <div class="col-lg-6 d-flex flex-column justify-content-center align-items-center">
               <div class="hide d-flex justify-content-center align-items-center" id="youtubeVideoDiv">
-                <button class="close color-main f-20" onclick="closeVideo()"><i class="fa fa-times"></i></button>
-                <video class="wd-inherit h-90" style="width: 100% !important;" controls autoplay="false"  loop id="youtubeVideo"  >
+                <button class="close color-white f-20" onclick="closeVideo()" style="right:40px !important"><i class="fa fa-times"></i></button>
+                <video class="wd-inherit h-90" style="width: 100% !important;" controls autoplay="false"   id="youtubeVideo"  >
                   <source src="./img/homepage/Blood Donation- A Birthday Wish.mp4"  type="video/mp4">
                 </video>
               </div>
 
-                  <img src="./img/homepage/video.png" id="video-img" class="wd-inherit h-80" alt="">
+                  <img src="./img/homepage/video.png" id="video-img" style="height: 400px;" class="wd-inherit" alt="">
                   <button class="play bg-none" id="play" onclick="playVideo()"><i class="color-white fa fa-play"></i></button>
             </div>
           </div>
@@ -614,14 +618,17 @@ let data = {
 
     // These labels appear in the legend and in the tooltips when hovering different arcs
     labels: [
-        '15  Millon',
-        '2 Million'
+        'Blood Collected',
+        'Shortage'
     ]
 };
 
 var options =  {
         tooltips:{
           enabled:true
+        },
+        legend :{
+          position:'top'
         }
     }
 var myPieChart = new Chart(ctx, {
