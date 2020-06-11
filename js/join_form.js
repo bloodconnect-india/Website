@@ -1,6 +1,6 @@
 $("#go-to-form").click(function() {
     $('html, body').animate({
-        scrollTop: $("#form").offset().top
+        scrollTop: $("#form").offset().top-200
     }, 1000);
 });
 

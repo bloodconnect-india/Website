@@ -243,7 +243,9 @@ button.tag{
     border-radius: 2px;
     color: #fff;
     width: max-content;
+    font-size: 18px;
 }
+
 .btn-large{
     padding: 20px 40px;
     border: none;

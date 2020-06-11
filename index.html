@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/bootstrap.min.css">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/chart.css">
     <link rel="stylesheet" type="text/css" href="./css/slick/slick.css"/>
     <link rel="stylesheet" type="text/css" href="./css/slick/slick-theme.css"/>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -14,7 +15,6 @@
   
     <title>BloodConnect</title>
     <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon">
-    <script src="./js/CountUp.min.js" type="module"></script>
     <style>
       .main-slider>.slick-prev::before{
         content: url('./svg/arrow-left-white.svg') !important;
@@ -176,6 +176,7 @@
         <div class="col-lg-5 col-md-4 col-sm-12">
           <!-- <iframe class="wd-inherit hide" id="youtubeVideo" height="315" src="https://www.youtube.com/embed/zYVxjIPVCZQ?autoplay=1"  frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
           <canvas id="myChart" class="wd-inherit" ></canvas>
+          
         </div>
       
       <div class="d-flex flex-column justify-content-center tagling col-lg-7 col-sm-12">
@@ -358,7 +359,7 @@
 
 
       <!-- Sponsor banner -->
-      <div class=" m-0 px-2 pt-5 pb-5 h-100 container-fluid bg-main-light">
+      <div class=" m-0 px-2 pt-5 pb-5 h-100-min container-fluid bg-main-light">
         <div class="container">
           <div class="row justify-content-between">
             <div class="col-lg-6">
@@ -487,8 +488,8 @@
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 <script src="./js/bootstrap.min.js"></script>
 <script src="./js/main.js"></script>
-<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script>
+<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 
 <script>
   $(".testimonial-slider").slick({
@@ -605,7 +606,8 @@ let data = {
     datasets: [{
         data: [ 13, 2],
         backgroundColor:["#980000","#fff"],
-        borderWidth:20,
+        borderColor : ["#980000","#fff"],
+        borderWidth:2,
         color:["#D20003","#fff"]
 
     }],
