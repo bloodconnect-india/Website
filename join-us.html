@@ -5,10 +5,49 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/bootstrap.min.css">
     <link rel="stylesheet" href="./css/style.css">
+
+    <link rel="stylesheet" type="text/css" href="./css/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="./css/slick/slick-theme.css"/>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <title>Join Us | BloodConnect</title>
     <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon">
+    <style>
+      .what-we-do{
+        max-width: 240px !important;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+      .alumni>img{
+        width: inherit;
+        height: 300px
+      }
+      .alumni{
+        margin-left: 10px;
+        margin-right: 10px;
+        max-width: 255px;
+        margin-top: auto;
+        margin-bottom: 50px !important;
+      }
+      .alumni>div>h4{
+        margin-top: 20px;
+        font-weight: 400;
+        color: #980000 !important;
+      }
+      .alumni>div>p{
+        color: #212121 !important;
+        margin-bottom: 0px !important;
+      }
+      .alumni>ul.social-media{
+        list-style-type: none !important;
+        padding-left: 0px;
+      }
+      .alumni>ul.social-media>li{
+        color: #616161;
+      }
+    </style>
 </head>
 <body>
 
@@ -16,7 +55,7 @@
     <!-- Just an image -->
     <!-- Navbar -->
     <nav class="fixed z-6 d-flex justify-content-end hide-lg" id="mobile-nav">
-      <button class="menu hide show-md color-dark-fixed h-max bg-none" id="mobile-nav-toggler" onclick="toggleMobileNav()"><i class="fa fa-bars f-20"></i></button>
+      <button class="menu hide show-md color-white h-max bg-none" id="mobile-nav-toggler" onclick="toggleMobileNav()"><i class="fa fa-bars f-20"></i></button>
         <ul class="mobile-nav hide bg-white" id="mobile-nav-list">
           <li class="bg-main ">
             <a class="nav-link color-white fw-4 " href="./raise-a-request.html">RAISE A REQUEST</a>
@@ -50,30 +89,30 @@
     <nav class="navbar justify-content-center-sm justify-content-between pb-0 sticky-sm z-5  bg-none " id="navbar">
         <div class="d-flex flex-row align-items-center justify-content-end">
           <a class="navbar-brand" href="./index.html">
-            <img src="./img/logo.png"   height="35" alt="BloodConnect Logo">
+            <img src="./img/homepage/Logo.png"   height="35" alt="BloodConnect Logo">
         </a>
         <ul class="navbar-nav flex-row  align-items-end hide-md"  style="border-bottom: none !important;">
   
             <li class="px-3">
-              <a href="./about-us.html" class="color-dark b-dark f-14 ">ABOUT US</a>
+              <a href="./about-us.html" class="color-white b-white f-14 ">ABOUT US</a>
             </li>
             <li class="px-3">
-              <a href="./raise-a-request.html" class="color-dark b-dark f-14 ">RAISE A REQUEST</a>
+              <a href="./raise-a-request.html" class="color-white b-white f-14 ">RAISE A REQUEST</a>
             </li>
             <li class="px-3">
-              <a href="./organize-a-camp.html" class="color-dark b-dark f-14 ">ORGANIZE A CAMP</a>
+              <a href="./organize-a-camp.html" class="color-white b-white f-14 ">ORGANIZE A CAMP</a>
             </li>
             <li class="px-3">
-              <a href="./resources.html" class="color-dark b-dark f-14 ">RESOURCES</a>
+              <a href="./resources.html" class="color-white b-white f-14 ">RESOURCES</a>
             </li>
             <li class="px-3">
-              <a href="./join-us.html" class="color-dark b-dark f-14 ">JOIN US</a>
+              <a href="./join-us.html" class="color-white b-white f-14 ">JOIN US</a>
             </li>
       </ul>
         </div>
         <div class="d-flex flex-row align-items-center hide-md">
-          <a href="./contact-us.html" class="f-14 color-dark mr-3 uppercase">Contact Us</a>
-          <a href="./sponsor.html" class="f-14 sponsor-link-button bg-main color-white fw-6 px-3 py-2 uppercase">Support us</a>
+          <a href="./contact-us.html" class="f-14 color-white mr-3 uppercase">Contact Us</a>
+          <a href="./sponsor.html" class="f-14 sponsor-link-button color-dark fw-6 px-3 py-2 uppercase">Support us</a>
         </div>
     </nav>
     <nav class="navbar flex-column-sm align-items-start justify-content-between pb-0  sticky-navbar z-5 bg-white pb-2 hide" id="navbar-sticky">
@@ -82,93 +121,112 @@
           <img src="./img/logo.png"   height="35" alt="BloodConnect Logo">
       </a>
       <ul class="navbar-nav flex-row hide-md align-items-end"  style="border-bottom: none !important;">
- 
-        <li class="px-3">
-          <a href="./about-us.html" class="color-dark b-dark f-14 ">ABOUT US</a>
-        </li>
-        <li class="px-3">
-          <a href="./raise-a-request.html" class="color-dark b-dark f-14 ">RAISE A REQUEST</a>
-        </li>
-        <li class="px-3">
-          <a href="./organize-a-camp.html" class="color-dark b-dark f-14 ">ORGANIZE A CAMP</a>
-        </li>
-        <li class="px-3">
-          <a href="./resources.html" class="color-dark b-dark f-14 ">RESOURCES</a>
-        </li>
-        <li class="px-3">
-          <a href="./join-us.html" class="color-dark b-dark f-14 ">JOIN US</a>
-        </li>
-  </ul>
+   
+          <li class="px-3">
+            <a href="./about-us.html" class="color-dark b-dark f-14 ">ABOUT US</a>
+          </li>
+          <li class="px-3">
+            <a href="./raise-a-request.html" class="color-dark b-dark f-14 ">RAISE A REQUEST</a>
+          </li>
+          <li class="px-3">
+            <a href="./organize-a-camp.html" class="color-dark b-dark f-14 ">ORGANIZE A CAMP</a>
+          </li>
+          <li class="px-3">
+            <a href="./resources.html" class="color-dark b-dark f-14 ">RESOURCES</a>
+          </li>
+          <li class="px-3">
+            <a href="./join-us.html" class="color-dark b-dark f-14 ">JOIN US</a>
+          </li>
+    </ul>
       </div>
       <div class="d-flex flex-row align-items-center">
         <a href="./sponsor.html" class="f-14 sponsor-link-button color-dark fw-6 px-3 py-2 uppercase bg-main color-white">Support us</a>
       </div>
   </nav>
-    <!-- Top div -->
-    <div class="container h-80-min d-flex align-items-center justify-content-center img-left pt-100-sm content" >
-    <div class="row"> 
-      <div class="col-lg-6 col-md-6 col-sm-12">
-        <img class="contain-img" src="./img/join-us/team.png" alt="">
-      </div> 
-      
-      <div class="d-flex flex-column pt-5  col-lg-6 col-md-6 col-sm-12">
-          <h4 class="f-40 color-dark text-center-sm">Volunteer With Us</h4>
-          <p class="color-dark text-center-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum minus officiis aspernatur eveniet laudantium quaerat rerum praesentium omnis. Natus necessitatibus adipisci ipsam repellendus labore placeat sequi possimus, nesciunt architecto recusandae?</p>
-          <button class="shadow btn-main bg-main mx-auto-sm f-18" id="go-to-form">Join Now</button>
+  
+  
+  
+      <div class="container-fluid h-90  pl-0 pr-0 content pt-100-sm relative d-flex flex-row align-items-center">
+        <div class="d-flex flex-column container h-80 justify-content-center z-5 px-0-sm">
+          <h1 class="display-4 color-white  wd-max px-2 mb-1 ">Volunteer with us</h1>
+          <p class="color-white w-50-lg px-2">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo qui labore dolore voluptatem nobis! Accusantium odio consequuntur fugiat 
+          </p>
+          <div class="d-flex mt-2 px-2">
+            <button class="shadow btn-main bg-main mr-2" id="go-to-form">Join us</button>
+          </div>
         </div>
-    </div>
-    </div>
-
-    <div class="selection-popup bg-white fixed h-100 w-100 z-100" id="selectionPopup" style="top: 0px;">
-      <i class="fa fa-times close f-20 hand color-main z-100" onclick="closePopup()"></i>
-      <div class="row">
-        <div class="col-lg-6 col-12 col-sm-12 h-50-sm  d-flex justify-content-center align-items-center" style="background: url('./img/register-as-donor/with-love.png');">
-          <button class="btn-main  bg-main h-max px-4 py-2"><a class="f-30 color-white" href="./register-as-donor.html">Donate Blood</a></button>
-        </div>
-        <div class="col-lg-6 col-12 col-sm-12 h-50-sm d-flex justify-content-center align-items-center" style="background: url('./img/team/team.png');">
-          <button class="btn-main f-30 bg-main h-max px-4 py-3" onclick="closePopup()">Join Us</button>
-        </div>
+        <div class="main-slider h-100" id="homepageSlider" style="background-image:url('./img/join-us/volunteer.png');background-size: cover;" >
+          
+         </div>
+         
       </div>
-    </div>
+  
+
+  
     <!-- Main Content Starts here -->
 
 
 
       <!-- What can you do -->
-      <div class="container  pt-5">
-          <h4 class=" color-dark f-40 text-center">What We Do ?</h4>
+      <div class="container-fluid bg-main-light py-5">
+        <div class="container  py-5">
+          <h4 class=" color-dark f-30 text-center mb-0">What We Do</h4>
+          <p class="coolor-grey text-center color-dark-light">Through each our activities we make an impact. Our mission is simple - to save lives</p>
           <div class="row mt-3 pt-3">
-              <div class="  text-center mx-auto col-sm-12 mb-3 col-lg-3">
-                  <img class="mx-auto" width="auto" height="100" src="./img/homepage/hearts.png" alt="">
-                  <h5 class="color-dark  uppercase mt-2 f-18">Handling Helplines</h5>
-                  <p class="color-grey mt-2"> Talk to people who need blood; Arrange donors to help them</p>
-              </div>
-              <div class=" text-center mx-auto col-sm-12 mb-3 col-lg-3">
-                <img class="mx-auto" width="auto" height="100" src="./img/homepage/calender-light.png" alt="">
-                <h5 class="color-dark  uppercase mt-2 f-18">Organizing Camps</h5>
-                <p class="color-grey mt-2"> Contact colleges, corporates, RWAs; Help organize a successful blood donation camp</p>
+            <div class="what-we-do  bg-white shadow-hover hand text-center mx-auto col-sm-12 mb-3 col-lg-3 p-4">
+                <h5 class="color-dark   mt-2 f-20">Handling Helplines</h5>
+                <p class="color-dark-light mt-1 f-14"> Talk to people who need blood; Arrange donors to help them</p>
             </div>
-            <div class=" text-center mx-auto col-sm-12 mb-3  col-lg-3">
-                <img class="mx-auto" width="auto" height="100" src="./img/homepage/creative.png" alt="">
-                <h5 class="color-dark  uppercase mt-2 f-18">Be Creative</h5>
-                <p class="color-grey mt-2">Design posters; Make videos; Write articles; Help us in our online publicity</p>
+            <div class="what-we-do bg-white shadow-hover hand text-center mx-auto col-sm-12 mb-3 col-lg-3 p-4">
+              <h5 class="color-dark   mt-1 f-20">Organizing Camps</h5>
+              <p class="color-dark-light mt-1 f-14"> Contact colleges, corporates, RWAs; Help organize a successful blood donation camp</p>
             </div>
-            <div class=" text-center mx-auto col-sm-12 mb-3  col-lg-3">
-                <img class="mx-auto" width="auto" height="100" src="./img/homepage/life-buoy.png" alt="">
-                <h5 class="color-dark  uppercase mt-2 f-18">Get Support</h5>
-                <p class="color-grey mt-2">Contact newspapers, radio channels, Publicize the cause, Get us funds </p>
+            <div class="what-we-do bg-white shadow-hover hand text-center mx-auto col-sm-12 mb-3  col-lg-3 p-4">
+                <h5 class="color-dark   mt-1 f-20">Be Creative</h5>
+                <p class="color-dark-light mt-1 f-14">Design posters; Make videos; Write articles; Help us in our online publicity</p>
             </div>
+            <div class="what-we-do bg-white shadow-hover hand text-center mx-auto col-sm-12 mb-3  col-lg-3 p-4">
+                <h5 class="color-dark   mt-1 f-20">Get Support</h5>
+                <p class="color-dark-light mt-1 f-14">Contact newspapers, radio channels, Publicize the cause, Get us funds </p>
+            </div>
+            <div class="what-we-do  bg-white shadow-hover hand text-center mx-auto col-sm-12 mb-3 col-lg-3 p-4">
+              <h5 class="color-dark   mt-2 f-20">Handling Helplines</h5>
+              <p class="color-dark-light mt-1 f-14"> Talk to people who need blood; Arrange donors to help them</p>
           </div>
+          <div class="what-we-do bg-white shadow-hover hand text-center mx-auto col-sm-12 mb-3 col-lg-3 p-4">
+            <h5 class="color-dark   mt-1 f-20">Organizing Camps</h5>
+            <p class="color-dark-light mt-1 f-14"> Contact colleges, corporates, RWAs; Help organize a successful blood donation camp</p>
+          </div>
+          <div class="what-we-do bg-white shadow-hover hand text-center mx-auto col-sm-12 mb-3  col-lg-3 p-4">
+              <h5 class="color-dark   mt-1 f-20">Be Creative</h5>
+              <p class="color-dark-light mt-1 f-14">Design posters; Make videos; Write articles; Help us in our online publicity</p>
+          </div>
+          <div class="what-we-do bg-white shadow-hover hand text-center mx-auto col-sm-12 mb-3  col-lg-3 p-4">
+              <h5 class="color-dark   mt-1 f-20">Get Support</h5>
+              <p class="color-dark-light mt-1 f-14">Contact newspapers, radio channels, Publicize the cause, Get us funds </p>
+          </div>
+          <div class="what-we-do bg-white shadow-hover hand text-center mx-auto col-sm-12 mb-3  col-lg-3 p-4">
+            <h5 class="color-dark   mt-1 f-20">Be Creative</h5>
+            <p class="color-dark-light mt-1 f-14">Design posters; Make videos; Write articles; Help us in our online publicity</p>
+        </div>
+        <div class="what-we-do bg-white shadow-hover hand text-center mx-auto col-sm-12 mb-3  col-lg-3 p-4">
+            <h5 class="color-dark   mt-1 f-20">Get Support</h5>
+            <p class="color-dark-light mt-1 f-14">Contact newspapers, radio channels, Publicize the cause, Get us funds </p>
+        </div>
+          </div>
+      </div>
       </div>
 
 
 
       <!-- Our Alumni -->
-      <div class="container px-0-sm">
-        <h4 class="text-center f-40">Our Alumni</h4>
-        <div class="row no-gutters">
-          <div class="team-member col-lg-2 col-md-4 col-sm-6 col-6 ">
-            <img class="" src="./img/team/demo/5.jpg" alt="">
+      <div class="container px-0-sm mt-5 mb-5 pt-5 pb-5">
+        <h4 class="text-center f-30">Our Alumni</h4>
+        <div class="row no-gutters justify-content-center">
+          <div class="alumni col-lg-3 col-md-4 col-sm-6 ">
+
+            <img class="" src="./img/team/demo/6.jpg" alt="">
             <div class="description pl-2">
               <h4 class="color-white bold text-left mb-0">John Doe</h4>
               <p class="ft-18 colowhitein">Marketing Director</p>
@@ -177,7 +235,7 @@
               <li><i class="fa fa-linkedin"></i></li>
             </ul>
           </div>
-          <div class="team-member col-lg-2 col-md-4 col-sm-6 col-6 ">
+          <div class="alumni col-lg-3 col-md-4 col-sm-6 ">
             <img class="" src="./img/team/demo/6.jpg" alt="">
             <div class="description pl-2">
               <h4 class="color-white bold text-left mb-0">John Doe</h4>
@@ -187,7 +245,7 @@
               <li><i class="fa fa-linkedin"></i></li>
             </ul>
           </div>
-          <div class="team-member col-lg-2 col-md-4 col-sm-6 col-6 ">
+          <div class="alumni col-lg-3 col-md-4 col-sm-6 ">
             <img class="" src="./img/team/demo/7.jpg" alt="">
             <div class="description pl-2">
               <h4 class="color-white bold text-left mb-0">John Doe</h4>
@@ -197,7 +255,7 @@
               <li><i class="fa fa-linkedin"></i></li>
             </ul>
           </div>
-          <div class="team-member col-lg-2 col-md-4 col-sm-6 col-6 ">
+          <div class="alumni col-lg-3 col-md-4 col-sm-6 ">
             <img class="" src="./img/team/demo/8.jpg" alt="">
             <div class="description pl-2">
               <h4 class="color-white bold text-left mb-0">John Doe</h4>
@@ -207,7 +265,7 @@
               <li><i class="fa fa-linkedin"></i></li>
             </ul>
           </div>
-          <div class="team-member col-lg-2 col-md-4 col-sm-6 col-6 ">
+          <div class="alumni col-lg-3 col-md-4 col-sm-6 ">
             <img class="" src="./img/team/demo/9.jpg" alt="">
             <div class="description pl-2">
               <h4 class="color-white bold text-left mb-0">John Doe</h4>
@@ -217,7 +275,7 @@
               <li><i class="fa fa-linkedin"></i></li>
             </ul>
           </div>
-          <div class="team-member col-lg-2 col-md-4 col-sm-6 col-6 ">
+          <div class="alumni col-lg-3 col-md-4 col-sm-6 ">
             <img class="" src="./img/team/demo/5.jpg" alt="">
             <div class="description pl-2">
               <h4 class="color-white bold text-left mb-0">John Doe</h4>
@@ -227,7 +285,7 @@
               <li><i class="fa fa-linkedin"></i></li>
             </ul>
           </div>
-          <div class="team-member col-lg-2 col-md-4 col-sm-6 col-6 ">
+          <div class="alumni col-lg-3 col-md-4 col-sm-6 ">
             <img class="" src="./img/team/demo/6.jpg" alt="">
             <div class="description pl-2">
               <h4 class="color-white bold text-left mb-0">John Doe</h4>
@@ -237,47 +295,7 @@
               <li><i class="fa fa-linkedin"></i></li>
             </ul>
           </div>
-          <div class="team-member col-lg-2 col-md-4 col-sm-6 col-6 ">
-            <img class="" src="./img/team/demo/7.jpg" alt="">
-            <div class="description pl-2">
-              <h4 class="color-white bold text-left mb-0">John Doe</h4>
-            <p class="ft-18 color-white">Marketing Director</p>
-            </div>
-            <ul class="social-media">
-              <li><i class="fa fa-linkedin"></i></li>
-            </ul>
-          </div>
-          <div class="team-member col-lg-2 col-md-4 col-sm-6 col-6 ">
-            <img class="" src="./img/team/demo/8.jpg" alt="">
-            <div class="description pl-2">
-              <h4 class="color-white bold text-left mb-0">John Doe</h4>
-            <p class="ft-18 color-white">Marketing Director</p>
-            </div>
-            <ul class="social-media">
-              <li><i class="fa fa-linkedin"></i></li>
-            </ul>
-          </div>
-          <div class="team-member col-lg-2 col-md-4 col-sm-6 col-6 ">
-            <img class="" src="./img/team/demo/9.jpg" alt="">
-            <div class="description pl-2">
-              <h4 class="color-white bold text-left mb-0">John Doe</h4>
-            <p class="ft-18 color-white">Marketing Director</p>
-            </div>
-            <ul class="social-media">
-              <li><i class="fa fa-linkedin"></i></li>
-            </ul>
-          </div>
-          <div class="team-member col-lg-2 col-md-4 col-sm-6 col-6 ">
-            <img class="" src="./img/team/demo/5.jpg" alt="">
-            <div class="description pl-2">
-              <h4 class="color-white bold text-left mb-0">John Doe</h4>
-            <p class="ft-18 color-white">Marketing Director</p>
-            </div>
-            <ul class="social-media">
-              <li><i class="fa fa-linkedin"></i></li>
-            </ul>
-          </div>
-          <div class="team-member col-lg-2 col-md-4 col-sm-6 col-6 ">
+          <div class="alumni col-lg-3 col-md-4 col-sm-6 ">
             <img class="" src="./img/team/demo/6.jpg" alt="">
             <div class="description pl-2">
               <h4 class="color-white bold text-left mb-0">John Doe</h4>
@@ -293,199 +311,30 @@
       </div>
     <!-- Form-->
 
-    <div class="container-fluid mt-5 mb-5 pt-3 pb-3 bg-main">
+    <div class="container-fluid mt-5 mb-5 pt-3 pb-3 bg-main-dark">
       <div class="container pt-5 pb-5">
         <div class="row">
           <div class="col-lg-6 d-flex justify-content-center mb-4">
-            <h4 class="f-30 our-family text-center color-white">Our Family</h4>
-            <div id="collage" class="collage join-us-collage  row wd-inherit ">
-              <div class="col p-0">
-                <img class="wd-inherit" src="./img/team/demo/1.jpg" alt="">
-                <img class="wd-inherit" src="./img/team/demo/5.jpg" alt="">
-                <img class="wd-inherit" src="./img/team/demo/2.jpg" alt="">
-                <img class="wd-inherit" src="./img/team/demo/7.jpg" alt="">
-                <img class="wd-inherit" src="./img/team/demo/4.jpg" alt="">
-                <img class="wd-inherit" src="./img/team/demo/3.jpg" alt="">
-                <img class="wd-inherit" src="./img/team/demo/6.jpg" alt="">
-                <img class="wd-inherit" src="./img/team/demo/4.jpg" alt="">
-                <img class="wd-inherit" src="./img/team/demo/8.jpg" alt="">
-                <img class="wd-inherit" src="./img/team/demo/7.jpg" alt="">
-                <img class="wd-inherit" src="./img/team/demo/1.jpg" alt="">
-                <img class="wd-inherit" src="./img/team/demo/5.jpg" alt="">
-                <img class="wd-inherit" src="./img/team/demo/2.jpg" alt="">
-                <img class="wd-inherit" src="./img/team/demo/7.jpg" alt="">
+            <div class="fade"  data-slick='{"slidesToShow": 1, "slidesToScroll": 1}' >
+        
+              <!-- Gradinet here -->
+           
+              <!-- <div class="h-inherit">
+                <img src='./img/homepage/duetone/1.png');" />
               </div>
-              <div class="col p-0">
-                <img class="wd-inherit" src="./img/team/demo/3.jpg" alt="">
-                <img class="wd-inherit" src="./img/team/demo/6.jpg" alt="">
-                <img class="wd-inherit" src="./img/team/demo/4.jpg" alt="">
-                <img class="wd-inherit" src="./img/team/demo/8.jpg" alt="">
-                <img class="wd-inherit" src="./img/team/demo/7.jpg" alt="">
-                <img class="wd-inherit" src="./img/team/demo/1.jpg" alt="">
-                <img class="wd-inherit" src="./img/team/demo/5.jpg" alt="">
-                <img class="wd-inherit" src="./img/team/demo/2.jpg" alt="">
-                <img class="wd-inherit" src="./img/team/demo/7.jpg" alt="">
-                <img class="wd-inherit" src="./img/team/demo/3.jpg" alt="">
-                <img class="wd-inherit" src="./img/team/demo/3.jpg" alt="">
-                <img class="wd-inherit" src="./img/team/demo/6.jpg" alt="">
-                <img class="wd-inherit" src="./img/team/demo/4.jpg" alt="">
-                <img class="wd-inherit" src="./img/team/demo/8.jpg" alt="">
-                <img class="wd-inherit" src="./img/team/demo/7.jpg" alt="">
+              <div class="h-inherit">
+                <img src='./img/homepage/duetone/1.png');" />
               </div>
-              <div class="col p-0">
-                <img class="wd-inherit" src="./img/team/demo/9.jpg" alt="">
-                <img class="wd-inherit" src="./img/team/demo/5.jpg" alt="">
-                <img class="wd-inherit" src="./img/team/demo/2.jpg" alt="">
-                <img class="wd-inherit" src="./img/team/demo/1.jpg" alt="">
-                <img class="wd-inherit" src="./img/team/demo/7.jpg" alt="">
-                <img class="wd-inherit" src="./img/team/demo/3.jpg" alt="">
-                <img class="wd-inherit" src="./img/team/demo/6.jpg" alt="">
-                <img class="wd-inherit" src="./img/team/demo/4.jpg" alt="">
-                <img class="wd-inherit" src="./img/team/demo/8.jpg" alt="">
-                <img class="wd-inherit" src="./img/team/demo/7.jpg" alt="">
-                <img class="wd-inherit" src="./img/team/demo/9.jpg" alt="">
-                <img class="wd-inherit" src="./img/team/demo/5.jpg" alt="">
-                <img class="wd-inherit" src="./img/team/demo/2.jpg" alt="">
-                <img class="wd-inherit" src="./img/team/demo/1.jpg" alt="">
-                <img class="wd-inherit" src="./img/team/demo/7.jpg" alt="">
+              <div class="h-inherit">
+                <img src='./img/homepage/duetone/1.png');" />
               </div>
-              <div class="col p-0">
-                <img class="wd-inherit" src="./img/team/demo/1.jpg" alt="">
-                <img class="wd-inherit" src="./img/team/demo/5.jpg" alt="">
-                <img class="wd-inherit" src="./img/team/demo/2.jpg" alt="">
-                <img class="wd-inherit" src="./img/team/demo/7.jpg" alt="">
-                <img class="wd-inherit" src="./img/team/demo/3.jpg" alt="">
-                <img class="wd-inherit" src="./img/team/demo/3.jpg" alt="">
-                <img class="wd-inherit" src="./img/team/demo/6.jpg" alt="">
-                <img class="wd-inherit" src="./img/team/demo/4.jpg" alt="">
-                <img class="wd-inherit" src="./img/team/demo/8.jpg" alt="">
-                <img class="wd-inherit" src="./img/team/demo/1.jpg" alt="">
-                <img class="wd-inherit" src="./img/team/demo/9.jpg" alt="">
-                <img class="wd-inherit" src="./img/team/demo/5.jpg" alt="">
-                <img class="wd-inherit" src="./img/team/demo/2.jpg" alt="">
-                <img class="wd-inherit" src="./img/team/demo/1.jpg" alt="">
-                <img class="wd-inherit" src="./img/team/demo/7.jpg" alt="">
-                <img class="wd-inherit" src="./img/team/demo/3.jpg" alt="">
-                <img class="wd-inherit" src="./img/team/demo/6.jpg" alt="">
-              </div>
-              <div class="col p-0">
-                <img class="wd-inherit" src="./img/team/demo/3.jpg" alt="">
-                <img class="wd-inherit" src="./img/team/demo/6.jpg" alt="">
-                <img class="wd-inherit" src="./img/team/demo/4.jpg" alt="">
-                <img class="wd-inherit" src="./img/team/demo/8.jpg" alt="">
-                <img class="wd-inherit" src="./img/team/demo/1.jpg" alt="">
-                <img class="wd-inherit" src="./img/team/demo/1.jpg" alt="">
-                <img class="wd-inherit" src="./img/team/demo/5.jpg" alt="">
-                <img class="wd-inherit" src="./img/team/demo/2.jpg" alt="">
-                <img class="wd-inherit" src="./img/team/demo/7.jpg" alt="">
-                <img class="wd-inherit" src="./img/team/demo/4.jpg" alt="">
-                <img class="wd-inherit" src="./img/team/demo/1.jpg" alt="">
-                <img class="wd-inherit" src="./img/team/demo/5.jpg" alt="">
-                <img class="wd-inherit" src="./img/team/demo/2.jpg" alt="">
-                <img class="wd-inherit" src="./img/team/demo/7.jpg" alt="">
-                <img class="wd-inherit" src="./img/team/demo/3.jpg" alt="">
-                <img class="wd-inherit" src="./img/team/demo/3.jpg" alt="">
-                <img class="wd-inherit" src="./img/team/demo/6.jpg" alt="">
-              </div>
-              <div class="col p-0">
-                <img class="wd-inherit" src="./img/team/demo/1.jpg" alt="">
-                <img class="wd-inherit" src="./img/team/demo/5.jpg" alt="">
-                <img class="wd-inherit" src="./img/team/demo/2.jpg" alt="">
-                <img class="wd-inherit" src="./img/team/demo/7.jpg" alt="">
-                <img class="wd-inherit" src="./img/team/demo/4.jpg" alt="">
-                <img class="wd-inherit" src="./img/team/demo/3.jpg" alt="">
-                <img class="wd-inherit" src="./img/team/demo/6.jpg" alt="">
-                <img class="wd-inherit" src="./img/team/demo/4.jpg" alt="">
-                <img class="wd-inherit" src="./img/team/demo/8.jpg" alt="">
-                <img class="wd-inherit" src="./img/team/demo/1.jpg" alt="">
-                <img class="wd-inherit" src="./img/team/demo/1.jpg" alt="">
-                <img class="wd-inherit" src="./img/team/demo/3.jpg" alt="">
-                <img class="wd-inherit" src="./img/team/demo/6.jpg" alt="">
-                <img class="wd-inherit" src="./img/team/demo/4.jpg" alt="">
-                <img class="wd-inherit" src="./img/team/demo/8.jpg" alt="">
-                <img class="wd-inherit" src="./img/team/demo/1.jpg" alt="">
-                <img class="wd-inherit" src="./img/team/demo/1.jpg" alt="">
-                <img class="wd-inherit" src="./img/team/demo/5.jpg" alt="">
-                <img class="wd-inherit" src="./img/team/demo/2.jpg" alt="">
-                <img class="wd-inherit" src="./img/team/demo/7.jpg" alt="">
-              </div>
-              <div class="col p-0">
-                <img class="wd-inherit" src="./img/team/demo/3.jpg" alt="">
-                <img class="wd-inherit" src="./img/team/demo/6.jpg" alt="">
-                <img class="wd-inherit" src="./img/team/demo/4.jpg" alt="">
-                <img class="wd-inherit" src="./img/team/demo/8.jpg" alt="">
-                <img class="wd-inherit" src="./img/team/demo/7.jpg" alt="">
-                <img class="wd-inherit" src="./img/team/demo/1.jpg" alt="">
-                <img class="wd-inherit" src="./img/team/demo/5.jpg" alt="">
-                <img class="wd-inherit" src="./img/team/demo/2.jpg" alt="">
-                <img class="wd-inherit" src="./img/team/demo/7.jpg" alt="">
-                <img class="wd-inherit" src="./img/team/demo/4.jpg" alt="">
-                <img class="wd-inherit" src="./img/team/demo/3.jpg" alt="">
-                <img class="wd-inherit" src="./img/team/demo/6.jpg" alt="">
-                <img class="wd-inherit" src="./img/team/demo/4.jpg" alt="">
-                <img class="wd-inherit" src="./img/team/demo/8.jpg" alt="">
-                <img class="wd-inherit" src="./img/team/demo/7.jpg" alt="">
-                <img class="wd-inherit" src="./img/team/demo/1.jpg" alt="">
-                <img class="wd-inherit" src="./img/team/demo/5.jpg" alt="">
-              </div>
-              <div class="col p-0">
-                <img class="wd-inherit" src="./img/team/demo/9.jpg" alt="">
-                <img class="wd-inherit" src="./img/team/demo/5.jpg" alt="">
-                <img class="wd-inherit" src="./img/team/demo/2.jpg" alt="">
-                <img class="wd-inherit" src="./img/team/demo/1.jpg" alt="">
-                <img class="wd-inherit" src="./img/team/demo/7.jpg" alt="">
-                <img class="wd-inherit" src="./img/team/demo/3.jpg" alt="">
-                <img class="wd-inherit" src="./img/team/demo/6.jpg" alt="">
-                <img class="wd-inherit" src="./img/team/demo/4.jpg" alt="">
-                <img class="wd-inherit" src="./img/team/demo/8.jpg" alt="">
-                <img class="wd-inherit" src="./img/team/demo/7.jpg" alt="">
-                <img class="wd-inherit" src="./img/team/demo/1.jpg" alt="">
-                <img class="wd-inherit" src="./img/team/demo/9.jpg" alt="">
-                <img class="wd-inherit" src="./img/team/demo/5.jpg" alt="">
-                <img class="wd-inherit" src="./img/team/demo/2.jpg" alt="">
-                <img class="wd-inherit" src="./img/team/demo/1.jpg" alt="">
-                <img class="wd-inherit" src="./img/team/demo/7.jpg" alt="">
-                <img class="wd-inherit" src="./img/team/demo/3.jpg" alt="">
-                <img class="wd-inherit" src="./img/team/demo/6.jpg" alt="">
-              </div>
-              <div class="col p-0">
-                <img class="wd-inherit" src="./img/team/demo/9.jpg" alt="">
-                <img class="wd-inherit" src="./img/team/demo/5.jpg" alt="">
-                <img class="wd-inherit" src="./img/team/demo/2.jpg" alt="">
-                <img class="wd-inherit" src="./img/team/demo/1.jpg" alt="">
-                <img class="wd-inherit" src="./img/team/demo/7.jpg" alt="">
-                <img class="wd-inherit" src="./img/team/demo/3.jpg" alt="">
-                <img class="wd-inherit" src="./img/team/demo/6.jpg" alt="">
-                <img class="wd-inherit" src="./img/team/demo/1.jpg" alt="">
-                <img class="wd-inherit" src="./img/team/demo/5.jpg" alt="">
-                <img class="wd-inherit" src="./img/team/demo/2.jpg" alt="">
-                <img class="wd-inherit" src="./img/team/demo/7.jpg" alt="">
-                <img class="wd-inherit" src="./img/team/demo/3.jpg" alt="">
-                <img class="wd-inherit" src="./img/team/demo/9.jpg" alt="">
-                <img class="wd-inherit" src="./img/team/demo/5.jpg" alt="">
-                <img class="wd-inherit" src="./img/team/demo/2.jpg" alt="">
-                <img class="wd-inherit" src="./img/team/demo/1.jpg" alt="">
-                <img class="wd-inherit" src="./img/team/demo/7.jpg" alt="">
-              </div>
-              <div class="col p-0">
-                <img class="wd-inherit" src="./img/team/demo/3.jpg" alt="">
-                <img class="wd-inherit" src="./img/team/demo/6.jpg" alt="">
-                <img class="wd-inherit" src="./img/team/demo/4.jpg" alt="">
-                <img class="wd-inherit" src="./img/team/demo/8.jpg" alt="">
-                <img class="wd-inherit" src="./img/team/demo/1.jpg" alt="">
-                <img class="wd-inherit" src="./img/team/demo/1.jpg" alt="">
-                <img class="wd-inherit" src="./img/team/demo/5.jpg" alt="">
-                <img class="wd-inherit" src="./img/team/demo/2.jpg" alt="">
-                <img class="wd-inherit" src="./img/team/demo/7.jpg" alt="">
-                <img class="wd-inherit" src="./img/team/demo/3.jpg" alt="">
-                <img class="wd-inherit" src="./img/team/demo/3.jpg" alt="">
-                <img class="wd-inherit" src="./img/team/demo/6.jpg" alt="">
-                <img class="wd-inherit" src="./img/team/demo/4.jpg" alt="">
-                <img class="wd-inherit" src="./img/team/demo/8.jpg" alt="">
-                <img class="wd-inherit" src="./img/team/demo/1.jpg" alt="">
-                <img class="wd-inherit" src="./img/team/demo/1.jpg" alt="">
-                <img class="wd-inherit" src="./img/team/demo/5.jpg" alt="">
-              </div>
+              <div class="h-inherit">
+                <img src='./img/homepage/duetone/1.png');" />
+              </div> -->
+                
+             
+      
+      
             </div>
           </div>
           <div id="formContainer" class="col-lg-6 bg-white rounded shadow pl-5 pr-5 pt-4 pb-4 px-3-sm join-form">
@@ -750,17 +599,25 @@
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
   <script src="./js/bootstrap.min.js"></script>
   <script src="./js/join_form.js"></script>
+  <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
   <script src="./js/main.js"></script>
 
   <script>
     var formContainerHeight = document.getElementById("formContainer").offsetHeight;
     console.log(formContainerHeight+"px !important");
-    document.getElementById("collage").style.height = formContainerHeight+"px";
 
 
     closePopup = () => {
       $("#selectionPopup").addClass("hide")
     }
+    $('.fade').slick({
+      dots: true,
+      infinite: true,
+      speed: 500,
+      fade: true,
+      cssEase: 'linear'
+    });
   </script>
 </body>
 </html>

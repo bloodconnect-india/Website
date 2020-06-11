@@ -21,10 +21,22 @@
       .main-slider>.slick-next::before{
         content: url('./svg/arrow-right-white.svg') !important;
       }
-      
+      .play{
+        position: absolute;
+        top:  calc(50% - 50px);
+        left: calc(50% - 20px);
+        border-radius: 35px;
+        border: 4px solid #fff;
+        height: 70px;
+        width: 70px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 24px;
+      }
     </style>
 </head>
-<body>
+<body >
     <!-- Navbar start here -->
     <!-- Just an image -->
     <!-- Navbar -->
@@ -80,7 +92,7 @@
             <a href="./resources.html" class="color-white b-white f-14 ">RESOURCES</a>
           </li>
           <li class="px-3">
-            <a href="./join-us.html" class="color-white b-white f-14 ">JOIN US</a>
+            <a href="./join-us-selection.html" class="color-white b-white f-14 ">JOIN US</a>
           </li>
     </ul>
       </div>
@@ -152,20 +164,21 @@
         </div>
 
 
-       </div>
+      </div>
        
     </div>
 
 
     <!-- Our Story in brief -->
-    <div class="container d-flex align-items-center justify-content-end img-left pb-5" >
+    <div class="container d-flex align-items-center justify-content-end img-left pb-5 mt-5" >
       <div class="row">
         <div class="col-lg-5 col-md-4 col-sm-12">
-          <img class="contain-img" src="./img/homepage/bloodhero.png" alt="">
+          <!-- <iframe class="wd-inherit hide" id="youtubeVideo" height="315" src="https://www.youtube.com/embed/zYVxjIPVCZQ?autoplay=1"  frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+          <canvas id="myChart" class="wd-inherit" ></canvas>
         </div>
       
       <div class="d-flex flex-column justify-content-center tagling col-lg-7 col-sm-12">
-        <h1 class="color-dark fw-4 f-30 mb-0 ">India has a shortage of 
+        <h1 class="color-dark  f-30 mb-0 ">India has a shortage of 
         <span class="f-30 color-main-dark ">2 Million Blood Units</span>
       </h1>
         <p class="color-dark-light mt-1">There is a requirement of 15 million units of blood annually. However, we are only able to collect 13 million units. We just need <span class="color-main fw-6">2% of India’s youth to donate regularly</span>  to address the complete demand.</p>
@@ -214,27 +227,24 @@
    </div>
 
     <!-- Impact Section -->
-    <div class="container-fluid mt-5 py-5 bg-main">
+    <div class="container-fluid mt-5 h-60 d-flex align-items-center justify-content-center py-5" style="background: url('./img/homepage/impact.png');background-size: cover;background-position: bottom;">
       <div class="container">
-        <div class="row bg-main py-5">
-          <div class="col-lg-3 bg-white pt-5 pb-5 text-center d-flex align-items-center bg-main">
+        <div class="row bg-none py-5">
+          <div class="col-lg-3 bg-white pt-5 pb-5 text-center d-flex align-items-center bg-none">
             <div class="mx-auto">
               <h2 class="f-40 fw-6 color-white mb-0">Our Impact</h2>
-              <h2 class=" ft-24 color-white mt-0 mt-n-1 uppercase text-left">Till 2020</h2>
+              <h2 class=" ft-24 color-white mt-0 mt-n-1  text-left">Till 2020</h2>
             </div>
           </div>
           <div class="col-lg-3  pt-3 pb-3 text-center d-flex align-items-center justify-content-center flex-column">
-            <p class="bold f-40 color-white mb-1"><i class="fa fa-pencil"></i></p>
-            <p class="bold f-30 color-white mb-0 mt-n-1">100,000+</p>
+            <p class="bold f-30 color-white mb-0 mt-n-1" id="units">100,000+</p>
             <p class="color-white fw-4 f-18">  Blood units collected</p>
           </div>
           <div class="col-lg-3  pt-3 pb-3 text-center d-flex align-items-center justify-content-center flex-column">
-            <p class="bold f-40 color-white mb-1"><i class="fa fa-pencil"></i></p>
             <p class="bold f-40 color-white mb-0 mt-n-1">300,000</p>
             <p class="color-white fw-6 f-30"> Lives Saved</p>
           </div>
           <div class="col-lg-3  pt-3 pb-3 text-center d-flex align-items-center justify-content-center flex-column">
-            <p class="bold f-40 color-white mb-1"><i class="fa fa-pencil"></i></p>
             <p class="bold f-30 color-white mb-0 mt-n-1">1,049</p>
             <p class="color-white fw-4 f-18"> Camps organized across India
             </p>
@@ -347,12 +357,29 @@
 
 
       <!-- Sponsor banner -->
-      <div class="d-flex flex-column m-0 px-2 pt-5 pb-5 text-center bg-main-light">
-        <h4 class="f-40 color-dark mx-auto pt-5">Help us make India Blood Sufficient</h4>
-        <p class="color-dark-light w-75-lg mx-auto text-center">
-          We started in IIT Delhi in 2010 and have now grown onto 10 cities. With your support we hope to further expand and help out blood banks across the country and make them blood sufficient. 
-        </p>
-        <button class="mx-auto shadow btn-main bg-white mt-3 mb-5"><a class="color-main fw-6" href="./sponsor.html">Sponsor Us</a></button>
+      <div class=" m-0 px-2 pt-5 pb-5 h-100 container-fluid bg-main-light">
+        <div class="container">
+          <div class="row justify-content-between">
+            <div class="col-lg-6">
+              <h4 class="f-40 color-dark   text-left pt-5">Help us make India Blood Sufficient</h4>
+            <p class="color-dark-light text-left">
+              We started in IIT Delhi in 2010 and have now grown onto 10 cities. With your support we hope to further expand and help out blood banks across the country and make them blood sufficient. 
+            </p>
+            <button class="shadow btn-main bg-white mt-3 mb-5"><a class="color-main fw-6" href="./sponsor.html">Sponsor Us</a></button>
+            </div>
+            <div class="col-lg-6 h-90">
+              <div class="hide d-flex justify-content-center align-items-center" id="youtubeVideoDiv">
+                <button class="close color-main f-20" onclick="closeVideo()"><i class="fa fa-times"></i></button>
+                <video class="wd-inherit h-90" style="width: 100% !important;" controls autoplay="false"  loop id="youtubeVideo"  >
+                  <source src="./img/homepage/Blood Donation- A Birthday Wish.mp4"  type="video/mp4">
+                </video>
+              </div>
+
+                  <img src="./img/homepage/video.png" id="video-img" class="wd-inherit h-80" alt="">
+                  <button class="play bg-none" id="play" onclick="playVideo()"><i class="color-white fa fa-play"></i></button>
+            </div>
+          </div>
+        </div>
       </div>
 
 
@@ -460,8 +487,8 @@
 <script src="./js/bootstrap.min.js"></script>
 <script src="./js/main.js"></script>
 <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-
-
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script>
+<script src="./js/countUp.min.js" type="module"></script>
 
 <script>
   $(".testimonial-slider").slick({
@@ -554,6 +581,53 @@ $(".media-slider").slick({
 
     }]
   });
+  $("#youtubeVideo").get(0).pause()
+  playVideo = () => {
+    $("#youtubeVideoDiv").addClass('show-flex')
+    $("#youtubeVideoDIv").removeClass('hide')
+    $("#youtubeVideo").get(0).play()
+  
+  }
+  closeVideo = () => {
+    $("#youtubeVideoDiv").addClass('hide')
+    $("#youtubeVideoDiv").removeClass('show-flex')
+    $("#youtubeVideo").get(0).pause()
+  }
+
+  $('body').keydown(function(e) {
+    if (e.keyCode == 27) {
+        // put your code here if any (that will run after Esc pressed).
+        closeVideo()
+    }    
+});
+var ctx = document.getElementById('myChart');
+let data = {
+    datasets: [{
+        data: [ 13, 2],
+        backgroundColor:["#980000","#fff"],
+        borderWidth:20,
+        color:["#D20003","#fff"]
+
+    }],
+
+    // These labels appear in the legend and in the tooltips when hovering different arcs
+    labels: [
+        '15  Millon',
+        '2 Million'
+    ]
+};
+
+var options =  {
+        tooltips:{
+          enabled:true
+        }
+    }
+var myPieChart = new Chart(ctx, {
+    type: 'doughnut',
+    data: data,
+    options: options
+});
+const countUp = new CountUp('units', 100000);
 </script>
 </body>
 </html>

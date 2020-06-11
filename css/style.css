@@ -216,8 +216,9 @@ button,input[type=submit]{
     background: none !important;
 }
 .hide{
-    display: none;
+    display: none !important;
 }
+
 .hide-lg{
     display: none !important;
 }
@@ -261,13 +262,16 @@ button.tag{
     color: #D20003 !important;
 }
 .color-main-light{
-    color: rgb(210, 0, 3,0.70) !important;
+    color: rgba(184, 108, 109, 0.7) !important;
 }
 .color-main-dark{
-    color: #990003;
+    color: #980000;
 }
 .bg-main-light{
-    background-color: #fdf7f9 !important;
+    background-color:#fae5e5 !important;
+}
+.bg-main-dark{
+    background-color: #980000;
 }
 .color-dark{
     color: #212121 !important;
@@ -347,6 +351,9 @@ hr.color-white{
 }
 .h-100{
     height: 100vh !important;
+}
+.h-120{
+    height: 120vh !important;
 }
 .h-90{
     height: 90vh !important;
@@ -1028,6 +1035,14 @@ button.selected{
 .ui-state-focus{
     background : #EB4221 !important;
     color: #fff !important;
+}
+#youtubeVideoDiv{
+    position: fixed;
+    width: 70% !important;
+    left: 15%;
+    height: 90%;
+    top: 5%;
+    z-index: 6;
 }
 /* Media properties  */
 
