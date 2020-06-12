@@ -22,20 +22,7 @@
       .main-slider>.slick-next::before{
         content: url('./svg/arrow-right-white.svg') !important;
       }
-      .testimonial-slider>.slick-prev::before{
-        content: url('./img/homepage/back.svg') !important;
       
-      }
-      .testimonial-slider>.slick-next::before{
-        content: url('./img/homepage/next.svg') !important;
-      
-      }
-      .testimonial-slider>.slick-prev{
-        left: -10px !important;
-      }
-      .testimonial-slider>.slick-next{
-        right: 20px !important;
-      }
       .testimonial-arrow{
         height: 60px;
         width: 60px;
@@ -511,34 +498,7 @@
     loop: true,  
     dots:true,
     // the magic
-    responsive: [{
-
-        breakpoint: 1024,
-        settings: {
-          slidesToShow: 3,
-          infinite: true
-        }
-
-      }, {
-
-        breakpoint: 900,
-        settings: {
-          slidesToShow: 2
-        }
-
-      }, {
-
-        breakpoint: 560,
-        settings: {
-          slidesToShow: 1
-        }
-
-        }, {
-
-        breakpoint: 280,
-        settings: "unslick" // destroys slick
-
-      }]
+    
   });
 
   $(".main-slider").slick({
