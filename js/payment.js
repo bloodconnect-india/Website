@@ -13,14 +13,38 @@ let amt = 0
 let contact = ""
 let siganture = ""
 let beatingHeart = '<i class="fa fa-heart color-main"></i>'
+
+let speed = 10
+startSlide = () => {
+    $('#fade-slide').slick({
+        dots: false,
+        autoplay: true,
+        infinite: true,
+        speed: speed,
+        fade: true,
+        cssEase: 'linear',
+        arrows: false,
+        pauseOnHover: false
+      });
+} 
+
+startSlide()
 showPayment = () => {
     $("#payment-details").show()
     $("#payment-details").removeClass('hide')
+    $("#fade-slide").slick('unslick')
+    speed = 500
+    startSlide()
 }
 hidePayment = () => {
     $("#payment-details").hide()
+    $("#fade-slide").slick('unslick')
+    speed = 10
+    startSlide()
 }
 hidePayment()
+
+
 initiatePayment = (e) => {
     e.preventDefault()
     name = $("#nameInput").val()
@@ -69,7 +93,7 @@ paymentSuccess = () => {
     let secondsLeft = 3;
     let x = setInterval( () => {
         if(secondsLeft <= 0)
-            window.location.reload()
+            window.location.href = "./organise-a-camp.html"
         $("#seconds").html(`${secondsLeft}s`)
         secondsLeft -=1;
     },1000)
