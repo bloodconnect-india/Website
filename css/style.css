@@ -394,7 +394,7 @@ hr.color-white{
 .h-70{
     height: 70vh !important;
 }
-.h-55{
+.h-55-lg{
     height: 55vh !important;
 }
 .h-60{
@@ -688,6 +688,9 @@ div.team-member>img{
     filter: blur(0px);
     transition: filter 0.37s ease;
     padding: 5px 5px;
+}
+div.team-member>.description{
+    max-width:170px !important
 }
 div.team-member:hover>img{
     filter: blur(2px);
@@ -1204,6 +1207,9 @@ button.selected{
     }
     .h-50-sm{
         height: 50vh !important;
+    }
+    .h-55-lg{
+        height: auto !important;
     }
     .h-100-sm{
         height: 100vh !important;

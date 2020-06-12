@@ -25,7 +25,7 @@
   <!-- Just an image -->
   <!-- Navbar -->
   <nav class="fixed z-6 d-flex justify-content-end hide-lg" id="mobile-nav">
-    <button class="menu  show-md color-dark-fixed h-max bg-none" id="mobile-nav-toggler"
+    <button class="menu  show-md color-white h-max bg-none" id="mobile-nav-toggler"
       onclick="toggleMobileNav()"><i class="fa fa-bars f-20"></i></button>
     <ul class="mobile-nav hide bg-white" id="mobile-nav-list">
       <li class="bg-main ">
@@ -514,13 +514,15 @@
 let offSet = 119
     function func1() {
       
-      let footerDistace = footer.offsetTop - window.scrollY
+      if(window.innerWidth > 480) {
+        let footerDistace = footer.offsetTop - window.scrollY
       if (window.pageYOffset >= 400 && footerDistace > 175 ) {
           aboutNav.classList.add('about-nav')
           aboutNav.style.left = offSet+"px"
       } else {
           aboutNav.classList.remove('about-nav')
           offSet = aboutNav.offsetLeft
+      }
       }
     }
     $('.carousel').carousel()
