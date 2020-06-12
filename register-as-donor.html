@@ -18,7 +18,7 @@
   <!-- Just an image -->
   <!-- Navbar -->
   <nav class="fixed z-6 d-flex justify-content-end hide-lg" id="mobile-nav">
-    <button class="menu  show-md color-dark-fixed h-max bg-none" id="mobile-nav-toggler" onclick="toggleMobileNav()"><i
+    <button class="menu  show-md color-white h-max bg-none" id="mobile-nav-toggler" onclick="toggleMobileNav()"><i
         class="fa fa-bars f-20"></i></button>
     <ul class="mobile-nav hide bg-white" id="mobile-nav-list">
       <li class="bg-main ">
@@ -399,22 +399,22 @@
         </a>
         <ul class="footer-list mb-0 d-flex justify-content-start align-items-center pr-4 col-lg-4 col-sm-12">
           <li class="footer-item bg-white ">
-            <a href="#" class="footer-link  color-main"><i class="fa fa-facebook-f"></i></a>
+            <a href="https://facebook.com/BloodConnect" class="footer-link  color-main"><i class="fa fa-facebook-f"></i></a>
           </li>
           <li class="footer-item bg-white ">
-            <a href="#" class="footer-link  color-main"><i class="fa fa-instagram"></i></a>
+            <a href="https://instagram.com/bloodconnectorg?igshid=umn7a6sbwt7h" class="footer-link  color-main"><i class="fa fa-instagram"></i></a>
           </li>
           <li class="footer-item bg-white ">
-            <a href="#" class="footer-link  color-main"><i class="fa fa-twitter"></i></a>
+            <a href="https://twitter.com/bloodconnectorg" class="footer-link  color-main"><i class="fa fa-twitter"></i></a>
           </li>
           <li class="footer-item bg-white ">
-            <a href="#" class="footer-link  color-main"><i class="fa fa-youtube"></i></a>
+            <a href="https://www.youtube.com/channel/UCtU8tOeU1IvLZTUHxHuL2LQ" class="footer-link  color-main"><i class="fa fa-youtube"></i></a>
           </li>
           <li class="footer-item bg-white ">
-            <a href="#" class="footer-link  color-main"><i class="fa fa-linkedin"></i></a>
+            <a href="https://www.linkedin.com/company/bloodconnect-india" class="footer-link  color-main"><i class="fa fa-linkedin"></i></a>
           </li>
         </ul>
-      </div>
+    </div>
       <hr class="color-dark w-100">
       <div class="row">
         <div class="col-lg-4 col-sm-12">
@@ -500,6 +500,7 @@
     }
     registerDonor = (e) => {
       e.preventDefault()
+      $("#submit-request-button").addClass("loading-start")
       let name = $("#name").val()
       let email = $("#email").val()
       let phone_number = $("#phone_number").val()
