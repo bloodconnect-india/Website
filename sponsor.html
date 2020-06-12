@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     
+  <link rel="stylesheet" type="text/css" href="./css/slick/slick.css" />
+  <link rel="stylesheet" type="text/css" href="./css/slick/slick-theme.css" />
     <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
     <title>Sponsor Us | BloodConnect</title>
     <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon">
@@ -245,44 +247,41 @@
     <!-- Payment popup -->
     <div class="payment-details pb-5 bg-white  z-100 shadow  hide" id="payment-details">
       <div class="row justify-content-end">
-        <div class="col-lg-6 fixed hide-sm px-4" style="left: 0px;">
-            <div class="row collage h-100">
-              <div class="col p-0">
-                <img class="wd-inherit" src="./img/sponsor-us/collage/1.jpg" alt="">
-                <img class="wd-inherit" src="./img/sponsor-us/collage/5.jpg" alt="">
-                <img class="wd-inherit" src="./img/sponsor-us/collage/2.jpg" alt="">
-                <img class="wd-inherit" src="./img/sponsor-us/collage/7.jpg" alt="">
-                <img class="wd-inherit" src="./img/sponsor-us/collage/4.jpg" alt="">
-              </div>
-              <div class="col p-0">
-                <img class="wd-inherit" src="./img/sponsor-us/collage/3.jpg" alt="">
-                <img class="wd-inherit" src="./img/sponsor-us/collage/6.jpg" alt="">
-                <img class="wd-inherit" src="./img/sponsor-us/collage/4.jpg" alt="">
-                <img class="wd-inherit" src="./img/sponsor-us/collage/8.jpg" alt="">
-                <img class="wd-inherit" src="./img/sponsor-us/collage/7.jpg" alt="">
-              </div>
-              <div class="col p-0">
-                <img class="wd-inherit" src="./img/sponsor-us/collage/9.jpg" alt="">
-                <img class="wd-inherit" src="./img/sponsor-us/collage/5.jpg" alt="">
-                <img class="wd-inherit" src="./img/sponsor-us/collage/2.jpg" alt="">
-                <img class="wd-inherit" src="./img/sponsor-us/collage/1.jpg" alt="">
-                <img class="wd-inherit" src="./img/sponsor-us/collage/7.jpg" alt="">
-              </div>
-              <div class="col p-0">
-                <img class="wd-inherit" src="./img/sponsor-us/collage/1.jpg" alt="">
-                <img class="wd-inherit" src="./img/sponsor-us/collage/5.jpg" alt="">
-                <img class="wd-inherit" src="./img/sponsor-us/collage/2.jpg" alt="">
-                <img class="wd-inherit" src="./img/sponsor-us/collage/7.jpg" alt="">
-                <img class="wd-inherit" src="./img/sponsor-us/collage/3.jpg" alt="">
-              </div>
-              <div class="col p-0">
-                <img class="wd-inherit" src="./img/sponsor-us/collage/3.jpg" alt="">
-                <img class="wd-inherit" src="./img/sponsor-us/collage/6.jpg" alt="">
-                <img class="wd-inherit" src="./img/sponsor-us/collage/4.jpg" alt="">
-                <img class="wd-inherit" src="./img/sponsor-us/collage/8.jpg" alt="">
-                <img class="wd-inherit" src="./img/sponsor-us/collage/1.jpg" alt="">
-              </div>
+        <div class="col-lg-6 fixed hide-sm px-0" style="left: 0px;">
+          <div id="fade-slide" class="wd-inherit" data-slick='{"slidesToShow": 1, "slidesToScroll": 1}'>
+
+            <div>
+              <img class="wd-inherit color-hover" style="height: 600px;" src="./img/sponsor-us/slide/normal.JPG" alt="">
             </div>
+
+            <div>
+              <img class="wd-inherit color-hover" style="height: 600px;" src="./img/sponsor-us/slide/normal1.jpg" alt="">
+            </div>
+
+            <div>
+              <img class="wd-inherit  color-hover" style="height: 600px;" src="./img/sponsor-us/slide/normal2.JPG" alt="">
+            </div>
+
+            <div>
+              <img class="wd-inherit color-hover" style="height: 600px;" src="./img/sponsor-us/slide/normal3.JPG" alt="">
+            </div>
+            <!-- Duotone -->
+            <div>
+              <img class="wd-inherit " style="height: 600px;" src="./img/sponsor-us/slide/duotone.png" alt="">
+            </div>
+
+            <div>
+              <img class="wd-inherit " style="height: 600px;" src="./img/sponsor-us/slide/duotone1.png" alt="">
+            </div>
+
+            <div>
+              <img class="wd-inherit  " style="height: 600px;" src="./img/sponsor-us/slide/duotone2.png" alt="">
+            </div>
+
+            <div>
+              <img class="wd-inherit " style="height: 600px;" src="./img/sponsor-us/slide/duotone3.png" alt="">
+            </div>
+          </div>
         </div>
         <div class="col-lg-6 h-max bg-white  p-2 pl-4">
           <h4 class="f-30 color-main">Payment Details</h4>
@@ -414,6 +413,8 @@
     <script src="./js/bootstrap.min.js"></script>
     <script src="./js/main.js"> </script>
     <script src="./js/payment.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
 
     <script>
 $("#youtubeVideo").get(0).pause()
@@ -435,6 +436,16 @@ $("#youtubeVideo").get(0).pause()
         closeVideo()
     }    
 });      
+$('#fade-slide').slick({
+      dots: false,
+      autoplay: true,
+      infinite: true,
+      speed: 500,
+      fade: true,
+      cssEase: 'linear',
+      arrows: false,
+      pauseOnHover: false
+    });
     </script>
 </body>
 </html>
