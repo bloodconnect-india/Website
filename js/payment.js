@@ -12,7 +12,7 @@ let email = ""
 let amt = 0
 let contact = ""
 let siganture = ""
-let beatingHeart = '<svg width="50" height="50" viewBox="0 0 200 200"><g transform="translate(100 100)"><path transform="translate(-50 -50)" fill="#EB2441" d="M92.71,7.27L92.71,7.27c-9.71-9.69-25.46-9.69-35.18,0L50,14.79l-7.54-7.52C32.75-2.42,17-2.42,7.29,7.27v0 c-9.71,9.69-9.71,25.41,0,35.1L50,85l42.71-42.63C102.43,32.68,102.43,16.96,92.71,7.27z"></path><animateTransform attributeName="transform" type="scale" values="1; 1.5; 1.25; 1.5; 1.5; 1;" dur="1s" repeatCount="2" additive="sum"></animateTransform></g></svg>'
+let beatingHeart = '<i class="fa fa-heart color-main"></i>'
 showPayment = () => {
     $("#payment-details").show()
     $("#payment-details").removeClass('hide')
@@ -82,7 +82,7 @@ amtSelected = (e) => {
     e.target.classList.add('selected')
     amt = e.target.textContent
     $("#amtInput").val(amt)
-    $("#amtImpact").html(`You are helping us save ${amt/10} lives ${beatingHeart}`)
+    $("#amtImpact").html(`You are helping us save ${amt/50} lives ${beatingHeart}`)
     //$("#amtImpact").removeClass('w-0')
     $("#amtImpact").addClass('w-100')
     requirePanCard(e)

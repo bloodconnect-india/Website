@@ -1,89 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/bootstrap.min.css">
-    <link rel="stylesheet" href="./css/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap" rel="stylesheet"> 
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    
-    <title>Contact Us</title>
-    <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <title>Contact Us</title>
+  <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon">
 </head>
+
 <body>
 
-    <!-- Navbar start here -->
-    <!-- Just an image -->
-    <nav class="fixed z-6 d-flex justify-content-end hide-lg" id="mobile-nav">
-      <button class="menu  show-md color-white h-max bg-none" id="mobile-nav-toggler" onclick="toggleMobileNav()"><i
-          class="fa fa-bars f-20"></i></button>
-      <ul class="mobile-nav hide bg-white" id="mobile-nav-list">
-        <li class="bg-main ">
-          <a class="nav-link color-white fw-4 " href="./raise-a-request.html">RAISE A REQUEST</a>
+  <!-- Navbar start here -->
+  <!-- Just an image -->
+  <nav class="fixed z-6 d-flex justify-content-end hide-lg" id="mobile-nav">
+    <button class="menu  show-md color-white h-max bg-none" id="mobile-nav-toggler" onclick="toggleMobileNav()"><i
+        class="fa fa-bars f-20"></i></button>
+    <ul class="mobile-nav hide bg-white" id="mobile-nav-list">
+      <li class="bg-main ">
+        <a class="nav-link color-white fw-4 " href="./raise-a-request.html">RAISE A REQUEST</a>
+      </li>
+      <li class="bg-main ">
+        <a class="nav-link color-white fw-4 " href="./organize-a-camp.html">ORGANIZE A CAMP</a>
+      </li>
+      <li class="bg-main ">
+        <a class="nav-link color-white fw-4 " href="./sponsor.html">DONATE NOW</a>
+      </li>
+      <li class="bg-main ">
+        <a class="nav-link color-white fw-4 " href="./join-us-selection.html">JOIN US</a>
+      </li>
+      <li class="bg-white">
+        <a href="./index.html" class="color-dark f-14 fw-4 nav-link">HOME</a>
+      </li>
+      <li class="bg-white">
+        <a href="./about-us.html" class="color-dark f-14 fw-4 nav-link">ABOUT US</a>
+      </li>
+      <li class="bg-white">
+        <a href="./our-team.html" class="color-dark f-14 fw-4 nav-link">OUR TEAM</a>
+      </li>
+      <li class="bg-white">
+        <a href="./resources.html" class="color-dark f-14 fw-4 nav-link">RESOURCES</a>
+      </li>
+      <li class="bg-white">
+        <a href="./contact-us.html" class="color-dark f-14 fw-4 nav-link">CONTACT US</a>
+      </li>
+    </ul>
+  </nav>
+  <nav class="navbar justify-content-center-sm justify-content-between pb-0 sticky-sm z-5  bg-main-dark " id="navbar">
+    <div class="d-flex flex-row align-items-center justify-content-end">
+      <a class="navbar-brand" href="./index.html">
+        <img src="./img/homepage/Logo.png" height="35" alt="BloodConnect Logo">
+      </a>
+      <ul class="navbar-nav flex-row  align-items-end hide-md" style="border-bottom: none !important;">
+
+        <li class="px-3">
+          <a href="./about-us.html" class="color-white b-white f-14 ">ABOUT US</a>
         </li>
-        <li class="bg-main ">
-          <a class="nav-link color-white fw-4 " href="./organize-a-camp.html">ORGANIZE A CAMP</a>
+        <li class="px-3">
+          <a href="./raise-a-request.html" class="color-white b-white f-14 ">RAISE A REQUEST</a>
         </li>
-        <li class="bg-main ">
-          <a class="nav-link color-white fw-4 " href="./sponsor.html">DONATE NOW</a>
+        <li class="px-3">
+          <a href="./organize-a-camp.html" class="color-white b-white f-14 ">ORGANIZE A CAMP</a>
         </li>
-        <li class="bg-main ">
-          <a class="nav-link color-white fw-4 " href="./join-us-selection.html">JOIN US</a>
+        <li class="px-3">
+          <a href="./resources.html" class="color-white b-white f-14 ">RESOURCES</a>
         </li>
-        <li class="bg-white">
-          <a href="./index.html" class="color-dark f-14 fw-4 nav-link">HOME</a>
-        </li>
-        <li class="bg-white">
-          <a href="./about-us.html" class="color-dark f-14 fw-4 nav-link">ABOUT US</a>
-        </li>
-        <li class="bg-white">
-          <a href="./our-team.html" class="color-dark f-14 fw-4 nav-link">OUR TEAM</a>
-        </li>
-        <li class="bg-white">
-          <a href="./resources.html" class="color-dark f-14 fw-4 nav-link">RESOURCES</a>
-        </li>
-        <li class="bg-white">
-          <a href="./contact-us.html" class="color-dark f-14 fw-4 nav-link">CONTACT US</a>
+        <li class="px-3">
+          <a href="./join-us-selection.html" class="color-white b-white f-14 ">JOIN US</a>
         </li>
       </ul>
-    </nav>
-    <nav class="navbar justify-content-center-sm justify-content-between pb-0 sticky-sm z-5  bg-main-dark " id="navbar">
-      <div class="d-flex flex-row align-items-center justify-content-end">
-        <a class="navbar-brand" href="./index.html">
-          <img src="./img/homepage/Logo.png" height="35" alt="BloodConnect Logo">
-        </a>
-        <ul class="navbar-nav flex-row  align-items-end hide-md" style="border-bottom: none !important;">
-  
-          <li class="px-3">
-            <a href="./about-us.html" class="color-white b-white f-14 ">ABOUT US</a>
-          </li>
-          <li class="px-3">
-            <a href="./raise-a-request.html" class="color-white b-white f-14 ">RAISE A REQUEST</a>
-          </li>
-          <li class="px-3">
-            <a href="./organize-a-camp.html" class="color-white b-white f-14 ">ORGANIZE A CAMP</a>
-          </li>
-          <li class="px-3">
-            <a href="./resources.html" class="color-white b-white f-14 ">RESOURCES</a>
-          </li>
-          <li class="px-3">
-            <a href="./join-us-selection.html" class="color-white b-white f-14 ">JOIN US</a>
-          </li>
-        </ul>
-      </div>
-      <div class="d-flex flex-row align-items-center hide-md">
-        <a href="./contact-us.html" class="f-14 color-white mr-3 uppercase">Contact Us</a>
-        <a href="./sponsor.html" class="f-14 sponsor-link-button color-dark fw-6 px-3 py-2 uppercase">Support us</a>
-      </div>
-    </nav>
-    <nav class="navbar flex-column-sm align-items-start justify-content-between pb-0  sticky-navbar z-5 bg-white pb-2 hide" id="navbar-sticky">
-      <div class="d-flex flex-row align-items-center justify-content-end">
-        <a class="navbar-brand" href="./index.html">
-          <img src="./img/logo.png"   height="35" alt="BloodConnect Logo">
+    </div>
+    <div class="d-flex flex-row align-items-center hide-md">
+      <a href="./contact-us.html" class="f-14 color-white mr-3 uppercase">Contact Us</a>
+      <a href="./sponsor.html" class="f-14 sponsor-link-button color-dark fw-6 px-3 py-2 uppercase">Support us</a>
+    </div>
+  </nav>
+  <nav
+    class="navbar flex-column-sm align-items-start justify-content-between pb-0  sticky-navbar z-5 bg-white pb-2 hide"
+    id="navbar-sticky">
+    <div class="d-flex flex-row align-items-center justify-content-end">
+      <a class="navbar-brand" href="./index.html">
+        <img src="./img/logo.png" height="35" alt="BloodConnect Logo">
       </a>
-      <ul class="navbar-nav flex-row hide-md align-items-end"  style="border-bottom: none !important;">
- 
+      <ul class="navbar-nav flex-row hide-md align-items-end" style="border-bottom: none !important;">
+
         <li class="px-3">
           <a href="./about-us.html" class="color-dark b-dark f-14 ">ABOUT US</a>
         </li>
@@ -99,34 +103,38 @@
         <li class="px-3">
           <a href="./join-us-selection.html" class="color-dark b-dark f-14 ">JOIN US</a>
         </li>
-  </ul>
-      </div>
-      <div class="d-flex flex-row align-items-center">
-        <a href="./sponsor.html" class="f-14 sponsor-link-button color-dark fw-6 px-3 py-2 uppercase bg-main color-white">Support us</a>
-      </div>
+      </ul>
+    </div>
+    <div class="d-flex flex-row align-items-center">
+      <a href="./sponsor.html"
+        class="f-14 sponsor-link-button color-dark fw-6 px-3 py-2 uppercase bg-main color-white">Support us</a>
+    </div>
   </nav>
-    <!-- Contact form-->
-    <div class="container-fluid pd-2 pb-2  mb-4 content  bg-main-dark pt-5-sm">
-     <div class="container">
+  <!-- Contact form-->
+  <div class="container-fluid pd-2 pb-2  mb-4 content  bg-main-dark pt-5-sm">
+    <div class="container">
 
       <div class="row pt-5 mb-3 m-0">
         <div class="col-lg-6 col-sm-12 col-md-12 pt-6">
-          <!-- <img class="contain-img" src="./img/rocket.svg" alt="blood drops"> -->
-          <h4 class="text-center f-40 color-white">F.A.Q.'s</h4>
           <div class="accordion" id="accordionExample">
             <div class="card bg-white b1-light mb-2">
               <div class="card-header bg-none" id="headingOne">
                 <h2 class="mb-0 raise-a-request-faq">
-                  <p class="d-flex mb-0 justify-content-between align-items-center bg-none text-left hand f-16"  data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                    Why is blood donation required ?
+                  <p class="d-flex mb-0 justify-content-between align-items-center bg-none text-left hand f-16"
+                    data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    Is BloodConnect a registered blood bank?
                     <i class="fa fa-angle-right f-30"></i>
                   </p>
                 </h2>
               </div>
-          
-              <div id="collapseOne" class="collapse show bg-white b-0" aria-labelledby="headingOne" data-parent="#accordionExample">
+
+              <div id="collapseOne" class="collapse show bg-white b-0" aria-labelledby="headingOne"
+                data-parent="#accordionExample">
                 <div class="card-body color-dark-light bg-white">
-                  Blood is a precious fluid in our body, and so far blood cannot be manufactured in laboratories. Blood can only be obtained from individuals (human beings) who donate blood. Blood can be stored only for limited time, therefore there is a need for regular blood donation to ensure that no life is lost due to unavailability of the safe blood.
+                  No, BloodConnect is not a blood bank. We just help keep the government recognized blood banks stocked
+                  with blood. We do not collect the blood and keep it with us. We enable these blood banks to have
+                  sufficient blood via our camps, helpline. Think of us as the layer connecting donors with blood banks
+                  in a more streamlined manner.
                 </div>
               </div>
             </div>
@@ -134,16 +142,22 @@
             <div class="card bg-white b1-light mb-2">
               <div class="card-header bg-none" id="headingTwo">
                 <h2 class="mb-0 raise-a-request-faq">
-                  <p class="collapsed mb-0 d-flex justify-content-between align-items-center bg-none text-left hand f-16"  data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
-                    Is it safe to donate blood / platelets?
+                  <p class="collapsed mb-0 d-flex justify-content-between align-items-center bg-none text-left hand f-16"
+                    data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+                    Can I reach the BloodConnect office and help out?
                     <i class="fa fa-angle-right f-30"></i>
                   </p>
                 </h2>
               </div>
-          
-              <div id="collapseTwo" class="collapse  bg-white b-0" aria-labelledby="headingTwo" data-parent="#accordionExample">
+
+              <div id="collapseTwo" class="collapse  bg-white b-0" aria-labelledby="headingTwo"
+                data-parent="#accordionExample">
                 <div class="card-body color-dark-light bg-white">
-                  Yes, it has been carried out for years now. It is performed in a highly-controlled, sterile environment by professionally trained staff. All the equipments are sterilized and equipment that is in contact with the donor's blood is used only once, eliminating the possibility of any infection during transmission.
+                  While we appreciate the gesture here, honestly we do not have an office. Our volunteers work from
+                  their respective homes / offices and we generally conduct our meetings in the common areas in an
+                  office / college. Our corporate, college partners help us with these for free and we can do all our
+                  regular catch ups there. The registered address just has a store of all our material and our
+                  documents. :) You should reach out via this form, we can certainly take forward then.
                 </div>
               </div>
             </div>
@@ -151,177 +165,213 @@
             <div class="card bg-white b1-light mb-2">
               <div class="card-header bg-none" id="headingThree">
                 <h2 class="mb-0 raise-a-request-faq">
-                  <p class="collapsed mb-0 d-flex justify-content-between align-items-center bg-none text-left hand f-16"  data-toggle="collapse" data-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
-                    What is the eligibility criteria?
+                  <p class="collapsed mb-0 d-flex justify-content-between align-items-center bg-none text-left hand f-16"
+                    data-toggle="collapse" data-target="#collapseThree" aria-expanded="true"
+                    aria-controls="collapseThree">
+                    How many employees does BloodConnect have?
                     <i class="fa fa-angle-right f-30"></i>
                   </p>
                 </h2>
               </div>
-          
-              <div id="collapseThree" class="collapse  bg-white b-0" aria-labelledby="headingThree" data-parent="#accordionExample">
+
+              <div id="collapseThree" class="collapse  bg-white b-0" aria-labelledby="headingThree"
+                data-parent="#accordionExample">
                 <div class="card-body color-dark-light bg-white">
-                  Any healthy adult (above 45 kgs), between age 18 - 65 years, mentally alert and physically fit, can donate blood. You can donate blood every 3 months while for platelets that frequency is even higher (once in roughly 20 days). There are some additional criteria related to who can donate blood (specific to diseases, etc)- we recommend you check them in the resources section.  </div>
+                  Zero. We are completely volunteer driven and have no full time employees
+                </div>
               </div>
             </div>
 
             <div class="card bg-white b1-light mb-2">
               <div class="card-header bg-none" id="headingFour">
                 <h2 class="mb-0 raise-a-request-faq">
-                  <p class="collapsed mb-0 d-flex justify-content-between align-items-center bg-none text-left hand f-16"  data-toggle="collapse" data-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
-                    Would your health deteriorate post donation?
+                  <p class="collapsed mb-0 d-flex justify-content-between align-items-center bg-none text-left hand f-16"
+                    data-toggle="collapse" data-target="#collapseFour" aria-expanded="true"
+                    aria-controls="collapseFour">
+                    Where can you find FAQs about blood donation?
                     <i class="fa fa-angle-right f-30"></i>
                   </p>
                 </h2>
               </div>
-          
-              <div id="collapseFour" class="collapse  bg-white b-0" aria-labelledby="headingFour" data-parent="#accordionExample">
+
+              <div id="collapseFour" class="collapse  bg-white b-0" aria-labelledby="headingFour"
+                data-parent="#accordionExample">
                 <div class="card-body color-dark-light bg-white">
-                  No, you have nothing to worry. We just recommend that you drink enough liquids post donation to compensate for the blood donated. Donating blood does not interfere with your ability to perform physically or mentally. However, it is adviced you avoid heavy lifting or strenuous workouts for the rest of the day after the donation. You need to ensure the liquid levels come back to normalcy (roughly takes a day) before starting with those.
+                  You will certainly find some of the FAQs on the page: Join Us→ Register As a Donor. We have tried to
+                  cover the concerns there. For more, please do check the Resources tab
                 </div>
               </div>
             </div>
-            
+
             <div class="card bg-white b1-light mb-2">
               <div class="card-header bg-none" id="headingFive">
                 <h2 class="mb-0 raise-a-request-faq">
-                  <p class="collapsed mb-0 d-flex justify-content-between align-items-center bg-none text-left hand f-16"  data-toggle="collapse" data-target="#collapseFive" aria-expanded="true" aria-controls="collapseFive">
-                    Is BloodConnect a registered blood bank? 
+                  <p class="collapsed mb-0 d-flex justify-content-between align-items-center bg-none text-left hand f-16"
+                    data-toggle="collapse" data-target="#collapseFive" aria-expanded="true"
+                    aria-controls="collapseFive">
+                    Does BloodConnect work on anything else outside blood donation?
                     <i class="fa fa-angle-right f-30"></i>
                   </p>
                 </h2>
               </div>
-          
-              <div id="collapseFive" class="collapse  bg-white b-0" aria-labelledby="headingFive" data-parent="#accordionExample">
+
+              <div id="collapseFive" class="collapse  bg-white b-0" aria-labelledby="headingFive"
+                data-parent="#accordionExample">
                 <div class="card-body color-dark-light bg-white">
-                  No, BloodConnect is not a blood bank. We just help keep the government recognized blood banks stocked with blood. We do not collect the blood and keep it with us. We enable these blood banks to have sufficient blood via our camps, helpline. Think of us as the layer connecting donors with blood banks in a more streamlined manner.
+                  Yes, we do work on additional fields related to blood donation: Thalassemia, plasma requirements, etc.
+                  Our core focus remains blood donation though. We believe that is a big problem to solve
                 </div>
-            </div>
-          </div>
-
-          <div class="card bg-white b1-light mb-2">
-            <div class="card-header bg-none" id="headingSix">
-              <h2 class="mb-0 raise-a-request-faq">
-                <p class="collapsed mb-0 d-flex justify-content-between align-items-center bg-none text-left hand f-16"  data-toggle="collapse" data-target="#collapseSix" aria-expanded="true" aria-controls="collapseSix">
-                  Can I reach the BloodConnect office and help out?
-                  <i class="fa fa-angle-right f-30"></i>
-                </p>
-              </h2>
-            </div>
-        
-            <div id="collapseSix" class="collapse  bg-white b-0" aria-labelledby="headingSix" data-parent="#accordionExample">
-              <div class="card-body color-dark-light bg-white">
-                While we appreciate the gesture here, honestly we do not have an office. Our volunteers work from their respective homes / offices and we generally conduct our meetings in the common areas in an office / college. Our corporate, college partners help us with these for free and we can do all our regular catch ups there. The registered address just has a store of all our material and our documents. :) You should reach out via this form, we can certainly take forward then.
               </div>
-          </div>
-        </div>
+            </div>
 
-        
+            <div class="card bg-white b1-light mb-2">
+              <div class="card-header bg-none" id="headingSix">
+                <h2 class="mb-0 raise-a-request-faq">
+                  <p class="collapsed mb-0 d-flex justify-content-between align-items-center bg-none text-left hand f-16"
+                    data-toggle="collapse" data-target="#collapseSix" aria-expanded="true" aria-controls="collapseSix">
+                    Which all cities is BloodConnect present?
+                    <i class="fa fa-angle-right f-30"></i>
+                  </p>
+                </h2>
+              </div>
+
+              <div id="collapseSix" class="collapse  bg-white b-0" aria-labelledby="headingSix"
+                data-parent="#accordionExample">
+                <div class="card-body color-dark-light bg-white">
+                  We are present in various cities across India. The cities mentioned in the form, precisely cover the
+                  exact number. However we do help in other cities via our support team who can guide people on call and
+                  over mails. Our actual volunteer base though is limited by the city options in the form.
+                </div>
+              </div>
+            </div>
+
+
           </div>
         </div>
         <div class="col-lg-6 col-sm-12 col-md-12 px-0">
           <div class="container bg-white  pt-4 pb-4 shadow z-2 rounded pl-5 pr-5 px-3-sm ">
-              <h4 class="ft-24 text-center color-dark mb-0 uppercase">Drop us a message</h4>
-              <p class="color-grey mb-3 text-center">Fill this and we will be in touch with you soon</p>
-              <form class="contact-form " action="">
-                <div class="form-group mb-4">
-                  <label class="m-0  color-dark" for="name">Your Name</label>
-                  <input type="text" class="form-control" id="name" placeholder="Your Name" required>
-                </div>
-                <div class="form-group mb-4">
-                  <label class="m-0  color-dark" for="email">Email Address</label>
-                  <input  type="email" class="form-control" placeholder="Email Address" id="email" aria-describedby="emailHelp" required>
-                  <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
-                </div>
-                <div class="form-group mb-4">
-                  <label class="m-0  color-dark" for="message">Message</label>
-                  <textarea name="message" id="message" cols="20" rows="3" placeholder="Enter Your Message Here"></textarea>
-                </div>
+            <h4 class="ft-24 text-center color-dark mb-0 uppercase">Drop us a message</h4>
+            <p class="color-grey mb-3 text-center">Fill this and we will be in touch with you soon</p>
+            <form class="contact-form " action="">
+              <div class="form-group mb-4">
+                <label class="m-0  color-dark" for="name">Your Name</label>
+                <input type="text" class="form-control" id="name" placeholder="Your Name" required>
+              </div>
+              <div class="form-group mb-4">
+                <label class="m-0  color-dark" for="email">Email Address</label>
+                <input type="email" class="form-control" placeholder="Email Address" id="email"
+                  aria-describedby="emailHelp" required>
+                <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone
+                  else.</small>
+              </div>
+              <div class="form-group mb-4">
+                <label class="m-0  color-dark" for="message">Message</label>
+                <textarea name="message" id="message" cols="20" rows="3"
+                  placeholder="Enter Your Message Here"></textarea>
+              </div>
               <input class="btn-main bg-main mx-auto shadow" type="submit" value="Submit">
-              </form>
+            </form>
           </div>
-        </div>
-      </div> 
-     </div>
-    </div>
-      
-    
-    <!-- Footer -->
-    <div class="container-fluid  pt-5">
-      <div class="container d-flex flex-column ">
-
-        <hr class="color-dark w-100">
-        <div class="d-flex justify-content-between align-items-center flex-column-sm">
-            <a href="./index.html">
-              <img src="./img/logo.png" alt="">
-            </a>
-            <ul class="footer-list mb-0 d-flex justify-content-start align-items-center pr-4 col-lg-4 col-sm-12">
-              <li class="footer-item bg-white ">
-                <a href="#" class="footer-link  color-main"><i class="fa fa-facebook-f"></i></a>
-              </li>
-              <li class="footer-item bg-white ">
-                <a href="#" class="footer-link  color-main"><i class="fa fa-instagram"></i></a>
-              </li>
-              <li class="footer-item bg-white ">
-                <a href="#" class="footer-link  color-main"><i class="fa fa-twitter"></i></a>
-              </li>
-              <li class="footer-item bg-white ">
-                <a href="#" class="footer-link  color-main"><i class="fa fa-youtube"></i></a>
-              </li>
-              <li class="footer-item bg-white ">
-                <a href="#" class="footer-link  color-main"><i class="fa fa-linkedin"></i></a>
-              </li>
-            </ul>
-        </div>
-        <hr class="color-dark w-100">
-        <div class="row">
-          <div class="col-lg-4 col-sm-12">
-            <p class="color-dark bold mb-2">NAVIGATION</p>
-            <ul class="footer-list pl-0">
-              <li class=" mr-4 compact"><a class="color-dark f-14" href="./index.html">Home</a></li>
-              <li class=" mr-4 compact"><a class="color-dark f-14" href="./about-us.html">About us</a></li>
-              <li class=" mr-4 compact"><a class="color-dark f-14" href="./our-team.html">Our team</a></li>
-              <li class=" mr-4 compact"><a class="color-dark f-14" href="./sponsor.html">Donate now</a></li>
-              <li class=" mr-4 compact"><a class="color-dark f-14" href="./join-us-selection.html">Join us</a></li>
-              <li class=" mr-4 compact"><a class="color-dark f-14" href="./contact-us.html">Contact us</a></li>
-            </ul>
-          </div>
-          <div class="col-lg-4 col-sm-12">
-            <p class="color-dark bold mb-2">RAISE A REQUEST</p>
-            <ul class="footer-list pl-0">
-              <li class=" mr-4 compact"><a class="color-dark f-14" href="./raise-a-request.html#city_region=Delhi">Raise a request in Delhi-NCR</a></li>
-              <li class=" mr-4 compact"><a class="color-dark f-14" href="/raise-a-request.html#city_region=Kanpur">Raise a request in Kanpur</a></li>
-              <li class=" mr-4 compact"><a class="color-dark f-14" href="./raise-a-request.html#city_region=Agra">Raise a request in Agra</a></li>
-              <li class=" mr-4 compact"><a class="color-dark f-14" href="./raise-a-request.html#city_region=Lucknow">Raise a request in Lucknow</a></li>
-              <li class=" mr-4 compact"><a class="color-dark f-14" href="./raise-a-request.html#city_region=Bhubaneswar">Raise a request in Bhubaneswar</a></li>
-              <li class=" mr-4 compact"><a class="color-dark f-14" href="./raise-a-request.html#city_region=Jaipur">Raise a request in Jaipur</a></li>
-            </ul>
-          </div>
-          <div class="col-lg-4 col-sm-12">
-            <p class="color-dark bold  mb-2">ORGANIZE A CAMP</p>
-            <ul class="footer-list pl-0">
-              <li class=" mr-4 compact"><a class="color-dark f-14" href="./organize-a-camp.html#city_region=Delhi" onclick="organizeCamp('Delhi')">Organize a camp in Delhi-NCR</a></li>
-              <li class=" mr-4 compact"><a class="color-dark f-14" href="./organize-a-camp.html#city_region=Kanpur" onclick="organizeCamp('Kanpur')">Organize a camp in Kanpur</a></li>
-              <li class=" mr-4 compact"><a class="color-dark f-14" href="./organize-a-camp.html#city_region=Agra" onclick="organizeCamp('Agra')">Organize a camp in Agra</a></li>
-              <li class=" mr-4 compact"><a class="color-dark f-14" href="./organize-a-camp.html#city_region=Lucknow" onclick="organizeCamp('Lucknow')">Organize a camp in Lucknow</a></li>
-              <li class=" mr-4 compact"><a class="color-dark f-14" href="./organize-a-camp.html#city_region=Bhubaneswar" onclick="organizeCamp('Bhubaneswar')">Organize a camp in Bhubaneswar</a></li>
-              <li class=" mr-4 compact"><a class="color-dark f-14" href="./organize-a-camp.html#city_region=Jaipur" onclick="organizeCamp('Jaipur')">Organize a camp in Jaipur</a></li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="d-flex justify-content-between mt-3">
-          <p class="color-dark f-14">Copyright &copy; BloodConnect Foundation 2020</p>
-
-          <ul class="footer-list">
-            <li class=" left mx-3"><a class="color-dark f-12" href="./privacy.html">Privacy</a></li>
-            <li class=" left ml-3"><a class="color-dark f-12" href="./toc.html">Terms and Condition</a></li>
-          </ul>
         </div>
       </div>
     </div>
-<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-<script src="./js/bootstrap.min.js"></script>
-<script src="./js/main.js"></script>
+  </div>
+
+
+  <!-- Footer -->
+  <div class="container-fluid  pt-5">
+    <div class="container d-flex flex-column ">
+
+      <hr class="color-dark w-100">
+      <div class="d-flex justify-content-between align-items-center flex-column-sm">
+        <a href="./index.html">
+          <img src="./img/logo.png" alt="">
+        </a>
+        <ul class="footer-list mb-0 d-flex justify-content-start align-items-center pr-4 col-lg-4 col-sm-12">
+          <li class="footer-item bg-white ">
+            <a href="#" class="footer-link  color-main"><i class="fa fa-facebook-f"></i></a>
+          </li>
+          <li class="footer-item bg-white ">
+            <a href="#" class="footer-link  color-main"><i class="fa fa-instagram"></i></a>
+          </li>
+          <li class="footer-item bg-white ">
+            <a href="#" class="footer-link  color-main"><i class="fa fa-twitter"></i></a>
+          </li>
+          <li class="footer-item bg-white ">
+            <a href="#" class="footer-link  color-main"><i class="fa fa-youtube"></i></a>
+          </li>
+          <li class="footer-item bg-white ">
+            <a href="#" class="footer-link  color-main"><i class="fa fa-linkedin"></i></a>
+          </li>
+        </ul>
+      </div>
+      <hr class="color-dark w-100">
+      <div class="row">
+        <div class="col-lg-4 col-sm-12">
+          <p class="color-dark bold mb-2">NAVIGATION</p>
+          <ul class="footer-list pl-0">
+            <li class=" mr-4 compact"><a class="color-dark f-14" href="./index.html">Home</a></li>
+            <li class=" mr-4 compact"><a class="color-dark f-14" href="./about-us.html">About us</a></li>
+            <li class=" mr-4 compact"><a class="color-dark f-14" href="./our-team.html">Our team</a></li>
+            <li class=" mr-4 compact"><a class="color-dark f-14" href="./sponsor.html">Donate now</a></li>
+            <li class=" mr-4 compact"><a class="color-dark f-14" href="./join-us-selection.html">Join us</a></li>
+            <li class=" mr-4 compact"><a class="color-dark f-14" href="./contact-us.html">Contact us</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-4 col-sm-12">
+          <p class="color-dark bold mb-2">RAISE A REQUEST</p>
+          <ul class="footer-list pl-0">
+            <li class=" mr-4 compact"><a class="color-dark f-14" href="./raise-a-request.html#city_region=Delhi">Raise a
+                request in Delhi-NCR</a></li>
+            <li class=" mr-4 compact"><a class="color-dark f-14" href="/raise-a-request.html#city_region=Kanpur">Raise a
+                request in Kanpur</a></li>
+            <li class=" mr-4 compact"><a class="color-dark f-14" href="./raise-a-request.html#city_region=Agra">Raise a
+                request in Agra</a></li>
+            <li class=" mr-4 compact"><a class="color-dark f-14" href="./raise-a-request.html#city_region=Lucknow">Raise
+                a request in Lucknow</a></li>
+            <li class=" mr-4 compact"><a class="color-dark f-14"
+                href="./raise-a-request.html#city_region=Bhubaneswar">Raise a request in Bhubaneswar</a></li>
+            <li class=" mr-4 compact"><a class="color-dark f-14" href="./raise-a-request.html#city_region=Jaipur">Raise
+                a request in Jaipur</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-4 col-sm-12">
+          <p class="color-dark bold  mb-2">ORGANIZE A CAMP</p>
+          <ul class="footer-list pl-0">
+            <li class=" mr-4 compact"><a class="color-dark f-14" href="./organize-a-camp.html#city_region=Delhi"
+                onclick="organizeCamp('Delhi')">Organize a camp in Delhi-NCR</a></li>
+            <li class=" mr-4 compact"><a class="color-dark f-14" href="./organize-a-camp.html#city_region=Kanpur"
+                onclick="organizeCamp('Kanpur')">Organize a camp in Kanpur</a></li>
+            <li class=" mr-4 compact"><a class="color-dark f-14" href="./organize-a-camp.html#city_region=Agra"
+                onclick="organizeCamp('Agra')">Organize a camp in Agra</a></li>
+            <li class=" mr-4 compact"><a class="color-dark f-14" href="./organize-a-camp.html#city_region=Lucknow"
+                onclick="organizeCamp('Lucknow')">Organize a camp in Lucknow</a></li>
+            <li class=" mr-4 compact"><a class="color-dark f-14" href="./organize-a-camp.html#city_region=Bhubaneswar"
+                onclick="organizeCamp('Bhubaneswar')">Organize a camp in Bhubaneswar</a></li>
+            <li class=" mr-4 compact"><a class="color-dark f-14" href="./organize-a-camp.html#city_region=Jaipur"
+                onclick="organizeCamp('Jaipur')">Organize a camp in Jaipur</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="d-flex justify-content-between mt-3">
+        <p class="color-dark f-14">Copyright &copy; BloodConnect Foundation 2020</p>
+
+        <ul class="footer-list">
+          <li class=" left mx-3"><a class="color-dark f-12" href="./privacy.html">Privacy</a></li>
+          <li class=" left ml-3"><a class="color-dark f-12" href="./toc.html">Terms and Condition</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="./js/bootstrap.min.js"></script>
+  <script src="./js/main.js"></script>
 </body>
+
 </html>

@@ -39,7 +39,7 @@
 }
 .about-nav{
     position: fixed;
-    left: 0px;
+    /* left: 44px; */
     top: 60px;
 }
   
@@ -392,6 +392,9 @@ hr.color-white{
 .h-70{
     height: 70vh !important;
 }
+.h-55{
+    height: 55vh !important;
+}
 .h-60{
     height: 60vh !important;
 }
@@ -558,12 +561,16 @@ button.over-img{
 .camp>.partner{
     height: 100px !important;
     max-width: 200px !important;
+    
     background-color: #ffff !important;
     margin-left: 0.5rem;
     margin-right: 0.5rem;
     margin-top: 0.5rem !important;
     margin-top: 0.5rem !important;
     overflow: hidden;
+}
+.w-min-200{
+    min-width: 200px !important;
 }
 .color-hover{
     filter: grayscale(100);
@@ -1282,6 +1289,7 @@ button.selected{
         top: calc(40% - 50px) !important;
         color: #980000 !important;
     }
+    
 }
 
 /* medium Devices */

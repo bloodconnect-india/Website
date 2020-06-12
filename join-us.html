@@ -46,6 +46,25 @@
     .alumni>ul.social-media>li {
       color: #616161;
     }
+    .testimonial-slider>.slick-prev{
+      left: 125px !important;
+      opacity: 1 !important;
+    }
+    .testimonial-slider>.slick-next{
+      right: 155px !important;
+      opacity: 1 !important;
+    }
+    .testimonial-slider>.slick-next::before,.testimonial-slider>.slick-prev::before{
+      opacity: 1 !important;
+    }
+    @media (max-width: 480px){
+      .testimonial-slider>.slick-prev{
+        left: -10px !important;
+      }
+      .testimonial-slider>.slick-next{
+         right: 20px !important;
+      }
+    }
   </style>
 </head>
 
@@ -248,15 +267,15 @@
     <div class="testimonial-slider " data-slick='{"slidesToShow": 1, "slidesToScroll": 1}'>
 
       <div>
-        <div class="w-75-lg d-flex flex-row flex-column-sm  mx-auto  pt-5  pr-0 pb-2">
-          <img class="mt-4" style="min-width: 300px;width: 300px;max-height:350px" src="./img/join-us/alumni/Nitin.jpg" alt="">
+        <div class="w-75-lg d-flex flex-row flex-column-sm  mx-auto bg-main-light    pr-0 pb-0">
+          <img class="color-hover" style="min-width: 300px;max-height:350px" src="./img/join-us/alumni/Nitin.jpg" alt="">
           <div>
-            <p class=" mb-4 color-dark-light text-center f-18 px-4 pt-4">"Starting BloodConnect from scratch, I never really thought we would scale up so quick and so big to be honest. Within a short span of 3 years, this became a movement with over 100+ volunteers. It was a lot of work to be honest, it is life saving. However whatever happened, whether it was the stress of finding a donor for someone in need or having a pizza party with the team, the one thing common across all activities was- that I learnt and grew everyday. 
+            <p class=" mb-4 color-dark-light text-center f-16 px-4 pt-2">"Starting BloodConnect from scratch, I never really thought we would scale up so quick and so big to be honest. Within a short span of 3 years, this became a movement with over 100+ volunteers. It was a lot of work to be honest, it is life saving. However whatever happened, whether it was the stress of finding a donor or fun brainstorming the team, the one thing common across all activities was- that I learnt and grew everyday. 
               BloodConnect saves lives via donation- but it also changes lives of the volunteers immensely."</p>
             <div class="d-flex flex-column align-items-center">
-              <p class=" ft-24 color-main-dark mb-0">Nitin Garg</p>
-              <p class="color-dark-light f-18"> Facebook US</p>
-              <img src="./img/favicon.png" width="50" alt="">
+              <p class=" f-20 color-main-dark " style="margin-bottom: -10px;">Nitin Garg</p>
+              <p class="color-dark-light f-14 " style="margin-bottom:-5px">Post BloodConnect:  Facebook (US)</p>
+              <img src="./img/favicon.png" width="50px"  height="50px" alt="">
             </div>
           </div>
 
@@ -264,16 +283,16 @@
       </div>
 
       <div>
-        <div class="w-75-lg d-flex flex-row flex-column-sm  mx-auto  pt-5  pr-0 pb-2">
-          <img class="mt-4" style="min-width: 300px;width: 300px;max-height:350px" src="./img/join-us/alumni/Prerna.jpg" alt="">
+        <div class="w-75-lg d-flex flex-row flex-column-sm  mx-auto  bg-main-light    pr-0 pb-0">
+          <img class="color-hover" style="min-width: 300px;max-height:350px" src="./img/join-us/alumni/Prerna.jpg" alt="">
           <div>
-            <p class=" mb-4 color-dark-light text-center f-18 px-4 pt-4">"Working in BloodConnect during college was by far one of the most unique leadership experiences I have had till now. Very early on, I was given the responsibility in the marketing side of the organization (something which I always wanted to do) and took it upon me to really set up the team from scratch. It was overwhelming to be honest, being responsible for the entire fundraise of the organization, but I thoroughly enjoyed it and did pretty well too. :) 
+            <p class=" mb-4 color-dark-light text-center f-16 px-4 pt-2">"Working in BloodConnect during college was by far one of the most unique leadership experiences I have had till now. Very early on, I was given the responsibility in the marketing department (something which I always wanted to do) and took it upon me to really set up the team from scratch. It was overwhelming to be honest, being responsible for the entire fundraise of the organization, but I thoroughly enjoyed it and did pretty well too. :) 
               Thanks to BloodConnect for giving me this opportunity to volunteer and lead.
               "</p>
             <div class="d-flex flex-column align-items-center">
-              <p class=" ft-24 color-main-dark mb-0 text-center-sm">Prerna Arya</p>
-              <p class="color-dark-light f-18">Bain & Co, Harvard Business School (MBA)</p>
-              <img src="./img/favicon.png" width="50" alt="">
+              <p class=" f-20 color-main-dark text-center-sm" style="margin-bottom: -10px;">Prerna Arya</p>
+              <p class="color-dark-light f-14" style="margin-bottom:-5px">Post BloodConnect: Bain & Co, Harvard Business School (MBA)</p>
+              <img src="./img/favicon.png" width="50px" height="50" alt="">
             </div>
           </div>
 
@@ -645,7 +664,7 @@
       autoplay: false,
       autoplaySpeed: 2000,
       loop: true,
-      dots: true,
+      dots: false,
       // the magic
 
     });

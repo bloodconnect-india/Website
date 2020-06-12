@@ -120,9 +120,7 @@
       <h1 class="display-4 color-white  text-center-sm px-2 mb-0">Organize a </h1>
       <h1 class="display-4 color-white px-2 text-center-sm">Blood Donation Camp</h1>
       <p class="color-white w-50-lg px-2 text-center-sm">
-        You are one step closer to being a superhero. Organize a blood donation camp in your college, office, society
-        and get that superman cape. We will be there to help you throughout the process
-
+        You are one step closer to being a superhero. Organize a blood donation camp in your college, office, society and get that superman cape. We would take care of the process end-to-end
       </p>
       <div class="d-flex mt-2 px-2">
         <button class="shadow btn-main bg-main  mx-auto-sm mb-4" onclick="showCampForm()">Request callback</button>
@@ -197,7 +195,7 @@
   <!-- Collaborators -->
   <div class="container-fluid bg-main-light py-5">
     <div class="container mt-5 pt-5 px-0-sm">
-      <h4 class="f-30  color-dark text-center mb-5">Our past Collaboraters</h4>
+      <h4 class="f-30  color-dark text-center mb-5">Some of Our Past Collaborators</h4>
       <div class="row pb-5 mb-5 camp no-gutters justify-content-center ">
         <div class="col-lg-2 col-sm-6 col-6 d-flex align-items-center justify-content-end partner flex-column mb-2">
           <img class="partners-logo" src="./img/organize-a-camp/corps/Picture1.png" alt="">
@@ -325,9 +323,9 @@
                 <input type="number" class="form-control" placeholder="9999xxxxxx" id="phone_number" required>
 
               </div>
-              <div class="form-group mb-4">
+              <div class="form-group mb-4" id="cityRegion">
                 <label class="m-0   color-dark" for="city_region">City Region</label>
-                <select name="city_region" id="city_region" required>
+                <select name="city_region" id="city_region" onchange="selectingCity(event)"  required>
                   <option value="Agra">Agra</option>
                   <option value="Delhi">Delhi</option>
                   <option value="Jaipur">Jaipur</option>
@@ -341,6 +339,10 @@
                   <option value="Other">Other</option>
                 </select>
               </div>
+              <div class="form-group mb-4 hide" id="otherCity">
+                <label class="m-0 not-required  color-dark" for="other_city">City Name</label>
+                <input type="text" class="form-control" id="other_city" placeholder="City Name" >
+              </div>
 
               <div class="navigation-buttons inline text-center-sm">
                 <button type="button" class="pl-5 pr-5 right-lg mb-4 mx-auto btn-main bg-main"
@@ -349,10 +351,7 @@
             </div>
             <div id="campDetails" class="">
 
-              <div class="form-group mb-4">
-                <label class="m-0   color-dark" for="date">Date</label>
-                <input type="date" class="form-control" placeholder="20/01/2020" id="date" required>
-              </div>
+              
 
               <div class="form-group mb-4">
                 <label class="m-0 not-required color-dark" for="organization_name">Organization Name</label>
@@ -365,7 +364,7 @@
               </div>
               <div class="form-group mb-4">
                 <label class="m-0 not-required color-dark" for="additional">Additional Message</label>
-                <input type="text" class="form-control" placeholder="Any additional message you want" id="additional" />
+                <textarea type="text" cols="10" rows="5" class="form-control" placeholder="Any additional message you want" id="additional" ></textarea>
               </div>
               <div class="navigation-buttons inline text-center-sm">
                 <button type="button" class="pl-5 pr-5 left-lg btn-main bg-white color-dark"
@@ -525,7 +524,14 @@
       $("#page1").removeClass('active')
       $("#campDetails").show()
     }
-
+    selectingCity = (e) => {
+      if(e.target.value == "Other"){
+          $("#otherCity").removeClass('hide')
+          $("#cityRegion").addClass('hide')
+      }
+      else
+          $("#otherCity").addClass('hide')
+  }
     showPersonaldetailsInput()
     var hashParams = window.location.hash.substr(1).split('&');
     for (var i = 0; i < hashParams.length; i++) {

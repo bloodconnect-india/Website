@@ -1,354 +1,547 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/bootstrap.min.css">
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    
-    <title>Register As Donor | BloodConnect</title>
-    <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <title>Register As Donor | BloodConnect</title>
+  <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon">
 </head>
+
 <body>
 
-    <!-- Navbar start here -->
-    <!-- Just an image -->
-    <!-- Navbar -->
-    <nav class="fixed z-6 d-flex justify-content-end hide-lg" id="mobile-nav">
-      <button class="menu  show-md color-dark-fixed h-max bg-none" id="mobile-nav-toggler"
-        onclick="toggleMobileNav()"><i class="fa fa-bars f-20"></i></button>
-      <ul class="mobile-nav hide bg-white" id="mobile-nav-list">
-        <li class="bg-main ">
-          <a class="nav-link color-white fw-4 " href="./raise-a-request.html">RAISE A REQUEST</a>
+  <!-- Navbar start here -->
+  <!-- Just an image -->
+  <!-- Navbar -->
+  <nav class="fixed z-6 d-flex justify-content-end hide-lg" id="mobile-nav">
+    <button class="menu  show-md color-dark-fixed h-max bg-none" id="mobile-nav-toggler" onclick="toggleMobileNav()"><i
+        class="fa fa-bars f-20"></i></button>
+    <ul class="mobile-nav hide bg-white" id="mobile-nav-list">
+      <li class="bg-main ">
+        <a class="nav-link color-white fw-4 " href="./raise-a-request.html">RAISE A REQUEST</a>
+      </li>
+      <li class="bg-main ">
+        <a class="nav-link color-white fw-4 " href="./organize-a-camp.html">ORGANIZE A CAMP</a>
+      </li>
+      <li class="bg-main ">
+        <a class="nav-link color-white fw-4 " href="./sponsor.html">DONATE NOW</a>
+      </li>
+      <li class="bg-main ">
+        <a class="nav-link color-white fw-4 " href="./join-us-selection.html">JOIN US</a>
+      </li>
+      <li class="bg-white">
+        <a href="./index.html" class="color-dark f-14 fw-4 nav-link">HOME</a>
+      </li>
+      <li class="bg-white">
+        <a href="./about-us.html" class="color-dark f-14 fw-4 nav-link">ABOUT US</a>
+      </li>
+      <li class="bg-white">
+        <a href="./our-team.html" class="color-dark f-14 fw-4 nav-link">OUR TEAM</a>
+      </li>
+      <li class="bg-white">
+        <a href="./resources.html" class="color-dark f-14 fw-4 nav-link">RESOURCES</a>
+      </li>
+      <li class="bg-white">
+        <a href="./contact-us.html" class="color-dark f-14 fw-4 nav-link">CONTACT US</a>
+      </li>
+    </ul>
+  </nav>
+  <nav class="navbar justify-content-center-sm justify-content-between pb-0 sticky-sm z-5  bg-none " id="navbar">
+    <div class="d-flex flex-row align-items-center justify-content-end">
+      <a class="navbar-brand" href="./index.html">
+        <img src="./img/homepage/Logo.png" height="35" alt="BloodConnect Logo">
+      </a>
+      <ul class="navbar-nav flex-row  align-items-end hide-md" style="border-bottom: none !important;">
+
+        <li class="px-3">
+          <a href="./about-us.html" class="color-white b-white f-14  ">ABOUT US</a>
         </li>
-        <li class="bg-main ">
-          <a class="nav-link color-white fw-4 " href="./organize-a-camp.html">ORGANIZE A CAMP</a>
+        <li class="px-3">
+          <a href="./raise-a-request.html" class="color-white b-white f-14 ">RAISE A REQUEST</a>
         </li>
-        <li class="bg-main ">
-          <a class="nav-link color-white fw-4 " href="./sponsor.html">DONATE NOW</a>
+        <li class="px-3">
+          <a href="./organize-a-camp.html" class="color-white b-white f-14 ">ORGANIZE A CAMP</a>
         </li>
-        <li class="bg-main ">
-          <a class="nav-link color-white fw-4 " href="./join-us-selection.html">JOIN US</a>
+        <li class="px-3">
+          <a href="./resources.html" class="color-white b-white f-14 ">RESOURCES</a>
         </li>
-        <li class="bg-white">
-          <a href="./index.html" class="color-dark f-14 fw-4 nav-link">HOME</a>
-        </li>
-        <li class="bg-white">
-          <a href="./about-us.html" class="color-dark f-14 fw-4 nav-link">ABOUT US</a>
-        </li>
-        <li class="bg-white">
-          <a href="./our-team.html" class="color-dark f-14 fw-4 nav-link">OUR TEAM</a>
-        </li>
-        <li class="bg-white">
-          <a href="./resources.html" class="color-dark f-14 fw-4 nav-link">RESOURCES</a>
-        </li>
-        <li class="bg-white">
-          <a href="./contact-us.html" class="color-dark f-14 fw-4 nav-link">CONTACT US</a>
+        <li class="px-3">
+          <a href="./join-us-selection.html" class="color-white b-white f-14 ">JOIN US</a>
         </li>
       </ul>
-    </nav>
-    <nav class="navbar justify-content-center-sm justify-content-between pb-0 sticky-sm z-5  bg-none " id="navbar">
-      <div class="d-flex flex-row align-items-center justify-content-end">
-        <a class="navbar-brand" href="./index.html">
-          <img src="./img/homepage/Logo.png" height="35" alt="BloodConnect Logo">
-        </a>
-        <ul class="navbar-nav flex-row  align-items-end hide-md" style="border-bottom: none !important;">
-  
-          <li class="px-3">
-            <a href="./about-us.html" class="color-white b-white f-14  ">ABOUT US</a>
-          </li>
-          <li class="px-3">
-            <a href="./raise-a-request.html" class="color-white b-white f-14 ">RAISE A REQUEST</a>
-          </li>
-          <li class="px-3">
-            <a href="./organize-a-camp.html" class="color-white b-white f-14 ">ORGANIZE A CAMP</a>
-          </li>
-          <li class="px-3">
-            <a href="./resources.html" class="color-white b-white f-14 ">RESOURCES</a>
-          </li>
-          <li class="px-3">
-            <a href="./join-us-selection.html" class="color-white b-white f-14 ">JOIN US</a>
-          </li>
-        </ul>
-      </div>
-      <div class="d-flex flex-row align-items-center hide-md">
-        <a href="./contact-us.html" class="f-14 color-white mr-3 uppercase">Contact Us</a>
-        <a href="./sponsor.html" class="f-14 sponsor-link-button color-dark fw-6 px-3 py-2 uppercase">Support us</a>
-      </div>
-    </nav>
-    <nav
-      class="navbar flex-column-sm align-items-start justify-content-between pb-0  sticky-navbar z-5 bg-white pb-2 hide"
-      id="navbar-sticky">
-      <div class="d-flex flex-row align-items-center justify-content-end">
-        <a class="navbar-brand" href="./index.html">
-          <img src="./img/logo.png" height="35" alt="BloodConnect Logo">
-        </a>
-        <ul class="navbar-nav flex-row hide-md align-items-end" style="border-bottom: none !important;">
-  
-          <li class="px-3">
-            <a href="./about-us.html" class="color-dark b-dark f-14 ">ABOUT US</a>
-          </li>
-          <li class="px-3">
-            <a href="./raise-a-request.html" class="color-dark b-dark f-14 ">RAISE A REQUEST</a>
-          </li>
-          <li class="px-3">
-            <a href="./organize-a-camp.html" class="color-dark b-dark f-14 ">ORGANIZE A CAMP</a>
-          </li>
-          <li class="px-3">
-            <a href="./resources.html" class="color-dark b-dark f-14 ">RESOURCES</a>
-          </li>
-          <li class="px-3">
-            <a href="./join-us-selection.html" class="color-dark b-dark f-14 ">JOIN US</a>
-          </li>
-        </ul>
-      </div>
-      <div class="d-flex flex-row align-items-center">
-        <a href="./sponsor.html"
-          class="f-14 sponsor-link-button color-dark fw-6 px-3 py-2 uppercase bg-main color-white">Support us</a>
-      </div>
-    </nav>
-    <div class="container-fluid h-60  pl-0 pr-0 content  relative d-flex flex-row align-items-center">
-      <div class="d-flex flex-column container h-60 justify-content-center z-5 px-0-sm">
-        <h1 class="display-4 color-white  text-center-sm px-2 mb-1 ">Register as a Donor </h1>
-  
-      </div>
-      <div class="main-slider h-70" id="homepageSlider" style="background-color: #980000;">
-  
-      </div>
-  
+    </div>
+    <div class="d-flex flex-row align-items-center hide-md">
+      <a href="./contact-us.html" class="f-14 color-white mr-3 uppercase">Contact Us</a>
+      <a href="./sponsor.html" class="f-14 sponsor-link-button color-dark fw-6 px-3 py-2 uppercase">Support us</a>
+    </div>
+  </nav>
+  <nav
+    class="navbar flex-column-sm align-items-start justify-content-between pb-0  sticky-navbar z-5 bg-white pb-2 hide"
+    id="navbar-sticky">
+    <div class="d-flex flex-row align-items-center justify-content-end">
+      <a class="navbar-brand" href="./index.html">
+        <img src="./img/logo.png" height="35" alt="BloodConnect Logo">
+      </a>
+      <ul class="navbar-nav flex-row hide-md align-items-end" style="border-bottom: none !important;">
+
+        <li class="px-3">
+          <a href="./about-us.html" class="color-dark b-dark f-14 ">ABOUT US</a>
+        </li>
+        <li class="px-3">
+          <a href="./raise-a-request.html" class="color-dark b-dark f-14 ">RAISE A REQUEST</a>
+        </li>
+        <li class="px-3">
+          <a href="./organize-a-camp.html" class="color-dark b-dark f-14 ">ORGANIZE A CAMP</a>
+        </li>
+        <li class="px-3">
+          <a href="./resources.html" class="color-dark b-dark f-14 ">RESOURCES</a>
+        </li>
+        <li class="px-3">
+          <a href="./join-us-selection.html" class="color-dark b-dark f-14 ">JOIN US</a>
+        </li>
+      </ul>
+    </div>
+    <div class="d-flex flex-row align-items-center">
+      <a href="./sponsor.html"
+        class="f-14 sponsor-link-button color-dark fw-6 px-3 py-2 uppercase bg-main color-white">Support us</a>
+    </div>
+  </nav>
+  <div class="container-fluid h-60  pl-0 pr-0 content  relative d-flex flex-row align-items-center">
+    <div class="d-flex flex-column container h-60 justify-content-center z-5 px-0-sm">
+      <h1 class="display-4 color-white  text-center-sm px-2 mb-1 ">Register as a Donor </h1>
+
+    </div>
+    <div class="main-slider h-70" id="homepageSlider" style="background-color: #980000;">
+
     </div>
 
-    <div class="container-fluid pt-5 pb-5  row justify-content-center bg-main-light">
-      <div class="col-lg-6 rounded col-sm-12 bg-white shadow pt-3 pb-0 px-4">
-        <h5 class="text-center f-30 color-dark">Fill this form</h5>
-        <form id="donorForm" onsubmit="registerDonor(event)">
-            <div class="form-group mb-4">
+  </div>
+
+  <div class="container-fluid bg-main-light  content pt-5-sm pb-5">
+    <div class="row m-0 pt-5">
+      <div class="col-lg-5 d-flex flex-column justify-content-center hide-sm">
+        <div class="accordion" id="accordionExample">
+          <div class="card bg-main-light b1-light mb-2">
+            <div class="card-header bg-none" id="headingOne">
+              <h2 class="mb-0 raise-a-request-faq">
+                <p class="d-flex mb-0 justify-content-between align-items-center bg-none text-left hand f-16"
+                  data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                  Why is blood donation required ?
+                  <i class="fa fa-angle-right f-30"></i>
+                </p>
+              </h2>
+            </div>
+
+            <div id="collapseOne" class="collapse show bg-main-light b-0" aria-labelledby="headingOne"
+              data-parent="#accordionExample">
+              <div class="card-body color-dark-light bg-main-light">
+                Blood is a precious fluid in our body, and so far blood cannot be manufactured in laboratories. Blood
+                can only be obtained from individuals (human beings) who donate blood. Blood can be stored only for
+                limited time, therefore there is a need for regular blood donation to ensure that no life is lost due to
+                unavailability of the safe blood.
+              </div>
+            </div>
+          </div>
+
+          <div class="card bg-main-light b1-light mb-2">
+            <div class="card-header bg-none" id="headingTwo">
+              <h2 class="mb-0 raise-a-request-faq">
+                <p class="collapsed mb-0 d-flex justify-content-between align-items-center bg-none text-left hand f-16"
+                  data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+                  Is it safe to donate blood / platelets?
+                  <i class="fa fa-angle-right f-30"></i>
+                </p>
+              </h2>
+            </div>
+
+            <div id="collapseTwo" class="collapse  bg-main-light b-0" aria-labelledby="headingTwo"
+              data-parent="#accordionExample">
+              <div class="card-body color-dark-light bg-main-light">
+                Yes, it has been carried out for years now. It is performed in a highly-controlled, sterile environment
+                by professionally trained staff. All the equipments are sterilized and equipment that is in contact with
+                the donor's blood is used only once, eliminating the possibility of any infection during transmission.
+              </div>
+            </div>
+          </div>
+
+          <div class="card bg-main-light b1-light mb-2">
+            <div class="card-header bg-none" id="headingThree">
+              <h2 class="mb-0 raise-a-request-faq">
+                <p class="collapsed mb-0 d-flex justify-content-between align-items-center bg-none text-left hand f-16"
+                  data-toggle="collapse" data-target="#collapseThree" aria-expanded="true"
+                  aria-controls="collapseThree">
+                  What is the eligibility criteria?
+                  <i class="fa fa-angle-right f-30"></i>
+                </p>
+              </h2>
+            </div>
+
+            <div id="collapseThree" class="collapse  bg-main-light b-0" aria-labelledby="headingThree"
+              data-parent="#accordionExample">
+              <div class="card-body color-dark-light bg-main-light">
+                Any healthy adult (above 45 kgs), between age 18 - 65 years, mentally alert and physically fit, can
+                donate blood. You can donate blood every 3 months while for platelets that frequency is even higher
+                (once in roughly 20 days). There are some additional criteria related to who can donate blood (specific
+                to diseases, etc)- we recommend you check them in the resources section. </div>
+            </div>
+          </div>
+
+          <div class="card bg-main-light b1-light mb-2">
+            <div class="card-header bg-none" id="headingFour">
+              <h2 class="mb-0 raise-a-request-faq">
+                <p class="collapsed mb-0 d-flex justify-content-between align-items-center bg-none text-left hand f-16"
+                  data-toggle="collapse" data-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
+                  Would your health deteriorate post donation?
+                  <i class="fa fa-angle-right f-30"></i>
+                </p>
+              </h2>
+            </div>
+
+            <div id="collapseFour" class="collapse  bg-main-light b-0" aria-labelledby="headingFour"
+              data-parent="#accordionExample">
+              <div class="card-body color-dark-light bg-main-light">
+                No, you have nothing to worry. We just recommend that you drink enough liquids post donation to
+                compensate for the blood donated. Donating blood does not interfere with your ability to perform
+                physically or mentally. However, it is adviced you avoid heavy lifting or strenuous workouts for the
+                rest of the day after the donation. You need to ensure the liquid levels come back to normalcy (roughly
+                takes a day) before starting with those.
+              </div>
+            </div>
+          </div>
+
+          <div class="card bg-main-light b1-light mb-2">
+            <div class="card-header bg-none" id="headingFive">
+              <h2 class="mb-0 raise-a-request-faq">
+                <p class="collapsed mb-0 d-flex justify-content-between align-items-center bg-none text-left hand f-16"
+                  data-toggle="collapse" data-target="#collapseFive" aria-expanded="true" aria-controls="collapseFive">
+                  What do we mean by register as a donor here?
+                  <i class="fa fa-angle-right f-30"></i>
+                </p>
+              </h2>
+            </div>
+
+            <div id="collapseFive" class="collapse  bg-main-light b-0" aria-labelledby="headingFive"
+              data-parent="#accordionExample">
+              <div class="card-body color-dark-light bg-main-light">
+                By registering for this, it means you are keen to donate blood in case of any emergency requirement in
+                your neighborhood area / city. We will contact you in case of any emergency blood requirement or blood
+                donation camp nearby
+
+              </div>
+            </div>
+          </div>
+
+          <div class="card bg-main-light b1-light mb-2">
+            <div class="card-header bg-none" id="headingSix">
+              <h2 class="mb-0 raise-a-request-faq">
+                <p class="collapsed mb-0 d-flex justify-content-between align-items-center bg-none text-left hand f-16"
+                  data-toggle="collapse" data-target="#collapseSix" aria-expanded="true" aria-controls="collapseSix">
+                  Will you receive a lot of calls here?
+                  <i class="fa fa-angle-right f-30"></i>
+                </p>
+              </h2>
+            </div>
+
+            <div id="collapseSix" class="collapse  bg-main-light b-0" aria-labelledby="headingSix"
+              data-parent="#accordionExample">
+              <div class="card-body color-dark-light bg-main-light">
+                No, our communication for blood donation camps nearby will largely be via mail, so you do not have to
+                worry on that front. For emergency blood requests, we do call you over phone- but we ensure we do not
+                call a person more than 2 or 3 times a month.
+              </div>
+            </div>
+          </div>
+
+          <div class="card bg-main-light b1-light mb-2">
+            <div class="card-header bg-none" id="headingSeven">
+              <h2 class="mb-0 raise-a-request-faq">
+                <p class="collapsed mb-0 d-flex justify-content-between align-items-center bg-none text-left hand f-16"
+                  data-toggle="collapse" data-target="#collapseSeven" aria-expanded="true" aria-controls="collapseSeven">
+                  Are your contact details safe with us?
+                  <i class="fa fa-angle-right f-30"></i>
+                </p>
+              </h2>
+            </div>
+
+            <div id="collapseSeven" class="collapse  bg-main-light b-0" aria-labelledby="headingSeven"
+              data-parent="#accordionExample">
+              <div class="card-body color-dark-light bg-main-light">
+                Yes, there is no spam calls and we do not sell our database. We have kind donors who support us do our core activities without trying to find an additional source of revenue. However we do hope to have you as a supporter as well. Click Support Us on the top to help us
+              </div>
+            </div>
+          </div>
+
+          <div class="card bg-main-light b1-light mb-2">
+            <div class="card-header bg-none" id="headingEight">
+              <h2 class="mb-0 raise-a-request-faq">
+                <p class="collapsed mb-0 d-flex justify-content-between align-items-center bg-none text-left hand f-16"
+                  data-toggle="collapse" data-target="#collapseEight" aria-expanded="true" aria-controls="collapseEight">
+                  Is there a timeline by when can I expect a call?
+                  <i class="fa fa-angle-right f-30"></i>
+                </p>
+              </h2>
+            </div>
+
+            <div id="collapseEight" class="collapse  bg-main-light b-0" aria-labelledby="headingEight"
+              data-parent="#accordionExample">
+              <div class="card-body color-dark-light bg-main-light">
+                That depends on area to area and requirement to requirement, it is tough for us to predict when will we call you to be honest. You can expect a call even today OR worst case in 6 months (if we are not there in that area).  
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+
+      </div>
+      <div class="col-lg-7 h-max  rounded bg-white shadow">
+        <form id="donorForm" class="pl-5 pr-5 pt-3 pb-3 px-3-sm" onsubmit="registerDonor(event)">
+          <div class="form-group mb-4">
             <label class="m-0   color-dark" for="name">Your Name</label>
             <input type="text" class="form-control" id="name" placeholder="Your Name" required>
+          </div>
+          <div class="form-group mb-4">
+            <label class="m-0   color-dark" for="email">Email address</label>
+            <input type="email" class="form-control" placeholder="example@domain.com" id="email" required>
+          </div>
+          <div class="form-group mb-4">
+            <label class="m-0   color-dark" for="phone_number">Phone Number</label>
+            <input type="text" class="form-control" maxlength="10" placeholder="9999xxxxxx" id="phone_number" required>
+          </div>
+
+
+          <div class="d-flex justify-content-between flex-column-sm">
+            <div class="form-group mb-4 w-100 mr-3">
+              <label class="m-0 not-required color-dark" for="dob">Date of Birth</label>
+              <input type="date" class="form-control" id="dob" />
             </div>
-            <div class="form-group mb-4">
-              <label class="m-0   color-dark" for="email">Email address</label>
-              <input  type="email" class="form-control" placeholder="example@domain.com" id="email" required>
-            </div>
-            <div class="form-group mb-4">
-              <label class="m-0   color-dark" for="phone_number">Phone Number</label>
-              <input  type="text" class="form-control" maxlength="10" placeholder="9999xxxxxx" id="phone_number" required>
-            </div>
-  
-  
-            <div class="d-flex justify-content-between flex-column-sm">
-                <div class="form-group mb-4 w-100 mr-3">
-                  <label class="m-0 not-required color-dark" for="dob">Date of Birth</label>
-                  <input type="date" class="form-control" id="dob"/>
-                </div>
-                <div class="form-group mb-4 w-100 ">
-                  <label class="m-0  color-dark" for="bg">Blood Group</label>
-                  <select class="form-control" name="bg" id="bg" required>
-                    <option value="A+">A+</option>
-                    <option value="B+">B+</option>
-                    <option value="AB+">AB+</option>
-                    <option value="O+">O+</option>
-                    <option value="A-">A-</option>
-                    <option value="B-">B-</option>
-                    <option value="AB-">AB-</option>
-                    <option value="O-">O-</option>
-                    <option value="Any">Any</option>
-                  </select>
-                </div>
-            </div>
-            <div class="form-group mb-4">
-              <label class="m-0   color-dark" for="city">City Region</label>
-              <select name="city" id="city" onchange="selectingCity(event)" required>
-                <option value="Agra">Agra</option>
-                <option value="Delhi">Delhi</option>
-                <option value="Jaipur">Jaipur</option>
-                <option value="Kanpur">Kanpur</option>
-                <option value="Kolkata">Kolkata</option>
-                <option value="Lucknow">Lucknow</option>
-                <option value="Pune">Pune</option>
-                <option value="Varanasi">Varanasi</option>
-                <option value="Bhubaneswar">Bhubaneswar</option>
-                <option value="Odisha(OR)">Odisha(OR)</option>
-                <option value="Other">Other</option>
+            <div class="form-group mb-4 w-100 ">
+              <label class="m-0  color-dark" for="bg">Blood Group</label>
+              <select class="form-control" name="bg" id="bg" required>
+                <option value="A+">A+</option>
+                <option value="B+">B+</option>
+                <option value="AB+">AB+</option>
+                <option value="O+">O+</option>
+                <option value="A-">A-</option>
+                <option value="B-">B-</option>
+                <option value="AB-">AB-</option>
+                <option value="O-">O-</option>
+                <option value="Any">Any</option>
               </select>
             </div>
-  
-            <div class="form-group mb-4 hide" id="otherCity">
-              <label class="m-0 not-required  color-dark" for="other_city">City Name</label>
-              <input type="text" class="form-control" id="other_city" placeholder="City Name" >
-            </div>
-            <div class="navigation-buttons inline text-center">
-            <button type="submit" id="submit-request-button" class="pl-4 pr-4 fw-6  mb-4 mx-auto btn-main bg-main" value="Submit" >
-            <p class="color-white m-0 fw-4">Submit</p>
-            <!-- Animation -->
-            <svg style="width: 50px;" version="1.1" id="L9" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                viewBox="0 0 100 100" enable-background="new 0 0 0 0" xml:space="preserve">
-                <path fill="#fff" d="M73,50c0-12.7-10.3-23-23-23S27,37.3,27,50 M30.9,50c0-10.5,8.5-19.1,19.1-19.1S69.1,39.5,69.1,50">
-                    <animateTransform 
-                    attributeName="transform" 
-                    attributeType="XML" 
-                    type="rotate"
-                    dur="1s" 
-                    from="0 50 50"
-                    to="360 50 50" 
-                    repeatCount="indefinite" />
+          </div>
+          <div class="form-group mb-4">
+            <label class="m-0   color-dark" for="city">City Region</label>
+            <select name="city" id="city" onchange="selectingCity(event)" required>
+              <option value="Agra">Agra</option>
+              <option value="Delhi">Delhi</option>
+              <option value="Jaipur">Jaipur</option>
+              <option value="Kanpur">Kanpur</option>
+              <option value="Kolkata">Kolkata</option>
+              <option value="Lucknow">Lucknow</option>
+              <option value="Pune">Pune</option>
+              <option value="Varanasi">Varanasi</option>
+              <option value="Bhubaneswar">Bhubaneswar</option>
+              <option value="Odisha(OR)">Odisha(OR)</option>
+              <option value="Other">Other</option>
+            </select>
+          </div>
+
+          <div class="form-group mb-4 hide" id="otherCity">
+            <label class="m-0 not-required  color-dark" for="other_city">City Name</label>
+            <input type="text" class="form-control" id="other_city" placeholder="City Name">
+          </div>
+          <div class="navigation-buttons inline text-center">
+            <button type="submit" id="submit-request-button" class="pl-4 pr-4 fw-6  mb-4 mx-auto btn-main bg-main"
+              value="Submit">
+              <p class="color-white m-0 fw-4">Submit</p>
+              <!-- Animation -->
+              <svg style="width: 50px;" version="1.1" id="L9" xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 100 100"
+                enable-background="new 0 0 0 0" xml:space="preserve">
+                <path fill="#fff"
+                  d="M73,50c0-12.7-10.3-23-23-23S27,37.3,27,50 M30.9,50c0-10.5,8.5-19.1,19.1-19.1S69.1,39.5,69.1,50">
+                  <animateTransform attributeName="transform" attributeType="XML" type="rotate" dur="1s" from="0 50 50"
+                    to="360 50 50" repeatCount="indefinite" />
                 </path>
-            </svg>
+              </svg>
             </button>
-            </div>
+          </div>
         </form>
       </div>
     </div>
 
+  </div>
 
-    <div class="success-modal py-5 shadow bg-white hide" id="success-modal">
-        <img width="100" src="./img/popup/mail-sent.jpg" alt="">
-      <p class="color-dark fw-6 mt-3">Request raised successfully</p>
-      <p class="color-grey">You would be redirected in <span id="seconds">3s</span></p>
+
+  <div class="success-modal py-5 shadow bg-white hide" id="success-modal">
+    <img width="100" src="./img/popup/mail-sent.jpg" alt="">
+    <p class="color-dark fw-6 mt-3">Request raised successfully</p>
+    <p class="color-grey">You would be redirected in <span id="seconds">3s</span></p>
+  </div>
+
+
+
+  <!-- Footer -->
+
+  <div class="container-fluid  pt-5">
+    <div class="container d-flex flex-column ">
+
+      <hr class="color-dark w-100">
+      <div class="d-flex justify-content-between align-items-center flex-column-sm">
+        <a href="./index.html">
+          <img src="./img/logo.png" alt="">
+        </a>
+        <ul class="footer-list mb-0 d-flex justify-content-start align-items-center pr-4 col-lg-4 col-sm-12">
+          <li class="footer-item bg-white ">
+            <a href="#" class="footer-link  color-main"><i class="fa fa-facebook-f"></i></a>
+          </li>
+          <li class="footer-item bg-white ">
+            <a href="#" class="footer-link  color-main"><i class="fa fa-instagram"></i></a>
+          </li>
+          <li class="footer-item bg-white ">
+            <a href="#" class="footer-link  color-main"><i class="fa fa-twitter"></i></a>
+          </li>
+          <li class="footer-item bg-white ">
+            <a href="#" class="footer-link  color-main"><i class="fa fa-youtube"></i></a>
+          </li>
+          <li class="footer-item bg-white ">
+            <a href="#" class="footer-link  color-main"><i class="fa fa-linkedin"></i></a>
+          </li>
+        </ul>
       </div>
-
-    
-
-    <!-- Footer -->
-
-    <div class="container-fluid  pt-5">
-      <div class="container d-flex flex-column ">
-    
-        <hr class="color-dark w-100">
-        <div class="d-flex justify-content-between align-items-center flex-column-sm">
-            <a href="./index.html">
-              <img src="./img/logo.png" alt="">
-            </a>
-            <ul class="footer-list mb-0 d-flex justify-content-start align-items-center pr-4 col-lg-4 col-sm-12">
-              <li class="footer-item bg-white ">
-                <a href="#" class="footer-link  color-main"><i class="fa fa-facebook-f"></i></a>
-              </li>
-              <li class="footer-item bg-white ">
-                <a href="#" class="footer-link  color-main"><i class="fa fa-instagram"></i></a>
-              </li>
-              <li class="footer-item bg-white ">
-                <a href="#" class="footer-link  color-main"><i class="fa fa-twitter"></i></a>
-              </li>
-              <li class="footer-item bg-white ">
-                <a href="#" class="footer-link  color-main"><i class="fa fa-youtube"></i></a>
-              </li>
-              <li class="footer-item bg-white ">
-                <a href="#" class="footer-link  color-main"><i class="fa fa-linkedin"></i></a>
-              </li>
-            </ul>
+      <hr class="color-dark w-100">
+      <div class="row">
+        <div class="col-lg-4 col-sm-12">
+          <p class="color-dark bold mb-2">NAVIGATION</p>
+          <ul class="footer-list pl-0">
+            <li class=" mr-4 compact"><a class="color-dark f-14" href="./index.html">Home</a></li>
+            <li class=" mr-4 compact"><a class="color-dark f-14" href="./about-us.html">About us</a></li>
+            <li class=" mr-4 compact"><a class="color-dark f-14" href="./our-team.html">Our team</a></li>
+            <li class=" mr-4 compact"><a class="color-dark f-14" href="./sponsor.html">Donate now</a></li>
+            <li class=" mr-4 compact"><a class="color-dark f-14" href="./join-us-selection.html">Join us</a></li>
+            <li class=" mr-4 compact"><a class="color-dark f-14" href="./contact-us.html">Contact us</a></li>
+          </ul>
         </div>
-        <hr class="color-dark w-100">
-        <div class="row">
-          <div class="col-lg-4 col-sm-12">
-            <p class="color-dark bold mb-2">NAVIGATION</p>
-            <ul class="footer-list pl-0">
-              <li class=" mr-4 compact"><a class="color-dark f-14" href="./index.html">Home</a></li>
-              <li class=" mr-4 compact"><a class="color-dark f-14" href="./about-us.html">About us</a></li>
-              <li class=" mr-4 compact"><a class="color-dark f-14" href="./our-team.html">Our team</a></li>
-              <li class=" mr-4 compact"><a class="color-dark f-14" href="./sponsor.html">Donate now</a></li>
-              <li class=" mr-4 compact"><a class="color-dark f-14" href="./join-us-selection.html">Join us</a></li>
-              <li class=" mr-4 compact"><a class="color-dark f-14" href="./contact-us.html">Contact us</a></li>
-            </ul>
-          </div>
-          <div class="col-lg-4 col-sm-12">
-            <p class="color-dark bold mb-2">RAISE A REQUEST</p>
-            <ul class="footer-list pl-0">
-              <li class=" mr-4 compact"><a class="color-dark f-14" href="./raise-a-request.html#city_region=Delhi">Raise a request in Delhi-NCR</a></li>
-              <li class=" mr-4 compact"><a class="color-dark f-14" href="/raise-a-request.html#city_region=Kanpur">Raise a request in Kanpur</a></li>
-              <li class=" mr-4 compact"><a class="color-dark f-14" href="./raise-a-request.html#city_region=Agra">Raise a request in Agra</a></li>
-              <li class=" mr-4 compact"><a class="color-dark f-14" href="./raise-a-request.html#city_region=Lucknow">Raise a request in Lucknow</a></li>
-              <li class=" mr-4 compact"><a class="color-dark f-14" href="./raise-a-request.html#city_region=Bhubaneswar">Raise a request in Bhubaneswar</a></li>
-              <li class=" mr-4 compact"><a class="color-dark f-14" href="./raise-a-request.html#city_region=Jaipur">Raise a request in Jaipur</a></li>
-            </ul>
-          </div>
-          <div class="col-lg-4 col-sm-12">
-            <p class="color-dark bold  mb-2">ORGANIZE A CAMP</p>
-            <ul class="footer-list pl-0">
-              <li class=" mr-4 compact"><a class="color-dark f-14" href="./organize-a-camp.html#city_region=Delhi" onclick="organizeCamp('Delhi')">Organize a camp in Delhi-NCR</a></li>
-              <li class=" mr-4 compact"><a class="color-dark f-14" href="./organize-a-camp.html#city_region=Kanpur" onclick="organizeCamp('Kanpur')">Organize a camp in Kanpur</a></li>
-              <li class=" mr-4 compact"><a class="color-dark f-14" href="./organize-a-camp.html#city_region=Agra" onclick="organizeCamp('Agra')">Organize a camp in Agra</a></li>
-              <li class=" mr-4 compact"><a class="color-dark f-14" href="./organize-a-camp.html#city_region=Lucknow" onclick="organizeCamp('Lucknow')">Organize a camp in Lucknow</a></li>
-              <li class=" mr-4 compact"><a class="color-dark f-14" href="./organize-a-camp.html#city_region=Bhubaneswar" onclick="organizeCamp('Bhubaneswar')">Organize a camp in Bhubaneswar</a></li>
-              <li class=" mr-4 compact"><a class="color-dark f-14" href="./organize-a-camp.html#city_region=Jaipur" onclick="organizeCamp('Jaipur')">Organize a camp in Jaipur</a></li>
-            </ul>
-          </div>
+        <div class="col-lg-4 col-sm-12">
+          <p class="color-dark bold mb-2">RAISE A REQUEST</p>
+          <ul class="footer-list pl-0">
+            <li class=" mr-4 compact"><a class="color-dark f-14" href="./raise-a-request.html#city_region=Delhi">Raise a
+                request in Delhi-NCR</a></li>
+            <li class=" mr-4 compact"><a class="color-dark f-14" href="/raise-a-request.html#city_region=Kanpur">Raise a
+                request in Kanpur</a></li>
+            <li class=" mr-4 compact"><a class="color-dark f-14" href="./raise-a-request.html#city_region=Agra">Raise a
+                request in Agra</a></li>
+            <li class=" mr-4 compact"><a class="color-dark f-14" href="./raise-a-request.html#city_region=Lucknow">Raise
+                a request in Lucknow</a></li>
+            <li class=" mr-4 compact"><a class="color-dark f-14"
+                href="./raise-a-request.html#city_region=Bhubaneswar">Raise a request in Bhubaneswar</a></li>
+            <li class=" mr-4 compact"><a class="color-dark f-14" href="./raise-a-request.html#city_region=Jaipur">Raise
+                a request in Jaipur</a></li>
+          </ul>
         </div>
-    
-        <div class="d-flex justify-content-between mt-3">
-          <p class="color-dark f-14">Copyright &copy; BloodConnect Foundation 2020</p>
-    
-          <ul class="footer-list">
-            <li class=" left mx-3"><a class="color-dark f-12" href="./privacy.html">Privacy</a></li>
-            <li class=" left ml-3"><a class="color-dark f-12" href="./toc.html">Terms and Condition</a></li>
+        <div class="col-lg-4 col-sm-12">
+          <p class="color-dark bold  mb-2">ORGANIZE A CAMP</p>
+          <ul class="footer-list pl-0">
+            <li class=" mr-4 compact"><a class="color-dark f-14" href="./organize-a-camp.html#city_region=Delhi"
+                onclick="organizeCamp('Delhi')">Organize a camp in Delhi-NCR</a></li>
+            <li class=" mr-4 compact"><a class="color-dark f-14" href="./organize-a-camp.html#city_region=Kanpur"
+                onclick="organizeCamp('Kanpur')">Organize a camp in Kanpur</a></li>
+            <li class=" mr-4 compact"><a class="color-dark f-14" href="./organize-a-camp.html#city_region=Agra"
+                onclick="organizeCamp('Agra')">Organize a camp in Agra</a></li>
+            <li class=" mr-4 compact"><a class="color-dark f-14" href="./organize-a-camp.html#city_region=Lucknow"
+                onclick="organizeCamp('Lucknow')">Organize a camp in Lucknow</a></li>
+            <li class=" mr-4 compact"><a class="color-dark f-14" href="./organize-a-camp.html#city_region=Bhubaneswar"
+                onclick="organizeCamp('Bhubaneswar')">Organize a camp in Bhubaneswar</a></li>
+            <li class=" mr-4 compact"><a class="color-dark f-14" href="./organize-a-camp.html#city_region=Jaipur"
+                onclick="organizeCamp('Jaipur')">Organize a camp in Jaipur</a></li>
           </ul>
         </div>
       </div>
+
+      <div class="d-flex justify-content-between mt-3">
+        <p class="color-dark f-14">Copyright &copy; BloodConnect Foundation 2020</p>
+
+        <ul class="footer-list">
+          <li class=" left mx-3"><a class="color-dark f-12" href="./privacy.html">Privacy</a></li>
+          <li class=" left ml-3"><a class="color-dark f-12" href="./toc.html">Terms and Condition</a></li>
+        </ul>
+      </div>
     </div>
-<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-<script src="./js/bootstrap.min.js"></script>
-<script src="./js/main.js"></script>
-<script>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="./js/bootstrap.min.js"></script>
+  <script src="./js/main.js"></script>
+  <script>
     selectingCity = (e) => {
-        console.log('selecting city')
-        if(e.target.value == "Other")
-            $("#otherCity").removeClass('hide')
-        else
-            $("#otherCity").addClass('hide')
+      console.log('selecting city')
+      if (e.target.value == "Other")
+        $("#otherCity").removeClass('hide')
+      else
+        $("#otherCity").addClass('hide')
     }
 
     goToForm = () => {
-        window.scrollTo({
-            top:$("#donorForm").offset().top - 150,
-            behavior: 'smooth'
-        })
-    
+      window.scrollTo({
+        top: $("#donorForm").offset().top - 150,
+        behavior: 'smooth'
+      })
+
     }
     registerDonor = (e) => {
-        e.preventDefault()
-        let name = $("#name").val()
-        let email = $("#email").val()
-        let phone_number = $("#phone_number").val()
-        let dob = $("#dob").val()
-        let bg = $("#bg").val()
-        let city = $("#city").val()
-        if(city == 'Other')
-            city = $("#other_city").val()
-        var requestData = {
-            'Name':name,
-            'Email':email,
-            'Phone_Number': phone_number,
-            'Blood_Group': bg,
-            'Date_of_Birth':dob,
-            'City_Donor':city
-        }
+      e.preventDefault()
+      let name = $("#name").val()
+      let email = $("#email").val()
+      let phone_number = $("#phone_number").val()
+      let dob = $("#dob").val()
+      let bg = $("#bg").val()
+      let city = $("#city").val()
+      if (city == 'Other')
+        city = $("#other_city").val()
+      var requestData = {
+        'Name': name,
+        'Email': email,
+        'Phone_Number': phone_number,
+        'Blood_Group': bg,
+        'Date_of_Birth': dob,
+        'City_Donor': city
+      }
 
-        fetch('https://blood-request-api.herokuapp.com/register-donor',{
+      fetch('https://blood-request-api.herokuapp.com/register-donor', {
         method: 'POST',
-        body:JSON.stringify(requestData),
+        body: JSON.stringify(requestData),
         headers: {
-            "Content-Type": "application/json"
-          }
-    }).then(response => response.json()).then(data => {
-        
-        if(!data.msg){
-            console.log('Showing success modal')
-            $("#success-modal").removeClass('hide')
-            $("#success-modal").addClass('show')
-            let secondsLeft = 3;
-            let x = setInterval( () => {
-                if(secondsLeft <= 0)
-                    window.location.reload()
-                $("#seconds").html(`${secondsLeft}s`)
-                secondsLeft -=1;
-            },1000)
-            
+          "Content-Type": "application/json"
         }
-    })
-        
+      }).then(response => response.json()).then(data => {
+
+        if (!data.msg) {
+          console.log('Showing success modal')
+          $("#success-modal").removeClass('hide')
+          $("#success-modal").addClass('show')
+          let secondsLeft = 3;
+          let x = setInterval(() => {
+            if (secondsLeft <= 0)
+              window.location.reload()
+            $("#seconds").html(`${secondsLeft}s`)
+            secondsLeft -= 1;
+          }, 1000)
+
+        }
+      })
+
     }
 
-</script>
+  </script>
 </body>
+
 </html>

@@ -11,6 +11,12 @@
 
   <title>About Us |BloodConnect</title>
   <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon">
+  <style>
+    .college-box{
+      min-width: 200px !important;
+      min-height: 150px !important;
+    }
+  </style>
 </head>
 
 <body>
@@ -113,7 +119,7 @@
   </nav>
   <div class="container-fluid h-60  pl-0 pr-0 content  relative d-flex flex-row align-items-center">
     <div class="d-flex flex-column container h-60 justify-content-center z-5 px-0-sm">
-      <h1 class="display-4 color-white  text-center-sm px-2 mb-1 ">Every blood donor is a lifesaver </h1>
+      <h1 class="display-4 color-white  text-center px-2 mb-1 fw-4">Every Blood Donor Is A Lifesaver </h1>
 
     </div>
     <div class="main-slider h-60" id="homepageSlider" style="background-color: #980000;">
@@ -124,15 +130,15 @@
 
 
   <div class="container ">
-    <div class="row accordion justify-content-end" id="accordionExample">
-      <div class="col-lg-2 d-flex align-items-end flex-column " id="about-nav">
+    <div class="row accordion justify-content-end no-gutters" id="accordionExample">
+      <div class="d-flex align-items-end flex-column " id="about-nav">
         <ul class="about-list">
-          <li class=" f-16  uppercase  bg-none hand" data-toggle="collapse" data-target="#collapseWhatWeDo"
-            aria-expanded="false" aria-controls="collapseWhatWeDo">Who are we</li>
-          <!-- <li class="collapsed f-16  uppercase  bg-none hand"  data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">Our Journey</li> -->
-          <li class="collapsed f-16  uppercase  bg-none hand" data-toggle="collapse" data-target="#collapseFour"
+          <li class=" f-18    bg-none hand" data-toggle="collapse" data-target="#collapseWhatWeDo"
+            aria-expanded="false" aria-controls="collapseWhatWeDo">Who we are</li>
+          <!-- <li class="collapsed f-18  uppercase  bg-none hand"  data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">Our Journey</li> -->
+          <li class="collapsed f-18    bg-none hand" data-toggle="collapse" data-target="#collapseFour"
             aria-expanded="false" aria-controls="collapseFour">Our Partners</li>
-          <li class="collapsed f-16  uppercase  bg-none"><a class="f-16 uppercase color-inherit"
+          <li class="collapsed f-18    bg-none"><a class="f-18  color-inherit"
               href="./our-team.html">Team</a></li>
         </ul>
       </div>
@@ -160,19 +166,18 @@
                       </video>
                     </div>
 
-                    <img src="./img/sponsor-us/video.png" id="video-img" class="wd-inherit" style="max-height: 500px;"
+                    <img src="./img/about-us/VideoImage.png" id="video-img" class="wd-inherit" style="max-height: 500px;"
                       alt="">
-                    <p class="color-dark f-14">A campaign to promote Blood Donation supported by JWT</p>
                     <button class="play bg-none" id="play" onclick="playVideo()"><i
                         class="color-white fa fa-play"></i></button>
                   </div>
                   <div class="col-lg-6">
-                    <h4 class="ft-24 color-dark   text-left ">Our Mission</h4>
+                    <h4 class="ft-24 color-dark   text-left ">Mission</h4>
                     <p class="color-dark-light">To contribute towards the problem of shortage of blood in India by
                       raising awareness and improving donor experience and thereby, become a 360-degree solution
                       provider.</p>
 
-                    <h4 class="ft-24 color-dark   text-left pt-0">Our Vision</h4>
+                    <h4 class="ft-24 color-dark   text-left pt-0">Vision</h4>
                     <p class="color-dark-light">To become a single point of contact for blood requirements in the
                       country and make India blood sufficient, through voluntary blood donations, so no life is lost due
                       to the accessibility.</p>
@@ -185,15 +190,15 @@
 
 
             <div class="container-fluid py-5">
-              <h4 class="f-30 text-center color-dark">Our History</h4>
-              <p class="color-dark-light text-center">
+              <h4 class="f-30 text-center color-dark">History</h4>
+              <p class="color-dark-light text-left">
                 We at BloodConnect live by the motto of saving lives by ensuring every drop of blood contributes towards
                 the right cause of saving lives. A mission started by young IITians (Delhi), BloodConnect commenced
                 operations on 1st April 2010 as a project under National Service Scheme (NSS) chapter. Soon, the young
                 team lived by the fact that blood cant be manufactured in factories and committed themselves towards
                 connecting generous donors to the donees.
               </p>
-              <p class="color-dark-light text-center">
+              <p class="color-dark-light text-left">
                 They worked around-the-clock towards this cause, and in no time, BloodConnect became a full- scale NGO
                 with a mission of solving the problem of blood shortage in India. The organization now caters to any
                 requirement pertaining to blood and by uniting people in need of blood to voluntary blood donors. </p>
@@ -201,6 +206,7 @@
 
             <div class="container-fluid pt-5">
               <h4 class="text-center color-dark f-30">Our Activities</h4>
+              <p class="color-dark-light">Since its inception, BloodConnect has developed a 360-degree solution to cater to the problem of blood shortage in the country. The model revolves around four focal points:</p>
               <div class="row ">
                 <div class="col-lg-6 col-12 d-flex flex-row">
                   <div class="mr-2">
@@ -245,166 +251,154 @@
         </div>
 
         <!-- partners -->
-        <div id="collapseFour" class="collapse " aria-labelledby="headingOne" data-parent="#accordionExample">
-          <div class="container">
-            <h4 class="color-dark f-30">Corporate Partners</h4>
+        <div id="collapseFour" class="collapse  " aria-labelledby="headingOne" data-parent="#accordionExample">
+          <div class="container " >
+            <div class="container-fluid bg-main-light pt-5 px-5">
+              <h4 class="color-dark f-30 ">Corporate Partners</h4>
             <p class="color-dark-light">Many corporates have come forward to help us in this cause by providing their
               expertise and resources. They partner for quarterly blood donation camps, provide monetary support via
               payroll donation, and even provide mentorship to our team via volunteers.
             </p>
-            <div class="row pb-5 mb-5 camp no-gutters justify-content-center ">
-              <div
-                class="col-lg-2 col-sm-6 col-6 d-flex align-items-center justify-content-end partner flex-column mb-2">
+            <div class="row pb-5 mb-5  camp no-gutters justify-content-start ">
+              <div class="col-lg-2 col-sm-6 col-6 d-flex align-items-center justify-content-end partner flex-column mb-2 w-min-200 ">
                 <img class="partners-logo" src="./img/organize-a-camp/corps/Picture1.png" alt="">
                 <p class="color-white f-12 fw-6 text-center">HDFC Bank</p>
                 <div class="bg-main-dark filter"></div>
               </div>
-
-              <div
-                class="col-lg-2 col-sm-6 col-6 d-flex align-items-center justify-content-end partner flex-column mb-2">
+      
+              <div class="col-lg-2 col-sm-6 col-6 d-flex align-items-center justify-content-end partner flex-column mb-2 w-min-200 ">
                 <img class="partners-logo" src="./img/organize-a-camp/corps/Picture2.png" alt="">
                 <p class="color-white f-12 fw-6 text-center">Bain & Company</p>
                 <div class="bg-main-dark filter"></div>
               </div>
-
-              <div
-                class="col-lg-2 col-sm-6 col-6 d-flex align-items-center justify-content-end partner flex-column mb-2">
+      
+              <div class="col-lg-2 col-sm-6 col-6 d-flex align-items-center justify-content-end partner flex-column mb-2 w-min-200 ">
                 <img class="partners-logo" src="./img/organize-a-camp/corps/Picture3.png" alt="">
                 <p class="color-white f-12 fw-6 text-center">MYHQ</p>
                 <div class="bg-main-dark filter"></div>
               </div>
-
-              <div
-                class="col-lg-2 col-sm-6 col-6 d-flex align-items-center justify-content-end partner flex-column mb-2">
+      
+              <div class="col-lg-2 col-sm-6 col-6 d-flex align-items-center justify-content-end partner flex-column mb-2 w-min-200 ">
                 <img class="partners-logo" src="./img/organize-a-camp/corps/Picture4.png" alt="">
                 <p class="color-white f-12 fw-6 text-center">DFL</p>
                 <div class="bg-main-dark filter"></div>
               </div>
-              <div
-                class="col-lg-2 col-sm-6 col-6 d-flex align-items-center justify-content-end partner flex-column mb-2">
+              <div class="col-lg-2 col-sm-6 col-6 d-flex align-items-center justify-content-end partner flex-column mb-2 w-min-200 ">
                 <img class="partners-logo" src="./img/organize-a-camp/corps/Picture5.png" alt="">
                 <p class="color-white f-12 fw-6">Vodafone</p>
                 <div class="bg-main-dark filter"></div>
               </div>
-              <div
-                class="col-lg-2 col-sm-6 col-6 d-flex align-items-center justify-content-end partner flex-column mb-2">
+              <div class="col-lg-2 col-sm-6 col-6 d-flex align-items-center justify-content-end partner flex-column mb-2 w-min-200 ">
                 <img class="partners-logo" src="./img/organize-a-camp/corps/Picture6.png" alt="">
                 <p class="color-white f-12 fw-6">Sabic</p>
                 <div class="bg-main-dark filter"></div>
               </div>
-              <div
-                class="col-lg-2 col-sm-6 col-6 d-flex align-items-center justify-content-end partner flex-column mb-2">
+              <div class="col-lg-2 col-sm-6 col-6 d-flex align-items-center justify-content-end partner flex-column mb-2 w-min-200 ">
                 <img class="partners-logo" src="./img/organize-a-camp/corps/Picture7.png" alt="">
                 <p class="color-white f-12 fw-6">L & T</p>
                 <div class="bg-main-dark filter"></div>
               </div>
-              <div
-                class="col-lg-2 col-sm-6 col-6 d-flex align-items-center justify-content-end partner flex-column mb-2">
+              <div class="col-lg-2 col-sm-6 col-6 d-flex align-items-center justify-content-end partner flex-column mb-2 w-min-200 ">
                 <img class="partners-logo" src="./img/organize-a-camp/corps/Picture8.png" alt="">
                 <p class="color-white f-12 fw-6">Everest Group</p>
                 <div class="bg-main-dark filter"></div>
               </div>
-              <div
-                class="col-lg-2 col-sm-6 col-6 d-flex align-items-center justify-content-end partner flex-column mb-2">
+              <div class="col-lg-2 col-sm-6 col-6 d-flex align-items-center justify-content-end partner flex-column mb-2 w-min-200 ">
                 <img class="partners-logo" src="./img/organize-a-camp/corps/Picture9.png" alt="">
                 <p class="color-white f-12 fw-6">Snapdeal</p>
                 <div class="bg-main-dark filter"></div>
               </div>
-              <div
-                class="col-lg-2 col-sm-6 col-6 d-flex align-items-center justify-content-end partner flex-column mb-2">
+              <div class="col-lg-2 col-sm-6 col-6 d-flex align-items-center justify-content-end partner flex-column mb-2 w-min-200">
                 <img class="partners-logo" src="./img/organize-a-camp/corps/Picture10.png" alt="">
                 <p class="color-white f-12 fw-6">OYO</p>
                 <div class="bg-main-dark filter"></div>
               </div>
+              </div>
             </div>
-            <h4 class="color-dark f-30 mt-5">College Partners</h4>
+            <div class="container-fluid bg-main-light pt-5 px-5">
+              <h4 class="color-dark f-30 mt-4">College Partners</h4>
             <p class="color-dark-light">Being largely student volunteer driven, colleges are the backbone of our
               organization. With our college partners, we are able to organize seamless blood donation camps throughout
               the year, recruit the most motivated, sharp and hardworking volunteers and last, but most importantly,
               motivate the newly 18, the first time donors to become regular lifesavers.</p>
-              <div class="row pb-5 mb-5 camp no-gutters justify-content-center ">
+              <div class="row pb-5 mb-5 camp no-gutters justify-content-between ">
                 <div
-                  class="col-lg-2 col-sm-6 col-6 d-flex align-items-center justify-content-end partner flex-column mb-2">
+                  class="col-lg-2 col-sm-6 col-6 d-flex align-items-center justify-content-end partner flex-column mb-2 college-box mx-0">
                   <img class="partners-logo" src="./img/about-us/college-partners/Picture1.png" alt="">
-                  <p class="color-white f-12 fw-6 text-center">HDFC Bank</p>
+                  <p class="color-white f-12 fw-6 text-center">Lucknow University</p>
                   <div class="bg-main-dark filter"></div>
                 </div>
   
                 <div
-                  class="col-lg-2 col-sm-6 col-6 d-flex align-items-center justify-content-end partner flex-column mb-2">
+                  class="col-lg-2 col-sm-6 col-6 d-flex align-items-center justify-content-end partner flex-column mb-2 college-box mx-0">
                   <img class="partners-logo" src="./img/about-us/college-partners/Picture2.png" alt="">
-                  <p class="color-white f-12 fw-6 text-center">Bain & Company</p>
+                  <p class="color-white f-12 fw-6 text-center">MDI Gurgaon</p>
                   <div class="bg-main-dark filter"></div>
                 </div>
   
                 <div
-                  class="col-lg-2 col-sm-6 col-6 d-flex align-items-center justify-content-end partner flex-column mb-2">
+                  class="col-lg-2 col-sm-6 col-6 d-flex align-items-center justify-content-end partner flex-column mb-2 college-box mx-0">
                   <img class="partners-logo" src="./img/about-us/college-partners/3.png" alt="">
-                  <p class="color-white f-12 fw-6 text-center">MYHQ</p>
+                  <p class="color-white f-12 fw-6 text-center">LSR</p>
                   <div class="bg-main-dark filter"></div>
                 </div>
   
                 <div
-                  class="col-lg-2 col-sm-6 col-6 d-flex align-items-center justify-content-end partner flex-column mb-2">
+                  class="col-lg-2 col-sm-6 col-6 d-flex align-items-center justify-content-end partner flex-column mb-2 college-box mx-0">
                   <img class="partners-logo" src="./img/about-us/college-partners/4.png" alt="">
-                  <p class="color-white f-12 fw-6 text-center">DFL</p>
+                  <p class="color-white f-12 fw-6 text-center">NIFT Ranchi</p>
                   <div class="bg-main-dark filter"></div>
                 </div>
                 <div
-                  class="col-lg-2 col-sm-6 col-6 d-flex align-items-center justify-content-end partner flex-column mb-2">
+                  class="col-lg-2 col-sm-6 col-6 d-flex align-items-center justify-content-end partner flex-column mb-2 college-box mx-0">
                   <img class="partners-logo" src="./img/about-us/college-partners/5.png" alt="">
-                  <p class="color-white f-12 fw-6">Vodafone</p>
+                  <p class="color-white f-12 fw-6">IIT Delhi</p>
                   <div class="bg-main-dark filter"></div>
                 </div>
                 <div
-                  class="col-lg-2 col-sm-6 col-6 d-flex align-items-center justify-content-end partner flex-column mb-2">
+                  class="col-lg-2 col-sm-6 col-6 d-flex align-items-center justify-content-end partner flex-column mb-2 college-box mx-0">
                   <img class="partners-logo" src="./img/about-us/college-partners/6.png" alt="">
-                  <p class="color-white f-12 fw-6">Sabic</p>
+                  <p class="color-white f-12 fw-6">Amity University</p>
                   <div class="bg-main-dark filter"></div>
                 </div>
                 <div
-                  class="col-lg-2 col-sm-6 col-6 d-flex align-items-center justify-content-end partner flex-column mb-2">
+                  class="col-lg-2 col-sm-6 col-6 d-flex align-items-center justify-content-end partner flex-column mb-2 college-box mx-0">
                   <img class="partners-logo" src="./img/about-us/college-partners/7.png" alt="">
-                  <p class="color-white f-12 fw-6">L & T</p>
+                  <p class="color-white f-12 fw-6">IIT Kharagpur</p>
                   <div class="bg-main-dark filter"></div>
                 </div>
                 <div
-                  class="col-lg-2 col-sm-6 col-6 d-flex align-items-center justify-content-end partner flex-column mb-2">
+                  class="col-lg-2 col-sm-6 col-6 d-flex align-items-center justify-content-end partner flex-column mb-2 college-box mx-0">
                   <img class="partners-logo" src="./img/about-us/college-partners/8.png" alt="">
-                  <p class="color-white f-12 fw-6">Everest Group</p>
+                  <p class="color-white f-12 fw-6">IIT Varanasi</p>
                   <div class="bg-main-dark filter"></div>
                 </div>
                 <div
-                  class="col-lg-2 col-sm-6 col-6 d-flex align-items-center justify-content-end partner flex-column mb-2">
+                  class="col-lg-2 col-sm-6 col-6 d-flex align-items-center justify-content-end partner flex-column mb-2 college-box mx-0">
                   <img class="partners-logo" src="./img/about-us/college-partners/9.png" alt="">
-                  <p class="color-white f-12 fw-6">Snapdeal</p>
+                  <p class="color-white f-12 fw-6">IIM Calcutta</p>
                   <div class="bg-main-dark filter"></div>
                 </div>
                 <div
-                  class="col-lg-2 col-sm-6 col-6 d-flex align-items-center justify-content-end partner flex-column mb-2">
+                  class="col-lg-2 col-sm-6 col-6 d-flex align-items-center justify-content-end partner flex-column mb-2 college-box mx-0">
                   <img class="partners-logo" src="./img/about-us/college-partners/10.png" alt="">
-                  <p class="color-white f-12 fw-6">OYO</p>
+                  <p class="color-white f-12 fw-6">IIM Kozhikode</p>
                   <div class="bg-main-dark filter"></div>
                 </div>
                 <div
-                  class="col-lg-2 col-sm-6 col-6 d-flex align-items-center justify-content-end partner flex-column mb-2">
+                  class="col-lg-2 col-sm-6 col-6 d-flex align-items-center justify-content-end partner flex-column mb-2 college-box mx-0">
                   <img class="partners-logo" src="./img/about-us/college-partners/11.png" alt="">
-                  <p class="color-white f-12 fw-6">OYO</p>
+                  <p class="color-white f-12 fw-6">IIT Kanpur</p>
                   <div class="bg-main-dark filter"></div>
                 </div>
                 <div
-                  class="col-lg-2 col-sm-6 col-6 d-flex align-items-center justify-content-end partner flex-column mb-2">
-                  <img class="partners-logo" src="./img/about-us/college-partners/12.png" alt="">
-                  <p class="color-white f-12 fw-6">OYO</p>
-                  <div class="bg-main-dark filter"></div>
-                </div>
-                <div
-                  class="col-lg-2 col-sm-6 col-6 d-flex align-items-center justify-content-end partner flex-column mb-2">
+                  class="col-lg-2 col-sm-6 col-6 d-flex align-items-center justify-content-end partner flex-column mb-2 college-box mx-0">
                   <img class="partners-logo" src="./img/about-us/college-partners/13.png" alt="">
-                  <p class="color-white f-12 fw-6">OYO</p>
+                  <p class="color-white f-12 fw-6">NLU Delhi</p>
                   <div class="bg-main-dark filter"></div>
                 </div>
               </div>
+            </div>
           </div>
         </div>
       </div>
@@ -517,13 +511,16 @@
       func1() 
       myFunction() };
 
+let offSet = 119
     function func1() {
       
       let footerDistace = footer.offsetTop - window.scrollY
       if (window.pageYOffset >= 400 && footerDistace > 175 ) {
           aboutNav.classList.add('about-nav')
+          aboutNav.style.left = offSet+"px"
       } else {
           aboutNav.classList.remove('about-nav')
+          offSet = aboutNav.offsetLeft
       }
     }
     $('.carousel').carousel()
