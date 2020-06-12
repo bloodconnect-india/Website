@@ -93,7 +93,7 @@ paymentSuccess = () => {
     let secondsLeft = 3;
     let x = setInterval( () => {
         if(secondsLeft <= 0)
-            window.location.href = "./organise-a-camp.html"
+            window.location.href = "./organize-a-camp.html"
         $("#seconds").html(`${secondsLeft}s`)
         secondsLeft -=1;
     },1000)
