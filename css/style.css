@@ -6,7 +6,9 @@
     line-height: 180%;
     font-size: 16px;
 }
-
+input:focus{
+    background: none !important;
+}
 .container{
     max-width:1240px !important
 }

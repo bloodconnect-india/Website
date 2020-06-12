@@ -255,22 +255,14 @@
     </div>
   </div>
 
-  <div class="success-modal pl-4 pr-4 pb-4  shadow bg-white hide" id="success-modal">
-    <div class="svg-box">
-      <svg class="circular green-stroke">
-        <circle class="path" cx="75" cy="75" r="50" fill="none" stroke-width="5" stroke-miterlimit="10" />
-      </svg>
-      <svg class="checkmark green-stroke">
-        <g transform="matrix(0.79961,8.65821e-32,8.39584e-32,0.79961,-489.57,-205.679)">
-          <path class="checkmark__check" fill="none" d="M616.306,283.025L634.087,300.805L673.361,261.53" />
-        </g>
-      </svg>
-    </div>
-    <p class="success">Request raised successfully</p>
+  <div class="success-modal py-5 shadow bg-white hide" id="success-modal">
+    <img width="100" src="./img/popup/mail-sent.jpg" alt="">
+  <p class="color-dark fw-6 mt-3">Request raised successfully</p>
+  <p class="color-grey">You would be redirected in <span id="seconds">3s</span></p>
   </div>
 
   <!-- Form -->
-  <div class="container-fluid bg-main-dark mb-5">
+  <div class="container-fluid bg-main-dark mb-5" id="campForm">
     <div class="container pt-5 pb-5">
 
       <div class="row  ">
@@ -305,7 +297,7 @@
             <div id="page2" class="hand" onclick="showCampDetailsInput()">2</div>
             <hr>
           </div>
-          <form action="" class="request-form" onsubmit="submitRequest(event)" id="campForm">
+          <form action="" class="request-form" onsubmit="submitRequest(event)" >
 
             <div id="personalDetails">
               <div class="form-group mb-4">
@@ -478,6 +470,7 @@
   <script src="./js/bootstrap.min.js"></script>
   <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
   <script src="./js/main.js"></script>
+  <script src="./js/campRequest.js"></script>
 
   <script>
 
@@ -496,10 +489,7 @@
 
 
     showCampForm = () => {
-      window.scrollTo({
-        top: $("#campForm").offset().top - window.innerHeight / 2 ,
-        behavior: 'smooth'
-      })
+      document.getElementById("city_region").focus()
     }
 
 

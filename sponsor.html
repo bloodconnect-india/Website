@@ -245,7 +245,7 @@
 
 
     <!-- Payment popup -->
-    <div class="payment-details pb-5 bg-white  z-100 shadow  hide" id="payment-details">
+    <div class="payment-details  bg-main-light  z-100 shadow  hide" id="payment-details">
       <div class="row justify-content-end">
         <div class="col-lg-6 fixed hide-sm px-0" style="left: 0px;">
           <div id="fade-slide" class="wd-inherit" data-slick='{"slidesToShow": 1, "slidesToScroll": 1}'>
@@ -258,37 +258,18 @@
               <img class="wd-inherit color-hover" style="height: 600px;" src="./img/sponsor-us/slide/normal1.jpg" alt="">
             </div>
 
-            <div>
-              <img class="wd-inherit  color-hover" style="height: 600px;" src="./img/sponsor-us/slide/normal2.JPG" alt="">
-            </div>
 
             <div>
               <img class="wd-inherit color-hover" style="height: 600px;" src="./img/sponsor-us/slide/normal3.JPG" alt="">
             </div>
-            <!-- Duotone -->
-            <div>
-              <img class="wd-inherit " style="height: 600px;" src="./img/sponsor-us/slide/duotone.png" alt="">
-            </div>
-
-            <div>
-              <img class="wd-inherit " style="height: 600px;" src="./img/sponsor-us/slide/duotone1.png" alt="">
-            </div>
-
-            <div>
-              <img class="wd-inherit  " style="height: 600px;" src="./img/sponsor-us/slide/duotone2.png" alt="">
-            </div>
-
-            <div>
-              <img class="wd-inherit " style="height: 600px;" src="./img/sponsor-us/slide/duotone3.png" alt="">
-            </div>
           </div>
         </div>
-        <div class="col-lg-6 h-max bg-white  p-2 pl-4">
-          <h4 class="f-30 color-main">Payment Details</h4>
+        <div class="col-lg-6 h-max bg-main-light  p-2 pl-4">
+          <h4 class="f-40 color-dark">Payment Details</h4>
           <form  method="get" onsubmit="initiatePayment(event)">
-            <button type="button" class="amt selected" onclick="amtSelected(event)">1000</button>
-            <button type="button" class="amt" onclick="amtSelected(event)">5000</button>
-            <button type="button" class="amt" onclick="amtSelected(event)">10000</button>
+            <button type="button" class="amt btn-main bg-none selected" onclick="amtSelected(event)">1000</button>
+            <button type="button" class="amt btn-main bg-none " onclick="amtSelected(event)">5000</button>
+            <button type="button" class="amt btn-main bg-none" onclick="amtSelected(event)">10000</button>
 
             <p class="color-dark fw-6 f-18 " id="amtImpact" >You are helping us save 20 lives 
               <i class="fa fa-heart color-main "></i>
@@ -297,32 +278,28 @@
             </p>
             <div class="form-group mb-4  relative">
               <label class="m-0   color-dark" for="patientName">Amount</label>
-              <i class="input-icon color-grey fa fa-rupee"></i>
-              <input type="number" class="form-control pl-5" id="amtInput" placeholder="500" value="1000" onchange="amtChanged(event)" required>
+              
+              <input type="number" class="form-control pl-2" id="amtInput" placeholder="500" value="1000" onchange="amtChanged(event)" required>
             </div>
             <div class="form-group mb-4 relative">
-              <i class="input-icon color-grey fa fa-user"></i>
               <label class="m-0   color-dark" for="patientName">Your Name</label>
-              <input type="text" class="form-control pl-5" id="nameInput" placeholder="Your Name" required>
+              <input type="text" class="form-control pl-2" id="nameInput" placeholder="Your Name" required>
             </div>
             <div class="form-group mb-4 relative">
-              <i class="input-icon color-grey fa fa-envelope"></i>
               <label class="m-0   color-dark" for="patientName">Your Email</label>
-              <input type="text" class="form-control pl-5" id="emailInput" placeholder="example@domain.com" required>
+              <input type="text" class="form-control pl-2" id="emailInput" placeholder="example@domain.com" required>
             </div>
             <div class="form-group mb-4 relative">
-              <i class="input-icon color-grey fa fa-address-card"></i>
               <label class="m-0 not-required color-dark" for="panCardInput">Pan Card Number</label>
-              <input type="text" class="form-control pl-5" id="panCardInput" placeholder="AXB14SD5X" >
+              <input type="text" class="form-control pl-2" id="panCardInput" placeholder="AXB14SD5X" >
             </div>
             <div class="form-group mb-4 relative">
-              <i class="input-icon color-grey fa fa-phone"></i>
               <label class="m-0   color-dark" for="patientName">Contact Number</label>
-              <input type="text" class="form-control pl-5" id="contactInput" placeholder="95832xxxxx" required>
+              <input type="text" class="form-control pl-2" id="contactInput" placeholder="95832xxxxx" required>
             </div>
             
             <button type="submit" class="btn-main bg-main color-white mx-auto">Donate Now <i class="color-white fa fa-heart"></i></button>
-            <button type="button" class="close color-main btn-main bg-white" onclick="hidePayment()"><i class="fa fa-times"></i></button>
+            <button type="button" class="close color-main btn-main bg-none" style="right: 30px !important;" onclick="hidePayment()"><i class="fa fa-times" style="font-size: 24px !important;"></i></button>
           </form>
         </div>
       </div>

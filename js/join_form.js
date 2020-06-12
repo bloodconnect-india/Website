@@ -87,7 +87,7 @@ sendRequest = () => {
 
   console.log("sending request")
 
-  let url= 'http://localhost:3000/recruitment'
+  let url= 'https://blood-request-api.herokuapp.com/recruitment'
   fetch(url,{
     method: 'POST',
     body:JSON.stringify(requestData),
