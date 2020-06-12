@@ -1126,9 +1126,7 @@ button.selected{
     .pt-60-sm{
         padding-top: 60px !important;
     }
-    .camp-slider{
-        height: 130vh !important;
-    }
+    
     .pt-5-sm{
         padding-top: 3rem;
     }
@@ -1146,6 +1144,9 @@ button.selected{
     }
     .h-50-sm{
         height: 50vh !important;
+    }
+    .h-100-sm{
+        height: 100vh !important;
     }
     .h-auto-sm{
         height: auto !important;
@@ -1206,6 +1207,9 @@ button.selected{
     }
     .homepage-slider>div>h1:first-child{
         width:260px !important;
+    }
+    .main-slider{
+        top: 0px !important;
     }
     .camp>.partner{
         max-width: 160px !important;
