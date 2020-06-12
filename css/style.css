@@ -1224,6 +1224,12 @@ button.selected{
     .w-50-lg{
         width: auto;
     }
+    .about-nav{
+        position: absolute !important;
+    }
+    .show-flex + .content{
+        margin-top: 200px;
+    }
     .flex-column-sm{
         flex-direction: column !important;
     }
