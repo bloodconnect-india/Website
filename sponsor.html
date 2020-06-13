@@ -25,6 +25,26 @@
     gtag('config', 'UA-18198647-1');
   </script>
 
+<!-- facebook pixel -->
+<!-- Facebook Pixel Code -->
+<script>
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window,document,'script',
+  'https://connect.facebook.net/en_US/fbevents.js');
+   fbq('init', '483666385759479'); 
+  fbq('track', 'PageView');
+  </script>
+  <noscript>
+   <img height="1" width="1" 
+  src="https://www.facebook.com/tr?id=483666385759479&ev=PageView
+  &noscript=1"/>
+  </noscript>
+  <!-- End Facebook Pixel Code -->
   <style>
     .play {
       top: calc(50% - 70px) !important;
@@ -144,7 +164,7 @@
       </div>
     </div>
     <div class="main-slider h-100" id="homepageSlider"
-      style="background-image:url('./img/sponsor-us/SponsorUs-Banner.webp');background-size: cover;background-position: bottom;">
+      style="background-image:url('./img/sponsor-us/SponsorUs-Banner.jpg');background-size: cover;background-position: bottom;">
 
     </div>
 
@@ -156,7 +176,7 @@
     <div class="container">
       <div class="row justify-content-between">
         <div class="col-lg-6">
-          <h4 class="f-40 color-dark   text-left pt-5">Each rupee we recieve, help us to</h4>
+          <h4 class="f-40 color-dark   text-left pt-5">Each rupee we recieve, helps us to</h4>
           <div class="d-flex flex-column">
             <div class="col d-flex flex-row">
               <div class="mr-2">
@@ -230,7 +250,7 @@
             </video>
           </div>
 
-          <img src="./img/sponsor-us/video.webp" id="video-img" class="wd-inherit" style="max-height: 500px;" alt="">
+          <img src="./img/sponsor-us/video.jpg" id="video-img" class="wd-inherit" style="max-height: 500px;" alt="">
           <p class="color-dark f-14">A campaign to promote Blood Donation supported by JWT</p>
           <button class="play bg-none" id="play" onclick="playVideo()"><i class="color-white fa fa-play"></i></button>
         </div>

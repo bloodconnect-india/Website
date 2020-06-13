@@ -58,7 +58,7 @@ initiatePayment = (e) => {
         "amount": amt*100, // Amount is in currency subunits. Default currency is INR. Hence, 50000 refers to 50000 paise
         "currency": "INR",
         "name": "BloodConnect Foundation",
-        "description": "Test Transaction",
+        "description": "Website Transaction",
         "image": "./img/logo.png", //This is a sample Order ID. Pass the `id` obtained in the response of Step 1
         "handler": function (response){
             console.log(response)
@@ -115,6 +115,9 @@ amtSelected = (e) => {
 
 amtChanged = (e) =>{
     let amt = e.target.value
+    if(amt < 1)
+    $("#amtImpact").html(`You are helping us save 1 live ${beatingHeart}`)
+    else
     $("#amtImpact").html(`You are helping us save ${Math.round(amt/50)} lives ${beatingHeart}`)
     requirePanCard(e)
 }
