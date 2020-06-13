@@ -769,6 +769,10 @@ div.team-member>ul.social-media>li{
     height: 300px !important;
     width: 250px;
 }
+.alumni-testimonial>img{
+    min-width: 300px;
+    max-height: 350px ;
+}
 .avatar{
     height: 70px;
     width: 70px;
@@ -1313,6 +1317,10 @@ button.selected{
         right: 10px !important;
         top: calc(40% - 50px) !important;
         color: #980000 !important;
+    }
+    .alumni-testimonial>img{
+        width: 100% !important;
+        height: 100% !important ;
     }
     
 }
