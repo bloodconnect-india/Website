@@ -210,7 +210,7 @@
             <div class="hide d-flex justify-content-center align-items-center" id="youtubeVideoDiv">
               <button class="close color-white f-20" onclick="closeVideo()" style="right:40px !important;z-index: 100;"><i class="fa fa-times"></i></button>
               <video class="wd-inherit h-90" style="width: 100% !important;" controls autoplay="false"   id="youtubeVideo"  >
-                <source src="./img/sponsor-us/scream.mp4"  type="video/mp4">
+                <source  id="videoSource"  type="video/mp4">
               </video>
             </div>
 
@@ -416,6 +416,9 @@ $("#youtubeVideo").get(0).pause()
   playVideo = () => {
     $("#youtubeVideoDiv").addClass('show-flex')
     $("#youtubeVideoDIv").removeClass('hide')
+    document.getElementById("videoSource").src = "./img/sponsor-us/scream.mp4"
+      document.getElementById("youtubeVideo").load()
+      $("#youtubeVideo").get(0).play()
     $("#youtubeVideo").get(0).play()
   
   }

@@ -103,7 +103,7 @@
   <nav class="navbar justify-content-center-sm justify-content-between pb-0 sticky-sm z-5  bg-none " id="navbar">
       <div class="d-flex flex-row align-items-center justify-content-end">
         <a class="navbar-brand" href="./index.html">
-          <img src="./img/homepage/Logo.png"   height="35" alt="BloodConnect Logo">
+          <img src="./img/homepage/Logo.webp"   height="35" alt="BloodConnect Logo">
       </a>
       <ul class="navbar-nav flex-row  align-items-end hide-md"  style="border-bottom: none !important;">
 
@@ -387,8 +387,8 @@
             <div class="col-lg-6 d-flex flex-column justify-content-center align-items-center">
               <div class="hide d-flex justify-content-center align-items-center" id="youtubeVideoDiv">
                 <button class="close color-white f-20" onclick="closeVideo()" style="right:40px ;z-index: 100;"><i class="fa fa-times"></i></button>
-                <video class="wd-inherit h-90" style="width: 100% !important;" controls autoplay="false"   id="youtubeVideo"  >
-                  <source src="./img/homepage/Blood Donation- A Birthday Wish.mp4"  type="video/mp4">
+                <video class="wd-inherit h-90"  style="width: 100% !important;" controls autoplay="false"   id="youtubeVideo"  >
+                  <source  id="videoSource" type="video/mp4">
                 </video>
               </div>
 
@@ -573,6 +573,8 @@ $(".media-slider").slick({
   playVideo = () => {
     $("#youtubeVideoDiv").addClass('show-flex')
     $("#youtubeVideoDIv").removeClass('hide')
+    document.getElementById("videoSource").src = "./img/homepage/Blood Donation- A Birthday Wish.mp4"
+    document.getElementById("youtubeVideo").load()
     $("#youtubeVideo").get(0).play()
   
   }

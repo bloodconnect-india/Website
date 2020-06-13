@@ -162,7 +162,7 @@
                           class="fa fa-times"></i></button>
                       <video class="wd-inherit h-90" style="width: 100% !important;" controls autoplay="false"
                         id="youtubeVideo">
-                        <source src="./img/about-us/video.mp4" type="video/mp4">
+                        <source  id="videoSource" type="video/mp4">
                       </video>
                     </div>
 
@@ -530,6 +530,8 @@ let offSet = 119
     playVideo = () => {
       $("#youtubeVideoDiv").addClass('show-flex')
       $("#youtubeVideoDIv").removeClass('hide')
+      document.getElementById("videoSource").src = "./img/about-us/video.mp4"
+      document.getElementById("youtubeVideo").load()
       $("#youtubeVideo").get(0).play()
 
     }
