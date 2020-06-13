@@ -86,6 +86,7 @@ submitRequest = (e) => {
 sendRequest = () => {
 
   console.log("sending request")
+  $("#submit-request-button").addClass("loading-start")
 
   let url= 'https://blood-request-api.herokuapp.com/recruitment'
   fetch(url,{
@@ -96,10 +97,21 @@ sendRequest = () => {
       }
     }).then(response => response.json()).then(data => {
     
-    console.log(data)
+        if(!data.msg){
+            console.log('Showing success modal')
+            $("#success-modal").removeClass('hide')
+            $("#success-modal").addClass('show')
+            let secondsLeft = 3;
+            let x = setInterval( () => {
+                if(secondsLeft <= 0)
+                    window.location.href = "./our-team.html"
+                $("#seconds").html(`${secondsLeft}s`)
+                secondsLeft -=1;
+            },1000)
+            
+        }
 })
 
-  console.log(requestData)
  }
   
 

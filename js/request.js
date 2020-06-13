@@ -85,7 +85,7 @@ createHelplineRequest = () => {
             let secondsLeft = 3;
             let x = setInterval( () => {
                 if(secondsLeft <= 0)
-                    window.location.reload()
+                    window.location.href = "./sponsor-us.html"
                 $("#seconds").html(`${secondsLeft}s`)
                 secondsLeft -=1;
             },1000)

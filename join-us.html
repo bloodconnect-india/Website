@@ -526,8 +526,23 @@
                 <button type="button" onclick="showSection2()"
                   class="pl-5 pr-5 left-lg mb-4 mx-auto btn-main bg-white color-dark">Back</button>
                 <button type="button" onclick="submitRequest(event)"
+                  id="submit-request-button"
                   class="pl-5 pr-5 right-lg mb-4 mx-auto btn-main bg-main">
-                  Submit
+                  <p class="color-white m-0 fw-4">Submit</p>
+                  <!-- Animation -->
+                  <svg style="width: 50px;" version="1.1" id="L9" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                    viewBox="0 0 100 100" enable-background="new 0 0 0 0" xml:space="preserve">
+                      <path fill="#fff" d="M73,50c0-12.7-10.3-23-23-23S27,37.3,27,50 M30.9,50c0-10.5,8.5-19.1,19.1-19.1S69.1,39.5,69.1,50">
+                        <animateTransform 
+                          attributeName="transform" 
+                          attributeType="XML" 
+                          type="rotate"
+                          dur="1s" 
+                          from="0 50 50"
+                          to="360 50 50" 
+                          repeatCount="indefinite" />
+                    </path>
+                  </svg>
                 </button>
               </div>
             </div>
@@ -535,6 +550,13 @@
         </div>
       </div>
     </div>
+  </div>
+
+  <!-- Success popup-->
+  <div class="success-modal py-5 shadow bg-white hide" id="success-modal">
+    <img width="100" src="./img/popup/mail-sent.jpg" alt="">
+  <p class="color-dark fw-6 mt-3">Thank you</p>
+  <p class="color-grey">You would be redirected in <span id="seconds">3s</span></p>
   </div>
 
   <div class="container-fluid  p-5 text-center">
