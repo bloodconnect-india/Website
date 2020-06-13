@@ -91,23 +91,6 @@
       .testimonial-slider>.slick-next{
          right: 20px !important;
       }
-      #youtubeVideoDiv>iframe{
-        width: 100% !important;
-        height: 300px !important;
-    }
-    }
-    #youtubeVideoDiv{
-        left: calc(50% - 400px);
-        width: auto !important;
-        height: auto !important;
-        top : 5% ;
-    }
-    iframe{
-        width: 800px !important;
-        height: 500px !important;
-    }
-    .close{
-        z-index: 99999999 !important;
     }
     </style>
 </head>
@@ -187,6 +170,9 @@
           <a href="./join-us-selection.html" class="color-dark b-dark f-14 ">JOIN US</a>
         </li>
   </ul>
+    </div>
+    <div class="d-flex flex-row align-items-center">
+      <a href="./sponsor.html" class="f-14 sponsor-link-button color-dark fw-6 px-3 py-2 uppercase bg-main color-white">Support us</a>
     </div>
 </nav>
 
@@ -418,10 +404,10 @@
             </div>
             <div class="col-lg-6 d-flex flex-column justify-content-center align-items-center">
               <div class="hide d-flex justify-content-center align-items-center" id="youtubeVideoDiv">
-                <button class="close color-white f-30" style="opacity: 1;" onclick="closeVideo()" style="right:40px ;z-index: 100;"><i class="fa fa-times"></i></button>
-
-                <iframe id="youtubeFrame"   width="560" height="315"  frameborder="0" allowfullscreen></iframe>
-                </iframe>
+                <button class="close color-white f-20" onclick="closeVideo()" style="right:40px ;z-index: 100;"><i class="fa fa-times"></i></button>
+                <video class="wd-inherit h-90"  style="width: 100% !important;" controls autoplay="false"   id="youtubeVideo"  >
+                  <source  id="videoSource" type="video/mp4">
+                </video>
               </div>
 
                   <img src="./img/homepage/video.jpg" id="video-img" style="height: 400px;" class="wd-inherit" alt="">
@@ -601,16 +587,19 @@ $(".media-slider").slick({
 
     }]
   });
+  $("#youtubeVideo").get(0).pause()
   playVideo = () => {
     $("#youtubeVideoDiv").addClass('show-flex')
     $("#youtubeVideoDIv").removeClass('hide')
-    document.getElementById("youtubeFrame").src = "https://www.youtube.com/embed/zYVxjIPVCZQ?rel=0&modestbranding=1&autohide=1&showinfo=0&autoplay=1"
+    document.getElementById("videoSource").src = "./img/homepage/Blood Donation- A Birthday Wish.mp4"
+    document.getElementById("youtubeVideo").load()
+    $("#youtubeVideo").get(0).play()
   
   }
   closeVideo = () => {
     $("#youtubeVideoDiv").addClass('hide')
     $("#youtubeVideoDiv").removeClass('show-flex')
-    document.getElementById("youtubeFrame").src = ""
+    $("#youtubeVideo").get(0).pause()
   }
 
   $('body').keydown(function(e) {

@@ -92,7 +92,7 @@ setOption = (order_id) => {
             "address": "BloodConnect Foundation"
         },
         "theme": {
-            "color": "#D20003"
+            "color": "#980000"
         }
     };
     var rzp1 = new Razorpay(options);
