@@ -114,7 +114,7 @@ amtSelected = (e) => {
 
 amtChanged = (e) =>{
     let amt = e.target.value
-    $("#amtImpact").html(`You are helping us save ${Math.round(amt/10)} lives ${beatingHeart}`)
+    $("#amtImpact").html(`You are helping us save ${Math.round(amt/50)} lives ${beatingHeart}`)
     requirePanCard(e)
 }
 

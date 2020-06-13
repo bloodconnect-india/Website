@@ -4,6 +4,13 @@ $("#go-to-form").click(function() {
     }, 1000);
 });
 
+selectingCity = (e) => {
+    if(e.target.value == "Other")
+        $("#otherCity").removeClass('hide')
+    else
+        $("#otherCity").addClass('hide')
+}
+
 let section1 = $("#section1")
 let section2 = $("#section2")
 let section3 = $("#section3")
@@ -35,6 +42,7 @@ showSection2 = () => {
     page2.addClass('active')
     page1.removeClass('active')
     page3.removeClass('active')
+    document.getElementById("city").focus()
 }
 showSection3 = () => {
     section1.hide()
@@ -43,6 +51,7 @@ showSection3 = () => {
     page3.addClass('active')
     page2.removeClass('active')
     page1.removeClass('active')
+    document.getElementById("why_BC1").focus()
 }
 
 showSection1()
@@ -65,12 +74,15 @@ showSection1()
 submitRequest = (e) => {
     e.preventDefault()
     $("#submit-request-button").addClass("loading-start")
+    let city = $("#city").val()
+    if(city == 'Other')
+        city = $("#other_city").val()
     requestData = {
     Name : $('#your_name').val(),
     Phone_Number : "+91"+$("#phone_number").val(),
     Email: $("#email").val(),
     Organization : $("#organization").val(),
-    City : $("#city").val(),
+    City : city,
     Education_Details : $("#education_details").val(),
     Year_of_graduation : $("#graduation_year").val(),
     Prior_Experience_Volunteering : $("#prior_exp").val(),
