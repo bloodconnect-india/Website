@@ -53,7 +53,7 @@ initiatePayment = (e) => {
     contact = $("#contactInput").val()
     
     var options = {
-        "key": "rzp_test_k2prQpLyyBZBZc", // Enter the Key ID generated from the Dashboard
+        "key": "rzp_live_a6z6ViPxx9xQLq", // Enter the Key ID generated from the Dashboard
         "amount": amt*100, // Amount is in currency subunits. Default currency is INR. Hence, 50000 refers to 50000 paise
         "currency": "INR",
         "name": "BloodConnect Foundation",
@@ -76,7 +76,7 @@ initiatePayment = (e) => {
             "address": "BloodConnect Foundation"
         },
         "theme": {
-            "color": "#EB2441"
+            "color": "#D20003"
         }
     };
     var rzp1 = new Razorpay(options);
