@@ -74,7 +74,7 @@ setOption = (order_id) => {
         "amount": amt*100, // Amount is in currency subunits. Default currency is INR. Hence, 50000 refers to 50000 paise
         "currency": "INR",
         "name": "BloodConnect Foundation",
-        "description": "Website Transaction",
+        "description": "Donation",
         "order_id":order_id,
         "image": "./img/logo.png", //This is a sample Order ID. Pass the `id` obtained in the response of Step 1
         "handler": function (response){
