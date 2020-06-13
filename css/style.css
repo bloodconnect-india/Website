@@ -1323,6 +1323,9 @@ button.selected{
         padding-left: 1rem !important;
         padding-right: 1rem !important;
     }
+    .mr-5-sm{
+        margin-right: 2rem !important;
+    }
     .justify-content-center-md{
         justify-content: center !important;
     }
