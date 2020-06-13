@@ -248,7 +248,7 @@
           <div class="container bg-white  pt-4 pb-4 shadow z-2 rounded pl-5 pr-5 px-3-sm ">
             <h4 class="ft-24 text-center color-dark mb-0 uppercase">Drop us a message</h4>
             <p class="color-grey mb-3 text-center">Fill this and we will be in touch with you soon</p>
-            <form class="contact-form " action="">
+            <form class="contact-form " action="" onsubmit="createRequest()">
               <div class="form-group mb-4">
                 <label class="m-0  color-dark" for="name">Your Name</label>
                 <input type="text" class="form-control" id="name" placeholder="Your Name" required>
@@ -256,16 +256,28 @@
               <div class="form-group mb-4">
                 <label class="m-0  color-dark" for="email">Email Address</label>
                 <input type="email" class="form-control" placeholder="Email Address" id="email"
-                  aria-describedby="emailHelp" required>
-                <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone
-                  else.</small>
+                   required>
+                
               </div>
               <div class="form-group mb-4">
                 <label class="m-0  color-dark" for="message">Message</label>
                 <textarea name="message" id="message" cols="20" rows="3"
-                  placeholder="Enter Your Message Here"></textarea>
+                  placeholder="Enter Your Message Here" required></textarea>
               </div>
-              <input class="btn-main bg-main mx-auto shadow" type="submit" value="Submit">
+              <button type="submit" id="submit-request-button" class="pl-4 pr-4 fw-6  mb-4 mx-auto btn-main bg-main"
+              value="Submit">
+              <p class="color-white m-0 fw-4">Submit</p>
+              <!-- Animation -->
+              <svg style="width: 50px;" version="1.1" id="L9" xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 100 100"
+                enable-background="new 0 0 0 0" xml:space="preserve">
+                <path fill="#fff"
+                  d="M73,50c0-12.7-10.3-23-23-23S27,37.3,27,50 M30.9,50c0-10.5,8.5-19.1,19.1-19.1S69.1,39.5,69.1,50">
+                  <animateTransform attributeName="transform" attributeType="XML" type="rotate" dur="1s" from="0 50 50"
+                    to="360 50 50" repeatCount="indefinite" />
+                </path>
+              </svg>
+            </button>
             </form>
           </div>
         </div>
@@ -273,6 +285,12 @@
     </div>
   </div>
 
+  <!-- Success modal -->
+  <div class="success-modal py-5 shadow bg-white hide" id="success-modal">
+    <img width="100" src="./img/popup/mail-sent.jpg" alt="">
+    <p class="color-dark fw-6 mt-3">Thank you for contacting us.</p>
+    <p class="color-grey">You would be redirected in <span id="seconds">3s</span></p>
+  </div>
 
   <!-- Footer -->
   <div class="container-fluid  pt-5">
@@ -368,6 +386,47 @@
     crossorigin="anonymous"></script>
   <script src="./js/bootstrap.min.js"></script>
   <script src="./js/main.js"></script>
+  <script>
+    let name = ""
+    let email = ""
+    let message  = ""
+    createRequest = (e) => {
+      e.preventDefault()
+    $("#submit-request-button").addClass("loading-start")
+
+    name = $("#name").val()
+    email = $("#email").val()
+    message = $("#message").val()
+    let url = "https://blood-request-api.herokuapp.com/contact"
+    var requestData = {
+        'Name':name,
+        'Email':email,
+        'Message':message
+    }
+    fetch(url,{
+        method: 'POST',
+        body:JSON.stringify(requestData),
+        headers: {
+            "Content-Type": "application/json"
+          }
+    }).then(response => response.json()).then(data => {
+        
+        if(!data.msg){
+            console.log('Showing success modal')
+            $("#success-modal").removeClass('hide')
+            $("#success-modal").addClass('show')
+            let secondsLeft = 3;
+            let x = setInterval( () => {
+                if(secondsLeft <= 0)
+                    window.location.href = "./index.html"
+                $("#seconds").html(`${secondsLeft}s`)
+                secondsLeft -=1;
+            },1000)
+            
+        }
+    })
+    }
+  </script>
 </body>
 
 </html>
