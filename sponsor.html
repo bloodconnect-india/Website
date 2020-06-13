@@ -265,7 +265,7 @@
           </div>
         </div>
         <div class="col-lg-6 h-max bg-main-light  pt-2 pl-4">
-          <h4 class="f-40 color-dark">Payment Details</h4>
+          <h4 class="f-40 color-dark mb-3">Pick an amount</h4>
           <form  method="get" onsubmit="initiatePayment(event)">
             <button type="button" class="amt btn-main bg-none selected" onclick="amtSelected(event)">1000</button>
             <button type="button" class="amt btn-main bg-none " onclick="amtSelected(event)">5000</button>
@@ -293,9 +293,15 @@
               <label class="m-0 not-required color-dark" for="panCardInput">Pan Card Number</label>
               <input type="text" class="form-control pl-2" id="panCardInput" placeholder="AXB14SD5X" >
             </div>
-            <div class="form-group mb-4 relative">
-              <label class="m-0   color-dark" for="patientName">Contact Number</label>
-              <input type="text" class="form-control pl-2" id="contactInput" placeholder="95832xxxxx" required>
+            <div class="d-flex flex-row flex-column-sm justify-content-between">
+              <div class="form-group mb-4 relative w-100">
+                <label class="m-0   color-dark" for="patientName">Contact Number</label>
+                <input type="text" class="form-control pl-2" id="contactInput" placeholder="95832xxxxx" required>
+              </div>
+              <div class="form-group mb-4 relative w-100">
+                <label class="m-0 not-required  color-dark" for="dateOfBirth">Date of Birth</label>
+                <input type="date" class="form-control pl-2" id="dateOfBirth" >
+              </div>
             </div>
             
             <button type="submit" class="btn-main bg-main color-white mx-auto">Donate Now <i class="color-white fa fa-heart"></i></button>

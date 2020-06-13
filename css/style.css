@@ -9,6 +9,13 @@
 input:focus{
     background: none !important;
 }
+input:focus,
+select:focus,
+textarea:focus,
+button:focus,
+img:focus ,div{
+    outline: none;
+}
 .container{
     max-width:1240px !important
 }

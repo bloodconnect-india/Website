@@ -119,20 +119,5 @@ amtChanged = (e) =>{
 }
 
 requirePanCard = (e) => {
-    let amt
-    if(e.target.textContent){
-        amt = e.target.textContent
-    }else {
-        amt = e.target.value
-    }
-    if(amt < 2000){
-        document.getElementById("panCardInput").removeAttribute('required')
-        $("label[for='panCardInput']").html('Pan Card Number')
-        $("label[for='panCardInput']").addClass("not-required")
-    }
-    else {
-        document.getElementById("panCardInput").setAttribute('required',true)
-        $("label[for='panCardInput']").html('Pan Card Number (required for donation above 2000)')
-        $("label[for='panCardInput']").removeClass("not-required")
-    }
+    e.preventDefault()
 }
