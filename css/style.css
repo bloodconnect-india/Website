@@ -1269,6 +1269,9 @@ button.selected{
     .flex-column-sm{
         flex-direction: column !important;
     }
+    .flex-column-reverse-sm{
+        flex-direction: column-reverse !important;
+    }
     .text-center-sm{
         text-align: center;
     }
