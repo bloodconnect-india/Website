@@ -1,4 +1,5 @@
 
+
 // Binding exc key
 $('body').keydown(function(e) {
     if (e.keyCode == 27) {
@@ -44,29 +45,43 @@ hidePayment = () => {
 }
 hidePayment()
 
+verifyPayment = (order_id,payment_id,signature) => {
 
-initiatePayment = (e) => {
-    e.preventDefault()
-    name = $("#nameInput").val()
-    email = $("#emailInput").val()
-    amt = $("#amtInput").val()
-    contact = $("#contactInput").val()
-    
-    
+    let data = {
+        "razorpay_order_id":order_id,
+        "razorpay_payment_id":payment_id,
+        "razorpay_signature":signature
+    }
+    console.log(data)
+    let url = "https://blood-request-api.herokuapp.com/payment/verify"
+    var xhttp = new XMLHttpRequest();
+    xhttp.onreadystatechange = function() {
+        if (this.readyState == 4 && this.status == 200) {
+           let res = JSON.parse(xhttp.responseText)
+           if(res.status === "success")
+            paymentSuccess()
+        }
+    };
+    xhttp.open("POST", url, true);
+    xhttp.setRequestHeader("Content-Type", "application/json")
+  
+    xhttp.send(JSON.stringify(data));
+}
+
+setOption = (order_id) => {
     var options = {
         "key": "rzp_live_wwzcBBhKfyo9Dx", // Enter the Key ID generated from the Dashboard
         "amount": amt*100, // Amount is in currency subunits. Default currency is INR. Hence, 50000 refers to 50000 paise
         "currency": "INR",
         "name": "BloodConnect Foundation",
         "description": "Website Transaction",
+        "order_id":order_id,
         "image": "./img/logo.png", //This is a sample Order ID. Pass the `id` obtained in the response of Step 1
         "handler": function (response){
-            console.log(response)
-            if(response.razorpay_payment_id != null){
-                paymentSuccess()
-            }
-            order_id = response.razorpay_payment_id
-            siganture = response.razorpay_signature
+            let payment_id = response.razorpay_payment_id
+            let siganture = response.razorpay_signature
+            let o_id = response.razorpay_order_id
+            verifyPayment(o_id,payment_id,siganture)
         },
         "prefill":{
             "name":name,
@@ -82,6 +97,37 @@ initiatePayment = (e) => {
     };
     var rzp1 = new Razorpay(options);
     startPayment(rzp1)
+}
+
+initiatePayment = (e) => {
+    e.preventDefault()
+    name = $("#nameInput").val()
+    email = $("#emailInput").val()
+    amt = $("#amtInput").val()
+    contact = $("#contactInput").val()
+    
+    let body = {
+        "amount": amt*100,
+        "currency": "INR",
+        "receipt": "rcptid_11",
+        "payment_capture": 1
+    }
+    console.log(body)
+    let url = "https://blood-request-api.herokuapp.com/payment/order"
+    var xhttp = new XMLHttpRequest();
+    xhttp.onreadystatechange = function() {
+        if (this.readyState == 4 && this.status == 200) {
+           let res = JSON.parse(xhttp.responseText)
+           console.log(res.sub.id)
+           setOption(res.sub.id)
+        }
+    };
+    xhttp.open("POST", url, true);
+    xhttp.setRequestHeader("Content-Type", "application/json")
+    console.log(body)
+    xhttp.send(JSON.stringify(body));
+    
+    
 }
 
 startPayment = (rzp1) => {
@@ -115,7 +161,7 @@ amtSelected = (e) => {
 
 amtChanged = (e) =>{
     let amt = e.target.value
-    if(amt < 1)
+    if(amt < 50)
     $("#amtImpact").html(`You are helping us save 1 live ${beatingHeart}`)
     else
     $("#amtImpact").html(`You are helping us save ${Math.round(amt/50)} lives ${beatingHeart}`)
