@@ -5,6 +5,9 @@
     line-height: 180%;
     font-size: 16px;
 }
+html{
+    scroll-behavior: smooth;
+}
 input:focus{
     background: none !important;
 }
