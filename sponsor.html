@@ -235,10 +235,12 @@
         </div>
         <div class="col-lg-6 d-flex flex-column justify-content-center align-items-center">
           <div class="hide d-flex justify-content-center align-items-center" id="youtubeVideoDiv">
-            <button class="close color-white f-30" style="opacity: 1;" onclick="closeVideo()" style="right:40px ;z-index: 100;"><i class="fa fa-times"></i></button>
+            <div class="iframeContainer d-flex flex-column">
+              <button class="iframeClose"  onclick="closeVideo()"><i class="f-18 fa fa-times"></i></button>
 
             <iframe id="youtubeFrame"   width="560" height="315"  frameborder="0" allowfullscreen></iframe>
             </iframe>
+            </div>
           </div>
 
           <img src="./img/sponsor-us/video.jpg" id="video-img" class="wd-inherit" style="max-height: 500px;" alt="">

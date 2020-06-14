@@ -1,3 +1,10 @@
+Redirect /plateletdonation /register-ad-donor.html
+Redirect /contactus /contact-us.html
+Redirect /donate-blood /register-as-donor.html
+Redirect /board /our-team.html
+Redirect /request /raise-a-request.html
+Redirect /organize-camp /organize-a-camp.html
+Redirect /sponsor-us /sponsor.html
 ErrorDocument 404 /404.html
 RewriteEngine On
 RewriteCond %{HTTP_REFERER} !^$
