@@ -304,11 +304,11 @@
             <p class="color-white fw-4 f-18">  Blood units collected</p>
           </div>
           <div class="col-lg-4  pt-3 pb-3 text-center d-flex align-items-center justify-content-center flex-column">
-            <p class="bold f-40 color-white mb-0 mt-n-1 count">313,596</p>
+            <p class="bold f-40 color-white mb-0 mt-n-1 count" id="livesSaved"></p>
             <p class="color-white fw-6 f-30"> Lives Saved</p>
           </div>
           <div class="col-lg-4  pt-3 pb-3 text-center d-flex align-items-center justify-content-center flex-column">
-            <p class="bold f-30 color-white mb-0 mt-n-1 count">1,049</p>
+            <p class="bold f-30 color-white mb-0 mt-n-1 count" id="camps">1,049</p>
             <p class="color-white fw-4 f-18"> Camps organized across India
             </p>
           </div>
@@ -541,6 +541,7 @@
 <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/lazyload@2.0.0-rc.2/lazyload.js"></script>
 <script type="text/javascript" src="./js/jquery.easypiechart.js"></script>
+<script src="./js/animateCounter.js"></script>
 <script>
   lazyload()
   $(".testimonial-slider").slick({
@@ -633,6 +634,27 @@ $(function() {
         lineWidth:"15",
         size:"150"
     });
+});
+$('#livesSaved').animationCounter({
+start: 10000,
+end: 313596,
+step: 1116,
+delay: 10,
+txt: ' +'
+});
+$('#units').animationCounter({
+  start: 10000,
+  end: 104532,
+  step: 562,
+  delay: 10,
+  txt: ' +'
+});
+$('#camps').animationCounter({
+  start: 0,
+  end: 1043,
+  step: 7,
+  delay: 20,
+  txt: ' '
 });
 
 </script>
