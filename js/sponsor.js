@@ -136,16 +136,17 @@ startPayment = (rzp1) => {
 }
 
 paymentSuccess = () => {
-    $("#success-modal").removeClass('hide')
-    $("#success-modal").addClass('show')
-    let secondsLeft = 3;
-    let x = setInterval( () => {
-        if(secondsLeft <= 0)
-            window.location.href = "./organize-a-camp.html"
-        $("#seconds").html(`${secondsLeft}s`)
-        secondsLeft -=1;
-    },1000)
-    hidePayment()
+    window.location.href= "./thank-you.html"
+    // $("#success-modal").removeClass('hide')
+    // $("#success-modal").addClass('show')
+    // let secondsLeft = 3;
+    // let x = setInterval( () => {
+    //     if(secondsLeft <= 0)
+    //         window.location.href = "./organize-a-camp.html"
+    //     $("#seconds").html(`${secondsLeft}s`)
+    //     secondsLeft -=1;
+    // },1000)
+    // hidePayment()
 }
 
 amtSelected = (e) => {
