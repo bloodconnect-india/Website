@@ -3,16 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:image" content="./img/homepage/1.jpg" />
+    <meta property="og:description" content="BloodConnect - India’s largest youth run initiative in the field of blood donation. We target to make India blood sufficient by 2030!" />
+    <meta name="description" content="BloodConnect - India’s largest youth run initiative in the field of blood donation. We target to make India blood sufficient by 2030!">
+
     <link rel="stylesheet" href="./css/bootstrap.min.css">
     <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="./css/chart.css">
+    <!-- <link rel="stylesheet" href="./css/chart.css"> -->
     <link rel="stylesheet" type="text/css" href="./css/slick/slick.css"/>
     <link rel="stylesheet" type="text/css" href="./css/slick/slick-theme.css"/>
+    <link rel="stylesheet"type="text/css" href="./css/chart-style.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-
     <!-- Meta tags -->
-    <meta name="description" content="BloodConnect - India’s largest youth run initiative in the field of blood donation. We target to make India blood sufficient by 2030!">
-  
+    
+
     <title>BloodConnect</title>
     <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon">
     <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -91,23 +95,20 @@
       .testimonial-slider>.slick-next{
          right: 20px !important;
       }
-      #youtubeVideoDiv>iframe{
-        width: 100% !important;
-        height: 300px !important;
     }
+    .red-before::before{
+      content: "";
+      width: 20px;
+      height: 15px;
+      background-color: #980000;
+      margin-right: 10px;
     }
-    #youtubeVideoDiv{
-        left: calc(50% - 400px);
-        width: auto !important;
-        height: auto !important;
-        top : 5% ;
-    }
-    iframe{
-        width: 800px !important;
-        height: 500px !important;
-    }
-    .close{
-        z-index: 99999999 !important;
+    .white-before::before{
+      content: "";
+      width: 20px;
+      height: 15px;
+      background-color: #FFFFFF;
+      margin-right: 10px;
     }
     </style>
 </head>
@@ -233,10 +234,13 @@
       <!-- Our Story in brief -->
       <div class="container d-flex align-items-center justify-content-end img-left pb-5 mt-5 bg-main-light" >
         <div class="row pt-5-sm">
-          <div class="col-lg-5 col-md-4 col-sm-12">
+          <div class="col-lg-5 col-md-4 col-sm-12 d-flex flex-column align-items-center">
             <!-- <iframe class="wd-inherit hide" id="youtubeVideo" height="315" src="https://www.youtube.com/embed/zYVxjIPVCZQ?autoplay=1"  frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
-            <canvas id="myChart" class="wd-inherit" ></canvas>
-            
+            <div class="chart" data-percent="73">2 Million</div>
+            <ul style="list-style-type: none;">
+              <li class="white-before d-flex align-items-center mr-2" style="float: left;">2 Million</li>
+              <li class="red-before d-flex align-items-center mr-2" style="float: left;">13 Million</li>
+            </ul>
           </div>
         
         <div class="d-flex flex-column justify-content-center tagling col-lg-7 col-sm-12">
@@ -325,7 +329,7 @@
             <div class="d-flex flex-column align-items-center" >
               <p class=" f-20 color-main-dark mb-0"  style="margin-bottom: -10px;">Neha (Nepal)</p>
               <p class="color-dark-light f-14" style="margin-bottom:-5px">Helpline requester</p>
-              <img src="./img/favicon.png" width="50" alt="">
+              <img class="lazyload" data-src="./img/favicon.png" width="50" alt="">
             </div>
             
           </div>
@@ -338,7 +342,7 @@
             <div class="d-flex flex-column align-items-center" >
               <p class=" f-20 color-main-dark mb-0 text-center-sm"  style="margin-bottom: -10px;">Hitanshu (Delhi)</p>
               <p class="color-dark-light f-14" style="margin-bottom:-5px">Camp organizer</p>
-              <img src="./img/favicon.png" width="50" alt="">
+              <img class="lazyload" data-src="./img/favicon.png" width="50" alt="">
             </div>
             
           </div>
@@ -351,7 +355,7 @@
             <div class="d-flex flex-column align-items-center" >
               <p class=" f-20 color-main-dark mb-0 text-center-sm" style="margin-bottom: -10px;">Aachran, VIT Vellore (Vellore)</p>
               <p class="color-dark-light f-14" style="margin-bottom:-5px">Volunteer</p>
-              <img src="./img/favicon.png" width="50" alt="">
+              <img class="lazy-load" data-src="./img/favicon.png" width="50" alt="">
             </div>
             
           </div>
@@ -377,7 +381,7 @@
                 <div class="row">
                   <div class="col-lg-6 col-12 d-flex flex-row">
                     <div class="mr-2">
-                      <img width="20px" src="./svg/tick.svg" alt="">
+                      <img class="lazyload" width="20px" data-src="./svg/tick.svg" alt="">
                     </div>
                     <p class="color-dark-light">
                       Arrange a donor for someone in need
@@ -386,7 +390,7 @@
 
                   <div class="col-lg-6 col-12 d-flex flex-row">
                     <div class="mr-2">
-                      <img width="20px" src="./svg/tick.svg" alt="">
+                      <img class="lazyload" width="20px" data-src="./svg/tick.svg" alt="">
                     </div>
                     <p class="color-dark-light">
                       Ensure regular blood for thalassemia patients
@@ -396,7 +400,7 @@
                 <div class="row">
                   <div class="col-lg-6 col-12 d-flex flex-row">
                     <div class="mr-2">
-                      <img width="20px" src="./svg/tick.svg" alt="">
+                      <img class="lazyload" width="20px" data-src="./svg/tick.svg" alt="">
                     </div>
                     <p class="color-dark-light">
                       Keep blood bank stocked for high blood loss emergencies 
@@ -405,7 +409,7 @@
 
                   <div class="col-lg-6 col-12 d-flex flex-row">
                     <div class="mr-2">
-                      <img width="20px" src="./svg/tick.svg" alt="">
+                      <img class="lazyload" width="20px" data-src="./svg/tick.svg" alt="">
                     </div>
                     <p class="color-dark-light">
                       Motivate youth to come forward and donate blood 
@@ -424,7 +428,7 @@
                 </iframe>
               </div>
 
-                  <img src="./img/homepage/video.jpg" id="video-img" style="height: 400px;" class="wd-inherit" alt="">
+                  <img class="lazyload" data-src="./img/homepage/video.jpg" id="video-img" style="height: 400px;" class="wd-inherit" alt="">
                   <button class="play bg-none" id="play" onclick="playVideo()"><i class="color-white fa fa-play"></i></button>
             </div>
           </div>
@@ -436,19 +440,19 @@
     <div class="container pt-5 mb-5">
       <div class="media-slider" data-slick='{"slidesToShow": 4, "slidesToScroll": 1}'  >
         <div class="d-flex align-items-center justify-content-center partner">
-          <img class="mx-auto media-slider-img" loading="lazy" src="./img/homepage/media-partners/AmarUjala.png"  alt="Amar Ujala">
+          <img class="mx-auto media-slider-img lazyload"  data-src="./img/homepage/media-partners/AmarUjala.png"  alt="Amar Ujala">
         </div>
         <div class="d-flex align-items-center justify-content-center partner">
-          <img class="mx-auto media-slider-img" loading="lazy" src="./img/homepage/media-partners/BusinessStandard.png"  alt="Business Standard">
+          <img class="mx-auto media-slider-img lazyload"  data-src="./img/homepage/media-partners/BusinessStandard.png"  alt="Business Standard">
         </div>
         <div class="d-flex align-items-center justify-content-center partner">
-          <img class="mx-auto media-slider-img" loading="lazy" src="./img/homepage/media-partners/DeccanHerald.png"  alt="Deccan Herald">
+          <img class="mx-auto media-slider-img lazyload"  data-src="./img/homepage/media-partners/DeccanHerald.png"  alt="Deccan Herald">
         </div>
         <div class="d-flex align-items-center justify-content-center partner">
-          <img class="mx-auto media-slider-img" loading="lazy" src="./img/homepage/media-partners/HuffPost.png"  alt="HuffPost ">
+          <img class="mx-auto media-slider-img lazyload"  data-src="./img/homepage/media-partners/HuffPost.png"  alt="HuffPost ">
         </div>
         <div class="d-flex align-items-center justify-content-center partner">
-          <img class="mx-auto media-slider-img" loading="lazy" src="./img/homepage/media-partners/TimesOfIndia.png"  alt="TimesOfIndia">
+          <img class="mx-auto media-slider-img lazyload"  data-src="./img/homepage/media-partners/TimesOfIndia.png"  alt="TimesOfIndia">
         </div>
         
       </div>
@@ -534,10 +538,11 @@
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 <script src="./js/bootstrap.min.js"></script>
 <script src="./js/main.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script>
 <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-
+<script src="https://cdn.jsdelivr.net/npm/lazyload@2.0.0-rc.2/lazyload.js"></script>
+<script type="text/javascript" src="./js/jquery.easypiechart.js"></script>
 <script>
+  lazyload()
   $(".testimonial-slider").slick({
 
     // normal options...
@@ -619,36 +624,15 @@ $(".media-slider").slick({
         closeVideo()
     }    
 });
-var ctx = document.getElementById('myChart');
-let data = {
-    datasets: [{
-        data: [ 13, 2],
-        backgroundColor:["#980000","#fff"],
-        borderColor : ["#980000","#fff"],
-        borderWidth:2,
-        color:["#D20003","#fff"]
-
-    }],
-
-    // These labels appear in the legend and in the tooltips when hovering different arcs
-    labels: [
-        'Blood Collected',
-        'Shortage'
-    ]
-};
-
-var options =  {
-        tooltips:{
-          enabled:true
-        },
-        legend :{
-          position:'top'
-        }
-    }
-var myPieChart = new Chart(ctx, {
-    type: 'doughnut',
-    data: data,
-    options: options
+$(function() {
+    //create instance
+    $('.chart').easyPieChart({
+        animate: 2000,
+        barColor:"#980000",
+        trackColor:"#ffffff",
+        lineWidth:"15",
+        size:"150"
+    });
 });
 
 </script>
