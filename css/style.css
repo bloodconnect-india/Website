@@ -1212,11 +1212,12 @@ button.selected{
     color: #fff;
   }
   .iframeContainer{
-    max-width: 960px;
+    max-width: 1024px;
     height: inherit;
+    width: 100%;
   }
 iframe{
-    width: 800px !important;
+    width: 100% !important;
     height: 500px !important;
 }
 /* Media properties  */
