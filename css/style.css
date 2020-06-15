@@ -1229,7 +1229,14 @@ iframe{
     .pt-60-sm{
         padding-top: 60px !important;
     }
-    
+    .list-inline-sm>li{
+        float: left;
+    }
+    .list-inline-sm{
+        display: flex;
+        justify-content: space-evenly;
+        width: 100%;
+    }
     .pt-5-sm{
         padding-top: 3rem;
     }
@@ -1281,6 +1288,9 @@ iframe{
     }
     .about-nav{
         position: absolute !important;
+    }
+    #about-nav{
+        width: 100%;
     }
     .show-flex + .content{
         margin-top: 200px;
