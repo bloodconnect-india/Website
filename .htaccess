@@ -5,6 +5,7 @@ Redirect /board /our-team.html
 Redirect /request /raise-a-request.html
 Redirect /organize-camp /organize-a-camp.html
 Redirect /sponsor-us /sponsor.html
+Redirect /volunteer-with-us /join-us.html
 ErrorDocument 404 /404.html
 RewriteEngine On
 RewriteCond %{HTTP_HOST} ^bloodconnect\.org [NC]
