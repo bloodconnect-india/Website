@@ -16,7 +16,7 @@ submitRequest = (e) => {
     e.preventDefault()
     $("#submit-request-button").addClass("loading-start")
     your_name = $("#your_name").val()
-    phone_number = "+91"+$("#phone_number").val()
+    phone_number = $("#phone_number").val()
     email = $("#email").val()
     organization_name = $("#organization_name").val()
     noOfEmp = $("#est_emp").val()
