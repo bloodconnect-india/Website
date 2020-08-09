@@ -359,6 +359,9 @@ hr.color-white{
 .mt-5-lg{
     margin-top: 3rem !important;
 }
+.mr-5-lg{
+    margin-right: 3rem !important;
+}
 .wd-100{
     width: 100%;
 }
@@ -399,6 +402,10 @@ hr.color-white{
 }
 .h-50{
     height: 50vh !important;
+}
+.h-50-min{
+    min-height: 50vh !important;
+    padding: 80px 0px !important;
 }
 .h-70{
     height: 70vh !important;
@@ -900,7 +907,7 @@ div.toggler-div>h2>button.collapsed{
 }
 .form-group>label{
     font-weight: 600;
-    font-size: 14px;
+    font-size: 16px;
 }
 .form-group>label:after{
     content: "*";
@@ -1382,6 +1389,9 @@ iframe{
     }
     .mr-5-sm{
         margin-right: 2rem !important;
+    }
+    .mr-5-lg{
+        margin-right: 0px !important;
     }
     .justify-content-center-md{
         justify-content: center !important;
