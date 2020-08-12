@@ -154,7 +154,7 @@
     </nav>
     <div class="container-fluid h-50-min bg-main-dark  pl-0 pr-0 content  relative d-flex flex-row align-items-center">
         <div class="d-flex flex-column container justify-content-center z-5 px-0-sm">
-            <h1 class="display-4 color-white  text-center px-2 mb-1 ">Helpline Feedback Form - Requestor</h1>
+            <h1 class="display-4 color-white  text-center px-2 mb-1 ">Raise a Request Feedback Form - Requestor</h1>
             <p class="display-6 color-white  text-center px-2 mb-1">We would like to have your feedback to help us
                 improve and save as many lives as possible. We request you to fill this quick feedback about the recent
                 blood requirement request raised by you. You can also write to us at - <a class="color-white bold"
@@ -177,6 +177,9 @@
 
                     <form action="" class="request-form" id="request-form" onsubmit="submitHFeedback(event)">
                         
+                        <input autocomplete="off" type="number" class="form-control" id="id" hidden  value="5048000001273862"
+                                required>
+
                         <div class="form-group mb-4">
                             <label class="m-0   color-dark" for="name">Your Name</label>
                             <input autocomplete="off" type="text" class="form-control" id="name" placeholder="Your Name" required>
@@ -198,13 +201,7 @@
                             </div>
                         </div>
                         <div class="d-flex justify-content-start flex-column-sm">
-                            <div class="form-group mb-4 mr-5-lg">
-                                <label class="m-0   color-dark" for="helpline">Helpline Number</label>
-                                <input autocomplete="off" type="number" class="form-control" id="helpline" placeholder="12345" value="12345"
-                                    required>
-                                <input autocomplete="off" type="number" class="form-control" id="id" hidden placeholder="12345" value="12345"
-                                required>
-                            </div>
+                                
                             <div class="form-group mb-4">
                                 <label class="m-0   color-dark" for="city">City</label>
                                 <input autocomplete="off" type="text" class="form-control" id="city" placeholder="Delhi NCR"
@@ -279,11 +276,11 @@
                         <div class="form-group mb-4">
                             <label class="m-0   color-dark" for="">What did you like most about the way helpline request
                                 was managed by BloodConnect Team?</label>
-                            <input autocomplete="off" type="text" class="form-control" id="like" placeholder="Your answer">
+                            <textarea autocomplete="off" type="text" class="form-control" id="like" placeholder="Your answer"></textarea>
                         </div>
                         <div class="form-group mb-4">
                             <label class="m-0   color-dark" for="">What could be improved or done differently?</label>
-                            <input autocomplete="off" type="text" class="form-control" id="differently" placeholder="Your answer">
+                            <textarea autocomplete="off" type="text" class="form-control" id="differently" placeholder="Your answer"></textarea>
                         </div>
                         <div class="form-group mb-4">
                             <label class="col-form-label color-dark">Would you like to donate blood yourself in the
@@ -348,7 +345,7 @@
                                 under Income Tax Section 80G.)</label>
                             <small id="HelpBlock" class="form-text text-muted">
                                 You can donate at <a
-                                    href="https://www.bloodconnect.org/sponsor.html">https://www.bloodconnect.org/sponsor.html</a>
+                                    href="https://www.bloodconnect.org/sponsor.html" target="_blank">https://www.bloodconnect.org/sponsor.html</a>
                             </small>
                             <div class="col-sm-10">
                                 <div class="form-check">
@@ -377,7 +374,7 @@
                         <div class="form-group mb-4">
                             <label class="m-0   color-dark" for="">Any additional feedback you would like to share with
                                 us?</label>
-                            <input autocomplete="off" type="text" class="form-control" id="additional" placeholder="Your answer">
+                            <textarea autocomplete="off" type="text" class="form-control" id="additional" placeholder="Your answer"></textarea>
                         </div>
 
                         <div class="navigation-buttons inline text-center-sm">
