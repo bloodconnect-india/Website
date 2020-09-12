@@ -45,98 +45,83 @@
   <!-- End Facebook Pixel Code -->
 </head>
 <body style="background-image: url('./img/faq.png');background-size: contain;">
-    
-  <nav class="fixed z-6 d-flex justify-content-end hide-lg" id="mobile-nav">
-    <button class="menu hide show-md color-dark-fixed h-max bg-none" id="mobile-nav-toggler" onclick="toggleMobileNav()"><i class="fa fa-bars f-20"></i></button>
-      <ul class="mobile-nav hide bg-white" id="mobile-nav-list">
-        <li class="bg-main ">
-          <a class="nav-link color-white fw-4 " href="./raise-a-request.html">RAISE A REQUEST</a>
-        </li>
-        <li class="bg-main ">
-          <a class="nav-link color-white fw-4 " href="./organize-a-camp.html">ORGANIZE A CAMP</a>
-        </li>
-        <li class="bg-main ">
-          <a class="nav-link color-white fw-4 " href="./sponsor.html">DONATE NOW</a>
-        </li>
-        <li class="bg-main ">
-          <a class="nav-link color-white fw-4 " href="./join-us-selection.html">JOIN US</a>
-        </li>
-        <li class="bg-white">
-          <a href="./index.html" class="color-dark f-14 fw-4 nav-link">HOME</a>
-        </li>
-        <li class="bg-white">
-          <a href="./about-us.html" class="color-dark f-14 fw-4 nav-link">ABOUT US</a>
-        </li>
-        <li class="bg-white">
-          <a href="./our-team.html" class="color-dark f-14 fw-4 nav-link">OUR TEAM</a>
-        </li>
-        <li class="bg-white">
-          <a href="./resources.html" class="color-dark f-14 fw-4 nav-link">RESOURCES</a>
-        </li>
-        <li class="bg-white">
-          <a href="./contact-us.html" class="color-dark f-14 fw-4 nav-link">CONTACT US</a>
-        </li>
-      </ul>
-  </nav>
-  <nav class="navbar justify-content-center-sm justify-content-between pb-0 sticky-sm z-5  bg-none " id="navbar">
+    <nav class="fixed z-6 d-flex justify-content-end hide-lg" id="mobile-nav">
+      <button class="menu  show-md color-white h-max bg-none" id="mobile-nav-toggler" onclick="toggleMobileNav()"><i class="fa fa-bars f-20"></i></button>
+        <ul class="mobile-nav hide bg-white" id="mobile-nav-list">
+          <li class="bg-main ">
+            <a class="nav-link color-white fw-4 " href="./raise-a-request.html">RAISE A REQUEST</a>
+          </li>
+          <li class="bg-main ">
+            <a class="nav-link color-white fw-4 " href="./organize-a-camp.html">ORGANIZE A CAMP</a>
+          </li>
+          <li class="bg-main ">
+            <a class="nav-link color-white fw-4 " href="./sponsor.html">SUPPORT US</a>
+          </li>
+          <li class="bg-main ">
+            <a class="nav-link color-white fw-4 " href="./join-us-selection.html">JOIN US</a>
+          </li>
+          <li class="bg-white">
+            <a href="./about-us.html" class="color-dark f-14 fw-4 nav-link">ABOUT US</a>
+          </li>
+          <li class="bg-white">
+            <a href="./our-team.html" class="color-dark f-14 fw-4 nav-link">OUR TEAM</a>
+          </li>
+          <li class="bg-white">
+            <a href="./contact-us.html" class="color-dark f-14 fw-4 nav-link">CONTACT US</a>
+          </li>
+        </ul>
+    </nav>
+    <nav class="navbar justify-content-center-sm justify-content-between pb-0 sticky-sm z-5  bg-none " id="navbar">
+      <div class="d-flex flex-row align-items-center justify-content-end">
+        <a class="navbar-brand" href="./index.html">
+          <img src="./img/homepage/Logo.png" height="35" alt="BloodConnect Logo">
+        </a>
+        <ul class="navbar-nav flex-row  align-items-end hide-md" style="border-bottom: none !important;">
+  
+          <li class="px-3">
+            <a href="./about-us.html" class="color-white b-white f-14  ">ABOUT US</a>
+          </li>
+          <li class="px-3">
+            <a href="./raise-a-request.html" class="color-white b-white f-14 active">RAISE A REQUEST</a>
+          </li>
+          <li class="px-3">
+            <a href="./organize-a-camp.html" class="color-white b-white f-14 ">ORGANIZE A CAMP</a>
+          </li>
+          <li class="px-3">
+            <a href="./join-us-selection.html" class="color-white b-white f-14 ">JOIN US</a>
+          </li>
+        </ul>
+      </div>
+      <div class="d-flex flex-row align-items-center hide-md">
+        <a href="./contact-us.html" class="f-14 color-white mr-3 uppercase">Contact Us</a>
+        <a href="./sponsor.html" class="f-14 sponsor-link-button color-dark fw-6 px-3 py-2 uppercase">Support us</a>
+      </div>
+    </nav>
+    <nav class="navbar flex-column-sm align-items-start justify-content-between pb-0  sticky-navbar z-5 bg-white pb-2 hide" id="navbar-sticky">
       <div class="d-flex flex-row align-items-center justify-content-end">
         <a class="navbar-brand" href="./index.html">
           <img src="./img/logo.png"   height="35" alt="BloodConnect Logo">
       </a>
-      <ul class="navbar-nav flex-row  align-items-end hide-md"  style="border-bottom: none !important;">
-
-          <li class="px-3">
-            <a href="./about-us.html" class="color-dark b-dark f-14 ">ABOUT US</a>
-          </li>
-          <li class="px-3">
-            <a href="./raise-a-request.html" class="color-dark b-dark f-14 ">RAISE A REQUEST</a>
-          </li>
-          <li class="px-3">
-            <a href="./organize-a-camp.html" class="color-dark b-dark f-14 ">ORGANIZE A CAMP</a>
-          </li>
-          <li class="px-3">
-            <a href="./resources.html" class="color-dark b-dark f-14 ">RESOURCES</a>
-          </li>
-          <li class="px-3">
-            <a href="./join-us-selection.html" class="color-dark b-dark f-14 ">JOIN US</a>
-          </li>
-    </ul>
+      <ul class="navbar-nav flex-row hide-md align-items-end"  style="border-bottom: none !important;">
+ 
+        <li class="px-3">
+          <a href="./about-us.html" class="color-dark b-dark f-14 ">ABOUT US</a>
+        </li>
+        <li class="px-3">
+          <a href="./raise-a-request.html" class="color-dark b-dark f-14 active">RAISE A REQUEST</a>
+        </li>
+        <li class="px-3">
+          <a href="./organize-a-camp.html" class="color-dark b-dark f-14 ">ORGANIZE A CAMP</a>
+        </li>
+        <li class="px-3">
+          <a href="./join-us-selection.html" class="color-dark b-dark f-14 ">JOIN US</a>
+        </li>
+  </ul>
       </div>
       <div class="d-flex flex-row align-items-center hide-md">
-        <a href="./contact-us.html" class="f-14 color-dark mr-3 uppercase">Contact Us</a>
-        <a href="./sponsor.html" class="f-14 sponsor-link-button bg-main color-white fw-6 px-3 py-2 uppercase">Support us</a>
+        <a href="./sponsor.html" class="f-14 sponsor-link-button color-dark fw-6 px-3 py-2 uppercase bg-main color-white">Support us</a>
       </div>
-  </nav>
-  <nav class="navbar flex-column-sm align-items-start justify-content-between pb-0  sticky-navbar z-5 bg-white pb-2 hide" id="navbar-sticky">
-    <div class="d-flex flex-row align-items-center justify-content-end">
-      <a class="navbar-brand" href="./index.html">
-        <img src="./img/logo.png"   height="35" alt="BloodConnect Logo">
-    </a>
-    <ul class="navbar-nav flex-row hide-md align-items-end"  style="border-bottom: none !important;">
-
-      <li class="px-3">
-        <a href="./about-us.html" class="color-dark b-dark f-14 ">ABOUT US</a>
-      </li>
-      <li class="px-3">
-        <a href="./raise-a-request.html" class="color-dark b-dark f-14 ">RAISE A REQUEST</a>
-      </li>
-      <li class="px-3">
-        <a href="./organize-a-camp.html" class="color-dark b-dark f-14 ">ORGANIZE A CAMP</a>
-      </li>
-      <li class="px-3">
-        <a href="./resources.html" class="color-dark b-dark f-14 ">RESOURCES</a>
-      </li>
-      <li class="px-3">
-        <a href="./join-us-selection.html" class="color-dark b-dark f-14 ">JOIN US</a>
-      </li>
-</ul>
-    </div>
-    <div class="d-flex flex-row align-items-center">
-      <a href="./sponsor.html" class="f-14 sponsor-link-button color-dark fw-6 px-3 py-2 uppercase bg-main color-white">Support us</a>
-    </div>
-</nav>
-
-    <div class="container content pt-100-sm text-center" >
+  </nav>    <div class="container content pt-100-sm text-center" >
         <h4 class="text-center display-4 color-main mt-5">F.A.Q.</h4>
        <div class="faq-search mb-3">
         <input type="search" class="faq-search shadow-hover  mb-1" placeholder="search here ..." id="selector" onkeyup="searchFor(event)">

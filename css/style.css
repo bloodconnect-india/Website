@@ -1236,6 +1236,9 @@ iframe{
     .pt-60-sm{
         padding-top: 60px !important;
     }
+    .show-banner {
+        margin-top: 60px;
+    }
     .list-inline-sm>li{
         float: left;
     }
@@ -1478,4 +1481,15 @@ iframe{
 [type="checkbox"]:checked + label:after {
   opacity: 1;
   transform: scale(1);
+}
+
+.blinking{
+    animation:blinkingText 1.2s infinite;
+}
+@keyframes blinkingText{
+    0%{     color: #D20003;    }
+    49%{    color: #D20003; }
+    60%{    color: #f37b8d; }
+    99%{    color:#f37b8d;  }
+    100%{   color: #D20003;    }
 }

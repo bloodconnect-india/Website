@@ -76,33 +76,40 @@
   <!-- Navbar start here -->
   <!-- Just an image -->
   <!-- Navbar -->
-  <nav class="fixed z-6 d-flex justify-content-end hide-lg" id="mobile-nav">
-    <button class="menu  show-md color-white h-max bg-none" id="mobile-nav-toggler" onclick="toggleMobileNav()"><i class="fa fa-bars f-20"></i></button>
-      <ul class="mobile-nav hide bg-white" id="mobile-nav-list">
-        <li class="bg-main ">
-          <a class="nav-link color-white fw-4 " href="./raise-a-request.html">RAISE A REQUEST</a>
-        </li>
-        <li class="bg-main ">
-          <a class="nav-link color-white fw-4 " href="./organize-a-camp.html">ORGANIZE A CAMP</a>
-        </li>
-        <li class="bg-main ">
-          <a class="nav-link color-white fw-4 " href="./sponsor.html">SUPPORT US</a>
-        </li>
-        <li class="bg-main ">
-          <a class="nav-link color-white fw-4 " href="./join-us-selection.html">JOIN US</a>
-        </li>
-        <li class="bg-white">
-          <a href="./about-us.html" class="color-dark f-14 fw-4 nav-link">ABOUT US</a>
-        </li>
-        <li class="bg-white">
-          <a href="./our-team.html" class="color-dark f-14 fw-4 nav-link">OUR TEAM</a>
-        </li>
-        <li class="bg-white">
-          <a href="./contact-us.html" class="color-dark f-14 fw-4 nav-link">CONTACT US</a>
-        </li>
-      </ul>
+
+  <nav class="fixed z-6 d-flex justify-content-end hide-lg " id="mobile-nav">
+    <button class="menu  show-md color-white h-max bg-none" id="mobile-nav-toggler" onclick="toggleMobileNav()"><i
+        class="fa fa-bars f-20"></i></button>
+    <ul class="mobile-nav hide bg-white" id="mobile-nav-list">
+      <li class="bg-main ">
+        <a class="nav-link color-white fw-4 " href="./raise-a-request.html">RAISE A REQUEST</a>
+      </li>
+      <li class="bg-main ">
+        <a class="nav-link color-white fw-4 " href="./organize-a-camp.html">ORGANIZE A CAMP</a>
+      </li>
+      <li class="bg-main ">
+        <a class="nav-link color-white fw-4 " href="./sponsor.html">SUPPORT US</a>
+      </li>
+      <li class="bg-main ">
+        <a class="nav-link color-white fw-4 " href="./join-us-selection.html">JOIN US</a>
+      </li>
+      <li class="bg-main ">
+        <a class="nav-link color-white fw-4 " href="./rti.html">DONATE PLASMA <span class="f-14 color-white">(Covid Recovered)</span></a>
+      </li>
+      <li class="bg-white">
+        <a href="./about-us.html" class="color-dark f-14 fw-4 nav-link ">ABOUT US</a>
+      </li>
+      <li class="bg-white">
+        <a href="./our-team.html" class="color-dark f-14 fw-4 nav-link">OUR TEAM</a>
+      </li>
+
+      <li class="bg-white">
+        <a href="./contact-us.html" class="color-dark f-14 fw-4 nav-link">CONTACT US</a>
+      </li>
+    </ul>
   </nav>
-  <nav class="navbar justify-content-center-sm justify-content-between pb-0 sticky-sm z-5  bg-none " id="navbar">
+  <nav class="navbar justify-content-center-sm justify-content-between pb-0 sticky-sm z-5  bg-none"
+    id="navbar">
     <div class="d-flex flex-row align-items-center justify-content-end">
       <a class="navbar-brand" href="./index.html">
         <img src="./img/homepage/Logo.png" height="35" alt="BloodConnect Logo">
@@ -110,7 +117,7 @@
       <ul class="navbar-nav flex-row  align-items-end hide-md" style="border-bottom: none !important;">
 
         <li class="px-3">
-          <a href="./about-us.html" class="color-white b-white f-14 active ">ABOUT US</a>
+          <a href="./about-us.html" class="color-white b-white f-14 active">ABOUT US</a>
         </li>
         <li class="px-3">
           <a href="./raise-a-request.html" class="color-white b-white f-14 ">RAISE A REQUEST</a>
@@ -121,6 +128,10 @@
         <li class="px-3">
           <a href="./join-us-selection.html" class="color-white b-white f-14 ">JOIN US</a>
         </li>
+        <li class="px-3">
+          <a href="./rti.html" class="color-white b-white f-14 ">DONATE PLASMA <span class="power f-12 absolute">(Covid
+              recovered)</span></a>
+        </li>
       </ul>
     </div>
     <div class="d-flex flex-row align-items-center hide-md">
@@ -128,8 +139,11 @@
       <a href="./sponsor.html" class="f-14 sponsor-link-button color-dark fw-6 px-3 py-2 uppercase">Support us</a>
     </div>
   </nav>
+
+
+  <!-- Sticky navbar -->
   <nav
-    class="navbar flex-column-sm align-items-start justify-content-between pb-0  sticky-navbar z-5 bg-white pb-2 hide"
+    class="navbar flex-column-sm align-items-start justify-content-between pb-0  sticky-navbar z-5 bg-white pb-2 hide "
     id="navbar-sticky">
     <div class="d-flex flex-row align-items-center justify-content-end">
       <a class="navbar-brand" href="./index.html">
@@ -138,7 +152,7 @@
       <ul class="navbar-nav flex-row hide-md align-items-end" style="border-bottom: none !important;">
 
         <li class="px-3">
-          <a href="./about-us.html" class="color-dark b-dark f-14 active">ABOUT US</a>
+          <a href="./about-us.html" class="color-dark b-dark f-14 active ">ABOUT US</a>
         </li>
         <li class="px-3">
           <a href="./raise-a-request.html" class="color-dark b-dark f-14 ">RAISE A REQUEST</a>
@@ -149,13 +163,19 @@
         <li class="px-3">
           <a href="./join-us-selection.html" class="color-dark b-dark f-14 ">JOIN US</a>
         </li>
+        <li class="px-3">
+          <a href="./rti.html" class="color-dark b-dark f-14 ">DONATE PLASMA <span class="power f-12 absolute">(Covid
+              recovered)</span></a>
+        </li>
       </ul>
     </div>
     <div class="d-flex flex-row align-items-center hide-md">
-      <a href="./sponsor.html" class="f-14 sponsor-link-button color-dark fw-6 px-3 py-2 uppercase bg-main color-white">Support us</a>
+      <a href="./sponsor.html"
+        class="f-14 sponsor-link-button color-dark fw-6 px-3 py-2 uppercase bg-main color-white">Support us</a>
     </div>
-    
   </nav>
+
+
   <div class="container-fluid h-60  pl-0 pr-0 content  relative d-flex flex-row align-items-center">
     <div class="d-flex flex-column container h-60 justify-content-center z-5 px-0-sm">
       <h1 class="display-4 color-white  text-center px-2 mb-1 fw-4">Every Blood Donor Is A Lifesaver </h1>
