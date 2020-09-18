@@ -1,5 +1,4 @@
 
-
 // Binding exc key
 $('body').keydown(function(e) {
     if (e.keyCode == 27) {
@@ -92,7 +91,7 @@ setOption = (order_id) => {
             "address": "BloodConnect Foundation"
         },
         "theme": {
-            "color": "#980000"
+            "color": "#D20003"
         }
     };
     var rzp1 = new Razorpay(options);
@@ -101,7 +100,6 @@ setOption = (order_id) => {
 
 initiatePayment = (e) => {
     e.preventDefault()
-    $("#sponsorButtton").html("Processing..")
     name = $("#nameInput").val()
     email = $("#emailInput").val()
     amt = $("#amtInput").val()
@@ -136,17 +134,16 @@ startPayment = (rzp1) => {
 }
 
 paymentSuccess = () => {
-    window.location.href= "./thank-you.html"
-    // $("#success-modal").removeClass('hide')
-    // $("#success-modal").addClass('show')
-    // let secondsLeft = 3;
-    // let x = setInterval( () => {
-    //     if(secondsLeft <= 0)
-    //         window.location.href = "./organize-a-camp.html"
-    //     $("#seconds").html(`${secondsLeft}s`)
-    //     secondsLeft -=1;
-    // },1000)
-    // hidePayment()
+    $("#success-modal").removeClass('hide')
+    $("#success-modal").addClass('show')
+    let secondsLeft = 3;
+    let x = setInterval( () => {
+        if(secondsLeft <= 0)
+            window.location.href = "./organize-a-camp.html"
+        $("#seconds").html(`${secondsLeft}s`)
+        secondsLeft -=1;
+    },1000)
+    hidePayment()
 }
 
 amtSelected = (e) => {
