@@ -68,7 +68,7 @@ var hashParams = window.location.hash.substr(1).split('&');
 for (var i = 0; i < hashParams.length; i++) {
   var p = hashParams[i].split('=');
   if (document.getElementById(p[0].toLowerCase()))
-    document.getElementById(p[0].toLowerCase()).value = decodeURIComponent(p[1]);
+    document.getElementById(p[0].toLowerCase()).value = decodeURIComponent(p[1]) === "Delhi" ? "Delhi NCR":decodeURIComponent(p[1]);
 }
 
 
