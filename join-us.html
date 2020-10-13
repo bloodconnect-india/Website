@@ -392,7 +392,7 @@
             <div id="page3" class="hand" onclick="showSection3()">3</div>
             <hr>
           </div>
-          <form action="" id="form">
+          <form method="POST" action=""  id="form" >
             <!-- Name Input -->
             <div id="section1">
               <div class="form-group mb-4">
@@ -445,7 +445,7 @@
 
               <option disabled selected value> -- select an city -- </option>
                   <option value="Agra">Agra</option>
-                  <option value="Delhi">Delhi</option>
+                  <option value="Delhi NCR">Delhi NCR</option>
                   <option value="Jaipur">Jaipur</option>
                   <option value="Ranchi">Ranchi</option>
                   <option value="Kanpur">Kanpur</option>
@@ -570,7 +570,7 @@
               <div class="navigation-buttons inline text-center-sm ">
                 <button type="button" onclick="showSection2()"
                   class="pl-5 pr-5 left-lg mb-4 mx-auto btn-main bg-white color-dark">Back</button>
-                <button type="button" onclick="submitRequest(event)"
+                <button type="submit" 
                   id="submit-request-button"
                   class="pl-5 pr-5 right-lg mb-4 mx-auto btn-main bg-main">
                   <p class="color-white m-0 fw-4">Submit</p>
@@ -704,7 +704,7 @@
     integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
     crossorigin="anonymous"></script>
   <script src="./js/bootstrap.min.js"></script>
-  <script src="./js/join_form.js"></script>
+  <script src="./js/join_formv1.js"></script>
   <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 
   <script src="./js/main.js"></script>

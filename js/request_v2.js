@@ -30,7 +30,12 @@ var city = ""
 var additional = ""
 var address = ""
 var requirement = " "
+var disease = ""
+var covid = ""
 
+function hasCovid(value){
+    covid = value
+}
 
 // Hiding the modal 
 
@@ -46,6 +51,7 @@ submitRequest = (e) => {
     hospital = $("#hospital").val()
     requirement = $("#requirement").val()
     city = $("#city_region").val()
+    disease = $("#disease").val()
     if(city == 'Other')
         city = $("#other_city").val()
     this.createHelplineRequest()
@@ -67,6 +73,8 @@ createHelplineRequest = () => {
         'Blood_Group_Required': bg,
         'Requirement':requirement,
         'Hospital': hospital,
+        'Has_Covid':covid,
+        'Disease':disease,
         'Status': "Open"
     }
 
