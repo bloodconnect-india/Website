@@ -1,7 +1,7 @@
 
 
 var name
-var enail
+var email
 var phone
 var dor
 var firstCall
@@ -12,6 +12,8 @@ var willDonateBlood
 var willOrganizeCamp
 var willSponsor
 var additional
+var topicCovered
+var learntNew
 
 const rateBC = (i) => {
     rate = i
@@ -148,7 +150,27 @@ const submitDFeedback = (e) => {
 
 }
 
+const submitAFeedback = (e) => {
+    e.preventDefault()
 
+    $("#submit-request-button").addClass("loading-start")
+    const data = {
+        name: $("#name").val(),
+        email: $("#email").val(),
+        phone: $("#phone").val(),
+        organization: $("#camp").val(),
+        campRate,
+        rate,
+        topicCovered,
+        learntNew,
+        willDonateBlood,
+        additional,
+    }
+
+    console.log(data)
+    sendRequest('https://bc-api2.herokuapp.com/', data)
+    
+}
 
 
 
