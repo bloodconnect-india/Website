@@ -8,7 +8,7 @@ var firstCall
 var rate
 var like
 var differently
-var willDonateBlood
+var willDonateBlood 
 var willOrganizeCamp
 var willSponsor
 var additional
@@ -33,6 +33,13 @@ const setOrganizeCamp = (v) => {
 
 const setSponsor = (v) => {
     willSponsor = v
+}
+
+const setLearntNew = (v) => {
+    learntNew = v;
+}
+const setTopicCovered = (v) => {
+    topicCovered = v;
 }
 
 const submitHFeedback = (e) => {
@@ -152,23 +159,25 @@ const submitDFeedback = (e) => {
 
 const submitAFeedback = (e) => {
     e.preventDefault()
-
+    if(!willDonateBlood){
+        alert("Please fill all the fields")
+        return;
+    }
     $("#submit-request-button").addClass("loading-start")
     const data = {
         name: $("#name").val(),
         email: $("#email").val(),
-        phone: $("#phone").val(),
-        organization: $("#camp").val(),
-        campRate,
-        rate,
-        topicCovered,
-        learntNew,
-        willDonateBlood,
-        additional,
+        contact: "+91"+$("#phone").val(),
+        collegeName: $("#camp").val(),
+        experience:campRate,
+        interactive:rate,
+        speaker:topicCovered,
+        new:learntNew,
+        donateBlood:willDonateBlood,
+        additional : $("#additional").val(),
     }
 
-    console.log(data)
-    sendRequest('https://bc-api2.herokuapp.com/', data)
+    sendRequest('https://bc-api2.herokuapp.com/feedback/awareness', data)
     
 }
 
@@ -184,8 +193,8 @@ const sendRequest = (url, data) => {
             "Content-Type": "application/json"
         }
     }).then(response => response.json()).then((data) => {
-
-        if (!data.error) {
+        console.log(data)
+        if (!data.error || !data.msg || data.msg != "failure") {
             $("#success-modal").removeClass('hide')
             $("#success-modal").addClass('show')
             let secondsLeft = 3;

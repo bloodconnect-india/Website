@@ -48,7 +48,7 @@
         !function (f, b, e, v, n, t, s) {
             if (f.fbq) return; n = f.fbq = function () {
                 n.callMethod ?
-                n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+                    n.callMethod.apply(n, arguments) : n.queue.push(arguments)
             };
             if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
             n.queue = []; t = b.createElement(e); t.async = !0;
@@ -155,7 +155,8 @@
     <div class="container-fluid h-50-min bg-main-dark  pl-0 pr-0 content  relative d-flex flex-row align-items-center">
         <div class="d-flex flex-column container justify-content-center z-5 px-0-sm">
             <h1 class="display-4 color-white  text-center px-2 mb-1 ">Feedack of Awareness session</h1>
-            <p class="display-6 color-white  text-center px-2 mb-1">Hey! Your feedbacks are really important for us to improve quality of our Awareness Sessions. Thanks for coming here to fill up! </p>
+            <p class="display-6 color-white  text-center px-2 mb-1">Hey! Your feedbacks are really important for us to
+                improve quality of our Awareness Sessions. Thanks for coming here to fill up! </p>
         </div>
         <div class="main-slider h-60" id="homepageSlider" style="background-color: #980000;">
 
@@ -174,137 +175,164 @@
 
                     <form action="" class="request-form" id="request-form" onsubmit="submitAFeedback(event)">
 
-                        
+
                         <div class="form-group mb-4">
-                            <input hidden id="id" >
+                            <input hidden id="id">
                             <label class="m-0   color-dark" for="name">Full Name</label>
-                            <input autocomplete="off" type="text" class="form-control" id="name" placeholder="Full Name" required>
+                            <input autocomplete="off" type="text" class="form-control" id="name" placeholder="Full Name"
+                                required>
                         </div>
                         <div class="form-group mb-4">
                             <label class="m-0   color-dark" for="email">Email address</label>
-                            <input autocomplete="off" type="email" class="form-control" placeholder="example@domain.com" id="email"
-                                required>
+                            <input autocomplete="off" type="email" class="form-control" placeholder="example@domain.com"
+                                id="email" required>
                         </div>
                         <div class="form-group mb-4 mr-5-lg">
                             <label class="m-0   color-dark" for="phone_number">Phone Number</label>
-                            <input autocomplete="off" type="text" pattern="\d*" class="form-control" placeholder="9999xxxxxx"
-                                maxlength="10" id="phone" required>
+                            <input autocomplete="off" type="text" pattern="\d*" class="form-control"
+                                placeholder="9999xxxxxx" maxlength="10" id="phone" required>
                         </div>
                         <div class="form-group mb-4">
                             <label class="m-0   color-dark" for="">College/Company Name</label>
-                            <input autocomplete="off" type="text" class="form-control" id="camp" placeholder="Your Answer" required>
+                            <input autocomplete="off" type="text" class="form-control" id="camp"
+                                placeholder="Your Answer" required>
                         </div>
                         <div class="form-group mb-4">
-                            <label class="col-form-label color-dark">Please rate the overall session at a scale of 5</label>
+                            <label class="col-form-label color-dark">Please rate the overall session at a scale of
+                                5</label>
                             <small id="helpRate" class="form-text text-muted">
                                 5- Excellent, 1- Poor
                             </small>
                             <div class="col-sm-10">
-                              <div class="form-check form-check-inline">
-                                  <input autocomplete="off" class="form-check-input" type="radio" name="campRateOption" id="inlineRadio1" value="1" onchange="rateCamp(1)" required>
-                                  <label class="form-check-label" for="inlineRadio1">1</label>
-                              </div>
-                              <div class="form-check form-check-inline">
-                                  <input autocomplete="off" class="form-check-input" type="radio" name="campRateOption" id="inlineRadio2" value="2" onchange="rateCamp(2)">
-                                  <label class="form-check-label" for="inlineRadio2">2</label>
-                              </div>
-                              <div class="form-check form-check-inline">
-                                  <input autocomplete="off" class="form-check-input" type="radio" name="campRateOption" id="inlineRadio3" value="3" onchange="rateCamp(3)">
-                                  <label class="form-check-label" for="inlineRadio3">3</label>
-                              </div>
-                              <div class="form-check form-check-inline">
-                                  <input autocomplete="off" class="form-check-input" type="radio" name="campRateOption" id="inlineRadio4" value="4" onchange="rateCamp(4)">
-                                  <label class="form-check-label" for="inlineRadio4">4</label>
-                              </div>
-                              <div class="form-check form-check-inline">
-                                  <input autocomplete="off" class="form-check-input" type="radio" name="campRateOption" id="inlineRadio5" value="5" onchange="rateCamp(5)">
-                                  <label class="form-check-label" for="inlineRadio5">5</label>
-                              </div>
-                              </div>
+                                <div class="form-check form-check-inline">
+                                    <input autocomplete="off" class="form-check-input" type="radio"
+                                        name="campRateOption" id="inlineRadio1" value="1" onchange="rateCamp(1)"
+                                        required>
+                                    <label class="form-check-label" for="inlineRadio1">1</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input autocomplete="off" class="form-check-input" type="radio"
+                                        name="campRateOption" id="inlineRadio2" value="2" onchange="rateCamp(2)">
+                                    <label class="form-check-label" for="inlineRadio2">2</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input autocomplete="off" class="form-check-input" type="radio"
+                                        name="campRateOption" id="inlineRadio3" value="3" onchange="rateCamp(3)">
+                                    <label class="form-check-label" for="inlineRadio3">3</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input autocomplete="off" class="form-check-input" type="radio"
+                                        name="campRateOption" id="inlineRadio4" value="4" onchange="rateCamp(4)">
+                                    <label class="form-check-label" for="inlineRadio4">4</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input autocomplete="off" class="form-check-input" type="radio"
+                                        name="campRateOption" id="inlineRadio5" value="5" onchange="rateCamp(5)">
+                                    <label class="form-check-label" for="inlineRadio5">5</label>
+                                </div>
+                            </div>
                         </div>
                         <div class="form-group mb-4">
                             <label class="col-form-label color-dark">How interactive was the session?</label>
                             <div class="col-sm-10">
-                              <div class="form-check form-check-inline">
-                                  <input autocomplete="off" class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="1"  onchange="rateBC(1)"required>
-                                  <label class="form-check-label" for="inlineRadio1">1</label>
-                              </div>
-                              <div class="form-check form-check-inline">
-                                  <input autocomplete="off" class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="2" onchange="rateBC(2)">
-                                  <label class="form-check-label" for="inlineRadio2">2</label>
-                              </div>
-                              <div class="form-check form-check-inline">
-                                  <input autocomplete="off" class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="3" onchange="rateBC(3)">
-                                  <label class="form-check-label" for="inlineRadio3">3</label>
-                              </div>
-                              <div class="form-check form-check-inline">
-                                  <input autocomplete="off" class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio4" value="4" onchange="rateBC(4)">
-                                  <label class="form-check-label" for="inlineRadio4">4</label>
-                              </div>
-                              <div class="form-check form-check-inline">
-                                  <input autocomplete="off" class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio5" value="5" onchange="rateBC(5)">
-                                  <label class="form-check-label" for="inlineRadio5">5</label>
-                              </div>
-                              </div>
+                                <div class="form-check form-check-inline">
+                                    <input autocomplete="off" class="form-check-input" type="radio"
+                                        name="inlineRadioOptions" id="inlineRadio1" value="1" onchange="rateBC(1)"
+                                        required>
+                                    <label class="form-check-label" for="inlineRadio1">1</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input autocomplete="off" class="form-check-input" type="radio"
+                                        name="inlineRadioOptions" id="inlineRadio2" value="2" onchange="rateBC(2)">
+                                    <label class="form-check-label" for="inlineRadio2">2</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input autocomplete="off" class="form-check-input" type="radio"
+                                        name="inlineRadioOptions" id="inlineRadio3" value="3" onchange="rateBC(3)">
+                                    <label class="form-check-label" for="inlineRadio3">3</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input autocomplete="off" class="form-check-input" type="radio"
+                                        name="inlineRadioOptions" id="inlineRadio4" value="4" onchange="rateBC(4)">
+                                    <label class="form-check-label" for="inlineRadio4">4</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input autocomplete="off" class="form-check-input" type="radio"
+                                        name="inlineRadioOptions" id="inlineRadio5" value="5" onchange="rateBC(5)">
+                                    <label class="form-check-label" for="inlineRadio5">5</label>
+                                </div>
+                            </div>
                         </div>
                         <div class="form-group mb-4">
-                            <label class="col-form-label color-dark">Did the speaker cover the topic of the session well?</label>
+                            <label class="col-form-label color-dark">Did the speaker cover the topic of the session
+                                well?</label>
                             <div class="col-sm-10">
-                                  <div class="form-check">
-                                      <input autocomplete="off" class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="Yes" onchange="topicCovered('Yes')" required>
-                                      <label class="form-check-label" for="gridRadios1">
-                                          Yes
-                                      </label>
-                                  </div>
-                                  <div class="form-check">
-                                      <input autocomplete="off" class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="No" onchange="topicCovered('No')">
-                                      <label class="form-check-label" for="gridRadios2">
-                                          No
-                                      </label>
-                                  </div>
+                                <div class="form-check">
+                                    <input autocomplete="off" class="form-check-input" type="radio" name="gridRadios"
+                                        id="gridRadios1" value="Yes" onchange="setTopicCovered('Yes')" required>
+                                    <label class="form-check-label" for="gridRadios1">
+                                        Yes
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input autocomplete="off" class="form-check-input" type="radio" name="gridRadios"
+                                        id="gridRadios2" value="No" onchange="setTopicCovered('No')">
+                                    <label class="form-check-label" for="gridRadios2">
+                                        No
+                                    </label>
+                                </div>
                             </div>
                         </div>
                         <div class="form-group mb-4">
                             <label class="col-form-label color-dark">Did you learn anything new in the session?</label>
                             <div class="col-sm-10">
-                                  <div class="form-check">
-                                      <input autocomplete="off" class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="Yes" onchange="learntNew('Yes')" required>
-                                      <label class="form-check-label" for="gridRadios1">
-                                          Yes
-                                      </label>
-                                  </div>
-                                  <div class="form-check">
-                                      <input autocomplete="off" class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="No" onchange="learntNew('No')">
-                                      <label class="form-check-label" for="gridRadios2">
-                                          No
-                                      </label>
-                                  </div>
+                                <div class="form-check">
+                                    <input autocomplete="off" class="form-check-input" type="radio" name="newOptions"
+                                        id="newOptions1" value="Yes" onchange="setLearntNew('Yes')" required>
+                                    <label class="form-check-label" for="newOptions1">
+                                        Yes
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input autocomplete="off" class="form-check-input" type="radio" name="newOptions"
+                                        id="newOptions2" value="No" onchange="setLearntNew('No')">
+                                    <label class="form-check-label" for="newOptions2">
+                                        No
+                                    </label>
+                                </div>
                             </div>
                         </div>
                         <div class="form-group mb-4">
                             <label class="m-0   color-dark" for="">Additional Comments?</label>
-                            <textarea autocomplete="off" type="text" class="form-control" id="additional" placeholder="Your answer"></textarea>
+                            <textarea autocomplete="off" type="text" class="form-control" id="additional"
+                                placeholder="Your answer"></textarea>
                         </div>
                         <div class="form-group mb-4">
-                            <label class="col-form-label color-dark">Would you like to donate blood after attending the session?</label>
+                            <label class="col-form-label color-dark">Would you like to donate blood after attending the
+                                session?</label>
                             <div class="col-sm-10">
-                                  <div class="form-check">
-                                      <input autocomplete="off" class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="Yes" onchange="willDonateBlood('Yes')" required>
-                                      <label class="form-check-label" for="gridRadios1">
-                                          Yes
-                                      </label>
-                                  </div>
-                                  <div class="form-check">
-                                      <input autocomplete="off" class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="No" onchange="willDonateBlood('No')">
-                                      <label class="form-check-label" for="gridRadios2">
-                                          No
-                                      </label>
-                                  </div>
+                                <div class="form-check">
+                                    <input autocomplete="off" class="form-check-input" type="radio" name="gridRadios"
+                                        id="gridRadios1" value="Yes" onchange="setDonateBlood('Yes')" required>
+                                    <label class="form-check-label" for="gridRadios1">
+                                        Yes
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input autocomplete="off" class="form-check-input" type="radio" name="gridRadios"
+                                        id="gridRadios2" value="No" onchange="setDonateBlood('No')">
+                                    <label class="form-check-label" for="gridRadios2">
+                                        No
+                                    </label>
+                                </div>
                             </div>
                         </div>
                         <p><b>Register with us to donate blood.</b></p>
-                        <p>It's amazing to see your spirit. You're a champ! Please click on the link to register as a blood donor and become a hero! :)</p>
-                        <p><a href="https://www.google.com/url?q=https://www.bloodconnect.org/register-as-donor.html&amp;sa=D&amp;ust=1603104287644000&amp;usg=AFQjCNFBSuUfDDZVb18ezQ7FbPejvQ-3vQ">https://www.bloodconnect.org/register-as-donor.html</a></p>
+                        <p>It's amazing to see your spirit. You're a champ! Please click on the link to register as a
+                            blood donor and become a hero! :)</p>
+                        <p><a
+                                href="https://www.google.com/url?q=https://www.bloodconnect.org/register-as-donor.html&amp;sa=D&amp;ust=1603104287644000&amp;usg=AFQjCNFBSuUfDDZVb18ezQ7FbPejvQ-3vQ">https://www.bloodconnect.org/register-as-donor.html</a>
+                        </p>
                         <p>Please share it with your friends and family and encourage them to register too.</p>
 
                         <div class="navigation-buttons inline text-center-sm">
@@ -328,7 +356,7 @@
                 </div>
 
             </div>
-            
+
         </div>
     </div>
 
