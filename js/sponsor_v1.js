@@ -16,7 +16,7 @@ let panCard = ""
 let dob = ""
 let siganture = ""
 let beatingHeart = '<i class="fa fa-heart color-main"></i>'
-let BASE_URL  = "http://localhost:3000"
+let BASE_URL  = "https://bc-api2.herokuapp.com"
 let speed = 10
 startSlide = () => {
     $('#fade-slide').slick({
@@ -60,13 +60,12 @@ verifyPayment = (order_id,payment_id,signature) => {
         "panCard":panCard,
         "dob":dob
     }
-    console.log(data)
     let url = BASE_URL+"/payment/verify"
     var xhttp = new XMLHttpRequest();
     xhttp.onreadystatechange = function() {
         if (this.readyState == 4 && this.status == 200) {
            let res = JSON.parse(xhttp.responseText)
-           if(res.status === "success")
+           if(res.msg === "success")
             paymentSuccess()
         }
     };
@@ -78,7 +77,7 @@ verifyPayment = (order_id,payment_id,signature) => {
 
 setOption = (order_id) => {
     var options = {
-        "key": "rzp_test_nerpexqj9102pt", // Enter the Key ID generated from the Dashboard
+        "key": "rzp_live_wwzcBBhKfyo9Dx", // Enter the Key ID generated from the Dashboard
         "amount": amt*100, // Amount is in currency subunits. Default currency is INR. Hence, 50000 refers to 50000 paise
         "currency": "INR",
         "name": "BloodConnect Foundation",
@@ -86,7 +85,6 @@ setOption = (order_id) => {
         "order_id":order_id,
         "image": "./img/logo.png", //This is a sample Order ID. Pass the `id` obtained in the response of Step 1
         "handler": function (response){
-            console.log('response is', response)
             let payment_id = response.razorpay_payment_id
             let siganture = response.razorpay_signature
             let o_id = response.razorpay_order_id
@@ -128,19 +126,17 @@ initiatePayment = (e) => {
         "contact":"+91"+contact,
         
     }
-    console.log(body)
-    let url = BASE_URL+"/payment/order"
+    
+    let url = BASE_URL+"/payment/create"
     var xhttp = new XMLHttpRequest();
     xhttp.onreadystatechange = function() {
         if (this.readyState == 4 && this.status == 200) {
            let res = JSON.parse(xhttp.responseText)
-           console.log(res.sub.id)
-           setOption(res.sub.id)
+           setOption(res.data.id)
         }
     };
     xhttp.open("POST", url, true);
     xhttp.setRequestHeader("Content-Type", "application/json")
-    console.log(body)
     xhttp.send(JSON.stringify(body));
     
     
