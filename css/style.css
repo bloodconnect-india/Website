@@ -5,6 +5,10 @@
     line-height: 180%;
     font-size: 16px;
 }
+html, body{
+    width: 100%;
+    overflow-x: hidden;
+}
 html{
     scroll-behavior: smooth;
 }
