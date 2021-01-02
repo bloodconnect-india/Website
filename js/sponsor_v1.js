@@ -7,6 +7,9 @@ $('body').keydown(function(e) {
         hidePayment()
     }    
 });
+
+var cp = window.location.search.split("&")[0].substring(1).split("=")[1];
+
 let order_id = ""
 let name = ""
 let email = ""
@@ -46,7 +49,9 @@ hidePayment = () => {
     startSlide()
 }
 hidePayment()
-
+if(cp === "c1") {
+    showPayment()
+}
 verifyPayment = (order_id,payment_id,signature) => {
 
     let data = {
@@ -58,7 +63,8 @@ verifyPayment = (order_id,payment_id,signature) => {
         "contact":"+91"+contact,
         "amount":amt,
         "panCard":panCard,
-        "dob":dob
+        "dob":dob,
+        "source":cp
     }
     let url = BASE_URL+"/payment/verify"
     var xhttp = new XMLHttpRequest();

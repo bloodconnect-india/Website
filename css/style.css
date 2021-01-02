@@ -176,6 +176,7 @@ i.fa-heart{
 }
 button>a{
     font-weight: 400;
+    outline: none;
 }
 button,input[type=submit]{
     font-weight: 400;
@@ -557,7 +558,7 @@ button.over-img{
     font-size: 18px;
 }
 
-.collage{
+.collage, .overflow-hidden{
     overflow: hidden;
 }
 .collage>.col>img{
@@ -1254,6 +1255,9 @@ iframe{
     .pt-5-sm{
         padding-top: 3rem;
     }
+    .mr-2-lg{
+        margin-right: auto !important;
+    }
     .align-items-center-sm{
         align-items:  center !important;
     }
@@ -1291,8 +1295,8 @@ iframe{
         padding-top: 0px !important;
     }
     .mx-auto-sm{
-        margin-left: auto;
-        margin-right: auto;
+        margin-left: auto !important;
+        margin-right: auto !important;
     }
     .w-75-lg{
         width: auto;
@@ -1399,6 +1403,9 @@ iframe{
     }
     .mr-5-lg{
         margin-right: 0px !important;
+    }
+    .mr-2-lg{
+        margin-right: 0.5rem;
     }
     .justify-content-center-md{
         justify-content: center !important;

@@ -1,1190 +1,912 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <meta
-      name="description"
-      content="BloodConnect - India’s largest youth run initiative in the field of blood donation. We target to make India blood sufficient by 2030!"
-    />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="stylesheet" href="./css/bootstrap.min.css" />
-    <link rel="stylesheet" href="./css/style.css" />
-    <link rel="stylesheet" type="text/css" href="./css/slick/slick.css" />
-    <link rel="stylesheet" type="text/css" href="./css/slick/slick-theme.css" />
-    <link rel="stylesheet" type="text/css" href="./css/chart-style.css" />
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
-    <!-- Meta tags -->
+  <meta name="description"
+    content="BloodConnect - India’s largest youth run initiative in the field of blood donation. We target to make India blood sufficient by 2030!" />
 
-    <title>BloodConnect</title>
+  <link rel="stylesheet" href="./css/bootstrap.min.css" />
+  <link rel="stylesheet" href="./css/style.css" />
+  <link rel="stylesheet" type="text/css" href="./css/slick/slick.css" />
+  <link rel="stylesheet" type="text/css" href="./css/slick/slick-theme.css" />
+  <link rel="stylesheet" type="text/css" href="./css/chart-style.css" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <!-- Meta tags -->
 
-    <!-- Twitter -->
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:site" content="@bloodconnectorg" />
-    <meta name="twitter:creator" content="@bloodconnectorg" />
-    <meta name="twitter:title" content="bloodConnect" />
-    <meta
-      name="twitter:description"
-      content="BloodConnect - India’s largest youth run initiative in the field of blood donation. We target to make India blood sufficient by 2030!"
-    />
-    <meta
-      name="twitter:image"
-      content="https://www.bloodconnect.org/img/bc_heart.png"
-    />
+  <title>BloodConnect</title>
 
-    <!-- Facebook -->
-    <meta property="og:url" content="https://www.bloodconnect.org/" />
-    <meta property="og:title" content="BloodConnect" />
-    <meta
-      property="og:description"
-      content="BloodConnect - India’s largest youth run initiative in the field of blood donation. We target to make India blood sufficient by 2030!"
-    />
-    <meta property="og:type" content="website" />
-    <meta
-      property="og:image"
-      content="https://www.bloodconnect.org/img/bc_heart.png"
-    />
-    <meta property="og:image:type" content="image/png" />
-    <meta property="og:image:width" content="600" />
-    <meta property="og:image:height" content="600" />
-    <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon" />
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script
-      async
-      src="https://www.googletagmanager.com/gtag/js?id=UA-18198647-1"
-    ></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag() {
-        dataLayer.push(arguments);
-      }
-      gtag("js", new Date());
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:site" content="@bloodconnectorg" />
+  <meta name="twitter:creator" content="@bloodconnectorg" />
+  <meta name="twitter:title" content="bloodConnect" />
+  <meta name="twitter:description"
+    content="BloodConnect - India’s largest youth run initiative in the field of blood donation. We target to make India blood sufficient by 2030!" />
+  <meta name="twitter:image" content="https://www.bloodconnect.org/img/bc_heart.png" />
 
-      gtag("config", "UA-18198647-1");
-    </script>
+  <!-- Facebook -->
+  <meta property="og:url" content="https://www.bloodconnect.org/" />
+  <meta property="og:title" content="BloodConnect" />
+  <meta property="og:description"
+    content="BloodConnect - India’s largest youth run initiative in the field of blood donation. We target to make India blood sufficient by 2030!" />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://www.bloodconnect.org/img/bc_heart.png" />
+  <meta property="og:image:type" content="image/png" />
+  <meta property="og:image:width" content="600" />
+  <meta property="og:image:height" content="600" />
+  <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon" />
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-18198647-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
 
-    <!-- facebook pixel -->
-    <!-- Facebook Pixel Code -->
-    <script>
-      !(function (f, b, e, v, n, t, s) {
-        if (f.fbq) return;
-        n = f.fbq = function () {
-          n.callMethod
-            ? n.callMethod.apply(n, arguments)
-            : n.queue.push(arguments);
-        };
-        if (!f._fbq) f._fbq = n;
-        n.push = n;
-        n.loaded = !0;
-        n.version = "2.0";
-        n.queue = [];
-        t = b.createElement(e);
-        t.async = !0;
-        t.src = v;
-        s = b.getElementsByTagName(e)[0];
-        s.parentNode.insertBefore(t, s);
-      })(
-        window,
-        document,
-        "script",
-        "https://connect.facebook.net/en_US/fbevents.js"
-      );
-      fbq("init", "483666385759479");
-      fbq("track", "PageView");
-    </script>
-    <noscript>
-      <img
-        height="1"
-        width="1"
-        src="https://www.facebook.com/tr?id=483666385759479&ev=PageView
-  &noscript=1"
-      />
-    </noscript>
-    <!-- End Facebook Pixel Code -->
-    <style>
-      .main-slider > .slick-prev::before {
-        content: url("./svg/arrow-left-white.svg") !important;
-      }
+    gtag("config", "UA-18198647-1");
+  </script>
 
-      .main-slider > .slick-next::before {
-        content: url("./svg/arrow-right-white.svg") !important;
-      }
+  <!-- facebook pixel -->
+  <!-- Facebook Pixel Code -->
+  <script>
+    !(function (f, b, e, v, n, t, s) {
+      if (f.fbq) return;
+      n = f.fbq = function () {
+        n.callMethod
+          ? n.callMethod.apply(n, arguments)
+          : n.queue.push(arguments);
+      };
+      if (!f._fbq) f._fbq = n;
+      n.push = n;
+      n.loaded = !0;
+      n.version = "2.0";
+      n.queue = [];
+      t = b.createElement(e);
+      t.async = !0;
+      t.src = v;
+      s = b.getElementsByTagName(e)[0];
+      s.parentNode.insertBefore(t, s);
+    })(
+      window,
+      document,
+      "script",
+      "https://connect.facebook.net/en_US/fbevents.js"
+    );
+    fbq("init", "483666385759479");
+    fbq("track", "PageView");
+  </script>
+  <noscript>
+    <img height="1" width="1" src="https://www.facebook.com/tr?id=483666385759479&ev=PageView
+  &noscript=1" />
+  </noscript>
+  <!-- End Facebook Pixel Code -->
+  <style>
+    .main-slider>.slick-prev::before {
+      content: url("./svg/arrow-left-white.svg") !important;
+    }
 
-      .testimonial-arrow {
-        height: 60px;
-        width: 60px;
-        background-color: #980000;
-        display: flex;
-        position: absolute;
-        top: calc(50% - 30px);
-        color: #fff;
-        align-items: center;
-        justify-content: center;
-        border-radius: 30px;
-      }
+    .main-slider>.slick-next::before {
+      content: url("./svg/arrow-right-white.svg") !important;
+    }
 
-      .testimonial-arrow > i {
-        font-size: 34px;
-        color: #fafafa;
-      }
+    .testimonial-arrow {
+      height: 60px;
+      width: 60px;
+      background-color: #980000;
+      display: flex;
+      position: absolute;
+      top: calc(50% - 30px);
+      color: #fff;
+      align-items: center;
+      justify-content: center;
+      border-radius: 30px;
+    }
 
-      .break-all {
-        word-break: break-all !important;
-      }
+    .testimonial-arrow>i {
+      font-size: 34px;
+      color: #fafafa;
+    }
 
-      .testimonial-slider > .slick-prev {
-        left: 125px !important;
-        opacity: 1 !important;
+    .break-all {
+      word-break: break-all !important;
+    }
+
+    .testimonial-slider>.slick-prev {
+      left: 125px !important;
+      opacity: 1 !important;
+    }
+
+    .testimonial-slider>.slick-next {
+      right: 155px !important;
+      opacity: 1 !important;
+    }
+
+    .testimonial-slider>.slick-next::before,
+    .testimonial-slider>.slick-prev::before {
+      opacity: 1 !important;
+    }
+
+    @media (max-width: 480px) {
+      .testimonial-slider>.slick-prev {
+        left: -10px !important;
       }
 
-      .testimonial-slider > .slick-next {
-        right: 155px !important;
-        opacity: 1 !important;
+      .testimonial-slider>.slick-next {
+        right: 20px !important;
       }
 
-      .testimonial-slider > .slick-next::before,
-      .testimonial-slider > .slick-prev::before {
-        opacity: 1 !important;
+      .iframeContainer {
+        height: 400px !important;
       }
+    }
 
-      @media (max-width: 480px) {
-        .testimonial-slider > .slick-prev {
-          left: -10px !important;
-        }
+    .red-before::before {
+      content: "";
+      width: 20px;
+      height: 15px;
+      background-color: #980000;
+      margin-right: 10px;
+    }
 
-        .testimonial-slider > .slick-next {
-          right: 20px !important;
-        }
+    .white-before::before {
+      content: "";
+      width: 20px;
+      height: 15px;
+      background-color: #ffffff;
+      margin-right: 10px;
+    }
+  </style>
+</head>
 
-        .iframeContainer {
-          height: 400px !important;
-        }
-      }
+<body>
+  <!-- Navbar start here -->
+  <!-- Just an image -->
+  <!-- Navbar -->
+  <div class="bg-main-light container-fluid py-2">
+    <p class="color-dark f-14 m-0">
+      You defeated <span class="bold">COVID</span>! Help others defeat too.
+      Register yourself as a plasma donor now
+      <a class="bold f-16 blinking" href="./rti.html">here</a>
+    </p>
+  </div>
+  <nav class="fixed z-6 d-flex justify-content-end hide-lg show-banner" id="mobile-nav">
+    <button class="menu show-md color-white h-max bg-none" id="mobile-nav-toggler" onclick="toggleMobileNav()">
+      <i class="fa fa-bars f-20"></i>
+    </button>
+    <ul class="mobile-nav hide bg-white" id="mobile-nav-list">
+      <li class="bg-main">
+        <a class="nav-link color-white fw-4" href="./raise-a-request.html">RAISE A REQUEST</a>
+      </li>
+      <li class="bg-main">
+        <a class="nav-link color-white fw-4" href="./organize-a-camp.html">ORGANIZE A CAMP</a>
+      </li>
+      <li class="bg-main">
+        <a class="nav-link color-white fw-4" href="./sponsor.html">SUPPORT US</a>
+      </li>
+      <li class="bg-main">
+        <a class="nav-link color-white fw-4" href="./join-us-selection.html">JOIN US</a>
+      </li>
+      <li class="bg-main">
+        <a class="nav-link color-white fw-4" href="./rti.html">DONATE PLASMA
+          <span class="f-14 color-white">(Covid Recovered)</span></a>
+      </li>
+      <li class="bg-white">
+        <a href="./about-us.html" class="color-dark f-14 fw-4 nav-link">ABOUT US</a>
+      </li>
+      <li class="bg-white">
+        <a href="./our-team.html" class="color-dark f-14 fw-4 nav-link">OUR TEAM</a>
+      </li>
 
-      .red-before::before {
-        content: "";
-        width: 20px;
-        height: 15px;
-        background-color: #980000;
-        margin-right: 10px;
-      }
-
-      .white-before::before {
-        content: "";
-        width: 20px;
-        height: 15px;
-        background-color: #ffffff;
-        margin-right: 10px;
-      }
-    </style>
-  </head>
-
-  <body>
-    <!-- Navbar start here -->
-    <!-- Just an image -->
-    <!-- Navbar -->
-    <div class="bg-main-light container-fluid py-2">
-      <p class="color-dark f-14 m-0">
-        You defeated <span class="bold">COVID</span>! Help others defeat too.
-        Register yourself as a plasma donor now
-        <a class="bold f-16 blinking" href="./rti.html">here</a>
-      </p>
-    </div>
-    <nav
-      class="fixed z-6 d-flex justify-content-end hide-lg show-banner"
-      id="mobile-nav"
-    >
-      <button
-        class="menu show-md color-white h-max bg-none"
-        id="mobile-nav-toggler"
-        onclick="toggleMobileNav()"
-      >
-        <i class="fa fa-bars f-20"></i>
-      </button>
-      <ul class="mobile-nav hide bg-white" id="mobile-nav-list">
-        <li class="bg-main">
-          <a class="nav-link color-white fw-4" href="./raise-a-request.html"
-            >RAISE A REQUEST</a
-          >
+      <li class="bg-white">
+        <a href="./contact-us.html" class="color-dark f-14 fw-4 nav-link">CONTACT US</a>
+      </li>
+    </ul>
+  </nav>
+  <nav class="navbar justify-content-center-sm justify-content-between pb-0 sticky-sm z-5 bg-none show-banner"
+    id="navbar">
+    <div class="d-flex flex-row align-items-center justify-content-end">
+      <a class="navbar-brand" href="./index.html">
+        <img src="./img/homepage/Logo.png" height="35" alt="BloodConnect Logo" />
+      </a>
+      <ul class="navbar-nav flex-row align-items-end hide-md" style="border-bottom: none !important">
+        <li class="px-3">
+          <a href="./about-us.html" class="color-white b-white f-14">ABOUT US</a>
         </li>
-        <li class="bg-main">
-          <a class="nav-link color-white fw-4" href="./organize-a-camp.html"
-            >ORGANIZE A CAMP</a
-          >
+        <li class="px-3">
+          <a href="./raise-a-request.html" class="color-white b-white f-14">RAISE A REQUEST</a>
         </li>
-        <li class="bg-main">
-          <a class="nav-link color-white fw-4" href="./sponsor.html"
-            >SUPPORT US</a
-          >
+        <li class="px-3">
+          <a href="./organize-a-camp.html" class="color-white b-white f-14">ORGANIZE A CAMP</a>
         </li>
-        <li class="bg-main">
-          <a class="nav-link color-white fw-4" href="./join-us-selection.html"
-            >JOIN US</a
-          >
+        <li class="px-3">
+          <a href="./join-us-selection.html" class="color-white b-white f-14">JOIN US</a>
         </li>
-        <li class="bg-main">
-          <a class="nav-link color-white fw-4" href="./rti.html"
-            >DONATE PLASMA
-            <span class="f-14 color-white">(Covid Recovered)</span></a
-          >
-        </li>
-        <li class="bg-white">
-          <a href="./about-us.html" class="color-dark f-14 fw-4 nav-link"
-            >ABOUT US</a
-          >
-        </li>
-        <li class="bg-white">
-          <a href="./our-team.html" class="color-dark f-14 fw-4 nav-link"
-            >OUR TEAM</a
-          >
-        </li>
-
-        <li class="bg-white">
-          <a href="./contact-us.html" class="color-dark f-14 fw-4 nav-link"
-            >CONTACT US</a
-          >
+        <li class="px-3">
+          <a href="./rti.html" class="color-white b-white f-14">DONATE PLASMA
+            <span class="power f-12 absolute">(Covid recovered)</span></a>
         </li>
       </ul>
-    </nav>
-    <nav
-      class="navbar justify-content-center-sm justify-content-between pb-0 sticky-sm z-5 bg-none show-banner"
-      id="navbar"
-    >
-      <div class="d-flex flex-row align-items-center justify-content-end">
-        <a class="navbar-brand" href="./index.html">
-          <img
-            src="./img/homepage/Logo.png"
-            height="35"
-            alt="BloodConnect Logo"
-          />
-        </a>
-        <ul
-          class="navbar-nav flex-row align-items-end hide-md"
-          style="border-bottom: none !important"
-        >
-          <li class="px-3">
-            <a href="./about-us.html" class="color-white b-white f-14"
-              >ABOUT US</a
-            >
-          </li>
-          <li class="px-3">
-            <a href="./raise-a-request.html" class="color-white b-white f-14"
-              >RAISE A REQUEST</a
-            >
-          </li>
-          <li class="px-3">
-            <a href="./organize-a-camp.html" class="color-white b-white f-14"
-              >ORGANIZE A CAMP</a
-            >
-          </li>
-          <li class="px-3">
-            <a href="./join-us-selection.html" class="color-white b-white f-14"
-              >JOIN US</a
-            >
-          </li>
-          <li class="px-3">
-            <a href="./rti.html" class="color-white b-white f-14"
-              >DONATE PLASMA
-              <span class="power f-12 absolute">(Covid recovered)</span></a
-            >
-          </li>
-        </ul>
-      </div>
-      <div class="d-flex flex-row align-items-center hide-md">
-        <a href="./contact-us.html" class="f-14 color-white mr-3 uppercase"
-          >Contact Us</a
-        >
-        <a
-          href="./sponsor.html"
-          class="f-14 sponsor-link-button color-dark fw-6 px-3 py-2 uppercase"
-          >Support us</a
-        >
-      </div>
-    </nav>
+    </div>
+    <div class="d-flex flex-row align-items-center hide-md">
+      <a href="./contact-us.html" class="f-14 color-white mr-3 uppercase">Contact Us</a>
+      <a href="./sponsor.html" class="f-14 sponsor-link-button color-dark fw-6 px-3 py-2 uppercase">Support us</a>
+    </div>
+  </nav>
 
-    <!-- Sticky navbar -->
-    <nav
-      class="navbar flex-column-sm align-items-start justify-content-between pb-0 sticky-navbar z-5 bg-white pb-2 hide"
-      id="navbar-sticky"
-    >
-      <div class="d-flex flex-row align-items-center justify-content-end">
-        <a class="navbar-brand" href="./index.html">
-          <img src="./img/logo.png" height="35" alt="BloodConnect Logo" />
-        </a>
-        <ul
-          class="navbar-nav flex-row hide-md align-items-end"
-          style="border-bottom: none !important"
-        >
-          <li class="px-3">
-            <a href="./about-us.html" class="color-dark b-dark f-14"
-              >ABOUT US</a
-            >
-          </li>
-          <li class="px-3">
-            <a href="./raise-a-request.html" class="color-dark b-dark f-14"
-              >RAISE A REQUEST</a
-            >
-          </li>
-          <li class="px-3">
-            <a href="./organize-a-camp.html" class="color-dark b-dark f-14"
-              >ORGANIZE A CAMP</a
-            >
-          </li>
-          <li class="px-3">
-            <a href="./join-us-selection.html" class="color-dark b-dark f-14"
-              >JOIN US</a
-            >
-          </li>
-          <li class="px-3">
-            <a href="./rti.html" class="color-dark b-dark f-14"
-              >DONATE PLASMA
-              <span class="power f-12 absolute">(Covid recovered)</span></a
-            >
-          </li>
-        </ul>
-      </div>
-      <div class="d-flex flex-row align-items-center hide-md">
-        <a
-          href="./sponsor.html"
-          class="f-14 sponsor-link-button color-dark fw-6 px-3 py-2 uppercase bg-main color-white"
-          >Support us</a
-        >
-      </div>
-    </nav>
+  <!-- Sticky navbar -->
+  <nav class="navbar flex-column-sm align-items-start justify-content-between pb-0 sticky-navbar z-5 bg-white pb-2 hide"
+    id="navbar-sticky">
+    <div class="d-flex flex-row align-items-center justify-content-end">
+      <a class="navbar-brand" href="./index.html">
+        <img src="./img/logo.png" height="35" alt="BloodConnect Logo" />
+      </a>
+      <ul class="navbar-nav flex-row hide-md align-items-end" style="border-bottom: none !important">
+        <li class="px-3">
+          <a href="./about-us.html" class="color-dark b-dark f-14">ABOUT US</a>
+        </li>
+        <li class="px-3">
+          <a href="./raise-a-request.html" class="color-dark b-dark f-14">RAISE A REQUEST</a>
+        </li>
+        <li class="px-3">
+          <a href="./organize-a-camp.html" class="color-dark b-dark f-14">ORGANIZE A CAMP</a>
+        </li>
+        <li class="px-3">
+          <a href="./join-us-selection.html" class="color-dark b-dark f-14">JOIN US</a>
+        </li>
+        <li class="px-3">
+          <a href="./rti.html" class="color-dark b-dark f-14">DONATE PLASMA
+            <span class="power f-12 absolute">(Covid recovered)</span></a>
+        </li>
+      </ul>
+    </div>
+    <div class="d-flex flex-row align-items-center hide-md">
+      <a href="./sponsor.html"
+        class="f-14 sponsor-link-button color-dark fw-6 px-3 py-2 uppercase bg-main color-white">Support us</a>
+    </div>
+  </nav>
 
-    <!-- Front slider -->
-    <div
-      class="container-fluid h-90 pl-0 pr-0 content pt-100-sm relative d-flex flex-row align-items-center"
-    >
-      <div
-        class="d-flex flex-column container h-80 justify-content-center z-5 px-0-sm"
-      >
-        <div
-          class="main-slider-text"
-          id="homepageSliderText"
-          data-slick='{"slidesToShow": 1, "slidesToScroll": 1}'
-        >
-          <div>
-            <h1 class="display-4 color-white wd-max px-2 mb-1">
-              Some New Title
-            </h1>
-            <h1 class="f-40 color-white wd-max px-2">Save Lives</h1>
-            <p class="color-white w-50-lg px-2">
-              BloodConnect is India’s largest youth run initiative in the field
-              of blood donation. We target to make India blood sufficient in the
-              coming 10 years.
-            </p>
-            <div class="d-flex mt-2 px-2">
-              <button class="shadow btn-main bg-white mr-2">
-                <a href="./organize-a-camp.html" class="color-dark"
-                  >Organize a Camp</a
-                >
-              </button>
-              <button class="shadow btn-main bg-main mr-2">
-                <a href="./sponsor.html" class="color-white">Sponsor Now</a>
-              </button>
-              
-            </div>
+  <!-- Front slider -->
+  <div class="container-fluid h-90 pl-0 pr-0 content pt-100-sm relative d-flex flex-row align-items-center">
+    <div class="d-flex flex-column container h-80 justify-content-center z-5 px-0-sm">
+      <div class="main-slider-text" id="homepageSliderText" data-slick='{"slidesToShow": 1, "slidesToScroll": 1}'>
+        <div>
+          <h1 class="display-4 color-white wd-max px-2 mb-1">
+            Days of Gratitutde
+          </h1>
+          <p class="color-white w-50-lg px-2">
+            Less than 18 is early, but it’s never too late, give blood, because it’s not just a gift, but life, that you
+        donate
+          </p>
+          <div class="d-flex mt-2 px-2">
+            <button class="shadow btn-main bg-white mr-2">
+              <a href="./days-of-gratitude.html" class="color-dark">Learn More</a>
+            </button>
+            <button class="shadow btn-main bg-main mr-2">
+              <a href="./sponsor.html?c=c1" class="color-white">Sponsor Now</a>
+            </button>
+
           </div>
+        </div>
 
-          <div>
-            <h1 class="display-4 color-white wd-max px-2 mb-1">Donate Blood</h1>
-            <h1 class="f-40 color-white wd-max px-2">Save Lives</h1>
-            <p class="color-white w-50-lg px-2">
-              BloodConnect is India’s largest youth run initiative in the field
-              of blood donation. We target to make India blood sufficient in the
-              coming 10 years.
-            </p>
-            <div class="d-flex mt-2 px-2">
-              <button class="shadow btn-main bg-main mr-2">
-                <a href="./sponsor.html" class="color-white"
-                  >Help us achieve it</a
-                >
-              </button>
-            </div>
+        <div>
+          <h1 class="display-4 color-white wd-max px-2 mb-1">Donate Blood</h1>
+          <h1 class="f-40 color-white wd-max px-2">Save Lives</h1>
+          <p class="color-white w-50-lg px-2">
+            BloodConnect is India’s largest youth run initiative in the field
+            of blood donation. We target to make India blood sufficient in the
+            coming 10 years.
+          </p>
+          <div class="d-flex mt-2 px-2">
+            <button class="shadow btn-main bg-main mr-2">
+              <a href="./sponsor.html" class="color-white">Help us achieve it</a>
+            </button>
           </div>
+        </div>
 
-          <div>
-            <h1 class="display-4 color-white wd-max px-2 mb-1">
-              Some New Title
-            </h1>
-            <h1 class="f-40 color-white wd-max px-2">Donate Blood</h1>
-            <p class="color-white w-50-lg px-2">
-              BloodConnect is India’s largest youth run initiative in the field
-              of blood donation. We target to make India blood sufficient in the
-              coming 10 years.
-            </p>
-            <div class="d-flex mt-2 px-2">
-              <button class="shadow btn-main bg-main mr-2">
-                <a href="./sponsor.html" class="color-white"
-                  >Help us achieve it</a
-                >
-              </button>
-            </div>
+        <div>
+          <h1 class="display-4 color-white wd-max px-2 mb-1">
+            Some New Title
+          </h1>
+          <h1 class="f-40 color-white wd-max px-2">Donate Blood</h1>
+          <p class="color-white w-50-lg px-2">
+            BloodConnect is India’s largest youth run initiative in the field
+            of blood donation. We target to make India blood sufficient in the
+            coming 10 years.
+          </p>
+          <div class="d-flex mt-2 px-2">
+            <button class="shadow btn-main bg-main mr-2">
+              <a href="./sponsor.html" class="color-white">Help us achieve it</a>
+            </button>
           </div>
         </div>
       </div>
+    </div>
 
-      <div
-        class="main-slider"
-        id="homepageSlider"
-        data-slick='{"slidesToShow": 1, "slidesToScroll": 1}'
-      >
-        <!-- Gradinet here -->
+    <div class="main-slider" id="homepageSlider" data-slick='{"slidesToShow": 1, "slidesToScroll": 1}'>
+      <!-- Gradinet here -->
 
-        <div
-          class="homepage-slider"
-          style="
+      
+      <div class="homepage-slider" style="
+            background: url('./img/campaign1.png');
+            background-size: cover;
+          "></div>
+      <div class="homepage-slider" style="
             background: url('./img/homepage/duetone/1.jpg');
             background-size: cover;
-          "
-        ></div>
-        <div
-          class="homepage-slider"
-          style="
+          "></div>
+      <div class="homepage-slider" style="
             background: url('./img/homepage/duetone/2.jpg');
             background-size: cover;
-          "
-        ></div>
-        <div
-          class="homepage-slider"
-          style="
+          "></div>
+      <div class="homepage-slider" style="
             background: url('./img/homepage/duetone/3.jpg');
             background-size: cover;
-          "
-        ></div>
-      </div>
+          "></div>
     </div>
+  </div>
 
-    <div class="container-fluid bg-main-light pt-5">
-      <!-- Our Story in brief -->
-      <div
-        class="container d-flex align-items-center justify-content-end img-left pb-5 mt-5 bg-main-light"
-      >
-        <div class="row pt-5-sm">
-          <div
-            class="col-lg-5 col-md-4 col-sm-12 d-flex flex-column align-items-center"
-          >
-            <!-- <iframe class="wd-inherit hide" id="youtubeVideo" height="315" src="https://www.youtube.com/embed/zYVxjIPVCZQ?autoplay=1"  frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
-            <div class="chart" data-percent="73">2 Million</div>
-            <ul style="list-style-type: none">
-              <li
-                class="white-before d-flex align-items-center mr-2"
-                style="float: left"
-              >
-                2 Million
-              </li>
-              <li
-                class="red-before d-flex align-items-center mr-2"
-                style="float: left"
-              >
-                13 Million
-              </li>
-            </ul>
-          </div>
-
-          <div
-            class="d-flex flex-column justify-content-center tagling col-lg-7 col-sm-12"
-          >
-            <h1 class="color-dark f-30 mb-0">
-              India has a shortage of
-              <span class="f-30 color-main-dark">2 Million Blood Units</span>
-            </h1>
-            <p class="color-dark-light mt-1">
-              There is a requirement of 15 million units of blood annually.
-              However, we are only able to collect 13 million units. We just
-              need
-              <span class="color-main fw-6"
-                >2% of India’s youth to donate regularly</span
-              >
-              to address the complete demand.
-            </p>
-            <button class="shadow btn-main bg-main mx-auto-sm">
-              <a href="./about-us.html" class="color-white">Know More</a>
-            </button>
-          </div>
+  <div class="container-fluid bg-main-light pt-5">
+    <!-- Our Story in brief -->
+    <div class="container d-flex align-items-center justify-content-end img-left pb-5 mt-5 bg-main-light">
+      <div class="row pt-5-sm">
+        <div class="col-lg-5 col-md-4 col-sm-12 d-flex flex-column align-items-center">
+          <!-- <iframe class="wd-inherit hide" id="youtubeVideo" height="315" src="https://www.youtube.com/embed/zYVxjIPVCZQ?autoplay=1"  frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+          <div class="chart" data-percent="73">2 Million</div>
+          <ul style="list-style-type: none">
+            <li class="white-before d-flex align-items-center mr-2" style="float: left">
+              2 Million
+            </li>
+            <li class="red-before d-flex align-items-center mr-2" style="float: left">
+              13 Million
+            </li>
+          </ul>
         </div>
-      </div>
 
-      <!-- Our work in brief -->
-      <div class="container px-0">
-        <div class="row m-0 pt-5 justify-content-center bg-main-light py-5">
-          <h1 class="color-dark fw-4 f-30 mb-0 text-left col-lg-10 pt-5">
-            We, the youth, can make India
-
-            <span class="color-main-dark f-30 col-lg-12 pl-0"
-              >Blood Sufficient
-            </span>
+        <div class="d-flex flex-column justify-content-center tagling col-lg-7 col-sm-12">
+          <h1 class="color-dark f-30 mb-0">
+            India has a shortage of
+            <span class="f-30 color-main-dark">2 Million Blood Units</span>
           </h1>
-          <p class="color-dark-light col-lg-10 col-sm-12 mx-auto mb-5">
-            BloodConnect is India’s largest youth-led organization that works
-            with colleges, corporates, and RWAs to help the blood banks be blood
-            sufficient. We provide a 360° solution to the problem: from
-            motivating people to donate blood, to helping them donate via camps
-            and finally helping anyone in dire need via a helpline.
+          <p class="color-dark-light mt-1">
+            There is a requirement of 15 million units of blood annually.
+            However, we are only able to collect 13 million units. We just
+            need
+            <span class="color-main fw-6">2% of India’s youth to donate regularly</span>
+            to address the complete demand.
           </p>
-          <div
-            class="work-card text-center bg-white shadow pt-4 px-4 pb-5 col-lg-3 col-md-6 col-sm-10 mx-4 mb-5"
-          >
-            <h5 class="color-dark mt-2 f-18 text-center">
-              Blood Donation Camps
-            </h5>
-            <p class="color-dark-light mx-auto mt-1 pr-1">
-              We collaborate with colleges, corporates, RWAs to organize
-              innovative and engaging blood donation camps end to end.
-            </p>
-            <button class="btn-main bg-main mx-auto">
-              <a class="card-link color-white" href="./organize-a-camp.html"
-                >Organize a Camp</a
-              >
-            </button>
-          </div>
-          <div
-            class="work-card text-center bg-white shadow pt-4 px-4 pb-5 col-lg-3 col-md-6 col-sm-10 mx-4 mb-5"
-          >
-            <h5 class="color-dark mt-2 f-18 text-center">Handling Helpline</h5>
-            <p class="color-dark-light mx-auto mt-1 pr-1">
-              Through helpline requests, we help address immediate blood
-              requirements by patients.
-            </p>
-            <br />
-            <button class="btn-main bg-main mx-auto">
-              <a class="card-link color-white" href="./raise-a-request.html"
-                >Raise a Request</a
-              >
-            </button>
-          </div>
-          <div
-            class="work-card text-center bg-white shadow pt-4 px-4 pb-5 col-lg-3 col-md-6 col-sm-10 mx-4 mb-5"
-          >
-            <h5 class="color-dark mt-2 f-18 text-center">Awareness Session</h5>
-            <p class="color-dark-light mx-auto mt-1 pr-1">
-              Street plays, competitions, and sessions - targeted at inspiring
-              people, especially the first timers, to come out and donate blood.
-            </p>
-            <button class="btn-main bg-main mx-auto">
-              <a class="card-link color-white" href="./about-us.html"
-                >Learn More</a
-              >
-            </button>
-          </div>
+          <button class="shadow btn-main bg-main mx-auto-sm">
+            <a href="./about-us.html" class="color-white">Know More</a>
+          </button>
         </div>
       </div>
     </div>
 
-    <!-- Impact Section -->
-    <div
-      class="container-fluid h-60-min d-flex align-items-center justify-content-center py-5"
-      style="
+    <!-- Our work in brief -->
+    <div class="container px-0">
+      <div class="row m-0 pt-5 justify-content-center bg-main-light py-5">
+        <h1 class="color-dark fw-4 f-30 mb-0 text-left col-lg-10 pt-5">
+          We, the youth, can make India
+
+          <span class="color-main-dark f-30 col-lg-12 pl-0">Blood Sufficient
+          </span>
+        </h1>
+        <p class="color-dark-light col-lg-10 col-sm-12 mx-auto mb-5">
+          BloodConnect is India’s largest youth-led organization that works
+          with colleges, corporates, and RWAs to help the blood banks be blood
+          sufficient. We provide a 360° solution to the problem: from
+          motivating people to donate blood, to helping them donate via camps
+          and finally helping anyone in dire need via a helpline.
+        </p>
+        <div class="work-card text-center bg-white shadow pt-4 px-4 pb-5 col-lg-3 col-md-6 col-sm-10 mx-4 mb-5">
+          <h5 class="color-dark mt-2 f-18 text-center">
+            Blood Donation Camps
+          </h5>
+          <p class="color-dark-light mx-auto mt-1 pr-1">
+            We collaborate with colleges, corporates, RWAs to organize
+            innovative and engaging blood donation camps end to end.
+          </p>
+          <button class="btn-main bg-main mx-auto">
+            <a class="card-link color-white" href="./organize-a-camp.html">Organize a Camp</a>
+          </button>
+        </div>
+        <div class="work-card text-center bg-white shadow pt-4 px-4 pb-5 col-lg-3 col-md-6 col-sm-10 mx-4 mb-5">
+          <h5 class="color-dark mt-2 f-18 text-center">Handling Helpline</h5>
+          <p class="color-dark-light mx-auto mt-1 pr-1">
+            Through helpline requests, we help address immediate blood
+            requirements by patients.
+          </p>
+          <br />
+          <button class="btn-main bg-main mx-auto">
+            <a class="card-link color-white" href="./raise-a-request.html">Raise a Request</a>
+          </button>
+        </div>
+        <div class="work-card text-center bg-white shadow pt-4 px-4 pb-5 col-lg-3 col-md-6 col-sm-10 mx-4 mb-5">
+          <h5 class="color-dark mt-2 f-18 text-center">Awareness Session</h5>
+          <p class="color-dark-light mx-auto mt-1 pr-1">
+            Street plays, competitions, and sessions - targeted at inspiring
+            people, especially the first timers, to come out and donate blood.
+          </p>
+          <button class="btn-main bg-main mx-auto">
+            <a class="card-link color-white" href="./about-us.html">Learn More</a>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Impact Section -->
+  <div class="container-fluid h-60-min d-flex align-items-center justify-content-center py-5" style="
         background: url('./img/homepage/impact.jpg');
         background-size: cover;
         background-position: bottom;
-      "
-    >
-      <div class="container">
-        <div class="mx-auto">
-          <h2 class="f-40 fw-6 text-center color-white mb-0">Our Impact</h2>
-        </div>
-        <div class="row bg-none py-5">
-          <div
-            class="col-lg-4 pt-3 pb-3 text-center d-flex align-items-center justify-content-center flex-column"
-          >
-            <p class="bold f-30 color-white mb-0 mt-n-1 count" id="units">
-              104,532+
-            </p>
-            <p class="color-white fw-4 f-18">Blood units collected</p>
-          </div>
-          <div
-            class="col-lg-4 pt-3 pb-3 text-center d-flex align-items-center justify-content-center flex-column"
-          >
-            <p class="bold f-40 color-white mb-0 mt-n-1 count" id="livesSaved">
-              314,668+
-            </p>
-            <p class="color-white fw-6 f-30">Lives Saved</p>
-          </div>
-          <div
-            class="col-lg-4 pt-3 pb-3 text-center d-flex align-items-center justify-content-center flex-column"
-          >
-            <p class="bold f-30 color-white mb-0 mt-n-1 count" id="camps">
-              1,049
-            </p>
-            <p class="color-white fw-4 f-18">Camps organized across India</p>
-          </div>
-        </div>
+      ">
+    <div class="container">
+      <div class="mx-auto">
+        <h2 class="f-40 fw-6 text-center color-white mb-0">Our Impact</h2>
       </div>
-    </div>
-
-    <!-- testimonials -->
-    <div class="container mt-5 mb-5">
-      <h4 class="color-dark fw-4 f-40 mb-0 text-center">What People Say</h4>
-      <!-- testimonial Carousel -->
-      <div
-        class="testimonial-slider"
-        data-slick='{"slidesToShow": 1, "slidesToScroll": 1}'
-      >
-        <div>
-          <div
-            class="w-75-lg mx-auto h-55-lg d-flex flex-column justify-content-between pt-5 pr-0 pb-2"
-          >
-            <p class="mb-4 color-dark-light text-center f-16">
-              We needed blood immediately in Nepal and were trying our hands
-              everywhere. BloodConnect, though not present in Nepal, amazingly
-              helped us. They arranged for a donor to travel across borders from
-              their Kolkata chapter to donate blood. That was totally
-              unexpected- by far the most amazing thing ever done. Forever
-              grateful!
-            </p>
-            <div class="d-flex flex-column align-items-center">
-              <p class="f-20 color-main-dark mb-0" style="margin-bottom: -10px">
-                Neha (Nepal)
-              </p>
-              <p class="color-dark-light f-14" style="margin-bottom: -5px">
-                Helpline requester
-              </p>
-              <img class=" " src="./img/favicon.png" width="50" alt="" />
-            </div>
-          </div>
-        </div>
-
-        <div>
-          <div
-            class="w-75-lg mx-auto h-55-lg d-flex flex-column justify-content-between pt-5 pr-0 pb-2"
-          >
-            <p class="mb-4 color-dark-light text-center f-16">
-              I had read about the blood shortage during the Covid19 phase but
-              never really thought much about it. BloodConnect reached out to me
-              to organize a blood donation camp in Delhi during the lockdown.
-              Getting to know about the shortage for thalassemia patients was an
-              eye opener. We worked with them to organize a successful camp.
-              When traditional networks of donation were broken (colleges),
-              BloodConnect stepped up. Great work!
-            </p>
-            <div class="d-flex flex-column align-items-center">
-              <p
-                class="f-20 color-main-dark mb-0 text-center-sm"
-                style="margin-bottom: -10px"
-              >
-                Hitanshu (Delhi)
-              </p>
-              <p class="color-dark-light f-14" style="margin-bottom: -5px">
-                Camp organizer
-              </p>
-              <img class=" " src="./img/favicon.png" width="50" alt="" />
-            </div>
-          </div>
-        </div>
-
-        <div>
-          <div
-            class="w-75-lg mx-auto h-55-lg d-flex flex-column justify-content-between pt-5 pr-0 pb-2"
-          >
-            <p class="mb-4 color-dark-light text-center f-16">
-              Earlier, as the Vice president of Youth Red Cross, Vellore
-              Institute of Technology, Vellore, I helped patients in Christian
-              Medical College, Vellore by convincing friends in my college only
-              for blood and platelet donation. However, at BloodConnect I am
-              able to build team, manage helpline request and organize camp in
-              any part of the country. It is the best platform for anyone who
-              would like to learn, lead and create large social impact across
-              the country.
-            </p>
-            <div class="d-flex flex-column align-items-center">
-              <p
-                class="f-20 color-main-dark mb-0 text-center-sm"
-                style="margin-bottom: -10px"
-              >
-                Aachran, RIL (Jamnagar)
-              </p>
-              <p class="color-dark-light f-14" style="margin-bottom: -5px">
-                Volunteer
-              </p>
-              <img src="./img/favicon.png" width="50" alt="" />
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Sponsor banner -->
-    <div class="m-0 px-2 pt-5 pb-5 h-100-min container-fluid bg-main-light">
-      <div class="container">
-        <div class="row justify-content-between">
-          <div class="col-lg-6">
-            <h4 class="f-40 color-dark text-left pt-5">
-              Help us make India Blood Sufficient
-            </h4>
-            <p class="color-dark-light text-left">
-              We started in IIT Delhi in 2010 and have now grown on to 10
-              cities. With your support we hope to further expand and help out
-              blood banks across the country and make them blood sufficient.
-              With you helping, we can:
-            </p>
-            <div class="d-flex flex-column">
-              <div class="row">
-                <div class="col-lg-6 col-12 d-flex flex-row">
-                  <div class="mr-2">
-                    <img class=" " width="20px" src="./svg/tick.svg" alt="" />
-                  </div>
-                  <p class="color-dark-light">
-                    Arrange a donor for someone in need
-                  </p>
-                </div>
-
-                <div class="col-lg-6 col-12 d-flex flex-row">
-                  <div class="mr-2">
-                    <img class=" " width="20px" src="./svg/tick.svg" alt="" />
-                  </div>
-                  <p class="color-dark-light">
-                    Ensure regular blood for thalassemia patients
-                  </p>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-lg-6 col-12 d-flex flex-row">
-                  <div class="mr-2">
-                    <img class=" " width="20px" src="./svg/tick.svg" alt="" />
-                  </div>
-                  <p class="color-dark-light">
-                    Keep blood bank stocked for high blood loss emergencies
-                  </p>
-                </div>
-
-                <div class="col-lg-6 col-12 d-flex flex-row">
-                  <div class="mr-2">
-                    <img class=" " width="20px" src="./svg/tick.svg" alt="" />
-                  </div>
-                  <p class="color-dark-light">
-                    Motivate youth to come forward and donate blood
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            <button class="shadow btn-main bg-white mt-3 mb-5">
-              <a class="color-main fw-6" href="./sponsor.html">Sponsor Us</a>
-            </button>
-          </div>
-          <div
-            class="col-lg-6 d-flex flex-column justify-content-center align-items-center"
-          >
-            <div
-              class="hide d-flex justify-content-center align-items-center"
-              id="youtubeVideoDiv"
-            >
-              <div class="iframeContainer d-flex flex-column">
-                <button class="iframeClose" onclick="closeVideo()">
-                  <i class="f-18 fa fa-times"></i>
-                </button>
-
-                <iframe
-                  id="youtubeFrame"
-                  width="560"
-                  height="315"
-                  frameborder="0"
-                  allowfullscreen
-                ></iframe>
-              </div>
-            </div>
-
-            <img
-              class="wd-inherit"
-              src="./img/homepage/video.jpg"
-              id="video-img"
-              style="height: 400px"
-              class="wd-inherit"
-              alt=""
-            />
-            <button class="play bg-none" id="play" onclick="playVideo()">
-              <i class="color-white fa fa-play"></i>
-            </button>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Media Partners -->
-    <div class="container pt-5 mb-5">
-      <div
-        class="media-slider"
-        data-slick='{"slidesToShow": 4, "slidesToScroll": 1}'
-      >
-        <div class="d-flex align-items-center justify-content-center partner">
-          <img
-            class="mx-auto media-slider-img"
-            src="./img/homepage/media-partners/AmarUjala.png"
-            alt="Amar Ujala"
-          />
-        </div>
-        <div class="d-flex align-items-center justify-content-center partner">
-          <img
-            class="mx-auto media-slider-img"
-            src="./img/homepage/media-partners/BusinessStandard.png"
-            alt="Business Standard"
-          />
-        </div>
-        <div class="d-flex align-items-center justify-content-center partner">
-          <img
-            class="mx-auto media-slider-img"
-            src="./img/homepage/media-partners/DeccanHerald.png"
-            alt="Deccan Herald"
-          />
-        </div>
-        <div class="d-flex align-items-center justify-content-center partner">
-          <img
-            class="mx-auto media-slider-img"
-            src="./img/homepage/media-partners/HuffPost.png"
-            alt="HuffPost "
-          />
-        </div>
-        <div class="d-flex align-items-center justify-content-center partner">
-          <img
-            class="mx-auto media-slider-img"
-            src="./img/homepage/media-partners/TimesOfIndia.png"
-            alt="TimesOfIndia"
-          />
-        </div>
-      </div>
-    </div>
-    <!-- Footer -->
-
-    <div class="container-fluid pt-5">
-      <div class="container d-flex flex-column">
-        <hr class="color-dark w-100" />
-        <div
-          class="d-flex justify-content-between align-items-center flex-column-sm"
-        >
-          <a href="./index.html">
-            <img src="./img/logo.png" alt="" />
-          </a>
-          <ul
-            class="footer-list mb-0 d-flex justify-content-start align-items-center pr-4 col-lg-4 col-sm-12"
-          >
-            <li class="footer-item bg-white">
-              <a
-                href="https://facebook.com/BloodConnect"
-                target="_blank"
-                class="footer-link color-main"
-                ><i class="fa fa-facebook-f"></i
-              ></a>
-            </li>
-            <li class="footer-item bg-white">
-              <a
-                href="https://instagram.com/bloodconnectorg?igshid=umn7a6sbwt7h"
-                target="_blank"
-                class="footer-link color-main"
-                ><i class="fa fa-instagram"></i
-              ></a>
-            </li>
-            <li class="footer-item bg-white">
-              <a
-                href="https://twitter.com/bloodconnectorg"
-                target="_blank"
-                class="footer-link color-main"
-                ><i class="fa fa-twitter"></i
-              ></a>
-            </li>
-            <li class="footer-item bg-white">
-              <a
-                href="https://www.youtube.com/channel/UCtU8tOeU1IvLZTUHxHuL2LQ"
-                target="_blank"
-                class="footer-link color-main"
-                ><i class="fa fa-youtube"></i
-              ></a>
-            </li>
-            <li class="footer-item bg-white">
-              <a
-                href="https://www.linkedin.com/company/bloodconnect-india"
-                target="_blank"
-                class="footer-link color-main"
-                ><i class="fa fa-linkedin"></i
-              ></a>
-            </li>
-          </ul>
-        </div>
-        <hr class="color-dark w-100" />
-        <div class="row">
-          <div class="col-lg-4 col-sm-12">
-            <p class="color-dark bold mb-2">NAVIGATION</p>
-            <ul class="footer-list pl-0">
-              <li class="mr-4 compact">
-                <a class="color-dark f-14" href="./index.html">Home</a>
-              </li>
-              <li class="mr-4 compact">
-                <a class="color-dark f-14" href="./about-us.html">About us</a>
-              </li>
-              <li class="mr-4 compact">
-                <a class="color-dark f-14" href="./our-team.html">Our team</a>
-              </li>
-              <li class="mr-4 compact">
-                <a class="color-dark f-14" href="./sponsor.html">Donate now</a>
-              </li>
-              <li class="mr-4 compact">
-                <a class="color-dark f-14" href="./join-us-selection.html"
-                  >Join us</a
-                >
-              </li>
-              <li class="mr-4 compact">
-                <a class="color-dark f-14" href="./contact-us.html"
-                  >Contact us</a
-                >
-              </li>
-            </ul>
-          </div>
-          <div class="col-lg-4 col-sm-12">
-            <p class="color-dark bold mb-2">RAISE A REQUEST</p>
-            <ul class="footer-list pl-0">
-              <li class="mr-4 compact">
-                <a
-                  class="color-dark f-14"
-                  href="./raise-a-request.html#city_region=Delhi"
-                  >Raise a request in Delhi-NCR</a
-                >
-              </li>
-              <li class="mr-4 compact">
-                <a
-                  class="color-dark f-14"
-                  href="./raise-a-request.html#city_region=Kanpur"
-                  >Raise a request in Kanpur</a
-                >
-              </li>
-              <li class="mr-4 compact">
-                <a
-                  class="color-dark f-14"
-                  href="./raise-a-request.html#city_region=Agra"
-                  >Raise a request in Agra</a
-                >
-              </li>
-              <li class="mr-4 compact">
-                <a
-                  class="color-dark f-14"
-                  href="./raise-a-request.html#city_region=Lucknow"
-                  >Raise a request in Lucknow</a
-                >
-              </li>
-              <li class="mr-4 compact">
-                <a
-                  class="color-dark f-14"
-                  href="./raise-a-request.html#city_region=Bhubaneswar"
-                  >Raise a request in Bhubaneswar</a
-                >
-              </li>
-              <li class="mr-4 compact">
-                <a
-                  class="color-dark f-14"
-                  href="./raise-a-request.html#city_region=Jaipur"
-                  >Raise a request in Jaipur</a
-                >
-              </li>
-            </ul>
-          </div>
-          <div class="col-lg-4 col-sm-12">
-            <p class="color-dark bold mb-2">ORGANIZE A CAMP</p>
-            <ul class="footer-list pl-0">
-              <li class="mr-4 compact">
-                <a
-                  class="color-dark f-14"
-                  href="./organize-a-camp.html#city_region=Delhi"
-                  >Organize a camp in Delhi-NCR</a
-                >
-              </li>
-              <li class="mr-4 compact">
-                <a
-                  class="color-dark f-14"
-                  href="./organize-a-camp.html#city_region=Kanpur"
-                  >Organize a camp in Kanpur</a
-                >
-              </li>
-              <li class="mr-4 compact">
-                <a
-                  class="color-dark f-14"
-                  href="./organize-a-camp.html#city_region=Agra"
-                  >Organize a camp in Agra</a
-                >
-              </li>
-              <li class="mr-4 compact">
-                <a
-                  class="color-dark f-14"
-                  href="./organize-a-camp.html#city_region=Lucknow"
-                  >Organize a camp in Lucknow</a
-                >
-              </li>
-              <li class="mr-4 compact">
-                <a
-                  class="color-dark f-14"
-                  href="./organize-a-camp.html#city_region=Bhubaneswar"
-                  >Organize a camp in Bhubaneswar</a
-                >
-              </li>
-              <li class="mr-4 compact">
-                <a
-                  class="color-dark f-14"
-                  href="./organize-a-camp.html#city_region=Jaipur"
-                  >Organize a camp in Jaipur</a
-                >
-              </li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="d-flex justify-content-between mt-3">
-          <p class="color-dark f-14">
-            Copyright &copy; BloodConnect Foundation 2020
+      <div class="row bg-none py-5">
+        <div class="col-lg-4 pt-3 pb-3 text-center d-flex align-items-center justify-content-center flex-column">
+          <p class="bold f-30 color-white mb-0 mt-n-1 count" id="units">
+            104,532+
           </p>
+          <p class="color-white fw-4 f-18">Blood units collected</p>
+        </div>
+        <div class="col-lg-4 pt-3 pb-3 text-center d-flex align-items-center justify-content-center flex-column">
+          <p class="bold f-40 color-white mb-0 mt-n-1 count" id="livesSaved">
+            314,668+
+          </p>
+          <p class="color-white fw-6 f-30">Lives Saved</p>
+        </div>
+        <div class="col-lg-4 pt-3 pb-3 text-center d-flex align-items-center justify-content-center flex-column">
+          <p class="bold f-30 color-white mb-0 mt-n-1 count" id="camps">
+            1,049
+          </p>
+          <p class="color-white fw-4 f-18">Camps organized across India</p>
+        </div>
+      </div>
+    </div>
+  </div>
 
-          <ul class="footer-list">
-            <li class="left mx-3">
-              <a class="color-dark f-12" href="./privacy.html">Privacy</a>
+  <!-- testimonials -->
+  <div class="container mt-5 mb-5">
+    <h4 class="color-dark fw-4 f-40 mb-0 text-center">What People Say</h4>
+    <!-- testimonial Carousel -->
+    <div class="testimonial-slider" data-slick='{"slidesToShow": 1, "slidesToScroll": 1}'>
+      <div>
+        <div class="w-75-lg mx-auto h-55-lg d-flex flex-column justify-content-between pt-5 pr-0 pb-2">
+          <p class="mb-4 color-dark-light text-center f-16">
+            We needed blood immediately in Nepal and were trying our hands
+            everywhere. BloodConnect, though not present in Nepal, amazingly
+            helped us. They arranged for a donor to travel across borders from
+            their Kolkata chapter to donate blood. That was totally
+            unexpected- by far the most amazing thing ever done. Forever
+            grateful!
+          </p>
+          <div class="d-flex flex-column align-items-center">
+            <p class="f-20 color-main-dark mb-0" style="margin-bottom: -10px">
+              Neha (Nepal)
+            </p>
+            <p class="color-dark-light f-14" style="margin-bottom: -5px">
+              Helpline requester
+            </p>
+            <img class=" " src="./img/favicon.png" width="50" alt="" />
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <div class="w-75-lg mx-auto h-55-lg d-flex flex-column justify-content-between pt-5 pr-0 pb-2">
+          <p class="mb-4 color-dark-light text-center f-16">
+            I had read about the blood shortage during the Covid19 phase but
+            never really thought much about it. BloodConnect reached out to me
+            to organize a blood donation camp in Delhi during the lockdown.
+            Getting to know about the shortage for thalassemia patients was an
+            eye opener. We worked with them to organize a successful camp.
+            When traditional networks of donation were broken (colleges),
+            BloodConnect stepped up. Great work!
+          </p>
+          <div class="d-flex flex-column align-items-center">
+            <p class="f-20 color-main-dark mb-0 text-center-sm" style="margin-bottom: -10px">
+              Hitanshu (Delhi)
+            </p>
+            <p class="color-dark-light f-14" style="margin-bottom: -5px">
+              Camp organizer
+            </p>
+            <img class=" " src="./img/favicon.png" width="50" alt="" />
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <div class="w-75-lg mx-auto h-55-lg d-flex flex-column justify-content-between pt-5 pr-0 pb-2">
+          <p class="mb-4 color-dark-light text-center f-16">
+            Earlier, as the Vice president of Youth Red Cross, Vellore
+            Institute of Technology, Vellore, I helped patients in Christian
+            Medical College, Vellore by convincing friends in my college only
+            for blood and platelet donation. However, at BloodConnect I am
+            able to build team, manage helpline request and organize camp in
+            any part of the country. It is the best platform for anyone who
+            would like to learn, lead and create large social impact across
+            the country.
+          </p>
+          <div class="d-flex flex-column align-items-center">
+            <p class="f-20 color-main-dark mb-0 text-center-sm" style="margin-bottom: -10px">
+              Aachran, RIL (Jamnagar)
+            </p>
+            <p class="color-dark-light f-14" style="margin-bottom: -5px">
+              Volunteer
+            </p>
+            <img src="./img/favicon.png" width="50" alt="" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Sponsor banner -->
+  <div class="m-0 px-2 pt-5 pb-5 h-100-min container-fluid bg-main-light">
+    <div class="container">
+      <div class="row justify-content-between">
+        <div class="col-lg-6">
+          <h4 class="f-40 color-dark text-left pt-5">
+            Help us make India Blood Sufficient
+          </h4>
+          <p class="color-dark-light text-left">
+            We started in IIT Delhi in 2010 and have now grown on to 10
+            cities. With your support we hope to further expand and help out
+            blood banks across the country and make them blood sufficient.
+            With you helping, we can:
+          </p>
+          <div class="d-flex flex-column">
+            <div class="row">
+              <div class="col-lg-6 col-12 d-flex flex-row">
+                <div class="mr-2">
+                  <img class=" " width="20px" src="./svg/tick.svg" alt="" />
+                </div>
+                <p class="color-dark-light">
+                  Arrange a donor for someone in need
+                </p>
+              </div>
+
+              <div class="col-lg-6 col-12 d-flex flex-row">
+                <div class="mr-2">
+                  <img class=" " width="20px" src="./svg/tick.svg" alt="" />
+                </div>
+                <p class="color-dark-light">
+                  Ensure regular blood for thalassemia patients
+                </p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-lg-6 col-12 d-flex flex-row">
+                <div class="mr-2">
+                  <img class=" " width="20px" src="./svg/tick.svg" alt="" />
+                </div>
+                <p class="color-dark-light">
+                  Keep blood bank stocked for high blood loss emergencies
+                </p>
+              </div>
+
+              <div class="col-lg-6 col-12 d-flex flex-row">
+                <div class="mr-2">
+                  <img class=" " width="20px" src="./svg/tick.svg" alt="" />
+                </div>
+                <p class="color-dark-light">
+                  Motivate youth to come forward and donate blood
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <button class="shadow btn-main bg-white mt-3 mb-5">
+            <a class="color-main fw-6" href="./sponsor.html">Sponsor Us</a>
+          </button>
+        </div>
+        <div class="col-lg-6 d-flex flex-column justify-content-center align-items-center">
+          <div class="hide d-flex justify-content-center align-items-center" id="youtubeVideoDiv">
+            <div class="iframeContainer d-flex flex-column">
+              <button class="iframeClose" onclick="closeVideo()">
+                <i class="f-18 fa fa-times"></i>
+              </button>
+
+              <iframe id="youtubeFrame" width="560" height="315" frameborder="0" allowfullscreen></iframe>
+            </div>
+          </div>
+
+          <img class="wd-inherit" src="./img/homepage/video.jpg" id="video-img" style="height: 400px" class="wd-inherit"
+            alt="" />
+          <button class="play bg-none" id="play" onclick="playVideo()">
+            <i class="color-white fa fa-play"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Media Partners -->
+  <div class="container pt-5 mb-5">
+    <div class="media-slider" data-slick='{"slidesToShow": 4, "slidesToScroll": 1}'>
+      <div class="d-flex align-items-center justify-content-center partner">
+        <img class="mx-auto media-slider-img" src="./img/homepage/media-partners/AmarUjala.png" alt="Amar Ujala" />
+      </div>
+      <div class="d-flex align-items-center justify-content-center partner">
+        <img class="mx-auto media-slider-img" src="./img/homepage/media-partners/BusinessStandard.png"
+          alt="Business Standard" />
+      </div>
+      <div class="d-flex align-items-center justify-content-center partner">
+        <img class="mx-auto media-slider-img" src="./img/homepage/media-partners/DeccanHerald.png"
+          alt="Deccan Herald" />
+      </div>
+      <div class="d-flex align-items-center justify-content-center partner">
+        <img class="mx-auto media-slider-img" src="./img/homepage/media-partners/HuffPost.png" alt="HuffPost " />
+      </div>
+      <div class="d-flex align-items-center justify-content-center partner">
+        <img class="mx-auto media-slider-img" src="./img/homepage/media-partners/TimesOfIndia.png" alt="TimesOfIndia" />
+      </div>
+    </div>
+  </div>
+  <!-- Footer -->
+
+  <div class="container-fluid pt-5">
+    <div class="container d-flex flex-column">
+      <hr class="color-dark w-100" />
+      <div class="d-flex justify-content-between align-items-center flex-column-sm">
+        <a href="./index.html">
+          <img src="./img/logo.png" alt="" />
+        </a>
+        <ul class="footer-list mb-0 d-flex justify-content-start align-items-center pr-4 col-lg-4 col-sm-12">
+          <li class="footer-item bg-white">
+            <a href="https://facebook.com/BloodConnect" target="_blank" class="footer-link color-main"><i
+                class="fa fa-facebook-f"></i></a>
+          </li>
+          <li class="footer-item bg-white">
+            <a href="https://instagram.com/bloodconnectorg?igshid=umn7a6sbwt7h" target="_blank"
+              class="footer-link color-main"><i class="fa fa-instagram"></i></a>
+          </li>
+          <li class="footer-item bg-white">
+            <a href="https://twitter.com/bloodconnectorg" target="_blank" class="footer-link color-main"><i
+                class="fa fa-twitter"></i></a>
+          </li>
+          <li class="footer-item bg-white">
+            <a href="https://www.youtube.com/channel/UCtU8tOeU1IvLZTUHxHuL2LQ" target="_blank"
+              class="footer-link color-main"><i class="fa fa-youtube"></i></a>
+          </li>
+          <li class="footer-item bg-white">
+            <a href="https://www.linkedin.com/company/bloodconnect-india" target="_blank"
+              class="footer-link color-main"><i class="fa fa-linkedin"></i></a>
+          </li>
+        </ul>
+      </div>
+      <hr class="color-dark w-100" />
+      <div class="row">
+        <div class="col-lg-4 col-sm-12">
+          <p class="color-dark bold mb-2">NAVIGATION</p>
+          <ul class="footer-list pl-0">
+            <li class="mr-4 compact">
+              <a class="color-dark f-14" href="./index.html">Home</a>
             </li>
-            <li class="left ml-3">
-              <a class="color-dark f-12" href="./toc.html"
-                >Terms and Condition</a
-              >
+            <li class="mr-4 compact">
+              <a class="color-dark f-14" href="./about-us.html">About us</a>
+            </li>
+            <li class="mr-4 compact">
+              <a class="color-dark f-14" href="./our-team.html">Our team</a>
+            </li>
+            <li class="mr-4 compact">
+              <a class="color-dark f-14" href="./sponsor.html">Donate now</a>
+            </li>
+            <li class="mr-4 compact">
+              <a class="color-dark f-14" href="./join-us-selection.html">Join us</a>
+            </li>
+            <li class="mr-4 compact">
+              <a class="color-dark f-14" href="./contact-us.html">Contact us</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-lg-4 col-sm-12">
+          <p class="color-dark bold mb-2">RAISE A REQUEST</p>
+          <ul class="footer-list pl-0">
+            <li class="mr-4 compact">
+              <a class="color-dark f-14" href="./raise-a-request.html#city_region=Delhi">Raise a request in
+                Delhi-NCR</a>
+            </li>
+            <li class="mr-4 compact">
+              <a class="color-dark f-14" href="./raise-a-request.html#city_region=Kanpur">Raise a request in Kanpur</a>
+            </li>
+            <li class="mr-4 compact">
+              <a class="color-dark f-14" href="./raise-a-request.html#city_region=Agra">Raise a request in Agra</a>
+            </li>
+            <li class="mr-4 compact">
+              <a class="color-dark f-14" href="./raise-a-request.html#city_region=Lucknow">Raise a request in
+                Lucknow</a>
+            </li>
+            <li class="mr-4 compact">
+              <a class="color-dark f-14" href="./raise-a-request.html#city_region=Bhubaneswar">Raise a request in
+                Bhubaneswar</a>
+            </li>
+            <li class="mr-4 compact">
+              <a class="color-dark f-14" href="./raise-a-request.html#city_region=Jaipur">Raise a request in Jaipur</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-lg-4 col-sm-12">
+          <p class="color-dark bold mb-2">ORGANIZE A CAMP</p>
+          <ul class="footer-list pl-0">
+            <li class="mr-4 compact">
+              <a class="color-dark f-14" href="./organize-a-camp.html#city_region=Delhi">Organize a camp in
+                Delhi-NCR</a>
+            </li>
+            <li class="mr-4 compact">
+              <a class="color-dark f-14" href="./organize-a-camp.html#city_region=Kanpur">Organize a camp in Kanpur</a>
+            </li>
+            <li class="mr-4 compact">
+              <a class="color-dark f-14" href="./organize-a-camp.html#city_region=Agra">Organize a camp in Agra</a>
+            </li>
+            <li class="mr-4 compact">
+              <a class="color-dark f-14" href="./organize-a-camp.html#city_region=Lucknow">Organize a camp in
+                Lucknow</a>
+            </li>
+            <li class="mr-4 compact">
+              <a class="color-dark f-14" href="./organize-a-camp.html#city_region=Bhubaneswar">Organize a camp in
+                Bhubaneswar</a>
+            </li>
+            <li class="mr-4 compact">
+              <a class="color-dark f-14" href="./organize-a-camp.html#city_region=Jaipur">Organize a camp in Jaipur</a>
             </li>
           </ul>
         </div>
       </div>
+
+      <div class="d-flex justify-content-between mt-3">
+        <p class="color-dark f-14">
+          Copyright &copy; BloodConnect Foundation 2020
+        </p>
+
+        <ul class="footer-list">
+          <li class="left mx-3">
+            <a class="color-dark f-12" href="./privacy.html">Privacy</a>
+          </li>
+          <li class="left ml-3">
+            <a class="color-dark f-12" href="./toc.html">Terms and Condition</a>
+          </li>
+        </ul>
+      </div>
     </div>
+  </div>
 
-    <script
-      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-      crossorigin="anonymous"
-    ></script>
-    <script src="./js/bootstrap.min.js"></script>
-    <script src="./js/main.js"></script>
-    <script
-      type="text/javascript"
-      src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
-    ></script>
-    <script type="text/javascript" src="./js/jquery.easypiechart.js"></script>
-    <script src="./js/animateCounter.js"></script>
-    <script>
-      $(".testimonial-slider").slick({
-        // normal options...
-        infinite: true,
-        autoplay: false,
-        autoplaySpeed: 2000,
-        loop: true,
-        dots: false,
-        // the magic
-      });
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="./js/bootstrap.min.js"></script>
+  <script src="./js/main.js"></script>
+  <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <script type="text/javascript" src="./js/jquery.easypiechart.js"></script>
+  <script src="./js/animateCounter.js"></script>
+  <script>
+    $(".testimonial-slider").slick({
+      // normal options...
+      infinite: true,
+      autoplay: false,
+      autoplaySpeed: 2000,
+      loop: true,
+      dots: false,
+      // the magic
+    });
 
-      $(".main-slider").slick({
-        // normal options...
-        infinite: true,
-        autoplay: true,
-        autoplaySpeed: 5000,
-        pauseOnHover: false,
-        loop: true,
-        dots: true,
-        cssEase: "ease",
-      });
-      $(".main-slider-text").slick({
-        // normal options...
-        infinite: true,
-        autoplay: true,
-        autoplaySpeed: 5000,
-        pauseOnHover: false,
-        loop: true,
-        dots: false,
-        fade: true,
-        cssEase: "ease",
-        arrows: false,
-      });
+    $(".main-slider").slick({
+      // normal options...
+      infinite: true,
+      autoplay: false,
+      autoplaySpeed: 5000,
+      pauseOnHover: false,
+      loop: true,
+      dots: true,
+      cssEase: "ease",
+    });
+    $(".main-slider-text").slick({
+      // normal options...
+      infinite: true,
+      autoplay: false,
+      autoplaySpeed: 5000,
+      pauseOnHover: false,
+      loop: true,
+      dots: false,
+      fade: true,
+      cssEase: "ease",
+      arrows: false,
+    });
 
-      $(".media-slider").slick({
-        // normal options...
-        infinite: true,
-        autoplay: true,
-        autoplaySpeed: 500,
-        loop: true,
-        pauseOnHover: false,
-        arrows: false,
-        // the magic
-        responsive: [
-          {
-            breakpoint: 1024,
-            settings: {
-              slidesToShow: 3,
-              infinite: true,
-            },
+    $(".media-slider").slick({
+      // normal options...
+      infinite: true,
+      autoplay: true,
+      autoplaySpeed: 500,
+      loop: true,
+      pauseOnHover: false,
+      arrows: false,
+      // the magic
+      responsive: [
+        {
+          breakpoint: 1024,
+          settings: {
+            slidesToShow: 3,
+            infinite: true,
           },
-          {
-            breakpoint: 900,
-            settings: {
-              slidesToShow: 2,
-            },
+        },
+        {
+          breakpoint: 900,
+          settings: {
+            slidesToShow: 2,
           },
-          {
-            breakpoint: 560,
-            settings: {
-              slidesToShow: 1,
-            },
+        },
+        {
+          breakpoint: 560,
+          settings: {
+            slidesToShow: 1,
           },
-          {
-            breakpoint: 280,
-            settings: "unslick", // destroys slick
-          },
-        ],
-      });
-      playVideo = () => {
-        $("#youtubeVideoDiv").addClass("show-flex");
-        $("#youtubeVideoDIv").removeClass("hide");
-        document.getElementById("youtubeFrame").src =
-          "https://www.youtube.com/embed/zYVxjIPVCZQ?rel=0&modestbranding=1&autohide=1&showinfo=0&autoplay=1";
-      };
-      closeVideo = () => {
-        $("#youtubeVideoDiv").addClass("hide");
-        $("#youtubeVideoDiv").removeClass("show-flex");
-        document.getElementById("youtubeFrame").src = "";
-      };
+        },
+        {
+          breakpoint: 280,
+          settings: "unslick", // destroys slick
+        },
+      ],
+    });
+    playVideo = () => {
+      $("#youtubeVideoDiv").addClass("show-flex");
+      $("#youtubeVideoDIv").removeClass("hide");
+      document.getElementById("youtubeFrame").src =
+        "https://www.youtube.com/embed/zYVxjIPVCZQ?rel=0&modestbranding=1&autohide=1&showinfo=0&autoplay=1";
+    };
+    closeVideo = () => {
+      $("#youtubeVideoDiv").addClass("hide");
+      $("#youtubeVideoDiv").removeClass("show-flex");
+      document.getElementById("youtubeFrame").src = "";
+    };
 
-      $("body").keydown(function (e) {
-        if (e.keyCode == 27) {
-          // put your code here if any (that will run after Esc pressed).
-          closeVideo();
-        }
+    $("body").keydown(function (e) {
+      if (e.keyCode == 27) {
+        // put your code here if any (that will run after Esc pressed).
+        closeVideo();
+      }
+    });
+    $(function () {
+      //create instance
+      $(".chart").easyPieChart({
+        animate: 2000,
+        barColor: "#980000",
+        trackColor: "#ffffff",
+        lineWidth: "15",
+        size: "150",
       });
-      $(function () {
-        //create instance
-        $(".chart").easyPieChart({
-          animate: 2000,
-          barColor: "#980000",
-          trackColor: "#ffffff",
-          lineWidth: "15",
-          size: "150",
-        });
-      });
-      $("#livesSaved").animationCounter({
-        start: 10000,
-        end: 313596,
-        step: 1116,
-        delay: 10,
-        txt: " +",
-      });
-      $("#units").animationCounter({
-        start: 10000,
-        end: 104532,
-        step: 562,
-        delay: 10,
-        txt: " +",
-      });
-      $("#camps").animationCounter({
-        start: 0,
-        end: 1043,
-        step: 7,
-        delay: 20,
-        txt: " ",
-      });
-    </script>
-  </body>
+    });
+    $("#livesSaved").animationCounter({
+      start: 10000,
+      end: 313596,
+      step: 1116,
+      delay: 10,
+      txt: " +",
+    });
+    $("#units").animationCounter({
+      start: 10000,
+      end: 104532,
+      step: 562,
+      delay: 10,
+      txt: " +",
+    });
+    $("#camps").animationCounter({
+      start: 0,
+      end: 1043,
+      step: 7,
+      delay: 20,
+      txt: " ",
+    });
+  </script>
+</body>
+
 </html>
