@@ -345,7 +345,7 @@
           </div>
           <div class="form-group mb-4 relative">
             <label class="m-0   color-dark" for="patientName">Your Email</label>
-            <input type="text" class="form-control pl-2" id="emailInput" placeholder="example@domain.com" required>
+            <input type="email" class="form-control pl-2" id="emailInput" placeholder="example@domain.com" required>
           </div>
           <div class="form-group mb-4 relative">
             <label class="m-0 not-required color-dark" for="panCardInput">Pan Card Number</label>
@@ -358,7 +358,7 @@
             </div>
             <div class="form-group mb-4 relative w-100">
               <label class="m-0 not-required  color-dark" for="dateOfBirth">Date of Birth</label>
-              <input type="date" class="form-control pl-2" id="dateOfBirth">
+              <input type="date" pattern="\d{4}-\d{2}-\d{2}" class="form-control pl-2" id="dateOfBirth">
             </div>
           </div>
 
@@ -479,7 +479,7 @@
   <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 
   <script src="./js/main.js"> </script>
-  <script src="./js/sponsor_v1.js"></script>
+  <script src="./js/sponsor_v2.js"></script>
 
   <script>
     playVideo = () => {
