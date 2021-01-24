@@ -31,8 +31,7 @@ submitRequest = (e) => {
 
 createCampRequest = () => {
 
-    console.log("sending request")
-    let url = "https://blood-request-api.herokuapp.com/camp-request"
+    let url = "https://bc-api2.herokuapp.com/camp-request"
     var requestData = {
         'Your_Name':your_name,
         'City_Region':city,
@@ -43,7 +42,6 @@ createCampRequest = () => {
         'Organization_Name' : organization_name
     }
 
-    console.log(requestData)
     fetch(url,{
         method: 'POST',
         body:JSON.stringify(requestData),
@@ -52,8 +50,7 @@ createCampRequest = () => {
           }
     }).then(response => response.json()).then(data => {
         
-        if(!data.msg){
-            console.log('Showing success modal')
+        if(data.msg === "success"){
             $("#success-modal").removeClass('hide')
             $("#success-modal").addClass('show')
             let secondsLeft = 3;

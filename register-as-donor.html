@@ -597,7 +597,7 @@
         'City_Donor': city
       }
 
-      fetch('https://blood-request-api.herokuapp.com/register-donor', {
+      fetch('https://bc-api2.herokuapp.com/add-donor', {
         method: 'POST',
         body: JSON.stringify(requestData),
         headers: {
@@ -605,8 +605,7 @@
         }
       }).then(response => response.json()).then(data => {
 
-        if (!data.msg) {
-          console.log('Showing success modal')
+        if (data.msg === "success") {
           $("#success-modal").removeClass('hide')
           $("#success-modal").addClass('show')
           let secondsLeft = 3;

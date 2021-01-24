@@ -1,5 +1,4 @@
 
-console.log( $("#request-form").offset().top)
 function goToForm(city) {
     window.scrollTo({
         top: $("#request-form").offset().top-200,
@@ -33,9 +32,7 @@ var requirement = " "
 var disease = ""
 var covid = ""
 
-function hasCovid(value){
-    covid = value
-}
+
 
 // Hiding the modal 
 
@@ -62,7 +59,7 @@ submitRequest = (e) => {
 createHelplineRequest = () => {
 
     console.log("sending request")
-    let url = "https://blood-request-api.herokuapp.com/request"
+    let url = "https://bc-api2.herokuapp.com/helpline"
     var requestData = {
         'Patient_Name':patient_name,
         'Your_Name':name,
@@ -71,9 +68,8 @@ createHelplineRequest = () => {
         'Units_Required' : parseInt(unit),
         'Contact_Number': phone_number,
         'Blood_Group_Required': bg,
-        'Requirement':requirement,
+        'Type_of_Donation':requirement,
         'Hospital': hospital,
-        'Has_Covid':covid,
         'Disease':disease,
         'Status': "Open"
     }
@@ -87,8 +83,7 @@ createHelplineRequest = () => {
           }
     }).then(response => response.json()).then(data => {
         
-        if(!data.msg){
-            console.log('Showing success modal')
+        if(data.msg === "success"){
             $("#success-modal").removeClass('hide')
             $("#success-modal").addClass('show')
             let secondsLeft = 3;
