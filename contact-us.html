@@ -461,7 +461,7 @@
     name = $("#name").val()
     email = $("#email").val()
     message = $("#message").val()
-    let url = "https://blood-request-api.herokuapp.com/contact"
+    let url = "https://bc-api2.herokuapp.com/contact"
     var requestData = {
         'Name':name,
         'Email':email,
@@ -475,8 +475,7 @@
           }
     }).then(response => response.json()).then(data => {
         
-        if(!data.msg){
-            console.log('Showing success modal')
+        if(data.msg === "success"){
             $("#success-modal").removeClass('hide')
             $("#success-modal").addClass('show')
             let secondsLeft = 3;

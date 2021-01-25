@@ -105,7 +105,7 @@ const sendRequest = () => {
     console.log("sending request")
     $("#submit-request-button").addClass("loading-start")
 
-    let url = 'https://blood-request-api.herokuapp.com/recruitment'
+    let url = 'https://bc-api2.herokuapp.com/recruitment'
     fetch(url, {
         method: 'POST',
         body: JSON.stringify(requestData),
@@ -114,8 +114,7 @@ const sendRequest = () => {
         }
     }).then(response => response.json()).then(data => {
 
-        if (!data.msg) {
-            console.log('Showing success modal')
+        if (data.msg === "success") {
             $("#success-modal").removeClass('hide')
             $("#success-modal").addClass('show')
             let secondsLeft = 3;
@@ -151,7 +150,6 @@ const submitRequest = () => {
         Personal_Contact: $("#personal_contact").val(),
         additional: $("#additional_comment").val()
     }
-    console.log(requestData, 'request sent')
     sendRequest()
 }
 
