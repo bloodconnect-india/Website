@@ -13,33 +13,22 @@ var sticky = navbar.offsetTop;
 // Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
 function myFunction() {
 if (window.pageYOffset < 50 && (window.location.href.includes("index") || window.location.href.includes("donor"))) {
-    navbar.classList.add("show-banner")
-    document.getElementById("mobile-nav").classList.add("show-banner")
   }
   else if (window.pageYOffset >= window.innerHeight - 100) {
     navbarSticky.classList.remove('hide')
     navbarSticky.classList.add('show-flex')
     navbar.classList.add('hide')
-    navbar.classList.remove('show-banner')
     navbarToggler.classList.remove('color-white')
     navbarToggler.classList.add('color-dark')
-    document.getElementById("mobile-nav").classList.remove("show-banner")
   } else {
     navbarSticky.classList.add('hide')
     navbarSticky.classList.remove('show-flex')
     navbar.classList.remove('hide')
-    navbar.classList.remove('show-banner')
-    document.getElementById("mobile-nav").classList.remove("show-banner")
     if (!navbarToggler.classList.contains('color-dark-fixed')) {
       navbarToggler.classList.add('color-white')
       navbarToggler.classList.remove('color-dark')
     }
   }
-  // if (window.pageYOffset >= stickySm) {
-  //   navbarSm.classList.add("sticky-sm")
-  // } else {
-  //   navbarSm.classList.remove("sticky-sm");
-  // }
 }
 
 

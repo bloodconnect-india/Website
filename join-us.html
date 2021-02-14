@@ -397,17 +397,17 @@
             <div id="section1">
               <div class="form-group mb-4">
                 <label class="m-0   color-dark" for="your_name">Your Name</label>
-                <input type="text" class="form-control" id="your_name" placeholder="Your Name" required>
+                <input type="text" class="form-control" id="your_name" name="name" placeholder="Your Name" required>
               </div>
               <!-- Email ID -->
               <div class="form-group mb-4">
                 <label class="m-0   color-dark" for="email">Email address</label>
-                <input type="email" class="form-control" placeholder="example@domain.com" id="email" required>
+                <input type="email" name="email" class="form-control" placeholder="example@domain.com" id="email" required>
               </div>
               <!-- Phone Number -->
               <div class="form-group mb-4">
                 <label class="m-0   color-dark" for="phone_number">Phone Number</label>
-                <input type="number" class="form-control" placeholder="9999xxxxxx" maxlength="10" id="phone_number"
+                <input type="text" class="form-control" pattern="\d*" name="phone number" placeholder="9999xxxxxx" maxlength="10"  id="phone_number"
                   required>
               </div>
               <!-- Education Details -->
@@ -423,13 +423,13 @@
                 </div>
                 <div class="form-group mb-4" id="graduationYearInput">
                   <label class="m-0   color-dark" for="graduation_year">Year of Graduation</label>
-                  <input type="number" class="form-control" placeholder="20xx" id="graduation_year">
+                  <input type="number" class="form-control" name="graduation_year" placeholder="20xx" id="graduation_year">
                 </div>
               </div>
 
               <div class="form-group mb-4">
                 <label class="m-0   color-dark" for="organization">Organization</label>
-                <input type="text" class="form-control" id="organization"
+                <input type="text" class="form-control" id="organization" name="organization"
                   placeholder="Workplace/Institute you are part of" required>
               </div>
               <button type="button" onclick="showSection2()" class="pl-5 pr-5 right-lg mb-4 mx-auto btn-main bg-main"
@@ -570,9 +570,11 @@
               <div class="navigation-buttons inline text-center-sm ">
                 <button type="button" onclick="showSection2()"
                   class="pl-5 pr-5 left-lg mb-4 mx-auto btn-main bg-white color-dark">Back</button>
-                <button type="submit" 
+                <button type="button" 
                   id="submit-request-button"
-                  class="pl-5 pr-5 right-lg mb-4 mx-auto btn-main bg-main">
+                  class="pl-5 pr-5 right-lg mb-4 mx-auto btn-main bg-main"
+                  onclick="submitRequest()"
+                  >
                   <p class="color-white m-0 fw-4">Submit</p>
                   <!-- Animation -->
                   <svg style="width: 50px;" version="1.1" id="L9" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
@@ -704,7 +706,7 @@
     integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
     crossorigin="anonymous"></script>
   <script src="./js/bootstrap.min.js"></script>
-  <script src="./js/join_formv1.js?v=2"></script>
+  <script src="./js/join_formv1.js?v=3"></script>
   <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 
   <script src="./js/main.js"></script>
