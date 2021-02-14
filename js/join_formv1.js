@@ -126,7 +126,7 @@ const sendRequest = () => {
     
 
     let url = 'https://bc-api2.herokuapp.com/recruitment'
-   /*
+   
     fetch(url, {
         method: 'POST',
         body: JSON.stringify(requestData),
@@ -147,7 +147,7 @@ const sendRequest = () => {
             }, 1000)
 
         }
-    })*/
+    })
 
 }
 const submitRequest = () => {
