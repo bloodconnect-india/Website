@@ -1089,7 +1089,7 @@ em{
     position: absolute;
     bottom: 10px;
 }
-.payment-details{
+.payment-details1{
     position: fixed;
     height: 100vh;
     width: 100%;
@@ -1235,6 +1235,9 @@ iframe{
 /* Media properties  */
 
 @media (max-width:480px){
+    .payment-details1 {
+        padding-bottom: 100px !important;
+    }
     .pt-100-sm{
         padding-top: 100px !important;
     }
