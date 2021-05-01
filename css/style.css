@@ -1235,7 +1235,7 @@ iframe{
 /* Media properties  */
 
 @media (max-width:480px){
-    .payment-details1 {
+    .payment-details {
         padding-bottom: 100px !important;
     }
     .pt-100-sm{
