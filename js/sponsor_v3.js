@@ -8,8 +8,7 @@ $('body').keydown(function(e) {
     }    
 });
 
-var cp = window.location.search.split("&")[0].substring(1).split("=")[1];
-
+const cp = window.location.search.split("&")[0].substring(1).split("=")[1];
 let order_id = ""
 let name = ""
 let email = ""
@@ -36,7 +35,7 @@ startSlide = () => {
 
 startSlide()
 showPayment = () => {
-    $("#payment-details").show()
+    $("#payment-details").addClass('show')
     $("#payment-details").removeClass('hide')
     $("#fade-slide").slick('unslick')
     speed = 500
