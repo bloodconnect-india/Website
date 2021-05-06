@@ -1,13 +1,4 @@
 
-
-// Binding exc key
-$('body').keydown(function(e) {
-    if (e.keyCode == 27) {
-        // put your code here if any (that will run after Esc pressed).
-        hidePayment()
-    }    
-});
-
 const cp = window.location.search.split("&")[0].substring(1).split("=")[1];
 let order_id = ""
 let name = ""
@@ -34,23 +25,7 @@ startSlide = () => {
 } 
 
 startSlide()
-showPayment = () => {
-    $("#payment-details").addClass('show')
-    $("#payment-details").removeClass('hide')
-    $("#fade-slide").slick('unslick')
-    speed = 500
-    startSlide()
-}
-hidePayment = () => {
-    $("#payment-details").hide()
-    $("#fade-slide").slick('unslick')
-    speed = 10
-    startSlide()
-}
-hidePayment()
-if(cp === "c1") {
-    showPayment()
-}
+
 verifyPayment = (order_id,payment_id,signature) => {
 
     let data = {
@@ -154,23 +129,13 @@ startPayment = (rzp1) => {
 
 paymentSuccess = () => {
     window.location.href= "./thank-you.html"
-    // $("#success-modal").removeClass('hide')
-    // $("#success-modal").addClass('show')
-    // let secondsLeft = 3;
-    // let x = setInterval( () => {
-    //     if(secondsLeft <= 0)
-    //         window.location.href = "./organize-a-camp.html"
-    //     $("#seconds").html(`${secondsLeft}s`)
-    //     secondsLeft -=1;
-    // },1000)
-    // hidePayment()
 }
 
 amtSelected = (e) => {
     //$("#amtImpact").addClass('w-0')
     $("button.amt").removeClass('selected')
     e.target.classList.add('selected')
-    amt = e.target.textContent
+    amt = e.target.textContent.replace(/\n/g, '').trim();
     $("#amtInput").val(amt)
     $("#amtImpact").html(`You are helping us save ${amt/50} lives ${beatingHeart}`)
     //$("#amtImpact").removeClass('w-0')

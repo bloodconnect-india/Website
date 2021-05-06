@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="BloodConnect - India’s largest youth run initiative in the field of blood donation. We target to make India blood sufficient by 2030!"
+    />
+
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <link rel="stylesheet" type="text/css" href="./css/slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="./css/slick/slick-theme.css" />
+    <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+    <title>Sponsor Us | BloodConnect</title>
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@bloodconnectorg" />
+    <meta name="twitter:creator" content="@bloodconnectorg" />
+    <meta name="twitter:title" content="bloodConnect" />
+    <meta
+      name="twitter:description"
+      content="BloodConnect - India’s largest youth run initiative in the field of blood donation. We target to make India blood sufficient by 2030!"
+    />
+    <meta
+      name="twitter:image"
+      content="https://www.bloodconnect.org/img/bc_heart.png"
+    />
+
+    <!-- Facebook -->
+    <meta property="og:url" content="https://www.bloodconnect.org/" />
+    <meta property="og:title" content="BloodConnect" />
+    <meta
+      property="og:description"
+      content="BloodConnect - India’s largest youth run initiative in the field of blood donation. We target to make India blood sufficient by 2030!"
+    />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:image"
+      content="https://www.bloodconnect.org/img/bc_heart.png"
+    />
+    <meta property="og:image:type" content="image/png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+
+    <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon" />
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-18198647-1"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "UA-18198647-1");
+    </script>
+
+    <!-- facebook pixel -->
+    <!-- Facebook Pixel Code -->
+    <script>
+      !(function (f, b, e, v, n, t, s) {
+        if (f.fbq) return;
+        n = f.fbq = function () {
+          n.callMethod
+            ? n.callMethod.apply(n, arguments)
+            : n.queue.push(arguments);
+        };
+        if (!f._fbq) f._fbq = n;
+        n.push = n;
+        n.loaded = !0;
+        n.version = "2.0";
+        n.queue = [];
+        t = b.createElement(e);
+        t.async = !0;
+        t.src = v;
+        s = b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t, s);
+      })(
+        window,
+        document,
+        "script",
+        "https://connect.facebook.net/en_US/fbevents.js"
+      );
+      fbq("init", "483666385759479");
+      fbq("track", "PageView");
+    </script>
+    <noscript>
+      <img
+        height="1"
+        width="1"
+        src="https://www.facebook.com/tr?id=483666385759479&ev=PageView
+  &noscript=1"
+      />
+    </noscript>
+    <!-- End Facebook Pixel Code -->
+    <style>
+      .play {
+        top: calc(50% - 70px) !important;
+        left: calc(50% - 35px) !important;
+      }
+      iframe {
+        height: 100% !important;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- Payment popup -->
+    <div
+      class="payment-details mb-5 bg-main-light z-100 shadow"
+      id="payment-details"
+    >
+      <div class="row justify-content-end">
+        <div class="col-lg-6 fixed hide-sm px-0" style="left: 0px">
+          <div
+            id="fade-slide"
+            class="wd-inherit"
+            data-slick='{"slidesToShow": 1, "slidesToScroll": 1}'
+          >
+            <div>
+              <img
+                class="wd-inherit color-hover"
+                style="height: 100vh !important"
+                src="./img/sponsor-us/slide/normal.JPG"
+                alt=""
+              />
+            </div>
+
+            <div>
+              <img
+                class="wd-inherit color-hover"
+                style="height: 100vh !important"
+                src="./img/sponsor-us/slide/normal1.jpg"
+                alt=""
+              />
+            </div>
+
+            <div>
+              <img
+                class="wd-inherit color-hover"
+                style="height: 100vh !important"
+                src="./img/sponsor-us/slide/normal3.JPG"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 h-max bg-main-light pt-2 pl-4 pb-5">
+          <h4 class="f-40 color-dark mb-3">Pick an amount</h4>
+          <form method="get" onsubmit="initiatePayment(event)">
+            <button
+              type="button"
+              class="amt btn-main bg-none selected"
+              onclick="amtSelected(event)"
+            >
+              1000
+            </button>
+            <button
+              type="button"
+              class="amt btn-main bg-none"
+              onclick="amtSelected(event)"
+            >
+              5000
+            </button>
+            <button
+              type="button"
+              class="amt btn-main bg-none"
+              onclick="amtSelected(event)"
+            >
+              10000
+            </button>
+
+            <p class="color-dark fw-6 f-18" id="amtImpact">
+              You are helping us save 20 lives
+              <i class="fa fa-heart color-main"></i>
+            </p>
+            <div class="form-group mb-4 relative">
+              <label class="m-0 color-dark" for="patientName">Amount</label>
+
+              <input
+                type="number"
+                class="form-control pl-2"
+                id="amtInput"
+                placeholder="500"
+                value="1000"
+                onchange="amtChanged(event)"
+                required
+              />
+            </div>
+            <div class="form-group mb-4 relative">
+              <label class="m-0 color-dark" for="patientName">Your Name</label>
+              <input
+                type="text"
+                class="form-control pl-2"
+                id="nameInput"
+                placeholder="Your Name"
+                required
+              />
+            </div>
+            <div class="form-group mb-4 relative">
+              <label class="m-0 color-dark" for="patientName">Your Email</label>
+              <input
+                type="email"
+                class="form-control pl-2"
+                id="emailInput"
+                placeholder="example@domain.com"
+                required
+              />
+            </div>
+            <div class="form-group mb-4 relative">
+              <label class="m-0 not-required color-dark" for="panCardInput"
+                >Pan Card Number</label
+              >
+              <input
+                type="text"
+                class="form-control pl-2"
+                id="panCardInput"
+                placeholder="AXB14SD5X"
+              />
+            </div>
+            <div class="d-flex flex-row flex-column-sm justify-content-between">
+              <div class="form-group mb-4 relative w-100">
+                <label class="m-0 color-dark" for="patientName"
+                  >Contact Number</label
+                >
+                <input
+                  type="text"
+                  class="form-control pl-2"
+                  id="contactInput"
+                  maxlength="10"
+                  placeholder="95832xxxxx"
+                  required
+                />
+              </div>
+              <div class="form-group mb-4 relative w-100">
+                <label class="m-0 not-required color-dark" for="dateOfBirth"
+                  >Date of Birth</label
+                >
+                <input
+                  type="date"
+                  pattern="\d{4}-\d{2}-\d{2}"
+                  class="form-control pl-2"
+                  id="dateOfBirth"
+                />
+              </div>
+            </div>
+            <p class="color-dark-light">
+              *If you are donating to celebrate a special occasion, request you
+              to send us details at
+              <a class="color-dark" href="mailto:marketing@bloodconnect.org"
+                >marketing@bloodconnect.org</a
+              >
+            </p>
+
+            <button
+              type="submit"
+              id="sponsorButtton"
+              class="btn-main bg-main color-white mx-auto"
+            >
+              Donate Now <i class="color-white fa fa-heart"></i>
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <div class="success-modal py-5 shadow bg-white hide" id="success-modal">
+      <img width="100" src="./img/popup/mail-sent.jpg" alt="" />
+      <p class="color-dark fw-6 mt-3">Thank you for your donation</p>
+      <p class="color-grey">
+        You would be redirected in <span id="seconds">3s</span>
+      </p>
+    </div>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+    <script src="./js/sponsor_v3.js"></script>
+  </body>
+</html>

@@ -172,8 +172,8 @@
         With every ₹ 50 donation, we save one life!
       </p>
       <div class="d-flex mt-2 px-2">
-        <button class="shadow btn-main bg-main  mx-auto-sm mb-4" onclick="showPayment()">Donate Now <i
-            class="fa fa-heart"></i></button>
+        <button class="shadow btn-main bg-main  mx-auto-sm mb-4"><a class="color-white" target="_blank" href="./donation.html">Donate Now <i
+            class="fa fa-heart"></i></a></button>
       </div>
     </div>
     <div class="main-slider h-100" id="homepageSlider"
@@ -277,106 +277,41 @@
     <h4 class="f-40 mt-5 color-white text-center">How can you donate ?</h4>
     <p class="color-white text-center w-75-lg px-2">All contributions made to BloodConnect are eligible for tax
       deduction as per the 80G section of the Income Tax Act, 1961.</p>
-    <div class="d-flex justify-content-center mt-2 flex-column-sm">
-      <button class="btn-main fw-6 mx-auto-sm color-main bg-white " onclick="showPayment()">Donate Online <i
-          class="fa fa-heart"></i></button>
-    </div>
-    <h4 class="f-30 color-white mt-4">Or</h4>
-    <p class="color-white f-40">Cheque Deposit</p>
-    <p class="color-white text-center  w-75-lg">Cheques can be made in the name of: ‘BloodConnect Foundation’ and sent
-      to: H-19 Lajpat Nagar-2, New Delhi - 110024.<br>
-      They can also be deposited in Yes Bank directly (Account Number: 001494600000388; IFSC: YESB0000014).
-      <br>
-      Please drop us a line on <a class="color-white bold f-18"
-        href="mailto:finance@bloodconnect.org">finance@bloodconnect.org</a> with the screenshot of the cheque for issuing
-      the receipt.
     </p>
-    </p>
-  </div>
-
-
-
-
-
-  <!-- Payment popup -->
-  <div class="payment-details pb-5 mb-5 bg-main-light  z-100 shadow  hide" id="payment-details">
-    <div class="row justify-content-end">
-      <div class="col-lg-6 fixed hide-sm px-0" style="left: 0px;">
-        <div id="fade-slide" class="wd-inherit" data-slick='{"slidesToShow": 1, "slidesToScroll": 1}'>
-
-          <div>
-            <img class="wd-inherit color-hover" style="height: 100vh !important;"
-              src="./img/sponsor-us/slide/normal.JPG" alt="">
-          </div>
-
-          <div>
-            <img class="wd-inherit color-hover" style="height: 100vh !important;"
-              src="./img/sponsor-us/slide/normal1.jpg" alt="">
-          </div>
-
-
-          <div>
-            <img class="wd-inherit color-hover" style="height: 100vh !important;"
-              src="./img/sponsor-us/slide/normal3.JPG" alt="">
-          </div>
-        </div>
+    <div class="row justify-content-center">
+      <div class="work-card text-center bg-white shadow pt-4 px-4 pb-5 col-lg-5 col-md-6 col-sm-10 mx-4 mb-5">
+        <h5 class="color-dark mt-2 f-18 text-center">
+          Online Payment
+        </h5>
+        <p class="color-dark-light mx-auto mt-1 pr-1">
+          We collaborate with colleges, corporates, RWAs to organize
+          innovative and engaging blood donation camps end to end.
+        </p>
+        <button class="btn-main fw-6 mx-auto-sm color-main bg-main "><a class="color-white" target="_blank" href="./donation.html">Donate Online <i
+          class="fa fa-heart"></i></a></button>
       </div>
-      <div class="col-lg-6 h-max bg-main-light  pt-2 pl-4">
-        <h4 class="f-40 color-dark mb-3">Pick an amount</h4>
-        <form method="get" onsubmit="initiatePayment(event)">
-          <button type="button" class="amt btn-main bg-none selected" onclick="amtSelected(event)">1000</button>
-          <button type="button" class="amt btn-main bg-none " onclick="amtSelected(event)">5000</button>
-          <button type="button" class="amt btn-main bg-none" onclick="amtSelected(event)">10000</button>
-
-          <p class="color-dark fw-6 f-18 " id="amtImpact">You are helping us save 20 lives
-            <i class="fa fa-heart color-main "></i>
-
-
-          </p>
-          <div class="form-group mb-4  relative">
-            <label class="m-0   color-dark" for="patientName">Amount</label>
-
-            <input type="number" class="form-control pl-2" id="amtInput" placeholder="500" value="1000"
-              onchange="amtChanged(event)" required>
-          </div>
-          <div class="form-group mb-4 relative">
-            <label class="m-0   color-dark" for="patientName">Your Name</label>
-            <input type="text" class="form-control pl-2" id="nameInput" placeholder="Your Name" required>
-          </div>
-          <div class="form-group mb-4 relative">
-            <label class="m-0   color-dark" for="patientName">Your Email</label>
-            <input type="email" class="form-control pl-2" id="emailInput" placeholder="example@domain.com" required>
-          </div>
-          <div class="form-group mb-4 relative">
-            <label class="m-0 not-required color-dark" for="panCardInput">Pan Card Number</label>
-            <input type="text" class="form-control pl-2" id="panCardInput" placeholder="AXB14SD5X">
-          </div>
-          <div class="d-flex flex-row flex-column-sm justify-content-between">
-            <div class="form-group mb-4 relative w-100">
-              <label class="m-0   color-dark" for="patientName">Contact Number</label>
-              <input type="text" class="form-control pl-2" id="contactInput" maxlength="10" placeholder="95832xxxxx" required>
-            </div>
-            <div class="form-group mb-4 relative w-100">
-              <label class="m-0 not-required  color-dark" for="dateOfBirth">Date of Birth</label>
-              <input type="date" pattern="\d{4}-\d{2}-\d{2}" class="form-control pl-2" id="dateOfBirth">
-            </div>
-          </div>
-          <p class="color-dark-light">*If you are donating to celebrate a special occasion, request you to send us details at <a class="color-dark" href="mailto:marketing@bloodconnect.org">marketing@bloodconnect.org</a></p>
-
-          <button type="submit" id="sponsorButtton" class="btn-main bg-main color-white mx-auto">Donate Now <i
-              class="color-white fa fa-heart"></i></button>
-          <button type="button" class="close color-main btn-main bg-none" " style="right: 30px !important;"
-            onclick="hidePayment()"><i class="fa fa-times" style="font-size: 24px !important;"></i></button>
-        </form>
+      <div class="work-card text-center bg-white shadow pt-4 px-4 pb-5 col-lg-5 col-md-6 col-sm-10 mx-4 mb-5">
+        <h5 class="color-dark mt-2 f-18 text-center">Cheque Deposit</h5>
+        <p class="color-dark-light mx-auto mt-1 pr-1">
+          Cheques can be made in the name of: ‘BloodConnect Foundation’ and sent
+        to: H-19 Lajpat Nagar-2, New Delhi - 110024.<br>
+        <ul class="secondary-nav pl-0">
+          <li class="color-dark-light text-left border-bottom">Account Number: 001494600000388</li>
+          <li class="color-dark-light text-left border-bottom">IFSC: YESB0000014</li>
+        </ul>
+        Please drop us a line on <a class="color-dark bold" href="mailto:finance@bloodconnect.org">finance@bloodconnect.org</a> with the screenshot of the cheque for issuing the receipt.
+        </p>
+        <br />
+        <button class="btn-main bg-main mx-auto">
+          <a class="card-link color-white" href="./contact-us.html">Contact Us</a>
+        </button>
       </div>
     </div>
   </div>
 
-  <div class="success-modal py-5 shadow bg-white hide" id="success-modal">
-    <img width="100" src="./img/popup/mail-sent.jpg" alt="">
-    <p class="color-dark fw-6 mt-3">Thank you for your donation</p>
-    <p class="color-grey">You would be redirected in <span id="seconds">3s</span></p>
-  </div>
+
+
+
 
   <!-- Footer -->
   <div class="container-fluid  pt-5">
