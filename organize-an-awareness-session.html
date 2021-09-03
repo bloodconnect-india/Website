@@ -85,6 +85,9 @@
       <li class="bg-main ">
         <a class="nav-link color-white fw-4 " href="./organize-a-camp.html">ORGANIZE A CAMP</a>
       </li>
+      <li class="bg-main">
+        <a href="./organize-an-awareness-session.html" class="nav-link color-white fw-4">ORGANIZE AN AWARENESS SESSION</a>
+      </li>
       <li class="bg-main ">
         <a class="nav-link color-white fw-4 " href="./sponsor.html">SUPPORT US</a>
       </li>
@@ -116,7 +119,10 @@
           <a href="./raise-a-request.html" class="color-white b-white f-14 ">RAISE A REQUEST</a>
         </li>
         <li class="px-3">
-          <a href="./organize-a-camp.html" class="color-white b-white f-14 active ">ORGANIZE A CAMP</a>
+          <a href="./organize-a-camp.html" class="color-white b-white f-14">ORGANIZE A CAMP</a>
+        </li>
+        <li class="px-3">
+          <a href="./organize-an-awareness-session.html" class="color-white b-white f-14 active ">ORGANIZE AN AWARENESS SESSION</a>
         </li>
         <li class="px-3">
           <a href="./join-us-selection.html" class="color-white b-white f-14  ">JOIN US</a>
@@ -144,7 +150,10 @@
           <a href="./raise-a-request.html" class="color-dark b-dark f-14 ">RAISE A REQUEST</a>
         </li>
         <li class="px-3">
-          <a href="./organize-a-camp.html" class="color-dark b-dark f-14 active">ORGANIZE A CAMP</a>
+          <a href="./organize-a-camp.html" class="color-dark b-dark f-14">ORGANIZE A CAMP</a>
+        </li>
+        <li class="px-3">
+          <a href="./organize-an-awareness-session.html" class="color-dark b-dark f-14 active">ORGANIZE AN AWARENESS SESSION</a>
         </li>
         <li class="px-3">
           <a href="./join-us-selection.html" class="color-dark b-dark f-14 ">JOIN US</a>
@@ -168,7 +177,7 @@
         We will take care of the process end-to-end.
       </p>
       <div class="d-flex mt-2 px-2">
-        <button class="shadow btn-main bg-main  mx-auto-sm mb-4" onclick="showCampForm()">Request callback</button>
+        <button class="shadow btn-main bg-main  mx-auto-sm mb-4" onclick="showSessionForm()">Request callback</button>
       </div>
     </div>
     <<div class="main-slider" id="homepageSlider" data-slick='{"slidesToShow": 1, "slidesToScroll": 1}'>
@@ -196,7 +205,7 @@
           <div class="col-lg-6 d-flex flex-column justify-content-center ">
             <h4 class="f-40 color-main">Camp With Us</h4>
             <p class="color-grey">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae animi atque neque. Ex sint possimus nihil doloremque vel sit esse blanditiis, doloribu</p>
-            <button class="btn-main bg-main color-white fw-6" onclick="showCampForm()">Organize Now &nbsp; <img src="./svg/hand-point-down-solid.svg" width="20" height="20" alt="" srcset=""> </button>
+            <button class="btn-main bg-main color-white fw-6" onclick="showSessionForm()">Organize Now &nbsp; <img src="./svg/hand-point-down-solid.svg" width="20" height="20" alt="" srcset=""> </button>
           </div>
           <div class="col-lg-6 d-flex flex-column justify-content-center mt-4 mb-4 p-0">
             <img class="wd-inherit" src="./img/event/1.jpg" alt="" srcset="">
@@ -285,70 +294,59 @@ Covid-19 may have restricted personal contact among the people but we are determ
         <div class="col-lg-6 bg-white px-5 px-3-sm pt-4 pb-3 rounded" style="height: 600px;">
 
           <!-- Personal details div -->
-          <h4 class="color-dark ">Organize A Camp</h4>
+          <h4 class="color-dark ">Organize An Awareness Camp</h4>
           <p class="color-grey ">Fill this form and a volunteer would be in touch with you soon</p>
           <div class="form-page">
             <div id="page1" class="active hand" onclick="showPersonaldetailsInput()">1</div>
-            <div id="page2" class="hand" onclick="showCampDetailsInput()">2</div>
+            <div id="page2" class="hand" onclick="showOtherDetailsInput()">2</div>
             <hr>
           </div>
           <form action="" class="request-form" onsubmit="submitRequest(event)">
 
             <div id="personalDetails">
               <div class="form-group mb-4">
-                <label class="m-0   color-dark" for="your_name">Your Name</label>
-                <input type="text" class="form-control" id="your_name" placeholder="Your Name" required>
+                <label class="m-0   color-dark" for="Your_Name">Your Name</label>
+                <input type="text" class="form-control" id="Your_Name" placeholder="Your Name" required>
               </div>
 
               <div class="form-group mb-4">
-                <label class="m-0   color-dark" for="email">Email Address</label>
-                <input type="email" class="form-control" placeholder="example@domain.com" id="email" required>
+                <label class="m-0   color-dark" for="Email">Email Address</label>
+                <input type="Email" class="form-control" placeholder="example@domain.com" id="Email" required>
               </div>
 
               <div class="form-group mb-4">
-                <label class="m-0   color-dark" for="phone_number">Phone Number</label>
-                <input type="text" pattern="\d*" class="form-control" placeholder="9999xxxxxx" id="phone_number"
+                <label class="m-0   color-dark" for="Phone_Number">Phone Number</label>
+                <input type="text" pattern="\d*" class="form-control" placeholder="9999xxxxxx" id="Phone_Number"
                   maxlength="10" required>
 
               </div>
-              <div class="form-group mb-4" id="cityRegion">
-                <label class="m-0   color-dark" for="city_region">City Region</label>
-                <select name="city_region" id="city_region" onchange="selectingCity(event)" required>
-                  <option disabled selected value> -- select an city -- </option>
-                  <option value="Agra">Agra</option>
-                  <option value="Delhi NCR">Delhi NCR</option>
-                  <option value="Jaipur">Jaipur</option>
-                  <option value="Ranchi">Ranchi</option>
-                  <option value="Kanpur">Kanpur</option>
-                  <option value="Kolkata">Kolkata</option>
-                  <option value="Lucknow">Lucknow</option>
-                  <option value="Pune">Pune</option>
-                  <option value="Varanasi">Varanasi</option>
-                  <option value="Bhubaneswar">Bhubaneswar</option>
-                  <option value="Other">Other</option>
-                </select>
+              <div class="form-group mb-4" id="City_Name">
+                <label class="m-0   color-dark" for="">City</label>
+                <input type="text" class="form-control" id="City_Name" placeholder="City" required>
               </div>
-              <div class="form-group mb-4 hide" id="otherCity">
-                <label class="m-0 not-required  color-dark" for="other_city">City Name</label>
-                <input type="text" class="form-control" id="other_city" placeholder="City Name">
+              <div class="form-group mb-4">
+                <label class="m-0 not-required color-dark" for="Organization_Name">Organization Name</label>
+                <input type="text" class="form-control" id="Organization_Name" placeholder="Organization">
               </div>
-
               <div class="navigation-buttons inline text-center-sm">
                 <button type="button" class="pl-5 pr-5 right-lg mb-4 mx-auto btn-main bg-main"
-                  onclick="showCampDetailsInput()">Next</button>
+                  onclick="showOtherDetailsInput()">Next</button>
               </div>
             </div>
-            <div id="campDetails" class="">
-
-
-
+            <div id="sessionDetails" class="">
               <div class="form-group mb-4">
-                <label class="m-0 not-required color-dark" for="organization_name">Organization Name</label>
-                <input type="text" class="form-control" id="organization_name" placeholder="Organization">
+                <label class="m-0 not-required color-dark" for="Date_field">Date</label>
+                <input type="date" id="Date_field" min="1000-01-01" max="3000-12-31" class="form-control" id="Date_field" placeholder="2020-12-01">
               </div>
-               <div class="form-group mb-4">
-                <label class="m-0 not-required  color-dark" for="est_emp">Estimated no. of employee/student</label>
-                <input type="number" class="form-control" placeholder="140" id="est_emp">
+              <div class="form-group mb-4" id="Expected_Attendants">
+                <label class="m-0   color-dark" for="Expected_Attendants">Expected Attendants</label>
+                <select name="Expected_Attendants" id="Expected_Attendants"  required>
+                <option disabled selected value> -- select an option -- </option>
+                  <option value="50 - 100">50 - 100</option>
+                  <option value="100 - 150">100 - 150</option>
+                  <option value="150 - 200">150 - 200</option>
+                  <option value="200+">200+</option>
+                </select>
               </div>
               <div class="form-group mb-4" id="Mode_of_Awareness_Session">
                 <label class="m-0   color-dark" for="Mode_of_Awareness_Session">Mode of Awareness Session</label>
@@ -359,7 +357,7 @@ Covid-19 may have restricted personal contact among the people but we are determ
               </div>
               <div class="form-group mb-4">
                 <label class="m-0 not-required color-dark" for="additional">Additional Message</label>
-                <textarea type="text" cols="10" rows="5" class="form-control"
+                <textarea type="text" cols="10" rows="3" class="form-control"
                   placeholder="Any additional message you want" id="additional"></textarea>
               </div>
               <div class="navigation-buttons inline text-center-sm">
@@ -512,16 +510,8 @@ Covid-19 may have restricted personal contact among the people but we are determ
 
 
 
-    showCampForm = () => {
+    showSessionForm = () => {
       document.getElementById("city_region").focus()
-    }
-
-
-
-
-    organizeCamp = (city) => {
-      $("#city_region").val(city)
-      showCampForm()
     }
 
 
@@ -530,28 +520,20 @@ Covid-19 may have restricted personal contact among the people but we are determ
       $("#personalDetails").show()
       $("#page1").addClass('active')
       $("#page2").removeClass('active')
-      $("#campDetails").hide()
+      $("#sessionDetails").hide()
     }
-    showCampDetailsInput = () => {
+    showOtherDetailsInput = () => {
       $("#personalDetails").hide()
       $("#page2").addClass('active')
       $("#page1").removeClass('active')
-      $("#campDetails").show()
-    }
-    selectingCity = (e) => {
-      if (e.target.value == "Other") {
-        $("#otherCity").removeClass('hide')
-        $("#cityRegion").addClass('hide')
-      }
-      else
-        $("#otherCity").addClass('hide')
+      $("#sessionDetails").show()
     }
     showPersonaldetailsInput()
     var hashParams = window.location.hash.substr(1).split('&');
     for (var i = 0; i < hashParams.length; i++) {
       var p = hashParams[i].split('=');
       if (document.getElementById(p[0].toLowerCase()))
-        showCampForm()
+        showSessionForm()
     }
     $('body').keydown(function (e) {
       if (e.keyCode == 27) {
