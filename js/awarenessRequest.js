@@ -53,7 +53,7 @@ createAwarenessRequest = () => {
           }
     }).then(response => response.json()).then(data => {
         
-        if(data.msg === "failed"){
+        if(data.msg === "success"){
             $("#success-modal").removeClass('hide')
             $("#success-modal").addClass('show')
             let secondsLeft = 3;
