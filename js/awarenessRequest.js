@@ -40,7 +40,7 @@ createAwarenessRequest = () => {
         'Phone_Number': "+91"+phone_number,
         'Additional_Message' : additional,
         'Organization_Name' : organization_name,
-        'Mode_of_Awareness_Session':mode,
+        'Mode':mode,
         'Date_field':changeDateToDDMMYY(date),
         'Expected_Attendants':expAttendants
     }
