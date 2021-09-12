@@ -45,10 +45,10 @@ submitRequest = (e) => {
     email = $("#email").val()
     unit = $("#units").val()
     bg = $("#bg").val()
-    hospital = $("#hospital").val()
+    hospital = null
     requirement = $("#requirement").val()
     city = $("#city_region").val()
-    disease = $("#disease").val()
+    disease = null
     if(city == 'Other')
         city = $("#other_city").val()
     this.createHelplineRequest()
