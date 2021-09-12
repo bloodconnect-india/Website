@@ -92,6 +92,8 @@
       <li class="bg-main ">
         <a class="nav-link color-white fw-4 " href="./organize-an-awareness-session.html">ORGANIZE AN AWARENESS SESSION
         </a>
+        <a class="nav-link color-white fw-4 " href="./rti.html">DONATE PLASMA <span class="f-14 color-white">(Covid
+            Recovered)</span></a>
       </li>
       <li class="bg-white">
         <a href="./about-us.html" class="color-dark f-14 fw-4 nav-link">ABOUT US</a>
@@ -127,6 +129,8 @@
         <li class="px-3">
           <a href="./organize-an-awareness-session.html" class="color-white b-white f-14 ">ORGANIZE AN AWARENESS
             SESSION</a>
+          <a href="./rti.html" class="color-white b-white f-14 ">DONATE PLASMA <span class="power f-12 absolute">(Covid
+              recovered)</span></a>
         </li>
       </ul>
     </div>
@@ -162,6 +166,8 @@
         <li class="px-3">
           <a href="./organize-an-awareness-session.html" class="color-dark b-dark f-14 ">ORGANISE AN AWARENESS
             SESSION</a>
+          <a href="./rti.html" class="color-dark b-dark f-14 ">DONATE PLASMA <span class="power f-12 absolute">(Covid
+              recovered)</span></a>
         </li>
       </ul>
     </div>
@@ -186,6 +192,9 @@
   <div class="container-fluid bg-main-light  content pt-5-sm pb-5">
     <div class="row flex-column-reverse-sm m-0 pt-5 ">
       <!-- <div class="col-lg-5 d-flex flex-column justify-content-start ">
+  <div class="container-fluid bg-main-light  content pt-5-sm pb-5">
+    <div class="row flex-column-reverse-sm m-0 pt-5 ">
+      <div class="col-lg-5 d-flex flex-column justify-content-start ">
         <div class="accordion" id="accordionExample">
           <div class="card bg-main-light b1-light mb-2">
             <div class="card-header bg-none" id="headingOne">
@@ -455,7 +464,7 @@
 
 
       <!-- Form -->
-      <div class="col-lg-7 rounded bg-white shadow">
+      <div class="col-lg-7  rounded bg-white shadow">
 
         <!-- Personal details div -->
         <div class="personal-details pl-5 pr-5 pt-3 pb-3 px-3-sm" id="personal-details">
@@ -486,6 +495,11 @@
                 <input type="number" class="form-control" id="units" placeholder="Units Required" value="1" />
               </div>
               <!-- <div class="form-group mb-4">
+              <div class="form-group mb-4">
+                <label class="m-0  color-dark" for="units">Units Required</label>
+                <input type="number" class="form-control" id="units" placeholder="Units Required" value="1" />
+              </div>
+              <div class="form-group mb-4">
                 <label class="m-0  color-dark" for="bg">Blood Group Required</label>
                 <select class="form-control" name="bg" id="bg">
                   <option value="A+">A+</option>
@@ -501,8 +515,7 @@
               </div> -->
 
 
-
-              <div class="form-group mb-4 mt-2">
+              <div class="form-group mb-4">
                 <label class="m-0  color-dark" for="requirement">Requirement</label>
                 <select class="form-control" name="requirement" id="requirement">
                   <option value="Blood">Blood</option>
@@ -513,7 +526,7 @@
               </div>
             </div>
 
-            <!-- 
+
             <div class="form-group mb-4">
               <label class="m-0   color-dark" for="hospital">Hospital Name</label>
               <input type="text" class="form-control" placeholder="Hospital Name" id="hospital" required>
@@ -522,7 +535,11 @@
             <div class="form-group mb-4">
               <label class="m-0   color-dark not-required" for="disease"> Disease or illness patient is suffering for which blood is required</label>
               <input type="text" class="form-control" placeholder="Disease Name" id="disease">
-            </div> -->
+            </div>
+              <label class="m-0   color-dark not-required" for="disease"> Disease or illness patient is suffering for
+                which blood is required</label>
+              <input type="text" class="form-control" placeholder="Disease Name" id="disease">
+            </div>
 
 
             <div class="form-group mb-4">
@@ -548,6 +565,10 @@
               <label class="m-0 not-required  color-dark" for="other_city">City Name</label>
               <input type="text" class="form-control" id="other_city" placeholder="City Name">
             </div> -->
+            <div class="form-group mb-4 hide" id="otherCity">
+              <label class="m-0 not-required  color-dark" for="other_city">City Name</label>
+              <input type="text" class="form-control" id="other_city" placeholder="City Name">
+            </div>
             <div class="navigation-buttons inline text-center-sm">
               <button type="submit" id="submit-request-button"
                 class="pl-4 pr-4 fw-6 right-lg mb-4 mx-auto btn-main bg-main" value="Submit">
@@ -571,7 +592,6 @@
       </div>
     </div>
   </div>
-
 
   <!-- Success popup-->
   <div class="success-modal py-5 shadow bg-white hide" id="success-modal">
@@ -687,8 +707,6 @@
   <script src="./js/bootstrap.min.js"></script>
   <script src="./js/request_v2.js?v=2"></script>
   <script src="js/main_v1.js"></script>
-
-
 
 </body>
 
