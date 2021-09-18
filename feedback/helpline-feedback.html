@@ -77,7 +77,7 @@
                 class="fa fa-bars f-20"></i></button>
         <ul class="mobile-nav hide bg-white" id="mobile-nav-list">
             <li class="bg-main ">
-                <a class="nav-link color-white fw-4 " href="/raise-a-request.html">RAISE A REQUEST</a>
+                <a class="nav-link color-white fw-4 " href="/raise-a-request.html">FIND A DONOR</a>
             </li>
             <li class="bg-main ">
                 <a class="nav-link color-white fw-4 " href="/organize-a-camp.html">ORGANIZE A CAMP</a>
@@ -110,7 +110,7 @@
                     <a href="/about-us.html" class="color-white b-white f-14  ">ABOUT US</a>
                 </li>
                 <li class="px-3">
-                    <a href="/raise-a-request.html" class="color-white b-white f-14 ">RAISE A REQUEST</a>
+                    <a href="/raise-a-request.html" class="color-white b-white f-14 ">FIND A DONOR</a>
                 </li>
                 <li class="px-3">
                     <a href="/organize-a-camp.html" class="color-white b-white f-14 ">ORGANIZE A CAMP</a>
@@ -137,7 +137,7 @@
                     <a href="/about-us.html" class="color-dark b-dark f-14 ">ABOUT US</a>
                 </li>
                 <li class="px-3">
-                    <a href="/raise-a-request.html" class="color-dark b-dark f-14 ">RAISE A REQUEST</a>
+                    <a href="/raise-a-request.html" class="color-dark b-dark f-14 ">FIND A DONOR</a>
                 </li>
                 <li class="px-3">
                     <a href="/organize-a-camp.html" class="color-dark b-dark f-14 ">ORGANIZE A CAMP</a>
@@ -154,7 +154,7 @@
     </nav>
     <div class="container-fluid h-50-min bg-main-dark  pl-0 pr-0 content  relative d-flex flex-row align-items-center">
         <div class="d-flex flex-column container justify-content-center z-5 px-0-sm">
-            <h1 class="display-4 color-white  text-center px-2 mb-1 ">Raise a Request Feedback Form - Requestor</h1>
+            <h1 class="display-4 color-white  text-center px-2 mb-1 ">FIND A DONOR Feedback Form - Requestor</h1>
             <p class="display-6 color-white  text-center px-2 mb-1">We would like to have your feedback to help us
                 improve and save as many lives as possible. We request you to fill this quick feedback about the recent
                 blood requirement request raised by you. You can also write to us at - <a class="color-white bold"
@@ -176,38 +176,40 @@
                 <div class="personal-details pl-5 pr-5 pt-3 pb-3 px-3-sm" id="personal-details">
 
                     <form action="" class="request-form" id="request-form" onsubmit="submitHFeedback(event)">
-                        
-                        <input autocomplete="off" type="number" class="form-control" id="id" hidden  value="5048000001273862"
-                                required>
+
+                        <input autocomplete="off" type="number" class="form-control" id="id" hidden
+                            value="5048000001273862" required>
 
                         <div class="form-group mb-4">
                             <label class="m-0   color-dark" for="name">Your Name</label>
-                            <input autocomplete="off" type="text" class="form-control" id="name" placeholder="Your Name" required>
+                            <input autocomplete="off" type="text" class="form-control" id="name" placeholder="Your Name"
+                                required>
                         </div>
                         <div class="d-flex justify-content-start flex-column-sm">
                             <div class="form-group mb-4 mr-5-lg">
                                 <label class="m-0   color-dark" for="email">Email address</label>
-                                <input autocomplete="off" type="email" class="form-control" placeholder="example@domain.com" id="email"
-                                    required>
+                                <input autocomplete="off" type="email" class="form-control"
+                                    placeholder="example@domain.com" id="email" required>
                             </div>
                             <div class="form-group mb-4 mr-5-lg">
                                 <label class="m-0   color-dark" for="phone_number">Phone Number</label>
-                                <input autocomplete="off" type="text" pattern="\d*" class="form-control" placeholder="9999xxxxxx"
-                                    maxlength="10" id="phone" required>
+                                <input autocomplete="off" type="text" pattern="\d*" class="form-control"
+                                    placeholder="9999xxxxxx" maxlength="10" id="phone" required>
                             </div>
                             <div class="form-group mb-4">
                                 <label class="m-0   color-dark" for="DOR">Date Of Request</label>
-                                <input autocomplete="off" type="date" class="form-control" placeholder="DD-MM-YYYY" id="dor" required>
+                                <input autocomplete="off" type="date" class="form-control" placeholder="DD-MM-YYYY"
+                                    id="dor" required>
                             </div>
                         </div>
                         <div class="d-flex justify-content-start flex-column-sm">
-                                
+
                             <div class="form-group mb-4">
                                 <label class="m-0   color-dark" for="city">City</label>
-                                <input autocomplete="off" type="text" class="form-control" id="city" placeholder="Delhi NCR"
-                                    required>
+                                <input autocomplete="off" type="text" class="form-control" id="city"
+                                    placeholder="Delhi NCR" required>
                             </div>
-                            </div>
+                        </div>
                         <div class="form-group mb-4">
                             <label class="m-0   color-dark" for="rate">How would you rate the overall experience with
                                 BloodConnect?(5 is Excellent)</label>
@@ -244,29 +246,32 @@
                                 first phone call/message from BloodConnect team? </label>
                             <div class="col-sm-10">
                                 <div class="form-check">
-                                    <input autocomplete="off" class="form-check-input" type="radio" name="firstCall" id="firstCall1"
-                                        value="Within 12 hours" onchange="setFirstCall('Within 12 hours')" required>
+                                    <input autocomplete="off" class="form-check-input" type="radio" name="firstCall"
+                                        id="firstCall1" value="Within 12 hours"
+                                        onchange="setFirstCall('Within 12 hours')" required>
                                     <label class="form-check-label" for="firstCall1">
                                         Within 12 hours
                                     </label>
                                 </div>
                                 <div class="form-check">
-                                    <input autocomplete="off" class="form-check-input" type="radio" name="firstCall" id="firstCall2"
-                                        value="Within 24 hours" onchange="setFirstCall('Within 24 hours')">
+                                    <input autocomplete="off" class="form-check-input" type="radio" name="firstCall"
+                                        id="firstCall2" value="Within 24 hours"
+                                        onchange="setFirstCall('Within 24 hours')">
                                     <label class="form-check-label" for="firstCall2">
                                         Within 24 hours
                                     </label>
                                 </div>
                                 <div class="form-check">
-                                    <input autocomplete="off" class="form-check-input" type="radio" name="firstCall" id="firstCall3"
-                                        value="Within 24 - 48 hours" onchange="setFirstCall('Within 24 - 48 hours')">
+                                    <input autocomplete="off" class="form-check-input" type="radio" name="firstCall"
+                                        id="firstCall3" value="Within 24 - 48 hours"
+                                        onchange="setFirstCall('Within 24 - 48 hours')">
                                     <label class="form-check-label" for="firstCall3">
                                         Within 24 - 48 hours
                                     </label>
                                 </div>
                                 <div class="form-check">
-                                    <input autocomplete="off" class="form-check-input" type="radio" name="firstCall" id="firstCall4"
-                                        value="After 2 days" onchange="setFirstCall('After 2 days')">
+                                    <input autocomplete="off" class="form-check-input" type="radio" name="firstCall"
+                                        id="firstCall4" value="After 2 days" onchange="setFirstCall('After 2 days')">
                                     <label class="form-check-label" for="firstCall4">
                                         After 2 days
                                     </label>
@@ -276,35 +281,39 @@
                         <div class="form-group mb-4">
                             <label class="m-0   color-dark" for="">What did you like most about the way helpline request
                                 was managed by BloodConnect Team?</label>
-                            <textarea autocomplete="off" type="text" class="form-control" id="like" placeholder="Your answer"></textarea>
+                            <textarea autocomplete="off" type="text" class="form-control" id="like"
+                                placeholder="Your answer"></textarea>
                         </div>
                         <div class="form-group mb-4">
                             <label class="m-0   color-dark" for="">What could be improved or done differently?</label>
-                            <textarea autocomplete="off" type="text" class="form-control" id="differently" placeholder="Your answer"></textarea>
+                            <textarea autocomplete="off" type="text" class="form-control" id="differently"
+                                placeholder="Your answer"></textarea>
                         </div>
                         <div class="form-group mb-4">
                             <label class="col-form-label color-dark">Would you like to donate blood yourself in the
                                 future? Can we reach-out to you for the same?</label>
-                                <br>
-                                <p class="color-grey f-14">We request you to please donate blood and encourage your family and friends to come forward and support this cause. Only with the support of willing donors we can help save lives. </p>
+                            <br>
+                            <p class="color-grey f-14">We request you to please donate blood and encourage your family
+                                and friends to come forward and support this cause. Only with the support of willing
+                                donors we can help save lives. </p>
                             <div class="col-sm-10">
                                 <div class="form-check">
-                                    <input autocomplete="off" class="form-check-input" type="radio" name="willDonate" id="willDonate1"
-                                        value="Yes" onchange="setDonateBlood('Yes', event)" required>
+                                    <input autocomplete="off" class="form-check-input" type="radio" name="willDonate"
+                                        id="willDonate1" value="Yes" onchange="setDonateBlood('Yes', event)" required>
                                     <label class="form-check-label" for="willDonate1">
                                         Yes
                                     </label>
                                 </div>
                                 <div class="form-check">
-                                    <input autocomplete="off" class="form-check-input" type="radio" name="willDonate" id="willDonate2"
-                                        value="No" onchange="setDonateBlood('No', event)">
+                                    <input autocomplete="off" class="form-check-input" type="radio" name="willDonate"
+                                        id="willDonate2" value="No" onchange="setDonateBlood('No', event)">
                                     <label class="form-check-label" for="willDonate2">
                                         No
                                     </label>
                                 </div>
                                 <div class="form-check">
-                                    <input autocomplete="off" class="form-check-input" type="radio" name="willDonate" id="willDonate3"
-                                        value="Maybe" onchange="setDonateBlood('Maybe', event)">
+                                    <input autocomplete="off" class="form-check-input" type="radio" name="willDonate"
+                                        id="willDonate3" value="Maybe" onchange="setDonateBlood('Maybe', event)">
                                     <label class="form-check-label" for="willDonate3">
                                         Maybe
                                     </label>
@@ -314,25 +323,30 @@
                         <div class="form-group mb-4">
                             <label class="col-form-label color-dark">Would you be able to help us organize blood
                                 donation camp in your society/college/Company?</label>
-                                <p class="color-grey f-14">If we can organize more and regular blood donation camps, Blood banks would have sufficient blood and there would be much less requirement for emergency donors. Please help us organize blood donation camps</p>
+                            <p class="color-grey f-14">If we can organize more and regular blood donation camps, Blood
+                                banks would have sufficient blood and there would be much less requirement for emergency
+                                donors. Please help us organize blood donation camps</p>
                             <div class="col-sm-10">
                                 <div class="form-check">
-                                    <input autocomplete="off" class="form-check-input" type="radio" name="willOrganizeCamp" id="willOrganizeCamp1"
-                                        value="Yes" onchange="setOrganizeCamp('Yes', event)" required>
+                                    <input autocomplete="off" class="form-check-input" type="radio"
+                                        name="willOrganizeCamp" id="willOrganizeCamp1" value="Yes"
+                                        onchange="setOrganizeCamp('Yes', event)" required>
                                     <label class="form-check-label" for="willOrganizeCamp1">
                                         Yes
                                     </label>
                                 </div>
                                 <div class="form-check">
-                                    <input autocomplete="off" class="form-check-input" type="radio" name="willOrganizeCamp" id="willOrganizeCamp2"
-                                        value="No" onchange="setOrganizeCamp('No', event)">
+                                    <input autocomplete="off" class="form-check-input" type="radio"
+                                        name="willOrganizeCamp" id="willOrganizeCamp2" value="No"
+                                        onchange="setOrganizeCamp('No', event)">
                                     <label class="form-check-label" for="willOrganizeCamp2">
                                         No
                                     </label>
                                 </div>
                                 <div class="form-check">
-                                    <input autocomplete="off" class="form-check-input" type="radio" name="willOrganizeCamp" id="willOrganizeCamp3"
-                                        value="Maybe" onchange="setOrganizeCamp('Maybe', event)">
+                                    <input autocomplete="off" class="form-check-input" type="radio"
+                                        name="willOrganizeCamp" id="willOrganizeCamp3" value="Maybe"
+                                        onchange="setOrganizeCamp('Maybe', event)">
                                     <label class="form-check-label" for="willOrganizeCamp3">
                                         Maybe
                                     </label>
@@ -344,27 +358,27 @@
                                 BloodConnect operations? (BloodConnect is a registered NGO and all donations are exempt
                                 under Income Tax Section 80G.)</label>
                             <small id="HelpBlock" class="form-text text-muted">
-                                You can donate at <a
-                                    href="https://www.bloodconnect.org/sponsor.html" target="_blank">https://www.bloodconnect.org/sponsor.html</a>
+                                You can donate at <a href="https://www.bloodconnect.org/sponsor.html"
+                                    target="_blank">https://www.bloodconnect.org/sponsor.html</a>
                             </small>
                             <div class="col-sm-10">
                                 <div class="form-check">
-                                    <input autocomplete="off" class="form-check-input" type="radio" name="willSponsor" id="willSponsor1"
-                                        value="Yes" onchange="setSponsor('Yes')" required>
+                                    <input autocomplete="off" class="form-check-input" type="radio" name="willSponsor"
+                                        id="willSponsor1" value="Yes" onchange="setSponsor('Yes')" required>
                                     <label class="form-check-label" for="willSponsor1">
                                         Yes
                                     </label>
                                 </div>
                                 <div class="form-check">
-                                    <input autocomplete="off" class="form-check-input" type="radio" name="willSponsor" id="willSponsor2"
-                                        value="No"  onchange="setSponsor('No')">
+                                    <input autocomplete="off" class="form-check-input" type="radio" name="willSponsor"
+                                        id="willSponsor2" value="No" onchange="setSponsor('No')">
                                     <label class="form-check-label" for="willSponsor2">
                                         No
                                     </label>
                                 </div>
                                 <div class="form-check">
-                                    <input autocomplete="off" class="form-check-input" type="radio" name="willSponsor" id="willSponsor3"
-                                        value="Maybe"  onchange="setSponsor('Maybe')">
+                                    <input autocomplete="off" class="form-check-input" type="radio" name="willSponsor"
+                                        id="willSponsor3" value="Maybe" onchange="setSponsor('Maybe')">
                                     <label class="form-check-label" for="willSponsor3">
                                         Maybe
                                     </label>
@@ -374,7 +388,8 @@
                         <div class="form-group mb-4">
                             <label class="m-0   color-dark" for="">Any additional feedback you would like to share with
                                 us?</label>
-                            <textarea autocomplete="off" type="text" class="form-control" id="additional" placeholder="Your answer"></textarea>
+                            <textarea autocomplete="off" type="text" class="form-control" id="additional"
+                                placeholder="Your answer"></textarea>
                         </div>
 
                         <div class="navigation-buttons inline text-center-sm">
@@ -464,7 +479,7 @@
                     </ul>
                 </div>
                 <div class="col-lg-4 col-sm-12">
-                    <p class="color-dark bold mb-2">RAISE A REQUEST</p>
+                    <p class="color-dark bold mb-2">FIND A DONOR</p>
                     <ul class="footer-list pl-0">
                         <li class=" mr-4 compact"><a class="color-dark f-14"
                                 href="/raise-a-request.html#city_region=Delhi" onclick="goToForm('Delhi')">Raise a
@@ -480,7 +495,7 @@
                                 request in Lucknow</a></li>
                         <li class=" mr-4 compact"><a class="color-dark f-14"
                                 href="/raise-a-request.html#city_region=Bhubaneswar"
-                                onclick="goToForm('Bhubaneswar')">Raise a request in Bhubaneswar</a></li>
+                                onclick="goToForm('Bhubaneswar')">FIND A DONOR in Bhubaneswar</a></li>
                         <li class=" mr-4 compact"><a class="color-dark f-14"
                                 href="/raise-a-request.html#city_region=Jaipur" onclick="goToForm('Jaipur')">Raise a
                                 request in Jaipur</a></li>

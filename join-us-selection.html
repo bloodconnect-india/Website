@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+
     <link rel="stylesheet" href="./css/bootstrap.min.css">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -12,51 +12,55 @@
     <title>Join Us | BloodConnect</title>
 
     <!-- Twitter -->
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:site" content="@bloodconnectorg">
-<meta name="twitter:creator" content="@bloodconnectorg">
-<meta name="twitter:title" content="bloodConnect">
-<meta name="twitter:description" content="BloodConnect - India’s largest youth run initiative in the field of blood donation. We target to make India blood sufficient by 2030!">
-<meta name="twitter:image" content="https://www.bloodconnect.org/img/bc_heart.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@bloodconnectorg">
+    <meta name="twitter:creator" content="@bloodconnectorg">
+    <meta name="twitter:title" content="bloodConnect">
+    <meta name="twitter:description"
+        content="BloodConnect - India’s largest youth run initiative in the field of blood donation. We target to make India blood sufficient by 2030!">
+    <meta name="twitter:image" content="https://www.bloodconnect.org/img/bc_heart.png">
 
-<!-- Facebook -->
-<meta property="og:url" content="https://www.bloodconnect.org/">
-<meta property="og:title" content="BloodConnect">
-<meta property="og:description" content="BloodConnect - India’s largest youth run initiative in the field of blood donation. We target to make India blood sufficient by 2030!">
-<meta property="og:type" content="website">
-<meta property="og:image" content="https://www.bloodconnect.org/img/bc_heart.png">
-<meta property="og:image:type" content="image/png">
-<meta property="og:image:width" content="600">
-<meta property="og:image:height" content="600">
-<link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon">
+    <!-- Facebook -->
+    <meta property="og:url" content="https://www.bloodconnect.org/">
+    <meta property="og:title" content="BloodConnect">
+    <meta property="og:description"
+        content="BloodConnect - India’s largest youth run initiative in the field of blood donation. We target to make India blood sufficient by 2030!">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://www.bloodconnect.org/img/bc_heart.png">
+    <meta property="og:image:type" content="image/png">
+    <meta property="og:image:width" content="600">
+    <meta property="og:image:height" content="600">
+    <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon">
     <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon">
     <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-18198647-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-18198647-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
 
-  gtag('config', 'UA-18198647-1');
-</script>
-<!-- facebook pixel -->
-<!-- Facebook Pixel Code -->
-<script>
-    !function(f,b,e,v,n,t,s)
-    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-    n.queue=[];t=b.createElement(e);t.async=!0;
-    t.src=v;s=b.getElementsByTagName(e)[0];
-    s.parentNode.insertBefore(t,s)}(window,document,'script',
-    'https://connect.facebook.net/en_US/fbevents.js');
-     fbq('init', '483666385759479'); 
-    fbq('track', 'PageView');
+        gtag('config', 'UA-18198647-1');
+    </script>
+    <!-- facebook pixel -->
+    <!-- Facebook Pixel Code -->
+    <script>
+        !function (f, b, e, v, n, t, s) {
+            if (f.fbq) return; n = f.fbq = function () {
+                n.callMethod ?
+                n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+            };
+            if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
+            n.queue = []; t = b.createElement(e); t.async = !0;
+            t.src = v; s = b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t, s)
+        }(window, document, 'script',
+            'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '483666385759479');
+        fbq('track', 'PageView');
     </script>
     <noscript>
-     <img height="1" width="1" 
-    src="https://www.facebook.com/tr?id=483666385759479&ev=PageView
-    &noscript=1"/>
+        <img height="1" width="1" src="https://www.facebook.com/tr?id=483666385759479&ev=PageView
+    &noscript=1" />
     </noscript>
     <!-- End Facebook Pixel Code -->
 
@@ -87,33 +91,35 @@
 
 <body>
     <nav class="fixed z-6 d-flex justify-content-end hide-lg" id="mobile-nav">
-        <button class="menu  show-md color-white h-max bg-none" id="mobile-nav-toggler" onclick="toggleMobileNav()"><i class="fa fa-bars f-20"></i></button>
-          <ul class="mobile-nav hide bg-white" id="mobile-nav-list">
+        <button class="menu  show-md color-white h-max bg-none" id="mobile-nav-toggler" onclick="toggleMobileNav()"><i
+                class="fa fa-bars f-20"></i></button>
+        <ul class="mobile-nav hide bg-white" id="mobile-nav-list">
             <li class="bg-main ">
-              <a class="nav-link color-white fw-4 " href="./raise-a-request.html">RAISE A REQUEST</a>
+                <a class="nav-link color-white fw-4 " href="./raise-a-request.html">FIND A DONOR</a>
             </li>
             <li class="bg-main ">
-              <a class="nav-link color-white fw-4 " href="./organize-a-camp.html">ORGANIZE A CAMP</a>
+                <a class="nav-link color-white fw-4 " href="./organize-a-camp.html">ORGANIZE A CAMP</a>
             </li>
-             <li class="bg-main">
-                <a href="./organize-an-awareness-session.html" class="nav-link color-white fw-4">ORGANIZE AN AWARENESS SESSION</a>
-            </li>
-            <li class="bg-main ">
-              <a class="nav-link color-white fw-4 " href="./sponsor.html">SUPPORT US</a>
+            <li class="bg-main">
+                <a href="./organize-an-awareness-session.html" class="nav-link color-white fw-4">ORGANIZE AN AWARENESS
+                    SESSION</a>
             </li>
             <li class="bg-main ">
-              <a class="nav-link color-white fw-4 " href="./join-us-selection.html">JOIN US</a>
+                <a class="nav-link color-white fw-4 " href="./sponsor.html">SUPPORT US</a>
+            </li>
+            <li class="bg-main ">
+                <a class="nav-link color-white fw-4 " href="./join-us-selection.html">JOIN US</a>
             </li>
             <li class="bg-white">
-              <a href="./about-us.html" class="color-dark f-14 fw-4 nav-link">ABOUT US</a>
+                <a href="./about-us.html" class="color-dark f-14 fw-4 nav-link">ABOUT US</a>
             </li>
             <li class="bg-white">
-              <a href="./our-team.html" class="color-dark f-14 fw-4 nav-link">OUR TEAM</a>
+                <a href="./our-team.html" class="color-dark f-14 fw-4 nav-link">OUR TEAM</a>
             </li>
             <li class="bg-white">
-              <a href="./contact-us.html" class="color-dark f-14 fw-4 nav-link">CONTACT US</a>
+                <a href="./contact-us.html" class="color-dark f-14 fw-4 nav-link">CONTACT US</a>
             </li>
-          </ul>
+        </ul>
     </nav>
     <nav class="navbar justify-content-center-sm justify-content-between pb-0 sticky-sm z-5  bg-none " id="navbar">
         <div class="d-flex flex-row align-items-center justify-content-end">
@@ -134,7 +140,8 @@
                         CAMP</a>
                 </li>
                 <li class="px-3">
-                    <a href="./organize-an-awareness-session.html" class="color-white b-white f-14">ORGANIZE AN AWARENESS SESSION</a>
+                    <a href="./organize-an-awareness-session.html" class="color-white b-white f-14">ORGANIZE AN
+                        AWARENESS SESSION</a>
                 </li>
                 <li class="px-3">
                     <a href="./join-us-selection.html" class="color-white b-white f-14 ">JOIN US</a>
@@ -166,7 +173,8 @@
                         CAMP</a>
                 </li>
                 <li class="px-3">
-                    <a href="./organize-an-awareness-session.html" class="color-dark b-dark f-14">ORGANIZE AN AWARENESS SESSION</a>
+                    <a href="./organize-an-awareness-session.html" class="color-dark b-dark f-14">ORGANIZE AN AWARENESS
+                        SESSION</a>
                 </li>
                 <li class="px-3">
                     <a href="./join-us-selection.html" class="color-dark b-dark f-14 ">JOIN US</a>
@@ -174,8 +182,9 @@
             </ul>
         </div>
         <div class="d-flex flex-row align-items-center hide-md">
-            <a href="./sponsor.html" class="f-14 sponsor-link-button color-dark fw-6 px-3 py-2 uppercase bg-main color-white">Support us</a>
-          </div>
+            <a href="./sponsor.html"
+                class="f-14 sponsor-link-button color-dark fw-6 px-3 py-2 uppercase bg-main color-white">Support us</a>
+        </div>
     </nav>
 
 
@@ -189,7 +198,8 @@
                 Help people in case of emergency blood requirements
             </p>
             <div class="d-flex mt-2 px-2">
-                <a class="color-white" href="./register-as-donor.html"><button class="shadow btn-main bg-main mr-2" >Register as
+                <a class="color-white" href="./register-as-donor.html"><button
+                        class="shadow btn-main bg-main mr-2">Register as
                         a Donor</button></a>
             </div>
         </div>
@@ -215,24 +225,29 @@
             <hr class="color-dark w-100">
             <div class="d-flex justify-content-between align-items-center flex-column-sm">
                 <a href="./index.html">
-                  <img src="./img/logo.png" alt="">
+                    <img src="./img/logo.png" alt="">
                 </a>
                 <ul class="footer-list mb-0 d-flex justify-content-start align-items-center pr-4 col-lg-4 col-sm-12">
-                  <li class="footer-item bg-white ">
-                    <a href="https://facebook.com/BloodConnect" target="_blank" class="footer-link  color-main"><i class="fa fa-facebook-f"></i></a>
-                  </li>
-                  <li class="footer-item bg-white ">
-                    <a href="https://instagram.com/bloodconnectorg?igshid=umn7a6sbwt7h" target="_blank" class="footer-link  color-main"><i class="fa fa-instagram"></i></a>
-                  </li>
-                  <li class="footer-item bg-white ">
-                    <a href="https://twitter.com/bloodconnectorg" target="_blank" class="footer-link  color-main"><i class="fa fa-twitter"></i></a>
-                  </li>
-                  <li class="footer-item bg-white ">
-                    <a href="https://www.youtube.com/channel/UCtU8tOeU1IvLZTUHxHuL2LQ" target="_blank" class="footer-link  color-main"><i class="fa fa-youtube"></i></a>
-                  </li>
-                  <li class="footer-item bg-white ">
-                    <a href="https://www.linkedin.com/company/bloodconnect-india" target="_blank" class="footer-link  color-main"><i class="fa fa-linkedin"></i></a>
-                  </li>
+                    <li class="footer-item bg-white ">
+                        <a href="https://facebook.com/BloodConnect" target="_blank" class="footer-link  color-main"><i
+                                class="fa fa-facebook-f"></i></a>
+                    </li>
+                    <li class="footer-item bg-white ">
+                        <a href="https://instagram.com/bloodconnectorg?igshid=umn7a6sbwt7h" target="_blank"
+                            class="footer-link  color-main"><i class="fa fa-instagram"></i></a>
+                    </li>
+                    <li class="footer-item bg-white ">
+                        <a href="https://twitter.com/bloodconnectorg" target="_blank" class="footer-link  color-main"><i
+                                class="fa fa-twitter"></i></a>
+                    </li>
+                    <li class="footer-item bg-white ">
+                        <a href="https://www.youtube.com/channel/UCtU8tOeU1IvLZTUHxHuL2LQ" target="_blank"
+                            class="footer-link  color-main"><i class="fa fa-youtube"></i></a>
+                    </li>
+                    <li class="footer-item bg-white ">
+                        <a href="https://www.linkedin.com/company/bloodconnect-india" target="_blank"
+                            class="footer-link  color-main"><i class="fa fa-linkedin"></i></a>
+                    </li>
                 </ul>
             </div>
             <hr class="color-dark w-100">
@@ -251,7 +266,7 @@
                     </ul>
                 </div>
                 <div class="col-lg-4 col-sm-12">
-                    <p class="color-dark bold mb-2">RAISE A REQUEST</p>
+                    <p class="color-dark bold mb-2">FIND A DONOR</p>
                     <ul class="footer-list pl-0">
                         <li class=" mr-4 compact"><a class="color-dark f-14"
                                 href="./raise-a-request.html#city_region=Delhi">Raise a

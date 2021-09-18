@@ -1,642 +1,476 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="BloodConnect - India’s largest youth run initiative in the field of blood donation. We target to make India blood sufficient by 2030!"
-    />
-    <link rel="stylesheet" href="./css/bootstrap.min.css" />
-    <link rel="stylesheet" href="./css/style.css" />
-    <link rel="stylesheet" href="./css/svg-animate.css" />
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
 
-    <title>Plasma Donation | BloodConnect</title>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="BloodConnect - India’s largest youth run initiative in the field of blood donation. We target to make India blood sufficient by 2030!" />
+  <link rel="stylesheet" href="./css/bootstrap.min.css" />
+  <link rel="stylesheet" href="./css/style.css" />
+  <link rel="stylesheet" href="./css/svg-animate.css" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
 
-    <!-- Twitter -->
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:site" content="@bloodconnectorg" />
-    <meta name="twitter:creator" content="@bloodconnectorg" />
-    <meta name="twitter:title" content="bloodConnect" />
-    <meta
-      name="twitter:description"
-      content="BloodConnect - India’s largest youth run initiative in the field of blood donation. We target to make India blood sufficient by 2030!"
-    />
-    <meta
-      name="twitter:image"
-      content="https://www.bloodconnect.org/img/bc_heart.png"
-    />
+  <title>Plasma Donation | BloodConnect</title>
 
-    <!-- Facebook -->
-    <meta property="og:url" content="https://www.bloodconnect.org/" />
-    <meta property="og:title" content="BloodConnect" />
-    <meta
-      property="og:description"
-      content="BloodConnect - India’s largest youth run initiative in the field of blood donation. We target to make India blood sufficient by 2030!"
-    />
-    <meta property="og:type" content="website" />
-    <meta
-      property="og:image"
-      content="https://www.bloodconnect.org/img/bc_heart.png"
-    />
-    <meta property="og:image:type" content="image/png" />
-    <meta property="og:image:width" content="1200" />
-    <meta property="og:image:height" content="630" />
-    <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon" />
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-  
-    <script
-      async
-      src="https://www.googletagmanager.com/gtag/js?id=UA-18198647-1"
-    ></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag() {
-        dataLayer.push(arguments);
-      }
-      gtag("js", new Date());
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:site" content="@bloodconnectorg" />
+  <meta name="twitter:creator" content="@bloodconnectorg" />
+  <meta name="twitter:title" content="bloodConnect" />
+  <meta name="twitter:description"
+    content="BloodConnect - India’s largest youth run initiative in the field of blood donation. We target to make India blood sufficient by 2030!" />
+  <meta name="twitter:image" content="https://www.bloodconnect.org/img/bc_heart.png" />
 
-      gtag("config", "UA-18198647-1");
-    </script>
-    <!-- facebook pixel -->
-    <!-- Facebook Pixel Code -->
-    <script>
-      !(function (f, b, e, v, n, t, s) {
-        if (f.fbq) return;
-        n = f.fbq = function () {
-          n.callMethod
-            ? n.callMethod.apply(n, arguments)
-            : n.queue.push(arguments);
-        };
-        if (!f._fbq) f._fbq = n;
-        n.push = n;
-        n.loaded = !0;
-        n.version = "2.0";
-        n.queue = [];
-        t = b.createElement(e);
-        t.async = !0;
-        t.src = v;
-        s = b.getElementsByTagName(e)[0];
-        s.parentNode.insertBefore(t, s);
-      })(
-        window,
-        document,
-        "script",
-        "https://connect.facebook.net/en_US/fbevents.js"
-      );
-      fbq("init", "483666385759479");
-      fbq("track", "PageView");
-    </script>
-    <noscript>
-      <img
-        height="1"
-        width="1"
-        src="https://www.facebook.com/tr?id=483666385759479&ev=PageView
-  &noscript=1"
-      />
-    </noscript>
-    <!-- End Facebook Pixel Code -->
-  </head>
-  <body>
-    <!-- Navbar start here -->
-    <!-- Just an image -->
-    <!-- Navbar -->
-    <nav class="fixed z-6 d-flex justify-content-end hide-lg" id="mobile-nav">
-      <button
-        class="menu show-md color-white h-max bg-none"
-        id="mobile-nav-toggler"
-        onclick="toggleMobileNav()"
-      >
-        <i class="fa fa-bars f-20"></i>
-      </button>
-      <ul class="mobile-nav hide bg-white" id="mobile-nav-list">
-        <li class="bg-main">
-          <a class="nav-link color-white fw-4" href="./raise-a-request.html"
-            >RAISE A REQUEST</a
-          >
+  <!-- Facebook -->
+  <meta property="og:url" content="https://www.bloodconnect.org/" />
+  <meta property="og:title" content="BloodConnect" />
+  <meta property="og:description"
+    content="BloodConnect - India’s largest youth run initiative in the field of blood donation. We target to make India blood sufficient by 2030!" />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://www.bloodconnect.org/img/bc_heart.png" />
+  <meta property="og:image:type" content="image/png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon" />
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-18198647-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
+
+    gtag("config", "UA-18198647-1");
+  </script>
+  <!-- facebook pixel -->
+  <!-- Facebook Pixel Code -->
+  <script>
+    !(function (f, b, e, v, n, t, s) {
+      if (f.fbq) return;
+      n = f.fbq = function () {
+        n.callMethod
+          ? n.callMethod.apply(n, arguments)
+          : n.queue.push(arguments);
+      };
+      if (!f._fbq) f._fbq = n;
+      n.push = n;
+      n.loaded = !0;
+      n.version = "2.0";
+      n.queue = [];
+      t = b.createElement(e);
+      t.async = !0;
+      t.src = v;
+      s = b.getElementsByTagName(e)[0];
+      s.parentNode.insertBefore(t, s);
+    })(
+      window,
+      document,
+      "script",
+      "https://connect.facebook.net/en_US/fbevents.js"
+    );
+    fbq("init", "483666385759479");
+    fbq("track", "PageView");
+  </script>
+  <noscript>
+    <img height="1" width="1" src="https://www.facebook.com/tr?id=483666385759479&ev=PageView
+  &noscript=1" />
+  </noscript>
+  <!-- End Facebook Pixel Code -->
+</head>
+
+<body>
+  <!-- Navbar start here -->
+  <!-- Just an image -->
+  <!-- Navbar -->
+  <nav class="fixed z-6 d-flex justify-content-end hide-lg" id="mobile-nav">
+    <button class="menu show-md color-white h-max bg-none" id="mobile-nav-toggler" onclick="toggleMobileNav()">
+      <i class="fa fa-bars f-20"></i>
+    </button>
+    <ul class="mobile-nav hide bg-white" id="mobile-nav-list">
+      <li class="bg-main">
+        <a class="nav-link color-white fw-4" href="./raise-a-request.html">FIND A DONOR</a>
+      </li>
+      <li class="bg-main">
+        <a class="nav-link color-white fw-4" href="./organize-a-camp.html">ORGANIZE A CAMP</a>
+      </li>
+      <li class="bg-main">
+        <a href="./organize-an-awareness-session.html" class="nav-link color-white fw-4">ORGANIZE AN AWARENESS
+          SESSION</a>
+      </li>
+      <li class="bg-main">
+        <a class="nav-link color-white fw-4" href="./sponsor.html">SUPPORT US</a>
+      </li>
+      <li class="bg-main">
+        <a class="nav-link color-white fw-4" href="./join-us-selection.html">JOIN US</a>
+      </li>
+      <li class="bg-white">
+        <a href="./about-us.html" class="color-dark f-14 fw-4 nav-link">ABOUT US</a>
+      </li>
+      <li class="bg-white">
+        <a href="./our-team.html" class="color-dark f-14 fw-4 nav-link">OUR TEAM</a>
+      </li>
+      <li class="bg-white">
+        <a href="./contact-us.html" class="color-dark f-14 fw-4 nav-link">CONTACT US</a>
+      </li>
+    </ul>
+  </nav>
+  <nav class="navbar justify-content-center-sm justify-content-between pb-0 sticky-sm z-5 bg-main-dark" id="navbar">
+    <div class="d-flex flex-row align-items-center justify-content-end">
+      <a class="navbar-brand" href="./index.html">
+        <img src="./img/homepage/Logo.png" height="35" alt="BloodConnect Logo" />
+      </a>
+      <ul class="navbar-nav flex-row align-items-end hide-md" style="border-bottom: none !important">
+        <li class="px-3">
+          <a href="./about-us.html" class="color-white b-white f-14">ABOUT US</a>
         </li>
-        <li class="bg-main">
-          <a class="nav-link color-white fw-4" href="./organize-a-camp.html"
-            >ORGANIZE A CAMP</a
-          >
+        <li class="px-3">
+          <a href="./raise-a-request.html" class="color-white b-white f-14">FIND A DONOR</a>
         </li>
-         <li class="bg-main">
-          <a href="./organize-an-awareness-session.html" class="nav-link color-white fw-4">ORGANIZE AN AWARENESS SESSION</a>
+        <li class="px-3">
+          <a href="./organize-a-camp.html" class="color-white b-white f-14">ORGANIZE A CAMP</a>
         </li>
-        <li class="bg-main">
-          <a class="nav-link color-white fw-4" href="./sponsor.html"
-            >SUPPORT US</a
-          >
+        <li class="px-3">
+          <a href="./organize-an-awareness-session.html" class="color-white b-white f-14">ORGANIZE AN AWARENESS
+            SESSION</a>
         </li>
-        <li class="bg-main">
-          <a class="nav-link color-white fw-4" href="./join-us-selection.html"
-            >JOIN US</a
-          >
-        </li>
-        <li class="bg-white">
-          <a href="./about-us.html" class="color-dark f-14 fw-4 nav-link"
-            >ABOUT US</a
-          >
-        </li>
-        <li class="bg-white">
-          <a href="./our-team.html" class="color-dark f-14 fw-4 nav-link"
-            >OUR TEAM</a
-          >
-        </li>
-        <li class="bg-white">
-          <a href="./contact-us.html" class="color-dark f-14 fw-4 nav-link"
-            >CONTACT US</a
-          >
+        <li class="px-3">
+          <a href="./join-us-selection.html" class="color-white b-white f-14">JOIN US</a>
         </li>
       </ul>
-    </nav>
-    <nav
-      class="navbar justify-content-center-sm justify-content-between pb-0 sticky-sm z-5 bg-main-dark"
-      id="navbar"
-    >
-      <div class="d-flex flex-row align-items-center justify-content-end">
-        <a class="navbar-brand" href="./index.html">
-          <img
-            src="./img/homepage/Logo.png"
-            height="35"
-            alt="BloodConnect Logo"
-          />
-        </a>
-        <ul
-          class="navbar-nav flex-row align-items-end hide-md"
-          style="border-bottom: none !important"
-        >
-          <li class="px-3">
-            <a href="./about-us.html" class="color-white b-white f-14"
-              >ABOUT US</a
-            >
-          </li>
-          <li class="px-3">
-            <a href="./raise-a-request.html" class="color-white b-white f-14"
-              >RAISE A REQUEST</a
-            >
-          </li>
-          <li class="px-3">
-            <a href="./organize-a-camp.html" class="color-white b-white f-14"
-              >ORGANIZE A CAMP</a
-            >
-          </li>
-          <li class="px-3">
-            <a href="./organize-an-awareness-session.html" class="color-white b-white f-14">ORGANIZE AN AWARENESS SESSION</a>
-          </li>
-          <li class="px-3">
-            <a href="./join-us-selection.html" class="color-white b-white f-14"
-              >JOIN US</a
-            >
-          </li>
-        </ul>
-      </div>
-      <div class="d-flex flex-row align-items-center hide-md">
-        <a href="./contact-us.html" class="f-14 color-white mr-3 uppercase"
-          >Contact Us</a
-        >
-        <a
-          href="./sponsor.html"
-          class="f-14 sponsor-link-button color-dark fw-6 px-3 py-2 uppercase"
-          >Support us</a
-        >
-      </div>
-    </nav>
-    <nav
-      class="navbar flex-column-sm align-items-start justify-content-between pb-0 sticky-navbar z-5 bg-white pb-2 hide"
-      id="navbar-sticky"
-    >
-      <div class="d-flex flex-row align-items-center justify-content-end">
-        <a class="navbar-brand" href="./index.html">
-          <img src="./img/logo.png" height="35" alt="BloodConnect Logo" />
-        </a>
-        <ul
-          class="navbar-nav flex-row hide-md align-items-end"
-          style="border-bottom: none !important"
-        >
-          <li class="px-3">
-            <a href="./about-us.html" class="color-dark b-dark f-14"
-              >ABOUT US</a
-            >
-          </li>
-          <li class="px-3">
-            <a href="./raise-a-request.html" class="color-dark b-dark f-14"
-              >RAISE A REQUEST</a
-            >
-          </li>
-          <li class="px-3">
-            <a href="./organize-a-camp.html" class="color-dark b-dark f-14"
-              >ORGANIZE A CAMP</a
-            >
-          </li>
-          <li class="px-3">
-            <a href="./organize-an-awareness-session.html" class="color-dark b-dark f-14">ORGANIZE AN AWARENESS SESSION</a>
-          </li>
-          <li class="px-3">
-            <a href="./join-us-selection.html" class="color-dark b-dark f-14"
-              >JOIN US</a
-            >
-          </li>
-        </ul>
-      </div>
-      <div class="d-flex flex-row align-items-center hide-md">
-        <a
-          href="./sponsor.html"
-          class="f-14 sponsor-link-button color-dark fw-6 px-3 py-2 uppercase bg-main color-white"
-          >Support us</a
-        >
-      </div>
-    </nav>
-
-    <!-- First Section -->
-    <div
-      class="container-fluid h-60-min pt-5-sm bg-main-dark pl-0 pr-0 content relative d-flex flex-row align-items-center"
-    >
-      <div
-        class="d-flex flex-column container justify-content-center z-5 px-0-sm"
-      >
-        <h1 class="display-5 color-white text-center px-2 mb-1">
-          You Defeated COVID!! Help Others Fight it.
-        </h1>
-        <p class="display-6 color-white text-center px-2 mb-1">
-          Plasma from recovered COVID-19 patients is urgently needed across
-          hospitals in India. Round Table India and BloodConnect appeals to all
-          our COVID recovered citizens to come forward to donate plasma and help
-          the country defeat COVID!
-        </p>
-        <div class="d-flex mt-2 px-2 col-sm-20 mx-auto">
-          <button class="shadow btn-main bg-main mx-auto-sm mb-4">
-            <a
-              class="color-white fw-6"
-              href="https://forms.gle/5ebyNw7Yv79pvyoG7"
-              >Register for a Plasma Donation</a
-            >
-            <i class="fa fa-heart"></i>
-          </button>
-        </div>
-      </div>
     </div>
-
-    <!-- Second Section -->
-    <div class="container mt-5 pt-5 mt-5-sm">
-      <div class="row mb-5 pt-5-sm">
-        <div class="col-lg-4 col-sm-12 d-flex justify-content-center">
-          <img style="height: 200px" src="./img/rti.jpg" alt="" />
-        </div>
-        <div
-          class="col-lg-6 col-sm-10 mx-auto mb-3 d-flex flex-column justify-content-center"
-        >
-          <h4 class="f-30 color-main fw-6">
-            RTI and BloodConnect have joined hands to create mass awareness
-            about Plasma Therapy for COVID Patients
-          </h4>
-          <p class="color-dark-light mt-1">
-            Convalescent plasma therapy may be helpful for people with COVID-19
-            who aren't helped by other treatment. COVID-19 plasma is plasma
-            collected from patients who have recovered from COVID-19. We request
-            <span class="color-main fw-6"
-              >all COVID Warriors who have successfully recovered from
-              COVID</span
-            >
-            to donate plasma. Filling out this form will take less than 5
-            minutes and it could save someone's life.
-          </p>
-
-          <button class="shadow btn-main bg-main mx-auto-sm">
-            <a
-              target="_blank"
-              href="https://forms.gle/5ebyNw7Yv79pvyoG7"
-              class="color-white"
-              >Register for Plasma Donation</a
-            ><i class="fa fa-heart"></i>
-          </button>
-        </div>
-      </div>
+    <div class="d-flex flex-row align-items-center hide-md">
+      <a href="./contact-us.html" class="f-14 color-white mr-3 uppercase">Contact Us</a>
+      <a href="./sponsor.html" class="f-14 sponsor-link-button color-dark fw-6 px-3 py-2 uppercase">Support us</a>
     </div>
+  </nav>
+  <nav class="navbar flex-column-sm align-items-start justify-content-between pb-0 sticky-navbar z-5 bg-white pb-2 hide"
+    id="navbar-sticky">
+    <div class="d-flex flex-row align-items-center justify-content-end">
+      <a class="navbar-brand" href="./index.html">
+        <img src="./img/logo.png" height="35" alt="BloodConnect Logo" />
+      </a>
+      <ul class="navbar-nav flex-row hide-md align-items-end" style="border-bottom: none !important">
+        <li class="px-3">
+          <a href="./about-us.html" class="color-dark b-dark f-14">ABOUT US</a>
+        </li>
+        <li class="px-3">
+          <a href="./raise-a-request.html" class="color-dark b-dark f-14">FIND A DONOR</a>
+        </li>
+        <li class="px-3">
+          <a href="./organize-a-camp.html" class="color-dark b-dark f-14">ORGANIZE A CAMP</a>
+        </li>
+        <li class="px-3">
+          <a href="./organize-an-awareness-session.html" class="color-dark b-dark f-14">ORGANIZE AN AWARENESS
+            SESSION</a>
+        </li>
+        <li class="px-3">
+          <a href="./join-us-selection.html" class="color-dark b-dark f-14">JOIN US</a>
+        </li>
+      </ul>
+    </div>
+    <div class="d-flex flex-row align-items-center hide-md">
+      <a href="./sponsor.html"
+        class="f-14 sponsor-link-button color-dark fw-6 px-3 py-2 uppercase bg-main color-white">Support us</a>
+    </div>
+  </nav>
 
-    <!-- Criteria and screening -->
-    <div class="container">
-      <p class="f-40 fw-4 color-dark text-center">
-        Who is eligible to donate Plasma for COVID-19 Patients?
+  <!-- First Section -->
+  <div
+    class="container-fluid h-60-min pt-5-sm bg-main-dark pl-0 pr-0 content relative d-flex flex-row align-items-center">
+    <div class="d-flex flex-column container justify-content-center z-5 px-0-sm">
+      <h1 class="display-5 color-white text-center px-2 mb-1">
+        You Defeated COVID!! Help Others Fight it.
+      </h1>
+      <p class="display-6 color-white text-center px-2 mb-1">
+        Plasma from recovered COVID-19 patients is urgently needed across
+        hospitals in India. Round Table India and BloodConnect appeals to all
+        our COVID recovered citizens to come forward to donate plasma and help
+        the country defeat COVID!
       </p>
-      <div class="row justify-content-between">
-        <div class="col-lg-6 col-sm-12 ml-3-lg">
-          <p class="color-dark ft-24 fw-4">Eligibility of Plasma Donor</p>
-          <p class="color-grey">
-            In addition to the <a class="color-dark italics bold" href="./info/blood-donation-criteria.html">donor eligibility criteria</a> for whole blood
-            donation, the following criteria should be met for potential plasma
-            donors –
-          </p>
-          <ul>
-            <li>
-              Donors who have had transfusion of blood products in last 8 weeks
-              will be excluded
-            </li>
-
-            <li>
-              Donors who have had COVID diagnosis more than 4 months will be
-              excluded from donation
-            </li>
-
-            <li>
-              Males or nulliparous female donors of weight >55Kg. To avoid the
-              risk of Transfusion Related Acute Lung Injury (TRALI) preference
-              should be given to use of plasma from male donors or from female
-              donors who have never been pregnant including abortions.
-            </li>
-
-            <li>
-              Prior diagnosis of COVID-19 documented by an approved laboratory
-              test (preferably RT-PCR) with symptomatic disease with at least
-              fever and cough
-            </li>
-
-            <li>
-              Complete resolution of symptoms at least 28 days prior to donation
-              or Complete resolution of symptoms at least 14 days prior to
-              donation and negative real time PCR test for COVID-19 from
-              nasopharyngeal swab.
-            </li>
-          </ul>
-        </div>
-        <div class="col-lg-6 col-sm-12">
-          <p class="color-dark ft-24 fw-4">
-            Screening of Donors before the donation
-          </p>
-          <ul>
-            <li>
-              Physical examination of the donor to establish good health
-              including absence of fever and respiratory. Donors not fit to
-              donate blood based on the history and examination will be deferred
-              and excluded from plasma donor pool.
-            </li>
-            <li>
-              Two blood samples (small volume – 5ml) will be drawn for the
-              following pre-donation tests
-              <ul style="margin-left: 50px;">
-                <li>
-                  Blood group (ABO grouping and Rh phenotyping) and antibody
-                  screening for clinically significant antibodies (Extended Rh,
-                  Kell, Duffy, Kidd, MNS)
-                </li>
-                <li>
-                  Complete blood count (CBC). Donors with Hb>12.5g/dl, platelet
-                  count >1,50,000 per microliter of blood and TLC within normal
-                  limits will be accepted.
-                </li>
-                <li>
-                  Screening for syphills, malaria, HIV, HBV and HCV by serology
-                  or NAT.
-                </li>
-                <li>
-                  Total serum protein. Donors with total serum protein > 6gm/dl
-                  will be accepted
-                </li>
-                <li>
-                  Presence of IgG and IgM antibodies to COVID-19 by rapid test.
-                  Neutralizing titer of donor plasma should be above the
-                  specific threshold (if the latter is not available, plasma IgG
-                  titer (against S-protein RBD) above 1:640 should be used).
-                </li>
-              </ul>
-            </li>
-          </ul>
-        </div>
-        <span class=" bold color-dark mb-3">See the generic blood donation criteria <a href="./info/blood-donation-criteria.html" class="color-main bold">here</a></span>
-        <span class=" f-14 color-dark mb-3">*These are some of the most common criteria and is not a complete list of exclusions/eligibility criteria. These criteria may change or vary across blood banks and hospitals. In case of any doubt, please ask a medical expert.</span>
+      <div class="d-flex mt-2 px-2 col-sm-20 mx-auto">
+        <button class="shadow btn-main bg-main mx-auto-sm mb-4">
+          <a class="color-white fw-6" href="https://forms.gle/5ebyNw7Yv79pvyoG7">Register for a Plasma Donation</a>
+          <i class="fa fa-heart"></i>
+        </button>
       </div>
     </div>
-    <!-- Banner Bottom -->
-    <div class="container-fluid bg-main-dark p-5 text-center">
-      <h4 class="f-40 text-center color-white">
-        Need plasma for COVID treatment?
-      </h4>
-      <button class="btn-main color-white bg-main fw-6">
-        <a class="color-white fw-6" href="./raise-a-request.html"
-          >Raise a Request</a
-        >
-      </button>
-    </div>
+  </div>
 
-    <!-- Footer -->
-    <div class="container-fluid">
-      <div class="container d-flex flex-column">
-        <hr class="color-dark w-100 my-0" />
-        <div
-          class="d-flex justify-content-between align-items-center flex-column-sm"
-        >
-          <a href="./index.html">
-            <img src="./img/logo.png" alt="" />
-          </a>
-          <ul
-            class="footer-list mb-0 d-flex justify-content-start align-items-center pr-4 col-lg-4 col-sm-12"
-          >
-            <li class="footer-item bg-white">
-              <a
-                href="https://facebook.com/BloodConnect"
-                target="_blank"
-                class="footer-link color-main"
-                ><i class="fa fa-facebook-f"></i
-              ></a>
+  <!-- Second Section -->
+  <div class="container mt-5 pt-5 mt-5-sm">
+    <div class="row mb-5 pt-5-sm">
+      <div class="col-lg-4 col-sm-12 d-flex justify-content-center">
+        <img style="height: 200px" src="./img/rti.jpg" alt="" />
+      </div>
+      <div class="col-lg-6 col-sm-10 mx-auto mb-3 d-flex flex-column justify-content-center">
+        <h4 class="f-30 color-main fw-6">
+          RTI and BloodConnect have joined hands to create mass awareness
+          about Plasma Therapy for COVID Patients
+        </h4>
+        <p class="color-dark-light mt-1">
+          Convalescent plasma therapy may be helpful for people with COVID-19
+          who aren't helped by other treatment. COVID-19 plasma is plasma
+          collected from patients who have recovered from COVID-19. We request
+          <span class="color-main fw-6">all COVID Warriors who have successfully recovered from
+            COVID</span>
+          to donate plasma. Filling out this form will take less than 5
+          minutes and it could save someone's life.
+        </p>
+
+        <button class="shadow btn-main bg-main mx-auto-sm">
+          <a target="_blank" href="https://forms.gle/5ebyNw7Yv79pvyoG7" class="color-white">Register for Plasma
+            Donation</a><i class="fa fa-heart"></i>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Criteria and screening -->
+  <div class="container">
+    <p class="f-40 fw-4 color-dark text-center">
+      Who is eligible to donate Plasma for COVID-19 Patients?
+    </p>
+    <div class="row justify-content-between">
+      <div class="col-lg-6 col-sm-12 ml-3-lg">
+        <p class="color-dark ft-24 fw-4">Eligibility of Plasma Donor</p>
+        <p class="color-grey">
+          In addition to the <a class="color-dark italics bold" href="./info/blood-donation-criteria.html">donor
+            eligibility criteria</a> for whole blood
+          donation, the following criteria should be met for potential plasma
+          donors –
+        </p>
+        <ul>
+          <li>
+            Donors who have had transfusion of blood products in last 8 weeks
+            will be excluded
+          </li>
+
+          <li>
+            Donors who have had COVID diagnosis more than 4 months will be
+            excluded from donation
+          </li>
+
+          <li>
+            Males or nulliparous female donors of weight >55Kg. To avoid the
+            risk of Transfusion Related Acute Lung Injury (TRALI) preference
+            should be given to use of plasma from male donors or from female
+            donors who have never been pregnant including abortions.
+          </li>
+
+          <li>
+            Prior diagnosis of COVID-19 documented by an approved laboratory
+            test (preferably RT-PCR) with symptomatic disease with at least
+            fever and cough
+          </li>
+
+          <li>
+            Complete resolution of symptoms at least 28 days prior to donation
+            or Complete resolution of symptoms at least 14 days prior to
+            donation and negative real time PCR test for COVID-19 from
+            nasopharyngeal swab.
+          </li>
+        </ul>
+      </div>
+      <div class="col-lg-6 col-sm-12">
+        <p class="color-dark ft-24 fw-4">
+          Screening of Donors before the donation
+        </p>
+        <ul>
+          <li>
+            Physical examination of the donor to establish good health
+            including absence of fever and respiratory. Donors not fit to
+            donate blood based on the history and examination will be deferred
+            and excluded from plasma donor pool.
+          </li>
+          <li>
+            Two blood samples (small volume – 5ml) will be drawn for the
+            following pre-donation tests
+            <ul style="margin-left: 50px;">
+              <li>
+                Blood group (ABO grouping and Rh phenotyping) and antibody
+                screening for clinically significant antibodies (Extended Rh,
+                Kell, Duffy, Kidd, MNS)
+              </li>
+              <li>
+                Complete blood count (CBC). Donors with Hb>12.5g/dl, platelet
+                count >1,50,000 per microliter of blood and TLC within normal
+                limits will be accepted.
+              </li>
+              <li>
+                Screening for syphills, malaria, HIV, HBV and HCV by serology
+                or NAT.
+              </li>
+              <li>
+                Total serum protein. Donors with total serum protein > 6gm/dl
+                will be accepted
+              </li>
+              <li>
+                Presence of IgG and IgM antibodies to COVID-19 by rapid test.
+                Neutralizing titer of donor plasma should be above the
+                specific threshold (if the latter is not available, plasma IgG
+                titer (against S-protein RBD) above 1:640 should be used).
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <span class=" bold color-dark mb-3">See the generic blood donation criteria <a
+          href="./info/blood-donation-criteria.html" class="color-main bold">here</a></span>
+      <span class=" f-14 color-dark mb-3">*These are some of the most common criteria and is not a complete list of
+        exclusions/eligibility criteria. These criteria may change or vary across blood banks and hospitals. In case of
+        any doubt, please ask a medical expert.</span>
+    </div>
+  </div>
+  <!-- Banner Bottom -->
+  <div class="container-fluid bg-main-dark p-5 text-center">
+    <h4 class="f-40 text-center color-white">
+      Need plasma for COVID treatment?
+    </h4>
+    <button class="btn-main color-white bg-main fw-6">
+      <a class="color-white fw-6" href="./raise-a-request.html">FIND A DONOR</a>
+    </button>
+  </div>
+
+  <!-- Footer -->
+  <div class="container-fluid">
+    <div class="container d-flex flex-column">
+      <hr class="color-dark w-100 my-0" />
+      <div class="d-flex justify-content-between align-items-center flex-column-sm">
+        <a href="./index.html">
+          <img src="./img/logo.png" alt="" />
+        </a>
+        <ul class="footer-list mb-0 d-flex justify-content-start align-items-center pr-4 col-lg-4 col-sm-12">
+          <li class="footer-item bg-white">
+            <a href="https://facebook.com/BloodConnect" target="_blank" class="footer-link color-main"><i
+                class="fa fa-facebook-f"></i></a>
+          </li>
+          <li class="footer-item bg-white">
+            <a href="https://instagram.com/bloodconnectorg?igshid=umn7a6sbwt7h" target="_blank"
+              class="footer-link color-main"><i class="fa fa-instagram"></i></a>
+          </li>
+          <li class="footer-item bg-white">
+            <a href="https://twitter.com/bloodconnectorg" target="_blank" class="footer-link color-main"><i
+                class="fa fa-twitter"></i></a>
+          </li>
+          <li class="footer-item bg-white">
+            <a href="https://www.youtube.com/channel/UCtU8tOeU1IvLZTUHxHuL2LQ" target="_blank"
+              class="footer-link color-main"><i class="fa fa-youtube"></i></a>
+          </li>
+          <li class="footer-item bg-white">
+            <a href="https://www.linkedin.com/company/bloodconnect-india" target="_blank"
+              class="footer-link color-main"><i class="fa fa-linkedin"></i></a>
+          </li>
+        </ul>
+      </div>
+      <hr class="color-dark w-100 mx-0" />
+      <div class="row">
+        <div class="col-lg-4 col-sm-12">
+          <p class="color-dark bold mb-2">NAVIGATION</p>
+          <ul class="footer-list pl-0">
+            <li class="mr-4 compact">
+              <a class="color-dark f-14" href="./index.html">Home</a>
             </li>
-            <li class="footer-item bg-white">
-              <a
-                href="https://instagram.com/bloodconnectorg?igshid=umn7a6sbwt7h"
-                target="_blank"
-                class="footer-link color-main"
-                ><i class="fa fa-instagram"></i
-              ></a>
+            <li class="mr-4 compact">
+              <a class="color-dark f-14" href="./about-us.html">About us</a>
             </li>
-            <li class="footer-item bg-white">
-              <a
-                href="https://twitter.com/bloodconnectorg"
-                target="_blank"
-                class="footer-link color-main"
-                ><i class="fa fa-twitter"></i
-              ></a>
+            <li class="mr-4 compact">
+              <a class="color-dark f-14" href="./our-team.html">Our team</a>
             </li>
-            <li class="footer-item bg-white">
-              <a
-                href="https://www.youtube.com/channel/UCtU8tOeU1IvLZTUHxHuL2LQ"
-                target="_blank"
-                class="footer-link color-main"
-                ><i class="fa fa-youtube"></i
-              ></a>
+            <li class="mr-4 compact">
+              <a class="color-dark f-14" href="./sponsor.html">Donate now</a>
             </li>
-            <li class="footer-item bg-white">
-              <a
-                href="https://www.linkedin.com/company/bloodconnect-india"
-                target="_blank"
-                class="footer-link color-main"
-                ><i class="fa fa-linkedin"></i
-              ></a>
+            <li class="mr-4 compact">
+              <a class="color-dark f-14" href="./join-us-selection.html">Join us</a>
+            </li>
+            <li class="mr-4 compact">
+              <a class="color-dark f-14" href="./contact-us.html">Contact us</a>
             </li>
           </ul>
         </div>
-        <hr class="color-dark w-100 mx-0" />
-        <div class="row">
-          <div class="col-lg-4 col-sm-12">
-            <p class="color-dark bold mb-2">NAVIGATION</p>
-            <ul class="footer-list pl-0">
-              <li class="mr-4 compact">
-                <a class="color-dark f-14" href="./index.html">Home</a>
-              </li>
-              <li class="mr-4 compact">
-                <a class="color-dark f-14" href="./about-us.html">About us</a>
-              </li>
-              <li class="mr-4 compact">
-                <a class="color-dark f-14" href="./our-team.html">Our team</a>
-              </li>
-              <li class="mr-4 compact">
-                <a class="color-dark f-14" href="./sponsor.html">Donate now</a>
-              </li>
-              <li class="mr-4 compact">
-                <a class="color-dark f-14" href="./join-us-selection.html"
-                  >Join us</a
-                >
-              </li>
-              <li class="mr-4 compact">
-                <a class="color-dark f-14" href="./contact-us.html"
-                  >Contact us</a
-                >
-              </li>
-            </ul>
-          </div>
-          <div class="col-lg-4 col-sm-12">
-            <p class="color-dark bold mb-2">RAISE A REQUEST</p>
-            <ul class="footer-list pl-0">
-              <li class="mr-4 compact">
-                <a
-                  class="color-dark f-14"
-                  href="./raise-a-request.html#city_region=Delhi"
-                  onclick="goToForm('Delhi')"
-                  >Raise a request in Delhi-NCR</a
-                >
-              </li>
-              <li class="mr-4 compact">
-                <a
-                  class="color-dark f-14"
-                  href="./raise-a-request.html#city_region=Kanpur"
-                  onclick="goToForm('Kanpur')"
-                  >Raise a request in Kanpur</a
-                >
-              </li>
-              <li class="mr-4 compact">
-                <a
-                  class="color-dark f-14"
-                  href="./raise-a-request.html#city_region=Agra"
-                  onclick="goToForm('Agra')"
-                  >Raise a request in Agra</a
-                >
-              </li>
-              <li class="mr-4 compact">
-                <a
-                  class="color-dark f-14"
-                  href="./raise-a-request.html#city_region=Lucknow"
-                  onclick="goToForm('Lucknow')"
-                  >Raise a request in Lucknow</a
-                >
-              </li>
-              <li class="mr-4 compact">
-                <a
-                  class="color-dark f-14"
-                  href="./raise-a-request.html#city_region=Bhubaneswar"
-                  onclick="goToForm('Bhubaneswar')"
-                  >Raise a request in Bhubaneswar</a
-                >
-              </li>
-              <li class="mr-4 compact">
-                <a
-                  class="color-dark f-14"
-                  href="./raise-a-request.html#city_region=Jaipur"
-                  onclick="goToForm('Jaipur')"
-                  >Raise a request in Jaipur</a
-                >
-              </li>
-            </ul>
-          </div>
-          <div class="col-lg-4 col-sm-12">
-            <p class="color-dark bold mb-2">ORGANIZE A CAMP</p>
-            <ul class="footer-list pl-0">
-              <li class="mr-4 compact">
-                <a
-                  class="color-dark f-14"
-                  href="./organize-a-camp.html#city_region=Delhi"
-                  >Organize a camp in Delhi-NCR</a
-                >
-              </li>
-              <li class="mr-4 compact">
-                <a
-                  class="color-dark f-14"
-                  href="./organize-a-camp.html#city_region=Kanpur"
-                  >Organize a camp in Kanpur</a
-                >
-              </li>
-              <li class="mr-4 compact">
-                <a
-                  class="color-dark f-14"
-                  href="./organize-a-camp.html#city_region=Agra"
-                  >Organize a camp in Agra</a
-                >
-              </li>
-              <li class="mr-4 compact">
-                <a
-                  class="color-dark f-14"
-                  href="./organize-a-camp.html#city_region=Lucknow"
-                  >Organize a camp in Lucknow</a
-                >
-              </li>
-              <li class="mr-4 compact">
-                <a
-                  class="color-dark f-14"
-                  href="./organize-a-camp.html#city_region=Bhubaneswar"
-                  >Organize a camp in Bhubaneswar</a
-                >
-              </li>
-              <li class="mr-4 compact">
-                <a
-                  class="color-dark f-14"
-                  href="./organize-a-camp.html#city_region=Jaipur"
-                  >Organize a camp in Jaipur</a
-                >
-              </li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="d-flex justify-content-between mt-3">
-          <p class="color-dark f-14">
-            Copyright &copy; BloodConnect Foundation 2020
-          </p>
-
-          <ul class="footer-list">
-            <li class="left mx-3">
-              <a class="color-dark f-12" href="./privacy.html">Privacy</a>
+        <div class="col-lg-4 col-sm-12">
+          <p class="color-dark bold mb-2">FIND A DONOR</p>
+          <ul class="footer-list pl-0">
+            <li class="mr-4 compact">
+              <a class="color-dark f-14" href="./raise-a-request.html#city_region=Delhi"
+                onclick="goToForm('Delhi')">FIND A DONOR in Delhi-NCR</a>
             </li>
-            <li class="left ml-3">
-              <a class="color-dark f-12" href="./toc.html"
-                >Terms and Condition</a
-              >
+            <li class="mr-4 compact">
+              <a class="color-dark f-14" href="./raise-a-request.html#city_region=Kanpur"
+                onclick="goToForm('Kanpur')">FIND A DONOR in Kanpur</a>
+            </li>
+            <li class="mr-4 compact">
+              <a class="color-dark f-14" href="./raise-a-request.html#city_region=Agra" onclick="goToForm('Agra')">FIND
+                A DONOR in Agra</a>
+            </li>
+            <li class="mr-4 compact">
+              <a class="color-dark f-14" href="./raise-a-request.html#city_region=Lucknow"
+                onclick="goToForm('Lucknow')">FIND A DONOR in Lucknow</a>
+            </li>
+            <li class="mr-4 compact">
+              <a class="color-dark f-14" href="./raise-a-request.html#city_region=Bhubaneswar"
+                onclick="goToForm('Bhubaneswar')">FIND A DONOR in Bhubaneswar</a>
+            </li>
+            <li class="mr-4 compact">
+              <a class="color-dark f-14" href="./raise-a-request.html#city_region=Jaipur"
+                onclick="goToForm('Jaipur')">FIND A DONOR in Jaipur</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-lg-4 col-sm-12">
+          <p class="color-dark bold mb-2">ORGANIZE A CAMP</p>
+          <ul class="footer-list pl-0">
+            <li class="mr-4 compact">
+              <a class="color-dark f-14" href="./organize-a-camp.html#city_region=Delhi">Organize a camp in
+                Delhi-NCR</a>
+            </li>
+            <li class="mr-4 compact">
+              <a class="color-dark f-14" href="./organize-a-camp.html#city_region=Kanpur">Organize a camp in Kanpur</a>
+            </li>
+            <li class="mr-4 compact">
+              <a class="color-dark f-14" href="./organize-a-camp.html#city_region=Agra">Organize a camp in Agra</a>
+            </li>
+            <li class="mr-4 compact">
+              <a class="color-dark f-14" href="./organize-a-camp.html#city_region=Lucknow">Organize a camp in
+                Lucknow</a>
+            </li>
+            <li class="mr-4 compact">
+              <a class="color-dark f-14" href="./organize-a-camp.html#city_region=Bhubaneswar">Organize a camp in
+                Bhubaneswar</a>
+            </li>
+            <li class="mr-4 compact">
+              <a class="color-dark f-14" href="./organize-a-camp.html#city_region=Jaipur">Organize a camp in Jaipur</a>
             </li>
           </ul>
         </div>
       </div>
+
+      <div class="d-flex justify-content-between mt-3">
+        <p class="color-dark f-14">
+          Copyright &copy; BloodConnect Foundation 2020
+        </p>
+
+        <ul class="footer-list">
+          <li class="left mx-3">
+            <a class="color-dark f-12" href="./privacy.html">Privacy</a>
+          </li>
+          <li class="left ml-3">
+            <a class="color-dark f-12" href="./toc.html">Terms and Condition</a>
+          </li>
+        </ul>
+      </div>
     </div>
-    <script
-      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-      crossorigin="anonymous"
-    ></script>
-    <script src="./js/bootstrap.min.js"></script>
-    <script src="js/main_v1.js"></script>
-  </body>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="./js/bootstrap.min.js"></script>
+  <script src="js/main_v1.js"></script>
+</body>
+
 </html>

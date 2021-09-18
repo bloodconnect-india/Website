@@ -48,7 +48,7 @@
         !function (f, b, e, v, n, t, s) {
             if (f.fbq) return; n = f.fbq = function () {
                 n.callMethod ?
-                n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+                    n.callMethod.apply(n, arguments) : n.queue.push(arguments)
             };
             if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
             n.queue = []; t = b.createElement(e); t.async = !0;
@@ -77,7 +77,7 @@
                 class="fa fa-bars f-20"></i></button>
         <ul class="mobile-nav hide bg-white" id="mobile-nav-list">
             <li class="bg-main ">
-                <a class="nav-link color-white fw-4 " href="/raise-a-request.html">RAISE A REQUEST</a>
+                <a class="nav-link color-white fw-4 " href="/raise-a-request.html">FIND A DONOR</a>
             </li>
             <li class="bg-main ">
                 <a class="nav-link color-white fw-4 " href="/organize-a-camp.html">ORGANIZE A CAMP</a>
@@ -110,7 +110,7 @@
                     <a href="/about-us.html" class="color-white b-white f-14  ">ABOUT US</a>
                 </li>
                 <li class="px-3">
-                    <a href="/raise-a-request.html" class="color-white b-white f-14 ">RAISE A REQUEST</a>
+                    <a href="/raise-a-request.html" class="color-white b-white f-14 ">FIND A DONOR</a>
                 </li>
                 <li class="px-3">
                     <a href="/organize-a-camp.html" class="color-white b-white f-14 ">ORGANIZE A CAMP</a>
@@ -137,7 +137,7 @@
                     <a href="/about-us.html" class="color-dark b-dark f-14 ">ABOUT US</a>
                 </li>
                 <li class="px-3">
-                    <a href="/raise-a-request.html" class="color-dark b-dark f-14 ">RAISE A REQUEST</a>
+                    <a href="/raise-a-request.html" class="color-dark b-dark f-14 ">FIND A DONOR</a>
                 </li>
                 <li class="px-3">
                     <a href="/organize-a-camp.html" class="color-dark b-dark f-14 ">ORGANIZE A CAMP</a>
@@ -155,8 +155,12 @@
     <div class="container-fluid h-50-min bg-main-dark  pl-0 pr-0 content  relative d-flex flex-row align-items-center">
         <div class="d-flex flex-column container justify-content-center z-5 px-0-sm">
             <h1 class="display-4 color-white  text-center px-2 mb-1 ">Camp Feedback Form - Organizer</h1>
-            <p class="display-6 color-white  text-center px-2 mb-1">Thank you for collaborating with BloodConnect for organising the blood donation camp. We hope to have this collaboration continued in the future. </p>
-            <p class="display-6 color-white  text-center px-2 mb-1">We would like to have your feedback to help us improve and provide a good experience to the donors and the organization. We request you to fill this quick survey about the recent camp. You can also write to us at - <a class="color-white bold" href="mailto: contact@bloodconnect.org">contact@bloodconnect.org</a></p>
+            <p class="display-6 color-white  text-center px-2 mb-1">Thank you for collaborating with BloodConnect for
+                organising the blood donation camp. We hope to have this collaboration continued in the future. </p>
+            <p class="display-6 color-white  text-center px-2 mb-1">We would like to have your feedback to help us
+                improve and provide a good experience to the donors and the organization. We request you to fill this
+                quick survey about the recent camp. You can also write to us at - <a class="color-white bold"
+                    href="mailto: contact@bloodconnect.org">contact@bloodconnect.org</a></p>
         </div>
         <div class="main-slider h-60" id="homepageSlider" style="background-color: #980000;">
 
@@ -175,20 +179,22 @@
 
                     <form action="" class="request-form" id="request-form" onsubmit="submitCFeedback(event)">
 
-                        
+
                         <div class="form-group mb-4">
-                            <input hidden id="id" >
+                            <input hidden id="id">
                             <label class="m-0   color-dark" for="name">Your Name</label>
-                            <input autocomplete="off" type="text" class="form-control" id="name" placeholder="Your Name" required>
-                        </div>
-                        <div class="form-group mb-4">
-                            <label class="m-0   color-dark" for="email">Email address</label>
-                            <input autocomplete="off" type="email" class="form-control" placeholder="example@domain.com" id="email"
+                            <input autocomplete="off" type="text" class="form-control" id="name" placeholder="Your Name"
                                 required>
                         </div>
                         <div class="form-group mb-4">
+                            <label class="m-0   color-dark" for="email">Email address</label>
+                            <input autocomplete="off" type="email" class="form-control" placeholder="example@domain.com"
+                                id="email" required>
+                        </div>
+                        <div class="form-group mb-4">
                             <label class="m-0   color-dark" for="">Name of the Organization/Venue of the camp</label>
-                            <input autocomplete="off" type="text" class="form-control" id="camp" placeholder="Your Answer" required>
+                            <input autocomplete="off" type="text" class="form-control" id="camp"
+                                placeholder="Your Answer" required>
                         </div>
                         <div class="form-group mb-4">
                             <legend class="col-form-label color-dark">How would you rate the camp overall?</legend>
@@ -196,99 +202,124 @@
                                 5- Excellent, 1- Poor
                             </small>
                             <div class="col-sm-10">
-                              <div class="form-check form-check-inline">
-                                  <input autocomplete="off" class="form-check-input" type="radio" name="campRateOption" id="inlineRadio1" value="1" onchange="rateCamp(1)" required>
-                                  <label class="form-check-label" for="inlineRadio1">1</label>
-                              </div>
-                              <div class="form-check form-check-inline">
-                                  <input autocomplete="off" class="form-check-input" type="radio" name="campRateOption" id="inlineRadio2" onchange="rateCamp(2)" value="2">
-                                  <label class="form-check-label" for="inlineRadio2">2</label>
-                              </div>
-                              <div class="form-check form-check-inline">
-                                  <input autocomplete="off" class="form-check-input" type="radio" name="campRateOption" id="inlineRadio3" onchange="rateCamp(3)" value="3">
-                                  <label class="form-check-label" for="inlineRadio3">3</label>
-                              </div>
-                              <div class="form-check form-check-inline">
-                                  <input autocomplete="off" class="form-check-input" type="radio" name="campRateOption" id="inlineRadio4" onchange="rateCamp(4)" value="4">
-                                  <label class="form-check-label" for="inlineRadio4">4</label>
-                              </div>
-                              <div class="form-check form-check-inline">
-                                  <input autocomplete="off" class="form-check-input" type="radio" name="campRateOption" id="inlineRadio5" onchange="rateCamp(5)" value="5">
-                                  <label class="form-check-label" for="inlineRadio5">5</label>
-                              </div>
-                              </div>
-                        </div>
-                        <div class="form-group mb-4">
-                            <label class="m-0   color-dark" for="">What did you like most about the camp?</label>
-                            <textarea autocomplete="off" type="text" class="form-control" id="" placeholder="Your answer"></textarea>
-                        </div>
-                        <div class="form-group mb-4">
-                            <label class="m-0   color-dark" for="">What could be improved or done differently?</label>
-                            <textarea autocomplete="off" type="text" class="form-control" id="differently" placeholder="Your answer"></textarea>
-                        </div>
-                        <div class="form-group mb-4">
-                            <legend class="col-form-label color-dark">Would you like to collaborate again with the BloodConnect for organizing a similar blood donation camp?</legend>
-                            <div class="col-sm-10">
-                                  <div class="form-check">
-                                      <input autocomplete="off" class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="Yes" onchange="willCollab('Yes')" required>
-                                      <label class="form-check-label" for="gridRadios1">
-                                          Yes
-                                      </label>
-                                  </div>
-                                  <div class="form-check">
-                                      <input autocomplete="off" class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="No" onchange="willCollab('No')">
-                                      <label class="form-check-label" for="gridRadios2">
-                                          No
-                                      </label>
-                                  </div>
-                                  <div class="form-check">
-                                      <input autocomplete="off" class="form-check-input" type="radio" name="gridRadios" id="gridRadios3" value="Maybe" onchange="willCollab('Maybe')">
-                                      <label class="form-check-label" for="gridRadios3">
-                                          Maybe
-                                      </label>
-                                    </div> 
+                                <div class="form-check form-check-inline">
+                                    <input autocomplete="off" class="form-check-input" type="radio"
+                                        name="campRateOption" id="inlineRadio1" value="1" onchange="rateCamp(1)"
+                                        required>
+                                    <label class="form-check-label" for="inlineRadio1">1</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input autocomplete="off" class="form-check-input" type="radio"
+                                        name="campRateOption" id="inlineRadio2" onchange="rateCamp(2)" value="2">
+                                    <label class="form-check-label" for="inlineRadio2">2</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input autocomplete="off" class="form-check-input" type="radio"
+                                        name="campRateOption" id="inlineRadio3" onchange="rateCamp(3)" value="3">
+                                    <label class="form-check-label" for="inlineRadio3">3</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input autocomplete="off" class="form-check-input" type="radio"
+                                        name="campRateOption" id="inlineRadio4" onchange="rateCamp(4)" value="4">
+                                    <label class="form-check-label" for="inlineRadio4">4</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input autocomplete="off" class="form-check-input" type="radio"
+                                        name="campRateOption" id="inlineRadio5" onchange="rateCamp(5)" value="5">
+                                    <label class="form-check-label" for="inlineRadio5">5</label>
+                                </div>
                             </div>
                         </div>
                         <div class="form-group mb-4">
-                            <label class="m-0   color-dark" for="">Approximately, when would you like to organize the camp again?</label>
+                            <label class="m-0   color-dark" for="">What did you like most about the camp?</label>
+                            <textarea autocomplete="off" type="text" class="form-control" id=""
+                                placeholder="Your answer"></textarea>
+                        </div>
+                        <div class="form-group mb-4">
+                            <label class="m-0   color-dark" for="">What could be improved or done differently?</label>
+                            <textarea autocomplete="off" type="text" class="form-control" id="differently"
+                                placeholder="Your answer"></textarea>
+                        </div>
+                        <div class="form-group mb-4">
+                            <legend class="col-form-label color-dark">Would you like to collaborate again with the
+                                BloodConnect for organizing a similar blood donation camp?</legend>
+                            <div class="col-sm-10">
+                                <div class="form-check">
+                                    <input autocomplete="off" class="form-check-input" type="radio" name="gridRadios"
+                                        id="gridRadios1" value="Yes" onchange="willCollab('Yes')" required>
+                                    <label class="form-check-label" for="gridRadios1">
+                                        Yes
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input autocomplete="off" class="form-check-input" type="radio" name="gridRadios"
+                                        id="gridRadios2" value="No" onchange="willCollab('No')">
+                                    <label class="form-check-label" for="gridRadios2">
+                                        No
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input autocomplete="off" class="form-check-input" type="radio" name="gridRadios"
+                                        id="gridRadios3" value="Maybe" onchange="willCollab('Maybe')">
+                                    <label class="form-check-label" for="gridRadios3">
+                                        Maybe
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group mb-4">
+                            <label class="m-0   color-dark" for="">Approximately, when would you like to organize the
+                                camp again?</label>
                             <small id="HelpBlock" class="form-text text-muted">
-                                Donor can donate blood every 3 months. Therefore, we recommend to organize camp every 3 months. 
+                                Donor can donate blood every 3 months. Therefore, we recommend to organize camp every 3
+                                months.
                             </small>
-                            <input autocomplete="off" type="text" class="form-control" id="when-again" placeholder="Your answer">
+                            <input autocomplete="off" type="text" class="form-control" id="when-again"
+                                placeholder="Your answer">
                         </div>
                         <div class="form-group mb-4">
-                            <label class="m-0   color-dark" for="">Any additional feedback you would like to share with us</label>
-                            <textarea autocomplete="off" type="text" class="form-control" id="additional" placeholder="Your answer"></textarea>
+                            <label class="m-0   color-dark" for="">Any additional feedback you would like to share with
+                                us</label>
+                            <textarea autocomplete="off" type="text" class="form-control" id="additional"
+                                placeholder="Your answer"></textarea>
                         </div>
                         <div class="form-group mb-4">
-                            <legend class="col-form-label color-dark">How likely is it that you would recommend BloodConnect to a friend or colleague for organizing a similar blood donation camp?</legend>
+                            <legend class="col-form-label color-dark">How likely is it that you would recommend
+                                BloodConnect to a friend or colleague for organizing a similar blood donation camp?
+                            </legend>
                             <small id="helpRate" class="form-text text-muted">
                                 5- Highly Likely, 1- Unlikely
                             </small>
                             <div class="col-sm-10">
-                              <div class="form-check form-check-inline">
-                                  <input autocomplete="off" class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="1"  onchange="rateBC(1)"required>
-                                  <label class="form-check-label" for="inlineRadio1">1</label>
-                              </div>
-                              <div class="form-check form-check-inline">
-                                  <input autocomplete="off" class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="2" onchange="rateBC(2)">
-                                  <label class="form-check-label" for="inlineRadio2">2</label>
-                              </div>
-                              <div class="form-check form-check-inline">
-                                  <input autocomplete="off" class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="3" onchange="rateBC(3)">
-                                  <label class="form-check-label" for="inlineRadio3">3</label>
-                              </div>
-                              <div class="form-check form-check-inline">
-                                  <input autocomplete="off" class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio4" value="4" onchange="rateBC(4)">
-                                  <label class="form-check-label" for="inlineRadio4">4</label>
-                              </div>
-                              <div class="form-check form-check-inline">
-                                  <input autocomplete="off" class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio5" value="5" onchange="rateBC(5)">
-                                  <label class="form-check-label" for="inlineRadio5">5</label>
-                              </div>
-                              </div>
+                                <div class="form-check form-check-inline">
+                                    <input autocomplete="off" class="form-check-input" type="radio"
+                                        name="inlineRadioOptions" id="inlineRadio1" value="1" onchange="rateBC(1)"
+                                        required>
+                                    <label class="form-check-label" for="inlineRadio1">1</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input autocomplete="off" class="form-check-input" type="radio"
+                                        name="inlineRadioOptions" id="inlineRadio2" value="2" onchange="rateBC(2)">
+                                    <label class="form-check-label" for="inlineRadio2">2</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input autocomplete="off" class="form-check-input" type="radio"
+                                        name="inlineRadioOptions" id="inlineRadio3" value="3" onchange="rateBC(3)">
+                                    <label class="form-check-label" for="inlineRadio3">3</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input autocomplete="off" class="form-check-input" type="radio"
+                                        name="inlineRadioOptions" id="inlineRadio4" value="4" onchange="rateBC(4)">
+                                    <label class="form-check-label" for="inlineRadio4">4</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input autocomplete="off" class="form-check-input" type="radio"
+                                        name="inlineRadioOptions" id="inlineRadio5" value="5" onchange="rateBC(5)">
+                                    <label class="form-check-label" for="inlineRadio5">5</label>
+                                </div>
+                            </div>
                         </div>
-                        
+
                         <div class="navigation-buttons inline text-center-sm">
                             <button type="submit" id="submit-request-button"
                                 class="pl-4 pr-4 fw-6 right-lg mb-4 mx-auto btn-main bg-main" value="Submit">
@@ -376,7 +407,7 @@
                     </ul>
                 </div>
                 <div class="col-lg-4 col-sm-12">
-                    <p class="color-dark bold mb-2">RAISE A REQUEST</p>
+                    <p class="color-dark bold mb-2">FIND A DONOR</p>
                     <ul class="footer-list pl-0">
                         <li class=" mr-4 compact"><a class="color-dark f-14"
                                 href="/raise-a-request.html#city_region=Delhi" onclick="goToForm('Delhi')">Raise a
@@ -392,7 +423,7 @@
                                 request in Lucknow</a></li>
                         <li class=" mr-4 compact"><a class="color-dark f-14"
                                 href="/raise-a-request.html#city_region=Bhubaneswar"
-                                onclick="goToForm('Bhubaneswar')">Raise a request in Bhubaneswar</a></li>
+                                onclick="goToForm('Bhubaneswar')">FIND A DONOR in Bhubaneswar</a></li>
                         <li class=" mr-4 compact"><a class="color-dark f-14"
                                 href="/raise-a-request.html#city_region=Jaipur" onclick="goToForm('Jaipur')">Raise a
                                 request in Jaipur</a></li>
