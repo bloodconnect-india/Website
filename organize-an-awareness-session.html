@@ -88,7 +88,7 @@
         class="fa fa-bars f-20"></i></button>
     <ul class="mobile-nav hide bg-white" id="mobile-nav-list">
       <li class="bg-main ">
-        <a class="nav-link color-white fw-4 " href="./raise-a-request.html">RAISE A REQUEST</a>
+        <a class="nav-link color-white fw-4 " href="./raise-a-request.html">FIND A DONOR</a>
       </li>
       <li class="bg-main ">
         <a class="nav-link color-white fw-4 " href="./organize-a-camp.html">ORGANIZE A CAMP</a>
@@ -125,7 +125,7 @@
           <a href="./about-us.html" class="color-white b-white f-14 ">ABOUT US</a>
         </li>
         <li class="px-3">
-          <a href="./raise-a-request.html" class="color-white b-white f-14 ">RAISE A REQUEST</a>
+          <a href="./raise-a-request.html" class="color-white b-white f-14 ">FIND A DONOR</a>
         </li>
         <li class="px-3">
           <a href="./organize-a-camp.html" class="color-white b-white f-14">ORGANIZE A CAMP</a>
@@ -157,7 +157,7 @@
           <a href="./about-us.html" class="color-dark b-dark f-14 ">ABOUT US</a>
         </li>
         <li class="px-3">
-          <a href="./raise-a-request.html" class="color-dark b-dark f-14 ">RAISE A REQUEST</a>
+          <a href="./raise-a-request.html" class="color-dark b-dark f-14 ">FIND A DONOR</a>
         </li>
         <li class="px-3">
           <a href="./organize-a-camp.html" class="color-dark b-dark f-14">ORGANIZE A CAMP</a>
@@ -296,21 +296,31 @@
 
           <div id="fade-slide" class="wd-inherit" data-slick='{"slidesToShow": 1, "slidesToScroll": 1}'>
 
+
             <div>
-              <img class="wd-inherit" style="height: 700px;" src="./img/organize-a-camp/slide/1.jpg" alt="">
+              <img class="wd-inherit" style="height: 700px;" src="./img/organize-an-awareness/slide3.JPG" alt="">
             </div>
 
             <div>
-              <img class="wd-inherit" style="height: 700px;" src="./img/organize-a-camp/slide/2.jpg" alt="">
+              <img class="wd-inherit" style="height: 700px;" src="./img/organize-an-awareness/slide4.JPG" alt="">
+            </div>
+            <div>
+              <img class="wd-inherit" style="height: 700px;" src="./img/organize-an-awareness/slide5.jpg" alt="">
+            </div>
+            <div>
+              <img class="wd-inherit" style="height: 700px;" src="./img/organize-an-awareness/slide6.JPG" alt="">
+            </div>
+            <div>
+              <img class="wd-inherit" style="height: 700px;" src="./img/organize-an-awareness/slide7.JPG" alt="">
+            </div>
+            <div>
+              <img class="wd-inherit" style="height: 700px;" src="./img/organize-an-awareness/slide1.png" alt="">
             </div>
 
             <div>
-              <img class="wd-inherit" style="height: 700px;" src="./img/organize-a-camp/slide/3.jpg" alt="">
+              <img class="wd-inherit" style="height: 700px;" src="./img/organize-an-awareness/slide2.jpg" alt="">
             </div>
 
-            <div>
-              <img class="wd-inherit" style="height: 700px;" src="./img/organize-a-camp/slide/4.jpg" alt="">
-            </div>
           </div>
         </div>
         <div class="col-lg-6 bg-white px-5 px-3-sm pt-4 pb-3 rounded" style="height: 700px;">
@@ -318,90 +328,54 @@
           <!-- Personal details div -->
           <h4 class="color-dark ">Organize An Awareness Camp</h4>
           <p class="color-grey ">Fill this form and a volunteer would be in touch with you soon</p>
-          <div class="form-page">
-            <div id="page1" class="active hand" onclick="showPersonaldetailsInput()">1</div>
-            <div id="page2" class="hand" onclick="showOtherDetailsInput()">2</div>
-            <hr>
-          </div>
           <form action="" class="request-form" onsubmit="submitAwarenessRequest(event)">
 
-            <div id="personalDetails">
-              <div class="form-group mb-4">
-                <label class="m-0   color-dark" for="Your_Name">Your Name</label>
-                <input type="text" class="form-control" id="your_name" placeholder="Your Name" required>
-              </div>
-
-              <div class="form-group mb-4">
-                <label class="m-0   color-dark" for="Email">Email Address</label>
-                <input type="Email" class="form-control" placeholder="example@domain.com" id="email" required>
-              </div>
-
-              <div class="form-group mb-4">
-                <label class="m-0   color-dark" for="Phone_Number">Phone Number</label>
-                <input type="text" pattern="\d*" class="form-control" placeholder="9999xxxxxx" id="phone_number"
-                  maxlength="10" required>
-
-              </div>
-              <div class="form-group mb-4" id="City_Name">
-                <label class="m-0   color-dark" for="">City</label>
-                <input type="text" class="form-control" id="city" placeholder="City" required>
-              </div>
-              <div class="form-group mb-4">
-                <label class="m-0 not-required color-dark" for="Organization_Name">Organization Name</label>
-                <input type="text" class="form-control" id="organization_name" placeholder="Organization">
-              </div>
-              <div class="navigation-buttons inline text-center-sm">
-                <button type="button" class="pl-5 pr-5 right-lg mb-4 mx-auto btn-main bg-main"
-                  onclick="showOtherDetailsInput()">Next</button>
-              </div>
+            <div class="form-group mb-4">
+              <label class="m-0   color-dark" for="Your_Name">Your Name</label>
+              <input type="text" class="form-control" id="your_name" placeholder="Your Name" required>
             </div>
-            <div id="sessionDetails" class="">
-              <div class="form-group mb-4">
-                <label class="m-0 color-dark required" for="date_field">Date</label>
-                <input type="date" id="date_field" min="1000-01-01" max="3000-12-31" class="form-control"
-                  placeholder="2020-12-01" required>
-              </div>
-              <div class="form-group mb-4" id="Expected_Attendants">
-                <label class="m-0   color-dark" for="Expected_Attendants">Expected Attendants</label>
-                <select name="Expected_Attendants" id="expected_attendants" required>
-                  <option disabled selected value> -- select an option -- </option>
-                  <option value="50 - 100">50 - 100</option>
-                  <option value="100 - 150">100 - 150</option>
-                  <option value="150 - 200">150 - 200</option>
-                  <option value="200+">200+</option>
-                </select>
-              </div>
-              <div class="form-group mb-4" id="Mode_of_Awareness_Session">
-                <label class="m-0   color-dark" for="Mode_of_Awareness_Session">Mode of Awareness Session</label>
-                <select name="Mode_of_Awareness_Session" id="mode">
-                  <option disabled selected value> -- select an option -- </option>
-                  <option value="Webinar">Currently only webinar</option>
-                </select>
-              </div>
-              <div class="form-group mb-4">
-                <label class="m-0 not-required color-dark" for="additional">Additional Message</label>
-                <textarea type="text" cols="10" rows="3" class="form-control"
-                  placeholder="Any additional message you want" id="additional"></textarea>
-              </div>
-              <div class="navigation-buttons inline text-center-sm px-5 pb-3" id="form-footer">
-                <button type="button" class="pl-5 pr-5 left-lg btn-main bg-white color-dark"
-                  onclick="showPersonaldetailsInput()">Back</button>
-                <!-- <button type="submit" class="pl-5 pr-5 right-lg mb-4 mx-auto btn-main bg-main">Submit</button> -->
-                <button type="submit" id="submit-request-button"
-                  class="pl-5 pr-5 right-lg mb-4 mx-auto btn-main bg-main" value="Submit">
-                  <p class="color-white m-0 fw-4">Submit</p>
-                  <!-- Animation -->
-                  <svg style="width: 50px;" version="1.1" id="L9" xmlns="http://www.w3.org/2000/svg"
-                    xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 100 100"
-                    enable-background="new 0 0 0 0" xml:space="preserve">
-                    <path fill="#fff"
-                      d="M73,50c0-12.7-10.3-23-23-23S27,37.3,27,50 M30.9,50c0-10.5,8.5-19.1,19.1-19.1S69.1,39.5,69.1,50">
-                      <animateTransform attributeName="transform" attributeType="XML" type="rotate" dur="1s"
-                        from="0 50 50" to="360 50 50" repeatCount="indefinite" />
-                    </path>
-                  </svg>
-                </button>
-              </div>
+
+            <div class="form-group mb-4">
+              <label class="m-0   color-dark" for="Email">Email Address</label>
+              <input type="Email" class="form-control" placeholder="example@domain.com" id="email" required>
+            </div>
+
+            <div class="form-group mb-4">
+              <label class="m-0   color-dark" for="Phone_Number">Phone Number</label>
+              <input type="text" pattern="\d*" class="form-control" placeholder="9999xxxxxx" id="phone_number"
+                maxlength="10" required>
+
+            </div>
+            <div class="form-group mb-4" id="City_Name">
+              <label class="m-0   color-dark" for="">City</label>
+              <input type="text" class="form-control" id="city" placeholder="City" required>
+            </div>
+            <div class="form-group mb-4">
+              <label class="m-0 not-required color-dark" for="Organization_Name">Organization Name</label>
+              <input type="text" class="form-control" id="organization_name" placeholder="Organization">
+            </div>
+            <div class="form-group mb-4" id="Mode_of_Awareness_Session">
+              <label class="m-0   color-dark" for="Mode_of_Awareness_Session">Mode of Awareness Session</label>
+              <select name="Mode_of_Awareness_Session" id="mode">
+                <option disabled selected value> -- select an option -- </option>
+                <option value="Webinar">Currently only webinar</option>
+              </select>
+            </div>
+            <div class="navigation-buttons inline text-center-sm">
+              <button type="submit" id="submit-request-button" class="pl-5 pr-5 right-lg mb-4 mx-auto btn-main bg-main"
+                value="Submit">
+                <p class="color-white m-0 fw-4">Submit</p>
+                <!-- Animation -->
+                <svg style="width: 50px;" version="1.1" id="L9" xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 100 100"
+                  enable-background="new 0 0 0 0" xml:space="preserve">
+                  <path fill="#fff"
+                    d="M73,50c0-12.7-10.3-23-23-23S27,37.3,27,50 M30.9,50c0-10.5,8.5-19.1,19.1-19.1S69.1,39.5,69.1,50">
+                    <animateTransform attributeName="transform" attributeType="XML" type="rotate" dur="1s"
+                      from="0 50 50" to="360 50 50" repeatCount="indefinite" />
+                  </path>
+                </svg>
+              </button>
             </div>
           </form>
 
@@ -460,7 +434,7 @@
           </ul>
         </div>
         <div class="col-lg-4 col-sm-12">
-          <p class="color-dark bold mb-2">RAISE A REQUEST</p>
+          <p class="color-dark bold mb-2">FIND A DONOR</p>
           <ul class="footer-list pl-0">
             <li class=" mr-4 compact"><a class="color-dark f-14" href="./raise-a-request.html#city_region=Delhi">Raise a
                 request in Delhi-NCR</a></li>
@@ -472,7 +446,7 @@
             <li class=" mr-4 compact"><a class="color-dark f-14" href="./raise-a-request.html#city_region=Lucknow">Raise
                 a request in Lucknow</a></li>
             <li class=" mr-4 compact"><a class="color-dark f-14"
-                href="./raise-a-request.html#city_region=Bhubaneswar">Raise a request in Bhubaneswar</a></li>
+                href="./raise-a-request.html#city_region=Bhubaneswar">FIND A DONOR in Bhubaneswar</a></li>
             <li class=" mr-4 compact"><a class="color-dark f-14" href="./raise-a-request.html#city_region=Jaipur">Raise
                 a request in Jaipur</a></li>
           </ul>
@@ -515,7 +489,7 @@
   <script src="./js/bootstrap.min.js"></script>
   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
   <script src="js/main_v1.js"></script>
-  <script src="./js/awarenessRequest.js"></script>
+  <script src="./js/awarenessRequest.js?v=v1"></script>
 
   <script>
 
@@ -534,7 +508,7 @@
 
 
     showSessionForm = () => {
-      document.getElementById("city_region").focus()
+      document.getElementById("your_name").focus()
     }
 
 

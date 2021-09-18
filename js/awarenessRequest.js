@@ -38,10 +38,8 @@ createAwarenessRequest = () => {
         'City_Name':city,
         'Email':email,
         'Phone_Number': "+91"+phone_number,
-        'Additional_Message' : additional,
         'Organization_Name' : organization_name,
         'Mode':mode,
-        'Date_field':changeDateToDDMMYY(date),
         'Expected_Attendants':expAttendants
     }
 

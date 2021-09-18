@@ -48,7 +48,7 @@
         !function (f, b, e, v, n, t, s) {
             if (f.fbq) return; n = f.fbq = function () {
                 n.callMethod ?
-                n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+                    n.callMethod.apply(n, arguments) : n.queue.push(arguments)
             };
             if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
             n.queue = []; t = b.createElement(e); t.async = !0;
@@ -77,7 +77,7 @@
                 class="fa fa-bars f-20"></i></button>
         <ul class="mobile-nav hide bg-white" id="mobile-nav-list">
             <li class="bg-main ">
-                <a class="nav-link color-white fw-4 " href="/raise-a-request.html">RAISE A REQUEST</a>
+                <a class="nav-link color-white fw-4 " href="/raise-a-request.html">FIND A DONOR</a>
             </li>
             <li class="bg-main ">
                 <a class="nav-link color-white fw-4 " href="/organize-a-camp.html">ORGANIZE A CAMP</a>
@@ -110,7 +110,7 @@
                     <a href="/about-us.html" class="color-white b-white f-14  ">ABOUT US</a>
                 </li>
                 <li class="px-3">
-                    <a href="/raise-a-request.html" class="color-white b-white f-14 ">RAISE A REQUEST</a>
+                    <a href="/raise-a-request.html" class="color-white b-white f-14 ">FIND A DONOR</a>
                 </li>
                 <li class="px-3">
                     <a href="/organize-a-camp.html" class="color-white b-white f-14 ">ORGANIZE A CAMP</a>
@@ -137,7 +137,7 @@
                     <a href="/about-us.html" class="color-dark b-dark f-14 ">ABOUT US</a>
                 </li>
                 <li class="px-3">
-                    <a href="/raise-a-request.html" class="color-dark b-dark f-14 ">RAISE A REQUEST</a>
+                    <a href="/raise-a-request.html" class="color-dark b-dark f-14 ">FIND A DONOR</a>
                 </li>
                 <li class="px-3">
                     <a href="/organize-a-camp.html" class="color-dark b-dark f-14 ">ORGANIZE A CAMP</a>
@@ -155,8 +155,12 @@
     <div class="container-fluid h-50-min bg-main-dark  pl-0 pr-0 content  relative d-flex flex-row align-items-center">
         <div class="d-flex flex-column container justify-content-center z-5 px-0-sm">
             <h1 class="display-4 color-white  text-center px-2 mb-1 ">Donor Feedback Form</h1>
-            <p class="display-6 color-white  text-center px-2 mb-1">Thank You for coming forward and donating blood. Please spend a few minutes and tell us about your experiences related to blood donation.</p>
-            <p class="display-6 color-white  text-center px-2 mb-1">Through your Feedbacks, we are constantly working to improve the experience for you and thousands of other donors that donate in our camps or at blood banks. You can also write to us at - <a class="color-white bold" href="mailto: contact@bloodconnect.org">contact@bloodconnect.org</a></p>
+            <p class="display-6 color-white  text-center px-2 mb-1">Thank You for coming forward and donating blood.
+                Please spend a few minutes and tell us about your experiences related to blood donation.</p>
+            <p class="display-6 color-white  text-center px-2 mb-1">Through your Feedbacks, we are constantly working to
+                improve the experience for you and thousands of other donors that donate in our camps or at blood banks.
+                You can also write to us at - <a class="color-white bold"
+                    href="mailto: contact@bloodconnect.org">contact@bloodconnect.org</a></p>
         </div>
         <div class="main-slider h-60" id="homepageSlider" style="background-color: #980000;">
 
@@ -176,63 +180,79 @@
                     <form action="" class="request-form" id="request-form" onsubmit="submitDFeedback(event)">
                         <div class="form-group mb-4">
                             <label class="m-0   color-dark" for="name">Your Name</label>
-                            <input autocomplete="off" type="text" class="form-control" id="name" placeholder="Your Name" required>
+                            <input autocomplete="off" type="text" class="form-control" id="name" placeholder="Your Name"
+                                required>
                         </div>
                         <div class="form-group mb-4">
-                            <label class="m-0   color-dark" for="donation_location">Location of the Blood donation</label>
+                            <label class="m-0   color-dark" for="donation_location">Location of the Blood
+                                donation</label>
                             <small id="HelpBlock" class="form-text text-muted">
-                                If you donated blood in a camp, please mention name/venue of the organization where camp was done. If it was in blood bank/hospital, please mention name of the hospital
+                                If you donated blood in a camp, please mention name/venue of the organization where camp
+                                was done. If it was in blood bank/hospital, please mention name of the hospital
                             </small>
-                            <input autocomplete="off" type="text" class="form-control" id="location" placeholder="City name" required>
+                            <input autocomplete="off" type="text" class="form-control" id="location"
+                                placeholder="City name" required>
                         </div>
                         <div class="form-group mb-4">
-                            <legend class="col-form-label color-dark">How would you rate the overall experience with BloodConnect?</legend>
+                            <legend class="col-form-label color-dark">How would you rate the overall experience with
+                                BloodConnect?</legend>
                             <small id="" class="form-text text-muted">
                                 5 - Excellent , 1 - Poor
                             </small>
                             <div class="col-sm-10">
-                              <div class="form-check form-check-inline">
-                                  <input autocomplete="off" class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" onchange="rateBC(1)" value="1" required>
-                                  <label class="form-check-label" for="inlineRadio1">1</label>
-                              </div>
-                              <div class="form-check form-check-inline">
-                                  <input autocomplete="off" class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" onchange="rateBC(1)" value="2">
-                                  <label class="form-check-label" for="inlineRadio2">2</label>
-                              </div>
-                              <div class="form-check form-check-inline">
-                                  <input autocomplete="off" class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" onchange="rateBC(1)" value="3">
-                                  <label class="form-check-label" for="inlineRadio3">3</label>
-                              </div>
-                              <div class="form-check form-check-inline">
-                                  <input autocomplete="off" class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio4" onchange="rateBC(1)" value="4">
-                                  <label class="form-check-label" for="inlineRadio4">4</label>
-                              </div>
-                              <div class="form-check form-check-inline">
-                                  <input autocomplete="off" class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio5" onchange="rateBC(1)" value="5">
-                                  <label class="form-check-label" for="inlineRadio5">5</label>
-                              </div>
+                                <div class="form-check form-check-inline">
+                                    <input autocomplete="off" class="form-check-input" type="radio"
+                                        name="inlineRadioOptions" id="inlineRadio1" onchange="rateBC(1)" value="1"
+                                        required>
+                                    <label class="form-check-label" for="inlineRadio1">1</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input autocomplete="off" class="form-check-input" type="radio"
+                                        name="inlineRadioOptions" id="inlineRadio2" onchange="rateBC(1)" value="2">
+                                    <label class="form-check-label" for="inlineRadio2">2</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input autocomplete="off" class="form-check-input" type="radio"
+                                        name="inlineRadioOptions" id="inlineRadio3" onchange="rateBC(1)" value="3">
+                                    <label class="form-check-label" for="inlineRadio3">3</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input autocomplete="off" class="form-check-input" type="radio"
+                                        name="inlineRadioOptions" id="inlineRadio4" onchange="rateBC(1)" value="4">
+                                    <label class="form-check-label" for="inlineRadio4">4</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input autocomplete="off" class="form-check-input" type="radio"
+                                        name="inlineRadioOptions" id="inlineRadio5" onchange="rateBC(1)" value="5">
+                                    <label class="form-check-label" for="inlineRadio5">5</label>
+                                </div>
                             </div>
                         </div>
                         <div class="form-group mb-4">
-                            <legend class="col-form-label color-dark">Were you properly briefed about the eligibility for blood donation?</legend>
+                            <legend class="col-form-label color-dark">Were you properly briefed about the eligibility
+                                for blood donation?</legend>
                             <small id="HelpBlock" class="form-text text-muted">
                                 Information like - When did you eat? Medication, medical history, last time donated, etc
                             </small>
                             <div class="col-sm-10">
-                              <div class="form-check">
-                                  <input autocomplete="off" class="form-check-input" type="radio" name="briefed" id="briefed1" onchange="setBriefed('Yes')"  value="Yes" required>
-                                  <label class="form-check-label" for="briefed1">
-                                      Yes
-                                  </label>
-                              </div>
-                              <div class="form-check">
-                                  <input autocomplete="off" class="form-check-input" type="radio" name="briefed" id="briefed2" onchange="setBriefed('No')"  value="No">
-                                  <label class="form-check-label" for="briefed2">
-                                      No
-                                  </label>
-                              </div>
-                              <div class="form-check">
-                                    <input autocomplete="off" class="form-check-input" type="radio" name="briefed" id="briefed3"  onchange="setBriefed('Litte bit information was provided')" value="Litte bit information was provided">
+                                <div class="form-check">
+                                    <input autocomplete="off" class="form-check-input" type="radio" name="briefed"
+                                        id="briefed1" onchange="setBriefed('Yes')" value="Yes" required>
+                                    <label class="form-check-label" for="briefed1">
+                                        Yes
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input autocomplete="off" class="form-check-input" type="radio" name="briefed"
+                                        id="briefed2" onchange="setBriefed('No')" value="No">
+                                    <label class="form-check-label" for="briefed2">
+                                        No
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input autocomplete="off" class="form-check-input" type="radio" name="briefed"
+                                        id="briefed3" onchange="setBriefed('Litte bit information was provided')"
+                                        value="Litte bit information was provided">
                                     <label class="form-check-label" for="briefed3">
                                         Litte bit information was provided
                                     </label>
@@ -240,136 +260,164 @@
                             </div>
                         </div>
                         <div class="form-group mb-4">
-                            <legend class="col-form-label color-dark">Was the basic medial check-up done? Please select all options as applicable.</legend>
+                            <legend class="col-form-label color-dark">Was the basic medial check-up done? Please select
+                                all options as applicable.</legend>
                             <div class="col-sm-10">
-                              <div class="form-check">
-                                  <input autocomplete="off" class="form-check-input" type="checkbox" name="gridCheck" id="gridCheck1" onchange="setCheckUp('Blood Pressure',event)">
-                                  <label class="form-check-label" for="gridCheck1">
-                                    Blood Pressure
-                                  </label>
-                              </div>
-                              <div class="form-check">
-                                    <input autocomplete="off" class="form-check-input" type="checkbox" name="gridCheck" id="gridCheck2" onchange="setCheckUp(' Hb (Haemoglobin)',event)">
+                                <div class="form-check">
+                                    <input autocomplete="off" class="form-check-input" type="checkbox" name="gridCheck"
+                                        id="gridCheck1" onchange="setCheckUp('Blood Pressure',event)">
+                                    <label class="form-check-label" for="gridCheck1">
+                                        Blood Pressure
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input autocomplete="off" class="form-check-input" type="checkbox" name="gridCheck"
+                                        id="gridCheck2" onchange="setCheckUp(' Hb (Haemoglobin)',event)">
                                     <label class="form-check-label" for="gridCheck2">
                                         Hb (Haemoglobin)
                                     </label>
                                 </div>
                                 <div class="form-check">
-                                    <input autocomplete="off" class="form-check-input" type="checkbox" name="gridCheck" id="gridCheck3" onchange="setCheckUp('Weight',event)">
+                                    <input autocomplete="off" class="form-check-input" type="checkbox" name="gridCheck"
+                                        id="gridCheck3" onchange="setCheckUp('Weight',event)">
                                     <label class="form-check-label" for="gridCheck3">
                                         Weight
                                     </label>
                                 </div>
                                 <div class="form-check">
-                                    <input autocomplete="off" class="form-check-input" type="checkbox" name="gridCheck" id="gridCheck4" onchange="setCheckUp('Body Temperature (as a precaution due to COVID)',event)">
+                                    <input autocomplete="off" class="form-check-input" type="checkbox" name="gridCheck"
+                                        id="gridCheck4"
+                                        onchange="setCheckUp('Body Temperature (as a precaution due to COVID)',event)">
                                     <label class="form-check-label" for="gridCheck4">
                                         Body Temperature (as a precaution due to COVID)
                                     </label>
                                 </div>
                                 <div class="form-check">
-                                    <input autocomplete="off" class="form-check-input" type="checkbox" name="gridCheck" id="gridCheck5" onchange="setCheckUp('No check-up was done',event)">
+                                    <input autocomplete="off" class="form-check-input" type="checkbox" name="gridCheck"
+                                        id="gridCheck5" onchange="setCheckUp('No check-up was done',event)">
                                     <label class="form-check-label" for="gridCheck5">
                                         No check-up was done
                                     </label>
                                 </div>
                                 <div class="form-check">
-                                    <input autocomplete="off" class="form-check-input" type="checkbox" name="gridCheck" id="gridCheck6" onchange="setCheckUp('Other',event)">
+                                    <input autocomplete="off" class="form-check-input" type="checkbox" name="gridCheck"
+                                        id="gridCheck6" onchange="setCheckUp('Other',event)">
                                     <label class="form-check-label" for="gridCheck6">
                                         Other
                                     </label>
                                 </div>
                                 <div class="form-group hide" id="other">
-                                    <input autocomplete="off" class="form-control" type="text" name="gridCheck" id="otherCheckUp" placeholder="Checkup name">
-                                    
+                                    <input autocomplete="off" class="form-control" type="text" name="gridCheck"
+                                        id="otherCheckUp" placeholder="Checkup name">
+
                                 </div>
                             </div>
                         </div>
                         <div class="form-group mb-4">
-                            <legend class="col-form-label color-dark">Were you served refreshment by the blood bank?</legend>
+                            <legend class="col-form-label color-dark">Were you served refreshment by the blood bank?
+                            </legend>
                             <div class="col-sm-10">
-                              <div class="form-check">
-                                  <input autocomplete="off" class="form-check-input" type="radio" name="refreshment" id="gridRadios1" onchange="serveRefreshment('Yes')" value="Yes" required>
-                                  <label class="form-check-label" for="gridRadios1">
-                                      Yes
-                                  </label>
-                              </div>
-                              <div class="form-check">
-                                  <input autocomplete="off" class="form-check-input" type="radio" name="refreshment" id="gridRadios2" onchange="serveRefreshment('No')" value="No">
-                                  <label class="form-check-label" for="gridRadios2">
-                                      No
-                                  </label>
-                              </div>
+                                <div class="form-check">
+                                    <input autocomplete="off" class="form-check-input" type="radio" name="refreshment"
+                                        id="gridRadios1" onchange="serveRefreshment('Yes')" value="Yes" required>
+                                    <label class="form-check-label" for="gridRadios1">
+                                        Yes
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input autocomplete="off" class="form-check-input" type="radio" name="refreshment"
+                                        id="gridRadios2" onchange="serveRefreshment('No')" value="No">
+                                    <label class="form-check-label" for="gridRadios2">
+                                        No
+                                    </label>
+                                </div>
                             </div>
                         </div>
                         <div class="form-group mb-4">
-                            <legend class="col-form-label color-dark">How Friendly/Helpful was the blood bank staff?</legend>
+                            <legend class="col-form-label color-dark">How Friendly/Helpful was the blood bank staff?
+                            </legend>
                             <small class="form-text text-muted">
                                 1 - None at all, 5 - Extremely
                             </small>
                             <div class="col-sm-10">
-                              <div class="form-check form-check-inline">
-                                  <input autocomplete="off" class="form-check-input" type="radio" name="friendlyOption" id="inlineRadio1" onchange="rateBB(1)" value="1" required>
-                                  <label class="form-check-label" for="inlineRadio1">1</label>
-                              </div>
-                              <div class="form-check form-check-inline">
-                                  <input autocomplete="off" class="form-check-input" type="radio" name="friendlyOption" id="inlineRadio2" onchange="rateBB(2)" value="2">
-                                  <label class="form-check-label" for="inlineRadio2">2</label>
-                              </div>
-                              <div class="form-check form-check-inline">
-                                  <input autocomplete="off" class="form-check-input" type="radio" name="friendlyOption" id="inlineRadio3" onchange="rateBB(3)" value="3">
-                                  <label class="form-check-label" for="inlineRadio3">3</label>
-                              </div>
-                              <div class="form-check form-check-inline">
-                                  <input autocomplete="off" class="form-check-input" type="radio" name="friendlyOption" id="inlineRadio4" onchange="rateBB(4)" value="4">
-                                  <label class="form-check-label" for="inlineRadio4">4</label>
-                              </div>
-                              <div class="form-check form-check-inline">
-                                  <input autocomplete="off" class="form-check-input" type="radio" name="friendlyOption" id="inlineRadio5" onchange="rateBB(5)" value="5">
-                                  <label class="form-check-label" for="inlineRadio5">5</label>
-                              </div>
+                                <div class="form-check form-check-inline">
+                                    <input autocomplete="off" class="form-check-input" type="radio"
+                                        name="friendlyOption" id="inlineRadio1" onchange="rateBB(1)" value="1" required>
+                                    <label class="form-check-label" for="inlineRadio1">1</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input autocomplete="off" class="form-check-input" type="radio"
+                                        name="friendlyOption" id="inlineRadio2" onchange="rateBB(2)" value="2">
+                                    <label class="form-check-label" for="inlineRadio2">2</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input autocomplete="off" class="form-check-input" type="radio"
+                                        name="friendlyOption" id="inlineRadio3" onchange="rateBB(3)" value="3">
+                                    <label class="form-check-label" for="inlineRadio3">3</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input autocomplete="off" class="form-check-input" type="radio"
+                                        name="friendlyOption" id="inlineRadio4" onchange="rateBB(4)" value="4">
+                                    <label class="form-check-label" for="inlineRadio4">4</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input autocomplete="off" class="form-check-input" type="radio"
+                                        name="friendlyOption" id="inlineRadio5" onchange="rateBB(5)" value="5">
+                                    <label class="form-check-label" for="inlineRadio5">5</label>
+                                </div>
                             </div>
                         </div>
                         <div class="form-group mb-4">
                             <label class="m-0   color-dark" for="">What did you like most in the entire process?</label>
-                            <textarea autocomplete="off" type="text" class="form-control" id="like" placeholder="Your answer"></textarea>
+                            <textarea autocomplete="off" type="text" class="form-control" id="like"
+                                placeholder="Your answer"></textarea>
                         </div>
                         <div class="form-group mb-4">
                             <label class="m-0   color-dark" for="">What could be done differently?</label>
-                            <textarea autocomplete="off" type="text" class="form-control" id="differently" placeholder="Your answer"></textarea>
+                            <textarea autocomplete="off" type="text" class="form-control" id="differently"
+                                placeholder="Your answer"></textarea>
                         </div>
                         <div class="form-group mb-4">
-                            <label class="m-0   color-dark" for="">Would You recommend blood donation to a friend?</label>
+                            <label class="m-0   color-dark" for="">Would You recommend blood donation to a
+                                friend?</label>
                             <small id="HelpBlock" class="form-text text-muted">
                                 If No, then why not?
                             </small>
-                            <input autocomplete="off" type="text" class="form-control" id="recommendDonation" placeholder="Your answer">
+                            <input autocomplete="off" type="text" class="form-control" id="recommendDonation"
+                                placeholder="Your answer">
                         </div>
                         <div class="form-group mb-4">
-                            <legend class="col-form-label color-dark">Would you be able to help us organize blood donation in your residential area and/or company/college? </legend>
+                            <legend class="col-form-label color-dark">Would you be able to help us organize blood
+                                donation in your residential area and/or company/college? </legend>
                             <div class="col-sm-10">
-                              <div class="form-check">
-                                  <input autocomplete="off" class="form-check-input" type="radio" name="radios2" id="radios21" onchange="setHelpDonate('Yes')" value="Yes" required>
-                                  <label class="form-check-label" for="radios21">
-                                      Yes
-                                  </label>
-                              </div>
-                              <div class="form-check">
-                                  <input autocomplete="off" class="form-check-input" type="radio" name="radios2" id="radios22" onchange="setHelpDonate('No')" value="No">
-                                  <label class="form-check-label" for="radios22">
-                                      No
-                                  </label>
-                              </div>
-                              <div class="form-check">
-                                <input autocomplete="off" class="form-check-input" type="radio" name="radios2" id="radios22" onchange="setHelpDonate('Maybe')" value="Maybe">
-                                <label class="form-check-label" for="radios22">
-                                    Maybe
-                                </label>
-                            </div>
+                                <div class="form-check">
+                                    <input autocomplete="off" class="form-check-input" type="radio" name="radios2"
+                                        id="radios21" onchange="setHelpDonate('Yes')" value="Yes" required>
+                                    <label class="form-check-label" for="radios21">
+                                        Yes
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input autocomplete="off" class="form-check-input" type="radio" name="radios2"
+                                        id="radios22" onchange="setHelpDonate('No')" value="No">
+                                    <label class="form-check-label" for="radios22">
+                                        No
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input autocomplete="off" class="form-check-input" type="radio" name="radios2"
+                                        id="radios22" onchange="setHelpDonate('Maybe')" value="Maybe">
+                                    <label class="form-check-label" for="radios22">
+                                        Maybe
+                                    </label>
+                                </div>
                             </div>
                         </div>
                         <div class="form-group mb-4">
-                            <label class="m-0   color-dark" for="">Any other suggestions /feedback you would like to share with us</label>
-                            <textarea autocomplete="off" type="text" class="form-control" id="feedback" placeholder="Your answer"></textarea>
+                            <label class="m-0   color-dark" for="">Any other suggestions /feedback you would like to
+                                share with us</label>
+                            <textarea autocomplete="off" type="text" class="form-control" id="feedback"
+                                placeholder="Your answer"></textarea>
                         </div>
 
                         <div class="navigation-buttons inline text-center-sm">
@@ -458,7 +506,7 @@
                     </ul>
                 </div>
                 <div class="col-lg-4 col-sm-12">
-                    <p class="color-dark bold mb-2">RAISE A REQUEST</p>
+                    <p class="color-dark bold mb-2">FIND A DONOR</p>
                     <ul class="footer-list pl-0">
                         <li class=" mr-4 compact"><a class="color-dark f-14"
                                 href="/raise-a-request.html#city_region=Delhi" onclick="goToForm('Delhi')">Raise a
@@ -474,7 +522,7 @@
                                 request in Lucknow</a></li>
                         <li class=" mr-4 compact"><a class="color-dark f-14"
                                 href="/raise-a-request.html#city_region=Bhubaneswar"
-                                onclick="goToForm('Bhubaneswar')">Raise a request in Bhubaneswar</a></li>
+                                onclick="goToForm('Bhubaneswar')">FIND A DONOR in Bhubaneswar</a></li>
                         <li class=" mr-4 compact"><a class="color-dark f-14"
                                 href="/raise-a-request.html#city_region=Jaipur" onclick="goToForm('Jaipur')">Raise a
                                 request in Jaipur</a></li>
@@ -517,7 +565,7 @@
         integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
         crossorigin="anonymous"></script>
     <script src="../js/bootstrap.min.js"></script>
-    
+
     <script src="../js/main_v1.js"></script>
     <script src="../js/feedback.js"></script>
 </body>
