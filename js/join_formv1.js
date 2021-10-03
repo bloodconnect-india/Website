@@ -28,6 +28,7 @@ const selectingCity = (e) => {
     }
 }
 
+
 let section1 = $("#section1")
 let section2 = $("#section2")
 let section3 = $("#section3")
@@ -93,24 +94,12 @@ $("#success-modal").hide()
 
 const selectInterest = (e) => {
     let interest = e.target.value
-    if (e.target.checked && Interested_In.indexOf(interest) == -1) {
-        Interested_In.push(interest)
-    } else {
-        let index = Interested_In.indexOf(interest)
-        Interested_In.splice(index, 1)
-    }
-    console.log(Interested_In)
+    Interested_In = [interest];
 }
 
 const selectWhyBC = (e) => {
-    let reason = e.target.value
-    if (e.target.checked && Why_BC.indexOf(reason) == -1) {
-        Why_BC.push(reason)
-    } else {
-        let index = Why_BC.indexOf(reason)
-        Why_BC.splice(index, 1)
-    }
-    console.log(Why_BC)
+    let whyBc = e.target.value
+    Why_BC = [whyBc]; 
 }
 
 
