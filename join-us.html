@@ -53,7 +53,7 @@
     !function (f, b, e, v, n, t, s) {
       if (f.fbq) return; n = f.fbq = function () {
         n.callMethod ?
-        n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+          n.callMethod.apply(n, arguments) : n.queue.push(arguments)
       };
       if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
       n.queue = []; t = b.createElement(e); t.async = !0;
@@ -389,35 +389,35 @@
           <div id="fade-slide" class="wd-inherit" data-slick='{"slidesToShow": 1, "slidesToScroll": 1}'>
 
             <div>
-              <img class="wd-inherit" style="height: 700px;" src="./img/join-us/slide/5.jpg" alt="">
+              <img class="wd-inherit" style="height: 730px;" src="./img/join-us/slide/5.jpg" alt="">
             </div>
 
             <div>
-              <img class="wd-inherit" style="height: 700px;" src="./img/join-us/slide/6.jpg" alt="">
+              <img class="wd-inherit" style="height: 730px;" src="./img/join-us/slide/6.jpg" alt="">
             </div>
 
             <div>
-              <img class="wd-inherit" style="height: 700px;" src="./img/join-us/slide/7.jpg" alt="">
+              <img class="wd-inherit" style="height: 730px;" src="./img/join-us/slide/7.jpg" alt="">
             </div>
 
             <div>
-              <img class="wd-inherit" style="height: 700px;" src="./img/join-us/slide/8.jpg" alt="">
+              <img class="wd-inherit" style="height: 730px;" src="./img/join-us/slide/8.jpg" alt="">
             </div>
 
             <div>
-              <img class="wd-inherit" style="height: 700px;" src="./img/join-us/slide/1.jpg" alt="">
+              <img class="wd-inherit" style="height: 730px;" src="./img/join-us/slide/1.jpg" alt="">
             </div>
 
             <div>
-              <img class="wd-inherit" style="height: 700px;" src="./img/join-us/slide/2.jpg" alt="">
+              <img class="wd-inherit" style="height: 730px;" src="./img/join-us/slide/2.jpg" alt="">
             </div>
 
             <div>
-              <img class="wd-inherit" style="height: 700px;" src="./img/join-us/slide/3.jpg" alt="">
+              <img class="wd-inherit" style="height: 730px;" src="./img/join-us/slide/3.jpg" alt="">
             </div>
 
             <div>
-              <img class="wd-inherit" style="height: 700px;" src="./img/join-us/slide/4.jpg" alt="">
+              <img class="wd-inherit" style="height: 730px;" src="./img/join-us/slide/4.jpg" alt="">
             </div>
           </div>
         </div>
@@ -426,11 +426,9 @@
           <div class="form-page">
             <div id="page1" class="active hand" onclick="showSection1()">1</div>
             <div id="page2" class="hand" onclick="showSection2()">2</div>
-            <div id="page3" class="hand" onclick="showSection3()">3</div>
             <hr>
           </div>
           <form method="POST" action="" id="form">
-            <!-- Name Input -->
             <div id="section1">
               <div class="form-group mb-4">
                 <label class="m-0   color-dark" for="your_name">Your Name</label>
@@ -471,13 +469,6 @@
                 <input type="text" class="form-control" id="organization" name="organization"
                   placeholder="Workplace/Institute you are part of" required>
               </div>
-              <button type="button" onclick="showSection2()" class="pl-5 pr-5 right-lg mb-4 mx-auto btn-main bg-main"
-                value="Next">Next</button>
-
-            </div>
-
-            <div id="section2" class="">
-              <!-- City -->
               <div class="form-group mb-4">
                 <label class="m-0   color-dark" for="city">City in which you wish to volunteer</label>
                 <select name="city" id="city" onchange="selectingCity(event)" required>
@@ -496,94 +487,52 @@
                   <option value="Other">Other</option>
                 </select>
               </div>
+              <button type="button" onclick="showSection2()" class="pl-5 pr-5 right-lg mb-4 mx-auto btn-main bg-main"
+                value="Next">Next</button>
+
+            </div>
+
+            <div id="section2" class="">
+              <!-- City -->
+
               <div class="form-group mb-4 hide" id="otherCity">
                 <label class="m-0 not-required  color-dark" for="other_city">City Name</label>
                 <input type="text" class="form-control" id="other_city" placeholder="City Name">
               </div>
               <div class="form-group mb-4">
                 <label class="m-0   color-dark" for="interest">Select your interest in BloodConnect</label>
-                <p class="mb-0">
-                  <input type="checkbox" id="interest1" onchange="selectInterest(event)"
-                    value="City Operation (Camps, emergency helpline, awareness )" />
-                  <label for="interest1">City Operation (Camps, emergency helpline, awareness)</label>
-                </p>
-                <p class="mb-0">
-                  <input type="checkbox" id="interest7" onchange="selectInterest(event)"
-                    value="Awareness Department (Spreading awareness about Blood donation, Online/Offline Session)" />
-                  <label for="interest7">Awareness Department (Spreading awareness about Blood donation, Online/Offline
-                    Session)</label>
-                </p>
-                <p class="mb-0">
-                  <input type="checkbox" id="interest2" onchange="selectInterest(event)" value="Tech (Website, CRM)" />
-                  <label for="interest2">Tech (Website, CRM)</label>
-                </p>
-                <p class="mb-0">
-                  <input type="checkbox" id="interest3" onchange="selectInterest(event)"
-                    value="PR (Digital marketing, fundraising)" />
-                  <label for="interest3">PR (Digital marketing, fundraising)</label>
-                </p>
-                <p class="mb-0">
-                  <input type="checkbox" id="interest4" onchange="selectInterest(event)"
-                    value="Creative (Doodles, posters, video editing, content writing)" />
-                  <label for="interest4">Creative (Doodles, posters, video editing, content writing)</label>
-                </p>
-                <p class="mb-0">
-                  <input type="checkbox" id="interest5" onchange="selectInterest(event)"
-                    value="Consulting (Organizing camps across India through virtual support)" />
-                  <label for="interest5">Consulting (Organizing camps across India virtually)</label>
-                </p>
-                <p class="mb-0">
-                  <input type="checkbox" id="interest6" onchange="selectInterest(event)"
-                    value="Nothing Specific, I am up for any activity" />
-                  <label for="interest6">Nothing Specific, I am up for any activity</label>
-                </p>
+
+                <select name="interest" onchange="selectInterest(event)">
+                  <option value="City Operation (Camps, emergency helpline, awareness )">City Operation (Camps,
+                    emergency helpline, awareness)</option>
+                  <option
+                    value="Awareness Department (Spreading awareness about Blood donation, Online/Offline Session)">
+                    Awareness Department (Spreading awareness about Blood donation, Online/Offline
+                    Session)</option>
+                  <option value="Tech (Website, CRM)">Tech (Website, CRM)</option>
+                  <option value="PR (Digital marketing, fundraising">PR (Digital marketing, fundraising)</option>
+                  <option value="Creative (Doodles, posters, video editing, content writing)">Creative (Doodles,
+                    posters, video editing, content writing)</option>
+                  <option value="Consulting (Organizing camps across India through virtual support)">Consulting
+                    (Organizing camps across India virtually)</option>
+                  <option value="Nothing Specific, I am up for any activity">Nothing Specific, I am up for any activity
+                  </option>
+                </select>
               </div>
 
 
-              <div class="form-group mb-4">
-                <label class="m-0   color-dark" for="prior_exp">Do you have prior experience in volunteering with any
-                  NGO or any other extra-curricular activities? </label>
-                <textarea class="form-control" col="20" row="5" id="prior_exp" required></textarea>
-              </div>
-              <div class="navigation-buttons inline text-center-sm ">
-                <button type="button" onclick="showSection1()"
-                  class="pl-5 pr-5 left-lg mb-4 mx-auto btn-main bg-white color-dark">Back</button>
-                <button type="button" onclick="showSection3()" class="pl-5 pr-5 right-lg mb-4 mx-auto btn-main bg-main">
-                  Next
-                </button>
-              </div>
-            </div>
 
-            <div id="section3" class="">
-              <!-- Why BC -->
               <div class="form-group mb-4">
                 <label class="m-0   color-dark" for="whyBC">Why do you want to be a part of BloodConnect? </label>
-                <p class="mb-0">
-                  <input type="checkbox" id="why_BC1" onchange="selectWhyBC(event)" value="Social service" />
-                  <label for="why_BC1">Social service</label>
-                </p>
-                <p class="mb-0">
-                  <input type="checkbox" id="why_BC2" onchange="selectWhyBC(event)"
-                    value="Because my friends are also working here" />
-                  <label for="why_BC2">Because my friends are also working here</label>
-                </p>
-                <p class="mb-0">
-                  <input type="checkbox" id="why_BC3" onchange="selectWhyBC(event)" value="For my resume" />
-                  <label for="why_BC3">For my resume</label>
-                </p>
-                <p class="mb-0">
-                  <input type="checkbox" id="why_BC4" onchange="selectWhyBC(event)" value="I love to travel" />
-                  <label for="why_BC4">I love to travel</label>
-                </p>
-                <p class="mb-0">
-                  <input type="checkbox" id="why_BC5" onchange="selectWhyBC(event)"
-                    value="I like to speak with people" />
-                  <label for="why_BC5">I like to speak with people</label>
-                </p>
-                <p class="mb-0">
-                  <input type="checkbox" id="why_BC6" onchange="selectWhyBC(event)" value="Nothing Specific" />
-                  <label for="why_BC6">Nothing Specific</label>
-                </p>
+                <select name="whyBC" onchange="selectWhyBC(event)">
+                  <option value="Social service">Social Service</option>
+                  <option value="Because my friends are also working here">Because my friends are also working here
+                  </option>
+                  <option value="For my resume">For my resume</option>
+                  <option value="I love to travel">I love to travel</option>
+                  <option value="I like to speak with people">I like to speak with people</option>
+                  <option value="Nothing Specific">Nothing Specific</option>
+                </select>
               </div>
 
               <!-- How BC -->
@@ -607,16 +556,19 @@
                 <input type="text" class="form-control" placeholder="Personal Contact Name" id="personal_contact">
 
               </div>
+
+
               <div class="form-group mb-4">
-                <label for="additional_comment" class="not-required m-0 color-dark">Any additional information you would
-                  like to share about your application?</label>
-                <textarea class="form-control" col="20" row="5" id="additional_comment"></textarea>
+                <label class="m-0   color-dark" for="prior_exp">Do you have prior experience in volunteering with any
+                  NGO or any other extra-curricular activities? </label>
+                <textarea class="form-control" col="20" row="2" id="prior_exp" required></textarea>
               </div>
-              <div class="navigation-buttons inline text-center-sm ">
-                <button type="button" onclick="showSection2()"
-                  class="pl-5 pr-5 left-lg mb-4 mx-auto btn-main bg-white color-dark">Back</button>
-                <button type="button" id="submit-request-button"
-                  class="pl-5 pr-5 right-lg mb-4 mx-auto btn-main bg-main" onclick="submitRequest()">
+
+              <div class="navigation-buttons inline text-center-sm mt-5 pt-1">
+                <button type="button" onclick="showSection1()"
+                  class="pl-5 pr-5 left-lg  mx-auto btn-main bg-white color-dark">Back</button>
+                <button type="button" id="submit-request-button" class="pl-5 pr-5 right-lg  mx-auto btn-main bg-main"
+                  onclick="submitRequest()">
                   <p class="color-white m-0 fw-4">Submit</p>
                   <!-- Animation -->
                   <svg style="width: 50px;" version="1.1" id="L9" xmlns="http://www.w3.org/2000/svg"
@@ -751,7 +703,7 @@
     crossorigin="anonymous"></script>
   <script src="./js/bootstrap.min.js"></script>
   <script src="./js/join_formv1.js?v=4"></script>
-  <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 
   <script src="js/main_v1.js"></script>
 
