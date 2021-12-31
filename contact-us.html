@@ -50,7 +50,7 @@
     !function (f, b, e, v, n, t, s) {
       if (f.fbq) return; n = f.fbq = function () {
         n.callMethod ?
-        n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+          n.callMethod.apply(n, arguments) : n.queue.push(arguments)
       };
       if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
       n.queue = []; t = b.createElement(e); t.async = !0;
@@ -355,6 +355,12 @@
 
               </div>
               <div class="form-group mb-4">
+                <label class="m-0  color-dark" for="phone_number">Phone Number</label>
+                <input type="text" pattern="\d+" maxlength="10" minlength="10" class="form-control"
+                  placeholder="9876543210" id="phone_number" required>
+
+              </div>
+              <div class="form-group mb-4">
                 <label class="m-0  color-dark" for="message">Message</label>
                 <textarea name="message" id="message" cols="20" rows="3" placeholder="Enter Your Message Here"
                   required></textarea>
@@ -498,11 +504,13 @@
       name = $("#name").val()
       email = $("#email").val()
       message = $("#message").val()
+      phone_number = $("#phone_number").val();
       let url = "https://bc-api2.herokuapp.com/contact"
       var requestData = {
         'Name': name,
         'Email': email,
-        'Message': message
+        'Message': message,
+        'Phone_Number': phone_number,
       }
       fetch(url, {
         method: 'POST',
