@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="BloodConnect - India’s largest youth run initiative in the field of blood donation. We target to make India blood sufficient by 2030!">
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/svg-animate.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <title>Blog | BloodConnect</title>
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@bloodconnectorg">
+  <meta name="twitter:creator" content="@bloodconnectorg">
+  <meta name="twitter:title" content="bloodConnect">
+  <meta name="twitter:description"
+    content="BloodConnect - India’s largest youth run initiative in the field of blood donation. We target to make India blood sufficient by 2030!">
+  <meta name="twitter:image" content="https://www.bloodconnect.org/img/bc_heart.png">
+
+  <!-- Facebook -->
+  <meta property="og:url" content="https://www.bloodconnect.org/">
+  <meta property="og:title" content="BloodConnect">
+  <meta property="og:description"
+    content="BloodConnect - India’s largest youth run initiative in the field of blood donation. We target to make India blood sufficient by 2030!">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://www.bloodconnect.org/img/bc_heart.png">
+  <meta property="og:image:type" content="image/png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon">
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-18198647-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-18198647-1');
+  </script>
+  <!-- facebook pixel -->
+  <!-- Facebook Pixel Code -->
+  <script>
+    !function (f, b, e, v, n, t, s) {
+      if (f.fbq) return; n = f.fbq = function () {
+        n.callMethod ?
+          n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+      };
+      if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
+      n.queue = []; t = b.createElement(e); t.async = !0;
+      t.src = v; s = b.getElementsByTagName(e)[0];
+      s.parentNode.insertBefore(t, s)
+    }(window, document, 'script',
+      'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '483666385759479');
+    fbq('track', 'PageView');
+  </script>
+  <noscript>
+    <img height="1" width="1" src="https://www.facebook.com/tr?id=483666385759479&ev=PageView
+  &noscript=1" />
+  </noscript>
+  <!-- End Facebook Pixel Code -->
+
+</head>
+
+<body>
+
+  <!-- Navbar start here -->
+  <!-- Just an image -->
+  <!-- Navbar -->
+
+  <nav class="fixed z-6 d-flex justify-content-end hide-lg " id="mobile-nav">
+    <button class="menu  show-md color-white h-max bg-none" id="mobile-nav-toggler" onclick="toggleMobileNav()"><i
+        class="fa fa-bars f-20"></i></button>
+    <ul class="mobile-nav hide bg-white" id="mobile-nav-list">
+      <li class="bg-main ">
+        <a class="nav-link color-white fw-4 active" href="./raise-a-request.html">FIND A DONOR</a>
+      </li>
+      <li class="bg-main ">
+        <a class="nav-link color-white fw-4 " href="./organize-a-camp.html">ORGANIZE A CAMP</a>
+      </li>
+      <li class="bg-main ">
+        <a class="nav-link color-white fw-4 " href="./sponsor.html">SUPPORT US</a>
+      </li>
+      <li class="bg-main ">
+        <a class="nav-link color-white fw-4 " href="./join-us-selection.html">JOIN US</a>
+      </li>
+      <li class="bg-main ">
+        <a class="nav-link color-white fw-4 " href="./organize-an-awareness-session.html">ORGANIZE AN AWARENESS SESSION
+        </a>
+      </li>
+      <li class="bg-white">
+        <a href="./about-us.html" class="color-dark f-14 fw-4 nav-link">ABOUT US</a>
+      </li>
+      <li class="bg-white">
+        <a href="./our-team.html" class="color-dark f-14 fw-4 nav-link">OUR TEAM</a>
+      </li>
+
+      <li class="bg-white">
+        <a href="./contact-us.html" class="color-dark f-14 fw-4 nav-link">CONTACT US</a>
+      </li>
+    </ul>
+  </nav>
+  <nav class="navbar justify-content-center-sm justify-content-between pb-0 sticky-sm z-5  bg-none " id="navbar">
+    <div class="d-flex flex-row align-items-center justify-content-end">
+      <a class="navbar-brand" href="./index.html">
+        <img src="./img/homepage/Logo.png" height="35" alt="BloodConnect Logo">
+      </a>
+      <ul class="navbar-nav flex-row  align-items-end hide-md" style="border-bottom: none !important;">
+
+        <li class="px-3">
+          <a href="./about-us.html" class="color-white b-white f-14 ">ABOUT US</a>
+        </li>
+        <li class="px-3">
+          <a href="./raise-a-request.html" class="color-white b-white f-14 active ">FIND A DONOR</a>
+        </li>
+        <li class="px-3">
+          <a href="./organize-a-camp.html" class="color-white b-white f-14 ">ORGANIZE A CAMP</a>
+        </li>
+        <li class="px-3">
+          <a href="./organize-an-awareness-session.html" class="color-white b-white f-14 ">ORGANIZE AN AWARENESS
+            SESSION</a>
+        </li>
+        <li class="px-3">
+          <a href="./join-us-selection.html" class="color-white b-white f-14 ">JOIN US</a>
+        </li>
+      </ul>
+    </div>
+    <div class="d-flex flex-row align-items-center hide-md">
+      <a href="./contact-us.html" class="f-14 color-white mr-3 uppercase">Contact Us</a>
+      <a href="./sponsor.html" class="f-14 sponsor-link-button color-dark fw-6 px-3 py-2 uppercase">Support us</a>
+    </div>
+  </nav>
+
+
+  <!-- Sticky navbar -->
+  <nav
+    class="navbar flex-column-sm align-items-start justify-content-between pb-0  sticky-navbar z-5 bg-white pb-2 hide "
+    id="navbar-sticky">
+    <div class="d-flex flex-row align-items-center justify-content-end">
+      <a class="navbar-brand" href="./index.html">
+        <img src="./img/logo.png" height="35" alt="BloodConnect Logo">
+      </a>
+      <ul class="navbar-nav flex-row hide-md align-items-end" style="border-bottom: none !important;">
+
+        <li class="px-3">
+          <a href="./about-us.html" class="color-dark b-dark f-14 ">ABOUT US</a>
+        </li>
+        <li class="px-3">
+          <a href="./raise-a-request.html" class="color-dark b-dark f-14 active">FIND A DONOR</a>
+        </li>
+        <li class="px-3">
+          <a href="./organize-a-camp.html" class="color-dark b-dark f-14 ">ORGANIZE A CAMP</a>
+        </li>
+        <li class="px-3">
+          <a href="./organize-an-awareness-session.html" class="color-dark b-dark f-14 ">ORGANISE AN AWARENESS
+            SESSION</a>
+        </li>
+        <li class="px-3">
+          <a href="./join-us-selection.html" class="color-dark b-dark f-14 ">JOIN US</a>
+        </li>
+      </ul>
+    </div>
+    <div class="d-flex flex-row align-items-center hide-md">
+      <a href="./sponsor.html"
+        class="f-14 sponsor-link-button color-dark fw-6 px-3 py-2 uppercase bg-main color-white">Support us</a>
+    </div>
+  </nav>
+
+  <div class="container-fluid h-60  pl-0 pr-0 content  relative d-flex flex-row align-items-center">
+    <div class="d-flex flex-column container h-60 justify-content-center z-5 px-0-sm">
+      <h1 class="display-4 color-white  text-center px-2 mb-1 fw-4"> BloodConnect Blogs </h1>
+
+    </div>
+    <div class="main-slider h-60" id="homepageSlider" style="background-color: #980000;">
+    </div>
+  </div>
+
+
+  <main role="main" class="container">
+      <div class="row">
+      <div class="col-md-12">
+        <h3 class="pb-3 mb-b font-italic border-bottom">
+          Blog Category 
+        </h3>
+        <div id="blog-list" class="justify-content-center">
+        </div>
+    </div>
+    </div>
+</main>
+
+  <!-- Footer -->
+  <div class="container-fluid  ">
+    <div class="container d-flex flex-column ">
+
+      <hr class="color-dark w-100 my-0">
+      <div class="d-flex justify-content-between align-items-center flex-column-sm">
+        <a href="./index.html">
+          <img src="./img/logo.png" alt="">
+        </a>
+        <ul class="footer-list mb-0 d-flex justify-content-start align-items-center pr-4 col-lg-4 col-sm-12">
+          <li class="footer-item bg-white ">
+            <a href="https://facebook.com/BloodConnect" target="_blank" class="footer-link  color-main"><i
+                class="fa fa-facebook-f"></i></a>
+          </li>
+          <li class="footer-item bg-white ">
+            <a href="https://instagram.com/bloodconnectorg?igshid=umn7a6sbwt7h" target="_blank"
+              class="footer-link  color-main"><i class="fa fa-instagram"></i></a>
+          </li>
+          <li class="footer-item bg-white ">
+            <a href="https://twitter.com/bloodconnectorg" target="_blank" class="footer-link  color-main"><i
+                class="fa fa-twitter"></i></a>
+          </li>
+          <li class="footer-item bg-white ">
+            <a href="https://www.youtube.com/channel/UCtU8tOeU1IvLZTUHxHuL2LQ" target="_blank"
+              class="footer-link  color-main"><i class="fa fa-youtube"></i></a>
+          </li>
+          <li class="footer-item bg-white ">
+            <a href="https://www.linkedin.com/company/bloodconnect-india" target="_blank"
+              class="footer-link  color-main"><i class="fa fa-linkedin"></i></a>
+          </li>
+        </ul>
+      </div>
+      <hr class="color-dark w-100 mx-0">
+      <div class="row">
+        <div class="col-lg-4 col-sm-12">
+          <p class="color-dark bold mb-2">NAVIGATION</p>
+          <ul class="footer-list pl-0">
+            <li class=" mr-4 compact"><a class="color-dark f-14" href="./index.html">Home</a></li>
+            <li class=" mr-4 compact"><a class="color-dark f-14" href="./about-us.html">About us</a></li>
+            <li class=" mr-4 compact"><a class="color-dark f-14" href="./our-team.html">Our team</a></li>
+            <li class=" mr-4 compact"><a class="color-dark f-14" href="./sponsor.html">Donate now</a></li>
+            <li class=" mr-4 compact"><a class="color-dark f-14" href="./join-us-selection.html">Join us</a></li>
+            <li class=" mr-4 compact"><a class="color-dark f-14" href="./contact-us.html">Contact us</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-4 col-sm-12">
+          <p class="color-dark bold mb-2">FIND A DONOR</p>
+          <ul class="footer-list pl-0">
+            <li class=" mr-4 compact"><a class="color-dark f-14" href="./raise-a-request.html#city_region=Delhi"
+                onclick="goToForm('Delhi')">Find A Donor in Delhi-NCR</a></li>
+            <li class=" mr-4 compact"><a class="color-dark f-14" href="./raise-a-request.html#city_region=Kanpur"
+                onclick="goToForm('Kanpur')">Find A Donor in Kanpur</a></li>
+            <li class=" mr-4 compact"><a class="color-dark f-14" href="./raise-a-request.html#city_region=Agra"
+                onclick="goToForm('Agra')">Find A Donor in Agra</a></li>
+            <li class=" mr-4 compact"><a class="color-dark f-14" href="./raise-a-request.html#city_region=Lucknow"
+                onclick="goToForm('Lucknow')">Find A Donor in Lucknow</a></li>
+            <li class=" mr-4 compact"><a class="color-dark f-14" href="./raise-a-request.html#city_region=Bhubaneswar"
+                onclick="goToForm('Bhubaneswar')">Find A Donor in Bhubaneswar</a></li>
+            <li class=" mr-4 compact"><a class="color-dark f-14" href="./raise-a-request.html#city_region=Jaipur"
+                onclick="goToForm('Jaipur')">Find A Donor in Jaipur</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-4 col-sm-12">
+          <p class="color-dark bold  mb-2">ORGANIZE A CAMP</p>
+          <ul class="footer-list pl-0">
+            <li class=" mr-4 compact"><a class="color-dark f-14"
+                href="./organize-a-camp.html#city_region=Delhi">Organize a camp in Delhi-NCR</a></li>
+            <li class=" mr-4 compact"><a class="color-dark f-14"
+                href="./organize-a-camp.html#city_region=Kanpur">Organize a camp in Kanpur</a></li>
+            <li class=" mr-4 compact"><a class="color-dark f-14" href="./organize-a-camp.html#city_region=Agra">Organize
+                a camp in Agra</a></li>
+            <li class=" mr-4 compact"><a class="color-dark f-14"
+                href="./organize-a-camp.html#city_region=Lucknow">Organize a camp in Lucknow</a></li>
+            <li class=" mr-4 compact"><a class="color-dark f-14"
+                href="./organize-a-camp.html#city_region=Bhubaneswar">Organize a camp in Bhubaneswar</a></li>
+            <li class=" mr-4 compact"><a class="color-dark f-14"
+                href="./organize-a-camp.html#city_region=Jaipur">Organize a camp in Jaipur</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="d-flex justify-content-between mt-3">
+        <p class="color-dark f-14">Copyright &copy; BloodConnect Foundation 2020</p>
+
+        <ul class="footer-list">
+          <li class=" left mx-3"><a class="color-dark f-12" href="./privacy.html">Privacy</a></li>
+          <li class=" left ml-3"><a class="color-dark f-12" href="./toc.html">Terms and Condition</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+    crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="./js/bootstrap.min.js"></script>
+  <script src="js/main_v1.js"></script>
+  <script type='text/javascript'>
+        var bloghtml = '';
+        $.ajax({
+        type: 'GET',
+        url: "https://public-api.wordpress.com/rest/v1.1/sites/bloodconnect23176254.wordpress.com/posts/",
+        dataType: "json",
+        success: function (data) {
+          for (i = 0; i < 3; i++) {
+            bloghtml += '<div><h2>' + data.posts[i].title + '</h2>';
+            bloghtml += data.posts[i].content;
+            bloghtml += '</div>';
+          }
+          console.log(bloghtml)
+          $("#blog-list").append(bloghtml);
+        }
+        
+    });
+  </script>
+  
+</body>
+
+</html>
+<!----   
+-->
