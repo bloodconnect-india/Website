@@ -1,21 +1,3 @@
-const template = `
-<div class="col-lg-4 w-12-rem col-md-6 col-sm-12 bg-white shadow-lg card mb-4 p-0">
-  <img class="w-100 h-12-rem" src="https://picsum.photos/200/300" />
-  <div class="p-4">
-    <p class="f-12">
-      published by - <strong class="mr-4 f-12">Anish Yadav</strong> 2 days ago
-    </p>
-    <h2 class="mt-4 f-20 color-dark">Make India Blood Sufficient</h2>
-    <p class="f-14 color-dark-light text-ellipsis overflow-hidden">
-      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Praesentium nesciunt velit officia et libero ipsam dignissimos repellat tenetur aliquam quo totam, provident natus, quos voluptates pariatur vitae doloremque, quaerat magni?
-    </p>
-    <button class="bg-main text-white w-100 border-0 py-2 px-4 mt-4">
-      Continue
-    </button>
-  </div>
-</div>
-`;
-
 function timeSince(date) {
   date = new Date(date);
   var seconds = Math.floor((new Date() - date) / 1000);
