@@ -65,7 +65,7 @@ function getCard(imgUrl, author, publishedAt, title, description, link) {
         </p>
         <h2 class="mt-4 f-20 color-dark h-3-rem">${title}</h2>
         <p class="f-14 h-10-rem color-dark-light text-ellipsis overflow-hidden">
-          ${description}
+          ${description}...
         </p>
         <button  class="bg-main text-white text-decoration-none border-0 w-100">
           <a href="${link}" class="text-white text-decoration-none px-4 py-2 w-100-link" >Continue Reading</a>
