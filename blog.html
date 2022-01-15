@@ -108,7 +108,7 @@
       </li>
     </ul>
   </nav>
-  <nav class="navbar justify-content-center-sm justify-content-between pb-0 sticky-sm z-5  bg-none " id="navbar">
+  <nav class="navbar justify-content-center-sm justify-content-between pb-2 sticky-sm z-5  bg-main " id="navbar">
     <div class="d-flex flex-row align-items-center justify-content-end">
       <a class="navbar-brand" href="./index.html">
         <img src="./img/homepage/Logo.png" height="35" alt="BloodConnect Logo">
@@ -140,8 +140,6 @@
       <a href="./sponsor.html" class="f-14 sponsor-link-button color-dark fw-6 px-3 py-2 uppercase">Support us</a>
     </div>
   </nav>
-
-
   <!-- Sticky navbar -->
   <nav
     class="navbar flex-column-sm align-items-start justify-content-between pb-0  sticky-navbar z-5 bg-white pb-2 hide "
@@ -179,34 +177,58 @@
     </div>
   </nav>
 
-  <div class="container-fluid h-60  pl-0 pr-0 content  relative d-flex flex-row align-items-center">
+  <!-- Front slider -->
+  <div class="container-fluid h-90-min pl-0 pr-0 content relative d-flex flex-row align-items-center">
+    <div class="d-flex flex-column container h-80-min justify-content-center z-5 px-0-sm">
+      <div class="main-slider-text row align-items-center justify-content-between flex-column-reverse-sm">
+        <div class="col-lg-6 col-sm-12 d-flex flex-column justofy-content-center">
+          <h1 class="display-4 color-dark wd-auto px-2 mb-1">
+            Baant Le Bandeya
+          </h1>
+          <p class="color-dark-light px-2">
+            Your birthday can be someone else's special day as well. Make your birthday memorable by giving someone the
+            “Gift of Life”. <br> Donate blood. Donate for a cause.
+          </p>
+          <div class="d-flex mt-2 px-2">
+            <button class="shadow btn-main bg-white mr-2">
+              <a href="./days-of-gratitude.html" class="color-dark">Learn More</a>
+            </button>
+            <button class="shadow btn-main bg-main mr-2">
+              <a href="./donation.html?c=c1" target="_blank" class="color-white">Sponsor Now</a>
+            </button>
+
+          </div>
+        </div>
+        <img class="col-lg-4 col-sm-12" src="./img/BaantLeBandeya.png" />
+      </div>
+    </div>
+  </div>
+
+  <div class="container-fluid h-14-rem bg-main pl-0 pr-0 content my-4 relative d-flex flex-row align-items-center">
     <div class="d-flex flex-column container h-60 justify-content-center z-5 px-0-sm">
       <h1 class="display-4 color-white  text-center px-2 mb-1 fw-4"> Blogs </h1>
-
-    </div>
-    <div class="main-slider h-60" id="homepageSlider" style="background-color: #980000;">
     </div>
   </div>
 
 
-  <main role="main" class="container pt-5-sm mb-5">
-      <div class="row">
-      <div class="col-md-12">
+  <main role="main" class="container pt-5 mb-5">
+    <div class="row">
+      <div class="col-md-12 px-0-sm">
         <h3 class="mb-4 px-3">
           Most Recent
         </h3>
         <div id="blog-list" class="row justify-content-between mx-3">
-          
+
         </div>
         <div id="loading" class="loading-screen d-flex justify-content-center align-items-center h-40-rem">
-            <div class="d-flex flex-column justify-content-center align-items-center">
-              <span class="spinner-border text-danger"></span>
-              <p class="f-18 mt-2">Loading blogs please wait...</p>
-            </div>
+          <div class="d-flex flex-column justify-content-center align-items-center">
+            <span class="spinner-border text-danger"></span>
+            <p class="f-18 mt-2">Loading blogs please wait...</p>
+          </div>
         </div>
+      </div>
     </div>
-    </div>
-</main>
+  </main>
 
   <!-- Footer -->
   <div class="container-fluid  ">
@@ -302,7 +324,7 @@
   <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
     integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
     crossorigin="anonymous"></script>
-    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
     integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
     crossorigin="anonymous"></script>
@@ -310,7 +332,7 @@
   <script src="js/main_v1.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/timeago.js/2.0.2/timeago.min.js"></script>
   <script src="js/blog.js"></script>
-  
+
 </body>
 
 </html>
