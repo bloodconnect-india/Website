@@ -5,13 +5,13 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description"
-    content="You are one step closer to being a superhero. Organize a blood donation camp in your college, office, society and get that superman cape. We would take care of the process end-to-end">
-
+    content="BloodConnect - India’s largest youth run initiative in the field of blood donation. We target to make India blood sufficient by 2030!">
   <link rel="stylesheet" href="./css/bootstrap.min.css">
-  <link rel="stylesheet" href="./css/style.css?v=1">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/svg-animate.css">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
-  <title>Days of Gratitude</title>
+  <title>Blog | BloodConnect</title>
 
   <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image">
@@ -30,9 +30,8 @@
   <meta property="og:type" content="website">
   <meta property="og:image" content="https://www.bloodconnect.org/img/bc_heart.png">
   <meta property="og:image:type" content="image/png">
-  <meta property="og:image:width" content="600">
-  <meta property="og:image:height" content="600">
-  <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
   <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon">
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-18198647-1"></script>
@@ -66,11 +65,6 @@
   </noscript>
   <!-- End Facebook Pixel Code -->
 
-  <style>
-    button.w-200 {
-      width: 200px !important;
-    }
-  </style>
 </head>
 
 <body>
@@ -78,18 +72,16 @@
   <!-- Navbar start here -->
   <!-- Just an image -->
   <!-- Navbar -->
-  <nav class="fixed z-6 d-flex justify-content-end hide-lg" id="mobile-nav">
+
+  <nav class="fixed z-6 d-flex justify-content-end hide-lg " id="mobile-nav">
     <button class="menu  show-md color-white h-max bg-none" id="mobile-nav-toggler" onclick="toggleMobileNav()"><i
         class="fa fa-bars f-20"></i></button>
     <ul class="mobile-nav hide bg-white" id="mobile-nav-list">
       <li class="bg-main ">
-        <a class="nav-link color-white fw-4 " href="./raise-a-request.html">FIND A DONOR</a>
+        <a class="nav-link color-white fw-4" href="./raise-a-request.html">FIND A DONOR</a>
       </li>
       <li class="bg-main ">
         <a class="nav-link color-white fw-4 " href="./organize-a-camp.html">ORGANIZE A CAMP</a>
-      </li>
-      <li class="bg-main">
-        <a href="./organize-an-awareness-session.html" class="nav-link color-white fw-4">SPREAD AWARENESS</a>
       </li>
       <li class="bg-main ">
         <a class="nav-link color-white fw-4 " href="./sponsor.html">SUPPORT US</a>
@@ -98,7 +90,11 @@
         <a class="nav-link color-white fw-4 " href="./join-us-selection.html">JOIN US</a>
       </li>
       <li class="bg-main ">
-        <a class="nav-link color-white fw-4 " href="./blog.html">BLOG</a>
+        <a class="nav-link color-white fw-4 active" href="./blog.html">BLOG</a>
+      </li>
+      <li class="bg-main ">
+        <a class="nav-link color-white fw-4 " href="./organize-an-awareness-session.html">SPREAD AWARENESS
+        </a>
       </li>
       <li class="bg-white">
         <a href="./about-us.html" class="color-dark f-14 fw-4 nav-link">ABOUT US</a>
@@ -106,12 +102,13 @@
       <li class="bg-white">
         <a href="./our-team.html" class="color-dark f-14 fw-4 nav-link">OUR TEAM</a>
       </li>
+
       <li class="bg-white">
         <a href="./contact-us.html" class="color-dark f-14 fw-4 nav-link">CONTACT US</a>
       </li>
     </ul>
   </nav>
-  <nav class="navbar justify-content-center-sm justify-content-between pb-0 sticky-sm z-5  bg-none " id="navbar">
+  <nav class="navbar justify-content-center-sm justify-content-between pb-2 sticky-sm z-5  bg-main " id="navbar">
     <div class="d-flex flex-row align-items-center justify-content-end">
       <a class="navbar-brand" href="./index.html">
         <img src="./img/homepage/Logo.png" height="35" alt="BloodConnect Logo">
@@ -125,16 +122,16 @@
           <a href="./raise-a-request.html" class="color-white b-white f-14 ">FIND A DONOR</a>
         </li>
         <li class="px-3">
-          <a href="./organize-a-camp.html" class="color-white b-white f-14  ">ORGANIZE A CAMP</a>
+          <a href="./organize-a-camp.html" class="color-white b-white f-14 ">ORGANIZE A CAMP</a>
         </li>
         <li class="px-3">
-          <a href="./organize-an-awareness-session.html" class="color-white b-white f-14">SPREAD AWARENESS</a>
+          <a href="./organize-an-awareness-session.html" class="color-white b-white f-14 ">SPREAD AWARENESS</a>
         </li>
         <li class="px-3">
-          <a href="./join-us-selection.html" class="color-white b-white f-14  ">JOIN US</a>
+          <a href="./join-us-selection.html" class="color-white b-white f-14 ">JOIN US</a>
         </li>
         <li class="px-3">
-          <a href="./blog.html" class="color-white b-white f-14  ">BLOG</a>
+          <a href="./blog.html" class="color-white b-white f-14 active">BLOG</a>
         </li>
       </ul>
     </div>
@@ -143,8 +140,9 @@
       <a href="./sponsor.html" class="f-14 sponsor-link-button color-dark fw-6 px-3 py-2 uppercase">Support us</a>
     </div>
   </nav>
+  <!-- Sticky navbar -->
   <nav
-    class="navbar flex-column-sm align-items-start justify-content-between pb-0  sticky-navbar z-5 bg-white pb-2 hide"
+    class="navbar flex-column-sm align-items-start justify-content-between pb-0  sticky-navbar z-5 bg-white pb-2 hide "
     id="navbar-sticky">
     <div class="d-flex flex-row align-items-center justify-content-end">
       <a class="navbar-brand" href="./index.html">
@@ -162,10 +160,13 @@
           <a href="./organize-a-camp.html" class="color-dark b-dark f-14 ">ORGANIZE A CAMP</a>
         </li>
         <li class="px-3">
-          <a href="./organize-an-awareness-session.html" class="color-dark b-dark f-14">SPREAD AWARENESS</a>
+          <a href="./organize-an-awareness-session.html" class="color-dark b-dark f-14 ">SPREAD AWARENESS</a>
         </li>
         <li class="px-3">
           <a href="./join-us-selection.html" class="color-dark b-dark f-14 ">JOIN US</a>
+        </li>
+        <li class="px-3">
+          <a href="./blog.html" class="color-dark b-dark f-14 active">BLOG</a>
         </li>
       </ul>
     </div>
@@ -175,107 +176,64 @@
     </div>
   </nav>
 
-
-
-  <div class="container-fluid h-90-min  pl-0 pr-0 content relative pt-60-sm d-flex flex-row align-items-center">
-    <div class="d-flex flex-column container h-90 justify-content-center z-5 px-0-sm">
-      <h1 class="display-4 color-white  text-center-sm px-2 mb-0">Days of Gratitude</h1>
-      <p class="color-white w-50-lg px-2 text-center-sm">
-        Your birthday can be someone else's special day as well. Make your birthday memorable by giving someone the
-        “Gift of Life”. <br> Donate blood. Donate for a cause.
-      </p>
-      <div class="d-flex mt-2 px-2 flex-column-sm">
-        <button class="shadow btn-main bg-white color-main  mx-auto-sm mb-4 mr-2 w-200"> <a
-            href="./organize-a-camp.html" class="color-main">Organize a Camp</a></button>
-        <button class="shadow btn-main bg-main  mx-auto-sm mb-4 w-200 "><a class="color-white"
-            href="./sponsor.html?c=c1">Sponsor Us</a></button>
-      </div>
-    </div>
-    <div class="main-slider">
-      <div class="homepage-slider" style="background-image: url('./img/campaign1.jpeg'); background-size: cover;">
-
-      </div>
-    </div>
-  </div>
-
-
-  <div class="container mt-5 pt-5 mt-5-sm">
-    <h4 class="f-30 text-center color-dark mb-0">About the Initiative</h4>
-    <p class="italics text-center">
-      "Rakt daan sirf mahaan daan hi nahi, Jeevan daan hai"
-    </p>
-    <div class="row">
-      <p class="col-lg-7 col-sm-12 text-justify">
-        The day we were born brought a smile to lots of faces, so why not continue the tradition of bringing smiles on
-        our birthday. Let us make up our minds and let one of the new year's resolutions for 2021 be donating blood on
-        our birthday and our loved ones' birthday, potentially saving up to three lives.
-        <br> <br>
-        You can donate a pint of blood or help by collaborating with us in organizing blood donation camps in your
-        locality, College, office, etc. You can also sponsor the blood donation camps by donating funds. <span
-          class="bold">The vision is
-          to make India Blood sufficient, and we would be thankful for any source of help</span>, be it as grants,
-        sponsored
-        camps, or blood units.
-        <br> <br>
-        2020 has been a roller coaster ride, and one of the most awful things it has done other than COVID-19 itself is
-        an 80% drop in the number of units collected via blood donation drives.
-        <br> <br>
-        <span class="fw-6">Let us all unite, donate blood at least twice a year, and distribute the gift of life.</span>
-      </p>
-      <div class="col-lg-5 col-sm-12">
-        <img class="wd-inherit color-hover" src="./img/dofg.jpeg" alt="People donating blood">
-        <p class="f-12">*LetSmile celebrated their 1st bday With BloodConnect by Conducting a Blood Donation camp</p>
-      </div>
-    </div>
-
-  </div>
-
-  <div class="container mt-5 pt-5 mt-5-sm">
-    <h4 class="f-30 text-center color-dark mb-4">How Can You Help Us?</h4>
-    <div class="row">
-      <div class="col-lg-6 col-sm-12 mb-2 d-flex align-items-center">
-        <img class="wd-inherit color-hover" src="./img/A+.jpeg" alt="Donating Blood">
-      </div>
-      <div class="col-lg-6 col-sm-12 ">
-        <p class="">
-        <ul>
-          <li>
-            You could help us by collaborating with us in organizing blood donation camps in your office, locality, etc
-          </li>
-          <li>
-            By helping us monetarily. You can also donate funds to us for organising these camps and carrying out our
-            initiative.
-          </li>
-          <li>
-            By getting in touch with us and donating blood to your nearest bloodbank.
-          </li>
-          <p class="mt-4 text-justify">
-            The vision is to make India Blood sufficient and we would be thankful for any help be it as grants,
-            sponsored camps or blood units.
+  <!-- Front slider -->
+  <div class="container-fluid h-90-min pl-0 pr-0 content relative d-flex flex-row align-items-center">
+    <div class="d-flex flex-column container h-80-min justify-content-center z-5 px-0-sm">
+      <div class="main-slider-text row align-items-center justify-content-between flex-column-reverse-sm">
+        <div class="col-lg-6 col-sm-12 d-flex flex-column justofy-content-center">
+          <h1 class="display-4 color-dark wd-auto px-2 mb-1">
+            Baant Le Bandeya
+          </h1>
+          <p class="color-dark-light px-2">
+            Your birthday can be someone else's special day as well. Make your birthday memorable by giving someone the
+            “Gift of Life”. <br> Donate blood. Donate for a cause.
           </p>
-        </ul>
+          <div class="d-flex mt-2 px-2">
+            <button class="shadow btn-main bg-white mr-2">
+              <a href="./days-of-gratitude.html" class="color-dark">Learn More</a>
+            </button>
+            <button class="shadow btn-main bg-main mr-2">
+              <a href="./donation.html?c=c1" target="_blank" class="color-white">Sponsor Now</a>
+            </button>
 
-        </p>
-        <div class="d-flex  flex-column-sm mt-5">
-          <button class="btn btn-main bg-white color-main mx-auto-sm w-200"><a href="./organize-a-camp.html"
-              class="color-main">Organize a Camp</a></button>
-          <button class="btn btn-main bg-main color-white ml-2 mx-auto-sm w-200"><a href="./sponsor.html?c=c1"
-              class="color-white">Sponsor our Camps</a></button>
+          </div>
+        </div>
+        <img class="col-lg-4 col-sm-12" src="./img/BaantLeBandeya.png" />
+      </div>
+    </div>
+  </div>
+
+  <div class="container-fluid h-14-rem bg-main pl-0 pr-0 content my-4 relative d-flex flex-row align-items-center">
+    <div class="d-flex flex-column container h-60 justify-content-center z-5 px-0-sm">
+      <h1 class="display-4 color-white  text-center px-2 mb-1 fw-4"> Blogs </h1>
+    </div>
+  </div>
+
+
+  <main role="main" class="container pt-5 mb-5">
+    <div class="row">
+      <div class="col-md-12 px-0-sm">
+        <h3 class="mb-4 px-3">
+          Most Recent
+        </h3>
+        <div id="blog-list" class="row justify-content-between mx-3">
+
+        </div>
+        <div id="loading" class="loading-screen d-flex justify-content-center align-items-center h-40-rem">
+          <div class="d-flex flex-column justify-content-center align-items-center">
+            <span class="spinner-border text-danger"></span>
+            <p class="f-18 mt-2">Loading blogs please wait...</p>
+          </div>
         </div>
       </div>
     </div>
-
-  </div>
-
-
-
-
+  </main>
 
   <!-- Footer -->
-  <div class="container-fluid ">
+  <div class="container-fluid  ">
     <div class="container d-flex flex-column ">
 
-      <hr class="color-dark w-100">
+      <hr class="color-dark w-100 my-0">
       <div class="d-flex justify-content-between align-items-center flex-column-sm">
         <a href="./index.html">
           <img src="./img/logo.png" alt="">
@@ -303,7 +261,7 @@
           </li>
         </ul>
       </div>
-      <hr class="color-dark w-100">
+      <hr class="color-dark w-100 mx-0">
       <div class="row">
         <div class="col-lg-4 col-sm-12">
           <p class="color-dark bold mb-2">NAVIGATION</p>
@@ -336,18 +294,18 @@
         <div class="col-lg-4 col-sm-12">
           <p class="color-dark bold  mb-2">ORGANIZE A CAMP</p>
           <ul class="footer-list pl-0">
-            <li class=" mr-4 compact"><a class="color-dark f-14" href="./organize-a-camp.html#city_region=Delhi"
-                onclick="organizeCamp('Delhi')">Organize a camp in Delhi-NCR</a></li>
-            <li class=" mr-4 compact"><a class="color-dark f-14" href="./organize-a-camp.html#city_region=Kanpur"
-                onclick="organizeCamp('Kanpur')">Organize a camp in Kanpur</a></li>
-            <li class=" mr-4 compact"><a class="color-dark f-14" href="./organize-a-camp.html#city_region=Agra"
-                onclick="organizeCamp('Agra')">Organize a camp in Agra</a></li>
-            <li class=" mr-4 compact"><a class="color-dark f-14" href="./organize-a-camp.html#city_region=Lucknow"
-                onclick="organizeCamp('Lucknow')">Organize a camp in Lucknow</a></li>
-            <li class=" mr-4 compact"><a class="color-dark f-14" href="./organize-a-camp.html#city_region=Bhubaneswar"
-                onclick="organizeCamp('Bhubaneswar')">Organize a camp in Bhubaneswar</a></li>
-            <li class=" mr-4 compact"><a class="color-dark f-14" href="./organize-a-camp.html#city_region=Jaipur"
-                onclick="organizeCamp('Jaipur')">Organize a camp in Jaipur</a></li>
+            <li class=" mr-4 compact"><a class="color-dark f-14"
+                href="./organize-a-camp.html#city_region=Delhi">Organize a camp in Delhi-NCR</a></li>
+            <li class=" mr-4 compact"><a class="color-dark f-14"
+                href="./organize-a-camp.html#city_region=Kanpur">Organize a camp in Kanpur</a></li>
+            <li class=" mr-4 compact"><a class="color-dark f-14" href="./organize-a-camp.html#city_region=Agra">Organize
+                a camp in Agra</a></li>
+            <li class=" mr-4 compact"><a class="color-dark f-14"
+                href="./organize-a-camp.html#city_region=Lucknow">Organize a camp in Lucknow</a></li>
+            <li class=" mr-4 compact"><a class="color-dark f-14"
+                href="./organize-a-camp.html#city_region=Bhubaneswar">Organize a camp in Bhubaneswar</a></li>
+            <li class=" mr-4 compact"><a class="color-dark f-14"
+                href="./organize-a-camp.html#city_region=Jaipur">Organize a camp in Jaipur</a></li>
           </ul>
         </div>
       </div>
@@ -365,11 +323,17 @@
   <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
     integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
     crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
     integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
     crossorigin="anonymous"></script>
   <script src="./js/bootstrap.min.js"></script>
   <script src="js/main_v1.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/timeago.js/2.0.2/timeago.min.js"></script>
+  <script src="js/blog.js"></script>
+
 </body>
 
 </html>
+<!----   
+-->
