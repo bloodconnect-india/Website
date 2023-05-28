@@ -77,6 +77,7 @@ createHelplineRequest = () => {
     
     fetch(url,{
         method: 'POST',
+        mode: 'no-cors',
         body:JSON.stringify(requestData),
         headers: {
             "Content-Type": "application/json"
