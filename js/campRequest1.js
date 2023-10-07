@@ -31,7 +31,7 @@ submitRequest = (e) => {
 
 createCampRequest = () => {
 
-    let url = "https://bc-api2.herokuapp.com/camp-request"
+    let url = "http://localhost:4000/camp-request"
     var requestData = {
         'Your_Name':your_name,
         'City_Region':city,

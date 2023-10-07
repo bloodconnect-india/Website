@@ -82,8 +82,8 @@ var Degree_Profession_pursuing = "";
 var Organization = "";
 var Year_of_graduation = "";
 var Prior_Experience_Volunteering = "";
-var Why_BC = new Array();
-var Interested_In = new Array();
+var Why_BC = "";
+var Interested_In = "";
 var additional = "";
 var How_BC = "";
 var Personal_Contact = "";
@@ -94,12 +94,12 @@ $("#success-modal").hide()
 
 const selectInterest = (e) => {
     let interest = e.target.value
-    Interested_In = [interest];
+    Interested_In = interest;
 }
 
 const selectWhyBC = (e) => {
     let whyBc = e.target.value
-    Why_BC = [whyBc]; 
+    Why_BC = whyBc; 
 }
 
 
@@ -114,7 +114,7 @@ const sendRequest = () => {
     $("#submit-request-button").attr("disabled","disabled");
     
 
-    let url = 'https://bc-api2.herokuapp.com/recruitment'
+    let url = 'http://localhost:4000/recruitment'
    
     fetch(url, {
         method: 'POST',

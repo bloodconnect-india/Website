@@ -57,38 +57,36 @@ submitRequest = (e) => {
 
 
 createHelplineRequest = () => {
-
-    console.log("sending request")
-    let url = "https://bc-api2.herokuapp.com/helpline"
+    let url = "http://localhost:4000/helpline"
     var requestData = {
-        'Patient_Name':patient_name,
-        'Your_Name':name,
-        'City_Region':city,
-        'Your_Email':email,
-        'Units_Required' : parseInt(unit),
-        'Contact_Number': phone_number,
-        'Blood_Group_Required': bg,
-        'Type_of_Donation':requirement,
-        'Hospital': hospital,
-        'Disease':disease,
-        'Status': "Open"
+        'patient_name':patient_name,
+        'name':name,
+        'city':city,
+        'email':email,
+        'units' : parseInt(unit),
+        'contact': phone_number,
+        'bg': bg,
+        'requirement':requirement,
+        'hospital': hospital,
+        'disease':disease,
+        'status': "Open"
     }
 
     
     fetch(url,{
         method: 'POST',
-        mode: 'no-cors',
         body:JSON.stringify(requestData),
         headers: {
-            "Content-Type": "application/json"
-          }
+            "Content-Type": "application/json",
+            // 'Content-Type': 'application/x-www-form-urlencoded',
+        }
     }).then(response => response.json()).then(data => {
         
         if(data.msg === "success"){
             $("#success-modal").removeClass('hide')
             $("#success-modal").addClass('show')
             let secondsLeft = 3;
-            let x = setInterval( () => {
+            setInterval( () => {
                 if(secondsLeft <= 0)
                     window.location.href = "./sponsor.html"
                 $("#seconds").html(`${secondsLeft}s`)
