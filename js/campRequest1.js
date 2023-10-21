@@ -31,7 +31,7 @@ submitRequest = (e) => {
 
 createCampRequest = () => {
 
-    let url = "http://localhost:4000/camp-request"
+    let url = "https://bc-api-2.onrender.com/camp-request"
     var requestData = {
         'Your_Name':your_name,
         'City_Region':city,

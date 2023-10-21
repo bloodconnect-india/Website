@@ -114,7 +114,7 @@ const sendRequest = () => {
     $("#submit-request-button").attr("disabled","disabled");
     
 
-    let url = 'http://localhost:4000/recruitment'
+    let url = 'https://bc-api-2.onrender.com/recruitment'
    
     fetch(url, {
         method: 'POST',

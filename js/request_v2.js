@@ -57,7 +57,7 @@ submitRequest = (e) => {
 
 
 createHelplineRequest = () => {
-    let url = "http://localhost:4000/helpline"
+    let url = "https://bc-api-2.onrender.com/helpline"
     var requestData = {
         'patient_name':patient_name,
         'name':name,
