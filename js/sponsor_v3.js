@@ -9,7 +9,7 @@ let panCard = ""
 let dob = ""
 let siganture = ""
 let beatingHeart = '<i class="fa fa-heart color-main"></i>'
-let BASE_URL  = "https://bc-api2.herokuapp.com"
+let BASE_URL  = "https://bc-api-2.onrender.com"
 let speed = 10
 startSlide = () => {
     $('#fade-slide').slick({

@@ -77,9 +77,7 @@
     <button class="menu  show-md color-white h-max bg-none" id="mobile-nav-toggler" onclick="toggleMobileNav()"><i
         class="fa fa-bars f-20"></i></button>
     <ul class="mobile-nav hide bg-white" id="mobile-nav-list">
-      <li class="bg-main ">
-        <a class="nav-link color-white fw-4 " href="./raise-a-request.html">FIND A DONOR</a>
-      </li>
+
       <li class="bg-main ">
         <a class="nav-link color-white fw-4 " href="./organize-a-camp.html">ORGANIZE A CAMP</a>
       </li>
@@ -116,9 +114,7 @@
         <li class="px-3">
           <a href="./about-us.html" class="color-white b-white f-14 ">ABOUT US</a>
         </li>
-        <li class="px-3">
-          <a href="./raise-a-request.html" class="color-white b-white f-14 ">FIND A DONOR</a>
-        </li>
+
         <li class="px-3">
           <a href="./organize-a-camp.html" class="color-white b-white f-14 ">ORGANIZE A CAMP</a>
         </li>
@@ -150,9 +146,7 @@
         <li class="px-3">
           <a href="./about-us.html" class="color-dark b-dark f-14 ">ABOUT US</a>
         </li>
-        <li class="px-3">
-          <a href="./raise-a-request.html" class="color-dark b-dark f-14 ">FIND A DONOR</a>
-        </li>
+
         <li class="px-3">
           <a href="./organize-a-camp.html" class="color-dark b-dark f-14 ">ORGANIZE A CAMP</a>
         </li>
@@ -347,9 +341,7 @@
         <div class="col-lg-6 col-sm-12 col-md-12 px-0">
           <div class="container bg-white  pt-4 pb-4 shadow z-2 rounded pl-5 pr-5 px-3-sm ">
             <h4 class="ft-24 text-center color-dark mb-0 uppercase">Drop us a message</h4>
-            <p class="color-grey mb-3 text-center f-14">Fill this and we will be in touch with you soon. <br> If you
-              need blood, please register at <a class="color-main f-14" href="./raise-a-request.html">FIND A DONOR</a>
-              only</p>
+            <p class="color-grey mb-3 text-center f-14">Fill this and we will be in touch with you soon. <br></p>
             <form class="contact-form " action="" onsubmit="createRequest(event)">
               <div class="form-group mb-4">
                 <label class="m-0  color-dark" for="name">Your Name</label>
@@ -364,6 +356,11 @@
                 <label class="m-0  color-dark" for="phone_number">Phone Number</label>
                 <input type="text" pattern="\d+" maxlength="10" minlength="10" class="form-control"
                   placeholder="9876543210" id="phone_number" required>
+
+              </div>
+              <div class="form-group mb-4">
+                <label class="m-0  color-dark" for="email">City</label>
+                <input type="text" class="form-control" placeholder="Pune" id="city" required>
 
               </div>
               <div class="form-group mb-4">
@@ -444,23 +441,7 @@
             <li class=" mr-4 compact"><a class="color-dark f-14" href="./contact-us.html">Contact us</a></li>
           </ul>
         </div>
-        <div class="col-lg-4 col-sm-12">
-          <p class="color-dark bold mb-2">FIND A DONOR</p>
-          <ul class="footer-list pl-0">
-            <li class=" mr-4 compact"><a class="color-dark f-14" href="./raise-a-request.html#city_region=Delhi"
-                onclick="goToForm('Delhi')">Find A Donor in Delhi-NCR</a></li>
-            <li class=" mr-4 compact"><a class="color-dark f-14" href="./raise-a-request.html#city_region=Kanpur"
-                onclick="goToForm('Kanpur')">Find A Donor in Kanpur</a></li>
-            <li class=" mr-4 compact"><a class="color-dark f-14" href="./raise-a-request.html#city_region=Agra"
-                onclick="goToForm('Agra')">Find A Donor in Agra</a></li>
-            <li class=" mr-4 compact"><a class="color-dark f-14" href="./raise-a-request.html#city_region=Lucknow"
-                onclick="goToForm('Lucknow')">Find A Donor in Lucknow</a></li>
-            <li class=" mr-4 compact"><a class="color-dark f-14" href="./raise-a-request.html#city_region=Bhubaneswar"
-                onclick="goToForm('Bhubaneswar')">Find A Donor in Bhubaneswar</a></li>
-            <li class=" mr-4 compact"><a class="color-dark f-14" href="./raise-a-request.html#city_region=Jaipur"
-                onclick="goToForm('Jaipur')">Find A Donor in Jaipur</a></li>
-          </ul>
-        </div>
+        
         <div class="col-lg-4 col-sm-12">
           <p class="color-dark bold  mb-2">ORGANIZE A CAMP</p>
           <ul class="footer-list pl-0">
@@ -502,6 +483,7 @@
     let name = ""
     let email = ""
     let message = ""
+    let city = ""
     createRequest = (e) => {
       e.preventDefault()
 
@@ -511,12 +493,14 @@
       email = $("#email").val()
       message = $("#message").val()
       phone_number = $("#phone_number").val();
-      let url = "https://bc-api2.herokuapp.com/contact"
+      city = $("#city").val();
+      let url = "https://bc-api-2.onrender.com/contact"
       var requestData = {
         'Name': name,
         'Email': email,
         'Message': message,
         'Phone_Number': "+91"+phone_number,
+        'City': city
       }
       fetch(url, {
         method: 'POST',

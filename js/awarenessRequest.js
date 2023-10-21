@@ -32,7 +32,7 @@ submitAwarenessRequest = (e) => {
 
 createAwarenessRequest = () => {
 
-    let url = "https://bc-api2.herokuapp.com/awareness-request"
+    let url = "https://bc-api-2.onrender.com/awareness-request"
     var requestData = {
         'Your_Name':your_name,
         'City_Name':city,
